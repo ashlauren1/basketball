@@ -2,7 +2,7 @@
 function initializeChart(playerId, chartData, bettingLine, defaultStat) {
 	const processedData = chartData.map(d => ({
         ...d,
-        [defaultStat]: d[defaultStat] === 0 ? 0.02 : d[defaultStat]
+        [defaultStat]: d[defaultStat] === 0 ? 0.05 : d[defaultStat]
     }));
 	
     window[`allData_${playerId}`] = processedData;

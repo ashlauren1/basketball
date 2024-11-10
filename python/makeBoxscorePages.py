@@ -26,7 +26,7 @@ def create_game_directory(game_data, output_file_path):
         <title>Game Directory</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
-        <link rel="icon" type="image/x-icon" href="/basketball/images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
 
         <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -303,7 +303,7 @@ def create_game_boxscores(gamelogs_data, output_dir):
         <title>{game_name}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
-        <link rel="icon" type="image/x-icon" href="/basketball/images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
 
         <script>
         document.addEventListener("DOMContentLoaded", function () {{

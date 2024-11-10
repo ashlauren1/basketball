@@ -22,7 +22,7 @@ def create_team_directory(data, output_dir):
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Team Directory</title>
         <link rel="stylesheet" href="stylesheet.css">
-        <link rel="icon" type="image/x-icon" href="/basketball/images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script>
         document.addEventListener("DOMContentLoaded", async function () {
         const searchBar = document.getElementById("search-bar");
@@ -159,7 +159,7 @@ def create_team_pages(data, output_dir):
         <head>
         <title>{team_name}</title>
         <link rel="stylesheet" href="stylesheet.css">
-        <link rel="icon" type="image/x-icon" href="/basketball/images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
 
         <script>
         document.addEventListener("DOMContentLoaded", function () {{

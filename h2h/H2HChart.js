@@ -92,7 +92,7 @@ function initializeChart(stat, gameId, bettingLineId, chartData, bettingLine) {
             labels: chartData.map(d => formatLabel(d)),  // Use multiline label format
             datasets: [{
                 label: stat,
-                data: chartData.map(d => d.stat || 0.02),
+                data: chartData.map(d => d.stat || 0.05),
                 backgroundColor: chartData.map(d => d.stat === 0 ? '#c01616' : (d.stat >= bettingLine ? '#16c049' : '#c01616')),
                 borderColor: chartData.map(d => d.stat === 0 ? '#421f1f' : (d.stat >= bettingLine ? '#304f3a' : '#421f1f')),
                 borderWidth: 0.5,
@@ -149,7 +149,7 @@ function applyFilters(stat, gameId, bettingLineId) {
 
     // Update chart data and colors with filtered data
     chart.data.labels = filteredData.map(d => formatLabel(d));
-    chart.data.datasets[0].data = filteredData.map(d => d.stat || 0.02);
+    chart.data.datasets[0].data = filteredData.map(d => d.stat || 0.05);
     chart.data.datasets[0].backgroundColor = filteredData.map(d => (d.stat >= line ? '#16c049' : '#c01616'));
     chart.update();
 }
@@ -188,7 +188,7 @@ function filterGames(stat, gameId, bettingLineId, numGames) {
     const line = window[`Line_${stat}_${gameId}_${bettingLineId}`];
 
     chart.data.labels = filteredData.map(d => formatLabel(d));
-    chart.data.datasets[0].data = filteredData.map(d => d.stat || 0.02);
+    chart.data.datasets[0].data = filteredData.map(d => d.stat || 0.05);
     chart.data.datasets[0].backgroundColor = filteredData.map(d => (d.stat >= line ? '#16c049' : '#c01616'));
     chart.update();
 }
@@ -201,7 +201,7 @@ function filterBySeason(stat, gameId, bettingLineId, season) {
     const line = window[`Line_${stat}_${gameId}_${bettingLineId}`];
 
     chart.data.labels = filteredData.map(d => formatLabel(d));
-    chart.data.datasets[0].data = filteredData.map(d => d.stat || 0.02);
+    chart.data.datasets[0].data = filteredData.map(d => d.stat || 0.05);
     chart.data.datasets[0].backgroundColor = filteredData.map(d => (d.stat >= line ? '#16c049' : '#c01616'));
     chart.update();
 }

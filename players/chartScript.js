@@ -251,3 +251,11 @@ function filterBySeason(playerId, season) {
 function showAllGames(playerId) {
     applyFilter(playerId, "all");
 }
+
+// Function to reset the betting line and move the slider to the default value
+function resetLine(playerId, defaultLine) {
+    updateLine(playerId, defaultLine); // Update displayed line value and chart annotation
+    
+    // Set the slider's position to the default value
+    document.getElementById(`lineSlider_${playerId}`).value = defaultLine;
+}

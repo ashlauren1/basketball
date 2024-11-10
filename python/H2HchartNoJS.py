@@ -59,7 +59,7 @@ chart_script_template = """
     <div class="slider-container">
         <div id="line-slider">
             <label for="{stat}_{game_id}_{betting_line_id}_lineSlider">Change Line:</label>
-            <input type="range" id="{stat}_{game_id}_{betting_line_id}_lineSlider" min="0" max="30" step="0.25" value="{betting_line}" oninput="updateLine('{stat}', '{game_id}', '{betting_line_id}', this.value)">
+            <input type="range" id="{stat}_{game_id}_{betting_line_id}_lineSlider" min="0" max="100" step="0.5" value="{betting_line}" oninput="updateLine('{stat}', '{game_id}', '{betting_line_id}', this.value)">
             <span id="{stat}_{game_id}_{betting_line_id}_lineValue">{betting_line}</span>
         </div>
         <div class="chartButtons">

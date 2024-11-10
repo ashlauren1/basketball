@@ -62,7 +62,7 @@ def create_team_directory(data, output_dir):
                     .join(" ");
 
                 resultItem.addEventListener("click", () => {
-                    window.open(url, "_blank");
+                    window.open(url, "_self");
                 });
                 searchResults.appendChild(resultItem);
             });
@@ -361,7 +361,7 @@ def create_team_pages(data, output_dir):
                         .join(" ");
 
                     resultItem.addEventListener("click", () => {{
-                        window.open(url, "_blank");
+                        window.open(url, "_self");
                     }});
                     searchResults.appendChild(resultItem);
                 }});

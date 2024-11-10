@@ -260,7 +260,7 @@ def generate_h2h_pages(metrics_data, h2h_pairs, output_dir):
                     .join(" ");
 
                 resultItem.addEventListener("click", () => {{
-                    window.open(url, "_blank");
+                    window.open(url, "_self");
                 }});
                 searchResults.appendChild(resultItem);
             }});
@@ -766,7 +766,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     .join(" ");
 
                 resultItem.addEventListener("click", () => {
-                    window.open(url, "_blank");
+                    window.open(url, "_self");
                 });
                 searchResults.appendChild(resultItem);
             });

@@ -115,7 +115,7 @@ def create_player_directory(roster_data, output_file_path):
                         .join(" ");
 
                     resultItem.addEventListener("click", () => {
-                        window.open(url, "_blank");
+                        window.open(url, "_self");
                     });
                     searchResults.appendChild(resultItem);
                 });
@@ -426,7 +426,7 @@ def create_player_gamelog_pages(gamelogs_data, output_dir):
                         .join(" ");
 
                     resultItem.addEventListener("click", () => {{
-                        window.open(url, "_blank");
+                        window.open(url, "_self");
                     }});
                     searchResults.appendChild(resultItem);
                 }});

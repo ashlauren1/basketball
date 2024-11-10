@@ -104,7 +104,7 @@ for filename in os.listdir(html_dir):
         # Add chart for each stat in the player's betting lines
         for _, line_row in player_lines.iterrows():
             game_id = line_row['GameID']
-            stat = line_row['Stat']
+            stat = line_row['Stat'].replace('+', '_') 
             betting_line = line_row['Line']
             betting_line_id = str(betting_line).replace('.', '_')
 

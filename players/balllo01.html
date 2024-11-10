@@ -276,11 +276,11 @@
 <option value="FT">Free Throws</option>
 <option value="FTA">Free Throw Attempts</option>
 <option value="PF">Fouls</option>
-<option value="BLK+STL">BLK+STL</option>
-<option value="REB+AST">REB+AST</option>
-<option value="PTS+AST">PTS+AST</option>
-<option value="PTS+REB">PTS+REB</option>
-<option value="PTS+REB+AST">PTS+REB+AST</option>
+<option value="BLK_STL">BLK+STL</option>
+<option value="REB_AST">REB+AST</option>
+<option value="PTS_AST">PTS+AST</option>
+<option value="PTS_REB">PTS+REB</option>
+<option value="PTS_REB_AST">PTS+REB+AST</option>
 <option value="FANTASY">Fantasy Score</option>
 </select>
 </div>
@@ -336,7 +336,7 @@
 <script src="chartScript.js"></script>
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
-    initializeChart("balllo01", [{'date': '2024-10-23', 'opponent': 'NOP', 'location': 'away', 'season': '2024-25', 'PTS': 5, 'REB': 2, 'AST': 4, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 13.65, 'OffREB': 0, 'DefREB': 2, 'FG': 2, 'FGA': 4, '3P': 1, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK+STL': 0, 'REB+AST': 6, 'PTS+AST': 9, 'PTS+REB': 7, 'PTS+REB+AST': 11, 'FANTASY': 12.4}, {'date': '2024-10-26', 'opponent': 'OKC', 'location': 'home', 'season': '2024-25', 'PTS': 3, 'REB': 5, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 15.56666667, 'OffREB': 0, 'DefREB': 5, 'FG': 1, 'FGA': 6, '3P': 1, '3PA': 5, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK+STL': 0, 'REB+AST': 6, 'PTS+AST': 4, 'PTS+REB': 8, 'PTS+REB+AST': 9, 'FANTASY': 8.5}, {'date': '2024-10-28', 'opponent': 'MEM', 'location': 'away', 'season': '2024-25', 'PTS': 6, 'REB': 1, 'AST': 6, 'BLK': 1, 'STL': 0, 'TOV': 0, 'MP': 17.98333333, 'OffREB': 0, 'DefREB': 1, 'FG': 2, 'FGA': 4, '3P': 2, '3PA': 4, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK+STL': 1, 'REB+AST': 7, 'PTS+AST': 12, 'PTS+REB': 7, 'PTS+REB+AST': 13, 'FANTASY': 19.2}], 0.5, "PTS");
+    initializeChart("balllo01", [{'date': '2024-10-23', 'opponent': 'NOP', 'location': 'away', 'season': '2024-25', 'PTS': 5, 'REB': 2, 'AST': 4, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 13.65, 'OffREB': 0, 'DefREB': 2, 'FG': 2, 'FGA': 4, '3P': 1, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 6, 'PTS_AST': 9, 'PTS_REB': 7, 'PTS_REB_AST': 11, 'FANTASY': 12.4}, {'date': '2024-10-26', 'opponent': 'OKC', 'location': 'home', 'season': '2024-25', 'PTS': 3, 'REB': 5, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 15.56666667, 'OffREB': 0, 'DefREB': 5, 'FG': 1, 'FGA': 6, '3P': 1, '3PA': 5, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 6, 'PTS_AST': 4, 'PTS_REB': 8, 'PTS_REB_AST': 9, 'FANTASY': 8.5}, {'date': '2024-10-28', 'opponent': 'MEM', 'location': 'away', 'season': '2024-25', 'PTS': 6, 'REB': 1, 'AST': 6, 'BLK': 1, 'STL': 0, 'TOV': 0, 'MP': 17.98333333, 'OffREB': 0, 'DefREB': 1, 'FG': 2, 'FGA': 4, '3P': 2, '3PA': 4, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 7, 'PTS_AST': 12, 'PTS_REB': 7, 'PTS_REB_AST': 13, 'FANTASY': 19.2}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <span class="table-button-container">

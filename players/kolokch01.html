@@ -276,11 +276,11 @@
 <option value="FT">Free Throws</option>
 <option value="FTA">Free Throw Attempts</option>
 <option value="PF">Fouls</option>
-<option value="BLK+STL">BLK+STL</option>
-<option value="REB+AST">REB+AST</option>
-<option value="PTS+AST">PTS+AST</option>
-<option value="PTS+REB">PTS+REB</option>
-<option value="PTS+REB+AST">PTS+REB+AST</option>
+<option value="BLK_STL">BLK+STL</option>
+<option value="REB_AST">REB+AST</option>
+<option value="PTS_AST">PTS+AST</option>
+<option value="PTS_REB">PTS+REB</option>
+<option value="PTS_REB_AST">PTS+REB+AST</option>
 <option value="FANTASY">Fantasy Score</option>
 </select>
 </div>
@@ -335,7 +335,7 @@
 <script src="chartScript.js"></script>
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
-    initializeChart("kolokch01", [{'date': '2024-11-06', 'opponent': 'MEM', 'location': 'away', 'season': '2024-25', 'PTS': 2, 'REB': 2, 'AST': 0, 'BLK': 1, 'STL': 0, 'TOV': 0, 'MP': 13.33333333, 'OffREB': 1, 'DefREB': 1, 'FG': 1, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK+STL': 1, 'REB+AST': 2, 'PTS+AST': 2, 'PTS+REB': 4, 'PTS+REB+AST': 4, 'FANTASY': 7.4}, {'date': '2024-11-08', 'opponent': 'PHI', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.466666667, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK+STL': 0, 'REB+AST': 2, 'PTS+AST': 1, 'PTS+REB': 1, 'PTS+REB+AST': 2, 'FANTASY': 2.7}], 0.5, "PTS");
+    initializeChart("kolokch01", [{'date': '2024-11-06', 'opponent': 'MEM', 'location': 'away', 'season': '2024-25', 'PTS': 2, 'REB': 2, 'AST': 0, 'BLK': 1, 'STL': 0, 'TOV': 0, 'MP': 13.33333333, 'OffREB': 1, 'DefREB': 1, 'FG': 1, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 2, 'PTS_AST': 2, 'PTS_REB': 4, 'PTS_REB_AST': 4, 'FANTASY': 7.4}, {'date': '2024-11-08', 'opponent': 'PHI', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.466666667, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 2, 'PTS_AST': 1, 'PTS_REB': 1, 'PTS_REB_AST': 2, 'FANTASY': 2.7}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <span class="table-button-container">

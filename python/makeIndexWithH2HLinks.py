@@ -35,7 +35,7 @@ with open("teams.json", "w") as f:
 print("players.json and teams.json created successfully!")
 
 # Convert relevant columns to numeric types to avoid type errors
-metrics_data[['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK+STL', 'REB+AST', 'PTS+AST', 'PTS+REB', 'PTS+REB+AST', 'FANTASY']] = metrics_data[['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK+STL', 'REB+AST', 'PTS+AST', 'PTS+REB', 'PTS+REB+AST', 'FANTASY']].apply(pd.to_numeric, errors='coerce')
+metrics_data[['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK_STL', 'REB_AST', 'PTS_AST', 'PTS_REB', 'PTS_REB_AST', 'FANTASY']] = metrics_data[['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK_STL', 'REB_AST', 'PTS_AST', 'PTS_REB', 'PTS_REB_AST', 'FANTASY']].apply(pd.to_numeric, errors='coerce')
 
 
 
@@ -49,7 +49,7 @@ upcoming_games_data = upcoming_games_data[upcoming_games_data['PlayerID'].isin(l
 
 # Functions to calculate averages and ratios
 def calculate_average_stats(group):
-    return {stat: group[stat].mean() for stat in ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK+STL', 'REB+AST', 'PTS+AST', 'PTS+REB', 'PTS+REB+AST', 'FANTASY']}
+    return {stat: group[stat].mean() for stat in ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK_STL', 'REB_AST', 'PTS_AST', 'PTS_REB', 'PTS_REB_AST', 'FANTASY']}
 
 def calculate_over_ratio(filtered_data, line, stat):
     over_count = (filtered_data[stat] > line).sum()
@@ -76,10 +76,10 @@ def get_projected_stats(player_id, team, opp, is_home):
     if player_game_count >= 5:
         if home_away_stats and opp_stats:
             return {k: (0.8 * opp_stats[k] + 0.2 * home_away_stats[k]) for k in opp_stats}
-        return home_away_stats or opp_stats or {stat: 0 for stat in ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK+STL', 'REB+AST', 'PTS+AST', 'PTS+REB', 'PTS+REB+AST', 'FANTASY']}
+        return home_away_stats or opp_stats or {stat: 0 for stat in ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK_STL', 'REB_AST', 'PTS_AST', 'PTS_REB', 'PTS_REB_AST', 'FANTASY']}
     else:
-        player_weighted_stats = {k: (0.8 * opp_stats[k] + 0.2 * home_away_stats[k]) for k in opp_stats} if home_away_stats and opp_stats else home_away_stats or opp_stats or {stat: 0 for stat in ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK+STL', 'REB+AST', 'PTS+AST', 'PTS+REB', 'PTS+REB+AST', 'FANTASY']}
-        team_weighted_stats = {k: (0.8 * team_opp_stats[k] + 0.2 * team_home_away_stats[k]) for k in team_opp_stats} if team_home_away_stats and team_opp_stats else team_home_away_stats or team_opp_stats or {stat: 0 for stat in ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK+STL', 'REB+AST', 'PTS+AST', 'PTS+REB', 'PTS+REB+AST', 'FANTASY']}
+        player_weighted_stats = {k: (0.8 * opp_stats[k] + 0.2 * home_away_stats[k]) for k in opp_stats} if home_away_stats and opp_stats else home_away_stats or opp_stats or {stat: 0 for stat in ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK_STL', 'REB_AST', 'PTS_AST', 'PTS_REB', 'PTS_REB_AST', 'FANTASY']}
+        team_weighted_stats = {k: (0.8 * team_opp_stats[k] + 0.2 * team_home_away_stats[k]) for k in team_opp_stats} if team_home_away_stats and team_opp_stats else team_home_away_stats or team_opp_stats or {stat: 0 for stat in ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK_STL', 'REB_AST', 'PTS_AST', 'PTS_REB', 'PTS_REB_AST', 'FANTASY']}
         return {k: (0.7 * player_weighted_stats[k] + 0.3 * team_weighted_stats[k]) for k in player_weighted_stats}
 
 # Ratio calculations based on max game number
@@ -372,11 +372,11 @@ def generate_h2h_pages(metrics_data, h2h_pairs, output_dir):
             ft = row['FT']
             fta= row['FTA']
             pf = row['PF']
-            bs = row['BLK+STL']
-            ra = row['REB+AST']
-            pa = row['PTS+AST']
-            pr = row['PTS+REB']
-            pra = row['PTS+REB+AST']
+            bs = row['BLK_STL']
+            ra = row['REB_AST']
+            pa = row['PTS_AST']
+            pr = row['PTS_REB']
+            pra = row['PTS_REB_AST']
             fant = row['FANTASY']
 
             

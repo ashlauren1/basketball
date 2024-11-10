@@ -12,7 +12,7 @@ gamelogs_df['Date'] = pd.to_datetime(gamelogs_df['Date'])
 gamelogs_df = gamelogs_df.sort_values(by='Date')
 
 # List of all stats to generate charts for
-all_stats = ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK+STL', 'REB+AST', 'PTS+AST', 'PTS+REB', 'PTS+REB+AST', 'FANTASY']
+all_stats = ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK_STL', 'REB_AST', 'PTS_AST', 'PTS_REB', 'PTS_REB_AST', 'FANTASY']
 
 # Default betting line and stat
 default_betting_line = 0.5
@@ -115,7 +115,7 @@ for filename in os.listdir(html_dir):
                 "opponent": row["Opp"],
                 "location": "home" if row["Is_Home"] == 1 else "away",
                 "season": row["Season"],
-                **{stat: row[stat] for stat in all_stats if stat in row}
+                **{stat.replace("+", "_"): row[stat] for stat in all_stats if stat in row}  # Replace `+` with `_`
             }
             for _, row in player_gamelogs.iterrows()
         ]
@@ -139,11 +139,11 @@ for filename in os.listdir(html_dir):
             "FT": "Free Throws", 
             "FTA": "Free Throw Attempts", 
             "PF": "Fouls",
-            "BLK+STL": "BLK+STL",
-            "REB+AST": "REB+AST",
-            "PTS+AST": "PTS+AST",
-            "PTS+REB": "PTS+REB",
-            "PTS+REB+AST": "PTS+REB+AST",
+            "BLK_STL": "BLK+STL",
+            "REB_AST": "REB+AST",
+            "PTS_AST": "PTS+AST",
+            "PTS_REB": "PTS+REB",
+            "PTS_REB_AST": "PTS+REB+AST",
             "FANTASY": "Fantasy Score"
         }
         stat_options = "\n".join([f'<option value="{stat}">{stat_map.get(stat, stat)}</option>' for stat in all_stats])
@@ -153,7 +153,7 @@ for filename in os.listdir(html_dir):
             stat_options=stat_options,
             chart_data=chart_data,
             betting_line=default_betting_line,
-            default_stat=default_stat,
+            default_stat=default_stat.replace("+", "_"),
             team_options=team_options,
             default_betting_line=default_betting_line
         )

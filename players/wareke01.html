@@ -276,11 +276,11 @@
 <option value="FT">Free Throws</option>
 <option value="FTA">Free Throw Attempts</option>
 <option value="PF">Fouls</option>
-<option value="BLK+STL">BLK+STL</option>
-<option value="REB+AST">REB+AST</option>
-<option value="PTS+AST">PTS+AST</option>
-<option value="PTS+REB">PTS+REB</option>
-<option value="PTS+REB+AST">PTS+REB+AST</option>
+<option value="BLK_STL">BLK+STL</option>
+<option value="REB_AST">REB+AST</option>
+<option value="PTS_AST">PTS+AST</option>
+<option value="PTS_REB">PTS+REB</option>
+<option value="PTS_REB_AST">PTS+REB+AST</option>
 <option value="FANTASY">Fantasy Score</option>
 </select>
 </div>
@@ -337,7 +337,7 @@
 <script src="chartScript.js"></script>
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
-    initializeChart("wareke01", [{'date': '2024-10-23', 'opponent': 'ORL', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 6.25, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK+STL': 0, 'REB+AST': 1, 'PTS+AST': 0, 'PTS+REB': 1, 'PTS+REB+AST': 1, 'FANTASY': 0.2}, {'date': '2024-11-02', 'opponent': 'WAS', 'location': 'away', 'season': '2024-25', 'PTS': 2, 'REB': 2, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 2.433333333, 'OffREB': 0, 'DefREB': 2, 'FG': 1, 'FGA': 3, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK+STL': 0, 'REB+AST': 2, 'PTS+AST': 2, 'PTS+REB': 4, 'PTS+REB+AST': 4, 'FANTASY': 4.4}, {'date': '2024-11-06', 'opponent': 'PHO', 'location': 'away', 'season': '2024-25', 'PTS': 7, 'REB': 3, 'AST': 0, 'BLK': 1, 'STL': 2, 'TOV': 1, 'MP': 13.58333333, 'OffREB': 0, 'DefREB': 3, 'FG': 3, 'FGA': 6, '3P': 1, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK+STL': 3, 'REB+AST': 3, 'PTS+AST': 7, 'PTS+REB': 10, 'PTS+REB+AST': 10, 'FANTASY': 18.6}, {'date': '2024-11-08', 'opponent': 'DEN', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 2.15, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK+STL': 0, 'REB+AST': 0, 'PTS+AST': 0, 'PTS+REB': 0, 'PTS+REB+AST': 0, 'FANTASY': 0.0}], 0.5, "PTS");
+    initializeChart("wareke01", [{'date': '2024-10-23', 'opponent': 'ORL', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 6.25, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 0, 'PTS_REB': 1, 'PTS_REB_AST': 1, 'FANTASY': 0.2}, {'date': '2024-11-02', 'opponent': 'WAS', 'location': 'away', 'season': '2024-25', 'PTS': 2, 'REB': 2, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 2.433333333, 'OffREB': 0, 'DefREB': 2, 'FG': 1, 'FGA': 3, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 2, 'PTS_AST': 2, 'PTS_REB': 4, 'PTS_REB_AST': 4, 'FANTASY': 4.4}, {'date': '2024-11-06', 'opponent': 'PHO', 'location': 'away', 'season': '2024-25', 'PTS': 7, 'REB': 3, 'AST': 0, 'BLK': 1, 'STL': 2, 'TOV': 1, 'MP': 13.58333333, 'OffREB': 0, 'DefREB': 3, 'FG': 3, 'FGA': 6, '3P': 1, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 3, 'REB_AST': 3, 'PTS_AST': 7, 'PTS_REB': 10, 'PTS_REB_AST': 10, 'FANTASY': 18.6}, {'date': '2024-11-08', 'opponent': 'DEN', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 2.15, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 0.0}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <span class="table-button-container">

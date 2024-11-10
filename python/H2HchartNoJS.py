@@ -10,6 +10,8 @@ html_dir = r"C:\Users\ashle\Documents\Projects\basketball\h2h"
 # Load the data
 lines_df = pd.read_csv(lines_path)
 gamelogs_df = pd.read_csv(gamelogs_path)
+gamelogs_df['Date'] = pd.to_datetime(gamelogs_df['Date'])
+gamelogs_df = gamelogs_df.sort_values(by='Date')
 
 # Chart.js template for bar chart with betting line overlay and filter controls
 chart_script_template = """
@@ -45,6 +47,15 @@ chart_script_template = """
     
     <canvas id="{stat}_{game_id}_{betting_line_id}_chart" class="barChart"></canvas>
     
+    <div class="filter-buttons">
+        <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 5)">L5</button>
+        <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 10)">L10 Games</button>
+        <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 20)">L20 Games</button>
+        <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2023-24')">2023-24</button>
+        <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2024-25')">2024-25</button>
+        <button onclick="clearFilters('{stat}', '{game_id}', '{betting_line_id}')" class="clear-chart-filters">Clear Filters</button>
+    </div>
+    
     <div class="slider-container">
         <div id="line-slider">
             <label for="{stat}_{game_id}_{betting_line_id}_lineSlider">Change Line:</label>
@@ -53,7 +64,6 @@ chart_script_template = """
         </div>
         <div class="chartButtons">
             <button onclick="resetLine('{stat}', '{game_id}', '{betting_line_id}')" class="reset-line-btn">Reset Line</button>
-            <button onclick="clearFilters('{stat}', '{game_id}', '{betting_line_id}')" class="clear-chart-filters">Clear Filters</button>
         </div>
     </div>
 </div>
@@ -100,18 +110,24 @@ for filename in os.listdir(html_dir):
 
             
             # Filter past game data for this stat
-            stat_data = player_gamelogs[['Date', 'Opp', 'Is_Home', stat]].dropna()
+            stat_data = player_gamelogs[['Date', 'Opp', 'Is_Home', 'Season', stat]].dropna()
             
             # Format x-axis labels and values for JavaScript
             chart_data = [
-                {"date": row["Date"], "opponent": row["Opp"], "location": "home" if row["Is_Home"] == 1 else "away", "stat": row[stat]}
+                {
+                    "date": row["Date"].strftime("%Y-%m-%d"),
+                    "opponent": row["Opp"], 
+                    "location": "home" if row["Is_Home"] == 1 else "away", 
+                    "stat": row[stat],
+                    "season": row["Season"]
+                }
                 for _, row in stat_data.iterrows()
             ]
             
             chart_data.sort(key=lambda x: x["date"])
             
             # Generate unique team options for the dropdown
-            unique_teams = stat_data['Opp'].unique()
+            unique_teams = sorted(player_gamelogs['Opp'].unique(), key=lambda x: x.lower())
             team_options = "\n".join([f'<option value="{team}">{team}</option>' for team in unique_teams])
             
             # Generate the chart script

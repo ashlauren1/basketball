@@ -76,6 +76,71 @@ def create_player_directory(roster_data, output_file_path):
             rows.forEach(row => table.querySelector("tbody").appendChild(row));
         }
     });
+    
+        document.addEventListener("DOMContentLoaded", async function () {
+            const searchBar = document.getElementById("search-bar");
+            const searchResults = document.getElementById("search-results");
+
+            let playerLinks = {};
+            let teamLinks = {};
+
+            // Load players and teams data from JSON files
+            async function loadLinks() {
+                playerLinks = await fetch('players.json').then(response => response.json());
+                teamLinks = await fetch('teams.json').then(response => response.json());
+            }
+
+            await loadLinks();  // Ensure links are loaded before searching
+
+            // Filter data and show suggestions based on input
+            function updateSuggestions() {
+                const query = searchBar.value.trim().toLowerCase();
+                searchResults.innerHTML = ""; // Clear previous results
+
+                if (query === "") return;
+
+                // Combine players and teams for search
+                const combinedLinks = { ...playerLinks, ...teamLinks };
+                const matchingEntries = Object.entries(combinedLinks)
+                    .filter(([name]) => name.includes(query))  // Matches on both name and ID
+                    .slice(0, 5); // Limit to top 5
+
+                matchingEntries.forEach(([name, url]) => {
+                    const resultItem = document.createElement("div");
+                    resultItem.classList.add("suggestion");
+
+                    // Proper case for names
+                    resultItem.textContent = name.split(" ")
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                        .join(" ");
+
+                    resultItem.addEventListener("click", () => {
+                        window.open(url, "_blank");
+                    });
+                    searchResults.appendChild(resultItem);
+                });
+
+                if (matchingEntries.length > 0) {
+                    searchResults.style.display = "block"; // Show results if matches are found
+                } else {
+                    const noResultItem = document.createElement("div");
+                    noResultItem.classList.add("no-result");
+                    noResultItem.textContent = "No results found.";
+                    searchResults.appendChild(noResultItem);
+                    searchResults.style.display = "block";
+                }
+            }
+        
+        document.addEventListener("click", function(event) {
+            if (!searchContainer.contains(event.target)) {
+                searchResults.style.display = "none";
+            }
+        });
+
+        // Add event listener to search bar
+        searchBar.addEventListener("input", updateSuggestions);
+    });
+    
     </script>
 
     </head>
@@ -85,7 +150,13 @@ def create_player_directory(roster_data, output_file_path):
             <a href="/basketball/players/">Players</a>
             <a href="/basketball/boxscores/">Box Scores</a>
             <a href="/basketball/teams/">Teams</a>
+            <a href="https://ashlauren1.github.io/hockey/">Hockey</a>
         </div>    
+        <div id="search-container">
+            <input type="text" id="search-bar" placeholder="Search for a player or team...">
+            <button id="search-button">Search</button>
+            <div id="search-results"></div>
+        </div>
         <div class="header">
         <h1>Player Directory</h1>
         </div>
@@ -316,6 +387,71 @@ def create_player_gamelog_pages(gamelogs_data, output_dir):
                 rows.forEach(row => tbody.appendChild(row));
             }}
         }});
+        
+        document.addEventListener("DOMContentLoaded", async function () {{
+            const searchBar = document.getElementById("search-bar");
+            const searchResults = document.getElementById("search-results");
+
+            let playerLinks = {{}};
+            let teamLinks = {{}};
+
+            // Load players and teams data from JSON files
+            async function loadLinks() {{
+                playerLinks = await fetch('players.json').then(response => response.json());
+                teamLinks = await fetch('teams.json').then(response => response.json());
+            }}
+
+            await loadLinks();  // Ensure links are loaded before searching
+
+            // Filter data and show suggestions based on input
+            function updateSuggestions() {{
+                const query = searchBar.value.trim().toLowerCase();
+                searchResults.innerHTML = ""; // Clear previous results
+
+                if (query === "") return;
+
+                // Combine players and teams for search
+                const combinedLinks = {{ ...playerLinks, ...teamLinks }};
+                const matchingEntries = Object.entries(combinedLinks)
+                    .filter(([name]) => name.includes(query))  // Matches on both name and ID
+                    .slice(0, 5); // Limit to top 5
+
+                matchingEntries.forEach(([name, url]) => {{
+                    const resultItem = document.createElement("div");
+                    resultItem.classList.add("suggestion");
+
+                    // Proper case for names
+                    resultItem.textContent = name.split(" ")
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                        .join(" ");
+
+                    resultItem.addEventListener("click", () => {{
+                        window.open(url, "_blank");
+                    }});
+                    searchResults.appendChild(resultItem);
+                }});
+
+                if (matchingEntries.length > 0) {{
+                    searchResults.style.display = "block"; // Show results if matches are found
+                }} else {{
+                    const noResultItem = document.createElement("div");
+                    noResultItem.classList.add("no-result");
+                    noResultItem.textContent = "No results found.";
+                    searchResults.appendChild(noResultItem);
+                    searchResults.style.display = "block";
+                }}
+            }}
+            
+            document.addEventListener("click", function(event) {{
+                if (!searchContainer.contains(event.target)) {{
+                    searchResults.style.display = "none";
+                }}
+            }});
+
+            // Add event listener to search bar
+            searchBar.addEventListener("input", updateSuggestions);
+    }});
+                
         </script>
         </head>
         <body>
@@ -324,7 +460,12 @@ def create_player_gamelog_pages(gamelogs_data, output_dir):
             <a href="/basketball/players/">Players</a>
             <a href="/basketball/boxscores/">Box Scores</a>
             <a href="/basketball/teams/">Teams</a>
-        </div>    
+            <a href="https://ashlauren1.github.io/hockey/">Hockey</a>
+        </div>
+        <div id="search-container">
+            <input type="text" id="search-bar" placeholder="Search for a player or team...">
+            <button id="search-button">Search</button>
+        <div id="search-results"></div>
         <div class="header">
         <h1>{player_name}</h1>
         </div>
@@ -340,11 +481,6 @@ def create_player_gamelog_pages(gamelogs_data, output_dir):
             <button id="clear-all-btn">Clear All</button>
         </span>
             <table id="player-table">
-            <colgroup>
-            <col style="width:70px">
-            <col style="width:94px">
-            <col span="17" style="width:48px">
-            </colgroup>
                 <thead>
                     <tr>
                         <th>Season</th>
@@ -381,7 +517,7 @@ def create_player_gamelog_pages(gamelogs_data, output_dir):
                 <tr>
                     <td style="text-align:left">{row['Season']}</td>
                     <td style="text-align:left"><a href="/basketball/boxscores/{row['GameID']}.html" target="_blank">{row['Date']}</a></td>
-                    <td><a href="/basketball/teams/{row['Team']}.html" target="_blank">{row['TeamID']}</a></td>
+                    <td><a href="/basketball/teams/{row['Team']}.html" target="_blank">{row['Team']}</a></td>
                     <td>{'vs' if row['Is_Home'] == 1 else '@'}</td>
                     <td><a href="/basketball/teams/{row['Opp']}.html" target="_blank">{row['Opp']}</a></td>
                     <td>{row['PTS']}</td>

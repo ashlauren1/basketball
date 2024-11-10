@@ -1,0 +1,693 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Kyle Lowry vs CHO - Previous Matchups</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="stylesheet.css" rel="Stylesheet"/>
+<link href="/basketball/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Roboto+Slab:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script>
+    document.addEventListener("DOMContentLoaded", async function () {
+        const searchBar = document.getElementById("search-bar");
+        const searchResults = document.getElementById("search-results");
+
+        let playerLinks = {};
+        let teamLinks = {};
+
+        // Load players and teams data from JSON files
+        async function loadLinks() {
+            playerLinks = await fetch('players.json').then(response => response.json());
+            teamLinks = await fetch('teams.json').then(response => response.json());
+        }
+
+        await loadLinks();  // Ensure links are loaded before searching
+
+        // Filter data and show suggestions based on input
+        function updateSuggestions() {
+            const query = searchBar.value.trim().toLowerCase();
+            searchResults.innerHTML = ""; // Clear previous results
+
+            if (query === "") return;
+
+            // Combine players and teams for search
+            const combinedLinks = { ...playerLinks, ...teamLinks };
+            const matchingEntries = Object.entries(combinedLinks)
+                .filter(([name]) => name.includes(query))  // Matches on both name and ID
+                .slice(0, 5); // Limit to top 5
+
+            matchingEntries.forEach(([name, url]) => {
+                const resultItem = document.createElement("div");
+                resultItem.classList.add("suggestion");
+
+                // Proper case for names
+                resultItem.textContent = name.split(" ")
+                    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                    .join(" ");
+
+                resultItem.addEventListener("click", () => {
+                    window.open(url, "_blank");
+                });
+                searchResults.appendChild(resultItem);
+            });
+
+            if (matchingEntries.length > 0) {
+                searchResults.style.display = "block"; // Show results if matches are found
+            } else {
+                const noResultItem = document.createElement("div");
+                noResultItem.classList.add("no-result");
+                noResultItem.textContent = "No results found.";
+                searchResults.appendChild(noResultItem);
+                searchResults.style.display = "block";
+            }
+        }
+        
+        document.addEventListener("click", function(event) {
+            if (!searchContainer.contains(event.target)) {
+                searchResults.style.display = "none";
+            }
+        });
+
+        // Add event listener to search bar
+        searchBar.addEventListener("input", updateSuggestions);
+});
+    </script>
+</head>
+<body>
+<div class="topnav">
+<a href="/basketball/" target="_blank">Projections</a>
+<a href="/basketball/players/" target="_blank">Players</a>
+<a href="/basketball/boxscores/" target="_blank">Box Scores</a>
+<a href="/basketball/teams/" target="_blank">Teams</a>
+<a _blank"="" href="https://ashlauren1.github.io/hockey/ target=">Hockey</a>
+</div>
+<div id="search-container">
+<input id="search-bar" placeholder="Search players and teams" type="text"/>
+<button id="search-button">Search</button>
+<div id="search-results"></div>
+</div>
+<div class="header">
+<h1>Kyle Lowry vs CHO - Previous Matchups</h1>
+</div>
+<div id="H2H-container">
+<div id="table-container">
+<table id="H2H-table">
+<caption class="caption"><a href="/basketball/players/lowryky01.html" target="_blank">Kyle Lowry</a> H2H Results</caption>
+<thead>
+<tr>
+<th>Date</th>
+<th>Team</th>
+<th></th>
+<th>Opp</th>
+<th>PTS</th>
+<th>REB</th>
+<th>AST</th>
+<th>BLK</th>
+<th>STL</th>
+<th>TOV</th>
+<th>MP</th>
+<th>OffREB</th>
+<th>DefREB</th>
+<th>FG</th>
+<th>FGA</th>
+<th>3P</th>
+<th>3PA</th>
+<th>FT</th>
+<th>FTA</th>
+<th>PF</th>
+<th>BLK+STL</th>
+<th>REB+AST</th>
+<th>PTS+AST</th>
+<th>PTS+REB</th>
+<th>PTS+REB+AST
+                <th>FANTASY</th>
+</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/basketball/boxscores/202311140CHO.html" target="_blank">11/14/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>14.72</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>['3PA']</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>4.2</td>
+</tr>
+<tr>
+<td><a href="/basketball/boxscores/202312110CHO.html" target="_blank">12/11/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>35.00</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>6</td>
+<td>1</td>
+<td>['3PA']</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>10</td>
+<td>8</td>
+<td>8</td>
+<td>13</td>
+<td>21.5</td>
+</tr>
+<tr>
+<td><a href="/basketball/boxscores/202312130MIA.html" target="_blank">12/13/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
+<td>17</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>24.02</td>
+<td>0</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>['3PA']</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>24.9</td>
+</tr>
+<tr>
+<td><a href="/basketball/boxscores/202401140MIA.html" target="_blank">01/14/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
+<td>0</td>
+<td>4</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>25.87</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>['3PA']</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>7</td>
+<td>3</td>
+<td>4</td>
+<td>7</td>
+<td>10.3</td>
+</tr>
+<tr>
+<td><a href="/basketball/boxscores/202403010PHI.html" target="_blank">03/01/2024</a></td>
+<td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
+<td>15</td>
+<td>6</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>36.45</td>
+<td>1</td>
+<td>5</td>
+<td>5</td>
+<td>9</td>
+<td>3</td>
+<td>['3PA']</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>16</td>
+<td>25</td>
+<td>21</td>
+<td>31</td>
+<td>35.2</td>
+</tr>
+<tr>
+<td><a href="/basketball/boxscores/202403160PHI.html" target="_blank">03/16/2024</a></td>
+<td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>28.88</td>
+<td>0</td>
+<td>6</td>
+<td>1</td>
+<td>5</td>
+<td>1</td>
+<td>['3PA']</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>13</td>
+<td>12</td>
+<td>11</td>
+<td>18</td>
+<td>30.7</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="chart-container">
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="PTS_202411100PHI_8_5_teamFilter">Opponent:</label>
+<select id="PTS_202411100PHI_8_5_teamFilter" onchange="applyFilters('PTS', '202411100PHI', '8_5')">
+<option value="all">All</option>
+<option value="ATL">ATL</option>
+<option value="BOS">BOS</option>
+<option value="BRK">BRK</option>
+<option value="CHI">CHI</option>
+<option value="CHO">CHO</option>
+<option value="CLE">CLE</option>
+<option value="DAL">DAL</option>
+<option value="DET">DET</option>
+<option value="HOU">HOU</option>
+<option value="IND">IND</option>
+<option value="LAC">LAC</option>
+<option value="LAL">LAL</option>
+<option value="MEM">MEM</option>
+<option value="MIA">MIA</option>
+<option value="MIL">MIL</option>
+<option value="MIN">MIN</option>
+<option value="NOP">NOP</option>
+<option value="NYK">NYK</option>
+<option value="OKC">OKC</option>
+<option value="ORL">ORL</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="SAC">SAC</option>
+<option value="TOR">TOR</option>
+<option value="WAS">WAS</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS_202411100PHI_8_5_homeAwayFilter">Home/Away:</label>
+<select id="PTS_202411100PHI_8_5_homeAwayFilter" onchange="applyFilters('PTS', '202411100PHI', '8_5')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS_202411100PHI_8_5_startDate">Start Date:</label>
+<input id="PTS_202411100PHI_8_5_startDate" onchange="applyFilters('PTS', '202411100PHI', '8_5')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="PTS_202411100PHI_8_5_endDate">End Date:</label>
+<input id="PTS_202411100PHI_8_5_endDate" onchange="applyFilters('PTS', '202411100PHI', '8_5')" type="date"/>
+</div>
+</div>
+<canvas class="barChart" id="PTS_202411100PHI_8_5_chart"></canvas>
+<div class="filter-buttons">
+<button onclick="filterGames('PTS', '202411100PHI', '8_5', 5)">L5</button>
+<button onclick="filterGames('PTS', '202411100PHI', '8_5', 10)">L10 Games</button>
+<button onclick="filterGames('PTS', '202411100PHI', '8_5', 20)">L20 Games</button>
+<button onclick="filterBySeason('PTS', '202411100PHI', '8_5', '2023-24')">2023-24</button>
+<button onclick="filterBySeason('PTS', '202411100PHI', '8_5', '2024-25')">2024-25</button>
+<button class="clear-chart-filters" onclick="clearFilters('PTS', '202411100PHI', '8_5')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="PTS_202411100PHI_8_5_lineSlider">Change Line:</label>
+<input id="PTS_202411100PHI_8_5_lineSlider" max="30" min="0" oninput="updateLine('PTS', '202411100PHI', '8_5', this.value)" step="0.25" type="range" value="8.5"/>
+<span id="PTS_202411100PHI_8_5_lineValue">8.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" onclick="resetLine('PTS', '202411100PHI', '8_5')">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="H2HChart.js"></script>
+<script>
+    const allData_PTS_202411100PHI_8_5 = [{'date': '2023-10-25', 'opponent': 'DET', 'location': 'home', 'stat': 0, 'season': '2023-24'}, {'date': '2023-10-27', 'opponent': 'BOS', 'location': 'away', 'stat': 13, 'season': '2023-24'}, {'date': '2023-10-28', 'opponent': 'MIN', 'location': 'away', 'stat': 3, 'season': '2023-24'}, {'date': '2023-10-30', 'opponent': 'MIL', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2023-11-01', 'opponent': 'BRK', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2023-11-03', 'opponent': 'WAS', 'location': 'home', 'stat': 3, 'season': '2023-24'}, {'date': '2023-11-06', 'opponent': 'LAL', 'location': 'home', 'stat': 5, 'season': '2023-24'}, {'date': '2023-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 17, 'season': '2023-24'}, {'date': '2023-11-11', 'opponent': 'ATL', 'location': 'away', 'stat': 17, 'season': '2023-24'}, {'date': '2023-11-14', 'opponent': 'CHO', 'location': 'away', 'stat': 0, 'season': '2023-24'}, {'date': '2023-11-16', 'opponent': 'BRK', 'location': 'home', 'stat': 3, 'season': '2023-24'}, {'date': '2023-11-18', 'opponent': 'CHI', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2023-11-20', 'opponent': 'CHI', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2023-11-22', 'opponent': 'CLE', 'location': 'away', 'stat': 28, 'season': '2023-24'}, {'date': '2023-11-24', 'opponent': 'NYK', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2023-11-25', 'opponent': 'BRK', 'location': 'away', 'stat': 9, 'season': '2023-24'}, {'date': '2023-11-28', 'opponent': 'MIL', 'location': 'home', 'stat': 21, 'season': '2023-24'}, {'date': '2023-11-30', 'opponent': 'IND', 'location': 'home', 'stat': 15, 'season': '2023-24'}, {'date': '2023-12-02', 'opponent': 'IND', 'location': 'home', 'stat': 4, 'season': '2023-24'}, {'date': '2023-12-06', 'opponent': 'TOR', 'location': 'away', 'stat': 3, 'season': '2023-24'}, {'date': '2023-12-08', 'opponent': 'CLE', 'location': 'home', 'stat': 17, 'season': '2023-24'}, {'date': '2023-12-11', 'opponent': 'CHO', 'location': 'away', 'stat': 3, 'season': '2023-24'}, {'date': '2023-12-13', 'opponent': 'CHO', 'location': 'home', 'stat': 17, 'season': '2023-24'}, {'date': '2023-12-14', 'opponent': 'CHI', 'location': 'home', 'stat': 17, 'season': '2023-24'}, {'date': '2023-12-16', 'opponent': 'CHI', 'location': 'home', 'stat': 10, 'season': '2023-24'}, {'date': '2023-12-20', 'opponent': 'ORL', 'location': 'away', 'stat': 3, 'season': '2023-24'}, {'date': '2023-12-22', 'opponent': 'ATL', 'location': 'home', 'stat': 3, 'season': '2023-24'}, {'date': '2023-12-25', 'opponent': 'PHI', 'location': 'home', 'stat': 12, 'season': '2023-24'}, {'date': '2024-01-01', 'opponent': 'LAC', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2024-01-03', 'opponent': 'LAL', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2024-01-05', 'opponent': 'PHO', 'location': 'away', 'stat': 6, 'season': '2023-24'}, {'date': '2024-01-08', 'opponent': 'HOU', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2024-01-14', 'opponent': 'CHO', 'location': 'home', 'stat': 0, 'season': '2023-24'}, {'date': '2024-01-15', 'opponent': 'BRK', 'location': 'away', 'stat': 2, 'season': '2023-24'}, {'date': '2024-01-17', 'opponent': 'TOR', 'location': 'away', 'stat': 4, 'season': '2023-24'}, {'date': '2024-01-19', 'opponent': 'ATL', 'location': 'home', 'stat': 2, 'season': '2023-24'}, {'date': '2024-01-21', 'opponent': 'ORL', 'location': 'away', 'stat': 2, 'season': '2023-24'}, {'date': '2024-02-22', 'opponent': 'NYK', 'location': 'home', 'stat': 11, 'season': '2023-24'}, {'date': '2024-02-25', 'opponent': 'MIL', 'location': 'home', 'stat': 3, 'season': '2023-24'}, {'date': '2024-02-27', 'opponent': 'BOS', 'location': 'away', 'stat': 3, 'season': '2023-24'}, {'date': '2024-03-01', 'opponent': 'CHO', 'location': 'home', 'stat': 15, 'season': '2023-24'}, {'date': '2024-03-03', 'opponent': 'DAL', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2024-03-05', 'opponent': 'BRK', 'location': 'away', 'stat': 14, 'season': '2023-24'}, {'date': '2024-03-08', 'opponent': 'NOP', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2024-03-10', 'opponent': 'NYK', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2024-03-12', 'opponent': 'NYK', 'location': 'away', 'stat': 2, 'season': '2023-24'}, {'date': '2024-03-14', 'opponent': 'MIL', 'location': 'away', 'stat': 12, 'season': '2023-24'}, {'date': '2024-03-16', 'opponent': 'CHO', 'location': 'home', 'stat': 5, 'season': '2023-24'}, {'date': '2024-03-18', 'opponent': 'MIA', 'location': 'home', 'stat': 16, 'season': '2023-24'}, {'date': '2024-03-20', 'opponent': 'PHO', 'location': 'away', 'stat': 5, 'season': '2023-24'}, {'date': '2024-03-22', 'opponent': 'LAL', 'location': 'away', 'stat': 5, 'season': '2023-24'}, {'date': '2024-03-25', 'opponent': 'SAC', 'location': 'away', 'stat': 3, 'season': '2023-24'}, {'date': '2024-03-27', 'opponent': 'LAC', 'location': 'home', 'stat': 7, 'season': '2023-24'}, {'date': '2024-03-29', 'opponent': 'CLE', 'location': 'away', 'stat': 23, 'season': '2023-24'}, {'date': '2024-03-31', 'opponent': 'TOR', 'location': 'away', 'stat': 11, 'season': '2023-24'}, {'date': '2024-04-02', 'opponent': 'OKC', 'location': 'home', 'stat': 4, 'season': '2023-24'}, {'date': '2024-04-04', 'opponent': 'MIA', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2024-04-06', 'opponent': 'MEM', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2024-04-12', 'opponent': 'ORL', 'location': 'home', 'stat': 7, 'season': '2023-24'}, {'date': '2024-04-14', 'opponent': 'BRK', 'location': 'home', 'stat': 0, 'season': '2023-24'}, {'date': '2024-10-23', 'opponent': 'MIL', 'location': 'home', 'stat': 13, 'season': '2024-25'}, {'date': '2024-10-25', 'opponent': 'TOR', 'location': 'away', 'stat': 14, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'IND', 'location': 'away', 'stat': 6, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'DET', 'location': 'home', 'stat': 3, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MEM', 'location': 'home', 'stat': 10, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'PHO', 'location': 'away', 'stat': 13, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'LAC', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'LAL', 'location': 'away', 'stat': 5, 'season': '2024-25'}];
+    initializeChart("PTS", "202411100PHI", "8_5", allData_PTS_202411100PHI_8_5, 8.5);
+</script>
+
+<div class="chart-container">
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="PTS+REB+AST_202411100PHI_16_5_teamFilter">Opponent:</label>
+<select id="PTS+REB+AST_202411100PHI_16_5_teamFilter" onchange="applyFilters('PTS+REB+AST', '202411100PHI', '16_5')">
+<option value="all">All</option>
+<option value="ATL">ATL</option>
+<option value="BOS">BOS</option>
+<option value="BRK">BRK</option>
+<option value="CHI">CHI</option>
+<option value="CHO">CHO</option>
+<option value="CLE">CLE</option>
+<option value="DAL">DAL</option>
+<option value="DET">DET</option>
+<option value="HOU">HOU</option>
+<option value="IND">IND</option>
+<option value="LAC">LAC</option>
+<option value="LAL">LAL</option>
+<option value="MEM">MEM</option>
+<option value="MIA">MIA</option>
+<option value="MIL">MIL</option>
+<option value="MIN">MIN</option>
+<option value="NOP">NOP</option>
+<option value="NYK">NYK</option>
+<option value="OKC">OKC</option>
+<option value="ORL">ORL</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="SAC">SAC</option>
+<option value="TOR">TOR</option>
+<option value="WAS">WAS</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS+REB+AST_202411100PHI_16_5_homeAwayFilter">Home/Away:</label>
+<select id="PTS+REB+AST_202411100PHI_16_5_homeAwayFilter" onchange="applyFilters('PTS+REB+AST', '202411100PHI', '16_5')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS+REB+AST_202411100PHI_16_5_startDate">Start Date:</label>
+<input id="PTS+REB+AST_202411100PHI_16_5_startDate" onchange="applyFilters('PTS+REB+AST', '202411100PHI', '16_5')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="PTS+REB+AST_202411100PHI_16_5_endDate">End Date:</label>
+<input id="PTS+REB+AST_202411100PHI_16_5_endDate" onchange="applyFilters('PTS+REB+AST', '202411100PHI', '16_5')" type="date"/>
+</div>
+</div>
+<canvas class="barChart" id="PTS+REB+AST_202411100PHI_16_5_chart"></canvas>
+<div class="filter-buttons">
+<button onclick="filterGames('PTS+REB+AST', '202411100PHI', '16_5', 5)">L5</button>
+<button onclick="filterGames('PTS+REB+AST', '202411100PHI', '16_5', 10)">L10 Games</button>
+<button onclick="filterGames('PTS+REB+AST', '202411100PHI', '16_5', 20)">L20 Games</button>
+<button onclick="filterBySeason('PTS+REB+AST', '202411100PHI', '16_5', '2023-24')">2023-24</button>
+<button onclick="filterBySeason('PTS+REB+AST', '202411100PHI', '16_5', '2024-25')">2024-25</button>
+<button class="clear-chart-filters" onclick="clearFilters('PTS+REB+AST', '202411100PHI', '16_5')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="PTS+REB+AST_202411100PHI_16_5_lineSlider">Change Line:</label>
+<input id="PTS+REB+AST_202411100PHI_16_5_lineSlider" max="30" min="0" oninput="updateLine('PTS+REB+AST', '202411100PHI', '16_5', this.value)" step="0.25" type="range" value="16.5"/>
+<span id="PTS+REB+AST_202411100PHI_16_5_lineValue">16.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" onclick="resetLine('PTS+REB+AST', '202411100PHI', '16_5')">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="H2HChart.js"></script>
+<script>
+    const allData_PTS+REB+AST_202411100PHI_16_5 = [{'date': '2023-10-25', 'opponent': 'DET', 'location': 'home', 'stat': 4, 'season': '2023-24'}, {'date': '2023-10-27', 'opponent': 'BOS', 'location': 'away', 'stat': 26, 'season': '2023-24'}, {'date': '2023-10-28', 'opponent': 'MIN', 'location': 'away', 'stat': 14, 'season': '2023-24'}, {'date': '2023-10-30', 'opponent': 'MIL', 'location': 'away', 'stat': 16, 'season': '2023-24'}, {'date': '2023-11-01', 'opponent': 'BRK', 'location': 'home', 'stat': 12, 'season': '2023-24'}, {'date': '2023-11-03', 'opponent': 'WAS', 'location': 'home', 'stat': 13, 'season': '2023-24'}, {'date': '2023-11-06', 'opponent': 'LAL', 'location': 'home', 'stat': 14, 'season': '2023-24'}, {'date': '2023-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 37, 'season': '2023-24'}, {'date': '2023-11-11', 'opponent': 'ATL', 'location': 'away', 'stat': 23, 'season': '2023-24'}, {'date': '2023-11-14', 'opponent': 'CHO', 'location': 'away', 'stat': 3, 'season': '2023-24'}, {'date': '2023-11-16', 'opponent': 'BRK', 'location': 'home', 'stat': 9, 'season': '2023-24'}, {'date': '2023-11-18', 'opponent': 'CHI', 'location': 'away', 'stat': 16, 'season': '2023-24'}, {'date': '2023-11-20', 'opponent': 'CHI', 'location': 'away', 'stat': 19, 'season': '2023-24'}, {'date': '2023-11-22', 'opponent': 'CLE', 'location': 'away', 'stat': 32, 'season': '2023-24'}, {'date': '2023-11-24', 'opponent': 'NYK', 'location': 'away', 'stat': 20, 'season': '2023-24'}, {'date': '2023-11-25', 'opponent': 'BRK', 'location': 'away', 'stat': 16, 'season': '2023-24'}, {'date': '2023-11-28', 'opponent': 'MIL', 'location': 'home', 'stat': 31, 'season': '2023-24'}, {'date': '2023-11-30', 'opponent': 'IND', 'location': 'home', 'stat': 21, 'season': '2023-24'}, {'date': '2023-12-02', 'opponent': 'IND', 'location': 'home', 'stat': 14, 'season': '2023-24'}, {'date': '2023-12-06', 'opponent': 'TOR', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2023-12-08', 'opponent': 'CLE', 'location': 'home', 'stat': 24, 'season': '2023-24'}, {'date': '2023-12-11', 'opponent': 'CHO', 'location': 'away', 'stat': 13, 'season': '2023-24'}, {'date': '2023-12-13', 'opponent': 'CHO', 'location': 'home', 'stat': 20, 'season': '2023-24'}, {'date': '2023-12-14', 'opponent': 'CHI', 'location': 'home', 'stat': 23, 'season': '2023-24'}, {'date': '2023-12-16', 'opponent': 'CHI', 'location': 'home', 'stat': 20, 'season': '2023-24'}, {'date': '2023-12-20', 'opponent': 'ORL', 'location': 'away', 'stat': 5, 'season': '2023-24'}, {'date': '2023-12-22', 'opponent': 'ATL', 'location': 'home', 'stat': 10, 'season': '2023-24'}, {'date': '2023-12-25', 'opponent': 'PHI', 'location': 'home', 'stat': 17, 'season': '2023-24'}, {'date': '2024-01-01', 'opponent': 'LAC', 'location': 'away', 'stat': 12, 'season': '2023-24'}, {'date': '2024-01-03', 'opponent': 'LAL', 'location': 'away', 'stat': 19, 'season': '2023-24'}, {'date': '2024-01-05', 'opponent': 'PHO', 'location': 'away', 'stat': 13, 'season': '2023-24'}, {'date': '2024-01-08', 'opponent': 'HOU', 'location': 'home', 'stat': 10, 'season': '2023-24'}, {'date': '2024-01-14', 'opponent': 'CHO', 'location': 'home', 'stat': 7, 'season': '2023-24'}, {'date': '2024-01-15', 'opponent': 'BRK', 'location': 'away', 'stat': 11, 'season': '2023-24'}, {'date': '2024-01-17', 'opponent': 'TOR', 'location': 'away', 'stat': 9, 'season': '2023-24'}, {'date': '2024-01-19', 'opponent': 'ATL', 'location': 'home', 'stat': 9, 'season': '2023-24'}, {'date': '2024-01-21', 'opponent': 'ORL', 'location': 'away', 'stat': 7, 'season': '2023-24'}, {'date': '2024-02-22', 'opponent': 'NYK', 'location': 'home', 'stat': 20, 'season': '2023-24'}, {'date': '2024-02-25', 'opponent': 'MIL', 'location': 'home', 'stat': 8, 'season': '2023-24'}, {'date': '2024-02-27', 'opponent': 'BOS', 'location': 'away', 'stat': 9, 'season': '2023-24'}, {'date': '2024-03-01', 'opponent': 'CHO', 'location': 'home', 'stat': 31, 'season': '2023-24'}, {'date': '2024-03-03', 'opponent': 'DAL', 'location': 'away', 'stat': 19, 'season': '2023-24'}, {'date': '2024-03-05', 'opponent': 'BRK', 'location': 'away', 'stat': 21, 'season': '2023-24'}, {'date': '2024-03-08', 'opponent': 'NOP', 'location': 'home', 'stat': 16, 'season': '2023-24'}, {'date': '2024-03-10', 'opponent': 'NYK', 'location': 'away', 'stat': 13, 'season': '2023-24'}, {'date': '2024-03-12', 'opponent': 'NYK', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2024-03-14', 'opponent': 'MIL', 'location': 'away', 'stat': 14, 'season': '2023-24'}, {'date': '2024-03-16', 'opponent': 'CHO', 'location': 'home', 'stat': 18, 'season': '2023-24'}, {'date': '2024-03-18', 'opponent': 'MIA', 'location': 'home', 'stat': 21, 'season': '2023-24'}, {'date': '2024-03-20', 'opponent': 'PHO', 'location': 'away', 'stat': 15, 'season': '2023-24'}, {'date': '2024-03-22', 'opponent': 'LAL', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2024-03-25', 'opponent': 'SAC', 'location': 'away', 'stat': 6, 'season': '2023-24'}, {'date': '2024-03-27', 'opponent': 'LAC', 'location': 'home', 'stat': 8, 'season': '2023-24'}, {'date': '2024-03-29', 'opponent': 'CLE', 'location': 'away', 'stat': 32, 'season': '2023-24'}, {'date': '2024-03-31', 'opponent': 'TOR', 'location': 'away', 'stat': 22, 'season': '2023-24'}, {'date': '2024-04-02', 'opponent': 'OKC', 'location': 'home', 'stat': 9, 'season': '2023-24'}, {'date': '2024-04-04', 'opponent': 'MIA', 'location': 'away', 'stat': 19, 'season': '2023-24'}, {'date': '2024-04-06', 'opponent': 'MEM', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2024-04-12', 'opponent': 'ORL', 'location': 'home', 'stat': 12, 'season': '2023-24'}, {'date': '2024-04-14', 'opponent': 'BRK', 'location': 'home', 'stat': 12, 'season': '2023-24'}, {'date': '2024-10-23', 'opponent': 'MIL', 'location': 'home', 'stat': 23, 'season': '2024-25'}, {'date': '2024-10-25', 'opponent': 'TOR', 'location': 'away', 'stat': 17, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'IND', 'location': 'away', 'stat': 9, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'DET', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MEM', 'location': 'home', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'PHO', 'location': 'away', 'stat': 22, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'LAC', 'location': 'away', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'LAL', 'location': 'away', 'stat': 14, 'season': '2024-25'}];
+    initializeChart("PTS+REB+AST", "202411100PHI", "16_5", allData_PTS+REB+AST_202411100PHI_16_5, 16.5);
+</script>
+
+<div class="chart-container">
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="PTS+REB_202411100PHI_11_5_teamFilter">Opponent:</label>
+<select id="PTS+REB_202411100PHI_11_5_teamFilter" onchange="applyFilters('PTS+REB', '202411100PHI', '11_5')">
+<option value="all">All</option>
+<option value="ATL">ATL</option>
+<option value="BOS">BOS</option>
+<option value="BRK">BRK</option>
+<option value="CHI">CHI</option>
+<option value="CHO">CHO</option>
+<option value="CLE">CLE</option>
+<option value="DAL">DAL</option>
+<option value="DET">DET</option>
+<option value="HOU">HOU</option>
+<option value="IND">IND</option>
+<option value="LAC">LAC</option>
+<option value="LAL">LAL</option>
+<option value="MEM">MEM</option>
+<option value="MIA">MIA</option>
+<option value="MIL">MIL</option>
+<option value="MIN">MIN</option>
+<option value="NOP">NOP</option>
+<option value="NYK">NYK</option>
+<option value="OKC">OKC</option>
+<option value="ORL">ORL</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="SAC">SAC</option>
+<option value="TOR">TOR</option>
+<option value="WAS">WAS</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS+REB_202411100PHI_11_5_homeAwayFilter">Home/Away:</label>
+<select id="PTS+REB_202411100PHI_11_5_homeAwayFilter" onchange="applyFilters('PTS+REB', '202411100PHI', '11_5')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS+REB_202411100PHI_11_5_startDate">Start Date:</label>
+<input id="PTS+REB_202411100PHI_11_5_startDate" onchange="applyFilters('PTS+REB', '202411100PHI', '11_5')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="PTS+REB_202411100PHI_11_5_endDate">End Date:</label>
+<input id="PTS+REB_202411100PHI_11_5_endDate" onchange="applyFilters('PTS+REB', '202411100PHI', '11_5')" type="date"/>
+</div>
+</div>
+<canvas class="barChart" id="PTS+REB_202411100PHI_11_5_chart"></canvas>
+<div class="filter-buttons">
+<button onclick="filterGames('PTS+REB', '202411100PHI', '11_5', 5)">L5</button>
+<button onclick="filterGames('PTS+REB', '202411100PHI', '11_5', 10)">L10 Games</button>
+<button onclick="filterGames('PTS+REB', '202411100PHI', '11_5', 20)">L20 Games</button>
+<button onclick="filterBySeason('PTS+REB', '202411100PHI', '11_5', '2023-24')">2023-24</button>
+<button onclick="filterBySeason('PTS+REB', '202411100PHI', '11_5', '2024-25')">2024-25</button>
+<button class="clear-chart-filters" onclick="clearFilters('PTS+REB', '202411100PHI', '11_5')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="PTS+REB_202411100PHI_11_5_lineSlider">Change Line:</label>
+<input id="PTS+REB_202411100PHI_11_5_lineSlider" max="30" min="0" oninput="updateLine('PTS+REB', '202411100PHI', '11_5', this.value)" step="0.25" type="range" value="11.5"/>
+<span id="PTS+REB_202411100PHI_11_5_lineValue">11.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" onclick="resetLine('PTS+REB', '202411100PHI', '11_5')">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="H2HChart.js"></script>
+<script>
+    const allData_PTS+REB_202411100PHI_11_5 = [{'date': '2023-10-25', 'opponent': 'DET', 'location': 'home', 'stat': 2, 'season': '2023-24'}, {'date': '2023-10-27', 'opponent': 'BOS', 'location': 'away', 'stat': 21, 'season': '2023-24'}, {'date': '2023-10-28', 'opponent': 'MIN', 'location': 'away', 'stat': 7, 'season': '2023-24'}, {'date': '2023-10-30', 'opponent': 'MIL', 'location': 'away', 'stat': 12, 'season': '2023-24'}, {'date': '2023-11-01', 'opponent': 'BRK', 'location': 'home', 'stat': 9, 'season': '2023-24'}, {'date': '2023-11-03', 'opponent': 'WAS', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2023-11-06', 'opponent': 'LAL', 'location': 'home', 'stat': 9, 'season': '2023-24'}, {'date': '2023-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 28, 'season': '2023-24'}, {'date': '2023-11-11', 'opponent': 'ATL', 'location': 'away', 'stat': 19, 'season': '2023-24'}, {'date': '2023-11-14', 'opponent': 'CHO', 'location': 'away', 'stat': 1, 'season': '2023-24'}, {'date': '2023-11-16', 'opponent': 'BRK', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2023-11-18', 'opponent': 'CHI', 'location': 'away', 'stat': 11, 'season': '2023-24'}, {'date': '2023-11-20', 'opponent': 'CHI', 'location': 'away', 'stat': 13, 'season': '2023-24'}, {'date': '2023-11-22', 'opponent': 'CLE', 'location': 'away', 'stat': 29, 'season': '2023-24'}, {'date': '2023-11-24', 'opponent': 'NYK', 'location': 'away', 'stat': 18, 'season': '2023-24'}, {'date': '2023-11-25', 'opponent': 'BRK', 'location': 'away', 'stat': 12, 'season': '2023-24'}, {'date': '2023-11-28', 'opponent': 'MIL', 'location': 'home', 'stat': 25, 'season': '2023-24'}, {'date': '2023-11-30', 'opponent': 'IND', 'location': 'home', 'stat': 18, 'season': '2023-24'}, {'date': '2023-12-02', 'opponent': 'IND', 'location': 'home', 'stat': 12, 'season': '2023-24'}, {'date': '2023-12-06', 'opponent': 'TOR', 'location': 'away', 'stat': 7, 'season': '2023-24'}, {'date': '2023-12-08', 'opponent': 'CLE', 'location': 'home', 'stat': 19, 'season': '2023-24'}, {'date': '2023-12-11', 'opponent': 'CHO', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2023-12-13', 'opponent': 'CHO', 'location': 'home', 'stat': 19, 'season': '2023-24'}, {'date': '2023-12-14', 'opponent': 'CHI', 'location': 'home', 'stat': 20, 'season': '2023-24'}, {'date': '2023-12-16', 'opponent': 'CHI', 'location': 'home', 'stat': 13, 'season': '2023-24'}, {'date': '2023-12-20', 'opponent': 'ORL', 'location': 'away', 'stat': 3, 'season': '2023-24'}, {'date': '2023-12-22', 'opponent': 'ATL', 'location': 'home', 'stat': 7, 'season': '2023-24'}, {'date': '2023-12-25', 'opponent': 'PHI', 'location': 'home', 'stat': 13, 'season': '2023-24'}, {'date': '2024-01-01', 'opponent': 'LAC', 'location': 'away', 'stat': 9, 'season': '2023-24'}, {'date': '2024-01-03', 'opponent': 'LAL', 'location': 'away', 'stat': 13, 'season': '2023-24'}, {'date': '2024-01-05', 'opponent': 'PHO', 'location': 'away', 'stat': 9, 'season': '2023-24'}, {'date': '2024-01-08', 'opponent': 'HOU', 'location': 'home', 'stat': 9, 'season': '2023-24'}, {'date': '2024-01-14', 'opponent': 'CHO', 'location': 'home', 'stat': 4, 'season': '2023-24'}, {'date': '2024-01-15', 'opponent': 'BRK', 'location': 'away', 'stat': 6, 'season': '2023-24'}, {'date': '2024-01-17', 'opponent': 'TOR', 'location': 'away', 'stat': 6, 'season': '2023-24'}, {'date': '2024-01-19', 'opponent': 'ATL', 'location': 'home', 'stat': 5, 'season': '2023-24'}, {'date': '2024-01-21', 'opponent': 'ORL', 'location': 'away', 'stat': 4, 'season': '2023-24'}, {'date': '2024-02-22', 'opponent': 'NYK', 'location': 'home', 'stat': 15, 'season': '2023-24'}, {'date': '2024-02-25', 'opponent': 'MIL', 'location': 'home', 'stat': 5, 'season': '2023-24'}, {'date': '2024-02-27', 'opponent': 'BOS', 'location': 'away', 'stat': 5, 'season': '2023-24'}, {'date': '2024-03-01', 'opponent': 'CHO', 'location': 'home', 'stat': 21, 'season': '2023-24'}, {'date': '2024-03-03', 'opponent': 'DAL', 'location': 'away', 'stat': 12, 'season': '2023-24'}, {'date': '2024-03-05', 'opponent': 'BRK', 'location': 'away', 'stat': 16, 'season': '2023-24'}, {'date': '2024-03-08', 'opponent': 'NOP', 'location': 'home', 'stat': 9, 'season': '2023-24'}, {'date': '2024-03-10', 'opponent': 'NYK', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2024-03-12', 'opponent': 'NYK', 'location': 'away', 'stat': 4, 'season': '2023-24'}, {'date': '2024-03-14', 'opponent': 'MIL', 'location': 'away', 'stat': 14, 'season': '2023-24'}, {'date': '2024-03-16', 'opponent': 'CHO', 'location': 'home', 'stat': 11, 'season': '2023-24'}, {'date': '2024-03-18', 'opponent': 'MIA', 'location': 'home', 'stat': 20, 'season': '2023-24'}, {'date': '2024-03-20', 'opponent': 'PHO', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2024-03-22', 'opponent': 'LAL', 'location': 'away', 'stat': 7, 'season': '2023-24'}, {'date': '2024-03-25', 'opponent': 'SAC', 'location': 'away', 'stat': 5, 'season': '2023-24'}, {'date': '2024-03-27', 'opponent': 'LAC', 'location': 'home', 'stat': 7, 'season': '2023-24'}, {'date': '2024-03-29', 'opponent': 'CLE', 'location': 'away', 'stat': 26, 'season': '2023-24'}, {'date': '2024-03-31', 'opponent': 'TOR', 'location': 'away', 'stat': 12, 'season': '2023-24'}, {'date': '2024-04-02', 'opponent': 'OKC', 'location': 'home', 'stat': 5, 'season': '2023-24'}, {'date': '2024-04-04', 'opponent': 'MIA', 'location': 'away', 'stat': 14, 'season': '2023-24'}, {'date': '2024-04-06', 'opponent': 'MEM', 'location': 'away', 'stat': 9, 'season': '2023-24'}, {'date': '2024-04-12', 'opponent': 'ORL', 'location': 'home', 'stat': 10, 'season': '2023-24'}, {'date': '2024-04-14', 'opponent': 'BRK', 'location': 'home', 'stat': 4, 'season': '2023-24'}, {'date': '2024-10-23', 'opponent': 'MIL', 'location': 'home', 'stat': 17, 'season': '2024-25'}, {'date': '2024-10-25', 'opponent': 'TOR', 'location': 'away', 'stat': 15, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'IND', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'DET', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MEM', 'location': 'home', 'stat': 13, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'PHO', 'location': 'away', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'LAC', 'location': 'away', 'stat': 2, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'LAL', 'location': 'away', 'stat': 8, 'season': '2024-25'}];
+    initializeChart("PTS+REB", "202411100PHI", "11_5", allData_PTS+REB_202411100PHI_11_5, 11.5);
+</script>
+
+<div class="chart-container">
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="PTS+AST_202411100PHI_14_0_teamFilter">Opponent:</label>
+<select id="PTS+AST_202411100PHI_14_0_teamFilter" onchange="applyFilters('PTS+AST', '202411100PHI', '14_0')">
+<option value="all">All</option>
+<option value="ATL">ATL</option>
+<option value="BOS">BOS</option>
+<option value="BRK">BRK</option>
+<option value="CHI">CHI</option>
+<option value="CHO">CHO</option>
+<option value="CLE">CLE</option>
+<option value="DAL">DAL</option>
+<option value="DET">DET</option>
+<option value="HOU">HOU</option>
+<option value="IND">IND</option>
+<option value="LAC">LAC</option>
+<option value="LAL">LAL</option>
+<option value="MEM">MEM</option>
+<option value="MIA">MIA</option>
+<option value="MIL">MIL</option>
+<option value="MIN">MIN</option>
+<option value="NOP">NOP</option>
+<option value="NYK">NYK</option>
+<option value="OKC">OKC</option>
+<option value="ORL">ORL</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="SAC">SAC</option>
+<option value="TOR">TOR</option>
+<option value="WAS">WAS</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS+AST_202411100PHI_14_0_homeAwayFilter">Home/Away:</label>
+<select id="PTS+AST_202411100PHI_14_0_homeAwayFilter" onchange="applyFilters('PTS+AST', '202411100PHI', '14_0')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS+AST_202411100PHI_14_0_startDate">Start Date:</label>
+<input id="PTS+AST_202411100PHI_14_0_startDate" onchange="applyFilters('PTS+AST', '202411100PHI', '14_0')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="PTS+AST_202411100PHI_14_0_endDate">End Date:</label>
+<input id="PTS+AST_202411100PHI_14_0_endDate" onchange="applyFilters('PTS+AST', '202411100PHI', '14_0')" type="date"/>
+</div>
+</div>
+<canvas class="barChart" id="PTS+AST_202411100PHI_14_0_chart"></canvas>
+<div class="filter-buttons">
+<button onclick="filterGames('PTS+AST', '202411100PHI', '14_0', 5)">L5</button>
+<button onclick="filterGames('PTS+AST', '202411100PHI', '14_0', 10)">L10 Games</button>
+<button onclick="filterGames('PTS+AST', '202411100PHI', '14_0', 20)">L20 Games</button>
+<button onclick="filterBySeason('PTS+AST', '202411100PHI', '14_0', '2023-24')">2023-24</button>
+<button onclick="filterBySeason('PTS+AST', '202411100PHI', '14_0', '2024-25')">2024-25</button>
+<button class="clear-chart-filters" onclick="clearFilters('PTS+AST', '202411100PHI', '14_0')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="PTS+AST_202411100PHI_14_0_lineSlider">Change Line:</label>
+<input id="PTS+AST_202411100PHI_14_0_lineSlider" max="30" min="0" oninput="updateLine('PTS+AST', '202411100PHI', '14_0', this.value)" step="0.25" type="range" value="14.0"/>
+<span id="PTS+AST_202411100PHI_14_0_lineValue">14.0</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" onclick="resetLine('PTS+AST', '202411100PHI', '14_0')">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="H2HChart.js"></script>
+<script>
+    const allData_PTS+AST_202411100PHI_14_0 = [{'date': '2023-10-25', 'opponent': 'DET', 'location': 'home', 'stat': 2, 'season': '2023-24'}, {'date': '2023-10-27', 'opponent': 'BOS', 'location': 'away', 'stat': 18, 'season': '2023-24'}, {'date': '2023-10-28', 'opponent': 'MIN', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2023-10-30', 'opponent': 'MIL', 'location': 'away', 'stat': 12, 'season': '2023-24'}, {'date': '2023-11-01', 'opponent': 'BRK', 'location': 'home', 'stat': 9, 'season': '2023-24'}, {'date': '2023-11-03', 'opponent': 'WAS', 'location': 'home', 'stat': 10, 'season': '2023-24'}, {'date': '2023-11-06', 'opponent': 'LAL', 'location': 'home', 'stat': 10, 'season': '2023-24'}, {'date': '2023-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 26, 'season': '2023-24'}, {'date': '2023-11-11', 'opponent': 'ATL', 'location': 'away', 'stat': 21, 'season': '2023-24'}, {'date': '2023-11-14', 'opponent': 'CHO', 'location': 'away', 'stat': 2, 'season': '2023-24'}, {'date': '2023-11-16', 'opponent': 'BRK', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2023-11-18', 'opponent': 'CHI', 'location': 'away', 'stat': 13, 'season': '2023-24'}, {'date': '2023-11-20', 'opponent': 'CHI', 'location': 'away', 'stat': 14, 'season': '2023-24'}, {'date': '2023-11-22', 'opponent': 'CLE', 'location': 'away', 'stat': 31, 'season': '2023-24'}, {'date': '2023-11-24', 'opponent': 'NYK', 'location': 'away', 'stat': 12, 'season': '2023-24'}, {'date': '2023-11-25', 'opponent': 'BRK', 'location': 'away', 'stat': 13, 'season': '2023-24'}, {'date': '2023-11-28', 'opponent': 'MIL', 'location': 'home', 'stat': 27, 'season': '2023-24'}, {'date': '2023-11-30', 'opponent': 'IND', 'location': 'home', 'stat': 18, 'season': '2023-24'}, {'date': '2023-12-02', 'opponent': 'IND', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2023-12-06', 'opponent': 'TOR', 'location': 'away', 'stat': 6, 'season': '2023-24'}, {'date': '2023-12-08', 'opponent': 'CLE', 'location': 'home', 'stat': 22, 'season': '2023-24'}, {'date': '2023-12-11', 'opponent': 'CHO', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2023-12-13', 'opponent': 'CHO', 'location': 'home', 'stat': 18, 'season': '2023-24'}, {'date': '2023-12-14', 'opponent': 'CHI', 'location': 'home', 'stat': 20, 'season': '2023-24'}, {'date': '2023-12-16', 'opponent': 'CHI', 'location': 'home', 'stat': 17, 'season': '2023-24'}, {'date': '2023-12-20', 'opponent': 'ORL', 'location': 'away', 'stat': 5, 'season': '2023-24'}, {'date': '2023-12-22', 'opponent': 'ATL', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2023-12-25', 'opponent': 'PHI', 'location': 'home', 'stat': 16, 'season': '2023-24'}, {'date': '2024-01-01', 'opponent': 'LAC', 'location': 'away', 'stat': 11, 'season': '2023-24'}, {'date': '2024-01-03', 'opponent': 'LAL', 'location': 'away', 'stat': 16, 'season': '2023-24'}, {'date': '2024-01-05', 'opponent': 'PHO', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2024-01-08', 'opponent': 'HOU', 'location': 'home', 'stat': 7, 'season': '2023-24'}, {'date': '2024-01-14', 'opponent': 'CHO', 'location': 'home', 'stat': 3, 'season': '2023-24'}, {'date': '2024-01-15', 'opponent': 'BRK', 'location': 'away', 'stat': 7, 'season': '2023-24'}, {'date': '2024-01-17', 'opponent': 'TOR', 'location': 'away', 'stat': 7, 'season': '2023-24'}, {'date': '2024-01-19', 'opponent': 'ATL', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2024-01-21', 'opponent': 'ORL', 'location': 'away', 'stat': 5, 'season': '2023-24'}, {'date': '2024-02-22', 'opponent': 'NYK', 'location': 'home', 'stat': 16, 'season': '2023-24'}, {'date': '2024-02-25', 'opponent': 'MIL', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2024-02-27', 'opponent': 'BOS', 'location': 'away', 'stat': 7, 'season': '2023-24'}, {'date': '2024-03-01', 'opponent': 'CHO', 'location': 'home', 'stat': 25, 'season': '2023-24'}, {'date': '2024-03-03', 'opponent': 'DAL', 'location': 'away', 'stat': 15, 'season': '2023-24'}, {'date': '2024-03-05', 'opponent': 'BRK', 'location': 'away', 'stat': 19, 'season': '2023-24'}, {'date': '2024-03-08', 'opponent': 'NOP', 'location': 'home', 'stat': 13, 'season': '2023-24'}, {'date': '2024-03-10', 'opponent': 'NYK', 'location': 'away', 'stat': 11, 'season': '2023-24'}, {'date': '2024-03-12', 'opponent': 'NYK', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2024-03-14', 'opponent': 'MIL', 'location': 'away', 'stat': 12, 'season': '2023-24'}, {'date': '2024-03-16', 'opponent': 'CHO', 'location': 'home', 'stat': 12, 'season': '2023-24'}, {'date': '2024-03-18', 'opponent': 'MIA', 'location': 'home', 'stat': 17, 'season': '2023-24'}, {'date': '2024-03-20', 'opponent': 'PHO', 'location': 'away', 'stat': 12, 'season': '2023-24'}, {'date': '2024-03-22', 'opponent': 'LAL', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2024-03-25', 'opponent': 'SAC', 'location': 'away', 'stat': 4, 'season': '2023-24'}, {'date': '2024-03-27', 'opponent': 'LAC', 'location': 'home', 'stat': 8, 'season': '2023-24'}, {'date': '2024-03-29', 'opponent': 'CLE', 'location': 'away', 'stat': 29, 'season': '2023-24'}, {'date': '2024-03-31', 'opponent': 'TOR', 'location': 'away', 'stat': 21, 'season': '2023-24'}, {'date': '2024-04-02', 'opponent': 'OKC', 'location': 'home', 'stat': 8, 'season': '2023-24'}, {'date': '2024-04-04', 'opponent': 'MIA', 'location': 'away', 'stat': 13, 'season': '2023-24'}, {'date': '2024-04-06', 'opponent': 'MEM', 'location': 'away', 'stat': 9, 'season': '2023-24'}, {'date': '2024-04-12', 'opponent': 'ORL', 'location': 'home', 'stat': 9, 'season': '2023-24'}, {'date': '2024-04-14', 'opponent': 'BRK', 'location': 'home', 'stat': 8, 'season': '2023-24'}, {'date': '2024-10-23', 'opponent': 'MIL', 'location': 'home', 'stat': 19, 'season': '2024-25'}, {'date': '2024-10-25', 'opponent': 'TOR', 'location': 'away', 'stat': 16, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'IND', 'location': 'away', 'stat': 8, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'DET', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MEM', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'PHO', 'location': 'away', 'stat': 20, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'LAC', 'location': 'away', 'stat': 4, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'LAL', 'location': 'away', 'stat': 11, 'season': '2024-25'}];
+    initializeChart("PTS+AST", "202411100PHI", "14_0", allData_PTS+AST_202411100PHI_14_0, 14.0);
+</script>
+
+<div class="chart-container">
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="REB+AST_202411100PHI_8_5_teamFilter">Opponent:</label>
+<select id="REB+AST_202411100PHI_8_5_teamFilter" onchange="applyFilters('REB+AST', '202411100PHI', '8_5')">
+<option value="all">All</option>
+<option value="ATL">ATL</option>
+<option value="BOS">BOS</option>
+<option value="BRK">BRK</option>
+<option value="CHI">CHI</option>
+<option value="CHO">CHO</option>
+<option value="CLE">CLE</option>
+<option value="DAL">DAL</option>
+<option value="DET">DET</option>
+<option value="HOU">HOU</option>
+<option value="IND">IND</option>
+<option value="LAC">LAC</option>
+<option value="LAL">LAL</option>
+<option value="MEM">MEM</option>
+<option value="MIA">MIA</option>
+<option value="MIL">MIL</option>
+<option value="MIN">MIN</option>
+<option value="NOP">NOP</option>
+<option value="NYK">NYK</option>
+<option value="OKC">OKC</option>
+<option value="ORL">ORL</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="SAC">SAC</option>
+<option value="TOR">TOR</option>
+<option value="WAS">WAS</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="REB+AST_202411100PHI_8_5_homeAwayFilter">Home/Away:</label>
+<select id="REB+AST_202411100PHI_8_5_homeAwayFilter" onchange="applyFilters('REB+AST', '202411100PHI', '8_5')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="REB+AST_202411100PHI_8_5_startDate">Start Date:</label>
+<input id="REB+AST_202411100PHI_8_5_startDate" onchange="applyFilters('REB+AST', '202411100PHI', '8_5')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="REB+AST_202411100PHI_8_5_endDate">End Date:</label>
+<input id="REB+AST_202411100PHI_8_5_endDate" onchange="applyFilters('REB+AST', '202411100PHI', '8_5')" type="date"/>
+</div>
+</div>
+<canvas class="barChart" id="REB+AST_202411100PHI_8_5_chart"></canvas>
+<div class="filter-buttons">
+<button onclick="filterGames('REB+AST', '202411100PHI', '8_5', 5)">L5</button>
+<button onclick="filterGames('REB+AST', '202411100PHI', '8_5', 10)">L10 Games</button>
+<button onclick="filterGames('REB+AST', '202411100PHI', '8_5', 20)">L20 Games</button>
+<button onclick="filterBySeason('REB+AST', '202411100PHI', '8_5', '2023-24')">2023-24</button>
+<button onclick="filterBySeason('REB+AST', '202411100PHI', '8_5', '2024-25')">2024-25</button>
+<button class="clear-chart-filters" onclick="clearFilters('REB+AST', '202411100PHI', '8_5')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="REB+AST_202411100PHI_8_5_lineSlider">Change Line:</label>
+<input id="REB+AST_202411100PHI_8_5_lineSlider" max="30" min="0" oninput="updateLine('REB+AST', '202411100PHI', '8_5', this.value)" step="0.25" type="range" value="8.5"/>
+<span id="REB+AST_202411100PHI_8_5_lineValue">8.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" onclick="resetLine('REB+AST', '202411100PHI', '8_5')">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="H2HChart.js"></script>
+<script>
+    const allData_REB+AST_202411100PHI_8_5 = [{'date': '2023-10-25', 'opponent': 'DET', 'location': 'home', 'stat': 4, 'season': '2023-24'}, {'date': '2023-10-27', 'opponent': 'BOS', 'location': 'away', 'stat': 13, 'season': '2023-24'}, {'date': '2023-10-28', 'opponent': 'MIN', 'location': 'away', 'stat': 11, 'season': '2023-24'}, {'date': '2023-10-30', 'opponent': 'MIL', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2023-11-01', 'opponent': 'BRK', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2023-11-03', 'opponent': 'WAS', 'location': 'home', 'stat': 10, 'season': '2023-24'}, {'date': '2023-11-06', 'opponent': 'LAL', 'location': 'home', 'stat': 9, 'season': '2023-24'}, {'date': '2023-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 20, 'season': '2023-24'}, {'date': '2023-11-11', 'opponent': 'ATL', 'location': 'away', 'stat': 6, 'season': '2023-24'}, {'date': '2023-11-14', 'opponent': 'CHO', 'location': 'away', 'stat': 3, 'season': '2023-24'}, {'date': '2023-11-16', 'opponent': 'BRK', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2023-11-18', 'opponent': 'CHI', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2023-11-20', 'opponent': 'CHI', 'location': 'away', 'stat': 11, 'season': '2023-24'}, {'date': '2023-11-22', 'opponent': 'CLE', 'location': 'away', 'stat': 4, 'season': '2023-24'}, {'date': '2023-11-24', 'opponent': 'NYK', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2023-11-25', 'opponent': 'BRK', 'location': 'away', 'stat': 7, 'season': '2023-24'}, {'date': '2023-11-28', 'opponent': 'MIL', 'location': 'home', 'stat': 10, 'season': '2023-24'}, {'date': '2023-11-30', 'opponent': 'IND', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2023-12-02', 'opponent': 'IND', 'location': 'home', 'stat': 10, 'season': '2023-24'}, {'date': '2023-12-06', 'opponent': 'TOR', 'location': 'away', 'stat': 7, 'season': '2023-24'}, {'date': '2023-12-08', 'opponent': 'CLE', 'location': 'home', 'stat': 7, 'season': '2023-24'}, {'date': '2023-12-11', 'opponent': 'CHO', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2023-12-13', 'opponent': 'CHO', 'location': 'home', 'stat': 3, 'season': '2023-24'}, {'date': '2023-12-14', 'opponent': 'CHI', 'location': 'home', 'stat': 6, 'season': '2023-24'}, {'date': '2023-12-16', 'opponent': 'CHI', 'location': 'home', 'stat': 10, 'season': '2023-24'}, {'date': '2023-12-20', 'opponent': 'ORL', 'location': 'away', 'stat': 2, 'season': '2023-24'}, {'date': '2023-12-22', 'opponent': 'ATL', 'location': 'home', 'stat': 7, 'season': '2023-24'}, {'date': '2023-12-25', 'opponent': 'PHI', 'location': 'home', 'stat': 5, 'season': '2023-24'}, {'date': '2024-01-01', 'opponent': 'LAC', 'location': 'away', 'stat': 4, 'season': '2023-24'}, {'date': '2024-01-03', 'opponent': 'LAL', 'location': 'away', 'stat': 9, 'season': '2023-24'}, {'date': '2024-01-05', 'opponent': 'PHO', 'location': 'away', 'stat': 7, 'season': '2023-24'}, {'date': '2024-01-08', 'opponent': 'HOU', 'location': 'home', 'stat': 4, 'season': '2023-24'}, {'date': '2024-01-14', 'opponent': 'CHO', 'location': 'home', 'stat': 7, 'season': '2023-24'}, {'date': '2024-01-15', 'opponent': 'BRK', 'location': 'away', 'stat': 9, 'season': '2023-24'}, {'date': '2024-01-17', 'opponent': 'TOR', 'location': 'away', 'stat': 5, 'season': '2023-24'}, {'date': '2024-01-19', 'opponent': 'ATL', 'location': 'home', 'stat': 7, 'season': '2023-24'}, {'date': '2024-01-21', 'opponent': 'ORL', 'location': 'away', 'stat': 5, 'season': '2023-24'}, {'date': '2024-02-22', 'opponent': 'NYK', 'location': 'home', 'stat': 9, 'season': '2023-24'}, {'date': '2024-02-25', 'opponent': 'MIL', 'location': 'home', 'stat': 5, 'season': '2023-24'}, {'date': '2024-02-27', 'opponent': 'BOS', 'location': 'away', 'stat': 6, 'season': '2023-24'}, {'date': '2024-03-01', 'opponent': 'CHO', 'location': 'home', 'stat': 16, 'season': '2023-24'}, {'date': '2024-03-03', 'opponent': 'DAL', 'location': 'away', 'stat': 11, 'season': '2023-24'}, {'date': '2024-03-05', 'opponent': 'BRK', 'location': 'away', 'stat': 7, 'season': '2023-24'}, {'date': '2024-03-08', 'opponent': 'NOP', 'location': 'home', 'stat': 10, 'season': '2023-24'}, {'date': '2024-03-10', 'opponent': 'NYK', 'location': 'away', 'stat': 5, 'season': '2023-24'}, {'date': '2024-03-12', 'opponent': 'NYK', 'location': 'away', 'stat': 8, 'season': '2023-24'}, {'date': '2024-03-14', 'opponent': 'MIL', 'location': 'away', 'stat': 2, 'season': '2023-24'}, {'date': '2024-03-16', 'opponent': 'CHO', 'location': 'home', 'stat': 13, 'season': '2023-24'}, {'date': '2024-03-18', 'opponent': 'MIA', 'location': 'home', 'stat': 5, 'season': '2023-24'}, {'date': '2024-03-20', 'opponent': 'PHO', 'location': 'away', 'stat': 10, 'season': '2023-24'}, {'date': '2024-03-22', 'opponent': 'LAL', 'location': 'away', 'stat': 5, 'season': '2023-24'}, {'date': '2024-03-25', 'opponent': 'SAC', 'location': 'away', 'stat': 3, 'season': '2023-24'}, {'date': '2024-03-27', 'opponent': 'LAC', 'location': 'home', 'stat': 1, 'season': '2023-24'}, {'date': '2024-03-29', 'opponent': 'CLE', 'location': 'away', 'stat': 9, 'season': '2023-24'}, {'date': '2024-03-31', 'opponent': 'TOR', 'location': 'away', 'stat': 11, 'season': '2023-24'}, {'date': '2024-04-02', 'opponent': 'OKC', 'location': 'home', 'stat': 5, 'season': '2023-24'}, {'date': '2024-04-04', 'opponent': 'MIA', 'location': 'away', 'stat': 11, 'season': '2023-24'}, {'date': '2024-04-06', 'opponent': 'MEM', 'location': 'away', 'stat': 2, 'season': '2023-24'}, {'date': '2024-04-12', 'opponent': 'ORL', 'location': 'home', 'stat': 5, 'season': '2023-24'}, {'date': '2024-04-14', 'opponent': 'BRK', 'location': 'home', 'stat': 12, 'season': '2023-24'}, {'date': '2024-10-23', 'opponent': 'MIL', 'location': 'home', 'stat': 10, 'season': '2024-25'}, {'date': '2024-10-25', 'opponent': 'TOR', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'IND', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'DET', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MEM', 'location': 'home', 'stat': 4, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'PHO', 'location': 'away', 'stat': 9, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'LAC', 'location': 'away', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'LAL', 'location': 'away', 'stat': 9, 'season': '2024-25'}];
+    initializeChart("REB+AST", "202411100PHI", "8_5", allData_REB+AST_202411100PHI_8_5, 8.5);
+</script>
+
+</div>
+</body>
+</html>

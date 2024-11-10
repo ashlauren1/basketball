@@ -1,0 +1,658 @@
+Player Name,PlayerID,Team,Stat,Line
+RJ Barrett,barrerj01,TOR,turnovers,3.5
+Austin Reaves,reaveau01,LAL,blks+stls,1.5
+Anthony Davis,davisan02,LAL,blks+stls,3.5
+Rui Hachimura,hachiru01,LAL,steals,0.5
+LeBron James,jamesle01,LAL,blocked shots,0.5
+Austin Reaves,reaveau01,LAL,rebs+asts,9
+Jakob Poeltl,poeltja01,TOR,rebs+asts,13
+Anthony Davis,davisan02,LAL,rebs+asts,15.5
+RJ Barrett,barrerj01,TOR,rebs+asts,11
+LeBron James,jamesle01,LAL,rebs+asts,16.5
+Rui Hachimura,hachiru01,LAL,pts+asts,13.5
+Austin Reaves,reaveau01,LAL,pts+asts,22.5
+Jakob Poeltl,poeltja01,TOR,pts+asts,16.5
+Anthony Davis,davisan02,LAL,pts+asts,31.5
+LeBron James,jamesle01,LAL,pts+asts,33.5
+Rui Hachimura,hachiru01,LAL,pts+rebs,17
+Austin Reaves,reaveau01,LAL,pts+rebs,21.5
+Jakob Poeltl,poeltja01,TOR,pts+rebs,22.5
+Anthony Davis,davisan02,LAL,pts+rebs,41.5
+RJ Barrett,barrerj01,TOR,pts+rebs,29.5
+LeBron James,jamesle01,LAL,pts+rebs,32.5
+Rui Hachimura,hachiru01,LAL,pts+rebs+asts,18.5
+Austin Reaves,reaveau01,LAL,pts+rebs+asts,26.5
+Jakob Poeltl,poeltja01,TOR,pts+rebs+asts,26.5
+Anthony Davis,davisan02,LAL,pts+rebs+asts,44.5
+RJ Barrett,barrerj01,TOR,pts+rebs+asts,35.5
+LeBron James,jamesle01,LAL,pts+rebs+asts,41.5
+Austin Reaves,reaveau01,LAL,assists,5
+RJ Barrett,barrerj01,TOR,assists,5.5
+LeBron James,jamesle01,LAL,assists,9
+Rui Hachimura,hachiru01,LAL,rebounds,5
+Anthony Davis,davisan02,LAL,rebounds,12.5
+RJ Barrett,barrerj01,TOR,rebounds,5.5
+LeBron James,jamesle01,LAL,rebounds,7.5
+Rui Hachimura,hachiru01,LAL,points,11.5
+Austin Reaves,reaveau01,LAL,points,17.5
+Jakob Poeltl,poeltja01,TOR,points,12.5
+Anthony Davis,davisan02,LAL,points,28.5
+RJ Barrett,barrerj01,TOR,points,23.5
+LeBron James,jamesle01,LAL,points,24.5
+Zach Edey,edeyza01,MEM,pts+rebs+asts,19.5
+Anfernee Simons,simonan01,POR,rebs+asts,8.5
+Deni Avdija,avdijde01,POR,rebs+asts,8.5
+Deni Avdija,avdijde01,POR,pts+asts,13.5
+Jerami Grant,grantje01,POR,pts+asts,20.5
+Anfernee Simons,simonan01,POR,pts+asts,25.5
+Zach Edey,edeyza01,MEM,pts+rebs,17.5
+Deni Avdija,avdijde01,POR,pts+rebs,16.5
+Deandre Ayton,aytonde01,POR,pts+rebs,24.5
+Jerami Grant,grantje01,POR,pts+rebs,21.5
+Anfernee Simons,simonan01,POR,pts+rebs,22.5
+Jaylen Wells,wellsja01,MEM,pts+rebs+asts,16.5
+Deni Avdija,avdijde01,POR,pts+rebs+asts,19.5
+Santi Aldama,aldamsa01,MEM,pts+rebs+asts,24.5
+Scotty Pippen Jr.,pippesc02,MEM,pts+rebs+asts,27.5
+Jerami Grant,grantje01,POR,pts+rebs+asts,23.5
+Jaren Jackson Jr.,jacksja02,MEM,pts+rebs+asts,31.5
+Anfernee Simons,simonan01,POR,pts+rebs+asts,28
+Santi Aldama,aldamsa01,MEM,assists,3.5
+Scotty Pippen Jr.,pippesc02,MEM,assists,8
+Anfernee Simons,simonan01,POR,assists,5.5
+Jaylen Wells,wellsja01,MEM,rebounds,3.5
+Deni Avdija,avdijde01,POR,rebounds,5.5
+Santi Aldama,aldamsa01,MEM,rebounds,7
+Deandre Ayton,aytonde01,POR,rebounds,10
+Jerami Grant,grantje01,POR,rebounds,3.5
+Jaren Jackson Jr.,jacksja02,MEM,rebounds,5.5
+Zach Edey,edeyza01,MEM,points,10
+Jaylen Wells,wellsja01,MEM,points,11.5
+Deni Avdija,avdijde01,POR,points,10.5
+Santi Aldama,aldamsa01,MEM,points,12.5
+Deandre Ayton,aytonde01,POR,points,14.5
+Scotty Pippen Jr.,pippesc02,MEM,points,14.5
+Jerami Grant,grantje01,POR,points,17.5
+Jaren Jackson Jr.,jacksja02,MEM,points,23.5
+Anfernee Simons,simonan01,POR,points,19.5
+Keegan Murray,murrake02,SAC,blks+stls,1.5
+Naji Marshall,marshna01,DAL,blks+stls,1.5
+Kyrie Irving,irvinky01,DAL,blks+stls,1.5
+DeMar DeRozan,derozde01,SAC,blks+stls,1.5
+Luka Doncic,doncilu01,DAL,steals,1.5
+Domantas Sabonis,sabondo01,SAC,turnovers,2.5
+Devin Booker,bookede01,PHO,turnovers,2.5
+De'Aaron Fox,foxde01,SAC,steals,1.5
+Peyton Watson,watsope01,DEN,rebs+asts,6.5
+Nikola Jokic,jokicni01,DEN,rebs+asts,23.5
+Christian Braun,braunch01,DEN,rebs+asts,6.5
+Luka Doncic,doncilu01,DAL,rebs+asts,17.5
+Kyrie Irving,irvinky01,DAL,rebs+asts,9
+Tyus Jones,jonesty01,PHO,rebs+asts,10
+Domantas Sabonis,sabondo01,SAC,rebs+asts,19.5
+Jusuf Nurkic,nurkiju01,PHO,rebs+asts,13.5
+DeMar DeRozan,derozde01,SAC,rebs+asts,8
+Bradley Beal,bealbr01,PHO,rebs+asts,8.5
+De'Aaron Fox,foxde01,SAC,rebs+asts,9.5
+Devin Booker,bookede01,PHO,rebs+asts,11
+Peyton Watson,watsope01,DEN,pts+asts,12.5
+Nikola Jokic,jokicni01,DEN,pts+asts,38.5
+Michael Porter Jr.,portemi01,DEN,pts+asts,20.5
+Jamal Murray,murraja01,DEN,pts+asts,26.5
+Christian Braun,braunch01,DEN,pts+asts,15.5
+Naji Marshall,marshna01,DAL,pts+asts,11.5
+Luka Doncic,doncilu01,DAL,pts+asts,39.5
+Kyrie Irving,irvinky01,DAL,pts+asts,29.5
+Klay Thompson,thompkl01,DAL,pts+asts,15.5
+Daniel Gafford,gaffoda01,DAL,pts+asts,12
+Malik Monk,monkma01,SAC,pts+asts,17.5
+Tyus Jones,jonesty01,PHO,pts+asts,19
+Domantas Sabonis,sabondo01,SAC,pts+asts,24
+Jusuf Nurkic,nurkiju01,PHO,pts+asts,13.5
+DeMar DeRozan,derozde01,SAC,pts+asts,26.5
+Bradley Beal,bealbr01,PHO,pts+asts,24.5
+De'Aaron Fox,foxde01,SAC,pts+asts,29.5
+Devin Booker,bookede01,PHO,pts+asts,35.5
+Kevin Huerter,huertke01,SAC,pts+rebs,10.5
+Malik Monk,monkma01,SAC,pts+rebs,17
+Keegan Murray,murrake02,SAC,pts+rebs,22.5
+Tyus Jones,jonesty01,PHO,pts+rebs,14.5
+Domantas Sabonis,sabondo01,SAC,pts+rebs,30
+Jusuf Nurkic,nurkiju01,PHO,pts+rebs,23
+DeMar DeRozan,derozde01,SAC,pts+rebs,26.5
+Bradley Beal,bealbr01,PHO,pts+rebs,24.5
+De'Aaron Fox,foxde01,SAC,pts+rebs,29.5
+Devin Booker,bookede01,PHO,pts+rebs,33
+Peyton Watson,watsope01,DEN,pts+rebs,15.5
+Nikola Jokic,jokicni01,DEN,pts+rebs,40.5
+Michael Porter Jr.,portemi01,DEN,pts+rebs,25.5
+Jamal Murray,murraja01,DEN,pts+rebs,24.5
+Christian Braun,braunch01,DEN,pts+rebs,18.5
+Naji Marshall,marshna01,DAL,pts+rebs,14
+Luka Doncic,doncilu01,DAL,pts+rebs,41.5
+Kyrie Irving,irvinky01,DAL,pts+rebs,29.5
+Klay Thompson,thompkl01,DAL,pts+rebs,17.5
+Daniel Gafford,gaffoda01,DAL,pts+rebs,18.5
+Malik Monk,monkma01,SAC,pts+rebs+asts,20.5
+Tyus Jones,jonesty01,PHO,pts+rebs+asts,21.5
+Domantas Sabonis,sabondo01,SAC,pts+rebs+asts,37.5
+Jusuf Nurkic,nurkiju01,PHO,pts+rebs+asts,24.5
+DeMar DeRozan,derozde01,SAC,pts+rebs+asts,30.5
+Bradley Beal,bealbr01,PHO,pts+rebs+asts,28.5
+De'Aaron Fox,foxde01,SAC,pts+rebs+asts,34.5
+Devin Booker,bookede01,PHO,pts+rebs+asts,39.5
+Peyton Watson,watsope01,DEN,pts+rebs+asts,17.5
+Nikola Jokic,jokicni01,DEN,pts+rebs+asts,51.5
+Michael Porter Jr.,portemi01,DEN,pts+rebs+asts,27.5
+Jamal Murray,murraja01,DEN,pts+rebs+asts,30.5
+Christian Braun,braunch01,DEN,pts+rebs+asts,20.5
+Naji Marshall,marshna01,DAL,pts+rebs+asts,16.5
+Luka Doncic,doncilu01,DAL,pts+rebs+asts,49.5
+Kyrie Irving,irvinky01,DAL,pts+rebs+asts,34.5
+Klay Thompson,thompkl01,DAL,pts+rebs+asts,19.5
+Malik Monk,monkma01,SAC,assists,3.5
+Devin Booker,bookede01,PHO,assists,6.5
+Peyton Watson,watsope01,DEN,assists,1.5
+Nikola Jokic,jokicni01,DEN,assists,10
+Jamal Murray,murraja01,DEN,assists,5.5
+Christian Braun,braunch01,DEN,assists,1.5
+Naji Marshall,marshna01,DAL,assists,2.5
+Luka Doncic,doncilu01,DAL,assists,8
+Kyrie Irving,irvinky01,DAL,assists,4.5
+Keegan Murray,murrake02,SAC,rebounds,7
+Domantas Sabonis,sabondo01,SAC,rebounds,12.5
+Jusuf Nurkic,nurkiju01,PHO,rebounds,11
+Devin Booker,bookede01,PHO,rebounds,4
+Kevin Huerter,huertke01,SAC,points,7.5
+Malik Monk,monkma01,SAC,points,13.5
+Keegan Murray,murrake02,SAC,points,14.5
+Tyus Jones,jonesty01,PHO,points,11.5
+Domantas Sabonis,sabondo01,SAC,points,17.5
+Jusuf Nurkic,nurkiju01,PHO,points,11.5
+DeMar DeRozan,derozde01,SAC,points,22.5
+Bradley Beal,bealbr01,PHO,points,19.5
+De'Aaron Fox,foxde01,SAC,points,24.5
+Devin Booker,bookede01,PHO,points,28.5
+Peyton Watson,watsope01,DEN,rebounds,4.5
+Nikola Jokic,jokicni01,DEN,rebounds,12.5
+Michael Porter Jr.,portemi01,DEN,rebounds,7
+Jamal Murray,murraja01,DEN,rebounds,3.5
+Christian Braun,braunch01,DEN,rebounds,4.5
+Naji Marshall,marshna01,DAL,rebounds,4.5
+Klay Thompson,thompkl01,DAL,rebounds,3.5
+Daniel Gafford,gaffoda01,DAL,rebounds,7
+Peyton Watson,watsope01,DEN,points,10.5
+Nikola Jokic,jokicni01,DEN,points,28
+Michael Porter Jr.,portemi01,DEN,points,18.5
+Jamal Murray,murraja01,DEN,points,20.5
+Naji Marshall,marshna01,DAL,points,9
+Luka Doncic,doncilu01,DAL,points,31.5
+Kyrie Irving,irvinky01,DAL,points,24.5
+Klay Thompson,thompkl01,DAL,points,14.5
+Daniel Gafford,gaffoda01,DAL,points,10.5
+LaMelo Ball,ballla01,CHO,rebs+asts,12.5
+Paul George,georgpa01,PHI,rebounds,4
+Brandon Miller,millebr02,CHO,rebs+asts,8
+Caleb Martin,martica02,PHI,rebs+asts,7.5
+Kyle Lowry,lowryky01,PHI,rebs+asts,8.5
+Paul George,georgpa01,PHI,rebs+asts,8.5
+Kyle Lowry,lowryky01,PHI,pts+asts,14
+Caleb Martin,martica02,PHI,pts+asts,14.5
+Tre Mann,manntr01,CHO,pts+asts,16.5
+Stephen Curry,curryst01,GSW,turnovers,3.5
+Brandon Miller,millebr02,CHO,pts+asts,21.5
+Andrew Wiggins,wiggian01,GSW,turnovers,1.5
+Paul George,georgpa01,PHI,pts+asts,22.5
+LaMelo Ball,ballla01,CHO,pts+asts,33.5
+Kyle Lowry,lowryky01,PHI,pts+rebs,11.5
+Andre Drummond,drumman01,PHI,pts+rebs,24
+Josh Green,greenjo02,CHO,pts+rebs,9.5
+Caleb Martin,martica02,PHI,pts+rebs,16.5
+Tre Mann,manntr01,CHO,pts+rebs,16.5
+Kelly Oubre Jr.,oubreke01,PHI,pts+rebs,23.5
+Brandon Miller,millebr02,CHO,pts+rebs,24.5
+Paul George,georgpa01,PHI,pts+rebs,22.5
+LaMelo Ball,ballla01,CHO,pts+rebs,33
+Chet Holmgren,holmgch01,OKC,blocked shots,2.5
+Draymond Green,greendr01,GSW,rebs+asts,11
+Jalen Williams,willija06,OKC,rebs+asts,11
+Stephen Curry,curryst01,GSW,rebs+asts,9.5
+Shai Gilgeous-Alexander,gilgesh01,OKC,rebs+asts,13
+Kyle Lowry,lowryky01,PHI,pts+rebs+asts,16.5
+Caleb Martin,martica02,PHI,pts+rebs+asts,19.5
+Tre Mann,manntr01,CHO,pts+rebs+asts,20.5
+Brandon Miller,millebr02,CHO,pts+rebs+asts,27
+Paul George,georgpa01,PHI,pts+rebs+asts,27.5
+LaMelo Ball,ballla01,CHO,pts+rebs+asts,39.5
+Draymond Green,greendr01,GSW,pts+asts,12
+Jalen Williams,willija06,OKC,pts+asts,25.5
+Stephen Curry,curryst01,GSW,pts+asts,28.5
+Shai Gilgeous-Alexander,gilgesh01,OKC,pts+asts,34.5
+Trayce Jackson-Davis,jackstr02,GSW,pts+rebs,10.5
+Luguentz Dort,dortlu01,OKC,pts+rebs,13.5
+Draymond Green,greendr01,GSW,pts+rebs,13.5
+Chet Holmgren,holmgch01,OKC,pts+rebs,26.5
+Andrew Wiggins,wiggian01,GSW,pts+rebs,17.5
+Jalen Williams,willija06,OKC,pts+rebs,26.5
+Stephen Curry,curryst01,GSW,pts+rebs,28.5
+Shai Gilgeous-Alexander,gilgesh01,OKC,pts+rebs,34.5
+Caleb Martin,martica02,PHI,assists,2.5
+Tre Mann,manntr01,CHO,assists,3.5
+LaMelo Ball,ballla01,CHO,assists,6.5
+Draymond Green,greendr01,GSW,pts+rebs+asts,18.5
+Jalen Williams,willija06,OKC,pts+rebs+asts,31.5
+Stephen Curry,curryst01,GSW,pts+rebs+asts,33.5
+Shai Gilgeous-Alexander,gilgesh01,OKC,pts+rebs+asts,40.5
+Andre Drummond,drumman01,PHI,rebounds,12.5
+Caleb Martin,martica02,PHI,rebounds,4.5
+Tre Mann,manntr01,CHO,rebounds,3.5
+LaMelo Ball,ballla01,CHO,rebounds,5.5
+Jalen Williams,willija06,OKC,assists,5
+Shai Gilgeous-Alexander,gilgesh01,OKC,assists,6.5
+Kyle Lowry,lowryky01,PHI,points,8.5
+Andre Drummond,drumman01,PHI,points,11.5
+Josh Green,greenjo02,CHO,points,6.5
+Caleb Martin,martica02,PHI,points,12.5
+Tre Mann,manntr01,CHO,points,12.5
+Kelly Oubre Jr.,oubreke01,PHI,points,18.5
+Brandon Miller,millebr02,CHO,points,19.5
+Paul George,georgpa01,PHI,points,18.5
+LaMelo Ball,ballla01,CHO,points,27
+Trayce Jackson-Davis,jackstr02,GSW,rebounds,4.5
+Luguentz Dort,dortlu01,OKC,rebounds,3.5
+Draymond Green,greendr01,GSW,rebounds,6
+Chet Holmgren,holmgch01,OKC,rebounds,9
+Shai Gilgeous-Alexander,gilgesh01,OKC,rebounds,6
+Luguentz Dort,dortlu01,OKC,points,9.5
+Chet Holmgren,holmgch01,OKC,points,17.5
+Andrew Wiggins,wiggian01,GSW,points,13.5
+Jalen Williams,willija06,OKC,points,20.5
+Stephen Curry,curryst01,GSW,points,23.5
+Shai Gilgeous-Alexander,gilgesh01,OKC,points,27.5
+Jaden McDaniels,mcdanja02,MIN,steals,0.5
+Jaden McDaniels,mcdanja02,MIN,blocked shots,0.5
+Mike Conley,conlemi01,MIN,rebs+asts,7.5
+Terry Rozier,roziete01,MIA,rebs+asts,8
+Tyler Herro,herroty01,MIA,rebs+asts,10.5
+Anthony Edwards,edwaran01,MIN,rebs+asts,11
+Julius Randle,randlju01,MIN,rebs+asts,12.5
+Bam Adebayo,adebaba01,MIA,rebs+asts,13
+Nickeil Alexander-Walker,alexani01,MIN,pts+asts,9.5
+Mike Conley,conlemi01,MIN,pts+asts,13.5
+Donte DiVincenzo,divindo01,MIN,pts+asts,15.5
+Terry Rozier,roziete01,MIA,pts+asts,19.5
+Bam Adebayo,adebaba01,MIA,pts+asts,22.5
+Julius Randle,randlju01,MIN,pts+asts,24.5
+Tyler Herro,herroty01,MIA,pts+asts,28.5
+Anthony Edwards,edwaran01,MIN,pts+asts,31.5
+Nickeil Alexander-Walker,alexani01,MIN,pts+rebs,9
+Mike Conley,conlemi01,MIN,pts+rebs,11.5
+Jaden McDaniels,mcdanja02,MIN,pts+rebs,12.5
+Rudy Gobert,goberru01,MIN,pts+rebs,22
+Naz Reid,reidna01,MIN,pts+rebs,16.5
+Terry Rozier,roziete01,MIA,pts+rebs,18.5
+Donte DiVincenzo,divindo01,MIN,pts+rebs,15.5
+Bam Adebayo,adebaba01,MIA,pts+rebs,28.5
+Julius Randle,randlju01,MIN,pts+rebs,27.5
+Tyler Herro,herroty01,MIA,pts+rebs,27
+Anthony Edwards,edwaran01,MIN,pts+rebs,32.5
+Mike Conley,conlemi01,MIN,pts+rebs+asts,16.5
+Terry Rozier,roziete01,MIA,pts+rebs+asts,23.5
+Donte DiVincenzo,divindo01,MIN,pts+rebs+asts,18.5
+Bam Adebayo,adebaba01,MIA,pts+rebs+asts,31.5
+Julius Randle,randlju01,MIN,pts+rebs+asts,32.5
+Tyler Herro,herroty01,MIA,pts+rebs+asts,32.5
+Anthony Edwards,edwaran01,MIN,pts+rebs+asts,37.5
+Terry Rozier,roziete01,MIA,assists,4.5
+Mike Conley,conlemi01,MIN,assists,4.5
+Tyler Herro,herroty01,MIA,assists,5.5
+Mike Conley,conlemi01,MIN,rebounds,2.5
+Donte DiVincenzo,divindo01,MIN,rebounds,3.5
+Terry Rozier,roziete01,MIA,rebounds,3.5
+Tyler Herro,herroty01,MIA,rebounds,4.5
+Anthony Edwards,edwaran01,MIN,rebounds,6
+Julius Randle,randlju01,MIN,rebounds,7.5
+Bam Adebayo,adebaba01,MIA,rebounds,9.5
+Rudy Gobert,goberru01,MIN,rebounds,11
+Nickeil Alexander-Walker,alexani01,MIN,points,6.5
+Mike Conley,conlemi01,MIN,points,8.5
+Jaden McDaniels,mcdanja02,MIN,points,9.5
+Naz Reid,reidna01,MIN,points,11.5
+Terry Rozier,roziete01,MIA,points,15.5
+Donte DiVincenzo,divindo01,MIN,points,11.5
+Bam Adebayo,adebaba01,MIA,points,18.5
+Julius Randle,randlju01,MIN,points,19.5
+Tyler Herro,herroty01,MIA,points,21.5
+Anthony Edwards,edwaran01,MIN,points,26.5
+Goga Bitadze,bitadgo01,ORL,blks+stls,2.5
+Franz Wagner,wagnefr01,ORL,blks+stls,1.5
+Carlton Carrington,carrica01,WAS,rebs+asts,11.5
+Jalen Suggs,suggsja01,ORL,rebs+asts,10.5
+Jordan Poole,poolejo01,WAS,rebs+asts,8
+Franz Wagner,wagnefr01,ORL,rebs+asts,12
+Carlton Carrington,carrica01,WAS,pts+asts,16.5
+Bilal Coulibaly,coulibi01,WAS,pts+asts,14.5
+Jalen Suggs,suggsja01,ORL,pts+asts,22.5
+Jordan Poole,poolejo01,WAS,pts+asts,26.5
+Franz Wagner,wagnefr01,ORL,pts+asts,30.5
+Tristan Da Silva,dasiltr01,ORL,pts+rebs,13.5
+Kentavious Caldwell-Pope,caldwke01,ORL,pts+rebs,12.5
+Carlton Carrington,carrica01,WAS,pts+rebs,16
+Goga Bitadze,bitadgo01,ORL,pts+rebs,19.5
+Bilal Coulibaly,coulibi01,WAS,pts+rebs,17.5
+Jalen Suggs,suggsja01,ORL,pts+rebs,23.5
+Jordan Poole,poolejo01,WAS,pts+rebs,23.5
+Franz Wagner,wagnefr01,ORL,pts+rebs,31.5
+Carlton Carrington,carrica01,WAS,pts+rebs+asts,22.5
+Bilal Coulibaly,coulibi01,WAS,pts+rebs+asts,19.5
+Jalen Suggs,suggsja01,ORL,pts+rebs+asts,28.5
+Jordan Poole,poolejo01,WAS,pts+rebs+asts,29.5
+Franz Wagner,wagnefr01,ORL,pts+rebs+asts,37.5
+Carlton Carrington,carrica01,WAS,assists,6
+Jalen Suggs,suggsja01,ORL,assists,5
+Franz Wagner,wagnefr01,ORL,assists,5
+Tristan Da Silva,dasiltr01,ORL,rebounds,4.5
+Carlton Carrington,carrica01,WAS,rebounds,5
+Bilal Coulibaly,coulibi01,WAS,rebounds,5
+Franz Wagner,wagnefr01,ORL,rebounds,6.5
+Carlton Carrington,carrica01,WAS,points,10.5
+Bilal Coulibaly,coulibi01,WAS,points,12.5
+Jalen Suggs,suggsja01,ORL,points,17.5
+Jordan Poole,poolejo01,WAS,points,20.5
+Franz Wagner,wagnefr01,ORL,points,24.5
+Josh Hart,hartjo01,NYK,turnovers,1.5
+Pascal Siakam,siakapa01,IND,turnovers,1.5
+Bennedict Mathurin,mathube01,IND,turnovers,1.5
+Mikal Bridges,bridgmi01,NYK,blks+stls,1.5
+Tyrese Haliburton,halibty01,IND,blks+stls,1.5
+Myles Turner,turnemy01,IND,blks+stls,2.5
+Myles Turner,turnemy01,IND,steals,0.5
+Bennedict Mathurin,mathube01,IND,steals,0.5
+Andrew Nembhard,nembhan01,IND,steals,0.5
+OG Anunoby,anunoog01,NYK,rebs+asts,7
+Mikal Bridges,bridgmi01,NYK,rebs+asts,8
+Karl-Anthony Towns,townska01,NYK,rebs+asts,14
+Josh Hart,hartjo01,NYK,rebs+asts,14
+Jalen Brunson,brunsja01,NYK,rebs+asts,10.5
+Tyrese Haliburton,halibty01,IND,rebs+asts,13.5
+Pascal Siakam,siakapa01,IND,rebs+asts,11
+Myles Turner,turnemy01,IND,rebs+asts,9.5
+Bennedict Mathurin,mathube01,IND,rebs+asts,7.5
+Andrew Nembhard,nembhan01,IND,rebs+asts,7.5
+OG Anunoby,anunoog01,NYK,pts+asts,16.5
+Miles McBride,mcbrimi01,NYK,pts+asts,13.5
+Mikal Bridges,bridgmi01,NYK,pts+asts,20.5
+Karl-Anthony Towns,townska01,NYK,pts+asts,25.5
+Josh Hart,hartjo01,NYK,pts+asts,16.5
+Jalen Brunson,brunsja01,NYK,pts+asts,36.5
+Tyrese Haliburton,halibty01,IND,pts+asts,27.5
+Pascal Siakam,siakapa01,IND,pts+asts,25.5
+Myles Turner,turnemy01,IND,pts+asts,18.5
+Bennedict Mathurin,mathube01,IND,pts+asts,19.5
+Andrew Nembhard,nembhan01,IND,pts+asts,16.5
+OG Anunoby,anunoog01,NYK,pts+rebs,19.5
+Miles McBride,mcbrimi01,NYK,pts+rebs,13.5
+Mikal Bridges,bridgmi01,NYK,pts+rebs,20.5
+Karl-Anthony Towns,townska01,NYK,pts+rebs,35
+Josh Hart,hartjo01,NYK,pts+rebs,21.5
+Jalen Brunson,brunsja01,NYK,pts+rebs,32.5
+Tyrese Haliburton,halibty01,IND,pts+rebs,23.5
+Pascal Siakam,siakapa01,IND,pts+rebs,28.5
+Myles Turner,turnemy01,IND,pts+rebs,25.5
+Bennedict Mathurin,mathube01,IND,pts+rebs,22.5
+Andrew Nembhard,nembhan01,IND,pts+rebs,13.5
+OG Anunoby,anunoog01,NYK,pts+rebs+asts,21.5
+Miles McBride,mcbrimi01,NYK,pts+rebs+asts,15.5
+Mikal Bridges,bridgmi01,NYK,pts+rebs+asts,24.5
+Karl-Anthony Towns,townska01,NYK,pts+rebs+asts,37.5
+Josh Hart,hartjo01,NYK,pts+rebs+asts,26.5
+Jalen Brunson,brunsja01,NYK,pts+rebs+asts,39.5
+Tyrese Haliburton,halibty01,IND,pts+rebs+asts,32.5
+Pascal Siakam,siakapa01,IND,pts+rebs+asts,32.5
+Myles Turner,turnemy01,IND,pts+rebs+asts,27.5
+Bennedict Mathurin,mathube01,IND,pts+rebs+asts,24.5
+Andrew Nembhard,nembhan01,IND,pts+rebs+asts,18.5
+Mikal Bridges,bridgmi01,NYK,assists,3.5
+Josh Hart,hartjo01,NYK,assists,4.5
+Jalen Brunson,brunsja01,NYK,assists,7
+Tyrese Haliburton,halibty01,IND,assists,9
+Andrew Nembhard,nembhan01,IND,assists,4.5
+OG Anunoby,anunoog01,NYK,rebounds,5
+Karl-Anthony Towns,townska01,NYK,rebounds,11.5
+Josh Hart,hartjo01,NYK,rebounds,9
+Tyrese Haliburton,halibty01,IND,rebounds,4.5
+Pascal Siakam,siakapa01,IND,rebounds,7
+Bennedict Mathurin,mathube01,IND,rebounds,5.5
+Andrew Nembhard,nembhan01,IND,rebounds,2.5
+OG Anunoby,anunoog01,NYK,points,14.5
+Miles McBride,mcbrimi01,NYK,points,10.5
+Mikal Bridges,bridgmi01,NYK,points,16.5
+Karl-Anthony Towns,townska01,NYK,points,23.5
+Josh Hart,hartjo01,NYK,points,11.5
+Jalen Brunson,brunsja01,NYK,points,29.5
+Tyrese Haliburton,halibty01,IND,points,18.5
+Pascal Siakam,siakapa01,IND,points,21.5
+Myles Turner,turnemy01,IND,points,17.5
+Bennedict Mathurin,mathube01,IND,points,16.5
+Andrew Nembhard,nembhan01,IND,points,11.5
+Tyrese Haliburton,halibty01,IND,defensive rebounds,4
+Pascal Siakam,siakapa01,IND,defensive rebounds,5.5
+Myles Turner,turnemy01,IND,defensive rebounds,7
+Bennedict Mathurin,mathube01,IND,defensive rebounds,4
+Miles McBride,mcbrimi01,NYK,offensive rebounds,0.5
+Tyrese Haliburton,halibty01,IND,offensive rebounds,0.5
+Myles Turner,turnemy01,IND,offensive rebounds,1.5
+Bennedict Mathurin,mathube01,IND,offensive rebounds,1.5
+Jalen Brunson,brunsja01,NYK,offensive rebounds,0.5
+Andrew Nembhard,nembhan01,IND,offensive rebounds,0.5
+OG Anunoby,anunoog01,NYK,fg attempted,11.5
+Miles McBride,mcbrimi01,NYK,fg attempted,9
+Tyrese Haliburton,halibty01,IND,fg attempted,14
+Mikal Bridges,bridgmi01,NYK,fg attempted,14
+Pascal Siakam,siakapa01,IND,fg attempted,16
+Karl-Anthony Towns,townska01,NYK,fg attempted,17
+Myles Turner,turnemy01,IND,fg attempted,12.5
+Josh Hart,hartjo01,NYK,fg attempted,9.5
+Bennedict Mathurin,mathube01,IND,fg attempted,11.5
+Jalen Brunson,brunsja01,NYK,fg attempted,19.5
+Andrew Nembhard,nembhan01,IND,fg attempted,8.5
+Tyrese Haliburton,halibty01,IND,free throws made,2.5
+Pascal Siakam,siakapa01,IND,free throws made,3.5
+Karl-Anthony Towns,townska01,NYK,free throws made,4.5
+Myles Turner,turnemy01,IND,free throws made,3
+Bennedict Mathurin,mathube01,IND,free throws made,3.5
+Jalen Brunson,brunsja01,NYK,free throws made,4.5
+OG Anunoby,anunoog01,NYK,fantasy score,28.5
+Miles McBride,mcbrimi01,NYK,fantasy score,18.5
+Tyrese Haliburton,halibty01,IND,fantasy score,38.5
+Mikal Bridges,bridgmi01,NYK,fantasy score,30
+Pascal Siakam,siakapa01,IND,fantasy score,37.5
+Karl-Anthony Towns,townska01,NYK,fantasy score,43
+Myles Turner,turnemy01,IND,fantasy score,34
+Josh Hart,hartjo01,NYK,fantasy score,31
+Bennedict Mathurin,mathube01,IND,fantasy score,27.5
+Jalen Brunson,brunsja01,NYK,fantasy score,44
+Andrew Nembhard,nembhan01,IND,fantasy score,22
+Damian Lillard,lillada01,MIL,rebounds,4
+Al Horford,horfoal01,BOS,rebounds,6
+Giannis Antetokounmpo,antetgi01,MIL,turnovers,3.5
+Damian Lillard,lillada01,MIL,turnovers,2.5
+Jaylen Brown,brownja02,BOS,turnovers,2.5
+Jayson Tatum,tatumja01,BOS,blks+stls,1.5
+Taurean Prince,princta02,MIL,steals,0.5
+Giannis Antetokounmpo,antetgi01,MIL,steals,0.5
+Brook Lopez,lopezbr01,MIL,steals,0.5
+Jrue Holiday,holidjr01,BOS,steals,0.5
+Giannis Antetokounmpo,antetgi01,MIL,blocked shots,0.5
+Giannis Antetokounmpo,antetgi01,MIL,rebs+asts,18.5
+Damian Lillard,lillada01,MIL,rebs+asts,11
+Brook Lopez,lopezbr01,MIL,rebs+asts,6.5
+Jrue Holiday,holidjr01,BOS,rebs+asts,8.5
+Jayson Tatum,tatumja01,BOS,rebs+asts,14
+Jaylen Brown,brownja02,BOS,rebs+asts,9.5
+Derrick White,whitede01,BOS,rebs+asts,8.5
+Taurean Prince,princta02,MIL,pts+asts,8
+Giannis Antetokounmpo,antetgi01,MIL,pts+asts,36.5
+Damian Lillard,lillada01,MIL,pts+asts,33.5
+Brook Lopez,lopezbr01,MIL,pts+asts,12.5
+Jrue Holiday,holidjr01,BOS,pts+asts,17.5
+Jayson Tatum,tatumja01,BOS,pts+asts,34.5
+Jaylen Brown,brownja02,BOS,pts+asts,26.5
+Derrick White,whitede01,BOS,pts+asts,21.5
+Al Horford,horfoal01,BOS,pts+asts,10.5
+Taurean Prince,princta02,MIL,pts+rebs,10.5
+Giannis Antetokounmpo,antetgi01,MIL,pts+rebs,43.5
+Damian Lillard,lillada01,MIL,pts+rebs,30.5
+Brook Lopez,lopezbr01,MIL,pts+rebs,16.5
+Jrue Holiday,holidjr01,BOS,pts+rebs,17.5
+Jayson Tatum,tatumja01,BOS,pts+rebs,37.5
+Jaylen Brown,brownja02,BOS,pts+rebs,29.5
+Derrick White,whitede01,BOS,pts+rebs,21.5
+Al Horford,horfoal01,BOS,pts+rebs,14.5
+Taurean Prince,princta02,MIL,pts+rebs+asts,11.5
+Giannis Antetokounmpo,antetgi01,MIL,pts+rebs+asts,49.5
+Damian Lillard,lillada01,MIL,pts+rebs+asts,37.5
+Brook Lopez,lopezbr01,MIL,pts+rebs+asts,17.5
+Jrue Holiday,holidjr01,BOS,pts+rebs+asts,22.5
+Jayson Tatum,tatumja01,BOS,pts+rebs+asts,43
+Jaylen Brown,brownja02,BOS,pts+rebs+asts,33.5
+Derrick White,whitede01,BOS,pts+rebs+asts,25.5
+Al Horford,horfoal01,BOS,pts+rebs+asts,16.5
+Giannis Antetokounmpo,antetgi01,MIL,assists,6
+Damian Lillard,lillada01,MIL,assists,7
+Brook Lopez,lopezbr01,MIL,assists,1.5
+Jrue Holiday,holidjr01,BOS,assists,4
+Jayson Tatum,tatumja01,BOS,assists,5.5
+Taurean Prince,princta02,MIL,rebounds,3.5
+Giannis Antetokounmpo,antetgi01,MIL,rebounds,12.5
+Jrue Holiday,holidjr01,BOS,rebounds,4.5
+Jayson Tatum,tatumja01,BOS,rebounds,8
+Jaylen Brown,brownja02,BOS,rebounds,6
+Taurean Prince,princta02,MIL,points,6.5
+Giannis Antetokounmpo,antetgi01,MIL,points,30.5
+Damian Lillard,lillada01,MIL,points,26.5
+Brook Lopez,lopezbr01,MIL,points,11.5
+Jrue Holiday,holidjr01,BOS,points,13.5
+Jayson Tatum,tatumja01,BOS,points,29.5
+Jaylen Brown,brownja02,BOS,points,23.5
+Derrick White,whitede01,BOS,points,17.5
+Jrue Holiday,holidjr01,BOS,defensive rebounds,3.5
+Giannis Antetokounmpo,antetgi01,MIL,defensive rebounds,9.5
+Al Horford,horfoal01,BOS,defensive rebounds,5
+Giannis Antetokounmpo,antetgi01,MIL,offensive rebounds,3
+Damian Lillard,lillada01,MIL,offensive rebounds,0.5
+Al Horford,horfoal01,BOS,offensive rebounds,1.5
+Brook Lopez,lopezbr01,MIL,offensive rebounds,1.5
+Jrue Holiday,holidjr01,BOS,fg attempted,10.5
+Jayson Tatum,tatumja01,BOS,fg attempted,20.5
+Jaylen Brown,brownja02,BOS,fg attempted,18.5
+Giannis Antetokounmpo,antetgi01,MIL,fg attempted,19.5
+Derrick White,whitede01,BOS,fg attempted,13.5
+Damian Lillard,lillada01,MIL,fg attempted,18.5
+Al Horford,horfoal01,BOS,fg attempted,6.5
+Brook Lopez,lopezbr01,MIL,fg attempted,8.5
+Jayson Tatum,tatumja01,BOS,free throws made,6
+Taurean Prince,princta02,MIL,free throws made,0.5
+Giannis Antetokounmpo,antetgi01,MIL,free throws made,6.5
+Derrick White,whitede01,BOS,free throws made,2.5
+Damian Lillard,lillada01,MIL,free throws made,7
+Brook Lopez,lopezbr01,MIL,free throws made,1.5
+Jrue Holiday,holidjr01,BOS,fantasy score,26.5
+Jayson Tatum,tatumja01,BOS,fantasy score,49
+Jaylen Brown,brownja02,BOS,fantasy score,36
+Giannis Antetokounmpo,antetgi01,MIL,fantasy score,54
+Derrick White,whitede01,BOS,fantasy score,32
+Damian Lillard,lillada01,MIL,fantasy score,41.5
+Al Horford,horfoal01,BOS,fantasy score,22.5
+Brook Lopez,lopezbr01,MIL,fantasy score,24
+Jaden Ivey,iveyja01,DET,blks+stls,1.5
+Cade Cunningham,cunnica01,DET,blks+stls,1.5
+Fred VanVleet,vanvlfr01,HOU,steals,1.5
+Jalen Green,greenja05,HOU,rebs+asts,8.5
+Jaden Ivey,iveyja01,DET,rebs+asts,8.5
+Tobias Harris,harrito02,DET,rebs+asts,10
+Fred VanVleet,vanvlfr01,HOU,rebs+asts,10
+Alperen Sengun,sengual01,HOU,rebs+asts,14.5
+Cade Cunningham,cunnica01,DET,rebs+asts,15
+Tobias Harris,harrito02,DET,pts+asts,17.5
+Jaden Ivey,iveyja01,DET,pts+asts,21.5
+Fred VanVleet,vanvlfr01,HOU,pts+asts,22.5
+Alperen Sengun,sengual01,HOU,pts+asts,22.5
+Jalen Green,greenja05,HOU,pts+asts,24.5
+Cade Cunningham,cunnica01,DET,pts+asts,31.5
+Tim Hardaway Jr.,hardati02,DET,pts+rebs,14.5
+Malik Beasley,beaslma01,DET,pts+rebs,14.5
+Dillon Brooks,brookdi01,HOU,pts+rebs,15.5
+Isaiah Stewart,stewais01,DET,pts+rebs,18
+Jabari Smith Jr.,smithja05,HOU,pts+rebs,18.5
+Fred VanVleet,vanvlfr01,HOU,pts+rebs,19.5
+Jaden Ivey,iveyja01,DET,pts+rebs,21.5
+Tobias Harris,harrito02,DET,pts+rebs,23.5
+Jalen Green,greenja05,HOU,pts+rebs,27.5
+Alperen Sengun,sengual01,HOU,pts+rebs,29.5
+Cade Cunningham,cunnica01,DET,pts+rebs,30.5
+Jaden Ivey,iveyja01,DET,pts+rebs+asts,25.5
+Tobias Harris,harrito02,DET,pts+rebs+asts,25.5
+Fred VanVleet,vanvlfr01,HOU,pts+rebs+asts,26.5
+Jalen Green,greenja05,HOU,pts+rebs+asts,30
+Alperen Sengun,sengual01,HOU,pts+rebs+asts,33.5
+Cade Cunningham,cunnica01,DET,pts+rebs+asts,38.5
+Alperen Sengun,sengual01,HOU,assists,4
+Fred VanVleet,vanvlfr01,HOU,assists,6.5
+Cade Cunningham,cunnica01,DET,assists,8
+Dillon Brooks,brookdi01,HOU,rebounds,3.5
+Fred VanVleet,vanvlfr01,HOU,rebounds,3.5
+Jaden Ivey,iveyja01,DET,rebounds,4
+Jalen Green,greenja05,HOU,rebounds,5
+Cade Cunningham,cunnica01,DET,rebounds,6.5
+Jabari Smith Jr.,smithja05,HOU,rebounds,6.5
+Tobias Harris,harrito02,DET,rebounds,7.5
+Isaiah Stewart,stewais01,DET,rebounds,8.5
+Alperen Sengun,sengual01,HOU,rebounds,10
+Isaiah Stewart,stewais01,DET,points,8.5
+Tim Hardaway Jr.,hardati02,DET,points,11.5
+Jabari Smith Jr.,smithja05,HOU,points,11.5
+Malik Beasley,beaslma01,DET,points,11.5
+Dillon Brooks,brookdi01,HOU,points,11.5
+Tobias Harris,harrito02,DET,points,15.5
+Jaden Ivey,iveyja01,DET,points,17.5
+Alperen Sengun,sengual01,HOU,points,18.5
+Jalen Green,greenja05,HOU,points,22
+Cade Cunningham,cunnica01,DET,points,23.5
+Isaiah Stewart,stewais01,DET,defensive rebounds,6.5
+Jabari Smith Jr.,smithja05,HOU,defensive rebounds,5
+Tobias Harris,harrito02,DET,defensive rebounds,6
+Alperen Sengun,sengual01,HOU,defensive rebounds,7
+Cade Cunningham,cunnica01,DET,defensive rebounds,5.5
+Jabari Smith Jr.,smithja05,HOU,offensive rebounds,1.5
+Dillon Brooks,brookdi01,HOU,offensive rebounds,0.5
+Tobias Harris,harrito02,DET,offensive rebounds,1.5
+Alperen Sengun,sengual01,HOU,offensive rebounds,3.5
+Jalen Green,greenja05,HOU,offensive rebounds,0.5
+Jabari Smith Jr.,smithja05,HOU,fg attempted,9.5
+Dillon Brooks,brookdi01,HOU,fg attempted,10
+Malik Beasley,beaslma01,DET,fg attempted,11.5
+Fred VanVleet,vanvlfr01,HOU,fg attempted,13
+Tobias Harris,harrito02,DET,fg attempted,13.5
+Alperen Sengun,sengual01,HOU,fg attempted,14
+Jaden Ivey,iveyja01,DET,fg attempted,15.5
+Jalen Green,greenja05,HOU,fg attempted,18
+Cade Cunningham,cunnica01,DET,fg attempted,19.5
+Jabari Smith Jr.,smithja05,HOU,free throws made,1.5
+Tim Hardaway Jr.,hardati02,DET,free throws made,1.5
+Dillon Brooks,brookdi01,HOU,free throws made,1.5
+Fred VanVleet,vanvlfr01,HOU,free throws made,2.5
+Alperen Sengun,sengual01,HOU,free throws made,3.5
+Jaden Ivey,iveyja01,DET,free throws made,3.5
+Jalen Green,greenja05,HOU,free throws made,4
+Cade Cunningham,cunnica01,DET,free throws made,3.5
+Isaiah Stewart,stewais01,DET,fantasy score,27
+Jabari Smith Jr.,smithja05,HOU,fantasy score,23
+Tim Hardaway Jr.,hardati02,DET,fantasy score,19.5
+Dillon Brooks,brookdi01,HOU,fantasy score,19
+Fred VanVleet,vanvlfr01,HOU,fantasy score,34.5
+Tobias Harris,harrito02,DET,fantasy score,32
+Alperen Sengun,sengual01,HOU,fantasy score,41
+Jaden Ivey,iveyja01,DET,fantasy score,30.5
+Jalen Green,greenja05,HOU,fantasy score,35
+Cade Cunningham,cunnica01,DET,fantasy score,43.5

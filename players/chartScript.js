@@ -2,7 +2,7 @@
 function initializeChart(playerId, chartData, bettingLine, defaultStat) {
 	const processedData = chartData.map(d => ({
         ...d,
-        [defaultStat]: d[defaultStat] === 0 ? 0.01 : d[defaultStat]
+        [defaultStat]: d[defaultStat] === 0 ? 0.02 : d[defaultStat]
     }));
 	
     window[`allData_${playerId}`] = processedData;
@@ -79,7 +79,7 @@ function getChartOptions(playerId, line, stat) {
 						family: 'Verdana'
 					},
 					color: '#333333',
-					padding: 0 
+					padding: 6 
 				},
 				beginAtZero: true, 
                 stepSize: 1.0 
@@ -200,4 +200,54 @@ function clearFilters(playerId) {
     chart.data.datasets[0].data = originalData.map(d => d[stat] || 0.0);
     chart.data.datasets[0].backgroundColor = originalData.map(d => (d[stat] >= line ? '#16c049' : '#c01616'));
     chart.update();
+}
+
+// Update the chart display with new filtered data
+function updateChart(playerId, filteredData, stat, line) {
+    const chart = window[`chart_${playerId}`];
+    if (!chart) return; // Exit if the chart does not exist
+
+    // Update chart data and labels with filtered data
+    chart.data.labels = filteredData.map(d => formatLabel(d));
+    chart.data.datasets[0].data = filteredData.map(d => d[stat] || 0.0);
+    chart.data.datasets[0].backgroundColor = getBackgroundColors(filteredData, stat, line, playerId);
+
+    // Refresh the chart to reflect changes
+    chart.update();
+}
+
+
+function applyFilter(playerId, filterType, filterValue = null) {
+    const originalData = window[`allData_${playerId}`];
+    const stat = window[`currentStat_${playerId}`];
+    const line = window[`Line_${playerId}`];
+
+    let filteredData = [...originalData];
+
+    if (filterType === "recent" && filterValue) {
+        // Only slice if filterValue is provided
+        filteredData = filteredData.slice(-filterValue);
+    } else if (filterType === "season" && filterValue) {
+        // Filter by season
+        filteredData = filteredData.filter(d => d.season === filterValue);
+    } else if (filterType === "all") {
+        // No filtering; show all games
+        filteredData = originalData;
+    }
+
+    // Call updateChart with filtered data
+    updateChart(playerId, filteredData, stat, line);
+}
+
+// Button functions to filter data
+function showRecentGames(playerId, numGames) {
+    applyFilter(playerId, "recent", numGames);
+}
+
+function filterBySeason(playerId, season) {
+    applyFilter(playerId, "season", season);
+}
+
+function showAllGames(playerId) {
+    applyFilter(playerId, "all");
 }

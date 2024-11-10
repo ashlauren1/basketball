@@ -146,6 +146,69 @@
                 }
             }
         });
+        document.addEventListener("DOMContentLoaded", async function () {
+            const searchBar = document.getElementById("search-bar");
+            const searchResults = document.getElementById("search-results");
+
+            let playerLinks = {};
+            let teamLinks = {};
+
+            // Load players and teams data from JSON files
+            async function loadLinks() {
+                playerLinks = await fetch('players.json').then(response => response.json());
+                teamLinks = await fetch('teams.json').then(response => response.json());
+            }
+
+            await loadLinks();  // Ensure links are loaded before searching
+
+            // Filter data and show suggestions based on input
+            function updateSuggestions() {
+                const query = searchBar.value.trim().toLowerCase();
+                searchResults.innerHTML = ""; // Clear previous results
+
+                if (query === "") return;
+
+                // Combine players and teams for search
+                const combinedLinks = { ...playerLinks, ...teamLinks };
+                const matchingEntries = Object.entries(combinedLinks)
+                    .filter(([name]) => name.includes(query))  // Matches on both name and ID
+                    .slice(0, 5); // Limit to top 5
+
+                matchingEntries.forEach(([name, url]) => {
+                    const resultItem = document.createElement("div");
+                    resultItem.classList.add("suggestion");
+
+                    // Proper case for names
+                    resultItem.textContent = name.split(" ")
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                        .join(" ");
+
+                    resultItem.addEventListener("click", () => {
+                        window.open(url, "_blank");
+                    });
+                    searchResults.appendChild(resultItem);
+                });
+
+                if (matchingEntries.length > 0) {
+                    searchResults.style.display = "block"; // Show results if matches are found
+                } else {
+                    const noResultItem = document.createElement("div");
+                    noResultItem.classList.add("no-result");
+                    noResultItem.textContent = "No results found.";
+                    searchResults.appendChild(noResultItem);
+                    searchResults.style.display = "block";
+                }
+            }
+            
+            document.addEventListener("click", function(event) {
+                if (!searchContainer.contains(event.target)) {
+                    searchResults.style.display = "none";
+                }
+            });
+
+            // Add event listener to search bar
+            searchBar.addEventListener("input", updateSuggestions);
+    });
         </script>
         </head>
         <body>
@@ -154,6 +217,12 @@
             <a href="/basketball/players/">Players</a>
             <a href="/basketball/boxscores/">Box Scores</a>
             <a href="/basketball/teams/">Teams</a>
+            <a href="https://ashlauren1.github.io/hockey/">Hockey</a>
+        </div>
+        <div id="search-container">
+            <input type="text" id="search-bar" placeholder="Search for a player or team...">
+            <button id="search-button">Search</button>
+            <div id="search-results"></div>
         </div>
         <div class="header">
         <h1>NYK vs PHI - 3/10/2024</h1>
@@ -194,65 +263,23 @@
                 <tbody>
             
                     <tr>
-                        <td style="text-align:left"><a href="/basketball/players/brunsja01.html" target="_blank">Jalen Brunson</a></td>
+                        <td style="text-align:left"><a href="/basketball/players/achiupr01.html" target="_blank">Precious Achiuwa</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
-                        <td>19</td>
-                        <td>3</td>
                         <td>8</td>
-                        <td>0</td>
+                        <td>9</td>
                         <td>0</td>
                         <td>2</td>
-                        <td>32.40</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>36.08</td>
+                        <td>3</td>
+                        <td>6</td>
                         <td>2</td>
-                        <td>1</td>
-                        <td>6</td>
-                        <td>22</td>
-                        <td>1</td>
-                        <td>9</td>
-                        <td>6</td>
                         <td>8</td>
                         <td>1</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/divindo01.html" target="_blank">Donte DiVincenzo</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
-                        <td>15</td>
-                        <td>9</td>
                         <td>3</td>
-                        <td>2</td>
-                        <td>1</td>
+                        <td>3</td>
                         <td>4</td>
-                        <td>36.27</td>
-                        <td>2</td>
-                        <td>7</td>
-                        <td>6</td>
-                        <td>17</td>
-                        <td>3</td>
-                        <td>12</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>3</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/hartjo01.html" target="_blank">Josh Hart</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
-                        <td>9</td>
-                        <td>11</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>6</td>
-                        <td>43.02</td>
-                        <td>3</td>
-                        <td>8</td>
-                        <td>4</td>
-                        <td>13</td>
-                        <td>1</td>
-                        <td>7</td>
-                        <td>0</td>
-                        <td>0</td>
                         <td>2</td>
                     </tr>
                 
@@ -278,23 +305,107 @@
                     </tr>
                 
                     <tr>
-                        <td style="text-align:left"><a href="/basketball/players/achiupr01.html" target="_blank">Precious Achiuwa</a></td>
+                        <td style="text-align:left"><a href="/basketball/players/brunsja01.html" target="_blank">Jalen Brunson</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
+                        <td>19</td>
+                        <td>3</td>
                         <td>8</td>
-                        <td>9</td>
+                        <td>0</td>
                         <td>0</td>
                         <td>2</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>36.08</td>
-                        <td>3</td>
-                        <td>6</td>
+                        <td>32.40</td>
                         <td>2</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>22</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>6</td>
                         <td>8</td>
                         <td>1</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/burksal01.html" target="_blank">Alec Burks</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>11.97</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
                         <td>3</td>
+                        <td>1</td>
                         <td>3</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/divindo01.html" target="_blank">Donte DiVincenzo</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
+                        <td>15</td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
                         <td>4</td>
+                        <td>36.27</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>17</td>
+                        <td>3</td>
+                        <td>12</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/harteis01.html" target="_blank">Isaiah Hartenstein</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
+                        <td>3</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>23.63</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/hartjo01.html" target="_blank">Josh Hart</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
+                        <td>9</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>6</td>
+                        <td>43.02</td>
+                        <td>3</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>13</td>
+                        <td>1</td>
+                        <td>7</td>
+                        <td>0</td>
+                        <td>0</td>
                         <td>2</td>
                     </tr>
                 
@@ -320,27 +431,6 @@
                     </tr>
                 
                     <tr>
-                        <td style="text-align:left"><a href="/basketball/players/burksal01.html" target="_blank">Alec Burks</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
-                        <td>5</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>11.97</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0</td>
-                    </tr>
-                
-                    <tr>
                         <td style="text-align:left"><a href="/basketball/players/simsje01.html" target="_blank">Jericho Sims</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
                         <td>4</td>
@@ -359,27 +449,6 @@
                         <td>0</td>
                         <td>0</td>
                         <td>1</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/harteis01.html" target="_blank">Isaiah Hartenstein</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
-                        <td>3</td>
-                        <td>10</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>23.63</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
                     </tr>
                 
                 </tbody>
@@ -438,132 +507,6 @@
                 <tbody>
             
                     <tr>
-                        <td style="text-align:left"><a href="/basketball/players/oubreke01.html" target="_blank">Kelly Oubre Jr.</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
-                        <td>18</td>
-                        <td>10</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>3</td>
-                        <td>32.85</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>19</td>
-                        <td>0</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td>9</td>
-                        <td>5</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/harrito02.html" target="_blank">Tobias Harris</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>3</td>
-                        <td>38.27</td>
-                        <td>2</td>
-                        <td>10</td>
-                        <td>5</td>
-                        <td>14</td>
-                        <td>0</td>
-                        <td>4</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>1</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/payneca01.html" target="_blank">Cameron Payne</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
-                        <td>7</td>
-                        <td>1</td>
-                        <td>5</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>29.50</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>13</td>
-                        <td>1</td>
-                        <td>6</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>4</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/hieldbu01.html" target="_blank">Buddy Hield</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
-                        <td>16</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>26.05</td>
-                        <td>2</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>9</td>
-                        <td>4</td>
-                        <td>6</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/reedpa01.html" target="_blank">Paul Reed</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
-                        <td>13</td>
-                        <td>7</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>4</td>
-                        <td>1</td>
-                        <td>27.95</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>8</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/lowryky01.html" target="_blank">Kyle Lowry</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
-                        <td>8</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>30.95</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>8</td>
-                        <td>2</td>
-                        <td>5</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2</td>
-                    </tr>
-                
-                    <tr>
                         <td style="text-align:left"><a href="/basketball/players/bambamo01.html" target="_blank">Mo Bamba</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
                         <td>4</td>
@@ -579,27 +522,6 @@
                         <td>4</td>
                         <td>0</td>
                         <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/martike04.html" target="_blank">KJ Martin</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>3.73</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -624,6 +546,153 @@
                         <td>0</td>
                         <td>0</td>
                         <td>2</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/harrito02.html" target="_blank">Tobias Harris</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>38.27</td>
+                        <td>2</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>14</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>1</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/hieldbu01.html" target="_blank">Buddy Hield</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+                        <td>16</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>26.05</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/lowryky01.html" target="_blank">Kyle Lowry</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>30.95</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/martike04.html" target="_blank">KJ Martin</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3.73</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/oubreke01.html" target="_blank">Kelly Oubre Jr.</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+                        <td>18</td>
+                        <td>10</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>32.85</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>19</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>9</td>
+                        <td>5</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/payneca01.html" target="_blank">Cameron Payne</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>29.50</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>13</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>4</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/reedpa01.html" target="_blank">Paul Reed</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+                        <td>13</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>27.95</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
                     </tr>
                 
                 </tbody>

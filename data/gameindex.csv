@@ -1,4 +1,8 @@
 Season,Date,Game,GameID,Home,HomeID,PTS,Away,AwayID,PTSA
+2024-25,11/9/2024,SAS vs UTA,202411090SAS,San Antonio Spurs,SAS,110,Utah Jazz,UTA,111
+2024-25,11/9/2024,ATL vs CHI,202411090ATL,Atlanta Hawks,ATL,113,Chicago Bulls,CHI,125
+2024-25,11/9/2024,CLE vs BRK,202411090CLE,Cleveland Cavaliers,CLE,105,Brooklyn Nets,BRK,100
+2024-25,11/9/2024,LAC vs TOR,202411090LAC,Los Angeles Clippers,LAC,105,Toronto Raptors,TOR,103
 2024-25,11/8/2024,BOS vs BRK,202411080BOS,Boston Celtics,BOS,108,Brooklyn Nets,BRK,104
 2024-25,11/8/2024,CHO vs IND,202411080CHO,Charlotte Hornets,CHO,103,Indiana Pacers,IND,83
 2024-25,11/8/2024,CLE vs GSW,202411080CLE,Cleveland Cavaliers,CLE,136,Golden State Warriors,GSW,117

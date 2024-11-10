@@ -19,34 +19,10 @@ def fetch_webpage(url):
 
 # Define the game IDs, home teams, and away teams
 games_info = { 
-    "202411060CHO": ("CHO", "DET"),
-    "202411060IND": ("IND", "ORL"),
-    "202411060ATL": ("ATL", "NYK"),
-    "202411060BOS": ("BOS", "GSW"),
-    "202411060HOU": ("HOU", "SAS"),
-    "202411060MEM": ("MEM", "LAL"),
-    "202411060NOP": ("NOP", "CLE"),
-    "202411060DAL": ("DAL", "CHI"),
-    "202411060DEN": ("DEN", "OKC"),
-    "202411060PHO": ("PHO", "MIA"),
-    "202411060LAC": ("LAC", "PHI"),
-    "202411060SAC": ("SAC", "TOR"),
-    "202411070CHI": ("CHI", "MIN"),
-    "202411070MIL": ("MIL", "UTA"),
-    "202411070SAS": ("SAS", "POR"),
-    "202411080CHO": ("CHO", "IND"),
-    "202411080DET": ("DET", "ATL"),
-    "202411080ORL": ("ORL", "NOP"),
-    "202411080BOS": ("BOS", "BRK"),
-    "202411080CLE": ("CLE", "GSW"),
-    "202411080DAL": ("DAL", "PHO"),
-    "202411080NYK": ("NYK", "MIL"),
-    "202411080MEM": ("MEM", "WAS"),
-    "202411080OKC": ("OKC", "HOU"),
-    "202411080DEN": ("DEN", "MIA"),
-    "202411080MIN": ("MIN", "POR"),
-    "202411080LAL": ("LAL", "PHI"),
-    "202411080SAC": ("SAC", "LAC")
+    "202411090SAS": ("SAS", "UTA"),
+    "202411090ATL": ("ATL", "CHI"),
+    "202411090CLE": ("CLE", "BRK"),
+    "202411090LAC": ("LAC", "TOR")
 }
 
 

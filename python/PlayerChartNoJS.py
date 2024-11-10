@@ -12,7 +12,7 @@ gamelogs_df['Date'] = pd.to_datetime(gamelogs_df['Date'])
 gamelogs_df = gamelogs_df.sort_values(by='Date')
 
 # List of all stats to generate charts for
-all_stats = ["PTS", "REB", "AST", "STL", "BLK", "TOV", "MP", "OffREB", "DefREB", "FG", "FGA", "3P", "3PA", "FT", "FTA", "PF"]
+all_stats = ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK+STL', 'REB+AST', 'PTS+AST', 'PTS+REB', 'PTS+REB+AST', 'FANTASY']
 
 # Default betting line and stat
 default_betting_line = 0.5
@@ -54,6 +54,15 @@ chart_html_template = """
         </div>
     </div>
     <canvas id="chart_{player_id}" class="player-barChart"></canvas>
+    <div class="filter-buttons">
+        <button id="L5_{player_id}" onclick="showRecentGames('{player_id}', 5)">L5</button>
+        <button id="L10_{player_id}" onclick="showRecentGames('{player_id}', 10)">L10</button>
+        <button id="L20_{player_id}" onclick="showRecentGames('{player_id}', 20)">L20</button>
+        <button id="202324_{player_id}" onclick="filterBySeason('{player_id}', '2023-24')">2023-24</button>
+        <button id="202425_{player_id}" onclick="filterBySeason('{player_id}', '2024-25')">2024-25</button>
+        <button id="showAll_{player_id}" onclick="showAllGames('{player_id}')">All</button>
+        <button id="clearFiltersBtn_{player_id}" onclick="clearFilters('{player_id}')" class="clear-chart-filters">Clear Filters</button>
+    </div>
     <div class="slider-container">
         <div id="line-slider">
             <label for="lineSlider_{player_id}">Change Line:</label>
@@ -62,7 +71,6 @@ chart_html_template = """
         </div>
         <div class="chartButtons">
             <button id="reset-line-btn_{player_id}" onclick="updateLine('{player_id}', {betting_line})" class="reset-line-btn">Reset Line</button>
-            <button id="clearFiltersBtn_{player_id}" onclick="clearFilters('{player_id}')" class="clear-chart-filters">Clear Filters</button>
         </div>
     </div>
 </div>
@@ -106,6 +114,7 @@ for filename in os.listdir(html_dir):
                 "date": row["Date"].strftime("%Y-%m-%d"),
                 "opponent": row["Opp"],
                 "location": "home" if row["Is_Home"] == 1 else "away",
+                "season": row["Season"],
                 **{stat: row[stat] for stat in all_stats if stat in row}
             }
             for _, row in player_gamelogs.iterrows()
@@ -129,7 +138,13 @@ for filename in os.listdir(html_dir):
             "3PA": "3-Point Attempts", 
             "FT": "Free Throws", 
             "FTA": "Free Throw Attempts", 
-            "PF": "Personal Fouls"
+            "PF": "Fouls",
+            "BLK+STL": "BLK+STL",
+            "REB+AST": "REB+AST",
+            "PTS+AST": "PTS+AST",
+            "PTS+REB": "PTS+REB",
+            "PTS+REB+AST": "PTS+REB+AST",
+            "FANTASY": "Fantasy Score"
         }
         stat_options = "\n".join([f'<option value="{stat}">{stat_map.get(stat, stat)}</option>' for stat in all_stats])
 

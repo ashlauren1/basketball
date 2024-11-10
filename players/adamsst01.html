@@ -169,6 +169,71 @@
                 rows.forEach(row => tbody.appendChild(row));
             }
         });
+        
+        document.addEventListener("DOMContentLoaded", async function () {
+            const searchBar = document.getElementById("search-bar");
+            const searchResults = document.getElementById("search-results");
+
+            let playerLinks = {};
+            let teamLinks = {};
+
+            // Load players and teams data from JSON files
+            async function loadLinks() {
+                playerLinks = await fetch('players.json').then(response => response.json());
+                teamLinks = await fetch('teams.json').then(response => response.json());
+            }
+
+            await loadLinks();  // Ensure links are loaded before searching
+
+            // Filter data and show suggestions based on input
+            function updateSuggestions() {
+                const query = searchBar.value.trim().toLowerCase();
+                searchResults.innerHTML = ""; // Clear previous results
+
+                if (query === "") return;
+
+                // Combine players and teams for search
+                const combinedLinks = { ...playerLinks, ...teamLinks };
+                const matchingEntries = Object.entries(combinedLinks)
+                    .filter(([name]) => name.includes(query))  // Matches on both name and ID
+                    .slice(0, 5); // Limit to top 5
+
+                matchingEntries.forEach(([name, url]) => {
+                    const resultItem = document.createElement("div");
+                    resultItem.classList.add("suggestion");
+
+                    // Proper case for names
+                    resultItem.textContent = name.split(" ")
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                        .join(" ");
+
+                    resultItem.addEventListener("click", () => {
+                        window.open(url, "_blank");
+                    });
+                    searchResults.appendChild(resultItem);
+                });
+
+                if (matchingEntries.length > 0) {
+                    searchResults.style.display = "block"; // Show results if matches are found
+                } else {
+                    const noResultItem = document.createElement("div");
+                    noResultItem.classList.add("no-result");
+                    noResultItem.textContent = "No results found.";
+                    searchResults.appendChild(noResultItem);
+                    searchResults.style.display = "block";
+                }
+            }
+            
+            document.addEventListener("click", function(event) {
+                if (!searchContainer.contains(event.target)) {
+                    searchResults.style.display = "none";
+                }
+            });
+
+            // Add event listener to search bar
+            searchBar.addEventListener("input", updateSuggestions);
+    });
+                
         </script>
 </head>
 <body>
@@ -177,7 +242,12 @@
 <a href="/basketball/players/">Players</a>
 <a href="/basketball/boxscores/">Box Scores</a>
 <a href="/basketball/teams/">Teams</a>
+<a href="https://ashlauren1.github.io/hockey/">Hockey</a>
 </div>
+<div id="search-container">
+<input id="search-bar" placeholder="Search for a player or team..." type="text"/>
+<button id="search-button">Search</button>
+<div id="search-results"></div>
 <div class="header">
 <h1>Steven Adams</h1>
 </div>
@@ -193,8 +263,8 @@
 <option value="PTS">Points</option>
 <option value="REB">Rebounds</option>
 <option value="AST">Assists</option>
-<option value="STL">Steals</option>
 <option value="BLK">Blocks</option>
+<option value="STL">Steals</option>
 <option value="TOV">Turnovers</option>
 <option value="MP">Minutes Played</option>
 <option value="OffREB">Offensive Rebounds</option>
@@ -205,7 +275,13 @@
 <option value="3PA">3-Point Attempts</option>
 <option value="FT">Free Throws</option>
 <option value="FTA">Free Throw Attempts</option>
-<option value="PF">Personal Fouls</option>
+<option value="PF">Fouls</option>
+<option value="BLK+STL">BLK+STL</option>
+<option value="REB+AST">REB+AST</option>
+<option value="PTS+AST">PTS+AST</option>
+<option value="PTS+REB">PTS+REB</option>
+<option value="PTS+REB+AST">PTS+REB+AST</option>
+<option value="FANTASY">Fantasy Score</option>
 </select>
 </div>
 <div class="barChartFilter">
@@ -236,6 +312,15 @@
 </div>
 </div>
 <canvas class="player-barChart" id="chart_adamsst01"></canvas>
+<div class="filter-buttons">
+<button id="L5_adamsst01" onclick="showRecentGames('adamsst01', 5)">L5</button>
+<button id="L10_adamsst01" onclick="showRecentGames('adamsst01', 10)">L10</button>
+<button id="L20_adamsst01" onclick="showRecentGames('adamsst01', 20)">L20</button>
+<button id="202324_adamsst01" onclick="filterBySeason('adamsst01', '2023-24')">2023-24</button>
+<button id="202425_adamsst01" onclick="filterBySeason('adamsst01', '2024-25')">2024-25</button>
+<button id="showAll_adamsst01" onclick="showAllGames('adamsst01')">All</button>
+<button class="clear-chart-filters" id="clearFiltersBtn_adamsst01" onclick="clearFilters('adamsst01')">Clear Filters</button>
+</div>
 <div class="slider-container">
 <div id="line-slider">
 <label for="lineSlider_adamsst01">Change Line:</label>
@@ -244,7 +329,6 @@
 </div>
 <div class="chartButtons">
 <button class="reset-line-btn" id="reset-line-btn_adamsst01" onclick="updateLine('adamsst01', 0.5)">Reset Line</button>
-<button class="clear-chart-filters" id="clearFiltersBtn_adamsst01" onclick="clearFilters('adamsst01')">Clear Filters</button>
 </div>
 </div>
 </div>
@@ -253,7 +337,7 @@
 <script src="chartScript.js"></script>
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
-    initializeChart("adamsst01", [{'date': '2024-10-28', 'opponent': 'SAS', 'location': 'away', 'PTS': 6, 'REB': 3, 'AST': 0, 'STL': 0, 'BLK': 0, 'TOV': 1, 'MP': 13.86666667, 'OffREB': 1, 'DefREB': 2, 'FG': 3, 'FGA': 3, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 1, 'PF': 3}, {'date': '2024-10-31', 'opponent': 'DAL', 'location': 'away', 'PTS': 0, 'REB': 1, 'AST': 3, 'STL': 1, 'BLK': 0, 'TOV': 0, 'MP': 9.966666667, 'OffREB': 1, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 2}, {'date': '2024-11-04', 'opponent': 'NYK', 'location': 'home', 'PTS': 4, 'REB': 5, 'AST': 3, 'STL': 0, 'BLK': 0, 'TOV': 1, 'MP': 13.65, 'OffREB': 3, 'DefREB': 2, 'FG': 1, 'FGA': 4, '3P': 0, '3PA': 0, 'FT': 2, 'FTA': 4, 'PF': 1}, {'date': '2024-11-08', 'opponent': 'OKC', 'location': 'away', 'PTS': 5, 'REB': 2, 'AST': 1, 'STL': 1, 'BLK': 0, 'TOV': 3, 'MP': 15.51666667, 'OffREB': 1, 'DefREB': 1, 'FG': 2, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 1, 'FTA': 3, 'PF': 1}], 0.5, "PTS");
+    initializeChart("adamsst01", [{'date': '2024-10-28', 'opponent': 'SAS', 'location': 'away', 'season': '2024-25', 'PTS': 6, 'REB': 3, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 13.86666667, 'OffREB': 1, 'DefREB': 2, 'FG': 3, 'FGA': 3, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 1, 'PF': 3, 'BLK+STL': 0, 'REB+AST': 3, 'PTS+AST': 6, 'PTS+REB': 9, 'PTS+REB+AST': 9, 'FANTASY': 8.6}, {'date': '2024-10-31', 'opponent': 'DAL', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 3, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 9.966666667, 'OffREB': 1, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK+STL': 1, 'REB+AST': 4, 'PTS+AST': 3, 'PTS+REB': 1, 'PTS+REB+AST': 4, 'FANTASY': 8.7}, {'date': '2024-11-04', 'opponent': 'NYK', 'location': 'home', 'season': '2024-25', 'PTS': 4, 'REB': 5, 'AST': 3, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 13.65, 'OffREB': 3, 'DefREB': 2, 'FG': 1, 'FGA': 4, '3P': 0, '3PA': 0, 'FT': 2, 'FTA': 4, 'PF': 1, 'BLK+STL': 0, 'REB+AST': 8, 'PTS+AST': 7, 'PTS+REB': 9, 'PTS+REB+AST': 12, 'FANTASY': 13.5}, {'date': '2024-11-08', 'opponent': 'OKC', 'location': 'away', 'season': '2024-25', 'PTS': 5, 'REB': 2, 'AST': 1, 'BLK': 0, 'STL': 1, 'TOV': 3, 'MP': 15.51666667, 'OffREB': 1, 'DefREB': 1, 'FG': 2, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 1, 'FTA': 3, 'PF': 1, 'BLK+STL': 1, 'REB+AST': 3, 'PTS+AST': 6, 'PTS+REB': 7, 'PTS+REB+AST': 8, 'FANTASY': 8.9}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <span class="table-button-container">
@@ -263,11 +347,6 @@
 <button id="clear-all-btn">Clear All</button>
 </span>
 <table id="player-table">
-<colgroup>
-<col style="width:70px"/>
-<col style="width:94px"/>
-<col span="17" style="width:48px"/>
-</colgroup>
 <thead>
 <tr>
 <th>Season</th>
@@ -298,54 +377,31 @@
 <tbody>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411080OKC.html" target="_blank">11/8/2024</a></td>
-<td><a href="/basketball/teams/Houston Rockets.html" target="_blank">HOU</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410280SAS.html" target="_blank">10/28/2024</a></td>
+<td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
 <td>@</td>
-<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
-<td>5</td>
-<td>2</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>3</td>
-<td>15.52</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>3</td>
-<td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411040HOU.html" target="_blank">11/4/2024</a></td>
-<td><a href="/basketball/teams/Houston Rockets.html" target="_blank">HOU</a></td>
-<td>vs</td>
-<td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
-<td>4</td>
-<td>5</td>
+<td><a href="/basketball/teams/SAS.html" target="_blank">SAS</a></td>
+<td>6</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
 <td>1</td>
-<td>13.65</td>
+<td>13.87</td>
+<td>1</td>
+<td>2</td>
 <td>3</td>
-<td>2</td>
-<td>1</td>
-<td>4</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2</td>
-<td>4</td>
+<td>0</td>
 <td>1</td>
+<td>3</td>
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
 <td style="text-align:left"><a href="/basketball/boxscores/202410310DAL.html" target="_blank">10/31/2024</a></td>
-<td><a href="/basketball/teams/Houston Rockets.html" target="_blank">HOU</a></td>
+<td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/DAL.html" target="_blank">DAL</a></td>
 <td>0</td>
@@ -367,31 +423,54 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202410280SAS.html" target="_blank">10/28/2024</a></td>
-<td><a href="/basketball/teams/Houston Rockets.html" target="_blank">HOU</a></td>
-<td>@</td>
-<td><a href="/basketball/teams/SAS.html" target="_blank">SAS</a></td>
-<td>6</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411040HOU.html" target="_blank">11/4/2024</a></td>
+<td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
+<td>4</td>
+<td>5</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
 <td>1</td>
-<td>13.87</td>
+<td>13.65</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411080OKC.html" target="_blank">11/8/2024</a></td>
+<td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>15.52</td>
+<td>1</td>
 <td>1</td>
 <td>2</td>
-<td>3</td>
-<td>3</td>
-<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>3</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <div class="footer"></div>
-</body>
+</div></body>
 </html>

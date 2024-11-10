@@ -169,6 +169,71 @@
                 rows.forEach(row => tbody.appendChild(row));
             }
         });
+        
+        document.addEventListener("DOMContentLoaded", async function () {
+            const searchBar = document.getElementById("search-bar");
+            const searchResults = document.getElementById("search-results");
+
+            let playerLinks = {};
+            let teamLinks = {};
+
+            // Load players and teams data from JSON files
+            async function loadLinks() {
+                playerLinks = await fetch('players.json').then(response => response.json());
+                teamLinks = await fetch('teams.json').then(response => response.json());
+            }
+
+            await loadLinks();  // Ensure links are loaded before searching
+
+            // Filter data and show suggestions based on input
+            function updateSuggestions() {
+                const query = searchBar.value.trim().toLowerCase();
+                searchResults.innerHTML = ""; // Clear previous results
+
+                if (query === "") return;
+
+                // Combine players and teams for search
+                const combinedLinks = { ...playerLinks, ...teamLinks };
+                const matchingEntries = Object.entries(combinedLinks)
+                    .filter(([name]) => name.includes(query))  // Matches on both name and ID
+                    .slice(0, 5); // Limit to top 5
+
+                matchingEntries.forEach(([name, url]) => {
+                    const resultItem = document.createElement("div");
+                    resultItem.classList.add("suggestion");
+
+                    // Proper case for names
+                    resultItem.textContent = name.split(" ")
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                        .join(" ");
+
+                    resultItem.addEventListener("click", () => {
+                        window.open(url, "_blank");
+                    });
+                    searchResults.appendChild(resultItem);
+                });
+
+                if (matchingEntries.length > 0) {
+                    searchResults.style.display = "block"; // Show results if matches are found
+                } else {
+                    const noResultItem = document.createElement("div");
+                    noResultItem.classList.add("no-result");
+                    noResultItem.textContent = "No results found.";
+                    searchResults.appendChild(noResultItem);
+                    searchResults.style.display = "block";
+                }
+            }
+            
+            document.addEventListener("click", function(event) {
+                if (!searchContainer.contains(event.target)) {
+                    searchResults.style.display = "none";
+                }
+            });
+
+            // Add event listener to search bar
+            searchBar.addEventListener("input", updateSuggestions);
+    });
+                
         </script>
 </head>
 <body>
@@ -177,7 +242,12 @@
 <a href="/basketball/players/">Players</a>
 <a href="/basketball/boxscores/">Box Scores</a>
 <a href="/basketball/teams/">Teams</a>
+<a href="https://ashlauren1.github.io/hockey/">Hockey</a>
 </div>
+<div id="search-container">
+<input id="search-bar" placeholder="Search for a player or team..." type="text"/>
+<button id="search-button">Search</button>
+<div id="search-results"></div>
 <div class="header">
 <h1>KJ Simpson</h1>
 </div>
@@ -193,8 +263,8 @@
 <option value="PTS">Points</option>
 <option value="REB">Rebounds</option>
 <option value="AST">Assists</option>
-<option value="STL">Steals</option>
 <option value="BLK">Blocks</option>
+<option value="STL">Steals</option>
 <option value="TOV">Turnovers</option>
 <option value="MP">Minutes Played</option>
 <option value="OffREB">Offensive Rebounds</option>
@@ -205,7 +275,13 @@
 <option value="3PA">3-Point Attempts</option>
 <option value="FT">Free Throws</option>
 <option value="FTA">Free Throw Attempts</option>
-<option value="PF">Personal Fouls</option>
+<option value="PF">Fouls</option>
+<option value="BLK+STL">BLK+STL</option>
+<option value="REB+AST">REB+AST</option>
+<option value="PTS+AST">PTS+AST</option>
+<option value="PTS+REB">PTS+REB</option>
+<option value="PTS+REB+AST">PTS+REB+AST</option>
+<option value="FANTASY">Fantasy Score</option>
 </select>
 </div>
 <div class="barChartFilter">
@@ -233,6 +309,15 @@
 </div>
 </div>
 <canvas class="player-barChart" id="chart_simpskj01"></canvas>
+<div class="filter-buttons">
+<button id="L5_simpskj01" onclick="showRecentGames('simpskj01', 5)">L5</button>
+<button id="L10_simpskj01" onclick="showRecentGames('simpskj01', 10)">L10</button>
+<button id="L20_simpskj01" onclick="showRecentGames('simpskj01', 20)">L20</button>
+<button id="202324_simpskj01" onclick="filterBySeason('simpskj01', '2023-24')">2023-24</button>
+<button id="202425_simpskj01" onclick="filterBySeason('simpskj01', '2024-25')">2024-25</button>
+<button id="showAll_simpskj01" onclick="showAllGames('simpskj01')">All</button>
+<button class="clear-chart-filters" id="clearFiltersBtn_simpskj01" onclick="clearFilters('simpskj01')">Clear Filters</button>
+</div>
 <div class="slider-container">
 <div id="line-slider">
 <label for="lineSlider_simpskj01">Change Line:</label>
@@ -241,7 +326,6 @@
 </div>
 <div class="chartButtons">
 <button class="reset-line-btn" id="reset-line-btn_simpskj01" onclick="updateLine('simpskj01', 0.5)">Reset Line</button>
-<button class="clear-chart-filters" id="clearFiltersBtn_simpskj01" onclick="clearFilters('simpskj01')">Clear Filters</button>
 </div>
 </div>
 </div>
@@ -250,7 +334,7 @@
 <script src="chartScript.js"></script>
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
-    initializeChart("simpskj01", [{'date': '2024-11-04', 'opponent': 'MIN', 'location': 'away', 'PTS': 2, 'REB': 3, 'AST': 1, 'STL': 0, 'BLK': 0, 'TOV': 0, 'MP': 6.883333333, 'OffREB': 2, 'DefREB': 1, 'FG': 1, 'FGA': 2, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0}], 0.5, "PTS");
+    initializeChart("simpskj01", [{'date': '2024-11-04', 'opponent': 'MIN', 'location': 'away', 'season': '2024-25', 'PTS': 2, 'REB': 3, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 6.883333333, 'OffREB': 2, 'DefREB': 1, 'FG': 1, 'FGA': 2, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK+STL': 0, 'REB+AST': 4, 'PTS+AST': 3, 'PTS+REB': 5, 'PTS+REB+AST': 6, 'FANTASY': 7.1}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <span class="table-button-container">
@@ -260,11 +344,6 @@
 <button id="clear-all-btn">Clear All</button>
 </span>
 <table id="player-table">
-<colgroup>
-<col style="width:70px"/>
-<col style="width:94px"/>
-<col span="17" style="width:48px"/>
-</colgroup>
 <thead>
 <tr>
 <th>Season</th>
@@ -296,7 +375,7 @@
 <tr>
 <td style="text-align:left">2024-25</td>
 <td style="text-align:left"><a href="/basketball/boxscores/202411040MIN.html" target="_blank">11/4/2024</a></td>
-<td><a href="/basketball/teams/Charlotte Hornets.html" target="_blank">CHO</a></td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/MIN.html" target="_blank">MIN</a></td>
 <td>2</td>
@@ -321,5 +400,5 @@
 </div>
 </div>
 <div class="footer"></div>
-</body>
+</div></body>
 </html>

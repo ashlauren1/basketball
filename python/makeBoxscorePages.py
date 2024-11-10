@@ -208,7 +208,7 @@ def create_game_directory(game_data, output_file_path):
             <a href="/basketball/players/">Players</a>
             <a href="/basketball/boxscores/">Box Scores</a>
             <a href="/basketball/teams/">Teams</a>
-            <a href="https://ashlauren1.github.io/hockey/">Hockey</a>
+            <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
         </div>
         <div id="search-container">
             <input type="text" id="search-bar" placeholder="Search for a player or team...">
@@ -515,7 +515,7 @@ def create_game_boxscores(gamelogs_data, output_dir):
             <a href="/basketball/players/">Players</a>
             <a href="/basketball/boxscores/">Box Scores</a>
             <a href="/basketball/teams/">Teams</a>
-            <a href="https://ashlauren1.github.io/hockey/">Hockey</a>
+            <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
         </div>
         <div id="search-container">
             <input type="text" id="search-bar" placeholder="Search for a player or team...">

@@ -96,7 +96,7 @@ def create_team_directory(data, output_dir):
             <a href="/basketball/players/">Players</a>
             <a href="/basketball/boxscores/">Box Scores</a>
             <a href="/basketball/teams/">Teams</a>
-            <a href="https://ashlauren1.github.io/hockey/">Hockey</a>
+            <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
         </div>
         <div id="search-container">
             <input type="text" id="search-bar" placeholder="Search for a player or team...">
@@ -394,7 +394,7 @@ def create_team_pages(data, output_dir):
             <a href="/basketball/players/">Players</a>
             <a href="/basketball/boxscores/">Box Scores</a>
             <a href="/basketball/teams/">Teams</a>
-            <a href="https://ashlauren1.github.io/hockey/">Hockey</a>
+            <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
         </div>    
         <div id="search-container">
             <input type="text" id="search-bar" placeholder="Search for a player or team...">

@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Xavier Moon</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="stylesheet.css" rel="stylesheet"/>
+<link href="/basketball/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const table = document.getElementById("player-table");
+            const headerRow = table.querySelector("thead tr:first-child");
+            const filterRow = document.querySelector("#filter-row");
+            const rows = Array.from(table.querySelectorAll("tbody tr"));
+            const toggleSelectionBtn = document.getElementById("toggle-selection-btn");
+            const clearAllButton = document.getElementById("clear-all-btn");
+            const clearButton = document.getElementById("clear-filters-btn");
+            let showSelectedOnly = false;
+            let isDragging = false;
+
+            // Add filters and sorting
+            addFilters(table);
+            addSortToHeaders(table);
+
+            // "Clear Filters" button functionality
+            clearButton.addEventListener("click", () => {
+                document.querySelectorAll(".filter-select").forEach(select => select.value = "");
+                filterTable();
+            });
+
+            // "Clear All" functionality
+            clearAllButton.addEventListener("click", () => {
+                rows.forEach(row => {
+                    row.classList.remove("selected-row");
+                    row.style.display = "";
+                });
+                document.querySelectorAll(".filter-select").forEach(select => select.value = "");
+                toggleSelectionBtn.textContent = "Show Selected Only";
+                showSelectedOnly = false;
+                filterTable();
+            });
+
+            rows.forEach(row => {
+                row.addEventListener("mousedown", function () {
+                    isDragging = true;
+                    toggleRowSelection(row);
+                });
+                row.addEventListener("mouseenter", function () {
+                    if (isDragging) toggleRowSelection(row);
+                });
+                row.addEventListener("mouseup", () => isDragging = false);
+            });
+
+            document.addEventListener("mouseup", () => isDragging = false);
+
+            function toggleRowSelection(row) {
+                row.classList.toggle("selected-row");
+            }
+
+            toggleSelectionBtn.addEventListener("click", () => {
+                showSelectedOnly = !showSelectedOnly;
+                if (showSelectedOnly) {
+                    rows.forEach(row => {
+                        row.style.display = row.classList.contains("selected-row") ? "" : "none";
+                    });
+                    toggleSelectionBtn.textContent = "Show All";
+                } else {
+                    rows.forEach(row => (row.style.display = ""));
+                    toggleSelectionBtn.textContent = "Show Selected Only";
+                }
+            });
+
+            function addFilters(table) {
+                const headerRow = table.querySelector("thead tr:first-child");
+                const filterRow = document.querySelector("#filter-row");
+
+                Array.from(headerRow.cells).forEach((header, index) => {
+                    const filterCell = document.createElement("td");
+                    const filterSelect = document.createElement("select");
+                    filterSelect.classList.add("filter-select");
+
+                    filterSelect.innerHTML = '<option value="">All</option>';
+                    const values = Array.from(new Set(
+                        Array.from(table.querySelectorAll("tbody tr td:nth-child(" + (index + 1) + ")"))
+                        .map(cell => cell.textContent.trim())
+                    )).sort();
+
+                    values.forEach(value => {
+                        const option = document.createElement("option");
+                        option.value = value;
+                        option.textContent = value;
+                        filterSelect.appendChild(option);
+                    });
+
+                    filterSelect.addEventListener("change", filterTable);
+                    filterCell.appendChild(filterSelect);
+                    filterRow.appendChild(filterCell);
+                });
+            }
+
+            function filterTable() {
+                const filters = Array.from(document.querySelectorAll(".filter-select")).map(select => select.value);
+                rows.forEach(row => {
+                    const cells = Array.from(row.cells);
+                    const matchesFilter = filters.every((filter, i) => !filter || cells[i].textContent.trim() === filter);
+                    row.style.display = matchesFilter ? "" : "none";
+                });
+            }
+
+            function addSortToHeaders(table) {
+                const headers = table.querySelectorAll("thead th");
+                headers.forEach((header, index) => {
+                    header.style.cursor = "pointer";
+                    header.addEventListener("click", function () {
+                        sortTable(table, index);
+                    });
+                });
+            }
+
+            function sortTable(table, columnIndex) {
+                const rows = Array.from(table.querySelectorAll("tbody tr"));
+                const direction = table.dataset.sortDirection === "asc" ? "desc" : "asc";
+                table.dataset.sortDirection = direction;
+                
+                // Detect data type
+                let isNumeric = true;
+                let isDate = true;
+                for (let row of rows) {
+                    const cellText = row.cells[columnIndex].textContent.trim();
+                    if (cellText === '') continue; // Skip empty cells
+                    if (isNumeric && isNaN(cellText)) {
+                        isNumeric = false;
+                    }
+                    if (isDate && isNaN(Date.parse(cellText))) {
+                        isDate = false;
+                    }
+                    if (!isNumeric && !isDate) break;
+                }
+
+                rows.sort((a, b) => {
+                    const cellA = a.cells[columnIndex].textContent.trim();
+                    const cellB = b.cells[columnIndex].textContent.trim();
+
+                    let valA, valB;
+
+                    if (isNumeric) {
+                        valA = parseFloat(cellA);
+                        valB = parseFloat(cellB);
+                    } else if (isDate) {
+                        valA = new Date(cellA);
+                        valB = new Date(cellB);
+                    } else {
+                        valA = cellA.toLowerCase();
+                        valB = cellB.toLowerCase();
+                    }
+
+                    if (valA < valB) {
+                        return direction === "asc" ? -1 : 1;
+                    } else if (valA > valB) {
+                        return direction === "asc" ? 1 : -1;
+                    } else {
+                        return 0;
+                    }
+                });
+
+                // Append sorted rows to tbody
+                const tbody = table.querySelector("tbody");
+                rows.forEach(row => tbody.appendChild(row));
+            }
+        });
+        </script>
+</head>
+<body>
+<div class="topnav">
+<a href="/basketball/">Projections</a>
+<a href="/basketball/players/">Players</a>
+<a href="/basketball/boxscores/">Box Scores</a>
+<a href="/basketball/teams/">Teams</a>
+</div>
+<div class="header">
+<h1>Xavier Moon</h1>
+</div>
+<button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
+<div id="player-container">
+
+<div class="player-chart-container">
+<!-- Stat Selection Dropdown -->
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="statSelector_moonxa01">Stat:</label>
+<select id="statSelector_moonxa01" onchange="updateStat('moonxa01', this.value)">
+<option value="PTS">Points</option>
+<option value="REB">Rebounds</option>
+<option value="AST">Assists</option>
+<option value="STL">Steals</option>
+<option value="BLK">Blocks</option>
+<option value="TOV">Turnovers</option>
+<option value="MP">Minutes Played</option>
+<option value="OffREB">Offensive Rebounds</option>
+<option value="DefREB">Defensive Rebounds</option>
+<option value="FG">Field Goals</option>
+<option value="FGA">Field Goal Attempts</option>
+<option value="3P">3-Pointers</option>
+<option value="3PA">3-Point Attempts</option>
+<option value="FT">Free Throws</option>
+<option value="FTA">Free Throw Attempts</option>
+<option value="PF">Personal Fouls</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="teamFilter_moonxa01">Opponent:</label>
+<select id="teamFilter_moonxa01" onchange="applyFilters('moonxa01')">
+<option value="all">All</option>
+<option value="ATL">ATL</option>
+<option value="CHI">CHI</option>
+<option value="HOU">HOU</option>
+<option value="IND">IND</option>
+<option value="MIN">MIN</option>
+<option value="NYK">NYK</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="POR">POR</option>
+<option value="SAC">SAC</option>
+<option value="UTA">UTA</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="homeAwayFilter_moonxa01">Home/Away:</label>
+<select id="homeAwayFilter_moonxa01" onchange="applyFilters('moonxa01')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="startDate_moonxa01">Start:</label>
+<input id="startDate_moonxa01" onchange="applyFilters('moonxa01')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="endDate_moonxa01">End:</label>
+<input id="endDate_moonxa01" onchange="applyFilters('moonxa01')" type="date"/>
+</div>
+</div>
+<canvas class="player-barChart" id="chart_moonxa01"></canvas>
+<div class="slider-container">
+<div id="line-slider">
+<label for="lineSlider_moonxa01">Change Line:</label>
+<input id="lineSlider_moonxa01" max="30" min="0" oninput="updateLine('moonxa01', this.value)" step="0.25" type="range" value="0.5"/>
+<span id="lineValue_moonxa01">0.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" id="reset-line-btn_moonxa01" onclick="updateLine('moonxa01', 0.5)">Reset Line</button>
+<button class="clear-chart-filters" id="clearFiltersBtn_moonxa01" onclick="clearFilters('moonxa01')">Clear Filters</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="chartScript.js"></script>
+<script>
+    // Initialize the chart with player-specific data by calling a function from chart_logic.js
+    initializeChart("moonxa01", [{'date': '2023-12-12', 'opponent': 'SAC', 'location': 'home', 'PTS': 2, 'REB': 0, 'AST': 2, 'STL': 0, 'BLK': 0, 'TOV': 1, 'MP': 6.566666667, 'OffREB': 0, 'DefREB': 0, 'FG': 1, 'FGA': 2, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 1}, {'date': '2023-12-16', 'opponent': 'NYK', 'location': 'home', 'PTS': 0, 'REB': 2, 'AST': 1, 'STL': 0, 'BLK': 0, 'TOV': 0, 'MP': 4.983333333, 'OffREB': 0, 'DefREB': 2, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0}, {'date': '2024-03-12', 'opponent': 'MIN', 'location': 'home', 'PTS': 2, 'REB': 0, 'AST': 0, 'STL': 0, 'BLK': 0, 'TOV': 1, 'MP': 4.133333333, 'OffREB': 0, 'DefREB': 0, 'FG': 1, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0}, {'date': '2024-03-14', 'opponent': 'CHI', 'location': 'away', 'PTS': 0, 'REB': 0, 'AST': 0, 'STL': 0, 'BLK': 0, 'TOV': 0, 'MP': 2.45, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0}, {'date': '2024-03-17', 'opponent': 'ATL', 'location': 'home', 'PTS': 5, 'REB': 1, 'AST': 1, 'STL': 0, 'BLK': 0, 'TOV': 0, 'MP': 2.466666667, 'OffREB': 1, 'DefREB': 0, 'FG': 2, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 1, 'FTA': 2, 'PF': 2}, {'date': '2024-03-20', 'opponent': 'POR', 'location': 'away', 'PTS': 2, 'REB': 0, 'AST': 0, 'STL': 1, 'BLK': 0, 'TOV': 1, 'MP': 5.766666667, 'OffREB': 0, 'DefREB': 0, 'FG': 1, 'FGA': 3, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0}, {'date': '2024-03-22', 'opponent': 'POR', 'location': 'away', 'PTS': 0, 'REB': 2, 'AST': 0, 'STL': 0, 'BLK': 0, 'TOV': 0, 'MP': 4.85, 'OffREB': 1, 'DefREB': 1, 'FG': 0, 'FGA': 3, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 1}, {'date': '2024-03-24', 'opponent': 'PHI', 'location': 'home', 'PTS': 0, 'REB': 0, 'AST': 1, 'STL': 0, 'BLK': 1, 'TOV': 1, 'MP': 3.95, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0}, {'date': '2024-03-25', 'opponent': 'IND', 'location': 'home', 'PTS': 0, 'REB': 0, 'AST': 2, 'STL': 0, 'BLK': 0, 'TOV': 0, 'MP': 1.866666667, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 2, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0}, {'date': '2024-04-05', 'opponent': 'UTA', 'location': 'home', 'PTS': 0, 'REB': 1, 'AST': 0, 'STL': 0, 'BLK': 0, 'TOV': 0, 'MP': 2.266666667, 'OffREB': 1, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0}, {'date': '2024-04-09', 'opponent': 'PHO', 'location': 'away', 'PTS': 0, 'REB': 0, 'AST': 0, 'STL': 0, 'BLK': 0, 'TOV': 0, 'MP': 1.166666667, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0}, {'date': '2024-04-10', 'opponent': 'PHO', 'location': 'home', 'PTS': 6, 'REB': 3, 'AST': 4, 'STL': 0, 'BLK': 0, 'TOV': 0, 'MP': 15.51666667, 'OffREB': 1, 'DefREB': 2, 'FG': 3, 'FGA': 5, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0}, {'date': '2024-04-12', 'opponent': 'UTA', 'location': 'home', 'PTS': 2, 'REB': 3, 'AST': 4, 'STL': 0, 'BLK': 1, 'TOV': 1, 'MP': 16.91666667, 'OffREB': 2, 'DefREB': 1, 'FG': 1, 'FGA': 4, '3P': 0, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 2}, {'date': '2024-04-14', 'opponent': 'HOU', 'location': 'home', 'PTS': 14, 'REB': 6, 'AST': 6, 'STL': 2, 'BLK': 1, 'TOV': 0, 'MP': 46.35, 'OffREB': 2, 'DefREB': 4, 'FG': 6, 'FGA': 22, '3P': 2, '3PA': 9, 'FT': 0, 'FTA': 0, 'PF': 2}], 0.5, "PTS");
+</script>
+<div id="table-container">
+<span class="table-button-container">
+<span class="caption">Gamelog</span>
+<button id="toggle-selection-btn">Show Selected Only</button>
+<button id="clear-filters-btn">Remove Filters</button>
+<button id="clear-all-btn">Clear All</button>
+</span>
+<table id="player-table">
+<colgroup>
+<col style="width:70px"/>
+<col style="width:94px"/>
+<col span="17" style="width:48px"/>
+</colgroup>
+<thead>
+<tr>
+<th>Season</th>
+<th>Date</th>
+<th>Team</th>
+<th></th>
+<th>Opp</th>
+<th>PTS</th>
+<th>REB</th>
+<th>AST</th>
+<th>STL</th>
+<th>BLK</th>
+<th>TOV</th>
+<th>MP</th>
+<th>OffREB</th>
+<th>DefREB</th>
+<th>FG</th>
+<th>FGA</th>
+<th>3P</th>
+<th>3PA</th>
+<th>FT</th>
+<th>FTA</th>
+<th>PF</th>
+</tr>
+<tr id="filter-row">
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404140LAC.html" target="_blank">4/14/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
+<td>14</td>
+<td>6</td>
+<td>6</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>46.35</td>
+<td>2</td>
+<td>4</td>
+<td>6</td>
+<td>22</td>
+<td>2</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404120LAC.html" target="_blank">4/12/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/UTA.html" target="_blank">UTA</a></td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>16.92</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404100LAC.html" target="_blank">4/10/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
+<td>6</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>15.52</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404090PHO.html" target="_blank">4/9/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1.17</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404050LAC.html" target="_blank">4/5/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/UTA.html" target="_blank">UTA</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2.27</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403250LAC.html" target="_blank">3/25/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1.87</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403240LAC.html" target="_blank">3/24/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>3.95</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403220POR.html" target="_blank">3/22/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/POR.html" target="_blank">POR</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4.85</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403200POR.html" target="_blank">3/20/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/POR.html" target="_blank">POR</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>5.77</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403170LAC.html" target="_blank">3/17/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/ATL.html" target="_blank">ATL</a></td>
+<td>5</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2.47</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403140CHI.html" target="_blank">3/14/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/CHI.html" target="_blank">CHI</a></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2.45</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403120LAC.html" target="_blank">3/12/2024</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/MIN.html" target="_blank">MIN</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>4.13</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312160LAC.html" target="_blank">12/16/2023</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4.98</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312120LAC.html" target="_blank">12/12/2023</a></td>
+<td><a href="/basketball/teams/Los Angeles Clippers.html" target="_blank">LAC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>6.57</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

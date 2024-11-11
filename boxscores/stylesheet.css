@@ -548,13 +548,6 @@ a:visited {
 	align-items: center;
 }
 
-.caption {
-	margin: 8px 8px 4px 0px;
-	font-size: 18px;
-	font-weight: 600;
-	font-family: Verdana;
-}
-
 .table-button-container button {
 	background-color: var(--box-background-color);
 	color: var(--text-color);
@@ -569,6 +562,13 @@ a:visited {
 
 .table-button-container button:hover {
 	background-color: var(--hover-color);
+}
+
+.caption {
+	margin: 8px 8px 4px 0px;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: Verdana;
 }
 
 /* BARCHART */
@@ -748,6 +748,93 @@ a:visited {
 	width: 100px;
 	align-items: center;
 	margin: 4px auto;
+}
+
+
+
+/* STATS */
+
+#pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style for the page info text */
+#page-info {
+    font-size: 12px;
+    color: var(--text-color);
+    margin: 0 8px;
+}
+
+/* Style for the pagination buttons */
+#pagination button {
+    background-color: var(--box-background-color);
+    color: var(--text-color);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+/* Hover effect for pagination buttons */
+#pagination button:hover {
+    background-color: var(--hover-color);
+}
+
+#allStats-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #ffffff;
+	color: var(--text-color);
+	margin-left: auto;
+	margin-right: auto;
+	overflow-x: auto;
+	font-size: 11px;
+}
+
+#allStats-table th {
+	background-color: var(--box-background-color);
+	font-weight: 600;
+	cursor: pointer;
+	padding: 6px;
+	text-align: center;
+	border: 1px solid #e0e0e0;
+}
+
+#allStats-table th:hover {
+	background-color: var(--hover-color);
+}
+
+#allStats-table tbody tr:hover {
+	background-color: #eaf4f9;
+	cursor: pointer;
+}
+
+#allStats-table tbody tr.selected-row {
+	background-color: #d4e9f1;
+}
+
+#allStats-table tbody tr.selected-row:hover {
+	background-color: #c4dfe8;
+}
+
+#allStats-table td {
+	padding: 4px;
+	text-align: center;
+	border: 1px solid #e0e0e0;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+#allStats-table td:nth-child(1), #allStats-table td:nth-child(2), #allStats-table td:nth-child(3) {
+	text-align: left;
+}
+
+#allStats-table td:nth-child(7), #allStats-table td:nth-child(8), #allStats-table td:nth-child(9), #allStats-table td:nth-child(10), #allStats-table td:nth-child(11), #allStats-table td:nth-child(12), #allStats-table td:nth-child(13), #allStats-table td:nth-child(14), #allStats-table td:nth-child(15), #allStats-table td:nth-child(16), #allStats-table td:nth-child(17), #allStats-table td:nth-child(18), #allStats-table td:nth-child(19), #allStats-table td:nth-child(20), #allStats-table td:nth-child(21), #allStats-table td:nth-child(22), #allStats-table td:nth-child(23), #allStats-table td:nth-child(24), #allStats-table td:nth-child(25), #allStats-table td:nth-child(26), #allStats-table td:nth-child(27), #allStats-table td:nth-child(28) {
+	max-width: 14px;
 }
 
 

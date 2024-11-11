@@ -290,10 +290,11 @@ def generate_h2h_pages(metrics_data, h2h_pairs, output_dir):
 </head>
 <body>
     <div class="topnav">
-        <a href="/basketball/" target="_blank">Projections</a>
-        <a href="/basketball/players/" target="_blank">Players</a>
-        <a href="/basketball/boxscores/" target="_blank">Box Scores</a>
-        <a href="/basketball/teams/" target="_blank">Teams</a>
+        <a href="/basketball/">Projections</a>
+        <a href="/basketball/players/">Players</a>
+        <a href="/basketball/boxscores/">Box Scores</a>
+        <a href="/basketball/teams/">Teams</a>
+        <a href="/basketball/stats/">All Stats</a>
         <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
     </div>
     <div id="search-container">
@@ -795,10 +796,11 @@ document.addEventListener("DOMContentLoaded", function () {
 </head>
 <body>
     <div class="topnav">
-        <a href="/basketball/" target="_blank">Projections</a>
-        <a href="/basketball/players/" target="_blank">Players</a>
-        <a href="/basketball/boxscores/" target="_blank">Box Scores</a>
-        <a href="/basketball/teams/" target="_blank">Teams</a>
+        <a href="/basketball/">Projections</a>
+        <a href="/basketball/players/">Players</a>
+        <a href="/basketball/boxscores/">Box Scores</a>
+        <a href="/basketball/teams/">Teams</a>
+        <a href="/basketball/stats/">All Stats</a>
         <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
     </div>
     <div id="search-container">

@@ -7,7 +7,6 @@ import json
 
 # File paths
 metrics_file_path = r"C:\Users\ashle\Documents\Projects\basketball\data\gamelogs.csv"
-upcoming_games_path = r"C:\Users\ashle\Documents\Projects\basketball\data\games_thisWeek.csv"
 lines_file_path = r"C:\Users\ashle\Documents\Projects\basketball\data\todayLines.csv"
 output_file_path = r"C:\Users\ashle\Documents\Projects\basketball\index.html"
 rosters_file_path = r"C:\Users\ashle\Documents\Projects\basketball\data\rosters.csv"
@@ -15,7 +14,6 @@ rosters_data = pd.read_csv(rosters_file_path)
 
 # Load data
 metrics_data = pd.read_csv(metrics_file_path,  parse_dates=["Date"], low_memory=False)
-upcoming_games_data = pd.read_csv(upcoming_games_path, low_memory=False)
 lines_data = pd.read_csv(lines_file_path)
 
 player_links = {f"{row['Player']} ({row['PlayerID']})".lower(): f"/basketball/players/{row['PlayerID']}.html" 
@@ -37,15 +35,12 @@ print("players.json and teams.json created successfully!")
 # Convert relevant columns to numeric types to avoid type errors
 metrics_data[['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK_STL', 'REB_AST', 'PTS_AST', 'PTS_REB', 'PTS_REB_AST', 'FANTASY']] = metrics_data[['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK_STL', 'REB_AST', 'PTS_AST', 'PTS_REB', 'PTS_REB_AST', 'FANTASY']].apply(pd.to_numeric, errors='coerce')
 
-
-
-# Create a dictionary mapping GameID to Game
-game_mapping = upcoming_games_data.set_index('GameID')['Game'].to_dict()
-
-# Filter for players in lines.csv
 lines_players = lines_data['PlayerID'].unique()
 metrics_data = metrics_data[metrics_data['PlayerID'].isin(lines_players)]
-upcoming_games_data = upcoming_games_data[upcoming_games_data['PlayerID'].isin(lines_players)]
+
+# Create a dictionary mapping GameID to Game
+game_mapping = lines_data.set_index('GameID')['Game'].to_dict()
+
 
 # Functions to calculate averages and ratios
 def calculate_average_stats(group):
@@ -57,13 +52,13 @@ def calculate_over_ratio(filtered_data, line, stat):
     return f"{over_count}/{total_games}" if total_games > 0 else "0/0"
 
 # Aggregated stats
-player_home_stats = metrics_data[metrics_data['Is_Home'] == 1].groupby('PlayerID').apply(calculate_average_stats).to_dict()
-player_away_stats = metrics_data[metrics_data['Is_Home'] == 0].groupby('PlayerID').apply(calculate_average_stats).to_dict()
-player_vs_opp_stats = metrics_data.groupby(['PlayerID', 'Opp']).apply(calculate_average_stats).to_dict()
+player_home_stats = metrics_data[metrics_data['Is_Home'] == 1].groupby('PlayerID').apply(calculate_average_stats, include_groups=False).to_dict()
+player_away_stats = metrics_data[metrics_data['Is_Home'] == 0].groupby('PlayerID').apply(calculate_average_stats, include_groups=False).to_dict()
+player_vs_opp_stats = metrics_data.groupby(['PlayerID', 'Opp']).apply(calculate_average_stats, include_groups=False).to_dict()
 
-team_home_stats = metrics_data[metrics_data['Is_Home'] == 1].groupby('Team').apply(calculate_average_stats).to_dict()
-team_away_stats = metrics_data[metrics_data['Is_Home'] == 0].groupby('Team').apply(calculate_average_stats).to_dict()
-team_vs_opp_stats = metrics_data.groupby(['Team', 'Opp']).apply(calculate_average_stats).to_dict()
+team_home_stats = metrics_data[metrics_data['Is_Home'] == 1].groupby('Team').apply(calculate_average_stats, include_groups=False).to_dict()
+team_away_stats = metrics_data[metrics_data['Is_Home'] == 0].groupby('Team').apply(calculate_average_stats, include_groups=False).to_dict()
+team_vs_opp_stats = metrics_data.groupby(['Team', 'Opp']).apply(calculate_average_stats, include_groups=False).to_dict()
 
 # Projections function
 def get_projected_stats(player_id, team, opp, is_home):
@@ -105,13 +100,13 @@ final_results = []
 columns = ['Game', 'Team', 'Player', 'Type', 'Stat', 'Line', 'Proj.', 'Diff.', 'Prob.', '2024-25', 'H2H', 'L5', 'L10', 'L20', '2023-24', 'All']
 
 # Process each game
-for _, game in tqdm(upcoming_games_data.iterrows(), total=upcoming_games_data.shape[0]):
+for _, game in tqdm(lines_data.iterrows(), total=lines_data.shape[0]):
     player_id = game['PlayerID']
     team = game['Team']
     is_home = game['Is_Home']
     opp = game['Opp']
     game_id = game['GameID']
-    game_display = game_mapping.get(game_id, game_id)
+    game_display = game_mapping.get(game['GameID'], game['GameID'])
     
     # Add the player-opponent pair to the set
     h2h_pairs.add((player_id, opp))

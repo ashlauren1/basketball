@@ -19,101 +19,230 @@ html_content = '''
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script>
+    
     document.addEventListener("DOMContentLoaded", function () {{
-        const table = document.getElementById("allStats-table");
-        const headerRow = table.querySelector("thead tr:first-child");
-        const filterRow = document.querySelector("#filter-row");
-        const rows = Array.from(table.querySelectorAll("tbody tr"));
-        const toggleSelectionBtn = document.getElementById("toggle-selection-btn");
-        const clearAllButton = document.getElementById("clear-all-btn");
-        const clearButton = document.getElementById("clear-filters-btn");
-        let showSelectedOnly = false;
-        let isDragging = false;
+            const table = document.getElementById("team-table");
+            const headerRow = table.querySelector("thead tr:first-child");
+            const filterRow = document.querySelector("#filter-row");
+            const rows = Array.from(table.querySelectorAll("tbody tr"));
+            const toggleSelectionBtn = document.getElementById("toggle-selection-btn");
+            const clearAllButton = document.getElementById("clear-all-btn");
+            const clearButton = document.getElementById("clear-filters-btn");
+            let showSelectedOnly = false;
+            let isDragging = false;
 
-        const rowsPerPage = 500;
-        let currentPage = 1;
-        let totalPages = Math.ceil(rows.length / rowsPerPage);
+            // Add filters and sorting
+            addFilters(table);
+            addSortToHeaders(table);
 
-        document.getElementById('total-pages').textContent = totalPages;
-
-        function displayPage(page) {{
-            const start = (page - 1) * rowsPerPage;
-            const end = start + rowsPerPage;
-            rows.forEach((row, index) => {{
-                row.style.display = (index >= start && index < end) ? '' : 'none';
-            }});
-            document.getElementById('current-page').textContent = page;
-        }}
-
-        document.getElementById('prev-page-btn').addEventListener('click', () => {{
-            if (currentPage > 1) {{
-                currentPage--;
-                displayPage(currentPage);
-            }}
-        }});
-
-        document.getElementById('next-page-btn').addEventListener('click', () => {{
-            if (currentPage < totalPages) {{
-                currentPage++;
-                displayPage(currentPage);
-            }}
-        }});
-
-        displayPage(currentPage);
-
-        function filterTable() {{
-            const filters = Array.from(document.querySelectorAll(".filter-select")).map(select => select.value);
-            let visibleRows = 0;
-            rows.forEach(row => {{
-                const cells = Array.from(row.cells);
-                const matchesFilter = filters.every((filter, i) => !filter || cells[i].textContent.trim() === filter);
-                row.style.display = matchesFilter ? '' : 'none';
-                if (matchesFilter) visibleRows++;
-            }});
-            currentPage = 1;
-            totalPages = Math.ceil(visibleRows / rowsPerPage);
-            document.getElementById('total-pages').textContent = totalPages;
-            displayPage(currentPage);
-        }}
-
-        function sortTable(columnIndex) {{
-            const direction = table.dataset.sortDirection === "asc" ? "desc" : "asc";
-            table.dataset.sortDirection = direction;
-
-            let isNumeric = true;
-            rows.sort((a, b) => {{
-                const cellA = a.cells[columnIndex].textContent.trim();
-                const cellB = b.cells[columnIndex].textContent.trim();
-                if (isNumeric && (isNaN(cellA) || isNaN(cellB))) isNumeric = false;
-                return isNumeric ? direction === "asc" ? cellA - cellB : cellB - cellA
-                                : direction === "asc" ? cellA.localeCompare(cellB) : cellB.localeCompare(cellA);
+            // "Clear Filters" button functionality
+            clearButton.addEventListener("click", () => {{
+                document.querySelectorAll(".filter-select").forEach(select => select.value = "");
+                filterTable();
             }});
 
-            rows.forEach(row => table.querySelector("tbody").appendChild(row));
-            displayPage(currentPage);
-        }}
-
-        function addFilters() {{
-            Array.from(headerRow.cells).forEach((header, index) => {{
-                const filterCell = document.createElement("td");
-                const filterSelect = document.createElement("select");
-                filterSelect.classList.add("filter-select");
-                filterSelect.innerHTML = '<option value="">All</option>';
-                const values = Array.from(new Set(rows.map(row => row.cells[index].textContent.trim()))).sort();
-                values.forEach(value => {{
-                    const option = document.createElement("option");
-                    option.value = value;
-                    option.textContent = value;
-                    filterSelect.appendChild(option);
+            // "Clear All" functionality
+            clearAllButton.addEventListener("click", () => {{
+                rows.forEach(row => {{
+                    row.classList.remove("selected-row");
+                    row.style.display = "";
                 }});
-                filterSelect.addEventListener("change", filterTable);
-                filterCell.appendChild(filterSelect);
-                filterRow.appendChild(filterCell);
+                document.querySelectorAll(".filter-select").forEach(select => select.value = "");
+                toggleSelectionBtn.textContent = "Show Selected Only";
+                showSelectedOnly = false;
+                filterTable();
             }});
-        }}
 
-        addFilters();
-        displayPage(currentPage);
+            rows.forEach(row => {{
+                row.addEventListener("mousedown", function () {{
+                    isDragging = true;
+                    toggleRowSelection(row);
+                }});
+                row.addEventListener("mouseenter", function () {{
+                    if (isDragging) toggleRowSelection(row);
+                }});
+                row.addEventListener("mouseup", () => isDragging = false);
+            }});
+
+            document.addEventListener("mouseup", () => isDragging = false);
+
+            function toggleRowSelection(row) {{
+                row.classList.toggle("selected-row");
+            }}
+
+            toggleSelectionBtn.addEventListener("click", () => {{
+                showSelectedOnly = !showSelectedOnly;
+                if (showSelectedOnly) {{
+                    rows.forEach(row => {{
+                        row.style.display = row.classList.contains("selected-row") ? "" : "none";
+                    }});
+                    toggleSelectionBtn.textContent = "Show All";
+                }} else {{
+                    rows.forEach(row => (row.style.display = ""));
+                    toggleSelectionBtn.textContent = "Show Selected Only";
+                }}
+            }});
+
+            function addFilters(table) {{
+                const headerRow = table.querySelector("thead tr:first-child");
+                const filterRow = document.querySelector("#filter-row");
+
+                Array.from(headerRow.cells).forEach((header, index) => {{
+                    const filterCell = document.createElement("td");
+                    const filterSelect = document.createElement("select");
+                    filterSelect.classList.add("filter-select");
+
+                    filterSelect.innerHTML = '<option value="">All</option>';
+                    const values = Array.from(new Set(
+                        Array.from(table.querySelectorAll("tbody tr td:nth-child(" + (index + 1) + ")"))
+                        .map(cell => cell.textContent.trim())
+                    )).sort();
+
+                    values.forEach(value => {{
+                        const option = document.createElement("option");
+                        option.value = value;
+                        option.textContent = value;
+                        filterSelect.appendChild(option);
+                    }});
+
+                    filterSelect.addEventListener("change", filterTable);
+                    filterCell.appendChild(filterSelect);
+                    filterRow.appendChild(filterCell);
+                }});
+            }}
+
+            function filterTable() {{
+                const filters = Array.from(document.querySelectorAll(".filter-select")).map(select => select.value);
+                rows.forEach(row => {{
+                    const cells = Array.from(row.cells);
+                    const matchesFilter = filters.every((filter, i) => !filter || cells[i].textContent.trim() === filter);
+                    row.style.display = matchesFilter ? "" : "none";
+                }});
+            }}
+
+            function addSortToHeaders(table) {{
+                const headers = table.querySelectorAll("thead th");
+                headers.forEach((header, index) => {{
+                    header.style.cursor = "pointer";
+                    header.addEventListener("click", function () {{
+                        sortTable(table, index);
+                    }});
+                }});
+            }}
+
+            function sortTable(table, columnIndex) {{
+                const rows = Array.from(table.querySelectorAll("tbody tr"));
+                const direction = table.dataset.sortDirection === "asc" ? "desc" : "asc";
+                table.dataset.sortDirection = direction;
+                
+                // Detect data type
+                let isNumeric = true;
+                let isDate = true;
+                for (let row of rows) {{
+                    const cellText = row.cells[columnIndex].textContent.trim();
+                    if (cellText === '') continue; // Skip empty cells
+                    if (isNumeric && isNaN(cellText)) {{
+                        isNumeric = false;
+                    }}
+                    if (isDate && isNaN(Date.parse(cellText))) {{
+                        isDate = false;
+                    }}
+                    if (!isNumeric && !isDate) break;
+                }}
+
+                rows.sort((a, b) => {{
+                    const cellA = a.cells[columnIndex].textContent.trim();
+                    const cellB = b.cells[columnIndex].textContent.trim();
+
+                    let valA, valB;
+
+                    if (isNumeric) {{
+                        valA = parseFloat(cellA);
+                        valB = parseFloat(cellB);
+                    }} else if (isDate) {{
+                        valA = new Date(cellA);
+                        valB = new Date(cellB);
+                    }} else {{
+                        valA = cellA.toLowerCase();
+                        valB = cellB.toLowerCase();
+                    }}
+
+                    if (valA < valB) {{
+                        return direction === "asc" ? -1 : 1;
+                    }} else if (valA > valB) {{
+                        return direction === "asc" ? 1 : -1;
+                    }} else {{
+                        return 0;
+                    }}
+                }});
+
+                // Append sorted rows to tbody
+                const tbody = table.querySelector("tbody");
+                rows.forEach(row => tbody.appendChild(row));
+            }}
+        }});
+        document.addEventListener("DOMContentLoaded", async function () {{
+            const searchBar = document.getElementById("search-bar");
+            const searchResults = document.getElementById("search-results");
+
+            let playerLinks = {{}};
+            let teamLinks = {{}};
+
+            // Load players and teams data from JSON files
+            async function loadLinks() {{
+                playerLinks = await fetch('players.json').then(response => response.json());
+                teamLinks = await fetch('teams.json').then(response => response.json());
+            }}
+
+            await loadLinks();  // Ensure links are loaded before searching
+
+            // Filter data and show suggestions based on input
+            function updateSuggestions() {{
+                const query = searchBar.value.trim().toLowerCase();
+                searchResults.innerHTML = ""; // Clear previous results
+
+                if (query === "") return;
+
+                // Combine players and teams for search
+                const combinedLinks = {{ ...playerLinks, ...teamLinks }};
+                const matchingEntries = Object.entries(combinedLinks)
+                    .filter(([name]) => name.includes(query))  // Matches on both name and ID
+                    .slice(0, 5); // Limit to top 5
+
+                matchingEntries.forEach(([name, url]) => {{
+                    const resultItem = document.createElement("div");
+                    resultItem.classList.add("suggestion");
+
+                    // Proper case for names
+                    resultItem.textContent = name.split(" ")
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                        .join(" ");
+
+                    resultItem.addEventListener("click", () => {{
+                        window.open(url, "_self");
+                    }});
+                    searchResults.appendChild(resultItem);
+                }});
+
+                if (matchingEntries.length > 0) {{
+                    searchResults.style.display = "block"; // Show results if matches are found
+                }} else {{
+                    const noResultItem = document.createElement("div");
+                    noResultItem.classList.add("no-result");
+                    noResultItem.textContent = "No results found.";
+                    searchResults.appendChild(noResultItem);
+                    searchResults.style.display = "block";
+                }}
+            }}
+            
+            document.addEventListener("click", function(event) {{
+                if (!searchContainer.contains(event.target)) {{
+                    searchResults.style.display = "none";
+                }}
+            }});
+
+            // Add event listener to search bar
+            searchBar.addEventListener("input", updateSuggestions);
     }});
     </script>
     </head>
@@ -162,7 +291,7 @@ html_content = '''
                 <th>Pts</th>
                 <th>Reb</th>
                 <th>Ast</th>
-                <th>Steal</th>
+                <th>STL</th>
                 <th>Blk</th>
                 <th>TOV</th>
                 <th>Mins</th>
@@ -174,13 +303,11 @@ html_content = '''
                 <th>3PA</th>
                 <th>FT</th>
                 <th>FTA</th>
-                <th>Foul</th>
                 <th>B+S</th>
                 <th>R+A</th>
                 <th>P+A</th>
                 <th>P+R</th>
-                <th>P+R+A</th>
-                <th>Fant</th>          
+                <th>PRA</th>   
             </tr>
             <tr id="filter-row"></tr>
         </thead>
@@ -211,13 +338,11 @@ for _, row in gamelogs_data.iterrows():
             <td>{row['3PA']}</td>
             <td>{row['FT']}</td>
             <td>{row['FTA']}</td>
-            <td>{row['PF']}</td>
             <td>{row['BLK_STL']}</td>
             <td>{row['REB_AST']}</td>
             <td>{row['PTS_AST']}</td>
             <td>{row['PTS_REB']}</td>
             <td>{row['PTS_REB_AST']}</td>
-            <td>{row['FANTASY']}</td>
         </tr>
     '''
 

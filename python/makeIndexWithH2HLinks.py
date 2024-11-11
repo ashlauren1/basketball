@@ -99,6 +99,8 @@ h2h_pairs = set()
 final_results = []
 columns = ['Game', 'Team', 'Player', 'Type', 'Stat', 'Line', 'Proj.', 'Diff.', 'Prob.', '2024-25', 'H2H', 'L5', 'L10', 'L20', '2023-24', 'All']
 
+unique_combinations = set()
+
 # Process each game
 for _, game in tqdm(lines_data.iterrows(), total=lines_data.shape[0]):
     player_id = game['PlayerID']
@@ -123,6 +125,14 @@ for _, game in tqdm(lines_data.iterrows(), total=lines_data.shape[0]):
             stat = line_row['Stat']
             line_value = line_row['Line']
             stat_type = line_row['Type']
+            
+            unique_key = (player_id, stat, line_value, stat_type)
+            if unique_key in unique_combinations:
+                continue  # Skip this row if already processed
+            
+            # Add to set of unique combinations
+            unique_combinations.add(unique_key)
+            
             
             # Helper function to safely evaluate ratios
             def safe_eval_ratio(ratio_str):

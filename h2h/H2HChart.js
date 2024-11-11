@@ -127,7 +127,7 @@ function updateLine(stat, gameId, bettingLineId, newLine) {
 }
 
 // Apply filters and update chart with filtered data
-function applyFilters(stat, gameId, bettingLineId) {
+function applyFilters(stat, gameId, bettingLineId, numGames = null) {
     const chart = window[`chart_${stat}_${gameId}_${bettingLineId}`];
     const originalData = window[`allData_${stat}_${gameId}_${bettingLineId}`];
     const teamFilter = document.getElementById(`${stat}_${gameId}_${bettingLineId}_teamFilter`).value;
@@ -137,7 +137,7 @@ function applyFilters(stat, gameId, bettingLineId) {
     const line = window[`Line_${stat}_${gameId}_${bettingLineId}`];
 
     // Filter data based on selected criteria
-    const filteredData = originalData.filter(d => {
+    let filteredData = originalData.filter(d => {
         const isTeamMatch = (teamFilter === 'all') || (d.opponent === teamFilter);
         const isLocationMatch = (homeAwayFilter === 'all') || 
                                 (homeAwayFilter === 'home' && d.location === 'home') || 
@@ -146,6 +146,11 @@ function applyFilters(stat, gameId, bettingLineId) {
                               (!endDate || new Date(d.date) <= new Date(endDate));
         return isTeamMatch && isLocationMatch && isDateInRange;
     });
+
+    // Apply the last N games filter, if specified
+    if (numGames) {
+        filteredData = filteredData.slice(-numGames);
+    }
 
     // Update chart data and colors with filtered data
     chart.data.labels = filteredData.map(d => formatLabel(d));
@@ -181,27 +186,13 @@ function resetLine(stat, gameId, bettingLineId) {
 }
 
 function filterGames(stat, gameId, bettingLineId, numGames) {
-    const chart = window[`chart_${stat}_${gameId}_${bettingLineId}`];
-    const originalData = window[`allData_${stat}_${gameId}_${bettingLineId}`];
-
-    const filteredData = originalData.slice(-numGames);
-    const line = window[`Line_${stat}_${gameId}_${bettingLineId}`];
-
-    chart.data.labels = filteredData.map(d => formatLabel(d));
-    chart.data.datasets[0].data = filteredData.map(d => d.stat || 0.05);
-    chart.data.datasets[0].backgroundColor = filteredData.map(d => (d.stat >= line ? '#16c049' : '#c01616'));
-    chart.update();
+    applyFilters(stat, gameId, bettingLineId, numGames);
 }
 
 function filterBySeason(stat, gameId, bettingLineId, season) {
-    const chart = window[`chart_${stat}_${gameId}_${bettingLineId}`];
-    const originalData = window[`allData_${stat}_${gameId}_${bettingLineId}`];
-
-    const filteredData = originalData.filter(d => d.season === season);
-    const line = window[`Line_${stat}_${gameId}_${bettingLineId}`];
-
-    chart.data.labels = filteredData.map(d => formatLabel(d));
-    chart.data.datasets[0].data = filteredData.map(d => d.stat || 0.05);
-    chart.data.datasets[0].backgroundColor = filteredData.map(d => (d.stat >= line ? '#16c049' : '#c01616'));
-    chart.update();
+    const seasonFilter = () => {
+        const originalData = window[`allData_${stat}_${gameId}_${bettingLineId}`];
+        return originalData.filter(d => d.season === season);
+    };
+    applyFilters(stat, gameId, bettingLineId);
 }

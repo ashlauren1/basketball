@@ -2,7 +2,7 @@
 function initializeChart(playerId, chartData, bettingLine, defaultStat) {
 	const processedData = chartData.map(d => ({
         ...d,
-        [defaultStat]: d[defaultStat] === 0 ? 0.05 : d[defaultStat]
+        [defaultStat]: d[defaultStat] === 0 ? 0.02 : d[defaultStat]
     }));
 	
     window[`allData_${playerId}`] = processedData;
@@ -153,8 +153,9 @@ function updateLine(playerId, newLine) {
 }
 
 // Apply filters (team, home/away, date range) to the chart
+// Modified applyFilters function
 function applyFilters(playerId) {
-    const originalData = window[`allData_${playerId}`]; // Always use the original data for filtering
+    const originalData = window[`allData_${playerId}`]; // Use the original data as the base
     const stat = window[`currentStat_${playerId}`];
     const line = window[`Line_${playerId}`];
 
@@ -163,24 +164,55 @@ function applyFilters(playerId) {
     const startDate = document.getElementById(`startDate_${playerId}`).value;
     const endDate = document.getElementById(`endDate_${playerId}`).value;
 
-    // Filter the data based on the selected criteria without modifying the original
-    const filteredData = originalData.filter(d => {
+    // Check for recent games filter
+    const recentGamesFilter = window[`recentGames_${playerId}`] || null;
+    const seasonFilter = window[`seasonFilter_${playerId}`] || null;
+
+    // Apply filters to the data based on all criteria
+    let filteredData = originalData.filter(d => {
         const isTeamMatch = (teamFilter === 'all') || (d.opponent === teamFilter);
         const isLocationMatch = (homeAwayFilter === 'all') || 
                                 (homeAwayFilter === 'home' && d.location === 'home') || 
                                 (homeAwayFilter === 'away' && d.location === 'away');
         const isDateInRange = (!startDate || new Date(d.date) >= new Date(startDate)) &&
                               (!endDate || new Date(d.date) <= new Date(endDate));
-        return isTeamMatch && isLocationMatch && isDateInRange;
+        const isSeasonMatch = !seasonFilter || d.season === seasonFilter;
+
+        return isTeamMatch && isLocationMatch && isDateInRange && isSeasonMatch;
     });
 
-    // Update the chart with the filtered data and reset the colors
+    // If recent games filter is active, slice the data to the last N games after other filters
+    if (recentGamesFilter) {
+        filteredData = filteredData.slice(-recentGamesFilter);
+    }
+
+    // Update chart with the filtered data and reset the colors
     const chart = window[`chart_${playerId}`];
     chart.data.labels = filteredData.map(d => formatLabel(d));
     chart.data.datasets[0].data = filteredData.map(d => d[stat] || 0.0);
     chart.data.datasets[0].backgroundColor = filteredData.map(d => (d[stat] >= line ? '#16c049' : '#c01616'));
     chart.update();
 }
+
+// Modified showRecentGames to work with the main applyFilters function
+function showRecentGames(playerId, numGames) {
+    window[`recentGames_${playerId}`] = numGames; // Store recent games filter
+    applyFilters(playerId); // Apply all filters together
+}
+
+// Modified filterBySeason to work with the main applyFilters function
+function filterBySeason(playerId, season) {
+    window[`seasonFilter_${playerId}`] = season; // Store season filter
+    applyFilters(playerId); // Apply all filters together
+}
+
+// Modified showAllGames to reset all filters
+function showAllGames(playerId) {
+    window[`recentGames_${playerId}`] = null; // Clear recent games filter
+    window[`seasonFilter_${playerId}`] = null; // Clear season filter
+    applyFilters(playerId); // Apply all filters with no recent or season constraints
+}
+
 
 // Reset the filters and the betting line
 function clearFilters(playerId) {
@@ -237,19 +269,6 @@ function applyFilter(playerId, filterType, filterValue = null) {
 
     // Call updateChart with filtered data
     updateChart(playerId, filteredData, stat, line);
-}
-
-// Button functions to filter data
-function showRecentGames(playerId, numGames) {
-    applyFilter(playerId, "recent", numGames);
-}
-
-function filterBySeason(playerId, season) {
-    applyFilter(playerId, "season", season);
-}
-
-function showAllGames(playerId) {
-    applyFilter(playerId, "all");
 }
 
 // Function to reset the betting line and move the slider to the default value

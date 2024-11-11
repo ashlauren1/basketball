@@ -299,7 +299,6 @@ def generate_h2h_pages(metrics_data, h2h_pairs, output_dir):
         <a href="/basketball/players/">Players</a>
         <a href="/basketball/boxscores/">Box Scores</a>
         <a href="/basketball/teams/">Teams</a>
-        <a href="/basketball/stats/">All Stats</a>
         <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
     </div>
     <div id="search-container">
@@ -592,6 +591,26 @@ document.addEventListener("DOMContentLoaded", function () {
             // For each value, create a checkbox
             const filterDiv = document.getElementById(`${colName.toLowerCase()}-filters`);
             if (filterDiv) {
+                filterDiv.innerHTML = "";
+                const allLabel = document.createElement('label');
+                const allCheckbox = document.createElement('input');
+                allCheckbox.type = 'checkbox';
+                allCheckbox.classList.add(`${colName.toLowerCase()}-filter-all`);
+                allCheckbox.checked = true;
+                allLabel.appendChild(allCheckbox);
+                allLabel.appendChild(document.createTextNode("All"));
+                filterDiv.appendChild(allLabel);
+
+            // Event listener to check/uncheck all checkboxes in this category
+            allCheckbox.addEventListener('change', function () {
+                const isChecked = allCheckbox.checked;
+                document.querySelectorAll(`.${colName.toLowerCase()}-filter`).forEach(checkbox => {
+                    checkbox.checked = isChecked;
+                });
+                filterTable(); // Update table display based on new filter states
+            });
+
+                
                 values.forEach(value => {
                     const label = document.createElement('label');
                     const checkbox = document.createElement('input');
@@ -604,11 +623,25 @@ document.addEventListener("DOMContentLoaded", function () {
                     filterDiv.appendChild(label);
 
                     // Add event listener to the checkbox
-                    checkbox.addEventListener('change', filterTable);
+                    checkbox.addEventListener('change', () => {
+                    // If any checkbox in the group is unchecked, uncheck the "All" checkbox
+                    if (!checkbox.checked) {
+                        allCheckbox.checked = false;
+                    } else {
+                        // Check if all individual boxes are selected to set "All" checkbox
+                        const allSelected = Array.from(document.querySelectorAll(`.${colName.toLowerCase()}-filter`))
+                            .every(cb => cb.checked);
+                        allCheckbox.checked = allSelected;
+                    }
+                    filterTable();
                 });
-            }
-        });
-    }
+            });
+        } else {
+            console.error(`Filter div with ID ${colName.toLowerCase()}-filters not found.`);
+        }
+    });
+}
+        
 
     // Filter table based on selected filters
     function filterTable() {
@@ -805,7 +838,6 @@ document.addEventListener("DOMContentLoaded", function () {
         <a href="/basketball/players/">Players</a>
         <a href="/basketball/boxscores/">Box Scores</a>
         <a href="/basketball/teams/">Teams</a>
-        <a href="/basketball/stats/">All Stats</a>
         <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
     </div>
     <div id="search-container">

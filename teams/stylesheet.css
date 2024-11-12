@@ -165,6 +165,17 @@ a:visited {
 
 
 
+.min-filters {
+	width:100%;
+}
+
+.min-filters tr {
+	height: 38px;
+}
+
+
+
+
 	
 
 .arrowUp {

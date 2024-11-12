@@ -61,6 +61,7 @@ chart_html_template = """
         <button id="202324_{player_id}" onclick="filterBySeason('{player_id}', '2023-24')">2023-24</button>
         <button id="202425_{player_id}" onclick="filterBySeason('{player_id}', '2024-25')">2024-25</button>
         <button id="showAll_{player_id}" onclick="showAllGames('{player_id}')">All</button>
+        <button id="MP_{player_id}" onclick="toggleMPOverlay('{player_id}')">Toggle MP</button>
         <button id="clearFiltersBtn_{player_id}" onclick="clearFilters('{player_id}')" class="clear-chart-filters">Clear Filters</button>
     </div>
     <div class="slider-container">

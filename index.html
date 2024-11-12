@@ -201,7 +201,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 }
-        
+    const minFilterIds = ["diff-filters", "2425-filters", "l5-filters", "l10-filters", "l20-filters", "2324-filters", "all-filters"];
+    minFilterIds.forEach(id => {
+        document.getElementById(id).addEventListener("input", filterTable);
+    });    
 
     // Filter table based on selected filters
     function filterTable() {
@@ -214,6 +217,16 @@ document.addEventListener("DOMContentLoaded", function () {
             const checkboxes = document.querySelectorAll(`.${cls}:checked`);
             return Array.from(checkboxes).map(cb => cb.value);
         });
+
+		const minValues = {
+            "Diff.": parseFloat(document.getElementById("diff-filters").value) || -Infinity,
+            "24-25": parseFloat(document.getElementById("2425-filters").value) || -Infinity,
+            "L5": parseFloat(document.getElementById("l5-filters").value) || -Infinity,
+            "L10": parseFloat(document.getElementById("l10-filters").value) || -Infinity,
+            "L20": parseFloat(document.getElementById("l20-filters").value) || -Infinity,
+            "23-24": parseFloat(document.getElementById("2324-filters").value) || -Infinity,
+            "All": parseFloat(document.getElementById("all-filters").value) || -Infinity
+        };
 		
 		const showSelectedOnly = toggleSelectionBtn.textContent === "Show All"; // Check if "Show Selected Only" mode is active
 
@@ -235,14 +248,23 @@ document.addEventListener("DOMContentLoaded", function () {
 					break;
             }
         }
-		
-		if (matchesFilter && (!showSelectedOnly || row.classList.contains("selected-row"))) {
-            row.style.display = "";
-        } else {
-            row.style.display = "none";
-        }
-    });
-}
+        
+		if (matchesFilter) {
+                Object.entries(minValues).forEach(([colName, minValue], i) => {
+                    const colIndex = filterHeaders.findIndex(header => header.textContent.trim() === colName);
+                    if (colIndex >= 0) {
+                        const cellValue = parseFloat(cells[colIndex].textContent.trim()) || -Infinity;
+                        if (cellValue < minValue) {
+                            matchesFilter = false;
+                        }
+                    }
+                });
+            }
+
+            // Display row if it matches all filters
+            row.style.display = (matchesFilter && (!showSelectedOnly || row.classList.contains("selected-row"))) ? "" : "none";
+        });
+    }
 
     // "Clear Filters" button functionality
     clearButton.addEventListener("click", () => {
@@ -250,6 +272,9 @@ document.addEventListener("DOMContentLoaded", function () {
         filterClasses.forEach(cls => {
             document.querySelectorAll(`.${cls}`).forEach(checkbox => checkbox.checked = true);
         });
+        minFilterIds.forEach(id => {
+			document.getElementById(id).value = "";
+		});
         filterTable();
     });
 
@@ -263,6 +288,10 @@ document.addEventListener("DOMContentLoaded", function () {
         filterClasses.forEach(cls => {
             document.querySelectorAll(`.${cls}`).forEach(checkbox => checkbox.checked = true);
         });
+        
+        minFilterIds.forEach(id => {
+			document.getElementById(id).value = "";
+		});
 
         rows.forEach(row => {
             row.classList.remove("selected-row");
@@ -390,7 +419,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Add event listener to search bar
         searchBar.addEventListener("input", updateSuggestions);
     });
-    </script>
+</script>
 </head>
 <body>
     <div class="topnav">
@@ -419,6 +448,18 @@ document.addEventListener("DOMContentLoaded", function () {
             <tr><td style="width:8%;font-weight:700">Teams:</td><td><div id="team-filters"></div></td></tr>
             <tr><td style="width:8%;font-weight:700">Types:</td><td><div id="type-filters"></div></td></tr>
             <tr><td style="width:8%;font-weight:700">Stats:</td><td><div id="stat-filters"></div></td></tr>
+        </table>
+        <table class="multi-filters">
+			<tr><th colspan="7" style="font-weight:700">Set Minimum Values:</th></tr>
+            <tr>
+			<td>Diff:<input id="diff-filters" type="number" step="0.1" style="width:100%"></td>
+			<td>24-25:<input id="2425-filters" type="number" step="0.1" style="width:100%"></td>
+			<td>L5:<input id="l5-filters" type="number" step="0.1" style="width:100%"></td>
+			<td>L10:<input id="l10-filters" type="number" step="0.1" style="width:100%"></td>
+			<td>L20:<input id="l20-filters" type="number" step="0.1" style="width:100%"></td>
+			<td>23-24:<input id="2324-filters" type="number" step="0.1" style="width:100%"></td>
+			<td>All:<input id="all-filters" type="number" step="0.1" style="width:100%"></td>
+			</tr>
         </table>
     </div>
     

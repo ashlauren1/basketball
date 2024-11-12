@@ -22,12 +22,15 @@ function initializeChart(playerId, chartData, bettingLine, defaultStat) {
                 borderColor: getBorderColors(processedData, defaultStat, bettingLine, playerId),
                 borderWidth: 0.15,
                 barPercentage: 1.0,
-                categoryPercentage: 1.0
+                categoryPercentage: 1.0,
+				yAxisID: 'y',
+				stack: 'combined'
             }]
         },
         options: getChartOptions(playerId, bettingLine, defaultStat)
     });
 }
+
 
 function formatLabel(data) {
     const opponentText = data.location === 'home' ? 'vs' : '@';
@@ -84,7 +87,18 @@ function getChartOptions(playerId, line, stat) {
 				beginAtZero: true, 
                 stepSize: 1.0 
             },
-            
+            y1: { 
+				display: false,
+                position: 'right',
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Mins'
+                },
+                grid: {
+                    drawOnChartArea: false // Avoids overlapping grid lines
+                }
+			},
 			x: { 
                 grid: { 
                     display: false 
@@ -176,16 +190,16 @@ function applyFilters(playerId) {
                                 (homeAwayFilter === 'away' && d.location === 'away');
         const isDateInRange = (!startDate || new Date(d.date) >= new Date(startDate)) &&
                               (!endDate || new Date(d.date) <= new Date(endDate));
-        const isSeasonMatch = !seasonFilter || d.season === seasonFilter;
-
-        return isTeamMatch && isLocationMatch && isDateInRange && isSeasonMatch;
+        return isTeamMatch && isLocationMatch && isDateInRange;
     });
 
     // If recent games filter is active, slice the data to the last N games after other filters
     if (recentGamesFilter) {
         filteredData = filteredData.slice(-recentGamesFilter);
+    } else if (seasonFilter) {
+        filteredData = filteredData.filter(d => d.season === seasonFilter);
     }
-
+	
     // Update chart with the filtered data and reset the colors
     const chart = window[`chart_${playerId}`];
     chart.data.labels = filteredData.map(d => formatLabel(d));
@@ -197,12 +211,14 @@ function applyFilters(playerId) {
 // Modified showRecentGames to work with the main applyFilters function
 function showRecentGames(playerId, numGames) {
     window[`recentGames_${playerId}`] = numGames; // Store recent games filter
+	window[`seasonFilter_${playerId}`] = null;
     applyFilters(playerId); // Apply all filters together
 }
 
 // Modified filterBySeason to work with the main applyFilters function
 function filterBySeason(playerId, season) {
     window[`seasonFilter_${playerId}`] = season; // Store season filter
+	window[`recentGames_${playerId}`] = null;
     applyFilters(playerId); // Apply all filters together
 }
 
@@ -277,4 +293,38 @@ function resetLine(playerId, defaultLine) {
     
     // Set the slider's position to the default value
     document.getElementById(`lineSlider_${playerId}`).value = defaultLine;
+}
+
+function toggleMPOverlay(playerId) {
+    const chart = window[`chart_${playerId}`];
+    const data = window[`allData_${playerId}`];
+
+    const mpDatasetIndex = chart.data.datasets.findIndex(dataset => dataset.label === "MP Overlay");
+
+    if (mpDatasetIndex === -1) {
+        chart.data.datasets.push({
+            label: "MP Overlay",
+            data: data.map(d => d.MP || 0),
+            type: 'bar',
+            backgroundColor: "rgba(128, 128, 128, 0.1)",
+            borderColor: "rgba(128, 128, 128, 0.4)",
+            pointRadius: 0,
+            fill: true, 
+            yAxisID: 'y1',
+            order: 0,
+			borderWidth: 0.15,
+            barPercentage: 1.0,
+            categoryPercentage: 1.0,
+			stack: 'combined'
+        });
+        chart.options.scales.y1.display = true;
+        console.log("MP overlay added as a transparent line for player", playerId);
+    } else {
+        chart.data.datasets.splice(mpDatasetIndex, 1);
+        chart.options.scales.y1.display = false;
+        console.log("MP overlay removed for player", playerId);
+    }
+
+    // Update chart to reflect changes
+    chart.update();
 }

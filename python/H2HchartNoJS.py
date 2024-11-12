@@ -53,6 +53,7 @@ chart_script_template = """
         <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 20)">L20 Games</button>
         <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2023-24')">2023-24</button>
         <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2024-25')">2024-25</button>
+        <button onclick="filterAll('{stat}', '{game_id}', '{betting_line_id}')">All</button>
         <button onclick="clearFilters('{stat}', '{game_id}', '{betting_line_id}')" class="clear-chart-filters">Clear Filters</button>
     </div>
     

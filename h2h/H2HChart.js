@@ -190,9 +190,45 @@ function filterGames(stat, gameId, bettingLineId, numGames) {
 }
 
 function filterBySeason(stat, gameId, bettingLineId, season) {
-    const seasonFilter = () => {
-        const originalData = window[`allData_${stat}_${gameId}_${bettingLineId}`];
-        return originalData.filter(d => d.season === season);
-    };
-    applyFilters(stat, gameId, bettingLineId);
+    const originalData = window[`allData_${stat}_${gameId}_${bettingLineId}`];
+    
+    // Filter data based on the selected season
+    const filteredData = originalData.filter(d => d.season === season);
+
+    // Update chart with season-filtered data
+    const chart = window[`chart_${stat}_${gameId}_${bettingLineId}`];
+    const line = window[`Line_${stat}_${gameId}_${bettingLineId}`];
+
+    chart.data.labels = filteredData.map(d => formatLabel(d));
+    chart.data.datasets[0].data = filteredData.map(d => d.stat || 0.05);
+    chart.data.datasets[0].backgroundColor = filteredData.map(d => (d.stat >= line ? '#16c049' : '#c01616'));
+    chart.update();
 }
+
+function filterAll(stat, gameId, bettingLineId) {
+    const originalData = window[`allData_${stat}_${gameId}_${bettingLineId}`];
+    const teamFilter = document.getElementById(`${stat}_${gameId}_${bettingLineId}_teamFilter`).value;
+    const homeAwayFilter = document.getElementById(`${stat}_${gameId}_${bettingLineId}_homeAwayFilter`).value;
+    const startDate = document.getElementById(`${stat}_${gameId}_${bettingLineId}_startDate`).value;
+    const endDate = document.getElementById(`${stat}_${gameId}_${bettingLineId}_endDate`).value;
+    const line = window[`Line_${stat}_${gameId}_${bettingLineId}`];
+
+    // Filter data based on the other selected criteria, ignoring season and numGames
+    let filteredData = originalData.filter(d => {
+        const isTeamMatch = (teamFilter === 'all') || (d.opponent === teamFilter);
+        const isLocationMatch = (homeAwayFilter === 'all') || 
+                                (homeAwayFilter === 'home' && d.location === 'home') || 
+                                (homeAwayFilter === 'away' && d.location === 'away');
+        const isDateInRange = (!startDate || new Date(d.date) >= new Date(startDate)) &&
+                              (!endDate || new Date(d.date) <= new Date(endDate));
+        return isTeamMatch && isLocationMatch && isDateInRange;
+    });
+
+    // Update chart data and colors with filtered data
+    const chart = window[`chart_${stat}_${gameId}_${bettingLineId}`];
+    chart.data.labels = filteredData.map(d => formatLabel(d));
+    chart.data.datasets[0].data = filteredData.map(d => d.stat || 0.05);
+    chart.data.datasets[0].backgroundColor = filteredData.map(d => (d.stat >= line ? '#16c049' : '#c01616'));
+    chart.update();
+}
+

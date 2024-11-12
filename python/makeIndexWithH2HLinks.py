@@ -373,7 +373,7 @@ def generate_h2h_pages(metrics_data, h2h_pairs, output_dir):
             fg = row['FG']
             fga = row['FGA']
             threep = row['3P']
-            threepa = ['3PA']
+            threepa = row['3PA']
             ft = row['FT']
             fta= row['FTA']
             pf = row['PF']

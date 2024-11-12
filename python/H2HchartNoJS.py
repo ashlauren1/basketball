@@ -47,20 +47,21 @@ chart_script_template = """
     
     <canvas id="{stat}_{game_id}_{betting_line_id}_chart" class="barChart"></canvas>
     
-    <div class="filter-buttons">
-        <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 5)">L5</button>
-        <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 10)">L10 Games</button>
-        <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 20)">L20 Games</button>
-        <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2023-24')">2023-24</button>
-        <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2024-25')">2024-25</button>
-        <button onclick="filterAll('{stat}', '{game_id}', '{betting_line_id}')">All</button>
-        <button onclick="clearFilters('{stat}', '{game_id}', '{betting_line_id}')" class="clear-chart-filters">Clear Filters</button>
-    </div>
+<div class="filter-buttons">
+    <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 5)">L5</button>
+    <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 10)">L10 Games</button>
+    <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 20)">L20 Games</button>
+    <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2023-24')">2023-24</button>
+    <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2024-25')">2024-25</button>
+    <button onclick="filterAll('{stat}', '{game_id}', '{betting_line_id}')">All</button>
+    <button onclick="clearFilters('{stat}', '{game_id}', '{betting_line_id}')" class="clear-chart-filters">Clear Filters</button>
+</div>
+
     
     <div class="slider-container">
         <div id="line-slider">
             <label for="{stat}_{game_id}_{betting_line_id}_lineSlider">Change Line:</label>
-            <input type="range" id="{stat}_{game_id}_{betting_line_id}_lineSlider" min="0" max="100" step="0.5" value="{betting_line}" oninput="updateLine('{stat}', '{game_id}', '{betting_line_id}', this.value)">
+            <input type="range" id="{stat}_{game_id}_{betting_line_id}_lineSlider" min="0" max="30" step="0.25" value="{betting_line}" oninput="updateLine('{stat}', '{game_id}', '{betting_line_id}', this.value)">
             <span id="{stat}_{game_id}_{betting_line_id}_lineValue">{betting_line}</span>
         </div>
         <div class="chartButtons">

@@ -238,11 +238,12 @@
 </head>
 <body>
 <div class="topnav">
-<a href="/basketball/">Projections</a>
-<a href="/basketball/players/">Players</a>
-<a href="/basketball/boxscores/">Box Scores</a>
-<a href="/basketball/teams/">Teams</a>
+<a href="/basketball/" target="_blank">Projections</a>
+<a href="/basketball/players/" target="_blank">Players</a>
+<a href="/basketball/boxscores/" target="_blank">Box Scores</a>
+<a href="/basketball/teams/" target="_blank">Teams</a>
 <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
+<a href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a>
 </div>
 <div id="search-container">
 <input id="search-bar" placeholder="Search for a player or team..." type="text"/>
@@ -289,6 +290,7 @@
 <select id="teamFilter_leeda03" onchange="applyFilters('leeda03')">
 <option value="all">All</option>
 <option value="DAL">DAL</option>
+<option value="SAC">SAC</option>
 </select>
 </div>
 <div class="barChartFilter">
@@ -335,7 +337,7 @@
 <script src="chartScript.js"></script>
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
-    initializeChart("leeda03", [{'date': '2024-10-26', 'opponent': 'DAL', 'location': 'home', 'season': '2024-25', 'PTS': 2, 'REB': 3, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 17.66666667, 'OffREB': 0, 'DefREB': 3, 'FG': 1, 'FGA': 3, '3P': 0, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 5, 'PTS_AST': 4, 'PTS_REB': 5, 'PTS_REB_AST': 7, 'FANTASY': 7.6}], 0.5, "PTS");
+    initializeChart("leeda03", [{'date': '2024-10-26', 'opponent': 'DAL', 'location': 'home', 'season': '2024-25', 'PTS': 2, 'REB': 3, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 17.66666667, 'OffREB': 0, 'DefREB': 3, 'FG': 1, 'FGA': 3, '3P': 0, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 5, 'PTS_AST': 4, 'PTS_REB': 5, 'PTS_REB_AST': 7, 'FANTASY': 7.6}, {'date': '2024-11-13', 'opponent': 'SAC', 'location': 'away', 'season': '2024-25', 'PTS': 4, 'REB': 0, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 10.96666667, 'OffREB': 0, 'DefREB': 0, 'FG': 1, 'FGA': 4, '3P': 0, '3PA': 2, 'FT': 2, 'FTA': 2, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 5, 'PTS_REB': 4, 'PTS_REB_AST': 5, 'FANTASY': 4.5}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <span class="table-button-container">
@@ -395,6 +397,29 @@
 <td>0</td>
 <td>0</td>
 <td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411130SAC.html" target="_blank">11/13/2024</a></td>
+<td><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>10.97</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>

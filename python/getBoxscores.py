@@ -19,14 +19,17 @@ def fetch_webpage(url):
 
 # Define the game IDs, home teams, and away teams
 games_info = { 
-    "202411120BOS": ("BOS", "ATL"),
-    "202411120DET": ("DET", "MIA"),
-    "202411120ORL": ("ORL", "CHO"),
-    "202411120PHI": ("PHI", "NYK"),
-    "202411120MIL": ("MIL", "TOR"),
-    "202411120UTA": ("UTA", "PHO"),
-    "202411120GSW": ("GSW", "DAL"),
-    "202411120POR": ("POR", "MIN")
+    "202411130ORL": ("ORL", "IND"),
+    "202411130BRK": ("BRK", "BOS"),
+    "202411130NYK": ("NYK", "CHI"),
+    "202411130OKC": ("OKC", "NOP"),
+    "202411130PHI": ("PHI", "CLE"),
+    "202411130HOU": ("HOU", "LAC"),
+    "202411130MIL": ("MIL", "DET"),
+    "202411130SAS": ("SAS", "WAS"),
+    "202411130LAL": ("LAL", "MEM"),
+    "202411130POR": ("POR", "MIN"),
+    "202411130SAC": ("SAC", "PHO")
 }
 
 
@@ -65,7 +68,7 @@ for game_id, (home_team, away_team) in games_info.items():
                 df.insert(2, "Away Team", away_team)
 
                 # Extract Player IDs from 'data-append-csv' attribute in <td> tags
-                player_ids = [cell.get("data-append-csv") for cell in table.select("tbody tr td[data-append-csv]")]
+                player_ids = [cell.get("data-append-csv") for cell in table.select("tbody tr th[data-append-csv]")]
                 df["Player ID"] = player_ids + [None] * (len(df) - len(player_ids))  # Handle rows without Player IDs
 
                 boxscore_data.append(df)

@@ -92,11 +92,12 @@ def create_team_directory(data, output_dir):
     </head>
     <body>
     <div class="topnav">
-        <a href="/basketball/">Projections</a>
-        <a href="/basketball/players/">Players</a>
-        <a href="/basketball/boxscores/">Box Scores</a>
-        <a href="/basketball/teams/">Teams</a>
+        <a href="/basketball/" target="_blank">Projections</a>
+        <a href="/basketball/players/" target="_blank">Players</a>
+        <a href="/basketball/boxscores/" target="_blank">Box Scores</a>
+        <a href="/basketball/teams/" target="_blank">Teams</a>
         <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
+        <a href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a>
     </div>
     <div id="search-container">
         <input type="text" id="search-bar" placeholder="Search for a player or team...">
@@ -390,11 +391,12 @@ def create_team_pages(data, output_dir):
         </head>
         <body>
         <div class="topnav">
-            <a href="/basketball/">Projections</a>
-            <a href="/basketball/players/">Players</a>
-            <a href="/basketball/boxscores/">Box Scores</a>
-            <a href="/basketball/teams/">Teams</a>
+            <a href="/basketball/" target="_blank">Projections</a>
+            <a href="/basketball/players/" target="_blank">Players</a>
+            <a href="/basketball/boxscores/" target="_blank">Box Scores</a>
+            <a href="/basketball/teams/" target="_blank">Teams</a>
             <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
+            <a href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a>
         </div>
         <div id="search-container">
             <input type="text" id="search-bar" placeholder="Search for a player or team...">

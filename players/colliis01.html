@@ -289,6 +289,7 @@
 <label for="teamFilter_colliis01">Opponent:</label>
 <select id="teamFilter_colliis01" onchange="applyFilters('colliis01')">
 <option value="all">All</option>
+<option value="DAL">DAL</option>
 <option value="MIL">MIL</option>
 <option value="PHO">PHO</option>
 <option value="SAS">SAS</option>
@@ -338,7 +339,7 @@
 <script src="chartScript.js"></script>
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
-    initializeChart("colliis01", [{'date': '2024-11-07', 'opponent': 'MIL', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 4.216666667, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 1, 'PTS_REB': 0, 'PTS_REB_AST': 1, 'FANTASY': 0.5}, {'date': '2024-11-09', 'opponent': 'SAS', 'location': 'away', 'season': '2024-25', 'PTS': 7, 'REB': 6, 'AST': 4, 'BLK': 1, 'STL': 1, 'TOV': 0, 'MP': 24.78333333, 'OffREB': 0, 'DefREB': 6, 'FG': 3, 'FGA': 9, '3P': 0, '3PA': 6, 'FT': 1, 'FTA': 4, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 10, 'PTS_AST': 11, 'PTS_REB': 13, 'PTS_REB_AST': 17, 'FANTASY': 26.2}, {'date': '2024-11-12', 'opponent': 'PHO', 'location': 'home', 'season': '2024-25', 'PTS': 4, 'REB': 1, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 14.95, 'OffREB': 0, 'DefREB': 1, 'FG': 2, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 2, 'PTS_AST': 5, 'PTS_REB': 5, 'PTS_REB_AST': 6, 'FANTASY': 5.7}], 0.5, "PTS");
+    initializeChart("colliis01", [{'date': '2024-11-07', 'opponent': 'MIL', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 4.216666667, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 1, 'PTS_REB': 0, 'PTS_REB_AST': 1, 'FANTASY': 0.5}, {'date': '2024-11-09', 'opponent': 'SAS', 'location': 'away', 'season': '2024-25', 'PTS': 7, 'REB': 6, 'AST': 4, 'BLK': 1, 'STL': 1, 'TOV': 0, 'MP': 24.78333333, 'OffREB': 0, 'DefREB': 6, 'FG': 3, 'FGA': 9, '3P': 0, '3PA': 6, 'FT': 1, 'FTA': 4, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 10, 'PTS_AST': 11, 'PTS_REB': 13, 'PTS_REB_AST': 17, 'FANTASY': 26.2}, {'date': '2024-11-12', 'opponent': 'PHO', 'location': 'home', 'season': '2024-25', 'PTS': 4, 'REB': 1, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 14.95, 'OffREB': 0, 'DefREB': 1, 'FG': 2, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 2, 'PTS_AST': 5, 'PTS_REB': 5, 'PTS_REB_AST': 6, 'FANTASY': 5.7}, {'date': '2024-11-14', 'opponent': 'DAL', 'location': 'home', 'season': '2024-25', 'PTS': 20, 'REB': 4, 'AST': 4, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 30.25, 'OffREB': 2, 'DefREB': 2, 'FG': 7, 'FGA': 16, '3P': 3, '3PA': 9, 'FT': 3, 'FTA': 3, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 8, 'PTS_AST': 24, 'PTS_REB': 24, 'PTS_REB_AST': 28, 'FANTASY': 30.8}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <span class="table-button-container">
@@ -444,6 +445,29 @@
 <td>0</td>
 <td>0</td>
 <td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411140UTA.html" target="_blank">11/14/2024</a></td>
+<td><a href="/basketball/teams/UTA.html" target="_blank">UTA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/DAL.html" target="_blank">DAL</a></td>
+<td>20</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>30.25</td>
+<td>2</td>
+<td>2</td>
+<td>7</td>
+<td>16</td>
+<td>3</td>
+<td>9</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>

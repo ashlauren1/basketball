@@ -19,17 +19,7 @@ def fetch_webpage(url):
 
 # Define the game IDs, home teams, and away teams
 games_info = { 
-    "202411130ORL": ("ORL", "IND"),
-    "202411130BRK": ("BRK", "BOS"),
-    "202411130NYK": ("NYK", "CHI"),
-    "202411130OKC": ("OKC", "NOP"),
-    "202411130PHI": ("PHI", "CLE"),
-    "202411130HOU": ("HOU", "LAC"),
-    "202411130MIL": ("MIL", "DET"),
-    "202411130SAS": ("SAS", "WAS"),
-    "202411130LAL": ("LAL", "MEM"),
-    "202411130POR": ("POR", "MIN"),
-    "202411130SAC": ("SAC", "PHO")
+    "202411140UTA": ("UTA", "DAL")
 }
 
 

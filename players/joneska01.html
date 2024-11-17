@@ -291,6 +291,7 @@
 <option value="all">All</option>
 <option value="DEN">DEN</option>
 <option value="GSW">GSW</option>
+<option value="HOU">HOU</option>
 <option value="OKC">OKC</option>
 <option value="PHI">PHI</option>
 <option value="PHO">PHO</option>
@@ -343,7 +344,7 @@
 <script src="chartScript.js"></script>
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
-    initializeChart("joneska01", [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'season': '2024-25', 'PTS': 6, 'REB': 4, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 13.0, 'OffREB': 2, 'DefREB': 2, 'FG': 3, 'FGA': 5, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 4, 'PTS_AST': 6, 'PTS_REB': 10, 'PTS_REB_AST': 10, 'FANTASY': 10.8}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 2, 'AST': 0, 'BLK': 1, 'STL': 0, 'TOV': 0, 'MP': 3.733333333, 'OffREB': 1, 'DefREB': 1, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 2, 'PTS_AST': 0, 'PTS_REB': 2, 'PTS_REB_AST': 2, 'FANTASY': 5.4}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 4.583333333, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 2, 'PTS_AST': 1, 'PTS_REB': 1, 'PTS_REB_AST': 2, 'FANTASY': 2.7}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'season': '2024-25', 'PTS': 7, 'REB': 5, 'AST': 1, 'BLK': 2, 'STL': 0, 'TOV': 0, 'MP': 16.68333333, 'OffREB': 3, 'DefREB': 2, 'FG': 2, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 3, 'FTA': 5, 'PF': 2, 'BLK_STL': 2, 'REB_AST': 6, 'PTS_AST': 8, 'PTS_REB': 12, 'PTS_REB_AST': 13, 'FANTASY': 20.5}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 2, 'AST': 0, 'BLK': 1, 'STL': 0, 'TOV': 1, 'MP': 9.766666667, 'OffREB': 1, 'DefREB': 1, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 2, 'PTS_AST': 0, 'PTS_REB': 2, 'PTS_REB_AST': 2, 'FANTASY': 4.4}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'season': '2024-25', 'PTS': 4, 'REB': 2, 'AST': 1, 'BLK': 1, 'STL': 0, 'TOV': 1, 'MP': 9.833333333, 'OffREB': 2, 'DefREB': 0, 'FG': 2, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 3, 'PTS_AST': 5, 'PTS_REB': 6, 'PTS_REB_AST': 7, 'FANTASY': 9.9}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 1, 'STL': 0, 'TOV': 0, 'MP': 4.233333333, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 3.0}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'season': '2024-25', 'PTS': 2, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 8.833333333, 'OffREB': 0, 'DefREB': 0, 'FG': 1, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 2, 'PTS_REB': 2, 'PTS_REB_AST': 2, 'FANTASY': 1.0}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 3.683333333, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 0, 'PTS_REB': 1, 'PTS_REB_AST': 1, 'FANTASY': 0.2}], 0.5, "PTS");
+    initializeChart("joneska01", [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'season': '2024-25', 'PTS': 6, 'REB': 4, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 13.0, 'OffREB': 2, 'DefREB': 2, 'FG': 3, 'FGA': 5, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 4, 'PTS_AST': 6, 'PTS_REB': 10, 'PTS_REB_AST': 10, 'FANTASY': 10.8}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 2, 'AST': 0, 'BLK': 1, 'STL': 0, 'TOV': 0, 'MP': 3.733333333, 'OffREB': 1, 'DefREB': 1, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 2, 'PTS_AST': 0, 'PTS_REB': 2, 'PTS_REB_AST': 2, 'FANTASY': 5.4}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 4.583333333, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 2, 'PTS_AST': 1, 'PTS_REB': 1, 'PTS_REB_AST': 2, 'FANTASY': 2.7}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'season': '2024-25', 'PTS': 7, 'REB': 5, 'AST': 1, 'BLK': 2, 'STL': 0, 'TOV': 0, 'MP': 16.68333333, 'OffREB': 3, 'DefREB': 2, 'FG': 2, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 3, 'FTA': 5, 'PF': 2, 'BLK_STL': 2, 'REB_AST': 6, 'PTS_AST': 8, 'PTS_REB': 12, 'PTS_REB_AST': 13, 'FANTASY': 20.5}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 2, 'AST': 0, 'BLK': 1, 'STL': 0, 'TOV': 1, 'MP': 9.766666667, 'OffREB': 1, 'DefREB': 1, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 2, 'PTS_AST': 0, 'PTS_REB': 2, 'PTS_REB_AST': 2, 'FANTASY': 4.4}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'season': '2024-25', 'PTS': 4, 'REB': 2, 'AST': 1, 'BLK': 1, 'STL': 0, 'TOV': 1, 'MP': 9.833333333, 'OffREB': 2, 'DefREB': 0, 'FG': 2, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 3, 'PTS_AST': 5, 'PTS_REB': 6, 'PTS_REB_AST': 7, 'FANTASY': 9.9}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 1, 'STL': 0, 'TOV': 0, 'MP': 4.233333333, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 3.0}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'season': '2024-25', 'PTS': 2, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 8.833333333, 'OffREB': 0, 'DefREB': 0, 'FG': 1, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 2, 'PTS_REB': 2, 'PTS_REB_AST': 2, 'FANTASY': 1.0}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 3.683333333, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 0, 'PTS_REB': 1, 'PTS_REB_AST': 1, 'FANTASY': 0.2}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'season': '2024-25', 'PTS': 4, 'REB': 4, 'AST': 0, 'BLK': 1, 'STL': 0, 'TOV': 1, 'MP': 11.13333333, 'OffREB': 1, 'DefREB': 3, 'FG': 2, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 1, 'REB_AST': 4, 'PTS_AST': 4, 'PTS_REB': 8, 'PTS_REB_AST': 8, 'FANTASY': 10.8}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <span class="table-button-container">
@@ -587,6 +588,29 @@
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411150HOU.html" target="_blank">11/15/2024</a></td>
+<td><a href="/basketball/teams/LAC.html" target="_blank">LAC</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>11.13</td>
+<td>1</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
 </tr>
 </tbody>
 </table>

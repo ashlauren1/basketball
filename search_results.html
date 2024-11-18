@@ -4,16 +4,14 @@
 <title>Search Results</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="stylesheet.css">
-<script src="players.json"></script>
-<script src="teams.json"></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", async function () {{
     const searchBar = document.getElementById("search-bar");
     const searchResults = document.getElementById("search-results");
 
-    let playerLinks = {{}};
-    let teamLinks = {{}};
+    let playerLinks = {};
+    let teamLinks = {};
 	
     // Load players and teams data from JSON files
     async function loadLinks() {{
@@ -102,8 +100,8 @@ document.addEventListener("DOMContentLoaded", async function () {{
 		const resultsList = document.getElementById("results-list");
 		const noResults = document.getElementById("no-results");
 		
-		let playerLinks = {{}};
-		let teamLinks = {{}};
+		let playerLinks = {};
+		let teamLinks = {};
 	
     // Load players and teams data from JSON files
     async function loadLinks() {{

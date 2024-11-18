@@ -15,18 +15,19 @@ data = pd.read_csv(team_csv)
 def create_team_directory(data, output_dir):
     unique_teams = data.drop_duplicates(subset=["Team", "TeamID"]).sort_values(by="Team")
     html_content = """
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Team Directory</title>
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <script>
-        document.addEventListener("DOMContentLoaded", async function () {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Directory</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script>
+    document.addEventListener("DOMContentLoaded", async function () {
         const searchBar = document.getElementById("search-bar");
         const searchResults = document.getElementById("search-results");
+        const searchButton = document.getElementById("search-button");
 
         let playerLinks = {};
         let teamLinks = {};
@@ -49,17 +50,16 @@ def create_team_directory(data, output_dir):
             // Combine players and teams for search
             const combinedLinks = { ...playerLinks, ...teamLinks };
             const matchingEntries = Object.entries(combinedLinks)
-                .filter(([name]) => name.includes(query))  // Matches on both name and ID
-                .slice(0, 5); // Limit to top 5
+                .filter(([name]) => name.toLowerCase().includes(query))  // Matches on both name and ID
+                .slice(0, 10); // Limit to top 10
+
 
             matchingEntries.forEach(([name, url]) => {
                 const resultItem = document.createElement("div");
                 resultItem.classList.add("suggestion");
 
                 // Proper case for names
-                resultItem.textContent = name.split(" ")
-                    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                    .join(" ");
+                resultItem.textContent = name;
 
                 resultItem.addEventListener("click", () => {
                     window.open(url, "_self");
@@ -67,26 +67,42 @@ def create_team_directory(data, output_dir):
                 searchResults.appendChild(resultItem);
             });
 
-            if (matchingEntries.length > 0) {
-                searchResults.style.display = "block"; // Show results if matches are found
-            } else {
-                const noResultItem = document.createElement("div");
-                noResultItem.classList.add("no-result");
-                noResultItem.textContent = "No results found.";
-                searchResults.appendChild(noResultItem);
-                searchResults.style.display = "block";
-            }
+        if (matchingEntries.length > 0) {
+            searchResults.style.display = "block"; // Show results if matches are found
+        } else {
+            const noResultItem = document.createElement("div");
+            noResultItem.classList.add("no-result");
+            noResultItem.textContent = "No results found.";
+            searchResults.appendChild(noResultItem);
+            searchResults.style.display = "block";
         }
-        
-        document.addEventListener("click", function(event) {
-            if (!searchContainer.contains(event.target)) {
-                searchResults.style.display = "none";
-            }
-        });
-
-        // Add event listener to search bar
-        searchBar.addEventListener("input", updateSuggestions);
+    }
+    
+    document.addEventListener("click", function(event) {
+        if (!searchResults.contains(event.target) && event.target !== searchBar) {
+            searchResults.style.display = "none";
+        }
     });
+
+    // Add event listener to search bar
+    searchBar.addEventListener("input", updateSuggestions);
+    
+    function redirectToSearchResults() {
+        const query = searchBar.value.trim().toLowerCase();;
+        if (query) {
+            window.location.href = `/basketball/search_results.html?query=${encodeURIComponent(query)}`;
+        }
+    }
+
+    // Add event listeners for search
+    searchBar.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+            redirectToSearchResults();
+        }
+    });
+
+    searchButton.addEventListener("click", redirectToSearchResults);
+});
     </script>    
         
     </head>
@@ -324,69 +340,84 @@ def create_team_pages(data, output_dir):
                 rows.forEach(row => tbody.appendChild(row));
             }}
         }});
-        document.addEventListener("DOMContentLoaded", async function () {{
-            const searchBar = document.getElementById("search-bar");
-            const searchResults = document.getElementById("search-results");
+    document.addEventListener("DOMContentLoaded", async function () {{
+        const searchBar = document.getElementById("search-bar");
+        const searchResults = document.getElementById("search-results");
+        const searchButton = document.getElementById("search-button");
 
-            let playerLinks = {{}};
-            let teamLinks = {{}};
+        let playerLinks = {{}};
+        let teamLinks = {{}};
 
-            // Load players and teams data from JSON files
-            async function loadLinks() {{
-                playerLinks = await fetch('players.json').then(response => response.json());
-                teamLinks = await fetch('teams.json').then(response => response.json());
-            }}
+        // Load players and teams data from JSON files
+        async function loadLinks() {{
+            playerLinks = await fetch('players.json').then(response => response.json());
+            teamLinks = await fetch('teams.json').then(response => response.json());
+        }}
 
-            await loadLinks();  // Ensure links are loaded before searching
+        await loadLinks();  // Ensure links are loaded before searching
 
-            // Filter data and show suggestions based on input
-            function updateSuggestions() {{
-                const query = searchBar.value.trim().toLowerCase();
-                searchResults.innerHTML = ""; // Clear previous results
+        // Filter data and show suggestions based on input
+        function updateSuggestions() {{
+            const query = searchBar.value.trim().toLowerCase();
+            searchResults.innerHTML = ""; // Clear previous results
 
-                if (query === "") return;
+            if (query === "") return;
 
-                // Combine players and teams for search
-                const combinedLinks = {{ ...playerLinks, ...teamLinks }};
-                const matchingEntries = Object.entries(combinedLinks)
-                    .filter(([name]) => name.includes(query))  // Matches on both name and ID
-                    .slice(0, 5); // Limit to top 5
+            // Combine players and teams for search
+            const combinedLinks = {{ ...playerLinks, ...teamLinks }};
+            const matchingEntries = Object.entries(combinedLinks)
+                .filter(([name]) => name.toLowerCase().includes(query))  // Matches on both name and ID
+                .slice(0, 10); // Limit to top 10
 
-                matchingEntries.forEach(([name, url]) => {{
-                    const resultItem = document.createElement("div");
-                    resultItem.classList.add("suggestion");
+            matchingEntries.forEach(([name, url]) => {{
+                const resultItem = document.createElement("div");
+                resultItem.classList.add("suggestion");
 
-                    // Proper case for names
-                    resultItem.textContent = name.split(" ")
-                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                        .join(" ");
+                // Proper case for names
+                resultItem.textContent = name;
 
-                    resultItem.addEventListener("click", () => {{
-                        window.open(url, "_self");
-                    }});
-                    searchResults.appendChild(resultItem);
+                resultItem.addEventListener("click", () => {{
+                    window.open(url, "_self");
                 }});
-
-                if (matchingEntries.length > 0) {{
-                    searchResults.style.display = "block"; // Show results if matches are found
-                }} else {{
-                    const noResultItem = document.createElement("div");
-                    noResultItem.classList.add("no-result");
-                    noResultItem.textContent = "No results found.";
-                    searchResults.appendChild(noResultItem);
-                    searchResults.style.display = "block";
-                }}
-            }}
-            
-            document.addEventListener("click", function(event) {{
-                if (!searchContainer.contains(event.target)) {{
-                    searchResults.style.display = "none";
-                }}
+                searchResults.appendChild(resultItem);
             }});
 
-            // Add event listener to search bar
-            searchBar.addEventListener("input", updateSuggestions);
+            if (matchingEntries.length > 0) {{
+                searchResults.style.display = "block"; // Show results if matches are found
+            }} else {{
+                const noResultItem = document.createElement("div");
+                noResultItem.classList.add("no-result");
+                noResultItem.textContent = "No results found.";
+                searchResults.appendChild(noResultItem);
+                searchResults.style.display = "block";
+            }}
+        }}
+        
+        document.addEventListener("click", function(event) {{
+            if (!searchResults.contains(event.target) && event.target !== searchBar) {{
+                searchResults.style.display = "none";
+            }}
+        }});
+
+        // Add event listener to search bar
+        searchBar.addEventListener("input", updateSuggestions);
+        
+        function redirectToSearchResults() {{
+        const query = searchBar.value.trim().toLowerCase();;
+        if (query) {{
+            window.location.href = `/basketball/search_results.html?query=${{encodeURIComponent(query)}}`;
+        }}
+    }}
+
+    // Add event listeners for search
+    searchBar.addEventListener("keypress", function (e) {{
+        if (e.key === "Enter") {{
+            redirectToSearchResults();
+        }}
     }});
+
+    searchButton.addEventListener("click", redirectToSearchResults);
+}});
         </script>
         </head>
         <body>

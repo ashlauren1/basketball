@@ -161,6 +161,336 @@
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
+<label for="PTS_REB_202411240PHI_15_5_teamFilter">Opponent:</label>
+<select id="PTS_REB_202411240PHI_15_5_teamFilter" onchange="applyFilters('PTS_REB', '202411240PHI', '15_5')">
+<option value="all">All</option>
+<option value="DEN">DEN</option>
+<option value="GSW">GSW</option>
+<option value="HOU">HOU</option>
+<option value="OKC">OKC</option>
+<option value="ORL">ORL</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="POR">POR</option>
+<option value="SAC">SAC</option>
+<option value="SAS">SAS</option>
+<option value="TOR">TOR</option>
+<option value="UTA">UTA</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS_REB_202411240PHI_15_5_homeAwayFilter">Home/Away:</label>
+<select id="PTS_REB_202411240PHI_15_5_homeAwayFilter" onchange="applyFilters('PTS_REB', '202411240PHI', '15_5')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS_REB_202411240PHI_15_5_startDate">Start Date:</label>
+<input id="PTS_REB_202411240PHI_15_5_startDate" onchange="applyFilters('PTS_REB', '202411240PHI', '15_5')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="PTS_REB_202411240PHI_15_5_endDate">End Date:</label>
+<input id="PTS_REB_202411240PHI_15_5_endDate" onchange="applyFilters('PTS_REB', '202411240PHI', '15_5')" type="date"/>
+</div>
+</div>
+<canvas class="barChart" id="PTS_REB_202411240PHI_15_5_chart"></canvas>
+<div class="filter-buttons">
+<button onclick="filterGames('PTS_REB', '202411240PHI', '15_5', 5)">L5</button>
+<button onclick="filterGames('PTS_REB', '202411240PHI', '15_5', 10)">L10 Games</button>
+<button onclick="filterGames('PTS_REB', '202411240PHI', '15_5', 20)">L20 Games</button>
+<button onclick="filterBySeason('PTS_REB', '202411240PHI', '15_5', '2023-24')">2023-24</button>
+<button onclick="filterBySeason('PTS_REB', '202411240PHI', '15_5', '2024-25')">2024-25</button>
+<button onclick="filterAll('PTS_REB', '202411240PHI', '15_5')">All</button>
+<button class="clear-chart-filters" onclick="clearFilters('PTS_REB', '202411240PHI', '15_5')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="PTS_REB_202411240PHI_15_5_lineSlider">Change Line:</label>
+<input id="PTS_REB_202411240PHI_15_5_lineSlider" max="30" min="0" oninput="updateLine('PTS_REB', '202411240PHI', '15_5', this.value)" step="0.25" type="range" value="15.5"/>
+<span id="PTS_REB_202411240PHI_15_5_lineValue">15.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" onclick="resetLine('PTS_REB', '202411240PHI', '15_5')">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="H2HChart.js"></script>
+<script>
+    const allData_PTS_REB_202411240PHI_15_5 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 6, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 16, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 19, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 4, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 10, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 16, 'season': '2024-25'}, {'date': '2024-11-18', 'opponent': 'GSW', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-11-20', 'opponent': 'ORL', 'location': 'home', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-22', 'opponent': 'SAC', 'location': 'home', 'stat': 20, 'season': '2024-25'}];
+    initializeChart("PTS_REB", "202411240PHI", "15_5", allData_PTS_REB_202411240PHI_15_5, 15.5);
+</script>
+
+<div class="chart-container">
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="PTS_REB_AST_202411240PHI_18_5_teamFilter">Opponent:</label>
+<select id="PTS_REB_AST_202411240PHI_18_5_teamFilter" onchange="applyFilters('PTS_REB_AST', '202411240PHI', '18_5')">
+<option value="all">All</option>
+<option value="DEN">DEN</option>
+<option value="GSW">GSW</option>
+<option value="HOU">HOU</option>
+<option value="OKC">OKC</option>
+<option value="ORL">ORL</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="POR">POR</option>
+<option value="SAC">SAC</option>
+<option value="SAS">SAS</option>
+<option value="TOR">TOR</option>
+<option value="UTA">UTA</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS_REB_AST_202411240PHI_18_5_homeAwayFilter">Home/Away:</label>
+<select id="PTS_REB_AST_202411240PHI_18_5_homeAwayFilter" onchange="applyFilters('PTS_REB_AST', '202411240PHI', '18_5')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS_REB_AST_202411240PHI_18_5_startDate">Start Date:</label>
+<input id="PTS_REB_AST_202411240PHI_18_5_startDate" onchange="applyFilters('PTS_REB_AST', '202411240PHI', '18_5')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="PTS_REB_AST_202411240PHI_18_5_endDate">End Date:</label>
+<input id="PTS_REB_AST_202411240PHI_18_5_endDate" onchange="applyFilters('PTS_REB_AST', '202411240PHI', '18_5')" type="date"/>
+</div>
+</div>
+<canvas class="barChart" id="PTS_REB_AST_202411240PHI_18_5_chart"></canvas>
+<div class="filter-buttons">
+<button onclick="filterGames('PTS_REB_AST', '202411240PHI', '18_5', 5)">L5</button>
+<button onclick="filterGames('PTS_REB_AST', '202411240PHI', '18_5', 10)">L10 Games</button>
+<button onclick="filterGames('PTS_REB_AST', '202411240PHI', '18_5', 20)">L20 Games</button>
+<button onclick="filterBySeason('PTS_REB_AST', '202411240PHI', '18_5', '2023-24')">2023-24</button>
+<button onclick="filterBySeason('PTS_REB_AST', '202411240PHI', '18_5', '2024-25')">2024-25</button>
+<button onclick="filterAll('PTS_REB_AST', '202411240PHI', '18_5')">All</button>
+<button class="clear-chart-filters" onclick="clearFilters('PTS_REB_AST', '202411240PHI', '18_5')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="PTS_REB_AST_202411240PHI_18_5_lineSlider">Change Line:</label>
+<input id="PTS_REB_AST_202411240PHI_18_5_lineSlider" max="30" min="0" oninput="updateLine('PTS_REB_AST', '202411240PHI', '18_5', this.value)" step="0.25" type="range" value="18.5"/>
+<span id="PTS_REB_AST_202411240PHI_18_5_lineValue">18.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" onclick="resetLine('PTS_REB_AST', '202411240PHI', '18_5')">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="H2HChart.js"></script>
+<script>
+    const allData_PTS_REB_AST_202411240PHI_18_5 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 10, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 17, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 26, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 12, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 22, 'season': '2024-25'}, {'date': '2024-11-18', 'opponent': 'GSW', 'location': 'home', 'stat': 9, 'season': '2024-25'}, {'date': '2024-11-20', 'opponent': 'ORL', 'location': 'home', 'stat': 20, 'season': '2024-25'}, {'date': '2024-11-22', 'opponent': 'SAC', 'location': 'home', 'stat': 22, 'season': '2024-25'}];
+    initializeChart("PTS_REB_AST", "202411240PHI", "18_5", allData_PTS_REB_AST_202411240PHI_18_5, 18.5);
+</script>
+
+<div class="chart-container">
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="PTS_202411240PHI_12_5_teamFilter">Opponent:</label>
+<select id="PTS_202411240PHI_12_5_teamFilter" onchange="applyFilters('PTS', '202411240PHI', '12_5')">
+<option value="all">All</option>
+<option value="DEN">DEN</option>
+<option value="GSW">GSW</option>
+<option value="HOU">HOU</option>
+<option value="OKC">OKC</option>
+<option value="ORL">ORL</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="POR">POR</option>
+<option value="SAC">SAC</option>
+<option value="SAS">SAS</option>
+<option value="TOR">TOR</option>
+<option value="UTA">UTA</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS_202411240PHI_12_5_homeAwayFilter">Home/Away:</label>
+<select id="PTS_202411240PHI_12_5_homeAwayFilter" onchange="applyFilters('PTS', '202411240PHI', '12_5')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS_202411240PHI_12_5_startDate">Start Date:</label>
+<input id="PTS_202411240PHI_12_5_startDate" onchange="applyFilters('PTS', '202411240PHI', '12_5')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="PTS_202411240PHI_12_5_endDate">End Date:</label>
+<input id="PTS_202411240PHI_12_5_endDate" onchange="applyFilters('PTS', '202411240PHI', '12_5')" type="date"/>
+</div>
+</div>
+<canvas class="barChart" id="PTS_202411240PHI_12_5_chart"></canvas>
+<div class="filter-buttons">
+<button onclick="filterGames('PTS', '202411240PHI', '12_5', 5)">L5</button>
+<button onclick="filterGames('PTS', '202411240PHI', '12_5', 10)">L10 Games</button>
+<button onclick="filterGames('PTS', '202411240PHI', '12_5', 20)">L20 Games</button>
+<button onclick="filterBySeason('PTS', '202411240PHI', '12_5', '2023-24')">2023-24</button>
+<button onclick="filterBySeason('PTS', '202411240PHI', '12_5', '2024-25')">2024-25</button>
+<button onclick="filterAll('PTS', '202411240PHI', '12_5')">All</button>
+<button class="clear-chart-filters" onclick="clearFilters('PTS', '202411240PHI', '12_5')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="PTS_202411240PHI_12_5_lineSlider">Change Line:</label>
+<input id="PTS_202411240PHI_12_5_lineSlider" max="30" min="0" oninput="updateLine('PTS', '202411240PHI', '12_5', this.value)" step="0.25" type="range" value="12.5"/>
+<span id="PTS_202411240PHI_12_5_lineValue">12.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" onclick="resetLine('PTS', '202411240PHI', '12_5')">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="H2HChart.js"></script>
+<script>
+    const allData_PTS_202411240PHI_12_5 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 4, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 10, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 9, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 12, 'season': '2024-25'}, {'date': '2024-11-18', 'opponent': 'GSW', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-11-20', 'opponent': 'ORL', 'location': 'home', 'stat': 10, 'season': '2024-25'}, {'date': '2024-11-22', 'opponent': 'SAC', 'location': 'home', 'stat': 14, 'season': '2024-25'}];
+    initializeChart("PTS", "202411240PHI", "12_5", allData_PTS_202411240PHI_12_5, 12.5);
+</script>
+
+<div class="chart-container">
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="REB_AST_202411240PHI_6_0_teamFilter">Opponent:</label>
+<select id="REB_AST_202411240PHI_6_0_teamFilter" onchange="applyFilters('REB_AST', '202411240PHI', '6_0')">
+<option value="all">All</option>
+<option value="DEN">DEN</option>
+<option value="GSW">GSW</option>
+<option value="HOU">HOU</option>
+<option value="OKC">OKC</option>
+<option value="ORL">ORL</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="POR">POR</option>
+<option value="SAC">SAC</option>
+<option value="SAS">SAS</option>
+<option value="TOR">TOR</option>
+<option value="UTA">UTA</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="REB_AST_202411240PHI_6_0_homeAwayFilter">Home/Away:</label>
+<select id="REB_AST_202411240PHI_6_0_homeAwayFilter" onchange="applyFilters('REB_AST', '202411240PHI', '6_0')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="REB_AST_202411240PHI_6_0_startDate">Start Date:</label>
+<input id="REB_AST_202411240PHI_6_0_startDate" onchange="applyFilters('REB_AST', '202411240PHI', '6_0')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="REB_AST_202411240PHI_6_0_endDate">End Date:</label>
+<input id="REB_AST_202411240PHI_6_0_endDate" onchange="applyFilters('REB_AST', '202411240PHI', '6_0')" type="date"/>
+</div>
+</div>
+<canvas class="barChart" id="REB_AST_202411240PHI_6_0_chart"></canvas>
+<div class="filter-buttons">
+<button onclick="filterGames('REB_AST', '202411240PHI', '6_0', 5)">L5</button>
+<button onclick="filterGames('REB_AST', '202411240PHI', '6_0', 10)">L10 Games</button>
+<button onclick="filterGames('REB_AST', '202411240PHI', '6_0', 20)">L20 Games</button>
+<button onclick="filterBySeason('REB_AST', '202411240PHI', '6_0', '2023-24')">2023-24</button>
+<button onclick="filterBySeason('REB_AST', '202411240PHI', '6_0', '2024-25')">2024-25</button>
+<button onclick="filterAll('REB_AST', '202411240PHI', '6_0')">All</button>
+<button class="clear-chart-filters" onclick="clearFilters('REB_AST', '202411240PHI', '6_0')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="REB_AST_202411240PHI_6_0_lineSlider">Change Line:</label>
+<input id="REB_AST_202411240PHI_6_0_lineSlider" max="30" min="0" oninput="updateLine('REB_AST', '202411240PHI', '6_0', this.value)" step="0.25" type="range" value="6.0"/>
+<span id="REB_AST_202411240PHI_6_0_lineValue">6.0</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" onclick="resetLine('REB_AST', '202411240PHI', '6_0')">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="H2HChart.js"></script>
+<script>
+    const allData_REB_AST_202411240PHI_6_0 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 10, 'season': '2024-25'}, {'date': '2024-11-18', 'opponent': 'GSW', 'location': 'home', 'stat': 1, 'season': '2024-25'}, {'date': '2024-11-20', 'opponent': 'ORL', 'location': 'home', 'stat': 10, 'season': '2024-25'}, {'date': '2024-11-22', 'opponent': 'SAC', 'location': 'home', 'stat': 8, 'season': '2024-25'}];
+    initializeChart("REB_AST", "202411240PHI", "6_0", allData_REB_AST_202411240PHI_6_0, 6.0);
+</script>
+
+<div class="chart-container">
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="PTS_AST_202411240PHI_15_5_teamFilter">Opponent:</label>
+<select id="PTS_AST_202411240PHI_15_5_teamFilter" onchange="applyFilters('PTS_AST', '202411240PHI', '15_5')">
+<option value="all">All</option>
+<option value="DEN">DEN</option>
+<option value="GSW">GSW</option>
+<option value="HOU">HOU</option>
+<option value="OKC">OKC</option>
+<option value="ORL">ORL</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="POR">POR</option>
+<option value="SAC">SAC</option>
+<option value="SAS">SAS</option>
+<option value="TOR">TOR</option>
+<option value="UTA">UTA</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS_AST_202411240PHI_15_5_homeAwayFilter">Home/Away:</label>
+<select id="PTS_AST_202411240PHI_15_5_homeAwayFilter" onchange="applyFilters('PTS_AST', '202411240PHI', '15_5')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="PTS_AST_202411240PHI_15_5_startDate">Start Date:</label>
+<input id="PTS_AST_202411240PHI_15_5_startDate" onchange="applyFilters('PTS_AST', '202411240PHI', '15_5')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="PTS_AST_202411240PHI_15_5_endDate">End Date:</label>
+<input id="PTS_AST_202411240PHI_15_5_endDate" onchange="applyFilters('PTS_AST', '202411240PHI', '15_5')" type="date"/>
+</div>
+</div>
+<canvas class="barChart" id="PTS_AST_202411240PHI_15_5_chart"></canvas>
+<div class="filter-buttons">
+<button onclick="filterGames('PTS_AST', '202411240PHI', '15_5', 5)">L5</button>
+<button onclick="filterGames('PTS_AST', '202411240PHI', '15_5', 10)">L10 Games</button>
+<button onclick="filterGames('PTS_AST', '202411240PHI', '15_5', 20)">L20 Games</button>
+<button onclick="filterBySeason('PTS_AST', '202411240PHI', '15_5', '2023-24')">2023-24</button>
+<button onclick="filterBySeason('PTS_AST', '202411240PHI', '15_5', '2024-25')">2024-25</button>
+<button onclick="filterAll('PTS_AST', '202411240PHI', '15_5')">All</button>
+<button class="clear-chart-filters" onclick="clearFilters('PTS_AST', '202411240PHI', '15_5')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="PTS_AST_202411240PHI_15_5_lineSlider">Change Line:</label>
+<input id="PTS_AST_202411240PHI_15_5_lineSlider" max="30" min="0" oninput="updateLine('PTS_AST', '202411240PHI', '15_5', this.value)" step="0.25" type="range" value="15.5"/>
+<span id="PTS_AST_202411240PHI_15_5_lineValue">15.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" onclick="resetLine('PTS_AST', '202411240PHI', '15_5')">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="H2HChart.js"></script>
+<script>
+    const allData_PTS_AST_202411240PHI_15_5 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 4, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 5, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 10, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 16, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 13, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 20, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-18', 'opponent': 'GSW', 'location': 'home', 'stat': 9, 'season': '2024-25'}, {'date': '2024-11-20', 'opponent': 'ORL', 'location': 'home', 'stat': 16, 'season': '2024-25'}, {'date': '2024-11-22', 'opponent': 'SAC', 'location': 'home', 'stat': 16, 'season': '2024-25'}];
+    initializeChart("PTS_AST", "202411240PHI", "15_5", allData_PTS_AST_202411240PHI_15_5, 15.5);
+</script>
+
+<div class="chart-container">
+<div class="barChart-filters">
+<div class="barChartFilter">
 <label for="STL_202411180LAC_0_5_teamFilter">Opponent:</label>
 <select id="STL_202411180LAC_0_5_teamFilter" onchange="applyFilters('STL', '202411180LAC', '0_5')">
 <option value="all">All</option>
@@ -222,7 +552,6 @@
     const allData_STL_202411180LAC_0_5 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 1, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 2, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 1, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 1, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 1, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 1, 'season': '2024-25'}];
     initializeChart("STL", "202411180LAC", "0_5", allData_STL_202411180LAC_0_5, 0.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -287,7 +616,6 @@
     const allData_REB_AST_202411180LAC_5_5 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 10, 'season': '2024-25'}];
     initializeChart("REB_AST", "202411180LAC", "5_5", allData_REB_AST_202411180LAC_5_5, 5.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -352,7 +680,6 @@
     const allData_PTS_REB_AST_202411180LAC_15_5 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 10, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 17, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 26, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 12, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 22, 'season': '2024-25'}];
     initializeChart("PTS_REB_AST", "202411180LAC", "15_5", allData_PTS_REB_AST_202411180LAC_15_5, 15.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -417,7 +744,6 @@
     const allData_PTS_202411180LAC_10_0 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 4, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 10, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 9, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 12, 'season': '2024-25'}];
     initializeChart("PTS", "202411180LAC", "10_0", allData_PTS_202411180LAC_10_0, 10.0);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -482,7 +808,6 @@
     const allData_PTS_202411180LAC_9_5 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 4, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 10, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 9, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 12, 'season': '2024-25'}];
     initializeChart("PTS", "202411180LAC", "9_5", allData_PTS_202411180LAC_9_5, 9.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -547,7 +872,6 @@
     const allData_PTS_REB_AST_202411180LAC_16_0 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 10, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 17, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 26, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 12, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 22, 'season': '2024-25'}];
     initializeChart("PTS_REB_AST", "202411180LAC", "16_0", allData_PTS_REB_AST_202411180LAC_16_0, 16.0);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -612,7 +936,6 @@
     const allData_AST_202411180LAC_2_5 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 1, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 1, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 4, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 3, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 2, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 6, 'season': '2024-25'}];
     initializeChart("AST", "202411180LAC", "2_5", allData_AST_202411180LAC_2_5, 2.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -677,7 +1000,6 @@
     const allData_PTS_REB_202411180LAC_13_5 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 6, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 16, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 19, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 4, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 10, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 16, 'season': '2024-25'}];
     initializeChart("PTS_REB", "202411180LAC", "13_5", allData_PTS_REB_202411180LAC_13_5, 13.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -742,7 +1064,6 @@
     const allData_PTS_AST_202411180LAC_13_5 = [{'date': '2024-10-23', 'opponent': 'PHO', 'location': 'home', 'stat': 4, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'DEN', 'location': 'away', 'stat': 5, 'season': '2024-25'}, {'date': '2024-10-27', 'opponent': 'GSW', 'location': 'away', 'stat': 10, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'POR', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-10-31', 'opponent': 'PHO', 'location': 'home', 'stat': 16, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'OKC', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'SAS', 'location': 'home', 'stat': 13, 'season': '2024-25'}, {'date': '2024-11-06', 'opponent': 'PHI', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'SAC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-09', 'opponent': 'TOR', 'location': 'home', 'stat': 20, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'OKC', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'HOU', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'UTA', 'location': 'home', 'stat': 18, 'season': '2024-25'}];
     initializeChart("PTS_AST", "202411180LAC", "13_5", allData_PTS_AST_202411180LAC_13_5, 13.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">

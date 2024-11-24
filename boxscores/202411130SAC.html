@@ -1,12 +1,14 @@
 
-        <!DOCTYPE html>
-        <html>
-        <head>
-        <title>SAC vs PHO</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SAC vs PHO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <script>
         document.addEventListener("DOMContentLoaded", function () {
             setupTableInteractions("home-boxscore");
@@ -227,6 +229,7 @@
         </script>
         </head>
         <body>
+    <div id="page-heading">    
         <div class="topnav">
             <a href="/basketball/" target="_blank">Projections</a>
             <a href="/basketball/players/" target="_blank">Players</a>
@@ -243,6 +246,7 @@
         <div class="header">
         <h1>SAC vs PHO - 11/13/2024</h1>
         </div>
+    </div>
         <button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
         <div id="boxscore-container">
         <div id="table-container">
@@ -278,90 +282,6 @@
                 </thead>
                 <tbody>
             
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/huertke01.html" target="_blank">Kevin Huerter</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
-                        <td>22</td>
-                        <td>6</td>
-                        <td>5</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>36.55</td>
-                        <td>1</td>
-                        <td>5</td>
-                        <td>9</td>
-                        <td>16</td>
-                        <td>2</td>
-                        <td>6</td>
-                        <td>2</td>
-                        <td>5</td>
-                        <td>3</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/murrake02.html" target="_blank">Keegan Murray</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
-                        <td>17</td>
-                        <td>4</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>33.08</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>7</td>
-                        <td>11</td>
-                        <td>3</td>
-                        <td>5</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>4</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/foxde01.html" target="_blank">De'Aaron Fox</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
-                        <td>29</td>
-                        <td>6</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>31.98</td>
-                        <td>1</td>
-                        <td>5</td>
-                        <td>11</td>
-                        <td>17</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>6</td>
-                        <td>8</td>
-                        <td>3</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/sabondo01.html" target="_blank">Domantas Sabonis</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
-                        <td>11</td>
-                        <td>10</td>
-                        <td>9</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>7</td>
-                        <td>29.68</td>
-                        <td>1</td>
-                        <td>9</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>2</td>
-                    </tr>
-                
                     <tr>
                         <td style="text-align:left"><a href="/basketball/players/derozde01.html" target="_blank">DeMar DeRozan</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
@@ -402,6 +322,132 @@
                         <td>0</td>
                         <td>0</td>
                         <td>3</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/foxde01.html" target="_blank">De'Aaron Fox</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+                        <td>29</td>
+                        <td>6</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>31.98</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>11</td>
+                        <td>17</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>3</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/huertke01.html" target="_blank">Kevin Huerter</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+                        <td>22</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>36.55</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>9</td>
+                        <td>16</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>3</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/jonesco02.html" target="_blank">Colby Jones</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2.90</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/jonesis01.html" target="_blank">Isaac Jones</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2.90</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/jonesma05.html" target="_blank">Mason Jones</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2.90</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/lenal01.html" target="_blank">Alex Len</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>4.77</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
                     </tr>
                 
                     <tr>
@@ -468,87 +514,45 @@
                     </tr>
                 
                     <tr>
-                        <td style="text-align:left"><a href="/basketball/players/lenal01.html" target="_blank">Alex Len</a></td>
+                        <td style="text-align:left"><a href="/basketball/players/murrake02.html" target="_blank">Keegan Murray</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+                        <td>17</td>
                         <td>4</td>
-                        <td>2</td>
                         <td>1</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>4.77</td>
                         <td>1</td>
                         <td>1</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>33.08</td>
                         <td>1</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/jonesco02.html" target="_blank">Colby Jones</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>11</td>
+                        <td>3</td>
                         <td>5</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2.90</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
+                        <td>4</td>
                     </tr>
                 
                     <tr>
-                        <td style="text-align:left"><a href="/basketball/players/jonesis01.html" target="_blank">Isaac Jones</a></td>
+                        <td style="text-align:left"><a href="/basketball/players/sabondo01.html" target="_blank">Domantas Sabonis</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+                        <td>11</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>7</td>
+                        <td>29.68</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>3</td>
                         <td>4</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2.90</td>
-                        <td>0</td>
-                        <td>1</td>
+                        <td>3</td>
+                        <td>3</td>
                         <td>2</td>
                         <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/jonesma05.html" target="_blank">Mason Jones</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2.90</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
+                        <td>2</td>
                     </tr>
                 
                 </tbody>
@@ -607,6 +611,27 @@
                 <tbody>
             
                     <tr>
+                        <td style="text-align:left"><a href="/basketball/players/bolbo01.html" target="_blank">Bol Bol</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>5.78</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>0</td>
+                    </tr>
+                
+                    <tr>
                         <td style="text-align:left"><a href="/basketball/players/bookede01.html" target="_blank">Devin Booker</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
                         <td>18</td>
@@ -628,22 +653,22 @@
                     </tr>
                 
                     <tr>
-                        <td style="text-align:left"><a href="/basketball/players/jonesty01.html" target="_blank">Tyus Jones</a></td>
+                        <td style="text-align:left"><a href="/basketball/players/bridgja01.html" target="_blank">Jalen Bridges</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>8</td>
+                        <td>1</td>
+                        <td>1</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>31.35</td>
+                        <td>1</td>
+                        <td>5.78</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
                         <td>2</td>
                         <td>0</td>
-                        <td>3</td>
-                        <td>11</td>
                         <td>2</td>
-                        <td>9</td>
-                        <td>2</td>
+                        <td>1</td>
                         <td>2</td>
                         <td>0</td>
                     </tr>
@@ -670,24 +695,87 @@
                     </tr>
                 
                     <tr>
-                        <td style="text-align:left"><a href="/basketball/players/onealro01.html" target="_blank">Royce O'Neale</a></td>
+                        <td style="text-align:left"><a href="/basketball/players/ighodos01.html" target="_blank">Oso Ighodaro</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
-                        <td>5</td>
-                        <td>5</td>
                         <td>4</td>
                         <td>1</td>
                         <td>0</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>14.90</td>
+                        <td>0</td>
                         <td>1</td>
-                        <td>21.92</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/jonesty01.html" target="_blank">Tyus Jones</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>31.35</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>9</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/leeda03.html" target="_blank">Damion Lee</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>10.97</td>
+                        <td>0</td>
+                        <td>0</td>
                         <td>1</td>
                         <td>4</td>
+                        <td>0</td>
                         <td>2</td>
-                        <td>12</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="text-align:left"><a href="/basketball/players/morrimo01.html" target="_blank">Monte Morris</a></td>
+                        <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
+                        <td>10</td>
+                        <td>0</td>
                         <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>13.02</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>4</td>
                         <td>6</td>
-                        <td>0</td>
-                        <td>0</td>
                         <td>2</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
                     </tr>
                 
                     <tr>
@@ -733,66 +821,24 @@
                     </tr>
                 
                     <tr>
-                        <td style="text-align:left"><a href="/basketball/players/washity02.html" target="_blank">TyTy Washington Jr.</a></td>
+                        <td style="text-align:left"><a href="/basketball/players/onealro01.html" target="_blank">Royce O'Neale</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
-                        <td>8</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>16.00</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/ighodos01.html" target="_blank">Oso Ighodaro</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
+                        <td>5</td>
+                        <td>5</td>
                         <td>4</td>
                         <td>1</td>
                         <td>0</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>14.90</td>
-                        <td>0</td>
                         <td>1</td>
+                        <td>21.92</td>
                         <td>1</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/morrimo01.html" target="_blank">Monte Morris</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>13.02</td>
-                        <td>0</td>
-                        <td>0</td>
                         <td>4</td>
-                        <td>6</td>
                         <td>2</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>12</td>
                         <td>1</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
                     </tr>
                 
                     <tr>
@@ -817,65 +863,23 @@
                     </tr>
                 
                     <tr>
-                        <td style="text-align:left"><a href="/basketball/players/leeda03.html" target="_blank">Damion Lee</a></td>
+                        <td style="text-align:left"><a href="/basketball/players/washity02.html" target="_blank">TyTy Washington Jr.</a></td>
                         <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
-                        <td>4</td>
-                        <td>0</td>
+                        <td>8</td>
                         <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>10.97</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/bolbo01.html" target="_blank">Bol Bol</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
-                        <td>5</td>
                         <td>1</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>5.78</td>
-                        <td>1</td>
+                        <td>16.00</td>
                         <td>0</td>
                         <td>1</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
                         <td>3</td>
+                        <td>6</td>
+                        <td>2</td>
                         <td>3</td>
                         <td>0</td>
-                    </tr>
-                
-                    <tr>
-                        <td style="text-align:left"><a href="/basketball/players/bridgja01.html" target="_blank">Jalen Bridges</a></td>
-                        <td style="text-align:left"><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
-                        <td>1</td>
-                        <td>1</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>5.78</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>2</td>
                         <td>0</td>
                     </tr>
                 

@@ -190,6 +190,71 @@
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
+<label for="FANTASY_202411240IND_26_0_teamFilter">Opponent:</label>
+<select id="FANTASY_202411240IND_26_0_teamFilter" onchange="applyFilters('FANTASY', '202411240IND', '26_0')">
+<option value="all">All</option>
+<option value="ATL">ATL</option>
+<option value="BOS">BOS</option>
+<option value="CLE">CLE</option>
+<option value="DET">DET</option>
+<option value="GSW">GSW</option>
+<option value="HOU">HOU</option>
+<option value="MEM">MEM</option>
+<option value="MIA">MIA</option>
+<option value="NYK">NYK</option>
+<option value="ORL">ORL</option>
+<option value="SAS">SAS</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="FANTASY_202411240IND_26_0_homeAwayFilter">Home/Away:</label>
+<select id="FANTASY_202411240IND_26_0_homeAwayFilter" onchange="applyFilters('FANTASY', '202411240IND', '26_0')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="FANTASY_202411240IND_26_0_startDate">Start Date:</label>
+<input id="FANTASY_202411240IND_26_0_startDate" onchange="applyFilters('FANTASY', '202411240IND', '26_0')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="FANTASY_202411240IND_26_0_endDate">End Date:</label>
+<input id="FANTASY_202411240IND_26_0_endDate" onchange="applyFilters('FANTASY', '202411240IND', '26_0')" type="date"/>
+</div>
+</div>
+<canvas class="barChart" id="FANTASY_202411240IND_26_0_chart"></canvas>
+<div class="filter-buttons">
+<button onclick="filterGames('FANTASY', '202411240IND', '26_0', 5)">L5</button>
+<button onclick="filterGames('FANTASY', '202411240IND', '26_0', 10)">L10 Games</button>
+<button onclick="filterGames('FANTASY', '202411240IND', '26_0', 20)">L20 Games</button>
+<button onclick="filterBySeason('FANTASY', '202411240IND', '26_0', '2023-24')">2023-24</button>
+<button onclick="filterBySeason('FANTASY', '202411240IND', '26_0', '2024-25')">2024-25</button>
+<button onclick="filterAll('FANTASY', '202411240IND', '26_0')">All</button>
+<button class="clear-chart-filters" onclick="clearFilters('FANTASY', '202411240IND', '26_0')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="FANTASY_202411240IND_26_0_lineSlider">Change Line:</label>
+<input id="FANTASY_202411240IND_26_0_lineSlider" max="30" min="0" oninput="updateLine('FANTASY', '202411240IND', '26_0', this.value)" step="0.25" type="range" value="26.0"/>
+<span id="FANTASY_202411240IND_26_0_lineValue">26.0</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" onclick="resetLine('FANTASY', '202411240IND', '26_0')">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="H2HChart.js"></script>
+<script>
+    const allData_FANTASY_202411240IND_26_0 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 15.5, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 29.7, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 27.3, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 34.0, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 39.7, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 34.2, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 23.5, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 28.6, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 19.7, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 21.4, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 50.4, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 13.1, 'season': '2024-25'}, {'date': '2024-11-18', 'opponent': 'NYK', 'location': 'away', 'stat': 16.3, 'season': '2024-25'}, {'date': '2024-11-22', 'opponent': 'BOS', 'location': 'home', 'stat': 20.3, 'season': '2024-25'}];
+    initializeChart("FANTASY", "202411240IND", "26_0", allData_FANTASY_202411240IND_26_0, 26.0);
+</script>
+
+<div class="chart-container">
+<div class="barChart-filters">
+<div class="barChartFilter">
 <label for="REB_AST_202411180NYK_7_5_teamFilter">Opponent:</label>
 <select id="REB_AST_202411180NYK_7_5_teamFilter" onchange="applyFilters('REB_AST', '202411180NYK', '7_5')">
 <option value="all">All</option>
@@ -250,7 +315,6 @@
     const allData_REB_AST_202411180NYK_7_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 10, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 9, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 13, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 10, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 4, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 9, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 6, 'season': '2024-25'}];
     initializeChart("REB_AST", "202411180NYK", "7_5", allData_REB_AST_202411180NYK_7_5, 7.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -314,7 +378,6 @@
     const allData_FANTASY_202411180NYK_27_0 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 15.5, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 29.7, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 27.3, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 34.0, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 39.7, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 34.2, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 23.5, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 28.6, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 19.7, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 21.4, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 50.4, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 13.1, 'season': '2024-25'}];
     initializeChart("FANTASY", "202411180NYK", "27_0", allData_FANTASY_202411180NYK_27_0, 27.0);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -378,7 +441,6 @@
     const allData_REB_202411180NYK_5_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 9, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 2, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 3, 'season': '2024-25'}];
     initializeChart("REB", "202411180NYK", "5_5", allData_REB_202411180NYK_5_5, 5.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -442,7 +504,6 @@
     const allData_PTS_REB_AST_202411180NYK_17_0 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 19, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 17, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 26, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 23, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 12, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 16, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 29, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 10, 'season': '2024-25'}];
     initializeChart("PTS_REB_AST", "202411180NYK", "17_0", allData_PTS_REB_AST_202411180NYK_17_0, 17.0);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -506,7 +567,6 @@
     const allData_FANTASY_202411180NYK_27_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 15.5, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 29.7, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 27.3, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 34.0, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 39.7, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 34.2, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 23.5, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 28.6, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 19.7, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 21.4, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 50.4, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 13.1, 'season': '2024-25'}];
     initializeChart("FANTASY", "202411180NYK", "27_5", allData_FANTASY_202411180NYK_27_5, 27.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -570,7 +630,6 @@
     const allData_BLK_STL_202411180NYK_2_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 3, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 4, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 3, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 2, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 2, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 2, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 1, 'season': '2024-25'}];
     initializeChart("BLK_STL", "202411180NYK", "2_5", allData_BLK_STL_202411180NYK_2_5, 2.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -634,7 +693,6 @@
     const allData_PTS_REB_AST_202411180NYK_19_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 19, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 17, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 26, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 23, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 12, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 16, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 29, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 10, 'season': '2024-25'}];
     initializeChart("PTS_REB_AST", "202411180NYK", "19_5", allData_PTS_REB_AST_202411180NYK_19_5, 19.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -698,7 +756,6 @@
     const allData_PTS_202411180NYK_10_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 12, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 17, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 10, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 8, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 12, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 20, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 4, 'season': '2024-25'}];
     initializeChart("PTS", "202411180NYK", "10_5", allData_PTS_202411180NYK_10_5, 10.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -762,7 +819,6 @@
     const allData_PTS_REB_AST_202411180NYK_18_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 19, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 17, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 26, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 23, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 12, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 16, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 29, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 10, 'season': '2024-25'}];
     initializeChart("PTS_REB_AST", "202411180NYK", "18_5", allData_PTS_REB_AST_202411180NYK_18_5, 18.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -826,7 +882,6 @@
     const allData_PTS_REB_202411180NYK_16_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 18, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 16, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 16, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 23, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 13, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 27, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 7, 'season': '2024-25'}];
     initializeChart("PTS_REB", "202411180NYK", "16_5", allData_PTS_REB_202411180NYK_16_5, 16.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -890,7 +945,6 @@
     const allData_STL_202411180NYK_0_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 0, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 1, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 1, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 1, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 1, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 1, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 0, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 1, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 4, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 0, 'season': '2024-25'}];
     initializeChart("STL", "202411180NYK", "0_5", allData_STL_202411180NYK_0_5, 0.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -954,7 +1008,6 @@
     const allData_REB_AST_202411180NYK_8_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 10, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 9, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 13, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 10, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 4, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 9, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 6, 'season': '2024-25'}];
     initializeChart("REB_AST", "202411180NYK", "8_5", allData_REB_AST_202411180NYK_8_5, 8.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -1018,7 +1071,6 @@
     const allData_REB_202411180NYK_6_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 9, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 3, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 2, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 3, 'season': '2024-25'}];
     initializeChart("REB", "202411180NYK", "6_5", allData_REB_202411180NYK_6_5, 6.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -1082,7 +1134,6 @@
     const allData_PTS_REB_AST_202411180NYK_17_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 8, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 19, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 17, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 26, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 23, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 18, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 12, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 16, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 29, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 10, 'season': '2024-25'}];
     initializeChart("PTS_REB_AST", "202411180NYK", "17_5", allData_PTS_REB_AST_202411180NYK_17_5, 17.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -1146,7 +1197,6 @@
     const allData_PTS_REB_202411180NYK_15_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 18, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 16, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 16, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 23, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 21, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 13, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 27, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 7, 'season': '2024-25'}];
     initializeChart("PTS_REB", "202411180NYK", "15_5", allData_PTS_REB_202411180NYK_15_5, 15.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -1210,7 +1260,6 @@
     const allData_PTS_AST_202411180NYK_11_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 3, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 13, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 8, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 13, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 20, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 12, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 13, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 15, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 6, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 14, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 22, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 7, 'season': '2024-25'}];
     initializeChart("PTS_AST", "202411180NYK", "11_5", allData_PTS_AST_202411180NYK_11_5, 11.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">
@@ -1274,7 +1323,6 @@
     const allData_PTS_202411180NYK_9_5 = [{'date': '2024-10-24', 'opponent': 'BOS', 'location': 'home', 'stat': 2, 'season': '2024-25'}, {'date': '2024-10-26', 'opponent': 'CLE', 'location': 'home', 'stat': 12, 'season': '2024-25'}, {'date': '2024-10-28', 'opponent': 'ATL', 'location': 'away', 'stat': 7, 'season': '2024-25'}, {'date': '2024-10-30', 'opponent': 'ATL', 'location': 'home', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-02', 'opponent': 'MIA', 'location': 'home', 'stat': 17, 'season': '2024-25'}, {'date': '2024-11-04', 'opponent': 'GSW', 'location': 'home', 'stat': 10, 'season': '2024-25'}, {'date': '2024-11-08', 'opponent': 'MEM', 'location': 'away', 'stat': 8, 'season': '2024-25'}, {'date': '2024-11-10', 'opponent': 'ORL', 'location': 'away', 'stat': 11, 'season': '2024-25'}, {'date': '2024-11-11', 'opponent': 'HOU', 'location': 'away', 'stat': 5, 'season': '2024-25'}, {'date': '2024-11-13', 'opponent': 'SAS', 'location': 'away', 'stat': 12, 'season': '2024-25'}, {'date': '2024-11-15', 'opponent': 'ATL', 'location': 'away', 'stat': 20, 'season': '2024-25'}, {'date': '2024-11-17', 'opponent': 'DET', 'location': 'home', 'stat': 4, 'season': '2024-25'}];
     initializeChart("PTS", "202411180NYK", "9_5", allData_PTS_202411180NYK_9_5, 9.5);
 </script>
-
 <div class="chart-container">
 <div class="barChart-filters">
 <div class="barChartFilter">

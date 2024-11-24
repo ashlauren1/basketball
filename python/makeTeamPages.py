@@ -23,6 +23,9 @@ def create_team_directory(data, output_dir):
     <title>Team Directory</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <script>
     document.addEventListener("DOMContentLoaded", async function () {
         const searchBar = document.getElementById("search-bar");
@@ -107,6 +110,7 @@ def create_team_directory(data, output_dir):
         
     </head>
     <body>
+    <div id="page-heading">    
     <div class="topnav">
         <a href="/basketball/" target="_blank">Projections</a>
         <a href="/basketball/players/" target="_blank">Players</a>
@@ -123,6 +127,7 @@ def create_team_directory(data, output_dir):
         <div class="header">
         <h1>Team Directory</h1>
         </div>
+    </div>
         <button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
         <div id="index-container">
         <table id="team-index">
@@ -177,7 +182,9 @@ def create_team_pages(data, output_dir):
         <title>{team_name}</title>
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <script>
         document.addEventListener("DOMContentLoaded", function () {{
             const table = document.getElementById("team-table");
@@ -421,6 +428,7 @@ def create_team_pages(data, output_dir):
         </script>
         </head>
         <body>
+    <div id="page-heading">
         <div class="topnav">
             <a href="/basketball/" target="_blank">Projections</a>
             <a href="/basketball/players/" target="_blank">Players</a>
@@ -437,6 +445,7 @@ def create_team_pages(data, output_dir):
         <div class="header">
         <h1>{team_name} Gamelog</h1>
         </div>
+    </div>
         <div class="button-container">
             <button id="toggle-selection-btn">Show Selected Only</button>
             <button id="clear-filters-btn">Remove Filters</button>

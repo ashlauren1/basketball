@@ -224,8 +224,8 @@ def generate_h2h_pages(metrics_data, h2h_pairs, output_dir):
     <link rel=Stylesheet href=stylesheet.css>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <script>
     document.addEventListener("DOMContentLoaded", async function () {{
         const searchBar = document.getElementById("search-bar");
@@ -463,8 +463,8 @@ with open(output_file_path, 'w') as f:
     <link rel=Stylesheet href=stylesheet.css>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <script src="players.json"></script>
     <script src="teams.json"></script>
 
@@ -894,6 +894,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 </head>
 <body>
+<div id="page-heading">
     <div class="topnav">
         <a href="/basketball/" target="_blank">Projections</a>
         <a href="/basketball/players/" target="_blank">Players</a>
@@ -912,40 +913,39 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="header">
         <h1>Today's Probabilities and Projections</h1>
     </div>
-
+</div>
 	<button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
     
-    <div id="multi-filters">
-        <table class="multi-filters">
-            <tr><td style="width:8%;font-weight:700">Games:</td><td><div id="game-filters"></div></td></tr>
-            <tr><td style="width:8%;font-weight:700">Teams:</td><td><div id="team-filters"></div></td></tr>
-            <tr><td style="width:8%;font-weight:700">Types:</td><td><div id="type-filters"></div></td></tr>
-            <tr><td style="width:8%;font-weight:700">Stats:</td><td><div id="stat-filters"></div></td></tr>
-        </table>
-        <table class="multi-filters">
-			<tr><th colspan="7" style="font-weight:700">Set Minimum Values:</th></tr>
-            <tr>
-			<td>Diff:<input id="diff-filters" type="number" step="0.1" style="width:100%"></td>
-			<td>24-25:<input id="2425-filters" type="number" step="0.1" style="width:100%"></td>
-			<td>L5:<input id="l5-filters" type="number" step="0.1" style="width:100%"></td>
-			<td>L10:<input id="l10-filters" type="number" step="0.1" style="width:100%"></td>
-			<td>L20:<input id="l20-filters" type="number" step="0.1" style="width:100%"></td>
-			<td>23-24:<input id="2324-filters" type="number" step="0.1" style="width:100%"></td>
-			<td>All:<input id="all-filters" type="number" step="0.1" style="width:100%"></td>
-			</tr>
-        </table>
+<div id="multi-filters">
+    <table class="multi-filters">
+        <tr><td class="multiFilterLabel">Games:</td><td><div id="game-filters"></div></td></tr>
+        <tr><td class="multiFilterLabel">Teams:</td><td><div id="team-filters"></div></td></tr>
+        <tr><td class="multiFilterLabel">Types:</td><td><div id="type-filters"></div></td></tr>
+        <tr><td class="multiFilterLabel">Stats:</td><td><div id="stat-filters"></div></td></tr>
+    </table>
+    <table class="min-filters">
+        <tr><th colspan="7">Set Minimum Values:</th></tr>
+        <tr>
+        <td class="minFilterLabel">Diff:</td><td><input id="diff-filters" type="number" step="0.1"></td>
+        <td class="minFilterLabel">24-25:</td><td><input id="2425-filters" type="number" step="0.1"></td>
+        <td class="minFilterLabel">L5:</td><td><input id="l5-filters" type="number" step="0.1"></td>
+        <td class="minFilterLabel">L10:</td><td><input id="l10-filters" type="number" step="0.1"></td>
+        <td class="minFilterLabel">L20:</td><td><input id="l20-filters" type="number" step="0.1"></td>
+        <td class="minFilterLabel">23-24:</td><td><input id="2324-filters" type="number" step="0.1"></td>
+        <td class="minFilterLabel">All:</td><td><input id="all-filters" type="number" step="0.1"></td>
+        </tr>
+    </table>
+</div>
+<div class="groupedProbAndButtons" style="width:95%"><span class="combinedProbLabel">Click the Checkboxes Below to Calculate the Combined Probability</span>
+    <div id="result-container">
+        <div id="result">Combined Probability:</div>
     </div>
-    
-    <div><p style="width:95%; margin:auto;">Click the Checkboxes Below to Calculate the Combined Probability</p>
-        <div id="result-container">
-            <div id="result">Combined Probability:</div>
-        </div>
-        <div class="button-container">
-            <button id="toggle-selection-btn">Show Selected Only</button>
-            <button id="clear-filters-btn">Remove Filters</button>
-            <button id="clear-all-btn">Clear All</button>
-        </div>
+    <div class="button-container">
+        <button id="toggle-selection-btn">Show Selected Only</button>
+        <button id="clear-filters-btn">Remove Filters</button>
+        <button id="clear-all-btn">Clear All</button>
     </div>
+</div>
 
     <div id="data-table-container">
         <table id="data-table">

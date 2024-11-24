@@ -1,1164 +1,629 @@
-description,line_score,odds_type,stat_display_name,player_id
-DEN,22,standard,Points,10772
-DEN,24,standard,Pts+Asts,10772
-DEN,2.5,standard,Turnovers,10772
-DEN,6,standard,Rebounds,10772
-DEN,2.5,standard,Blks+Stls,10772
-MEM,6.5,standard,Assists,1290
-MEM,4,standard,Rebounds,1290
-MEM,27.5,standard,Pts+Rebs,1290
-MEM,10.5,standard,Rebs+Asts,1290
-MEM,23.5,standard,Points,1290
-MEM,2.5,standard,3-PT Made,1290
-MEM,34,standard,Pts+Rebs+Asts,1290
-MEM,29.5,standard,Pts+Asts,1290
-DEN,4.5,standard,Assists,25447
-DEN,23.5,standard,Pts+Asts,25447
-DEN,8.5,standard,Rebs+Asts,25447
-DEN,22.5,standard,Pts+Rebs,25447
-DEN,27.5,standard,Pts+Rebs+Asts,25447
-DEN,18,standard,Points,25447
-MEM,20.5,standard,Points,2023
-MEM,7,standard,Rebounds,2023
-MEM,9.5,standard,Rebs+Asts,2023
-MEM,30.5,standard,Pts+Rebs+Asts,2023
-MEM,22.5,standard,Pts+Asts,2023
-MEM,28.5,standard,Pts+Rebs,2023
-MEM,3.5,standard,3-PT Made,2023
-DEN,16.5,standard,Pts+Asts,186620
-DEN,5.5,standard,Assists,186620
-DEN,14.5,standard,Pts+Rebs,186620
-DEN,19.5,standard,Pts+Rebs+Asts,186620
-DEN,10.5,standard,Points,186620
-MEM,20.5,standard,Pts+Rebs,79885
-MEM,14.5,standard,Points,79885
-MEM,5.5,standard,Rebounds,79885
-DEN,9.5,standard,Points,87508
-DEN,5.5,standard,Rebounds,87508
-DEN,12.5,standard,Pts+Asts,87508
-DEN,18.5,standard,Pts+Rebs+Asts,87508
-DEN,15.5,standard,Pts+Rebs,87508
-MEM,22.5,standard,Pts+Rebs+Asts,217110
-MEM,17.5,standard,Pts+Rebs,79886
-MEM,10.5,standard,Rebs+Asts,217110
-MEM,17,standard,Pts+Asts,217110
-MEM,5.5,standard,Assists,217110
-MEM,16,standard,Pts+Rebs,217110
-MEM,19.5,standard,Pts+Rebs+Asts,79886
-MEM,11.5,standard,Points,217110
-DEN,9.5,standard,Pts+Rebs,10774
-DEN,6,standard,Points,10774
-DEN,11,standard,Pts+Rebs+Asts,10774
-DEN,6.5,standard,Pts+Asts,10774
-MEM,7.5,demon,Assists,217110
-DEN,11.5,demon,Points,87508
-MEM,6.5,demon,Rebounds,79886
-DEN,19.5,goblin,Pts+Rebs,25447
-MEM,7.5,demon,Rebounds,79886
-MEM,2.5,demon,Assists,79886
-MEM,14.5,demon,Points,79886
-MEM,1.5,demon,Steals,2023
-MEM,9.5,demon,Rebounds,2023
-MEM,34.5,demon,Pts+Rebs,2023
-MEM,23.5,demon,Points,2023
-MEM,3.5,demon,Assists,2023
-MEM,18.5,goblin,Points,1290
-MEM,4.5,demon,3-PT Made,2023
-DEN,1.5,demon,Steals,10772
-DEN,34.5,demon,Pts+Rebs,10772
-DEN,25.5,demon,Points,10772
-MEM,5.5,demon,Rebounds,1290
-MEM,34.5,demon,Pts+Rebs,1290
-MEM,29.5,demon,Points,1290
-MEM,34.5,demon,Pts+Asts,1290
-MEM,26.5,demon,Points,1290
-MEM,0.5,demon,Blocked Shots,1290
-DEN,4.5,demon,Rebounds,25447
-MEM,3.5,demon,3-PT Made,1290
-DEN,9.5,demon,Rebs+Asts,25447
-DEN,29.5,demon,Pts+Rebs+Asts,25447
-DEN,29.5,demon,Pts+Asts,25447
-DEN,0.5,demon,Blocked Shots,25447
-MEM,6.5,demon,Rebounds,79885
-MEM,24.5,demon,Pts+Rebs,79885
-DEN,3.5,demon,3-PT Made,25447
-MEM,1.5,demon,Turnovers,79885
-DEN,5.5,demon,Assists,25447
-MEM,7.5,demon,Rebounds,79885
-MEM,11.5,goblin,Points,79885
-DEN,16.5,goblin,Points,25447
-MEM,0.5,goblin,Steals,79886
-MEM,15.5,goblin,Points,2023
-DEN,7.5,goblin,Points,87508
-DEN,14.5,goblin,Pts+Asts,186620
-MEM,10.5,goblin,Points,79886
-MEM,0.5,goblin,3-PT Made,79885
-MEM,0.5,goblin,3-PT Made,79886
-DEN,15.5,goblin,Points,25447
-DEN,19.5,goblin,Points,10772
-MEM,20.5,goblin,Points,1290
-MEM,1.5,goblin,Assists,2023
-DEN,1.5,goblin,Assists,87508
-DEN,0.5,goblin,3-PT Made,186620
-DEN,1.5,goblin,3-PT Made,25447
-MEM,10.5,goblin,Points,79885
-MEM,4.5,goblin,Assists,217110
-DEN,2.5,goblin,Rebounds,186620
-DEN,2.5,goblin,Rebounds,25447
-MEM,12.5,goblin,Points,79885
-MEM,4.5,goblin,Assists,1290
-DEN,21.5,demon,Points,25447
-DEN,0.5,demon,Blocked Shots,10774
-DEN,2.5,demon,Turnovers,25447
-MEM,1.5,demon,Turnovers,79886
-DEN,20.5,demon,Points,25447
-DEN,24.5,demon,Points,25447
-DEN,2.5,demon,3-PT Made,10772
-MEM,25.5,demon,Points,1290
-MEM,8.5,demon,Rebounds,2023
-MEM,7.5,demon,Assists,1290
-DEN,1.5,demon,3-PT Made,186620
-DEN,4.5,demon,Rebounds,186620
-DEN,19.5,demon,Pts+Asts,186620
-MEM,24.5,demon,Points,2023
-DEN,12.5,demon,Points,186620
-DEN,0.5,demon,Blocked Shots,186620
-MEM,22.5,demon,Points,2023
-DEN,13.5,demon,Points,186620
-MEM,1.5,demon,3-PT Made,79886
-DEN,21.5,demon,Pts+Rebs+Asts,186620
-DEN,30.5,demon,Pts+Rebs+Asts,25447
-MEM,37.5,demon,Pts+Rebs+Asts,1290
-MEM,19.5,demon,Pts+Rebs,79886
-MEM,1.5,demon,Steals,79885
-DEN,26.5,demon,Points,10772
-DEN,6.5,demon,Assists,186620
-DEN,7.5,demon,Assists,186620
-DEN,7.5,demon,Rebounds,10772
-MEM,1.5,demon,3-PT Made,79885
-DEN,2.5,demon,Assists,10772
-DEN,1.5,demon,3-PT Made,87508
-DEN,14.5,demon,Pts+Asts,87508
-DEN,5.5,demon,Rebounds,25447
-DEN,14.5,demon,Points,186620
-DEN,4.5,goblin,Points,10774
-DEN,0.5,goblin,Assists,10774
-DEN,2.5,goblin,Rebounds,10774
-DEN,13.5,goblin,Points,25447
-DEN,14.5,goblin,Points,25447
-MEM,4.5,goblin,Rebounds,79885
-DEN,19.5,goblin,Pts+Asts,25447
-DEN,24.5,goblin,Pts+Rebs+Asts,25447
-DEN,19.5,demon,Pts+Rebs,87508
-DEN,7.5,demon,Rebounds,87508
-MEM,2.5,demon,Assists,79885
-MEM,16.5,demon,Points,79885
-MEM,1.5,goblin,3-PT Made,1290
-MEM,19.5,demon,Points,79885
-MEM,17.5,demon,Points,79885
-DEN,5.5,demon,Rebounds,10774
-DEN,9.5,demon,Points,10774
-DEN,5.5,goblin,Points,87508
-DEN,0.5,goblin,Steals,186620
-DEN,15.5,goblin,Pts+Rebs+Asts,186620
-DEN,17.5,goblin,Pts+Rebs+Asts,186620
-DEN,9.5,goblin,Points,186620
-DEN,15.5,goblin,Pts+Rebs+Asts,87508
-DEN,8.5,goblin,Points,186620
-DEN,4.5,goblin,Assists,186620
-DEN,4.5,goblin,Rebounds,87508
-DEN,3.5,goblin,Assists,186620
-DEN,13.5,goblin,Pts+Rebs+Asts,87508
-DEN,9.5,goblin,Pts+Asts,87508
-DEN,0.5,goblin,3-PT Made,87508
-MEM,9.5,goblin,Points,217110
-MEM,4.5,goblin,Rebounds,79886
-MEM,14.5,goblin,Pts+Rebs,79886
-MEM,6.5,goblin,Rebounds,2023
-MEM,24.5,goblin,Pts+Rebs,1290
-MEM,24.5,goblin,Pts+Rebs,2023
-MEM,9.5,goblin,Points,79886
-MEM,17.5,goblin,Points,2023
-MEM,16.5,goblin,Points,2023
-DEN,4.5,goblin,Rebounds,10772
-DEN,24.5,goblin,Pts+Rebs,10772
-MEM,2.5,goblin,3-PT Made,2023
-MEM,3.5,goblin,Rebounds,1290
-DEN,16.5,goblin,Points,10772
-MEM,19.5,goblin,Points,1290
-MEM,9.5,goblin,Rebs+Asts,1290
-MEM,31.5,goblin,Pts+Rebs+Asts,1290
-MEM,30.5,goblin,Pts+Rebs+Asts,1290
-MEM,24.5,goblin,Pts+Asts,1290
-ATL,20.5,standard,Points,79925
-ATL,24,standard,Pts+Rebs,79925
-ATL,22.5,standard,Pts+Asts,79925
-ATL,2.5,standard,Assists,79925
-ATL,31,standard,Fantasy Score,79925
-ATL,26.5,standard,Pts+Rebs+Asts,79925
-POR,28.5,standard,Pts+Rebs,188008
-POR,1.5,standard,Blks+Stls,188008
-POR,36.5,standard,Pts+Asts,188008
-POR,39.5,standard,Pts+Rebs+Asts,188008
-POR,10.5,standard,Assists,188008
-POR,45,standard,Fantasy Score,188008
-POR,14,standard,Rebs+Asts,188008
-POR,25.5,standard,Points,188008
-POR,4.5,standard,Turnovers,188008
-ATL,5,standard,Rebounds,88082
-ATL,8,standard,Rebs+Asts,88082
-ATL,18.5,standard,Points,88082
-ATL,30,standard,Fantasy Score,88082
-ATL,21.5,standard,Pts+Asts,88082
-ATL,2.5,standard,Turnovers,88082
-ATL,23.5,standard,Pts+Rebs,88082
-ATL,26.5,standard,Pts+Rebs+Asts,88082
-POR,28.5,standard,Pts+Rebs,87857
-POR,24.5,standard,Pts+Asts,87857
-POR,19.5,standard,Points,87857
-POR,2.5,standard,Blks+Stls,87857
-POR,33.5,standard,Pts+Rebs+Asts,87857
-POR,1.5,standard,3-PT Made,87857
-POR,4.5,standard,Assists,87857
-POR,9,standard,Rebounds,87857
-POR,41.5,standard,Fantasy Score,87857
-ATL,26,standard,Fantasy Score,174235
-ATL,23,standard,Pts+Rebs+Asts,174235
-ATL,17.5,standard,Pts+Rebs,174235
-ATL,20,standard,Pts+Asts,174235
-ATL,14,standard,Points,174235
-POR,22.5,standard,Pts+Rebs+Asts,216868
-POR,17.5,standard,Pts+Asts,216868
-POR,33.5,standard,Fantasy Score,216868
-POR,19,standard,Pts+Rebs,216868
-POR,14.5,standard,Points,216868
-ATL,22,standard,Fantasy Score,175130
-ATL,9.5,standard,Points,175130
-ATL,15.5,standard,Pts+Rebs,175130
-ATL,16.5,standard,Pts+Rebs+Asts,175130
-ATL,5.5,standard,Rebounds,175130
-POR,26,standard,Fantasy Score,1596
-POR,10.5,standard,Points,1596
-POR,1.5,standard,Blks+Stls,1596
-ATL,16.5,standard,Pts+Rebs+Asts,219067
-ATL,8.5,standard,Points,219067
-ATL,8.5,standard,Pts+Asts,219067
-ATL,16,standard,Pts+Rebs,219067
-ATL,7.5,standard,Rebounds,219067
-ATL,25,standard,Fantasy Score,219067
-POR,16.5,standard,Pts+Rebs,217345
-POR,24,standard,Fantasy Score,217345
-POR,5.5,standard,Rebs+Asts,217345
-POR,17.5,standard,Pts+Rebs+Asts,217345
-POR,12.5,standard,Points,217345
-ATL,9.5,standard,Points,216763
-ATL,5,standard,Rebounds,216763
-POR,10.5,standard,Points,25424
-POR,6.5,standard,Rebounds,25424
-POR,17.5,standard,Pts+Rebs,25424
-POR,0.5,goblin,Assists,1596
-POR,7.5,goblin,Rebounds,1596
-POR,3.5,goblin,Rebounds,216868
-POR,2.5,goblin,Assists,216868
-POR,3.5,goblin,Assists,87857
-POR,17.5,goblin,Pts+Rebs+Asts,216868
-POR,14.5,goblin,Pts+Rebs,216868
-ATL,11.5,demon,Rebs+Asts,174235
-ATL,4.5,demon,Rebounds,174235
-POR,14.5,demon,Points,217345
-POR,14.5,goblin,Pts+Rebs,217345
-POR,0.5,goblin,Blocked Shots,25424
-POR,6.5,goblin,Points,25424
-POR,4.5,goblin,Rebounds,25424
-ATL,9.5,goblin,Points,174235
-ATL,1.5,goblin,3-PT Made,88082
-POR,14.5,goblin,Points,87857
-ATL,14.5,goblin,Points,88082
-POR,7.5,goblin,Rebounds,87857
-POR,19.5,goblin,Points,188008
-ATL,0.5,goblin,3-PT Made,174235
-POR,0.5,goblin,3-PT Made,216868
-POR,2.5,goblin,3-PT Made,188008
-POR,2.5,goblin,Rebounds,188008
-POR,2.5,goblin,Rebounds,217345
-POR,6.5,goblin,Points,1596
-POR,9.5,demon,Rebs+Asts,216868
-POR,4.5,demon,Rebounds,217345
-POR,29.5,goblin,Pts+Asts,188008
-POR,8.5,goblin,Points,217345
-POR,0.5,goblin,3-PT Made,217345
-POR,43.5,demon,Pts+Rebs+Asts,188008
-POR,37.5,demon,Pts+Rebs+Asts,87857
-POR,1.5,demon,Steals,217345
-POR,29.5,demon,Points,188008
-POR,34.5,demon,Pts+Rebs,188008
-POR,24.5,demon,Pts+Rebs+Asts,216868
-POR,1.5,demon,Turnovers,25424
-POR,4.5,demon,3-PT Made,188008
-ATL,1.5,demon,Steals,174235
-POR,1.5,demon,Blocked Shots,1596
-POR,12.5,demon,Assists,188008
-POR,21.5,demon,Points,87857
-POR,2.5,demon,3-PT Made,87857
-ATL,29.5,demon,Pts+Rebs,88082
-POR,14.5,demon,Points,25424
-POR,0.5,demon,Blocked Shots,188008
-POR,10.5,demon,Rebounds,1596
-ATL,10.5,demon,Points,219067
-ATL,29.5,demon,Pts+Rebs,79925
-ATL,4.5,demon,Rebounds,79925
-ATL,1.5,demon,Blocked Shots,79925
-ATL,30.5,demon,Pts+Rebs+Asts,79925
-ATL,1.5,demon,3-PT Made,175130
-ATL,19.5,goblin,Pts+Asts,79925
-ATL,19.5,goblin,Pts+Rebs,79925
-ATL,1.5,goblin,Assists,79925
-POR,24.5,goblin,Pts+Rebs,87857
-ATL,2.5,goblin,Rebounds,79925
-ATL,14.5,goblin,Points,79925
-POR,14.5,goblin,Pts+Rebs,25424
-ATL,4.5,goblin,Assists,174235
-ATL,1.5,goblin,Assists,88082
-ATL,19.5,goblin,Pts+Rebs,88082
-ATL,19.5,goblin,Pts+Asts,88082
-ATL,4.5,goblin,Rebounds,175130
-ATL,7.5,goblin,Points,175130
-ATL,0.5,goblin,Steals,88082
-ATL,0.5,goblin,3-PT Made,175130
-POR,9.5,goblin,Assists,188008
-POR,36.5,goblin,Pts+Rebs+Asts,188008
-POR,19.5,demon,Pts+Rebs,217345
-POR,2.5,demon,Assists,217345
-POR,1.5,demon,3-PT Made,217345
-POR,1.5,demon,Steals,188008
-POR,4.5,demon,Rebounds,188008
-POR,44.5,demon,Pts+Asts,188008
-ATL,11.5,demon,Points,175130
-ATL,6.5,demon,Rebounds,175130
-ATL,17.5,demon,Pts+Rebs,175130
-ATL,0.5,demon,Blocked Shots,175130
-ATL,2.5,demon,Assists,175130
-ATL,6.5,demon,Rebounds,88082
-ATL,9.5,demon,Rebs+Asts,88082
-ATL,24.5,demon,Pts+Asts,88082
-ATL,3.5,demon,Assists,88082
-ATL,3.5,demon,3-PT Made,88082
-ATL,0.5,demon,Blocked Shots,88082
-ATL,24.5,demon,Pts+Asts,174235
-ATL,19.5,demon,Pts+Rebs,174235
-ATL,18.5,demon,Points,174235
-ATL,26.5,demon,Pts+Rebs+Asts,174235
-POR,0.5,demon,3-PT Made,25424
-POR,1.5,demon,Assists,25424
-ATL,1.5,demon,3-PT Made,174235
-ATL,9.5,demon,Rebs+Asts,79925
-POR,19.5,demon,Pts+Rebs,25424
-ATL,6.5,demon,Assists,174235
-POR,8.5,demon,Rebounds,25424
-ATL,1.5,demon,Steals,79925
-ATL,23.5,demon,Points,79925
-POR,16.5,demon,Rebs+Asts,87857
-ATL,3.5,demon,Assists,79925
-POR,11.5,demon,Rebounds,87857
-POR,34.5,demon,Pts+Rebs,87857
-POR,29.5,demon,Pts+Asts,87857
-POR,1.5,demon,Blocked Shots,87857
-POR,5.5,demon,Assists,87857
-POR,19.5,demon,Pts+Asts,216868
-POR,6.5,demon,Rebounds,216868
-POR,24.5,demon,Pts+Rebs,216868
-POR,4.5,demon,Assists,216868
-ATL,1.5,demon,Turnovers,219067
-ATL,8.5,demon,Rebounds,219067
-ATL,3.5,demon,Blocked Shots,219067
-POR,1.5,demon,Turnovers,1596
-POR,24.5,demon,Pts+Rebs,1596
-ATL,1.5,demon,Assists,219067
-POR,12.5,demon,Points,1596
-POR,1.5,demon,Assists,1596
-POR,18.5,demon,Points,216868
-POR,15.5,demon,Rebs+Asts,188008
-ATL,2.5,demon,3-PT Made,79925
-ATL,19.5,demon,Pts+Rebs,219067
-ATL,29.5,demon,Pts+Rebs+Asts,88082
-ATL,22.5,demon,Points,88082
-WAS,46.5,standard,Fantasy Score,59107
-WAS,24,standard,Points,59107
-WAS,33.5,standard,Pts+Asts,59107
-WAS,6.5,standard,Rebounds,59107
-WAS,40,standard,Pts+Rebs+Asts,59107
-WAS,31.5,standard,Pts+Rebs,59107
-DET,33.5,standard,Fantasy Score,58812
-DET,26.5,standard,Pts+Rebs,58812
-DET,22.5,standard,Pts+Asts,58812
-DET,30,standard,Pts+Rebs+Asts,58812
-DET,6.5,standard,Rebounds,58812
-DET,20.5,standard,Points,58812
-WAS,1.5,standard,Blks+Stls,79907
-WAS,4,standard,Assists,79907
-WAS,28,standard,Pts+Rebs+Asts,79907
-WAS,23.5,standard,Pts+Asts,79907
-WAS,18.5,standard,Points,79907
-WAS,32.5,standard,Fantasy Score,79907
-WAS,4,standard,Rebounds,79907
-WAS,23.5,standard,Pts+Rebs,79907
-WAS,2.5,standard,Turnovers,79907
-WAS,1.5,standard,3-PT Made,79907
-DET,25.5,standard,Pts+Asts,173610
-DET,5,standard,Assists,173610
-DET,22.5,standard,Pts+Rebs,173610
-DET,34,standard,Fantasy Score,173610
-DET,27.5,standard,Pts+Rebs+Asts,173610
-DET,8,standard,Rebs+Asts,173610
-WAS,22.5,standard,Pts+Rebs,87848
-WAS,1.5,standard,Turnovers,87848
-WAS,11.5,standard,Rebounds,87848
-WAS,13.5,standard,Pts+Asts,87848
-WAS,30.5,standard,Fantasy Score,87848
-WAS,25,standard,Pts+Rebs+Asts,87848
-WAS,11.5,standard,Points,87848
-DET,11.5,standard,Points,175142
-DET,8,standard,Rebs+Asts,175142
-DET,17.5,standard,Pts+Rebs,175142
-DET,13.5,standard,Pts+Asts,175142
-DET,2.5,standard,Assists,175142
-DET,26.5,standard,Fantasy Score,175142
-DET,20,standard,Pts+Rebs+Asts,175142
-DET,5.5,standard,Rebounds,175142
-WAS,25.5,standard,Pts+Rebs+Asts,216580
-WAS,23,standard,Pts+Rebs,216580
-WAS,17.5,standard,Pts+Asts,216580
-WAS,15,standard,Points,216580
-WAS,7.5,standard,Rebounds,216580
-WAS,2.5,standard,Assists,216580
-WAS,32,standard,Fantasy Score,216580
-DET,17,standard,Pts+Rebs+Asts,217304
-DET,15.5,standard,Pts+Rebs,217304
-DET,9.5,standard,Points,217304
-DET,5.5,standard,Rebounds,217304
-DET,27,standard,Fantasy Score,217304
-DET,7.5,standard,Rebs+Asts,217304
-DET,12.5,standard,Points,53985
-DET,4.5,standard,Rebounds,218039
-DET,13.5,standard,Pts+Rebs,218039
-DET,8.5,standard,Points,218039
-WAS,0.5,goblin,Steals,59107
-DET,17.5,goblin,Points,58812
-WAS,0.5,goblin,Blocked Shots,216580
-DET,5.5,goblin,Rebounds,58812
-DET,18.5,goblin,Points,58812
-WAS,1.5,goblin,Assists,216580
-DET,24.5,goblin,Pts+Rebs+Asts,173610
-DET,16.5,goblin,Points,173610
-DET,25.5,goblin,Pts+Rebs+Asts,173610
-DET,19.5,goblin,Pts+Rebs,173610
-DET,26.5,goblin,Pts+Rebs+Asts,58812
-DET,27.5,goblin,Pts+Rebs+Asts,58812
-DET,19.5,goblin,Pts+Asts,173610
-WAS,10.5,goblin,Points,216580
-DET,19.5,goblin,Pts+Asts,58812
-WAS,9.5,goblin,Points,87848
-WAS,7.5,goblin,Points,87848
-DET,1.5,goblin,3-PT Made,173610
-WAS,1.5,goblin,Assists,87848
-DET,14.5,goblin,Points,173610
-WAS,19.5,goblin,Pts+Rebs+Asts,87848
-WAS,3.5,goblin,Rebounds,79907
-DET,3.5,goblin,Assists,173610
-WAS,25.5,goblin,Pts+Rebs+Asts,79907
-WAS,0.5,goblin,Steals,79907
-WAS,19.5,goblin,Pts+Rebs,79907
-WAS,14.5,goblin,Rebs+Asts,59107
-WAS,5.5,goblin,Rebounds,59107
-DET,4.5,goblin,Assists,218039
-WAS,22.5,goblin,Points,59107
-DET,16.5,goblin,Pts+Rebs+Asts,218039
-DET,3.5,goblin,Rebounds,218039
-WAS,4.5,goblin,Rebounds,59107
-WAS,37.5,goblin,Pts+Rebs+Asts,59107
-WAS,17.5,goblin,Points,79907
-WAS,36.5,goblin,Pts+Rebs+Asts,59107
-WAS,3.5,goblin,Assists,79907
-WAS,14.5,goblin,Points,79907
-WAS,29.5,goblin,Pts+Asts,59107
-WAS,7.5,goblin,Assists,59107
-WAS,19.5,goblin,Points,59107
-WAS,6.5,goblin,Assists,59107
-DET,14.5,goblin,Pts+Rebs,175142
-DET,4.5,goblin,Rebounds,175142
-DET,17.5,goblin,Pts+Rebs+Asts,175142
-DET,15.5,goblin,Pts+Rebs+Asts,175142
-DET,1.5,goblin,Assists,175142
-DET,7.5,goblin,Points,175142
-DET,9.5,goblin,Points,175142
-WAS,5.5,demon,Assists,79907
-WAS,19.5,goblin,Pts+Rebs,87848
-WAS,16.5,goblin,Points,79907
-WAS,1.5,goblin,3-PT Made,59107
-WAS,0.5,goblin,3-PT Made,216580
-WAS,29.5,demon,Pts+Rebs,79907
-WAS,21.5,goblin,Points,59107
-WAS,5.5,demon,Rebounds,79907
-WAS,39.5,demon,Pts+Asts,59107
-WAS,2.5,demon,3-PT Made,79907
-DET,29.5,demon,Pts+Asts,58812
-WAS,19.5,goblin,Pts+Asts,79907
-WAS,27.5,demon,Points,59107
-DET,14.5,goblin,Points,58812
-WAS,28.5,demon,Pts+Rebs+Asts,216580
-WAS,8.5,demon,Rebounds,216580
-WAS,2.5,demon,3-PT Made,216580
-DET,7.5,demon,Rebounds,58812
-DET,32.5,demon,Pts+Rebs+Asts,58812
-WAS,3.5,demon,Assists,216580
-WAS,18.5,demon,Points,216580
-DET,29.5,demon,Pts+Rebs,58812
-DET,3.5,demon,Assists,58812
-DET,22.5,demon,Points,58812
-DET,30.5,demon,Pts+Rebs+Asts,173610
-DET,2.5,demon,3-PT Made,58812
-DET,29.5,demon,Pts+Asts,173610
-DET,22.5,demon,Points,173610
-WAS,12.5,demon,Points,87848
-WAS,3.5,demon,Assists,87848
-WAS,14.5,demon,Rebounds,87848
-DET,3.5,demon,3-PT Made,173610
-WAS,30.5,demon,Pts+Rebs+Asts,79907
-WAS,29.5,demon,Pts+Asts,79907
-WAS,21.5,demon,Points,79907
-DET,5.5,demon,Rebounds,218039
-WAS,7.5,demon,Rebounds,59107
-WAS,34.5,demon,Pts+Rebs,59107
-WAS,9.5,demon,Assists,59107
-DET,1.5,demon,Steals,175142
-DET,1.5,demon,3-PT Made,175142
-DET,22.5,demon,Pts+Rebs+Asts,175142
-DET,3.5,demon,Assists,175142
-DET,13.5,demon,Points,175142
-WAS,2.5,demon,3-PT Made,59107
-DET,3.5,demon,Rebounds,173610
-DET,21.5,demon,Pts+Rebs+Asts,218039
-DET,6.5,demon,Rebounds,175142
-WAS,42.5,demon,Pts+Rebs+Asts,59107
-WAS,1.5,demon,Turnovers,216580
-DET,5.5,demon,Assists,173610
-WAS,14.5,goblin,Pts+Asts,216580
-WAS,6.5,goblin,Rebounds,216580
-WAS,9.5,goblin,Rebs+Asts,216580
-WAS,0.5,goblin,Steals,216580
-WAS,23.5,goblin,Pts+Rebs+Asts,216580
-WAS,12.5,goblin,Points,216580
-WAS,22.5,goblin,Pts+Rebs+Asts,216580
-WAS,19.5,goblin,Pts+Rebs,216580
-WAS,13.5,goblin,Points,216580
-DET,24.5,goblin,Pts+Rebs,58812
-DET,4.5,goblin,Rebounds,58812
-DET,1.5,goblin,3-PT Made,58812
-DET,1.5,goblin,Assists,58812
-DET,17.5,goblin,Points,173610
-CHA,10,standard,Rebs+Asts,59275
-CHA,32.5,standard,Pts+Rebs+Asts,59275
-CHA,29.5,standard,Pts+Asts,59275
-CHA,21.5,standard,Points,59275
-CHA,25,standard,Pts+Rebs,59275
-CHA,7,standard,Assists,59275
-CLE,4.5,standard,Rebounds,174280
-CHA,22.5,standard,Pts+Asts,53979
-CHA,9.5,standard,Rebounds,53979
-CHA,18.5,standard,Points,53979
-CHA,31.5,standard,Pts+Rebs+Asts,53979
-CHA,13,standard,Rebs+Asts,53979
-CHA,28.5,standard,Pts+Rebs,53979
-CHA,2.5,standard,Turnovers,53979
-CLE,1.5,standard,Assists,216721
-CLE,8.5,standard,Pts+Asts,216721
-CLE,11.5,standard,Pts+Rebs+Asts,216721
-CHA,4.5,standard,Rebs+Asts,25423
-CHA,2.5,standard,Rebounds,25423
-CHA,12.5,standard,Pts+Rebs+Asts,25423
-CHA,0.5,standard,Turnovers,25423
-CHA,10.5,standard,Pts+Rebs,25423
-CLE,32.5,standard,Pts+Asts,56699
-CLE,1.5,standard,Blks+Stls,56699
-CLE,5,standard,Rebounds,56699
-CLE,39.5,standard,Pts+Rebs+Asts,56699
-CLE,26.5,standard,Points,56699
-CLE,11.5,standard,Rebs+Asts,56699
-CLE,32.5,standard,Pts+Rebs,56699
-CLE,6.5,standard,Assists,56699
-CHA,13,standard,Rebs+Asts,26792
-CHA,18.5,standard,Pts+Asts,26792
-CHA,16.5,standard,Points,26792
-CHA,10.5,standard,Rebounds,26792
-CHA,29.5,standard,Pts+Rebs+Asts,26792
-CHA,26.5,standard,Pts+Rebs,26792
-CLE,22,standard,Pts+Rebs,1540
-CLE,16,standard,Points,1540
-CLE,1.5,standard,3-PT Made,1540
-CLE,2.5,standard,Assists,1540
-CLE,8.5,standard,Rebs+Asts,1540
-CLE,25.5,standard,Pts+Rebs+Asts,1540
-BKN,27,standard,Points,188004
-BKN,2.5,standard,Turnovers,188004
-BKN,30.5,standard,Pts+Rebs,188004
-BKN,33.5,standard,Pts+Asts,188004
-BKN,42.5,standard,Fantasy Score,188004
-BKN,37.5,standard,Pts+Rebs+Asts,188004
-BKN,7,standard,Assists,188004
-NYK,18.5,standard,Pts+Rebs+Asts,63522
-NYK,5.5,standard,Assists,63522
-NYK,13,standard,Pts+Rebs,63522
-NYK,24,standard,Fantasy Score,63522
-NYK,12,standard,Rebs+Asts,63522
-BKN,1.5,standard,Blks+Stls,123595
-BKN,5.5,standard,Assists,123595
-BKN,17.5,standard,Pts+Asts,123595
-BKN,22,standard,Pts+Rebs,123595
-BKN,27.5,standard,Pts+Rebs+Asts,123595
-BKN,34.5,standard,Fantasy Score,123595
-BKN,9.5,standard,Rebounds,123595
-BKN,12.5,standard,Points,123595
-NYK,23.5,standard,Points,57075
-NYK,29.5,standard,Pts+Rebs+Asts,57075
-NYK,27,standard,Pts+Rebs,57075
-NYK,26.5,standard,Pts+Asts,57075
-NYK,32,standard,Fantasy Score,57075
-BKN,45.5,standard,Fantasy Score,216220
-BKN,2.5,standard,Assists,216220
-BKN,1.5,standard,Blks+Stls,216220
-BKN,28.5,standard,Pts+Asts,216220
-BKN,11.5,standard,Rebounds,216220
-BKN,25.5,standard,Points,216220
-BKN,40.5,standard,Pts+Rebs+Asts,216220
-BKN,37.5,standard,Pts+Rebs,216220
-NYK,14.5,standard,Points,96514
-NYK,25,standard,Fantasy Score,96514
-NYK,19.5,standard,Pts+Rebs,96514
-NYK,21.5,standard,Pts+Rebs+Asts,96514
-NYK,16.5,standard,Pts+Asts,96514
-NYK,2.5,standard,3-PT Made,96514
-BKN,32,standard,Fantasy Score,216219
-BKN,20.5,standard,Pts+Asts,216219
-BKN,25.5,standard,Pts+Rebs+Asts,216219
-BKN,4.5,standard,Rebounds,216219
-BKN,3.5,standard,Assists,216219
-BKN,17.5,standard,Points,216219
-BKN,21.5,standard,Pts+Rebs,216219
-NYK,18.5,standard,Pts+Rebs,187809
-NYK,28.5,standard,Fantasy Score,187809
-NYK,15.5,standard,Points,187809
-NYK,21.5,standard,Pts+Asts,187809
-NYK,5,standard,Assists,187809
-NYK,25,standard,Pts+Rebs+Asts,187809
-BKN,7.5,standard,Rebs+Asts,183158
-BKN,16,standard,Points,183158
-BKN,2.5,standard,Blks+Stls,183158
-BKN,5.5,standard,Rebounds,183158
-BKN,23.5,standard,Pts+Rebs+Asts,183158
-BKN,31,standard,Fantasy Score,183158
-BKN,21,standard,Pts+Rebs,183158
-NYK,1.5,standard,3-PT Made,96321
-NYK,5,standard,Rebounds,96321
-NYK,1.5,standard,Blks+Stls,96321
-NYK,8.5,standard,Points,96321
-NYK,20,standard,Fantasy Score,96321
-NYK,14.5,standard,Pts+Rebs+Asts,96321
-NYK,14,standard,Pts+Rebs,96321
-NYK,10.5,demon,Points,96321
-NYK,2.5,demon,3-PT Made,96321
-NYK,4.5,demon,Rebounds,187809
-NYK,3.5,demon,3-PT Made,187809
-NYK,6.5,demon,Assists,187809
-NYK,16.5,demon,Points,96514
-NYK,17.5,demon,Points,96514
-NYK,3.5,demon,Assists,96514
-NYK,0.5,demon,Blocked Shots,96514
-NYK,29.5,demon,Points,57075
-NYK,4.5,demon,Rebounds,57075
-NYK,27.5,demon,Points,57075
-NYK,3.5,demon,Assists,57075
-NYK,9.5,demon,Rebounds,63522
-NYK,20.5,demon,Pts+Rebs+Asts,63522
-NYK,9.5,demon,Points,63522
-NYK,10.5,demon,Points,63522
-NYK,6.5,demon,Assists,63522
-NYK,6.5,goblin,Points,96321
-NYK,0.5,goblin,Steals,96321
-NYK,1.5,goblin,Assists,96514
-NYK,1.5,goblin,Assists,57075
-NYK,4.5,goblin,Assists,63522
-NYK,19.5,goblin,Pts+Rebs+Asts,96514
-BKN,0.5,goblin,Steals,216219
-BKN,1.5,goblin,3-PT Made,216220
-NYK,2.5,goblin,Rebounds,187809
-NYK,7.5,goblin,Points,96321
-NYK,2.5,goblin,Rebounds,57075
-BKN,0.5,goblin,3-PT Made,123595
-BKN,1.5,goblin,3-PT Made,188004
-BKN,4.5,goblin,Assists,123595
-BKN,6.5,demon,Assists,123595
-BKN,24.5,goblin,Points,188004
-NYK,3.5,goblin,Rebounds,96321
-NYK,13.5,goblin,Pts+Rebs+Asts,96321
-NYK,3.5,demon,3-PT Made,57075
-NYK,5.5,demon,Rebounds,96514
-BKN,3.5,demon,3-PT Made,216220
-BKN,29.5,demon,Points,188004
-BKN,1.5,demon,Steals,188004
-BKN,8.5,goblin,Rebounds,123595
-BKN,4.5,demon,Assists,216219
-NYK,1.5,demon,Steals,63522
-NYK,7.5,demon,Assists,63522
-NYK,3.5,goblin,Assists,187809
-NYK,7.5,demon,Rebounds,63522
-NYK,1.5,demon,Steals,187809
-BKN,23.5,demon,Points,216219
-NYK,6.5,demon,Rebounds,96321
-NYK,19.5,demon,Points,187809
-BKN,2.5,goblin,Assists,216219
-BKN,25.5,goblin,Pts+Rebs+Asts,123595
-BKN,2.5,demon,3-PT Made,183158
-BKN,1.5,demon,Steals,216219
-BKN,6.5,demon,Rebounds,183158
-BKN,33.5,demon,Points,216220
-NYK,2.5,demon,Assists,96321
-NYK,0.5,goblin,Turnovers,96514
-BKN,3.5,demon,3-PT Made,188004
-NYK,16.5,goblin,Pts+Rebs+Asts,63522
-NYK,19.5,demon,Points,96514
-NYK,11.5,goblin,Points,96514
-NYK,17.5,goblin,Points,57075
-NYK,21.5,goblin,Points,57075
-NYK,19.5,goblin,Points,57075
-NYK,1.5,goblin,3-PT Made,96514
-NYK,1.5,goblin,3-PT Made,57075
-NYK,5.5,goblin,Rebounds,63522
-NYK,4.5,goblin,Points,63522
-NYK,5.5,goblin,Points,63522
-NYK,3.5,goblin,Assists,63522
-NYK,3.5,goblin,Rebounds,96514
-NYK,1.5,goblin,3-PT Made,187809
-NYK,22.5,goblin,Pts+Rebs+Asts,187809
-NYK,21.5,goblin,Pts+Rebs+Asts,187809
-NYK,13.5,goblin,Points,187809
-NYK,5.5,goblin,Points,96321
-BKN,7.5,demon,Rebounds,183158
-BKN,3.5,demon,3-PT Made,183158
-BKN,2.5,demon,Assists,183158
-BKN,5.5,demon,Rebounds,216219
-BKN,19.5,demon,Points,216219
-BKN,3.5,demon,3-PT Made,216219
-BKN,14.5,demon,Rebounds,216220
-BKN,12.5,demon,Rebounds,216220
-BKN,29.5,demon,Points,216220
-BKN,14.5,demon,Points,123595
-BKN,3.5,demon,Assists,216220
-BKN,30.5,demon,Pts+Rebs+Asts,123595
-BKN,0.5,demon,Blocked Shots,123595
-BKN,11.5,demon,Rebounds,123595
-BKN,18.5,demon,Points,123595
-BKN,1.5,demon,3-PT Made,123595
-BKN,7.5,demon,Assists,123595
-BKN,4.5,demon,Rebounds,188004
-BKN,34.5,demon,Points,188004
-BKN,9.5,demon,Assists,188004
-BKN,8.5,demon,Assists,188004
-NYK,19.5,demon,Pts+Rebs+Asts,96321
-NYK,11.5,demon,Points,96321
-NYK,17.5,demon,Pts+Rebs+Asts,96321
-NYK,12.5,goblin,Points,96514
-NYK,3.5,demon,3-PT Made,96514
-BKN,14.5,goblin,Points,183158
-BKN,4.5,goblin,Rebounds,183158
-BKN,13.5,goblin,Points,183158
-BKN,0.5,goblin,Blocked Shots,183158
-BKN,1.5,goblin,3-PT Made,216219
-BKN,15.5,goblin,Points,216219
-BKN,23.5,goblin,Points,216220
-BKN,9.5,goblin,Rebounds,216220
-BKN,23.5,goblin,Pts+Rebs+Asts,216219
-BKN,1.5,goblin,3-PT Made,183158
-BKN,14.5,goblin,Points,216219
-BKN,3.5,goblin,Rebounds,216219
-BKN,0.5,goblin,Steals,216220
-BKN,0.5,goblin,Steals,123595
-BKN,7.5,goblin,Rebounds,123595
-BKN,10.5,goblin,Points,123595
-BKN,9.5,goblin,Points,123595
-BKN,2.5,goblin,Rebounds,188004
-BKN,34.5,goblin,Pts+Rebs+Asts,188004
-BKN,5.5,goblin,Assists,188004
-NYK,0.5,goblin,Turnovers,96321
-HOU,28,standard,Pts+Rebs+Asts,10731
-HOU,3.5,standard,Rebounds,10731
-HOU,31,standard,Fantasy Score,10731
-HOU,8,standard,Rebs+Asts,10731
-HOU,23.5,standard,Pts+Asts,10731
-HOU,19.5,standard,Points,10731
-HOU,4.5,standard,Assists,10731
-HOU,23.5,standard,Pts+Rebs,10731
-CHI,19.5,standard,Points,55716
-CHI,44,standard,Fantasy Score,55716
-CHI,10.5,standard,Rebounds,55716
-CHI,35,standard,Pts+Rebs+Asts,55716
-CHI,24.5,standard,Pts+Asts,55716
-CHI,15,standard,Rebs+Asts,55716
-CHI,30.5,standard,Pts+Rebs,55716
-CHI,4.5,standard,Assists,55716
-HOU,37,standard,Fantasy Score,37560
-HOU,1.5,standard,Blks+Stls,37560
-HOU,18.5,standard,Points,37560
-HOU,10,standard,Rebounds,37560
-HOU,28.5,standard,Pts+Rebs,37560
-HOU,21.5,standard,Pts+Asts,37560
-CHI,13,standard,Points,173587
-CHI,21,standard,Fantasy Score,173587
-CHI,4.5,standard,Rebs+Asts,173587
-CHI,16.5,standard,Pts+Rebs,173587
-HOU,22.5,standard,Fantasy Score,25422
-HOU,1.5,standard,3-PT Made,25422
-HOU,17.5,standard,Pts+Rebs+Asts,25422
-HOU,16,standard,Pts+Rebs,25422
-HOU,11,standard,Points,25422
-HOU,13.5,standard,Pts+Asts,25422
-HOU,4.5,standard,Rebounds,25422
-CHI,23.5,standard,Pts+Asts,173586
-CHI,36.5,standard,Fantasy Score,173586
-CHI,11,standard,Rebs+Asts,173586
-CHI,20,standard,Pts+Rebs,173586
-CHI,2.5,standard,3-PT Made,173586
-CHI,27,standard,Pts+Rebs+Asts,173586
-CHI,7,standard,Assists,173586
-CHI,16.5,standard,Points,173586
-HOU,3.5,standard,Assists,1544
-HOU,32,standard,Fantasy Score,1544
-HOU,29.5,standard,Pts+Rebs+Asts,1544
-HOU,25.5,standard,Pts+Rebs,1544
-HOU,24.5,standard,Pts+Asts,1544
-HOU,20.5,standard,Points,1544
-HOU,4.5,standard,Rebounds,1544
-CHI,25,standard,Fantasy Score,79867
-CHI,12.5,standard,Points,79867
-CHI,20.5,standard,Pts+Rebs+Asts,79867
-CHI,1.5,standard,3-PT Made,79867
-CHI,7,standard,Rebounds,79867
-CHI,19.5,standard,Pts+Rebs,79867
-CHI,34,standard,Fantasy Score,54064
-CHI,21,standard,Points,54064
-CHI,26.5,standard,Pts+Rebs,54064
-CHI,24,standard,Pts+Asts,54064
-CHI,9,standard,Rebs+Asts,54064
-CHI,29.5,standard,Pts+Rebs+Asts,54064
-HOU,3.5,goblin,Rebounds,25422
-HOU,9.5,demon,Rebs+Asts,10731
-CHI,2.5,demon,3-PT Made,173587
-HOU,34.5,demon,Pts+Rebs+Asts,37560
-CHI,34.5,demon,Pts+Rebs,55716
-HOU,7.5,demon,Assists,216747
-HOU,10.5,demon,Rebs+Asts,1544
-CHI,8.5,demon,Rebounds,79867
-CHI,24.5,demon,Pts+Rebs,79867
-CHI,2.5,demon,3-PT Made,79867
-HOU,0.5,goblin,Steals,25422
-HOU,14.5,demon,Rebs+Asts,216747
-CHI,2.5,demon,Steals,173586
-CHI,0.5,demon,Blocked Shots,54064
-CHI,10.5,demon,Rebs+Asts,54064
-HOU,29.5,demon,Pts+Rebs+Asts,216747
-CHI,17.5,demon,Points,173586
-HOU,22.5,demon,Points,10731
-HOU,5.5,demon,Assists,10731
-HOU,30.5,demon,Pts+Rebs+Asts,10731
-HOU,1.5,demon,Steals,10731
-CHI,29.5,demon,Pts+Asts,55716
-CHI,38.5,demon,Pts+Rebs+Asts,55716
-CHI,8.5,demon,Assists,173586
-HOU,7.5,demon,Rebounds,216747
-HOU,3.5,demon,Assists,37560
-CHI,6.5,demon,Rebounds,54064
-CHI,4.5,demon,Assists,54064
-HOU,1.5,demon,3-PT Made,216747
-CHI,24.5,demon,Points,54064
-CHI,3.5,demon,3-PT Made,54064
-CHI,13.5,demon,Rebs+Asts,173586
-CHI,32.5,demon,Pts+Rebs+Asts,54064
-CHI,14.5,demon,Points,79867
-HOU,5.5,demon,Rebounds,1544
-HOU,18.5,goblin,Points,1544
-CHI,4.5,demon,Rebounds,173586
-CHI,2.5,goblin,Assists,54064
-HOU,8.5,goblin,Points,25422
-CHI,1.5,goblin,3-PT Made,54064
-CHI,0.5,goblin,Turnovers,79867
-CHI,0.5,goblin,Steals,54064
-HOU,0.5,goblin,3-PT Made,37560
-HOU,14.5,demon,Points,216747
-HOU,1.5,demon,3-PT Made,37560
-HOU,2.5,demon,Assists,25422
-HOU,25.5,goblin,Pts+Rebs+Asts,10731
-CHI,10.5,goblin,Points,79867
-HOU,1.5,goblin,Turnovers,37560
-CHI,27.5,goblin,Pts+Rebs+Asts,54064
-HOU,2.5,goblin,Assists,1544
-CHI,4.5,goblin,Rebounds,54064
-CHI,14.5,goblin,Points,55716
-HOU,24.5,goblin,Pts+Rebs+Asts,10731
-CHI,3.5,goblin,Assists,55716
-HOU,14.5,goblin,Points,10731
-HOU,3.5,goblin,Assists,10731
-HOU,17.5,goblin,Points,10731
-HOU,2.5,goblin,3-PT Made,10731
-HOU,1.5,demon,Steals,1544
-HOU,5.5,demon,Rebounds,25422
-HOU,3.5,demon,3-PT Made,1544
-HOU,0.5,demon,Blocked Shots,1544
-HOU,4.5,demon,Assists,1544
-HOU,19.5,demon,Pts+Rebs,25422
-HOU,12.5,demon,Points,25422
-HOU,29.5,demon,Pts+Asts,1544
-HOU,33.5,demon,Pts+Rebs+Asts,1544
-HOU,17.5,goblin,Points,1544
-CHI,18.5,goblin,Points,54064
-HOU,1.5,goblin,3-PT Made,1544
-HOU,2.5,demon,3-PT Made,25422
-HOU,11.5,demon,Rebounds,37560
-HOU,1.5,demon,Blocked Shots,37560
-HOU,3.5,goblin,Rebounds,1544
-HOU,14.5,goblin,Points,37560
-CHI,17.5,demon,Rebs+Asts,55716
-CHI,22.5,demon,Points,55716
-CHI,5.5,demon,Assists,55716
-CHI,1.5,demon,Blocked Shots,55716
-CHI,11.5,demon,Rebounds,55716
-CHI,1.5,demon,Steals,55716
-HOU,4.5,demon,3-PT Made,10731
-HOU,29.5,demon,Pts+Asts,10731
-CHI,4.5,demon,Rebounds,173587
-HOU,0.5,demon,Blocked Shots,10731
-CHI,0.5,demon,Blocked Shots,173587
-HOU,4.5,demon,Rebounds,10731
-HOU,29.5,demon,Pts+Rebs,10731
-CHI,19.5,demon,Pts+Rebs,173587
-CHI,17.5,demon,Points,173587
-HOU,23.5,demon,Points,1544
-CHI,11.5,goblin,Points,173587
-CHI,0.5,goblin,Steals,173587
-CHI,1.5,goblin,3-PT Made,173586
-HOU,16.5,goblin,Points,37560
-HOU,20.5,demon,Points,37560
-CHI,9.5,goblin,Points,79867
-CHI,2.5,goblin,Rebounds,173586
-CHI,5.5,goblin,Rebounds,79867
-CHI,11.5,goblin,Points,173586
-CHI,24.5,goblin,Pts+Rebs+Asts,173586
-HOU,2.5,goblin,Rebounds,10731
-CHI,29.5,demon,Pts+Asts,173586
-CHI,0.5,goblin,Turnovers,173587
-CHI,3.5,demon,3-PT Made,173586
-CHI,2.5,demon,Turnovers,55716
-CHI,29.5,demon,Pts+Rebs+Asts,173586
-CHI,2.5,goblin,Rebounds,173587
-HOU,0.5,goblin,Blocked Shots,37560
-CHI,17.5,goblin,Points,55716
-HOU,0.5,goblin,Steals,10731
-CHI,9.5,goblin,Points,173587
-DAL,10.5,standard,Points,57743
-DAL,21,standard,Fantasy Score,57743
-DAL,6.5,standard,Rebs+Asts,57743
-OKC,25.5,standard,Fantasy Score,216784
-DAL,18,standard,Fantasy Score,175716
-DAL,6.5,standard,Points,175716
-DAL,0.5,standard,Turnovers,175716
-DAL,11.5,standard,Pts+Rebs,175716
-OKC,41.5,standard,Fantasy Score,96236
-DAL,10.5,standard,Points,88490
-DAL,42.5,standard,Fantasy Score,79951
-DAL,3.5,standard,Rebounds,88490
-DAL,2.5,standard,3-PT Made,88490
-DAL,21.5,standard,Points,79951
-DAL,25.5,standard,Fantasy Score,10798
-DAL,33.5,standard,Pts+Rebs+Asts,79951
-DAL,26.5,standard,Pts+Asts,79951
-DAL,28.5,standard,Pts+Rebs,79951
-DAL,5,standard,Assists,79951
-DAL,6,standard,Rebounds,79951
-OKC,8,standard,Rebounds,174345
-OKC,8,standard,Points,174345
-OKC,24.5,standard,Fantasy Score,174345
-OKC,16.5,standard,Pts+Rebs,174345
-OKC,18,standard,Pts+Rebs+Asts,174345
-DAL,52.5,standard,Fantasy Score,188011
-DAL,18,standard,Pts+Rebs,10798
-DAL,4.5,standard,Rebounds,10798
-DAL,12.5,standard,Points,10798
-DAL,43.5,standard,Pts+Rebs+Asts,188011
-DAL,38.5,standard,Pts+Asts,188011
-DAL,31.5,standard,Points,188011
-DAL,37.5,standard,Pts+Rebs,188011
-DAL,0.5,goblin,Turnovers,10798
-DAL,14.5,demon,Rebs+Asts,188011
-DAL,6.5,demon,Rebounds,188011
-DAL,7.5,demon,Rebounds,188011
-DAL,44.5,demon,Pts+Rebs,188011
-DAL,35.5,demon,Points,188011
-DAL,34.5,demon,Points,188011
-DAL,44.5,demon,Pts+Asts,188011
-OKC,29.5,demon,Points,96236
-OKC,5.5,demon,Rebounds,96236
-OKC,40.5,demon,Pts+Rebs+Asts,96236
-OKC,28.5,demon,Points,96236
-DAL,2.5,demon,Assists,10798
-DAL,14.5,demon,Points,10798
-OKC,34.5,demon,Pts+Rebs,96236
-DAL,5.5,demon,Rebounds,10798
-DAL,19.5,demon,Pts+Rebs,10798
-DAL,15.5,demon,Points,10798
-DAL,17.5,demon,Points,10798
-DAL,3.5,demon,3-PT Made,10798
-OKC,0.5,demon,Blocked Shots,96236
-OKC,4.5,demon,Rebounds,216784
-OKC,24.5,demon,Pts+Rebs,216784
-OKC,0.5,demon,Blocked Shots,216784
-OKC,4.5,demon,3-PT Made,216784
-DAL,39.5,demon,Pts+Rebs+Asts,79951
-DAL,34.5,demon,Pts+Rebs,79951
-DAL,36.5,demon,Pts+Rebs+Asts,79951
-DAL,2.5,demon,Assists,57743
-DAL,2.5,demon,3-PT Made,79951
-DAL,1.5,demon,3-PT Made,57743
-OKC,2.5,demon,Assists,174345
-DAL,14.5,demon,Points,57743
-DAL,1.5,demon,3-PT Made,175716
-OKC,1.5,demon,Blocked Shots,174345
-OKC,11.5,demon,Rebounds,174345
-DAL,5.5,demon,Rebounds,57743
-DAL,9.5,demon,Points,175716
-DAL,2.5,demon,Assists,175716
-DAL,24.5,demon,Points,79951
-DAL,4.5,demon,Rebounds,88490
-DAL,23.5,demon,Points,79951
-DAL,3.5,demon,3-PT Made,88490
-DAL,0.5,demon,Blocked Shots,57743
-DAL,19.5,demon,Pts+Rebs,57743
-DAL,6.5,demon,Assists,79951
-DAL,29.5,demon,Pts+Asts,79951
-DAL,4.5,demon,Rebounds,175716
-DAL,40.5,goblin,Pts+Rebs+Asts,188011
-DAL,4.5,goblin,Rebounds,188011
-DAL,0.5,goblin,Blocked Shots,188011
-DAL,5.5,goblin,Assists,188011
-DAL,10.5,goblin,Points,10798
-DAL,8.5,goblin,Points,10798
-DAL,1.5,goblin,3-PT Made,10798
-OKC,3.5,goblin,Rebounds,96236
-OKC,24.5,goblin,Pts+Rebs,96236
-OKC,33.5,goblin,Pts+Rebs+Asts,96236
-OKC,1.5,goblin,3-PT Made,96236
-OKC,19.5,goblin,Pts+Rebs,216784
-OKC,12.5,goblin,Points,216784
-DAL,24.5,goblin,Pts+Rebs,79951
-DAL,5.5,goblin,Rebounds,79951
-DAL,24.5,goblin,Pts+Asts,79951
-DAL,0.5,goblin,3-PT Made,57743
-OKC,2.5,goblin,3-PT Made,216784
-DAL,19.5,goblin,Points,79951
-OKC,7.5,goblin,Rebounds,174345
-DAL,2.5,goblin,Rebounds,88490
-DAL,0.5,goblin,Steals,57743
-DAL,3.5,goblin,Rebounds,57743
-DAL,4.5,goblin,Rebounds,79951
-DAL,0.5,goblin,3-PT Made,175716
-DAL,2.5,goblin,Rebounds,175716
-OKC,3.5,demon,3-PT Made,96236
-DAL,2.5,demon,3-PT Made,188011
-OKC,7.5,demon,Assists,96236
-OKC,2.5,demon,Assists,216784
-DAL,47.5,demon,Pts+Rebs+Asts,188011
-DAL,7.5,demon,Assists,188011
-OKC,5.5,goblin,Assists,96236
-OKC,34.5,goblin,Pts+Rebs+Asts,96236
-OKC,14.5,goblin,Pts+Rebs,174345
-DAL,7.5,demon,Rebounds,79951
-DAL,14.5,demon,Rebs+Asts,79951
-DAL,3.5,goblin,Rebounds,10798
-OKC,15.5,goblin,Points,216784
-DAL,29.5,goblin,Points,188011
-OKC,0.5,goblin,Steals,96236
-OKC,24.5,demon,Points,216784
-OKC,19.5,goblin,Points,96236
-OKC,5.5,demon,3-PT Made,216784
-DAL,9.5,goblin,Points,10798
-DAL,4.5,goblin,Assists,188011
-OKC,2.5,goblin,Rebounds,216784
-OKC,5.5,demon,Rebounds,216784
-DAL,14.5,goblin,Pts+Rebs,10798
-DAL,34.5,goblin,Pts+Rebs,188011
-UTA,14.5,standard,Rebs+Asts,175245
-UTA,6,standard,Rebounds,175245
-UTA,45,standard,Fantasy Score,175245
-UTA,8.5,standard,Assists,175245
-UTA,30.5,standard,Pts+Asts,175245
-UTA,21.5,standard,Points,175245
-UTA,27.5,standard,Pts+Rebs,175245
-LAC,27.5,standard,Pts+Rebs+Asts,79926
-LAC,9,standard,Rebs+Asts,79926
-LAC,31,standard,Fantasy Score,79926
-LAC,19,standard,Points,79926
-LAC,6.5,standard,Rebounds,79926
-LAC,21.5,standard,Pts+Asts,79926
-LAC,25.5,standard,Pts+Rebs,79926
-UTA,21,standard,Points,59729
-UTA,24.5,standard,Pts+Rebs,59729
-UTA,29.5,standard,Fantasy Score,59729
-UTA,26.5,standard,Pts+Rebs+Asts,59729
-LAC,15,standard,Points,87500
-LAC,20.5,standard,Pts+Rebs+Asts,87500
-LAC,18.5,standard,Pts+Asts,87500
-LAC,17.5,standard,Pts+Rebs,87500
-LAC,24.5,standard,Fantasy Score,87500
-UTA,27,standard,Pts+Rebs,3828
-UTA,1.5,standard,Turnovers,3828
-UTA,15.5,standard,Points,3828
-UTA,29,standard,Pts+Rebs+Asts,3828
-UTA,11.5,standard,Rebounds,3828
-UTA,37.5,standard,Fantasy Score,3828
-UTA,18.5,standard,Pts+Asts,3828
-LAC,15.5,standard,Pts+Rebs,175137
-LAC,13.5,standard,Points,175137
-LAC,5,standard,Assists,175137
-LAC,24,standard,Fantasy Score,175137
-LAC,18.5,standard,Pts+Asts,175137
-LAC,20.5,standard,Pts+Rebs+Asts,175137
-UTA,12.5,standard,Pts+Rebs,216775
-UTA,17,standard,Fantasy Score,216775
-UTA,10.5,standard,Pts+Asts,216775
-UTA,9,standard,Points,216775
-LAC,24.5,goblin,Pts+Rebs+Asts,79926
-LAC,0.5,goblin,3-PT Made,87500
-LAC,13.5,goblin,Points,79926
-LAC,3.5,demon,3-PT Made,79926
-LAC,18.5,goblin,Pts+Rebs+Asts,87500
-LAC,15.5,demon,Points,175137
-LAC,30.5,demon,Pts+Rebs+Asts,79926
-LAC,3.5,demon,Rebounds,175137
-LAC,4.5,demon,Assists,87500
-LAC,21.5,demon,Points,79926
-LAC,17.5,demon,Points,87500
-LAC,3.5,demon,Rebounds,87500
-LAC,2.5,demon,Assists,79926
-LAC,3.5,demon,3-PT Made,175137
-LAC,2.5,demon,3-PT Made,87500
-LAC,0.5,demon,Blocked Shots,87500
-LAC,23.5,demon,Pts+Rebs+Asts,87500
-LAC,6.5,demon,Assists,175137
-LAC,0.5,demon,Blocked Shots,79926
-LAC,7.5,demon,Rebounds,79926
-LAC,2.5,goblin,Assists,87500
-LAC,10.5,goblin,Points,87500
-LAC,1.5,goblin,3-PT Made,175137
-LAC,1.5,goblin,Turnovers,87500
-LAC,9.5,goblin,Points,175137
-LAC,3.5,goblin,Assists,175137
-LAC,1.5,goblin,Rebounds,175137
-LAC,1.5,goblin,3-PT Made,79926
-LAC,4.5,goblin,Rebounds,79926
+id,adjusted_odds,board_time,description,line_score,odds_type,projection_type,rank,start_time,stat_display_name,status,today,updated_at,duration_id,league_id,player_id,projection_type_id,stat_type_id
+3376483,,2024-11-01T13:59:00-04:00,TOR,40.5,standard,Fantasy Score,0,2024-11-24T19:40:00-05:00,Fantasy Score,pre_game,True,2024-11-24T14:12:45-05:00,11,7,188006,1,14
+3376494,,2024-11-01T13:59:00-04:00,TOR,2.5,standard,Single Stat,0,2024-11-24T19:40:00-05:00,Free Throws Made,pre_game,True,2024-11-24T14:20:46-05:00,11,7,59275,2,68
+3376490,,2024-11-01T13:59:00-04:00,CLE,23.5,standard,Fantasy Score,0,2024-11-24T19:40:00-05:00,Fantasy Score,pre_game,True,2024-11-24T14:19:05-05:00,11,7,177505,1,14
+3376489,,2024-11-01T13:59:00-04:00,TOR,35.5,standard,Fantasy Score,0,2024-11-24T19:40:00-05:00,Fantasy Score,pre_game,True,2024-11-24T14:14:10-05:00,11,7,26792,1,14
+3376496,,2024-11-01T13:59:00-04:00,CLE,0.5,standard,Single Stat,0,2024-11-24T19:40:00-05:00,Free Throws Made,pre_game,True,2024-11-24T14:21:46-05:00,11,7,188601,2,68
+3376500,,2024-11-01T13:47:00-04:00,CLE,13.5,standard,Single Stat,0,2024-11-24T19:40:00-05:00,FG Attempted,pre_game,True,2024-11-24T14:22:02-05:00,11,7,188002,2,386
+3376486,,2024-11-01T13:59:00-04:00,CLE,34.0,standard,Fantasy Score,0,2024-11-24T19:40:00-05:00,Fantasy Score,pre_game,True,2024-11-24T14:13:11-05:00,11,7,188002,1,14
+3376487,,2024-11-01T13:59:00-04:00,TOR,38.5,standard,Fantasy Score,0,2024-11-24T19:40:00-05:00,Fantasy Score,pre_game,True,2024-11-24T14:13:08-05:00,11,7,53979,1,14
+3376484,,2024-11-01T13:59:00-04:00,CLE,36.0,standard,Fantasy Score,0,2024-11-24T19:40:00-05:00,Fantasy Score,pre_game,True,2024-11-24T14:12:03-05:00,11,7,183185,1,14
+3376501,,2024-11-01T13:47:00-04:00,TOR,12.5,standard,Single Stat,0,2024-11-24T19:40:00-05:00,FG Attempted,pre_game,True,2024-11-24T14:23:25-05:00,11,7,53979,2,386
+3376499,,2024-11-01T13:47:00-04:00,TOR,16.0,standard,Single Stat,0,2024-11-24T19:40:00-05:00,FG Attempted,pre_game,True,2024-11-24T14:20:05-05:00,11,7,59275,2,386
+3376503,,2024-11-01T13:47:00-04:00,CLE,5.0,standard,Single Stat,0,2024-11-24T19:40:00-05:00,3-PT Attempted,pre_game,True,2024-11-24T14:23:28-05:00,11,7,183185,2,392
+3376506,,2024-11-01T13:47:00-04:00,CLE,6.0,standard,Single Stat,0,2024-11-24T19:40:00-05:00,3-PT Attempted,pre_game,True,2024-11-24T14:27:34-05:00,11,7,177505,2,392
+3376502,,2024-11-01T13:47:00-04:00,TOR,10.0,standard,Single Stat,0,2024-11-24T19:40:00-05:00,3-PT Attempted,pre_game,True,2024-11-24T14:19:37-05:00,11,7,188006,2,392
+3376510,,2024-11-01T13:59:00-04:00,TOR,8.0,standard,Single Stat,0,2024-11-24T19:40:00-05:00,Defensive Rebounds,pre_game,True,2024-11-24T14:19:32-05:00,11,7,26792,2,404
+3376485,,2024-11-01T13:59:00-04:00,TOR,35.5,standard,Fantasy Score,0,2024-11-24T19:40:00-05:00,Fantasy Score,pre_game,True,2024-11-24T14:12:03-05:00,11,7,59275,1,14
+3376488,,2024-11-01T13:59:00-04:00,CLE,33.5,standard,Fantasy Score,0,2024-11-24T19:40:00-05:00,Fantasy Score,pre_game,True,2024-11-24T14:13:10-05:00,11,7,96540,1,14
+3376505,,2024-11-01T13:47:00-04:00,CLE,3.5,standard,Single Stat,0,2024-11-24T19:40:00-05:00,3-PT Attempted,pre_game,True,2024-11-24T14:19:32-05:00,11,7,188002,2,392
+3376509,,2024-11-01T13:59:00-04:00,CLE,6.5,standard,Single Stat,0,2024-11-24T19:40:00-05:00,Defensive Rebounds,pre_game,True,2024-11-24T14:19:28-05:00,11,7,96540,2,404
+3376508,,2024-11-01T13:59:00-04:00,TOR,7.0,standard,Single Stat,0,2024-11-24T19:40:00-05:00,Defensive Rebounds,pre_game,True,2024-11-24T14:19:14-05:00,11,7,53979,2,404
+3376491,,2024-11-01T13:59:00-04:00,CLE,20.0,standard,Fantasy Score,0,2024-11-24T19:40:00-05:00,Fantasy Score,pre_game,True,2024-11-24T14:32:23-05:00,11,7,188601,1,14
+3376497,,2024-11-01T13:47:00-04:00,TOR,20.0,standard,Single Stat,0,2024-11-24T19:40:00-05:00,FG Attempted,pre_game,True,2024-11-24T14:22:24-05:00,11,7,188006,2,386
+3376498,,2024-11-01T13:47:00-04:00,CLE,17.0,standard,Single Stat,0,2024-11-24T19:40:00-05:00,FG Attempted,pre_game,True,2024-11-24T14:22:57-05:00,11,7,183185,2,386
+3376507,,2024-11-01T13:47:00-04:00,CLE,3.5,standard,Single Stat,0,2024-11-24T19:40:00-05:00,Offensive Rebounds,pre_game,True,2024-11-24T14:21:30-05:00,11,7,96540,2,403
+3376504,,2024-11-01T13:47:00-04:00,TOR,6.5,standard,Single Stat,0,2024-11-24T19:40:00-05:00,3-PT Attempted,pre_game,True,2024-11-24T14:23:14-05:00,11,7,59275,2,392
+3376495,,2024-11-01T13:59:00-04:00,CLE,3.0,standard,Single Stat,0,2024-11-24T19:40:00-05:00,Free Throws Made,pre_game,True,2024-11-24T14:21:38-05:00,11,7,188002,2,68
+3376493,,2024-11-01T13:59:00-04:00,CLE,4.5,standard,Single Stat,0,2024-11-24T19:40:00-05:00,Free Throws Made,pre_game,True,2024-11-24T14:21:24-05:00,11,7,183185,2,68
+3374288,True,2024-11-22T17:00:00-05:00,WAS,15.5,goblin,Single Stat,5,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T15:28:20-05:00,11,7,87499,2,19
+3374059,,2024-11-22T17:00:00-05:00,WAS,29.5,standard,Single Stat,100,2024-11-24T17:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T15:28:20-05:00,11,7,87499,2,106
+3374099,,2024-11-22T17:00:00-05:00,WAS,8.5,standard,Single Stat,100,2024-11-24T17:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T15:28:20-05:00,11,7,87499,2,245
+3374009,,2024-11-22T17:00:00-05:00,WAS,20.5,standard,Single Stat,100,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T15:28:20-05:00,11,7,87499,2,19
+3374083,,2024-11-22T17:00:00-05:00,WAS,27.5,standard,Single Stat,100,2024-11-24T17:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T15:28:20-05:00,11,7,87499,2,243
+3374041,,2024-11-22T17:00:00-05:00,WAS,6.5,standard,Single Stat,100,2024-11-24T17:10:00-05:00,Rebounds,pre_game,True,2024-11-24T15:28:20-05:00,11,7,87499,2,22
+3376657,,2024-11-01T15:54:00-04:00,WAS,33.0,standard,Fantasy Score,100,2024-11-24T17:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T16:15:47-05:00,11,7,87499,1,14
+3376658,,2024-11-01T15:54:00-04:00,IND,26.0,standard,Fantasy Score,101,2024-11-24T17:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T16:14:03-05:00,11,7,217304,1,14
+3374061,,2024-11-22T17:00:00-05:00,WAS,28.5,standard,Single Stat,102,2024-11-24T17:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T15:28:21-05:00,11,7,1604,2,106
+3374011,,2024-11-22T17:00:00-05:00,WAS,18.5,standard,Single Stat,102,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T15:28:20-05:00,11,7,1604,2,19
+3376659,,2024-11-01T15:54:00-04:00,WAS,38.0,standard,Fantasy Score,102,2024-11-24T17:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T16:17:40-05:00,11,7,1604,1,14
+3374085,,2024-11-22T17:00:00-05:00,WAS,27.5,standard,Single Stat,102,2024-11-24T17:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T15:28:21-05:00,11,7,1604,2,243
+3374043,,2024-11-22T17:00:00-05:00,WAS,8.5,standard,Single Stat,102,2024-11-24T17:10:00-05:00,Rebounds,pre_game,True,2024-11-24T15:28:21-05:00,11,7,1604,2,22
+3374093,,2024-11-22T17:00:00-05:00,WAS,20.5,standard,Single Stat,102,2024-11-24T17:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T15:28:21-05:00,11,7,1604,2,244
+3374101,,2024-11-22T17:00:00-05:00,WAS,10.0,standard,Single Stat,102,2024-11-24T17:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T15:28:21-05:00,11,7,1604,2,245
+3374102,,2024-11-22T17:00:00-05:00,IND,8.5,standard,Single Stat,103,2024-11-24T17:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T12:20:50-05:00,11,7,175142,2,245
+3374062,,2024-11-22T17:00:00-05:00,IND,22.5,standard,Single Stat,103,2024-11-24T17:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T12:20:50-05:00,11,7,175142,2,106
+3374012,,2024-11-22T17:00:00-05:00,IND,13.5,standard,Single Stat,103,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T12:20:00-05:00,11,7,175142,2,19
+3376660,,2024-11-01T15:54:00-04:00,IND,27.5,standard,Fantasy Score,103,2024-11-24T17:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T16:16:59-05:00,11,7,175142,1,14
+3374086,,2024-11-22T17:00:00-05:00,IND,19.5,standard,Single Stat,103,2024-11-24T17:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T12:20:50-05:00,11,7,175142,2,243
+3374052,,2024-11-22T17:00:00-05:00,IND,2.5,standard,Single Stat,103,2024-11-24T17:10:00-05:00,Assists,pre_game,True,2024-11-24T12:20:20-05:00,11,7,175142,2,20
+3374044,,2024-11-22T17:00:00-05:00,IND,6.0,standard,Single Stat,103,2024-11-24T17:10:00-05:00,Rebounds,pre_game,True,2024-11-24T12:20:11-05:00,11,7,175142,2,22
+3374094,,2024-11-22T17:00:00-05:00,IND,16.5,standard,Single Stat,103,2024-11-24T17:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T12:21:03-05:00,11,7,175142,2,244
+3376661,,2024-11-01T15:54:00-04:00,WAS,39.5,standard,Fantasy Score,104,2024-11-24T17:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T16:16:36-05:00,11,7,185263,1,14
+3374087,,2024-11-22T17:00:00-05:00,WAS,30.5,standard,Single Stat,104,2024-11-24T17:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T15:28:21-05:00,11,7,185263,2,243
+3374013,,2024-11-22T17:00:00-05:00,WAS,23.0,standard,Single Stat,104,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T15:28:22-05:00,11,7,185263,2,19
+3374063,,2024-11-22T17:00:00-05:00,WAS,34.5,standard,Single Stat,104,2024-11-24T17:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T15:28:21-05:00,11,7,185263,2,106
+3374103,,2024-11-22T17:00:00-05:00,WAS,11.0,standard,Single Stat,104,2024-11-24T17:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T15:28:21-05:00,11,7,185263,2,245
+3374057,,2024-11-22T17:00:00-05:00,WAS,1.5,standard,Single Stat,104,2024-11-24T17:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T15:28:21-05:00,11,7,185263,2,31
+3374045,,2024-11-22T17:00:00-05:00,WAS,7.5,standard,Single Stat,104,2024-11-24T17:10:00-05:00,Rebounds,pre_game,True,2024-11-24T15:28:22-05:00,11,7,185263,2,22
+3374095,,2024-11-22T17:00:00-05:00,WAS,26.5,standard,Single Stat,104,2024-11-24T17:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T15:28:21-05:00,11,7,185263,2,244
+3374089,,2024-11-22T17:00:00-05:00,WAS,22.5,standard,Single Stat,106,2024-11-24T17:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T16:07:28-05:00,11,7,187997,2,243
+3374097,,2024-11-22T17:00:00-05:00,WAS,28.5,standard,Single Stat,106,2024-11-24T17:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T15:28:22-05:00,11,7,187997,2,244
+3376662,,2024-11-01T15:54:00-04:00,WAS,42.5,standard,Fantasy Score,106,2024-11-24T17:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T16:19:17-05:00,11,7,187997,1,14
+3374055,,2024-11-22T17:00:00-05:00,WAS,10.0,standard,Single Stat,106,2024-11-24T17:10:00-05:00,Assists,pre_game,True,2024-11-24T15:28:22-05:00,11,7,187997,2,20
+3374065,,2024-11-22T17:00:00-05:00,WAS,33.0,standard,Single Stat,106,2024-11-24T17:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T15:28:22-05:00,11,7,187997,2,106
+3374015,,2024-11-22T17:00:00-05:00,WAS,18.5,standard,Single Stat,106,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T15:28:22-05:00,11,7,187997,2,19
+3374105,,2024-11-22T17:00:00-05:00,WAS,14.0,standard,Single Stat,106,2024-11-24T17:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T15:28:22-05:00,11,7,187997,2,245
+3374090,,2024-11-22T17:00:00-05:00,IND,30.0,standard,Single Stat,107,2024-11-24T17:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T12:19:09-05:00,11,7,58812,2,243
+3374066,,2024-11-22T17:00:00-05:00,IND,34.0,standard,Single Stat,107,2024-11-24T17:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:38:41-05:00,11,7,58812,2,106
+3374048,,2024-11-22T17:00:00-05:00,IND,7.0,standard,Single Stat,107,2024-11-24T17:10:00-05:00,Rebounds,pre_game,True,2024-11-24T12:18:30-05:00,11,7,58812,2,22
+3374098,,2024-11-22T17:00:00-05:00,IND,27.0,standard,Single Stat,107,2024-11-24T17:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T12:19:09-05:00,11,7,58812,2,244
+3374016,,2024-11-22T17:00:00-05:00,IND,23.5,standard,Single Stat,107,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T12:18:18-05:00,11,7,58812,2,19
+3374106,,2024-11-22T17:00:00-05:00,IND,10.0,standard,Single Stat,107,2024-11-24T17:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T12:19:25-05:00,11,7,58812,2,245
+3376663,,2024-11-01T15:54:00-04:00,IND,36.5,standard,Fantasy Score,107,2024-11-24T17:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T16:14:06-05:00,11,7,58812,1,14
+3376607,,2024-11-22T17:00:00-05:00,WAS,4.5,standard,Single Stat,108,2024-11-24T17:00:00-05:00,Rebounds,pre_game,True,2024-11-24T15:31:34-05:00,11,7,182373,2,22
+3376608,,2024-11-22T17:00:00-05:00,WAS,13.5,standard,Single Stat,108,2024-11-24T17:00:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T15:34:39-05:00,11,7,182373,2,106
+3376606,,2024-11-22T17:00:00-05:00,WAS,6.5,standard,Single Stat,108,2024-11-24T17:00:00-05:00,Points,pre_game,True,2024-11-24T15:33:01-05:00,11,7,182373,2,19
+3376381,,2024-11-22T17:00:00-05:00,IND,17.5,standard,Single Stat,109,2024-11-24T17:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T14:36:05-05:00,11,7,53985,2,106
+3376377,,2024-11-22T17:00:00-05:00,IND,12.5,standard,Single Stat,109,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T14:48:27-05:00,11,7,53985,2,19
+3374321,True,2024-11-22T17:00:00-05:00,WAS,24.5,demon,Single Stat,116,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T15:28:23-05:00,11,7,187997,2,19
+3374322,True,2024-11-22T17:00:00-05:00,WAS,13.5,goblin,Single Stat,118,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T15:28:23-05:00,11,7,187997,2,19
+3374323,True,2024-11-22T17:00:00-05:00,WAS,4.5,demon,Single Stat,121,2024-11-24T17:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T15:28:23-05:00,11,7,187997,2,31
+3374324,True,2024-11-22T17:00:00-05:00,WAS,9.5,demon,Single Stat,126,2024-11-24T17:10:00-05:00,Rebounds,pre_game,True,2024-11-24T15:28:23-05:00,11,7,185263,2,22
+3374325,True,2024-11-22T17:00:00-05:00,WAS,30.5,demon,Single Stat,127,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T15:28:23-05:00,11,7,185263,2,19
+3374326,True,2024-11-22T17:00:00-05:00,WAS,18.5,goblin,Single Stat,130,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T15:28:23-05:00,11,7,185263,2,19
+3374327,True,2024-11-22T17:00:00-05:00,WAS,2.5,demon,Single Stat,133,2024-11-24T17:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T15:28:23-05:00,11,7,185263,2,31
+3374330,True,2024-11-22T17:00:00-05:00,IND,1.5,demon,Single Stat,140,2024-11-24T17:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T12:21:14-05:00,11,7,175142,2,31
+3376337,,2024-11-21T18:00:00-05:00,DAL,8.0,standard,Single Stat,150,2024-11-24T18:10:00-05:00,Defensive Rebounds,pre_game,True,2024-11-24T13:04:11-05:00,11,7,1646,2,404
+3374600,,2024-11-21T18:00:00-05:00,DAL,28.5,standard,Single Stat,150,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:04:11-05:00,11,7,1646,2,243
+3374819,,2024-11-21T18:00:00-05:00,DAL,14.5,standard,Single Stat,150,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T13:04:12-05:00,11,7,1646,2,245
+3376324,,2024-11-21T18:00:00-05:00,DAL,14.5,standard,Single Stat,150,2024-11-24T18:10:00-05:00,FG Attempted,pre_game,True,2024-11-24T13:04:11-05:00,11,7,1646,2,386
+3376318,,2024-11-21T18:00:00-05:00,DAL,2.5,standard,Single Stat,150,2024-11-24T18:10:00-05:00,Free Throws Made,pre_game,True,2024-11-24T13:04:11-05:00,11,7,1646,2,68
+3374790,,2024-11-21T18:00:00-05:00,DAL,21.5,standard,Single Stat,150,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:04:11-05:00,11,7,1646,2,244
+3374395,,2024-11-21T18:00:00-05:00,DAL,17.5,standard,Single Stat,150,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:04:11-05:00,11,7,1646,2,19
+3376311,,2024-11-21T18:00:00-05:00,DAL,39.5,standard,Fantasy Score,150,2024-11-24T18:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T13:04:12-05:00,11,7,1646,1,14
+3374466,,2024-11-21T18:00:00-05:00,DAL,3.5,standard,Single Stat,150,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:04:11-05:00,11,7,1646,2,20
+3376334,,2024-11-21T18:00:00-05:00,DAL,2.5,standard,Single Stat,150,2024-11-24T18:10:00-05:00,Offensive Rebounds,pre_game,True,2024-11-24T13:04:11-05:00,11,7,1646,2,403
+3374495,,2024-11-21T18:00:00-05:00,DAL,32.5,standard,Single Stat,150,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:04:11-05:00,11,7,1646,2,106
+3374423,,2024-11-21T23:30:00-05:00,DAL,11.0,standard,Single Stat,150,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:31:33-05:00,11,7,1646,2,22
+3376335,,2024-11-22T18:00:00-05:00,MIA,2.5,standard,Single Stat,151,2024-11-24T18:10:00-05:00,Offensive Rebounds,pre_game,True,2024-11-24T13:09:31-05:00,11,7,174345,2,403
+3374496,,2024-11-22T18:00:00-05:00,MIA,18.5,standard,Single Stat,151,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:09:30-05:00,11,7,174345,2,106
+3374791,,2024-11-22T18:00:00-05:00,MIA,10.5,standard,Single Stat,151,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:09:31-05:00,11,7,174345,2,244
+3374396,,2024-11-22T18:00:00-05:00,MIA,8.0,standard,Single Stat,151,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:30-05:00,11,7,174345,2,19
+3374424,,2024-11-22T18:00:00-05:00,MIA,7.5,standard,Single Stat,151,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:30-05:00,11,7,174345,2,22
+3374601,,2024-11-22T18:00:00-05:00,MIA,16.0,standard,Single Stat,151,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:09:31-05:00,11,7,174345,2,243
+3374820,,2024-11-22T18:00:00-05:00,MIA,10.0,standard,Single Stat,151,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T13:09:30-05:00,11,7,174345,2,245
+3376312,,2024-11-22T18:00:00-05:00,MIA,25.0,standard,Fantasy Score,151,2024-11-24T18:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T13:09:31-05:00,11,7,174345,1,14
+3376338,,2024-11-22T18:00:00-05:00,MIA,5.0,standard,Single Stat,151,2024-11-24T18:10:00-05:00,Defensive Rebounds,pre_game,True,2024-11-24T13:09:30-05:00,11,7,174345,2,404
+3374602,,2024-11-21T18:00:00-05:00,DAL,24.0,standard,Single Stat,152,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:04:12-05:00,11,7,1654,2,243
+3374792,,2024-11-21T18:00:00-05:00,DAL,24.5,standard,Single Stat,152,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:04:12-05:00,11,7,1654,2,244
+3374397,,2024-11-21T18:00:00-05:00,DAL,18.5,standard,Single Stat,152,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:04:12-05:00,11,7,1654,2,19
+3376325,,2024-11-21T18:00:00-05:00,DAL,12.0,standard,Single Stat,152,2024-11-24T18:10:00-05:00,FG Attempted,pre_game,True,2024-11-24T13:04:12-05:00,11,7,1654,2,386
+3374497,,2024-11-21T18:00:00-05:00,DAL,29.5,standard,Single Stat,152,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:04:12-05:00,11,7,1654,2,106
+3376319,,2024-11-21T18:00:00-05:00,DAL,5.5,standard,Single Stat,152,2024-11-24T18:10:00-05:00,Free Throws Made,pre_game,True,2024-11-24T13:04:12-05:00,11,7,1654,2,68
+3376313,,2024-11-21T18:00:00-05:00,DAL,34.5,standard,Fantasy Score,152,2024-11-24T18:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T13:04:12-05:00,11,7,1654,1,14
+3374425,,2024-11-21T18:00:00-05:00,DAL,5.0,standard,Single Stat,152,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:04:12-05:00,11,7,1654,2,22
+3374821,,2024-11-21T18:00:00-05:00,DAL,10.5,standard,Single Stat,152,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T15:47:10-05:00,11,7,1654,2,245
+3374822,,2024-11-22T18:00:00-05:00,MIA,5.0,standard,Single Stat,153,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T13:09:31-05:00,11,7,216784,2,245
+3376314,,2024-11-22T18:00:00-05:00,MIA,23.5,standard,Fantasy Score,153,2024-11-24T18:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T13:09:31-05:00,11,7,216784,1,14
+3374793,,2024-11-22T18:00:00-05:00,MIA,17.5,standard,Single Stat,153,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:09:32-05:00,11,7,216784,2,244
+3376320,,2024-11-22T18:00:00-05:00,MIA,0.5,standard,Single Stat,153,2024-11-24T18:10:00-05:00,Free Throws Made,pre_game,True,2024-11-24T13:09:31-05:00,11,7,216784,2,68
+3376326,,2024-11-22T18:00:00-05:00,MIA,13.5,standard,Single Stat,153,2024-11-24T18:10:00-05:00,FG Attempted,pre_game,True,2024-11-24T13:09:32-05:00,11,7,216784,2,386
+3374398,,2024-11-22T18:00:00-05:00,MIA,15.5,standard,Single Stat,153,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T15:53:44-05:00,11,7,216784,2,19
+3374603,,2024-11-22T18:00:00-05:00,MIA,18.5,standard,Single Stat,153,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:09:31-05:00,11,7,216784,2,243
+3376330,,2024-11-22T18:00:00-05:00,MIA,8.5,standard,Single Stat,153,2024-11-24T18:10:00-05:00,3-PT Attempted,pre_game,True,2024-11-24T13:09:31-05:00,11,7,216784,2,392
+3374604,,2024-11-21T18:00:00-05:00,DAL,26.0,standard,Single Stat,154,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T16:18:44-05:00,11,7,10776,2,243
+3376315,,2024-11-21T18:00:00-05:00,DAL,35.0,standard,Fantasy Score,154,2024-11-24T18:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T16:18:44-05:00,11,7,10776,1,14
+3374883,,2024-11-21T18:00:00-05:00,DAL,0.5,standard,Single Stat,154,2024-11-24T18:10:00-05:00,Blks+Stls,pre_game,True,2024-11-24T16:18:44-05:00,11,7,10776,2,105
+3376327,,2024-11-21T18:00:00-05:00,DAL,17.5,standard,Single Stat,154,2024-11-24T18:10:00-05:00,FG Attempted,pre_game,True,2024-11-24T16:18:44-05:00,11,7,10776,2,386
+3374823,,2024-11-21T18:00:00-05:00,DAL,10.0,standard,Single Stat,154,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T16:21:10-05:00,11,7,10776,2,245
+3376331,,2024-11-21T18:00:00-05:00,DAL,9.5,standard,Single Stat,154,2024-11-24T18:10:00-05:00,3-PT Attempted,pre_game,True,2024-11-24T16:18:43-05:00,11,7,10776,2,392
+3374794,,2024-11-21T18:00:00-05:00,DAL,26.0,standard,Single Stat,154,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T16:18:44-05:00,11,7,10776,2,244
+3376321,,2024-11-21T18:00:00-05:00,DAL,3.0,standard,Single Stat,154,2024-11-24T18:10:00-05:00,Free Throws Made,pre_game,True,2024-11-24T16:18:44-05:00,11,7,10776,2,68
+3374499,,2024-11-21T18:00:00-05:00,DAL,31.5,standard,Single Stat,154,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T16:18:44-05:00,11,7,10776,2,106
+3374483,,2024-11-21T18:00:00-05:00,DAL,3.5,standard,Single Stat,154,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T16:18:43-05:00,11,7,10776,2,31
+3374399,,2024-11-21T18:00:00-05:00,DAL,21.0,standard,Single Stat,154,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T16:11:59-05:00,11,7,10776,2,19
+3376322,,2024-11-22T18:00:00-05:00,MIA,3.5,standard,Single Stat,155,2024-11-24T18:10:00-05:00,Free Throws Made,pre_game,True,2024-11-24T13:09:32-05:00,11,7,96236,2,68
+3374500,,2024-11-22T18:00:00-05:00,MIA,36.0,standard,Single Stat,155,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:09:32-05:00,11,7,96236,2,106
+3374824,,2024-11-22T18:00:00-05:00,MIA,11.5,standard,Single Stat,155,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T13:09:32-05:00,11,7,96236,2,245
+3374481,,2024-11-22T18:00:00-05:00,MIA,2.5,standard,Single Stat,155,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T15:26:36-05:00,11,7,96236,2,31
+3376316,,2024-11-22T18:00:00-05:00,MIA,41.5,standard,Fantasy Score,155,2024-11-24T18:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T13:09:32-05:00,11,7,96236,1,14
+3374795,,2024-11-22T18:00:00-05:00,MIA,31.5,standard,Single Stat,155,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:09:32-05:00,11,7,96236,2,244
+3374605,,2024-11-22T18:00:00-05:00,MIA,28.5,standard,Single Stat,155,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T15:24:51-05:00,11,7,96236,2,243
+3374470,,2024-11-22T18:00:00-05:00,MIA,7.0,standard,Single Stat,155,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:32-05:00,11,7,96236,2,20
+3376328,,2024-11-22T18:00:00-05:00,MIA,18.0,standard,Single Stat,155,2024-11-24T18:10:00-05:00,FG Attempted,pre_game,True,2024-11-24T13:09:32-05:00,11,7,96236,2,386
+3376332,,2024-11-22T18:00:00-05:00,MIA,6.0,standard,Single Stat,155,2024-11-24T18:10:00-05:00,3-PT Attempted,pre_game,True,2024-11-24T13:09:32-05:00,11,7,96236,2,392
+3374400,,2024-11-22T18:00:00-05:00,MIA,24.0,standard,Single Stat,155,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:32-05:00,11,7,96236,2,19
+3374428,,2024-11-22T18:00:00-05:00,MIA,4.5,standard,Single Stat,155,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:32-05:00,11,7,96236,2,22
+3376339,,2024-11-22T18:00:00-05:00,MIA,6.0,standard,Single Stat,157,2024-11-24T18:10:00-05:00,Defensive Rebounds,pre_game,True,2024-11-24T13:09:33-05:00,11,7,187519,2,404
+3374606,,2024-11-22T18:00:00-05:00,MIA,22.5,standard,Single Stat,157,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:09:33-05:00,11,7,187519,2,243
+3376317,,2024-11-22T18:00:00-05:00,MIA,29.5,standard,Fantasy Score,157,2024-11-24T18:10:00-05:00,Fantasy Score,pre_game,True,2024-11-24T13:09:32-05:00,11,7,187519,1,14
+3374401,,2024-11-22T18:00:00-05:00,MIA,14.5,standard,Single Stat,157,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:33-05:00,11,7,187519,2,19
+3376329,,2024-11-22T18:00:00-05:00,MIA,13.0,standard,Single Stat,157,2024-11-24T18:10:00-05:00,FG Attempted,pre_game,True,2024-11-24T13:09:34-05:00,11,7,187519,2,386
+3376336,,2024-11-22T18:00:00-05:00,MIA,1.5,standard,Single Stat,157,2024-11-24T18:10:00-05:00,Offensive Rebounds,pre_game,True,2024-11-24T13:09:33-05:00,11,7,187519,2,403
+3374825,,2024-11-22T18:00:00-05:00,MIA,9.5,standard,Single Stat,157,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T13:09:33-05:00,11,7,187519,2,245
+3376323,,2024-11-22T18:00:00-05:00,MIA,1.5,standard,Single Stat,157,2024-11-24T18:10:00-05:00,Free Throws Made,pre_game,True,2024-11-24T13:09:33-05:00,11,7,187519,2,68
+3376333,,2024-11-22T18:00:00-05:00,MIA,5.5,standard,Single Stat,157,2024-11-24T18:10:00-05:00,3-PT Attempted,pre_game,True,2024-11-24T13:09:32-05:00,11,7,187519,2,392
+3374501,,2024-11-22T18:00:00-05:00,MIA,24.5,standard,Single Stat,157,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:10:31-05:00,11,7,187519,2,106
+3374429,,2024-11-22T18:00:00-05:00,MIA,7.5,standard,Single Stat,157,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:33-05:00,11,7,187519,2,22
+3374796,,2024-11-22T18:00:00-05:00,MIA,16.5,standard,Single Stat,157,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:09:33-05:00,11,7,187519,2,244
+3374885,,2024-11-22T18:00:00-05:00,MIA,1.5,standard,Single Stat,157,2024-11-24T18:10:00-05:00,Turnovers,pre_game,True,2024-11-24T13:09:32-05:00,11,7,187519,2,24
+3376416,,2024-11-21T18:00:00-05:00,DAL,7.5,standard,Single Stat,158,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:11:42-05:00,11,7,88378,2,19
+3376708,,2024-11-22T18:00:00-05:00,MIA,6.5,standard,Single Stat,159,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T16:04:07-05:00,11,7,187518,2,22
+3376417,,2024-11-22T18:00:00-05:00,MIA,10.5,standard,Single Stat,159,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:10:29-05:00,11,7,187518,2,19
+3376421,,2024-11-22T18:00:00-05:00,MIA,18.5,standard,Single Stat,159,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:11:14-05:00,11,7,187518,2,106
+3376709,,2024-11-22T18:00:00-05:00,MIA,17.5,standard,Single Stat,159,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T16:09:13-05:00,11,7,187518,2,243
+3376424,,2024-11-22T18:00:00-05:00,MIA,10.0,standard,Single Stat,161,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:39:17-05:00,11,7,189137,2,19
+3376428,,2024-11-22T18:00:00-05:00,MIA,17.0,standard,Single Stat,161,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T16:07:52-05:00,11,7,189137,2,106
+3374339,True,2024-11-22T17:00:00-05:00,WAS,22.5,demon,Single Stat,168,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T15:28:23-05:00,11,7,1604,2,19
+3374340,True,2024-11-22T17:00:00-05:00,WAS,11.5,goblin,Single Stat,171,2024-11-24T17:10:00-05:00,Points,pre_game,True,2024-11-24T16:28:20-05:00,11,7,1604,2,19
+3374341,True,2024-11-22T17:00:00-05:00,WAS,2.5,demon,Single Stat,173,2024-11-24T17:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T15:28:23-05:00,11,7,1604,2,31
+3375772,True,2024-11-22T18:00:00-05:00,MIA,2.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:09:37-05:00,11,7,187519,2,31
+3375767,True,2024-11-22T18:00:00-05:00,MIA,6.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:36-05:00,11,7,187519,2,22
+3375796,True,2024-11-21T18:00:00-05:00,DAL,23.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T16:08:21-05:00,11,7,1654,2,19
+3375774,True,2024-11-22T18:00:00-05:00,MIA,5.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:35-05:00,11,7,96236,2,22
+3375775,True,2024-11-22T18:00:00-05:00,MIA,3.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:35-05:00,11,7,96236,2,22
+3375778,True,2024-11-22T18:00:00-05:00,MIA,29.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:35-05:00,11,7,96236,2,19
+3375781,True,2024-11-22T18:00:00-05:00,MIA,5.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:35-05:00,11,7,96236,2,20
+3375783,True,2024-11-22T18:00:00-05:00,MIA,1.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:09:36-05:00,11,7,96236,2,31
+3375791,True,2024-11-22T18:00:00-05:00,MIA,0.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:35-05:00,11,7,216784,2,20
+3375797,True,2024-11-21T18:00:00-05:00,DAL,12.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T16:08:21-05:00,11,7,1654,2,19
+3375784,True,2024-11-22T18:00:00-05:00,MIA,4.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:37-05:00,11,7,216784,2,22
+3375768,True,2024-11-22T18:00:00-05:00,MIA,19.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:35-05:00,11,7,187519,2,19
+3375782,True,2024-11-22T18:00:00-05:00,MIA,3.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:09:36-05:00,11,7,96236,2,31
+3375785,True,2024-11-22T18:00:00-05:00,MIA,2.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:36-05:00,11,7,216784,2,22
+3375790,True,2024-11-22T18:00:00-05:00,MIA,2.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:35-05:00,11,7,216784,2,20
+3375812,True,2024-11-21T18:00:00-05:00,DAL,12.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T16:28:20-05:00,11,7,1646,2,19
+3375799,True,2024-11-24T10:30:00-05:00,DAL,3.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T15:26:36-05:00,11,7,1654,2,20
+3375793,True,2024-11-22T18:00:00-05:00,MIA,2.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:09:37-05:00,11,7,216784,2,31
+3375792,True,2024-11-22T18:00:00-05:00,MIA,3.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:09:36-05:00,11,7,216784,2,31
+3375804,True,2024-11-22T18:00:00-05:00,MIA,4.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:36-05:00,11,7,174345,2,19
+3375806,True,2024-11-22T18:00:00-05:00,MIA,1.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:36-05:00,11,7,174345,2,20
+3375803,True,2024-11-22T18:00:00-05:00,MIA,12.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:35-05:00,11,7,174345,2,19
+3375789,True,2024-11-22T18:00:00-05:00,MIA,10.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:35-05:00,11,7,216784,2,19
+3375805,True,2024-11-22T18:00:00-05:00,MIA,2.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:35-05:00,11,7,174345,2,20
+3375801,True,2024-11-22T18:00:00-05:00,MIA,9.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:34-05:00,11,7,174345,2,22
+3375802,True,2024-11-22T18:00:00-05:00,MIA,6.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:34-05:00,11,7,174345,2,22
+3375800,True,2024-11-21T18:00:00-05:00,DAL,1.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:04:14-05:00,11,7,1654,2,31
+3375798,True,2024-11-21T18:00:00-05:00,DAL,6.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:04:14-05:00,11,7,1654,2,20
+3375794,True,2024-11-21T18:00:00-05:00,DAL,1.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Steals,pre_game,True,2024-11-24T13:04:14-05:00,11,7,1654,2,23
+3375807,True,2024-11-21T18:00:00-05:00,DAL,1.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Steals,pre_game,True,2024-11-24T13:04:14-05:00,11,7,1646,2,23
+3375811,True,2024-11-21T18:00:00-05:00,DAL,22.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:04:14-05:00,11,7,1646,2,19
+3375814,True,2024-11-21T18:00:00-05:00,DAL,0.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Blocked Shots,pre_game,True,2024-11-24T13:04:13-05:00,11,7,1646,2,21
+3375765,True,2024-11-21T18:00:00-05:00,DAL,2.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T16:12:01-05:00,11,7,10776,2,31
+3375763,True,2024-11-21T18:00:00-05:00,DAL,3.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T16:12:00-05:00,11,7,10776,2,20
+3375764,True,2024-11-21T18:00:00-05:00,DAL,4.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T16:12:00-05:00,11,7,10776,2,31
+3375757,True,2024-11-21T18:00:00-05:00,DAL,3.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T16:12:00-05:00,11,7,10776,2,22
+3375762,True,2024-11-21T18:00:00-05:00,DAL,6.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T16:12:00-05:00,11,7,10776,2,20
+3375758,True,2024-11-21T18:00:00-05:00,DAL,39.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T16:15:41-05:00,11,7,10776,2,106
+3375777,True,2024-11-22T18:00:00-05:00,MIA,32.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T15:26:36-05:00,11,7,96236,2,106
+3375787,True,2024-11-22T18:00:00-05:00,MIA,15.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:09:37-05:00,11,7,216784,2,106
+3375780,True,2024-11-22T18:00:00-05:00,MIA,9.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:37-05:00,11,7,96236,2,20
+3375773,True,2024-11-22T18:00:00-05:00,MIA,1.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:09:37-05:00,11,7,187519,2,31
+3375766,True,2024-11-22T18:00:00-05:00,MIA,9.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:36-05:00,11,7,187519,2,22
+3375779,True,2024-11-22T18:00:00-05:00,MIA,19.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:36-05:00,11,7,96236,2,19
+3375761,True,2024-11-21T18:00:00-05:00,DAL,15.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T16:08:20-05:00,11,7,10776,2,19
+3375760,True,2024-11-21T18:00:00-05:00,DAL,25.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T16:11:59-05:00,11,7,10776,2,19
+3375759,True,2024-11-21T18:00:00-05:00,DAL,29.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T16:12:00-05:00,11,7,10776,2,106
+3375756,True,2024-11-21T18:00:00-05:00,DAL,6.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T16:12:00-05:00,11,7,10776,2,22
+3375769,True,2024-11-22T18:00:00-05:00,MIA,10.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:34-05:00,11,7,187519,2,19
+3375776,True,2024-11-22T18:00:00-05:00,MIA,44.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:09:34-05:00,11,7,96236,2,106
+3375786,True,2024-11-22T18:00:00-05:00,MIA,24.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:09:34-05:00,11,7,216784,2,106
+3375788,True,2024-11-22T18:00:00-05:00,MIA,19.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:34-05:00,11,7,216784,2,19
+3375771,True,2024-11-22T18:00:00-05:00,MIA,1.5,goblin,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:34-05:00,11,7,187519,2,20
+3375770,True,2024-11-22T18:00:00-05:00,MIA,2.5,demon,Single Stat,175,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:35-05:00,11,7,187519,2,20
+3376626,,2024-11-22T18:00:00-05:00,PHI,4.5,standard,Single Stat,200,2024-11-24T18:00:00-05:00,3-PT Attempted,pre_game,True,2024-11-24T16:05:25-05:00,11,7,54046,2,392
+3376619,,2024-11-22T18:00:00-05:00,PHI,8.5,standard,Single Stat,200,2024-11-24T18:00:00-05:00,FG Attempted,pre_game,True,2024-11-24T16:06:23-05:00,11,7,54046,2,386
+3374887,,2024-11-24T01:30:00-05:00,PHI,1.5,standard,Single Stat,200,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T16:21:55-05:00,11,7,54046,2,31
+3374968,,2024-11-24T01:30:00-05:00,PHI,13.5,standard,Single Stat,200,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T08:19:06-05:00,11,7,54046,2,243
+3374922,,2024-11-24T01:30:00-05:00,PHI,14.5,standard,Single Stat,200,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T08:19:13-05:00,11,7,54046,2,106
+3374554,,2024-11-24T01:30:00-05:00,PHI,10.5,standard,Single Stat,200,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T08:18:51-05:00,11,7,54046,2,19
+3375075,,2024-11-24T01:30:00-05:00,PHI,0.5,standard,Single Stat,200,2024-11-24T18:10:00-05:00,Steals,pre_game,True,2024-11-24T08:19:22-05:00,11,7,54046,2,23
+3374994,,2024-11-24T01:30:00-05:00,PHI,11.5,standard,Single Stat,200,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T08:18:59-05:00,11,7,54046,2,244
+3374555,,2024-11-22T18:00:00-05:00,LAC,9.5,standard,Single Stat,201,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:46:36-05:00,11,7,54080,2,19
+3374807,,2024-11-22T18:00:00-05:00,LAC,5.0,standard,Single Stat,201,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:46:36-05:00,11,7,54080,2,22
+3374923,,2024-11-22T18:00:00-05:00,LAC,17.5,standard,Single Stat,201,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:46:36-05:00,11,7,54080,2,106
+3374995,,2024-11-22T18:00:00-05:00,LAC,12.5,standard,Single Stat,201,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:46:36-05:00,11,7,54080,2,244
+3374969,,2024-11-22T18:00:00-05:00,LAC,14.5,standard,Single Stat,201,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:46:36-05:00,11,7,54080,2,243
+3375042,,2024-11-22T18:00:00-05:00,LAC,8.0,standard,Single Stat,201,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T13:46:36-05:00,11,7,54080,2,245
+3374970,,2024-11-24T01:30:00-05:00,PHI,12.5,standard,Single Stat,202,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T08:21:26-05:00,11,7,216775,2,243
+3374924,,2024-11-24T01:30:00-05:00,PHI,13.0,standard,Single Stat,202,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:12:28-05:00,11,7,216775,2,106
+3374556,,2024-11-24T01:30:00-05:00,PHI,9.0,standard,Single Stat,202,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T12:04:25-05:00,11,7,216775,2,19
+3374996,,2024-11-24T01:30:00-05:00,PHI,10.0,standard,Single Stat,202,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:45:41-05:00,11,7,216775,2,244
+3376612,,2024-11-22T18:00:00-05:00,LAC,23.5,standard,Fantasy Score,203,2024-11-24T18:00:00-05:00,Fantasy Score,pre_game,True,2024-11-24T15:59:24-05:00,11,7,217358,1,14
+3374925,,2024-11-22T18:00:00-05:00,LAC,18.5,standard,Single Stat,203,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:46:37-05:00,11,7,217358,2,106
+3374997,,2024-11-22T18:00:00-05:00,LAC,12.0,standard,Single Stat,203,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:46:37-05:00,11,7,217358,2,244
+3374971,,2024-11-22T18:00:00-05:00,LAC,16.5,standard,Single Stat,203,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:46:37-05:00,11,7,217358,2,243
+3375044,,2024-11-22T18:00:00-05:00,LAC,8.5,standard,Single Stat,203,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T13:46:36-05:00,11,7,217358,2,245
+3375079,,2024-11-22T18:00:00-05:00,LAC,1.5,standard,Single Stat,203,2024-11-24T18:10:00-05:00,Blks+Stls,pre_game,True,2024-11-24T13:46:36-05:00,11,7,217358,2,105
+3374557,,2024-11-22T18:00:00-05:00,LAC,10.0,standard,Single Stat,203,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:46:37-05:00,11,7,217358,2,19
+3376613,,2024-11-22T18:00:00-05:00,PHI,36.0,standard,Fantasy Score,204,2024-11-24T18:00:00-05:00,Fantasy Score,pre_game,True,2024-11-24T16:00:00-05:00,11,7,3828,1,14
+3376620,,2024-11-22T18:00:00-05:00,PHI,10.5,standard,Single Stat,204,2024-11-24T18:00:00-05:00,FG Attempted,pre_game,True,2024-11-24T16:06:23-05:00,11,7,3828,2,386
+3375076,,2024-11-24T01:30:00-05:00,PHI,0.5,standard,Single Stat,204,2024-11-24T18:10:00-05:00,Steals,pre_game,True,2024-11-24T08:17:39-05:00,11,7,3828,2,23
+3374926,,2024-11-24T01:30:00-05:00,PHI,29.5,standard,Single Stat,204,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:36:19-05:00,11,7,3828,2,106
+3375045,,2024-11-24T01:30:00-05:00,PHI,13.0,standard,Single Stat,204,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T08:19:00-05:00,11,7,3828,2,245
+3374998,,2024-11-24T01:30:00-05:00,PHI,17.5,standard,Single Stat,204,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T11:36:23-05:00,11,7,3828,2,244
+3374810,,2024-11-24T01:30:00-05:00,PHI,11.5,standard,Single Stat,204,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T01:31:49-05:00,11,7,3828,2,22
+3374558,,2024-11-24T01:30:00-05:00,PHI,15.5,standard,Single Stat,204,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T05:09:42-05:00,11,7,3828,2,19
+3374972,,2024-11-24T01:30:00-05:00,PHI,27.5,standard,Single Stat,204,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T11:36:12-05:00,11,7,3828,2,243
+3376614,,2024-11-22T18:00:00-05:00,LAC,34.0,standard,Fantasy Score,205,2024-11-24T18:00:00-05:00,Fantasy Score,pre_game,True,2024-11-24T15:58:50-05:00,11,7,219047,1,14
+3376621,,2024-11-22T18:00:00-05:00,LAC,15.5,standard,Single Stat,205,2024-11-24T18:00:00-05:00,FG Attempted,pre_game,True,2024-11-24T16:07:27-05:00,11,7,219047,2,386
+3375046,,2024-11-22T18:00:00-05:00,LAC,8.5,standard,Single Stat,205,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T13:46:37-05:00,11,7,219047,2,245
+3374874,,2024-11-22T18:00:00-05:00,LAC,4.5,standard,Single Stat,205,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:46:37-05:00,11,7,219047,2,20
+3374559,,2024-11-22T18:00:00-05:00,LAC,20.5,standard,Single Stat,205,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T15:48:02-05:00,11,7,219047,2,19
+3374973,,2024-11-22T18:00:00-05:00,LAC,24.5,standard,Single Stat,205,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T15:41:56-05:00,11,7,219047,2,243
+3374927,,2024-11-22T18:00:00-05:00,LAC,29.5,standard,Single Stat,205,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:46:37-05:00,11,7,219047,2,106
+3374999,,2024-11-22T18:00:00-05:00,LAC,25.5,standard,Single Stat,205,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:46:37-05:00,11,7,219047,2,244
+3376615,,2024-11-22T18:00:00-05:00,PHI,45.0,standard,Fantasy Score,206,2024-11-24T18:00:00-05:00,Fantasy Score,pre_game,True,2024-11-24T15:55:43-05:00,11,7,175245,1,14
+3376622,,2024-11-22T18:00:00-05:00,PHI,17.5,standard,Single Stat,206,2024-11-24T18:00:00-05:00,FG Attempted,pre_game,True,2024-11-24T16:06:02-05:00,11,7,175245,2,386
+3376627,,2024-11-22T18:00:00-05:00,PHI,8.5,standard,Single Stat,206,2024-11-24T18:00:00-05:00,3-PT Attempted,pre_game,True,2024-11-24T16:03:57-05:00,11,7,175245,2,392
+3374928,,2024-11-24T01:30:00-05:00,PHI,39.0,standard,Single Stat,206,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T10:56:53-05:00,11,7,175245,2,106
+3374875,,2024-11-24T01:30:00-05:00,PHI,8.0,standard,Single Stat,206,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T14:28:36-05:00,11,7,175245,2,20
+3374812,,2024-11-24T01:30:00-05:00,PHI,6.0,standard,Single Stat,206,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T07:55:39-05:00,11,7,175245,2,22
+3374560,,2024-11-24T01:30:00-05:00,PHI,24.0,standard,Single Stat,206,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T11:18:16-05:00,11,7,175245,2,19
+3375000,,2024-11-24T01:30:00-05:00,PHI,32.5,standard,Single Stat,206,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T10:47:26-05:00,11,7,175245,2,244
+3375047,,2024-11-24T01:30:00-05:00,PHI,14.5,standard,Single Stat,206,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T08:20:00-05:00,11,7,175245,2,245
+3374974,,2024-11-24T01:30:00-05:00,PHI,30.5,standard,Single Stat,206,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T01:31:33-05:00,11,7,175245,2,243
+3376623,,2024-11-22T18:00:00-05:00,LAC,10.5,standard,Single Stat,207,2024-11-24T18:00:00-05:00,FG Attempted,pre_game,True,2024-11-24T16:10:00-05:00,11,7,174595,2,386
+3376616,,2024-11-22T18:00:00-05:00,LAC,25.5,standard,Fantasy Score,207,2024-11-24T18:00:00-05:00,Fantasy Score,pre_game,True,2024-11-24T15:59:24-05:00,11,7,174595,1,14
+3375048,,2024-11-22T18:00:00-05:00,LAC,6.5,standard,Single Stat,207,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T13:46:37-05:00,11,7,174595,2,245
+3374975,,2024-11-22T18:00:00-05:00,LAC,19.0,standard,Single Stat,207,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T14:25:49-05:00,11,7,174595,2,243
+3374813,,2024-11-22T18:00:00-05:00,LAC,5.0,standard,Single Stat,207,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:46:37-05:00,11,7,174595,2,22
+3375001,,2024-11-22T18:00:00-05:00,LAC,15.0,standard,Single Stat,207,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T14:28:50-05:00,11,7,174595,2,244
+3374561,,2024-11-22T18:00:00-05:00,LAC,13.5,standard,Single Stat,207,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T14:29:03-05:00,11,7,174595,2,19
+3374929,,2024-11-22T18:00:00-05:00,LAC,20.5,standard,Single Stat,207,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T14:29:26-05:00,11,7,174595,2,106
+3375002,,2024-11-24T01:30:00-05:00,PHI,15.5,standard,Single Stat,208,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T11:39:52-05:00,11,7,217118,2,244
+3375049,,2024-11-24T01:30:00-05:00,PHI,6.0,standard,Single Stat,208,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T08:01:05-05:00,11,7,217118,2,245
+3374562,,2024-11-24T01:30:00-05:00,PHI,12.5,standard,Single Stat,208,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:32:19-05:00,11,7,217118,2,19
+3374930,,2024-11-24T01:30:00-05:00,PHI,18.5,standard,Single Stat,208,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T02:55:32-05:00,11,7,217118,2,106
+3374976,,2024-11-24T01:30:00-05:00,PHI,15.5,standard,Single Stat,208,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T10:44:33-05:00,11,7,217118,2,243
+3376617,,2024-11-22T18:00:00-05:00,LAC,34.5,standard,Fantasy Score,209,2024-11-24T18:00:00-05:00,Fantasy Score,pre_game,True,2024-11-24T15:59:59-05:00,11,7,188005,1,14
+3376624,,2024-11-22T18:00:00-05:00,LAC,17.5,standard,Single Stat,209,2024-11-24T18:00:00-05:00,FG Attempted,pre_game,True,2024-11-24T16:08:36-05:00,11,7,188005,2,386
+3374977,,2024-11-22T18:00:00-05:00,LAC,25.0,standard,Single Stat,209,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:46:38-05:00,11,7,188005,2,243
+3374931,,2024-11-22T18:00:00-05:00,LAC,30.0,standard,Single Stat,209,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:46:38-05:00,11,7,188005,2,106
+3375003,,2024-11-22T18:00:00-05:00,LAC,27.0,standard,Single Stat,209,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:46:38-05:00,11,7,188005,2,244
+3374563,,2024-11-22T18:00:00-05:00,LAC,21.5,standard,Single Stat,209,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:46:38-05:00,11,7,188005,2,19
+3375050,,2024-11-22T18:00:00-05:00,LAC,8.0,standard,Single Stat,209,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T13:46:38-05:00,11,7,188005,2,245
+3375051,,2024-11-24T01:30:00-05:00,PHI,7.5,standard,Single Stat,210,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T08:23:21-05:00,11,7,217539,2,245
+3375004,,2024-11-24T01:30:00-05:00,PHI,12.5,standard,Single Stat,210,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T08:43:12-05:00,11,7,217539,2,244
+3374932,,2024-11-24T01:30:00-05:00,PHI,16.5,standard,Single Stat,210,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:14:56-05:00,11,7,217539,2,106
+3374879,,2024-11-24T01:30:00-05:00,PHI,3.5,standard,Single Stat,210,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T08:43:53-05:00,11,7,217539,2,20
+3374564,,2024-11-24T01:30:00-05:00,PHI,8.5,standard,Single Stat,210,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T08:22:57-05:00,11,7,217539,2,19
+3374978,,2024-11-24T01:30:00-05:00,PHI,12.5,standard,Single Stat,210,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T08:23:08-05:00,11,7,217539,2,243
+3376482,,2024-11-22T18:00:00-05:00,LAC,6.5,standard,Single Stat,211,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:47:58-05:00,11,7,220234,2,19
+3375005,,2024-11-24T01:30:00-05:00,PHI,5.5,standard,Single Stat,212,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T01:46:27-05:00,11,7,25200,2,244
+3374979,,2024-11-24T01:30:00-05:00,PHI,7.5,standard,Single Stat,212,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T01:40:26-05:00,11,7,25200,2,243
+3374565,,2024-11-24T01:30:00-05:00,PHI,4.5,standard,Single Stat,212,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T01:31:40-05:00,11,7,25200,2,19
+3374933,,2024-11-24T01:30:00-05:00,PHI,8.5,standard,Single Stat,212,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T01:32:07-05:00,11,7,25200,2,106
+3376625,,2024-11-22T18:00:00-05:00,LAC,5.5,standard,Single Stat,214,2024-11-24T18:00:00-05:00,FG Attempted,pre_game,True,2024-11-24T16:08:06-05:00,11,7,87376,2,386
+3374980,,2024-11-24T01:30:00-05:00,PHI,8.5,standard,Single Stat,214,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T08:18:20-05:00,11,7,10765,2,243
+3374818,,2024-11-24T01:30:00-05:00,PHI,2.5,standard,Single Stat,214,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T14:07:57-05:00,11,7,10765,2,22
+3374566,,2024-11-24T01:30:00-05:00,PHI,5.5,standard,Single Stat,214,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T08:18:02-05:00,11,7,10765,2,19
+3374890,,2024-11-24T01:30:00-05:00,PHI,0.5,standard,Single Stat,214,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T08:17:54-05:00,11,7,10765,2,31
+3375082,,2024-11-24T01:30:00-05:00,PHI,0.5,standard,Single Stat,214,2024-11-24T18:10:00-05:00,Turnovers,pre_game,True,2024-11-24T11:42:47-05:00,11,7,10765,2,24
+3375006,,2024-11-24T01:30:00-05:00,PHI,7.0,standard,Single Stat,214,2024-11-24T18:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T09:47:57-05:00,11,7,10765,2,244
+3374934,,2024-11-24T01:30:00-05:00,PHI,9.5,standard,Single Stat,214,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T08:18:27-05:00,11,7,10765,2,106
+3375053,,2024-11-24T01:30:00-05:00,PHI,3.5,standard,Single Stat,214,2024-11-24T18:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T01:31:50-05:00,11,7,10765,2,245
+3376431,,2024-11-22T18:00:00-05:00,LAC,7.5,standard,Single Stat,216,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:46:38-05:00,11,7,87376,2,19
+3376432,,2024-11-22T18:00:00-05:00,LAC,16.0,standard,Single Stat,216,2024-11-24T18:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:46:38-05:00,11,7,87376,2,243
+3376433,,2024-11-22T18:00:00-05:00,LAC,8.5,standard,Single Stat,216,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:46:38-05:00,11,7,87376,2,22
+3375843,True,2024-11-22T18:00:00-05:00,MIA,3.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T16:12:21-05:00,11,7,96236,2,31
+3375872,True,2024-11-21T18:00:00-05:00,DAL,22.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:04:16-05:00,11,7,1646,2,19
+3375876,True,2024-11-21T18:00:00-05:00,DAL,4.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:04:16-05:00,11,7,1646,2,20
+3375868,True,2024-11-21T18:00:00-05:00,DAL,1.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Steals,pre_game,True,2024-11-24T13:04:16-05:00,11,7,1646,2,23
+3375875,True,2024-11-21T18:00:00-05:00,DAL,0.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Blocked Shots,pre_game,True,2024-11-24T13:04:16-05:00,11,7,1646,2,21
+3375865,True,2024-11-22T18:00:00-05:00,MIA,4.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:37-05:00,11,7,174345,2,19
+3375866,True,2024-11-22T18:00:00-05:00,MIA,2.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:37-05:00,11,7,174345,2,20
+3375863,True,2024-11-22T18:00:00-05:00,MIA,6.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:39-05:00,11,7,174345,2,22
+3375862,True,2024-11-22T18:00:00-05:00,MIA,9.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:33:28-05:00,11,7,174345,2,22
+3375864,True,2024-11-22T18:00:00-05:00,MIA,12.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T15:03:13-05:00,11,7,174345,2,19
+3375867,True,2024-11-22T18:00:00-05:00,MIA,1.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T15:13:56-05:00,11,7,174345,2,20
+3375855,True,2024-11-21T18:00:00-05:00,DAL,1.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Steals,pre_game,True,2024-11-24T13:04:15-05:00,11,7,1654,2,23
+3375877,True,2024-11-21T18:00:00-05:00,DAL,2.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:04:15-05:00,11,7,1646,2,20
+3375820,True,2024-11-21T18:00:00-05:00,DAL,29.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T16:12:00-05:00,11,7,10776,2,106
+3375821,True,2024-11-21T18:00:00-05:00,DAL,24.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T16:11:59-05:00,11,7,10776,2,19
+3375860,True,2024-11-24T10:45:00-05:00,DAL,3.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T15:26:36-05:00,11,7,1654,2,20
+3375857,True,2024-11-21T18:00:00-05:00,DAL,23.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T16:08:21-05:00,11,7,1654,2,19
+3375858,True,2024-11-21T18:00:00-05:00,DAL,12.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T16:08:21-05:00,11,7,1654,2,19
+3375842,True,2024-11-22T18:00:00-05:00,MIA,5.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:40-05:00,11,7,96236,2,20
+3375819,True,2024-11-21T18:00:00-05:00,DAL,39.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T16:15:41-05:00,11,7,10776,2,106
+3375826,True,2024-11-21T18:00:00-05:00,DAL,2.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T16:12:00-05:00,11,7,10776,2,31
+3375827,True,2024-11-22T18:00:00-05:00,MIA,9.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:38-05:00,11,7,187519,2,22
+3375829,True,2024-11-22T18:00:00-05:00,MIA,19.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:39-05:00,11,7,187519,2,19
+3375828,True,2024-11-22T18:00:00-05:00,MIA,6.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:39-05:00,11,7,187519,2,22
+3375818,True,2024-11-21T18:00:00-05:00,DAL,3.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T16:02:49-05:00,11,7,10776,2,22
+3375822,True,2024-11-21T18:00:00-05:00,DAL,15.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T16:08:20-05:00,11,7,10776,2,19
+3375817,True,2024-11-21T18:00:00-05:00,DAL,6.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T16:12:00-05:00,11,7,10776,2,22
+3375824,True,2024-11-21T18:00:00-05:00,DAL,3.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T16:12:00-05:00,11,7,10776,2,20
+3375823,True,2024-11-21T18:00:00-05:00,DAL,6.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T16:12:00-05:00,11,7,10776,2,20
+3375825,True,2024-11-21T18:00:00-05:00,DAL,4.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T16:12:01-05:00,11,7,10776,2,31
+3375836,True,2024-11-22T18:00:00-05:00,MIA,3.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:38-05:00,11,7,96236,2,22
+3375846,True,2024-11-22T18:00:00-05:00,MIA,2.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:38-05:00,11,7,216784,2,22
+3375845,True,2024-11-22T18:00:00-05:00,MIA,4.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:38-05:00,11,7,216784,2,22
+3375840,True,2024-11-22T18:00:00-05:00,MIA,19.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:38-05:00,11,7,96236,2,19
+3375847,True,2024-11-22T18:00:00-05:00,MIA,24.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:09:38-05:00,11,7,216784,2,106
+3375849,True,2024-11-22T18:00:00-05:00,MIA,19.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:38-05:00,11,7,216784,2,19
+3375839,True,2024-11-22T18:00:00-05:00,MIA,29.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:38-05:00,11,7,96236,2,19
+3375850,True,2024-11-22T18:00:00-05:00,MIA,10.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:38-05:00,11,7,216784,2,19
+3375851,True,2024-11-22T18:00:00-05:00,MIA,2.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:39-05:00,11,7,216784,2,20
+3375831,True,2024-11-22T18:00:00-05:00,MIA,2.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:39-05:00,11,7,187519,2,20
+3375844,True,2024-11-22T18:00:00-05:00,MIA,1.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:09:39-05:00,11,7,96236,2,31
+3375852,True,2024-11-22T18:00:00-05:00,MIA,0.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:39-05:00,11,7,216784,2,20
+3375854,True,2024-11-22T18:00:00-05:00,MIA,2.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:09:39-05:00,11,7,216784,2,31
+3375835,True,2024-11-22T18:00:00-05:00,MIA,5.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Rebounds,pre_game,True,2024-11-24T13:09:39-05:00,11,7,96236,2,22
+3375853,True,2024-11-22T18:00:00-05:00,MIA,3.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:09:39-05:00,11,7,216784,2,31
+3375833,True,2024-11-22T18:00:00-05:00,MIA,2.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:09:40-05:00,11,7,187519,2,31
+3375832,True,2024-11-22T18:00:00-05:00,MIA,1.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T13:09:40-05:00,11,7,187519,2,20
+3375848,True,2024-11-22T18:00:00-05:00,MIA,15.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:09:40-05:00,11,7,216784,2,106
+3375837,True,2024-11-22T18:00:00-05:00,MIA,44.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:09:40-05:00,11,7,96236,2,106
+3375830,True,2024-11-22T18:00:00-05:00,MIA,10.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Points,pre_game,True,2024-11-24T13:09:40-05:00,11,7,187519,2,19
+3375834,True,2024-11-22T18:00:00-05:00,MIA,1.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T13:09:40-05:00,11,7,187519,2,31
+3375841,True,2024-11-22T18:00:00-05:00,MIA,9.5,demon,Single Stat,225,2024-11-24T18:10:00-05:00,Assists,pre_game,True,2024-11-24T14:02:57-05:00,11,7,96236,2,20
+3375838,True,2024-11-22T18:00:00-05:00,MIA,32.5,goblin,Single Stat,225,2024-11-24T18:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T15:26:36-05:00,11,7,96236,2,106
+3374519,,2024-11-23T19:30:00-05:00,TOR,34.0,standard,Single Stat,250,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:08:19-05:00,11,7,188006,2,106
+3374860,,2024-11-23T19:30:00-05:00,TOR,8.5,standard,Single Stat,250,2024-11-24T19:40:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T08:48:51-05:00,11,7,188006,2,245
+3374430,,2024-11-23T19:30:00-05:00,TOR,25.5,standard,Single Stat,250,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:11:31-05:00,11,7,188006,2,19
+3374492,,2024-11-23T19:30:00-05:00,TOR,3.5,standard,Single Stat,250,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:11:31-05:00,11,7,188006,2,31
+3374826,,2024-11-23T19:30:00-05:00,TOR,29.5,standard,Single Stat,250,2024-11-24T19:40:00-05:00,Pts+Asts,pre_game,True,2024-11-24T16:23:17-05:00,11,7,188006,2,244
+3374797,,2024-11-23T19:30:00-05:00,TOR,30.0,standard,Single Stat,250,2024-11-24T19:40:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T15:44:10-05:00,11,7,188006,2,243
+3374827,,2024-11-23T19:30:00-05:00,CLE,27.5,standard,Single Stat,251,2024-11-24T19:40:00-05:00,Pts+Asts,pre_game,True,2024-11-24T09:23:53-05:00,11,7,183185,2,244
+3374520,,2024-11-23T19:30:00-05:00,CLE,33.5,standard,Single Stat,251,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T09:20:42-05:00,11,7,183185,2,106
+3374485,,2024-11-23T19:30:00-05:00,CLE,5.0,standard,Single Stat,251,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T08:50:21-05:00,11,7,183185,2,20
+3374798,,2024-11-23T19:30:00-05:00,CLE,28.0,standard,Single Stat,251,2024-11-24T19:40:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:08:00-05:00,11,7,183185,2,243
+3374861,,2024-11-23T19:30:00-05:00,CLE,11.0,standard,Single Stat,251,2024-11-24T19:40:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T08:51:31-05:00,11,7,183185,2,245
+3374431,,2024-11-23T19:30:00-05:00,CLE,22.0,standard,Single Stat,251,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T13:05:54-05:00,11,7,183185,2,19
+3374891,,2024-11-23T19:30:00-05:00,CLE,3.5,standard,Single Stat,251,2024-11-24T19:40:00-05:00,Turnovers,pre_game,True,2024-11-24T08:52:31-05:00,11,7,183185,2,24
+3374474,,2024-11-23T19:30:00-05:00,TOR,2.5,standard,Single Stat,252,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T16:14:26-05:00,11,7,59275,2,22
+3374862,,2024-11-23T19:30:00-05:00,TOR,9.0,standard,Single Stat,252,2024-11-24T19:40:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T15:57:59-05:00,11,7,59275,2,245
+3374521,,2024-11-23T19:30:00-05:00,TOR,29.5,standard,Single Stat,252,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T16:16:11-05:00,11,7,59275,2,106
+3374799,,2024-11-23T19:30:00-05:00,TOR,23.0,standard,Single Stat,252,2024-11-24T19:40:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T15:44:46-05:00,11,7,59275,2,243
+3374486,,2024-11-23T19:30:00-05:00,TOR,6.5,standard,Single Stat,252,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T15:43:30-05:00,11,7,59275,2,20
+3374892,,2024-11-23T19:30:00-05:00,TOR,2.5,standard,Single Stat,252,2024-11-24T19:40:00-05:00,Turnovers,pre_game,True,2024-11-24T15:40:44-05:00,11,7,59275,2,24
+3374828,,2024-11-23T19:30:00-05:00,TOR,26.5,standard,Single Stat,252,2024-11-24T19:40:00-05:00,Pts+Asts,pre_game,True,2024-11-24T15:46:50-05:00,11,7,59275,2,244
+3374522,,2024-11-23T19:30:00-05:00,CLE,29.0,standard,Single Stat,253,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:20:59-05:00,11,7,188002,2,106
+3374863,,2024-11-23T19:30:00-05:00,CLE,11.5,standard,Single Stat,253,2024-11-24T19:40:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T08:53:19-05:00,11,7,188002,2,245
+3374800,,2024-11-23T19:30:00-05:00,CLE,23.0,standard,Single Stat,253,2024-11-24T19:40:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:03:44-05:00,11,7,188002,2,243
+3374433,,2024-11-23T19:30:00-05:00,CLE,17.0,standard,Single Stat,253,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T13:19:08-05:00,11,7,188002,2,19
+3374475,,2024-11-23T19:30:00-05:00,CLE,6.0,standard,Single Stat,253,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T08:50:44-05:00,11,7,188002,2,22
+3374829,,2024-11-23T19:30:00-05:00,CLE,23.0,standard,Single Stat,253,2024-11-24T19:40:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:36:02-05:00,11,7,188002,2,244
+3374487,,2024-11-23T19:30:00-05:00,CLE,5.5,standard,Single Stat,253,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:25:31-05:00,11,7,188002,2,20
+3374801,,2024-11-23T19:30:00-05:00,TOR,26.5,standard,Single Stat,254,2024-11-24T19:40:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T08:48:42-05:00,11,7,53979,2,243
+3374523,,2024-11-23T19:30:00-05:00,TOR,29.5,standard,Single Stat,254,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T08:51:13-05:00,11,7,53979,2,106
+3374830,,2024-11-23T19:30:00-05:00,TOR,20.5,standard,Single Stat,254,2024-11-24T19:40:00-05:00,Pts+Asts,pre_game,True,2024-11-24T14:31:30-05:00,11,7,53979,2,244
+3374494,,2024-11-23T19:30:00-05:00,TOR,0.5,standard,Single Stat,254,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T08:48:43-05:00,11,7,53979,2,31
+3374864,,2024-11-23T19:30:00-05:00,TOR,11.5,standard,Single Stat,254,2024-11-24T19:40:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T08:58:02-05:00,11,7,53979,2,245
+3374434,,2024-11-23T19:30:00-05:00,TOR,17.5,standard,Single Stat,254,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:14:01-05:00,11,7,53979,2,19
+3374476,,2024-11-23T19:30:00-05:00,TOR,9.0,standard,Single Stat,254,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T12:28:29-05:00,11,7,53979,2,22
+3374831,,2024-11-23T19:30:00-05:00,CLE,16.5,standard,Single Stat,255,2024-11-24T19:40:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:26:47-05:00,11,7,96540,2,244
+3374435,,2024-11-23T19:30:00-05:00,CLE,14.5,standard,Single Stat,255,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T08:48:15-05:00,11,7,96540,2,19
+3374477,,2024-11-23T19:30:00-05:00,CLE,10.0,standard,Single Stat,255,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T12:03:12-05:00,11,7,96540,2,22
+3374865,,2024-11-23T19:30:00-05:00,CLE,12.5,standard,Single Stat,255,2024-11-24T19:40:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T08:55:47-05:00,11,7,96540,2,245
+3374532,,2024-11-23T19:30:00-05:00,CLE,27.5,standard,Single Stat,255,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:23:37-05:00,11,7,96540,2,106
+3374802,,2024-11-23T19:30:00-05:00,CLE,25.0,standard,Single Stat,255,2024-11-24T19:40:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T08:56:32-05:00,11,7,96540,2,243
+3374436,,2024-11-23T19:30:00-05:00,TOR,15.0,standard,Single Stat,256,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T13:04:50-05:00,11,7,26792,2,19
+3374533,,2024-11-23T19:30:00-05:00,TOR,28.0,standard,Single Stat,256,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T12:37:57-05:00,11,7,26792,2,106
+3374803,,2024-11-23T19:30:00-05:00,TOR,26.5,standard,Single Stat,256,2024-11-24T19:40:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T10:29:39-05:00,11,7,26792,2,243
+3374478,,2024-11-23T19:30:00-05:00,TOR,11.0,standard,Single Stat,256,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T12:38:09-05:00,11,7,26792,2,22
+3374832,,2024-11-23T19:30:00-05:00,TOR,17.0,standard,Single Stat,256,2024-11-24T19:40:00-05:00,Pts+Asts,pre_game,True,2024-11-24T14:02:30-05:00,11,7,26792,2,244
+3374866,,2024-11-23T19:30:00-05:00,TOR,12.5,standard,Single Stat,256,2024-11-24T19:40:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T12:36:16-05:00,11,7,26792,2,245
+3374893,,2024-11-23T19:30:00-05:00,CLE,1.5,standard,Single Stat,257,2024-11-24T19:40:00-05:00,Turnovers,pre_game,True,2024-11-24T08:48:32-05:00,11,7,177505,2,24
+3374437,,2024-11-23T19:30:00-05:00,CLE,15.0,standard,Single Stat,257,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T12:54:46-05:00,11,7,177505,2,19
+3374833,,2024-11-23T19:30:00-05:00,CLE,17.5,standard,Single Stat,257,2024-11-24T19:40:00-05:00,Pts+Asts,pre_game,True,2024-11-24T11:20:30-05:00,11,7,177505,2,244
+3374479,,2024-11-23T19:30:00-05:00,CLE,2.5,standard,Single Stat,257,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T12:40:30-05:00,11,7,177505,2,22
+3374534,,2024-11-23T19:30:00-05:00,CLE,20.0,standard,Single Stat,257,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:19:55-05:00,11,7,177505,2,106
+3374804,,2024-11-23T19:30:00-05:00,CLE,17.5,standard,Single Stat,257,2024-11-24T19:40:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T11:19:32-05:00,11,7,177505,2,243
+3374868,,2024-11-23T19:30:00-05:00,CLE,6.0,standard,Single Stat,258,2024-11-24T19:40:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T08:59:12-05:00,11,7,188601,2,245
+3374438,,2024-11-23T19:30:00-05:00,CLE,9.5,standard,Single Stat,259,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T12:04:07-05:00,11,7,188601,2,19
+3374867,,2024-11-23T19:30:00-05:00,CLE,5.0,standard,Single Stat,259,2024-11-24T19:40:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T08:49:10-05:00,11,7,177505,2,245
+3374805,,2024-11-23T19:30:00-05:00,CLE,13.0,standard,Single Stat,259,2024-11-24T19:40:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T13:30:48-05:00,11,7,188601,2,243
+3374535,,2024-11-23T19:30:00-05:00,CLE,15.5,standard,Single Stat,259,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:30:48-05:00,11,7,188601,2,106
+3374834,,2024-11-23T19:30:00-05:00,CLE,12.0,standard,Single Stat,259,2024-11-24T19:40:00-05:00,Pts+Asts,pre_game,True,2024-11-24T12:03:52-05:00,11,7,188601,2,244
+3375937,True,2024-11-24T11:05:00-05:00,CLE,16.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:07:54-05:00,11,7,183185,2,19
+3375927,True,2024-11-24T11:05:00-05:00,CLE,12.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:07:19-05:00,11,7,188002,2,19
+3375930,True,2024-11-24T11:05:00-05:00,CLE,1.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:08:23-05:00,11,7,188002,2,31
+3375925,True,2024-11-24T11:05:00-05:00,CLE,4.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:08:45-05:00,11,7,188002,2,22
+3375924,True,2024-11-24T11:05:00-05:00,CLE,7.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:09:07-05:00,11,7,188002,2,22
+3375929,True,2024-11-24T11:05:00-05:00,CLE,4.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:14:11-05:00,11,7,188002,2,20
+3375926,True,2024-11-24T11:05:00-05:00,CLE,23.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:17:00-05:00,11,7,188002,2,19
+3375928,True,2024-11-24T11:05:00-05:00,CLE,7.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:33:59-05:00,11,7,188002,2,20
+3375940,True,2024-11-24T11:05:00-05:00,CLE,2.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:08:11-05:00,11,7,183185,2,31
+3375933,True,2024-11-24T11:05:00-05:00,CLE,4.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:09:05-05:00,11,7,183185,2,22
+3375931,True,2024-11-24T11:05:00-05:00,CLE,0.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:09:09-05:00,11,7,188002,2,31
+3375941,True,2024-11-24T11:05:00-05:00,CLE,0.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:09:27-05:00,11,7,183185,2,31
+3375932,True,2024-11-24T11:05:00-05:00,CLE,7.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:09:40-05:00,11,7,183185,2,22
+3375935,True,2024-11-24T11:05:00-05:00,CLE,28.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:18:43-05:00,11,7,183185,2,106
+3375938,True,2024-11-24T11:05:00-05:00,CLE,7.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:27:54-05:00,11,7,183185,2,20
+3375942,True,2024-11-24T11:05:00-05:00,CLE,5.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:33:48-05:00,11,7,188601,2,22
+3375939,True,2024-11-24T11:05:00-05:00,CLE,3.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:56:31-05:00,11,7,183185,2,20
+3375966,True,2024-11-24T11:05:00-05:00,CLE,2.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:07:20-05:00,11,7,177505,2,20
+3375953,True,2024-11-24T11:05:00-05:00,TOR,10.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:08:27-05:00,11,7,26792,2,19
+3375948,True,2024-11-24T11:05:00-05:00,CLE,1.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:08:30-05:00,11,7,188601,2,31
+3375957,True,2024-11-24T11:05:00-05:00,CLE,7.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:09:34-05:00,11,7,96540,2,22
+3375943,True,2024-11-24T11:05:00-05:00,CLE,2.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:10:30-05:00,11,7,188601,2,22
+3375947,True,2024-11-24T11:05:00-05:00,CLE,1.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:10:35-05:00,11,7,188601,2,20
+3375958,True,2024-11-24T11:05:00-05:00,CLE,20.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:12:23-05:00,11,7,96540,2,19
+3375963,True,2024-11-24T11:05:00-05:00,CLE,1.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:12:33-05:00,11,7,177505,2,22
+3375950,True,2024-11-24T11:05:00-05:00,TOR,13.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:12:36-05:00,11,7,26792,2,22
+3375949,True,2024-11-24T11:05:00-05:00,CLE,0.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:12:52-05:00,11,7,188601,2,31
+3375955,True,2024-11-24T11:05:00-05:00,TOR,1.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:13:07-05:00,11,7,26792,2,20
+3375968,True,2024-11-24T11:05:00-05:00,CLE,2.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:13:29-05:00,11,7,177505,2,31
+3375954,True,2024-11-24T11:05:00-05:00,TOR,2.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:13:38-05:00,11,7,26792,2,20
+3375961,True,2024-11-24T11:05:00-05:00,CLE,1.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:14:18-05:00,11,7,96540,2,20
+3375952,True,2024-11-24T11:05:00-05:00,TOR,19.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:14:26-05:00,11,7,26792,2,19
+3375967,True,2024-11-24T11:05:00-05:00,CLE,1.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:14:41-05:00,11,7,177505,2,20
+3375946,True,2024-11-24T11:05:00-05:00,CLE,2.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:16:53-05:00,11,7,188601,2,20
+3375956,True,2024-11-24T11:05:00-05:00,CLE,12.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:17:54-05:00,11,7,96540,2,22
+3375969,True,2024-11-24T11:05:00-05:00,CLE,1.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:17:55-05:00,11,7,177505,2,31
+3375965,True,2024-11-24T11:05:00-05:00,CLE,10.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:19:55-05:00,11,7,177505,2,19
+3375964,True,2024-11-24T11:05:00-05:00,CLE,19.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:20:23-05:00,11,7,177505,2,19
+3375944,True,2024-11-24T11:05:00-05:00,CLE,14.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:35:26-05:00,11,7,188601,2,19
+3375960,True,2024-11-24T11:05:00-05:00,CLE,3.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:46:34-05:00,11,7,96540,2,20
+3375970,True,2024-11-24T11:05:00-05:00,TOR,11.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:51:37-05:00,11,7,53979,2,22
+3375959,True,2024-11-24T11:05:00-05:00,CLE,10.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T15:50:50-05:00,11,7,96540,2,19
+3375978,True,2024-11-24T11:05:00-05:00,TOR,5.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:06:35-05:00,11,7,188006,2,22
+3375994,True,2024-11-24T11:05:00-05:00,TOR,3.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:07:45-05:00,11,7,59275,2,31
+3375983,True,2024-11-24T11:05:00-05:00,TOR,21.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:08:21-05:00,11,7,188006,2,19
+3375986,True,2024-11-24T11:05:00-05:00,TOR,4.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:08:28-05:00,11,7,188006,2,31
+3375972,True,2024-11-24T11:05:00-05:00,TOR,31.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:09:07-05:00,11,7,53979,2,106
+3375979,True,2024-11-24T11:05:00-05:00,TOR,2.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:10:30-05:00,11,7,188006,2,22
+3375973,True,2024-11-24T11:05:00-05:00,TOR,25.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:11:03-05:00,11,7,53979,2,106
+3375971,True,2024-11-24T11:05:00-05:00,TOR,6.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:12:33-05:00,11,7,53979,2,22
+3375985,True,2024-11-24T11:05:00-05:00,TOR,3.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:12:56-05:00,11,7,188006,2,20
+3375988,True,2024-11-24T11:05:00-05:00,TOR,3.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:13:19-05:00,11,7,59275,2,22
+3375981,True,2024-11-24T11:05:00-05:00,TOR,30.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:13:29-05:00,11,7,188006,2,106
+3375987,True,2024-11-24T11:05:00-05:00,TOR,2.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:17:50-05:00,11,7,188006,2,31
+3375995,True,2024-11-24T11:05:00-05:00,TOR,1.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:17:57-05:00,11,7,59275,2,31
+3375984,True,2024-11-24T11:05:00-05:00,TOR,5.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:24:46-05:00,11,7,188006,2,20
+3375992,True,2024-11-24T11:05:00-05:00,TOR,24.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:27:35-05:00,11,7,59275,2,19
+3375977,True,2024-11-24T11:05:00-05:00,TOR,1.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:37:01-05:00,11,7,53979,2,20
+3375976,True,2024-11-24T11:05:00-05:00,TOR,3.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Assists,pre_game,True,2024-11-24T11:54:00-05:00,11,7,53979,2,20
+3375982,True,2024-11-24T11:05:00-05:00,TOR,32.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T15:40:38-05:00,11,7,188006,2,19
+3375991,True,2024-11-24T11:05:00-05:00,TOR,27.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T15:41:36-05:00,11,7,59275,2,106
+3375990,True,2024-11-24T11:05:00-05:00,TOR,33.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T15:41:36-05:00,11,7,59275,2,106
+3375993,True,2024-11-24T11:05:00-05:00,TOR,16.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T15:48:22-05:00,11,7,59275,2,19
+3375989,True,2024-11-24T11:05:00-05:00,TOR,1.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T16:14:19-05:00,11,7,59275,2,22
+3375975,True,2024-11-24T11:05:00-05:00,TOR,12.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:06:30-05:00,11,7,53979,2,19
+3375962,True,2024-11-24T11:05:00-05:00,CLE,3.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:06:35-05:00,11,7,177505,2,22
+3375936,True,2024-11-24T11:05:00-05:00,CLE,24.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:07:12-05:00,11,7,183185,2,19
+3375974,True,2024-11-24T11:05:00-05:00,TOR,23.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T11:08:05-05:00,11,7,53979,2,19
+3375980,True,2024-11-24T11:05:00-05:00,TOR,37.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:09:07-05:00,11,7,188006,2,106
+3375951,True,2024-11-24T11:05:00-05:00,TOR,9.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Rebounds,pre_game,True,2024-11-24T11:10:15-05:00,11,7,26792,2,22
+3375934,True,2024-11-24T11:05:00-05:00,CLE,35.5,demon,Single Stat,275,2024-11-24T19:40:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:12:49-05:00,11,7,183185,2,106
+3375945,True,2024-11-24T11:05:00-05:00,CLE,6.5,goblin,Single Stat,275,2024-11-24T19:40:00-05:00,Points,pre_game,True,2024-11-24T13:18:22-05:00,11,7,188601,2,19
+3375064,,2024-11-23T00:35:00-05:00,BKN,5.5,standard,Single Stat,300,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T15:13:43-05:00,11,7,1386,2,20
+3375113,,2024-11-23T00:35:00-05:00,BKN,32.0,standard,Single Stat,300,2024-11-24T21:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T09:52:12-05:00,11,7,1386,2,243
+3375158,,2024-11-23T00:35:00-05:00,BKN,10.0,standard,Single Stat,300,2024-11-24T21:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T10:05:10-05:00,11,7,1386,2,245
+3375007,,2024-11-23T00:35:00-05:00,BKN,27.0,standard,Single Stat,300,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T15:36:19-05:00,11,7,1386,2,19
+3375083,,2024-11-23T00:35:00-05:00,BKN,38.0,standard,Single Stat,300,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T13:20:15-05:00,11,7,1386,2,106
+3375054,,2024-11-23T00:35:00-05:00,BKN,4.5,standard,Single Stat,300,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T09:32:24-05:00,11,7,1386,2,22
+3375147,,2024-11-23T00:35:00-05:00,BKN,32.5,standard,Single Stat,300,2024-11-24T21:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T15:48:05-05:00,11,7,1386,2,244
+3375114,,2024-11-22T21:00:00-05:00,SAC,12.5,standard,Single Stat,301,2024-11-24T21:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T14:25:29-05:00,11,7,63522,2,243
+3375065,,2024-11-22T21:00:00-05:00,SAC,5.0,standard,Single Stat,301,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T14:10:39-05:00,11,7,63522,2,20
+3375159,,2024-11-22T21:00:00-05:00,SAC,11.5,standard,Single Stat,301,2024-11-24T21:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T14:10:38-05:00,11,7,63522,2,245
+3375008,,2024-11-24T00:15:00-05:00,SAC,6.0,standard,Single Stat,301,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T14:15:05-05:00,11,7,63522,2,19
+3375055,,2024-11-22T21:00:00-05:00,SAC,6.0,standard,Single Stat,301,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T14:10:38-05:00,11,7,63522,2,22
+3375084,,2024-11-22T21:00:00-05:00,SAC,18.0,standard,Single Stat,301,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T14:12:36-05:00,11,7,63522,2,106
+3375115,,2024-11-23T00:35:00-05:00,BKN,25.5,standard,Single Stat,302,2024-11-24T21:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T15:02:12-05:00,11,7,54957,2,243
+3375085,,2024-11-23T00:35:00-05:00,BKN,29.5,standard,Single Stat,302,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T14:15:39-05:00,11,7,54957,2,106
+3375160,,2024-11-23T00:35:00-05:00,BKN,8.0,standard,Single Stat,302,2024-11-24T21:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T09:37:07-05:00,11,7,54957,2,245
+3375009,,2024-11-23T00:35:00-05:00,BKN,21.5,standard,Single Stat,302,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T10:30:56-05:00,11,7,54957,2,19
+3375149,,2024-11-23T00:35:00-05:00,BKN,25.5,standard,Single Stat,302,2024-11-24T21:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T10:10:05-05:00,11,7,54957,2,244
+3375010,,2024-11-22T21:00:00-05:00,SAC,22.5,standard,Single Stat,303,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T14:09:52-05:00,11,7,57075,2,19
+3375161,,2024-11-22T21:00:00-05:00,SAC,6.5,standard,Single Stat,303,2024-11-24T21:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T14:09:51-05:00,11,7,57075,2,245
+3375150,,2024-11-22T21:00:00-05:00,SAC,26.5,standard,Single Stat,303,2024-11-24T21:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T15:33:21-05:00,11,7,57075,2,244
+3375086,,2024-11-22T21:00:00-05:00,SAC,29.0,standard,Single Stat,303,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T14:43:51-05:00,11,7,57075,2,106
+3375080,,2024-11-22T21:00:00-05:00,SAC,2.5,standard,Single Stat,303,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T14:09:51-05:00,11,7,57075,2,31
+3375116,,2024-11-22T21:00:00-05:00,SAC,26.5,standard,Single Stat,303,2024-11-24T21:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T15:31:47-05:00,11,7,57075,2,243
+3375162,,2024-11-23T00:35:00-05:00,BKN,19.0,standard,Single Stat,304,2024-11-24T21:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T09:32:25-05:00,11,7,59923,2,245
+3375011,,2024-11-24T00:15:00-05:00,BKN,19.5,standard,Single Stat,304,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T09:41:42-05:00,11,7,59923,2,19
+3375151,,2024-11-23T00:35:00-05:00,BKN,26.0,standard,Single Stat,304,2024-11-24T21:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T13:35:43-05:00,11,7,59923,2,244
+3375117,,2024-11-23T00:35:00-05:00,BKN,32.5,standard,Single Stat,304,2024-11-24T21:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T09:32:25-05:00,11,7,59923,2,243
+3375087,,2024-11-23T00:35:00-05:00,BKN,39.0,standard,Single Stat,304,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T14:26:06-05:00,11,7,59923,2,106
+3375058,,2024-11-23T00:35:00-05:00,BKN,12.5,standard,Single Stat,304,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T09:32:25-05:00,11,7,59923,2,22
+3375163,,2024-11-22T21:00:00-05:00,SAC,7.0,standard,Single Stat,305,2024-11-24T21:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T14:14:25-05:00,11,7,96514,2,245
+3375118,,2024-11-22T21:00:00-05:00,SAC,21.5,standard,Single Stat,305,2024-11-24T21:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T15:21:51-05:00,11,7,96514,2,243
+3375069,,2024-11-22T21:00:00-05:00,SAC,2.5,standard,Single Stat,305,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T14:11:57-05:00,11,7,96514,2,20
+3375152,,2024-11-22T21:00:00-05:00,SAC,20.0,standard,Single Stat,305,2024-11-24T21:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T16:07:05-05:00,11,7,96514,2,244
+3375012,,2024-11-22T21:00:00-05:00,SAC,17.0,standard,Single Stat,305,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T16:05:54-05:00,11,7,96514,2,19
+3375088,,2024-11-22T21:00:00-05:00,SAC,24.0,standard,Single Stat,305,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T15:19:53-05:00,11,7,96514,2,106
+3375089,,2024-11-23T00:35:00-05:00,BKN,17.5,standard,Single Stat,306,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T16:12:26-05:00,11,7,87615,2,106
+3375013,,2024-11-23T00:35:00-05:00,BKN,11.0,standard,Single Stat,306,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T15:01:47-05:00,11,7,87615,2,19
+3375119,,2024-11-23T00:35:00-05:00,BKN,15.0,standard,Single Stat,306,2024-11-24T21:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T15:05:06-05:00,11,7,87615,2,243
+3375070,,2024-11-23T00:35:00-05:00,BKN,2.5,standard,Single Stat,306,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T15:20:43-05:00,11,7,87615,2,20
+3375164,,2024-11-23T00:35:00-05:00,BKN,6.5,standard,Single Stat,306,2024-11-24T21:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T09:32:25-05:00,11,7,87615,2,245
+3375153,,2024-11-23T00:35:00-05:00,BKN,13.5,standard,Single Stat,306,2024-11-24T21:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T16:04:27-05:00,11,7,87615,2,244
+3375120,,2024-11-22T21:00:00-05:00,SAC,18.5,standard,Single Stat,307,2024-11-24T21:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T16:28:41-05:00,11,7,187809,2,243
+3375090,,2024-11-22T21:00:00-05:00,SAC,24.5,standard,Single Stat,307,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T16:28:41-05:00,11,7,187809,2,106
+3375014,,2024-11-22T21:00:00-05:00,SAC,15.0,standard,Single Stat,307,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T16:28:10-05:00,11,7,187809,2,19
+3375165,,2024-11-22T21:00:00-05:00,SAC,9.0,standard,Single Stat,307,2024-11-24T21:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T16:27:51-05:00,11,7,187809,2,245
+3375154,,2024-11-22T21:00:00-05:00,SAC,21.5,standard,Single Stat,307,2024-11-24T21:10:00-05:00,Pts+Asts,pre_game,True,2024-11-24T16:28:41-05:00,11,7,187809,2,244
+3375071,,2024-11-22T21:00:00-05:00,SAC,6.0,standard,Single Stat,307,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T14:13:30-05:00,11,7,187809,2,20
+3375091,,2024-11-23T00:35:00-05:00,BKN,12.5,standard,Single Stat,308,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T09:32:25-05:00,11,7,61079,2,106
+3375121,,2024-11-23T00:35:00-05:00,BKN,11.5,standard,Single Stat,308,2024-11-24T21:10:00-05:00,Pts+Rebs,pre_game,True,2024-11-24T09:32:25-05:00,11,7,61079,2,243
+3375015,,2024-11-23T00:35:00-05:00,BKN,6.5,standard,Single Stat,308,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T14:57:59-05:00,11,7,61079,2,19
+3375166,,2024-11-23T00:35:00-05:00,BKN,5.5,standard,Single Stat,308,2024-11-24T21:10:00-05:00,Rebs+Asts,pre_game,True,2024-11-24T09:32:25-05:00,11,7,61079,2,245
+3376026,True,2024-11-24T11:15:00-05:00,BKN,4.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T11:20:34-05:00,11,7,59923,2,20
+3376028,True,2024-11-24T11:15:00-05:00,BKN,0.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:20:27-05:00,11,7,59923,2,31
+3376022,True,2024-11-24T11:15:00-05:00,BKN,36.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:20:15-05:00,11,7,59923,2,106
+3376025,True,2024-11-24T11:15:00-05:00,BKN,7.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T11:18:52-05:00,11,7,59923,2,20
+3376019,True,2024-11-24T11:15:00-05:00,BKN,15.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:18:40-05:00,11,7,59923,2,22
+3376020,True,2024-11-24T11:15:00-05:00,BKN,11.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:17:52-05:00,11,7,59923,2,22
+3376027,True,2024-11-24T11:15:00-05:00,BKN,1.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:17:16-05:00,11,7,59923,2,31
+3376039,True,2024-11-24T11:15:00-05:00,BKN,2.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:16:36-05:00,11,7,54957,2,22
+3375998,True,2024-11-24T11:15:00-05:00,BKN,11.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T13:03:16-05:00,11,7,61079,2,19
+3375997,True,2024-11-24T11:15:00-05:00,BKN,3.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:40:02-05:00,11,7,61079,2,22
+3376009,True,2024-11-24T11:15:00-05:00,BKN,18.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T11:28:30-05:00,11,7,79897,2,19
+3376006,True,2024-11-24T11:15:00-05:00,BKN,1.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:27:17-05:00,11,7,87615,2,31
+3376001,True,2024-11-24T11:15:00-05:00,BKN,5.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:26:46-05:00,11,7,87615,2,22
+3376011,True,2024-11-24T11:15:00-05:00,BKN,2.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:24:36-05:00,11,7,79897,2,31
+3376003,True,2024-11-24T11:15:00-05:00,BKN,14.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T11:24:27-05:00,11,7,87615,2,19
+3375999,True,2024-11-24T11:15:00-05:00,BKN,3.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T11:23:12-05:00,11,7,61079,2,19
+3376000,True,2024-11-24T11:15:00-05:00,BKN,2.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:21:54-05:00,11,7,61079,2,31
+3376010,True,2024-11-24T11:15:00-05:00,BKN,9.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T11:19:11-05:00,11,7,79897,2,19
+3375996,True,2024-11-24T11:15:00-05:00,BKN,6.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:19:10-05:00,11,7,61079,2,22
+3376007,True,2024-11-24T11:15:00-05:00,BKN,7.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:18:47-05:00,11,7,79897,2,22
+3376008,True,2024-11-24T11:15:00-05:00,BKN,5.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:18:08-05:00,11,7,79897,2,22
+3376005,True,2024-11-24T11:15:00-05:00,BKN,2.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:17:39-05:00,11,7,87615,2,31
+3376069,True,2024-11-24T11:15:00-05:00,SAC,2.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T14:09:52-05:00,11,7,57075,2,20
+3376071,True,2024-11-24T11:15:00-05:00,SAC,1.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T14:09:52-05:00,11,7,57075,2,31
+3376070,True,2024-11-24T11:15:00-05:00,SAC,3.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T14:09:52-05:00,11,7,57075,2,31
+3376075,True,2024-11-24T11:15:00-05:00,SAC,13.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T14:10:39-05:00,11,7,63522,2,106
+3376072,True,2024-11-24T11:15:00-05:00,SAC,7.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T14:10:39-05:00,11,7,63522,2,22
+3376073,True,2024-11-24T11:15:00-05:00,SAC,4.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T14:10:39-05:00,11,7,63522,2,22
+3376077,True,2024-11-24T11:15:00-05:00,SAC,3.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T14:10:39-05:00,11,7,63522,2,20
+3376076,True,2024-11-24T11:15:00-05:00,SAC,7.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T14:10:39-05:00,11,7,63522,2,20
+3376074,True,2024-11-24T11:15:00-05:00,SAC,21.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T14:10:39-05:00,11,7,63522,2,106
+3376035,True,2024-11-24T11:15:00-05:00,SAC,7.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T14:12:30-05:00,11,7,187809,2,20
+3376002,True,2024-11-24T11:15:00-05:00,BKN,2.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:17:03-05:00,11,7,87615,2,22
+3376033,True,2024-11-24T11:15:00-05:00,SAC,19.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T14:12:30-05:00,11,7,187809,2,19
+3376068,True,2024-11-24T11:15:00-05:00,SAC,3.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T14:09:52-05:00,11,7,57075,2,20
+3376049,True,2024-11-24T11:15:00-05:00,BKN,3.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:21:39-05:00,11,7,1386,2,22
+3376060,True,2024-11-24T11:15:00-05:00,SAC,24.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T14:11:58-05:00,11,7,96514,2,19
+3376055,True,2024-11-24T11:15:00-05:00,BKN,4.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T11:16:05-05:00,11,7,1386,2,20
+3376061,True,2024-11-24T11:15:00-05:00,SAC,12.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T15:58:22-05:00,11,7,96514,2,19
+3376032,True,2024-11-24T11:15:00-05:00,SAC,19.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T14:12:29-05:00,11,7,187809,2,106
+3376059,True,2024-11-24T11:15:00-05:00,SAC,3.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T14:11:58-05:00,11,7,96514,2,22
+3376058,True,2024-11-24T11:15:00-05:00,SAC,5.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T14:11:58-05:00,11,7,96514,2,22
+3376063,True,2024-11-24T11:15:00-05:00,SAC,1.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T14:11:58-05:00,11,7,96514,2,20
+3376062,True,2024-11-24T11:15:00-05:00,SAC,3.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T14:11:58-05:00,11,7,96514,2,20
+3376065,True,2024-11-24T11:15:00-05:00,SAC,25.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T14:09:52-05:00,11,7,57075,2,106
+3376067,True,2024-11-24T11:15:00-05:00,SAC,17.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T14:09:52-05:00,11,7,57075,2,19
+3376064,True,2024-11-24T11:15:00-05:00,SAC,34.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T14:09:52-05:00,11,7,57075,2,106
+3376066,True,2024-11-24T11:15:00-05:00,SAC,29.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T14:09:52-05:00,11,7,57075,2,19
+3376048,True,2024-11-24T11:15:00-05:00,BKN,6.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:45:41-05:00,11,7,1386,2,22
+3376041,True,2024-11-24T11:15:00-05:00,BKN,27.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:40:20-05:00,11,7,54957,2,106
+3376044,True,2024-11-24T11:15:00-05:00,BKN,5.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T11:39:23-05:00,11,7,54957,2,20
+3376042,True,2024-11-24T11:15:00-05:00,BKN,27.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T11:35:54-05:00,11,7,54957,2,19
+3376045,True,2024-11-24T11:15:00-05:00,BKN,2.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T11:29:40-05:00,11,7,54957,2,20
+3376046,True,2024-11-24T11:15:00-05:00,BKN,1.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:27:43-05:00,11,7,54957,2,31
+3376052,True,2024-11-24T11:15:00-05:00,BKN,34.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T11:25:12-05:00,11,7,1386,2,19
+3376054,True,2024-11-24T11:15:00-05:00,BKN,7.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T11:24:36-05:00,11,7,1386,2,20
+3376040,True,2024-11-24T11:15:00-05:00,BKN,33.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:24:08-05:00,11,7,54957,2,106
+3376047,True,2024-11-24T11:15:00-05:00,BKN,0.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:23:21-05:00,11,7,54957,2,31
+3376053,True,2024-11-24T11:15:00-05:00,BKN,21.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T11:20:02-05:00,11,7,1386,2,19
+3376050,True,2024-11-24T11:15:00-05:00,BKN,44.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:19:41-05:00,11,7,1386,2,106
+3376043,True,2024-11-24T11:15:00-05:00,BKN,16.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T11:19:23-05:00,11,7,54957,2,19
+3376057,True,2024-11-24T11:15:00-05:00,BKN,1.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:19:03-05:00,11,7,1386,2,31
+3376056,True,2024-11-24T11:15:00-05:00,BKN,2.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:18:15-05:00,11,7,1386,2,31
+3376051,True,2024-11-24T11:15:00-05:00,BKN,34.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:17:08-05:00,11,7,1386,2,106
+3376034,True,2024-11-24T11:15:00-05:00,SAC,11.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T16:27:12-05:00,11,7,187809,2,19
+3376031,True,2024-11-24T11:15:00-05:00,SAC,27.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T16:26:51-05:00,11,7,187809,2,106
+3376030,True,2024-11-24T11:15:00-05:00,SAC,2.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T14:12:30-05:00,11,7,187809,2,22
+3376029,True,2024-11-24T11:15:00-05:00,SAC,4.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T14:12:29-05:00,11,7,187809,2,22
+3376037,True,2024-11-24T11:15:00-05:00,SAC,1.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T14:12:29-05:00,11,7,187809,2,31
+3376036,True,2024-11-24T11:15:00-05:00,SAC,4.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Assists,pre_game,True,2024-11-24T14:12:29-05:00,11,7,187809,2,20
+3376024,True,2024-11-24T11:15:00-05:00,BKN,16.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T14:05:22-05:00,11,7,59923,2,19
+3376012,True,2024-11-24T11:15:00-05:00,BKN,1.5,goblin,Single Stat,325,2024-11-24T21:10:00-05:00,3-PT Made,pre_game,True,2024-11-24T11:44:39-05:00,11,7,79897,2,31
+3376021,True,2024-11-24T11:15:00-05:00,BKN,42.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Pts+Rebs+Asts,pre_game,True,2024-11-24T11:24:16-05:00,11,7,59923,2,106
+3376023,True,2024-11-24T11:15:00-05:00,BKN,24.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Points,pre_game,True,2024-11-24T11:21:31-05:00,11,7,59923,2,19
+3376038,True,2024-11-24T11:15:00-05:00,BKN,5.5,demon,Single Stat,325,2024-11-24T21:10:00-05:00,Rebounds,pre_game,True,2024-11-24T11:20:57-05:00,11,7,54957,2,22

@@ -20,14 +20,16 @@ gamelogs_data = pd.read_csv(gamelogs_csv)
 # **Part 1: Generate Game Directory (index.html)**
 def create_game_directory(game_data, output_file_path):
     html_content = """
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Game Directory</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <script>
         document.addEventListener("DOMContentLoaded", function () {
             const table = document.getElementById("boxscore-index");
@@ -219,6 +221,7 @@ def create_game_directory(game_data, output_file_path):
         </script>
     </head>
     <body>
+<div id="page-heading">    
     <div class="topnav">
         <a href="/basketball/" target="_blank">Projections</a>
         <a href="/basketball/players/" target="_blank">Players</a>
@@ -235,6 +238,7 @@ def create_game_directory(game_data, output_file_path):
         <div class="header">
             <h1>Game Directory</h1>
         </div>
+    </div>
         <button class="arrowUp" onclick="window.scrollTo({{top: 0}})">Top</button>
         <div id="index-container">
             <table id="boxscore-index">
@@ -314,14 +318,16 @@ def create_game_boxscores(gamelogs_data, output_dir):
 
         # Start HTML content for the game boxscore
         html_content = f'''
-        <!DOCTYPE html>
-        <html>
-        <head>
-        <title>{game_name}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{game_name}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <script>
         document.addEventListener("DOMContentLoaded", function () {{
             setupTableInteractions("home-boxscore");
@@ -542,6 +548,7 @@ def create_game_boxscores(gamelogs_data, output_dir):
         </script>
         </head>
         <body>
+    <div id="page-heading">    
         <div class="topnav">
             <a href="/basketball/" target="_blank">Projections</a>
             <a href="/basketball/players/" target="_blank">Players</a>
@@ -558,6 +565,7 @@ def create_game_boxscores(gamelogs_data, output_dir):
         <div class="header">
         <h1>{game_name} - {date}</h1>
         </div>
+    </div>
         <button class="arrowUp" onclick="window.scrollTo({{top: 0}})">Top</button>
         <div id="boxscore-container">
         <div id="table-container">

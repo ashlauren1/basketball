@@ -232,8 +232,14 @@ def create_player_gamelog_pages(gamelogs_data, output_dir):
     grouped_data = gamelogs_data.groupby('PlayerID')
 
     for player_id, player_data in grouped_data:
+        player_info = roster_data[roster_data['PlayerID'] == player_id]
+        if player_info.empty:
+            continue
+        
         player_name = player_data.iloc[0]['Player']
-
+        team_id = player_info.iloc[0]["TeamID"]
+        team_name = player_info.iloc[0]["Team"]
+        
         player_filename = os.path.join(output_dir, f"{player_id}.html")
 
         # Start HTML content for the player's gamelog
@@ -490,105 +496,130 @@ def create_player_gamelog_pages(gamelogs_data, output_dir):
 
     searchButton.addEventListener("click", redirectToSearchResults);
 }});
-        </script>
-        </head>
-        <body>
-    <div id="page-heading">    
-        <div class="topnav">
-            <a href="/basketball/" target="_blank">Projections</a>
-            <a href="/basketball/players/" target="_blank">Players</a>
-            <a href="/basketball/boxscores/" target="_blank">Box Scores</a>
-            <a href="/basketball/teams/" target="_blank">Teams</a>
-            <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
-            <a href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a>
-        </div>
-        <div id="search-container">
-            <input type="text" id="search-bar" placeholder="Search for a player or team...">
-            <button id="search-button">Search</button>
-        <div id="search-results"></div>
-        <div class="header">
-        <h1>{player_name}</h1>
-        </div>
-    </div>
-        <button class="arrowUp" onclick="window.scrollTo({{top: 0}})">Top</button>
+    </script>
+</head>
 
-        <div id="player-container">
+<body>
+
+<div id="page-heading">    
+    <div class="topnav">
+        <a href="/basketball/" target="_blank">Projections</a>
+        <a href="/basketball/players/" target="_blank">Players</a>
+        <a href="/basketball/boxscores/" target="_blank">Box Scores</a>
+        <a href="/basketball/teams/" target="_blank">Teams</a>
+        <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
+        <a href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a>
+    </div>
+    <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search for a player or team...">
+        <button id="search-button">Search</button>
+    <div id="search-results"></div>
+    <div class="header">
+    <h1>{player_name}</h1>
+    </div>
+</div>
+    <button class="arrowUp" onclick="window.scrollTo({{top: 0}})">Top</button>
         
-        <div id="table-container">
-        <span class="table-button-container">
-		<span class="caption">Gamelog</span>
-            <button id="toggle-selection-btn">Show Selected Only</button>
-            <button id="clear-filters-btn">Remove Filters</button>
-            <button id="clear-all-btn">Clear All</button>
-        </span>
-            <table id="player-table">
-                <thead>
-                    <tr>
-                        <th>Season</th>
-                        <th>Date</th>
-                        <th>Team</th>
-                        <th></th>
-                        <th>Opp</th>
-                        <th>PTS</th>
-                        <th>REB</th>
-                        <th>AST</th>
-                        <th>STL</th>
-                        <th>BLK</th>
-                        <th>TOV</th>
-                        <th>MP</th>
-                        <th>OffREB</th>
-                        <th>DefREB</th>
-                        <th>FG</th>
-                        <th>FGA</th>
-                        <th>3P</th>
-                        <th>3PA</th>
-                        <th>FT</th>
-                        <th>FTA</th>
-                        <th>PF</th>
-                    </tr>
-                <tr id="filter-row">
-                </tr>
+<div id="player_info">
+    <div id="playerPictureContainer">
+        <img class="playerPicture" src="https://www.basketball-reference.com/req/202106291/images/headshots/{player_id}.jpg" alt="{player_name}" onerror="this.style.display='none';">
+    </div>
+    <div class="info">
+        <h1>{player_name}</h1>
+        <p>Team: {team_name}</p>
+    </div>
+    <div id="seasonStats">
+        <table class="seasonSummary">
+            <thead>
+                <tr></tr>
             </thead>
             <tbody>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div style="margin:12px 0; display:block"></div>
+<div id="player-container">
+<p class="title-caption">Gamelog</p>
+<div class="modal" id="glossaryModal"></div>
+
+    <div id="table-container">
+        <div class="groupedProbAndButtons">
+            <div class="button-container">
+                <button id="toggle-selection-btn">Show Selected Only</button>
+                <button id="clear-filters-btn">Remove Filters</button>
+                <button id="clear-all-btn">Clear All</button>
+            </div>
+        </div>
+    <table id="player-table">
+        <thead>
+            <tr>
+                <th>Season</th>
+                <th>Date</th>
+                <th>Team</th>
+                <th></th>
+                <th>Opp</th>
+                <th>PTS</th>
+                <th>REB</th>
+                <th>AST</th>
+                <th>STL</th>
+                <th>BLK</th>
+                <th>TOV</th>
+                <th>MP</th>
+                <th>OffREB</th>
+                <th>DefREB</th>
+                <th>FG</th>
+                <th>FGA</th>
+                <th>3P</th>
+                <th>3PA</th>
+                <th>FT</th>
+                <th>FTA</th>
+                <th>PF</th>
+            </tr>
+            <tr id="filter-row"></tr>
+        </thead>
+        <tbody>
         '''
 
         # Add rows for each game in the player's gamelog
         for _, row in player_data.iterrows():
             html_content += f'''
-                <tr>
-                    <td style="text-align:left">{row['Season']}</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/{row['GameID']}.html" target="_blank">{row['Date']}</a></td>
-                    <td><a href="/basketball/teams/{row['Team']}.html" target="_blank">{row['Team']}</a></td>
-                    <td>{'vs' if row['Is_Home'] == 1 else '@'}</td>
-                    <td><a href="/basketball/teams/{row['Opp']}.html" target="_blank">{row['Opp']}</a></td>
-                    <td>{row['PTS']}</td>
-                    <td>{row['REB']}</td>
-                    <td>{row['AST']}</td>
-                    <td>{row['STL']}</td>
-                    <td>{row['BLK']}</td>
-                    <td>{row['TOV']}</td>
-                    <td>{row['MP']:.2f}</td>
-                    <td>{row['OffREB']}</td>
-                    <td>{row['DefREB']}</td>
-                    <td>{row['FG']}</td>
-                    <td>{row['FGA']}</td>
-                    <td>{row['3P']}</td>
-                    <td>{row['3PA']}</td>
-                    <td>{row['FT']}</td>
-                    <td>{row['FTA']}</td>
-                    <td>{row['PF']}</td>
-                </tr>
+            <tr>
+                <td style="text-align:left">{row['Season']}</td>
+                <td style="text-align:left"><a href="/basketball/boxscores/{row['GameID']}.html" target="_blank">{row['Date']}</a></td>
+                <td><a href="/basketball/teams/{row['Team']}.html" target="_blank">{row['Team']}</a></td>
+                <td>{'vs' if row['Is_Home'] == 1 else '@'}</td>
+                <td><a href="/basketball/teams/{row['Opp']}.html" target="_blank">{row['Opp']}</a></td>
+                <td>{row['PTS']}</td>
+                <td>{row['REB']}</td>
+                <td>{row['AST']}</td>
+                <td>{row['STL']}</td>
+                <td>{row['BLK']}</td>
+                <td>{row['TOV']}</td>
+                <td>{row['MP']:.2f}</td>
+                <td>{row['OffREB']}</td>
+                <td>{row['DefREB']}</td>
+                <td>{row['FG']}</td>
+                <td>{row['FGA']}</td>
+                <td>{row['3P']}</td>
+                <td>{row['3PA']}</td>
+                <td>{row['FT']}</td>
+                <td>{row['FTA']}</td>
+                <td>{row['PF']}</td>
+            </tr>
             '''
 
         # Close HTML content
         html_content += '''
-                </tbody>
-            </table>
-            </div>
-            </div>
-            <div class="footer"></div>
-        </body>
-        </html>
+        </tbody>
+    </table>
+    </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
         '''
 
         # Write to HTML file

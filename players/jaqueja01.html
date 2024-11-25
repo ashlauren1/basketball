@@ -1,16 +1,16 @@
 
 <!DOCTYPE html>
+
 <html>
 <head>
-    <title>Jaime Jaquez Jr.</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-
-        <script>
+<title>Jaime Jaquez Jr.</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="stylesheet.css" rel="stylesheet"/>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto+Slab:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script>
         document.addEventListener("DOMContentLoaded", function () {
             const table = document.getElementById("player-table");
             const headerRow = table.querySelector("thead tr:first-child");
@@ -251,2088 +251,2158 @@
 
     searchButton.addEventListener("click", redirectToSearchResults);
 });
-        </script>
-        </head>
-        <body>
-    <div id="page-heading">    
-        <div class="topnav">
-            <a href="/basketball/" target="_blank">Projections</a>
-            <a href="/basketball/players/" target="_blank">Players</a>
-            <a href="/basketball/boxscores/" target="_blank">Box Scores</a>
-            <a href="/basketball/teams/" target="_blank">Teams</a>
-            <a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
-            <a href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a>
-        </div>
-        <div id="search-container">
-            <input type="text" id="search-bar" placeholder="Search for a player or team...">
-            <button id="search-button">Search</button>
-        <div id="search-results"></div>
-        <div class="header">
-        <h1>Jaime Jaquez Jr.</h1>
-        </div>
-    </div>
-        <button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
+    </script>
+</head>
+<body>
+<div id="page-heading">
+<div class="topnav">
+<a href="/basketball/" target="_blank">Projections</a>
+<a href="/basketball/players/" target="_blank">Players</a>
+<a href="/basketball/boxscores/" target="_blank">Box Scores</a>
+<a href="/basketball/teams/" target="_blank">Teams</a>
+<a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
+<a href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a>
+</div>
+<div id="search-container">
+<input id="search-bar" placeholder="Search for a player or team..." type="text"/>
+<button id="search-button">Search</button>
+<div id="search-results"></div>
+<div class="header">
+<h1>Jaime Jaquez Jr.</h1>
+</div>
+</div>
+<button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
+<div id="player_info">
+<div id="playerPictureContainer">
+<img alt="Jaime Jaquez Jr." class="playerPicture" onerror="this.style.display='none';" src="https://www.basketball-reference.com/req/202106291/images/headshots/jaqueja01.jpg"/>
+</div>
+<div class="info">
+<h1>Jaime Jaquez Jr.</h1>
+<p>Team: Miami Heat</p>
+</div>
+<div id="seasonStats">
+<table class="seasonSummary">
+<thead>
+<tr></tr>
+</thead>
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="margin:12px 0; display:block"></div>
+<div id="player-container">
+<p class="title-caption">Gamelog</p>
+<div class="modal" id="glossaryModal"></div>
 
-        <div id="player-container">
-        
-        <div id="table-container">
-        <span class="table-button-container">
-		<span class="caption">Gamelog</span>
-            <button id="toggle-selection-btn">Show Selected Only</button>
-            <button id="clear-filters-btn">Remove Filters</button>
-            <button id="clear-all-btn">Clear All</button>
-        </span>
-            <table id="player-table">
-                <thead>
-                    <tr>
-                        <th>Season</th>
-                        <th>Date</th>
-                        <th>Team</th>
-                        <th></th>
-                        <th>Opp</th>
-                        <th>PTS</th>
-                        <th>REB</th>
-                        <th>AST</th>
-                        <th>STL</th>
-                        <th>BLK</th>
-                        <th>TOV</th>
-                        <th>MP</th>
-                        <th>OffREB</th>
-                        <th>DefREB</th>
-                        <th>FG</th>
-                        <th>FGA</th>
-                        <th>3P</th>
-                        <th>3PA</th>
-                        <th>FT</th>
-                        <th>FTA</th>
-                        <th>PF</th>
-                    </tr>
-                <tr id="filter-row">
-                </tr>
-            </thead>
-            <tbody>
-        
-                <tr>
-                    <td style="text-align:left">2024-25</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202411170IND.html" target="_blank">11/17/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>15.43</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2024-25</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202411150IND.html" target="_blank">11/15/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
-                    <td>10</td>
-                    <td>3</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>25.38</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2024-25</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202411120DET.html" target="_blank">11/12/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
-                    <td>14</td>
-                    <td>5</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>24.80</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>9</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2024-25</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202411100MIN.html" target="_blank">11/10/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/MIN.html" target="_blank">MIN</a></td>
-                    <td>7</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>16.42</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>3</td>
-                    <td>7</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2024-25</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202411020WAS.html" target="_blank">11/2/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/WAS.html" target="_blank">WAS</a></td>
-                    <td>8</td>
-                    <td>10</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>24.72</td>
-                    <td>3</td>
-                    <td>7</td>
-                    <td>4</td>
-                    <td>12</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2024-25</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202410300MIA.html" target="_blank">10/30/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
-                    <td>8</td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>27.30</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>10</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>8</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2024-25</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202410280MIA.html" target="_blank">10/28/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
-                    <td>12</td>
-                    <td>9</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>32.53</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>5</td>
-                    <td>10</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2024-25</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202410260CHO.html" target="_blank">10/26/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>21.67</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2024-25</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202410230MIA.html" target="_blank">10/23/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/ORL.html" target="_blank">ORL</a></td>
-                    <td>13</td>
-                    <td>5</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>19.18</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>9</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>5</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202404140MIA.html" target="_blank">4/14/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/TOR.html" target="_blank">TOR</a></td>
-                    <td>18</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>32.32</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>12</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202404120MIA.html" target="_blank">4/12/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/TOR.html" target="_blank">TOR</a></td>
-                    <td>20</td>
-                    <td>4</td>
-                    <td>9</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>32.28</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>15</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202404100MIA.html" target="_blank">4/10/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/DAL.html" target="_blank">DAL</a></td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>18.37</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202404090ATL.html" target="_blank">4/9/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/ATL.html" target="_blank">ATL</a></td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>21.88</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202404070IND.html" target="_blank">4/7/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>12.63</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202404050HOU.html" target="_blank">4/5/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
-                    <td>12</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>19.17</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>7</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202404040MIA.html" target="_blank">4/4/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
-                    <td>6</td>
-                    <td>4</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>20.38</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202404020MIA.html" target="_blank">4/2/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>12.42</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403310WAS.html" target="_blank">3/31/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/WAS.html" target="_blank">WAS</a></td>
-                    <td>9</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>19.30</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403290MIA.html" target="_blank">3/29/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/POR.html" target="_blank">POR</a></td>
-                    <td>12</td>
-                    <td>3</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>25.43</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>9</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403260MIA.html" target="_blank">3/26/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/GSW.html" target="_blank">GSW</a></td>
-                    <td>12</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>25.93</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>10</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403220MIA.html" target="_blank">3/22/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/NOP.html" target="_blank">NOP</a></td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>13.97</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>7</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403200CLE.html" target="_blank">3/20/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/CLE.html" target="_blank">CLE</a></td>
-                    <td>7</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>31.22</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403180PHI.html" target="_blank">3/18/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
-                    <td>9</td>
-                    <td>9</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>34.75</td>
-                    <td>0</td>
-                    <td>9</td>
-                    <td>3</td>
-                    <td>13</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403170DET.html" target="_blank">3/17/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
-                    <td>15</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>34.65</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>6</td>
-                    <td>14</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403150DET.html" target="_blank">3/15/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>25.90</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403130MIA.html" target="_blank">3/13/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/DEN.html" target="_blank">DEN</a></td>
-                    <td>8</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>28.17</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403100MIA.html" target="_blank">3/10/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/WAS.html" target="_blank">WAS</a></td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>24.85</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403080OKC.html" target="_blank">3/8/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
-                    <td>25</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>31.28</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>10</td>
-                    <td>13</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403070DAL.html" target="_blank">3/7/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/DAL.html" target="_blank">DAL</a></td>
-                    <td>13</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>27.80</td>
-                    <td>0</td>
-                    <td>6</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403050MIA.html" target="_blank">3/5/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
-                    <td>11</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>26.62</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202403020MIA.html" target="_blank">3/2/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/UTA.html" target="_blank">UTA</a></td>
-                    <td>12</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>29.03</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>10</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202402290DEN.html" target="_blank">2/29/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/DEN.html" target="_blank">DEN</a></td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>26.77</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202402270POR.html" target="_blank">2/27/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/POR.html" target="_blank">POR</a></td>
-                    <td>7</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>29.35</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202402260SAC.html" target="_blank">2/26/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
-                    <td>26</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>37.68</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>12</td>
-                    <td>17</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202402230NOP.html" target="_blank">2/23/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/NOP.html" target="_blank">NOP</a></td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>26.87</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>8</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>0</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202402140PHI.html" target="_blank">2/14/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
-                    <td>12</td>
-                    <td>9</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>32.03</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>12</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202402130MIL.html" target="_blank">2/13/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/MIL.html" target="_blank">MIL</a></td>
-                    <td>12</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>27.87</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>12</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202402110MIA.html" target="_blank">2/11/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/BOS.html" target="_blank">BOS</a></td>
-                    <td>6</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>28.60</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202402070MIA.html" target="_blank">2/7/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/SAS.html" target="_blank">SAS</a></td>
-                    <td>10</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>27.95</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202402060MIA.html" target="_blank">2/6/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/ORL.html" target="_blank">ORL</a></td>
-                    <td>12</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>23.40</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>11</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202402040MIA.html" target="_blank">2/4/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/LAC.html" target="_blank">LAC</a></td>
-                    <td>7</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>25.63</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>11</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202402020WAS.html" target="_blank">2/2/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/WAS.html" target="_blank">WAS</a></td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>25.80</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202401310MIA.html" target="_blank">1/31/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>24.93</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>3</td>
-                    <td>9</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202401290MIA.html" target="_blank">1/29/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>25.25</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202401270NYK.html" target="_blank">1/27/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>23.68</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202401140MIA.html" target="_blank">1/14/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
-                    <td>15</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>14.62</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>11</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202401120MIA.html" target="_blank">1/12/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/ORL.html" target="_blank">ORL</a></td>
-                    <td>19</td>
-                    <td>7</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>36.97</td>
-                    <td>4</td>
-                    <td>3</td>
-                    <td>8</td>
-                    <td>16</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202401100MIA.html" target="_blank">1/10/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
-                    <td>21</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>33.93</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>9</td>
-                    <td>3</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>9</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202401080MIA.html" target="_blank">1/8/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
-                    <td>14</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>38.62</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>11</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202401050PHO.html" target="_blank">1/5/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
-                    <td>10</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>35.47</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>7</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202401030LAL.html" target="_blank">1/3/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/LAL.html" target="_blank">LAL</a></td>
-                    <td>16</td>
-                    <td>0</td>
-                    <td>8</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>39.05</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>7</td>
-                    <td>14</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202401010LAC.html" target="_blank">1/1/2024</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/LAC.html" target="_blank">LAC</a></td>
-                    <td>15</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>38.48</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>6</td>
-                    <td>13</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312300UTA.html" target="_blank">12/30/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/UTA.html" target="_blank">UTA</a></td>
-                    <td>9</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>35.13</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>9</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312280GSW.html" target="_blank">12/28/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/GSW.html" target="_blank">GSW</a></td>
-                    <td>17</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>38.68</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>15</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312250MIA.html" target="_blank">12/25/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
-                    <td>31</td>
-                    <td>10</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>39.48</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>11</td>
-                    <td>15</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>8</td>
-                    <td>8</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312220MIA.html" target="_blank">12/22/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/ATL.html" target="_blank">ATL</a></td>
-                    <td>19</td>
-                    <td>7</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>37.27</td>
-                    <td>4</td>
-                    <td>3</td>
-                    <td>7</td>
-                    <td>14</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312200ORL.html" target="_blank">12/20/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/ORL.html" target="_blank">ORL</a></td>
-                    <td>10</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>33.87</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>10</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312180MIA.html" target="_blank">12/18/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/MIN.html" target="_blank">MIN</a></td>
-                    <td>8</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>30.13</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>8</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312160MIA.html" target="_blank">12/16/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/CHI.html" target="_blank">CHI</a></td>
-                    <td>18</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>34.57</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312140MIA.html" target="_blank">12/14/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/CHI.html" target="_blank">CHI</a></td>
-                    <td>22</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>34.32</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>14</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312130MIA.html" target="_blank">12/13/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
-                    <td>17</td>
-                    <td>6</td>
-                    <td>8</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>33.17</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>16</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312110CHO.html" target="_blank">12/11/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
-                    <td>18</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>24.22</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>8</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>6</td>
-                    <td>6</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312080MIA.html" target="_blank">12/8/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/CLE.html" target="_blank">CLE</a></td>
-                    <td>14</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>34.87</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>7</td>
-                    <td>13</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312060TOR.html" target="_blank">12/6/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/TOR.html" target="_blank">TOR</a></td>
-                    <td>15</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>32.12</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>6</td>
-                    <td>13</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202312020MIA.html" target="_blank">12/2/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
-                    <td>11</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>28.67</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>9</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311300MIA.html" target="_blank">11/30/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
-                    <td>24</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>33.07</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>8</td>
-                    <td>13</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311280MIA.html" target="_blank">11/28/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/MIL.html" target="_blank">MIL</a></td>
-                    <td>14</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>32.83</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>7</td>
-                    <td>9</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311250BRK.html" target="_blank">11/25/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
-                    <td>18</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>31.23</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>8</td>
-                    <td>15</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311240NYK.html" target="_blank">11/24/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
-                    <td>15</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>34.87</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>17</td>
-                    <td>1</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311220CLE.html" target="_blank">11/22/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/CLE.html" target="_blank">CLE</a></td>
-                    <td>22</td>
-                    <td>8</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>6</td>
-                    <td>28.03</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>10</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311200CHI.html" target="_blank">11/20/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/CHI.html" target="_blank">CHI</a></td>
-                    <td>19</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>32.70</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>8</td>
-                    <td>13</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311180CHI.html" target="_blank">11/18/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/CHI.html" target="_blank">CHI</a></td>
-                    <td>6</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>27.02</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311160MIA.html" target="_blank">11/16/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
-                    <td>10</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>33.32</td>
-                    <td>0</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>9</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311140CHO.html" target="_blank">11/14/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
-                    <td>17</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>32.90</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>8</td>
-                    <td>13</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311120SAS.html" target="_blank">11/12/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/SAS.html" target="_blank">SAS</a></td>
-                    <td>11</td>
-                    <td>6</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>32.27</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>10</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311110ATL.html" target="_blank">11/11/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/ATL.html" target="_blank">ATL</a></td>
-                    <td>20</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>38.47</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>8</td>
-                    <td>17</td>
-                    <td>2</td>
-                    <td>7</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>3</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311080MEM.html" target="_blank">11/8/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
-                    <td>11</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>21.13</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>5</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311060MIA.html" target="_blank">11/6/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/LAL.html" target="_blank">LAL</a></td>
-                    <td>9</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>18.30</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311030MIA.html" target="_blank">11/3/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/WAS.html" target="_blank">WAS</a></td>
-                    <td>9</td>
-                    <td>5</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>21.60</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202311010MIA.html" target="_blank">11/1/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>19.13</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>9</td>
-                    <td>0</td>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>4</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202310300MIL.html" target="_blank">10/30/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/MIL.html" target="_blank">MIL</a></td>
-                    <td>8</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>22.70</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>9</td>
-                    <td>2</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202310280MIN.html" target="_blank">10/28/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/MIN.html" target="_blank">MIN</a></td>
-                    <td>7</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>18.23</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202310270BOS.html" target="_blank">10/27/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>@</td>
-                    <td><a href="/basketball/teams/BOS.html" target="_blank">BOS</a></td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>14.32</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                </tr>
-            
-                <tr>
-                    <td style="text-align:left">2023-24</td>
-                    <td style="text-align:left"><a href="/basketball/boxscores/202310250MIA.html" target="_blank">10/25/2023</a></td>
-                    <td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
-                    <td>vs</td>
-                    <td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>13.18</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                </tr>
-            
-                </tbody>
-            </table>
-            </div>
-            </div>
-            <div class="footer"></div>
-        </body>
-        </html>
-        
+<div class="player-chart-container">
+<!-- Stat Selection Dropdown -->
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="statSelector_jaqueja01">Stat:</label>
+<select id="statSelector_jaqueja01" onchange="updateStat('jaqueja01', this.value)">
+<option value="PTS">Points</option>
+<option value="REB">Rebounds</option>
+<option value="AST">Assists</option>
+<option value="BLK">Blocks</option>
+<option value="STL">Steals</option>
+<option value="TOV">Turnovers</option>
+<option value="MP">Minutes Played</option>
+<option value="OffREB">Offensive Rebounds</option>
+<option value="DefREB">Defensive Rebounds</option>
+<option value="FG">Field Goals</option>
+<option value="FGA">Field Goal Attempts</option>
+<option value="3P">3-Pointers</option>
+<option value="3PA">3-Point Attempts</option>
+<option value="FT">Free Throws</option>
+<option value="FTA">Free Throw Attempts</option>
+<option value="PF">Fouls</option>
+<option value="BLK_STL">BLK+STL</option>
+<option value="REB_AST">REB+AST</option>
+<option value="PTS_AST">PTS+AST</option>
+<option value="PTS_REB">PTS+REB</option>
+<option value="PTS_REB_AST">PTS+REB+AST</option>
+<option value="FANTASY">Fantasy Score</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="teamFilter_jaqueja01">Opponent:</label>
+<select id="teamFilter_jaqueja01" onchange="applyFilters('jaqueja01')">
+<option value="all">All</option>
+<option value="ATL">ATL</option>
+<option value="BOS">BOS</option>
+<option value="BRK">BRK</option>
+<option value="CHI">CHI</option>
+<option value="CHO">CHO</option>
+<option value="CLE">CLE</option>
+<option value="DAL">DAL</option>
+<option value="DEN">DEN</option>
+<option value="DET">DET</option>
+<option value="GSW">GSW</option>
+<option value="HOU">HOU</option>
+<option value="IND">IND</option>
+<option value="LAC">LAC</option>
+<option value="LAL">LAL</option>
+<option value="MEM">MEM</option>
+<option value="MIL">MIL</option>
+<option value="MIN">MIN</option>
+<option value="NOP">NOP</option>
+<option value="NYK">NYK</option>
+<option value="OKC">OKC</option>
+<option value="ORL">ORL</option>
+<option value="PHI">PHI</option>
+<option value="PHO">PHO</option>
+<option value="POR">POR</option>
+<option value="SAC">SAC</option>
+<option value="SAS">SAS</option>
+<option value="TOR">TOR</option>
+<option value="UTA">UTA</option>
+<option value="WAS">WAS</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="homeAwayFilter_jaqueja01">Home/Away:</label>
+<select id="homeAwayFilter_jaqueja01" onchange="applyFilters('jaqueja01')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="startDate_jaqueja01">Start:</label>
+<input id="startDate_jaqueja01" onchange="applyFilters('jaqueja01')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="endDate_jaqueja01">End:</label>
+<input id="endDate_jaqueja01" onchange="applyFilters('jaqueja01')" type="date"/>
+</div>
+</div>
+<canvas class="player-barChart" id="chart_jaqueja01"></canvas>
+<div class="filter-buttons">
+<button id="L5_jaqueja01" onclick="showRecentGames('jaqueja01', 5)">L5</button>
+<button id="L10_jaqueja01" onclick="showRecentGames('jaqueja01', 10)">L10</button>
+<button id="L20_jaqueja01" onclick="showRecentGames('jaqueja01', 20)">L20</button>
+<button id="202324_jaqueja01" onclick="filterBySeason('jaqueja01', '2023-24')">2023-24</button>
+<button id="202425_jaqueja01" onclick="filterBySeason('jaqueja01', '2024-25')">2024-25</button>
+<button id="showAll_jaqueja01" onclick="showAllGames('jaqueja01')">All</button>
+<button id="MP_jaqueja01" onclick="toggleMPOverlay('jaqueja01')">Toggle MP</button>
+<button class="clear-chart-filters" id="clearFiltersBtn_jaqueja01" onclick="clearFilters('jaqueja01')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="lineSlider_jaqueja01">Change Line:</label>
+<input id="lineSlider_jaqueja01" max="100" min="0" oninput="updateLine('jaqueja01', this.value)" step="0.5" type="range" value="0.5"/>
+<span id="lineValue_jaqueja01">0.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" id="reset-line-btn_jaqueja01" onclick="resetLine('jaqueja01', 0.5)">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="chartScript.js"></script>
+<script>
+    // Initialize the chart with player-specific data by calling a function from chart_logic.js
+    initializeChart("jaqueja01", [{'date': '2023-10-25', 'opponent': 'DET', 'location': 'home', 'season': '2023-24', 'PTS': 6, 'REB': 2, 'AST': 2, 'BLK': 0, 'STL': 2, 'TOV': 1, 'MP': 13.18333333, 'OffREB': 0, 'DefREB': 2, 'FG': 3, 'FGA': 3, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 2, 'REB_AST': 4, 'PTS_AST': 8, 'PTS_REB': 8, 'PTS_REB_AST': 10, 'FANTASY': 16.4}, {'date': '2023-10-27', 'opponent': 'BOS', 'location': 'away', 'season': '2023-24', 'PTS': 0, 'REB': 2, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 14.31666667, 'OffREB': 0, 'DefREB': 2, 'FG': 0, 'FGA': 2, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 4, 'PTS_AST': 2, 'PTS_REB': 2, 'PTS_REB_AST': 4, 'FANTASY': 4.4}, {'date': '2023-10-28', 'opponent': 'MIN', 'location': 'away', 'season': '2023-24', 'PTS': 7, 'REB': 3, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 3, 'MP': 18.23333333, 'OffREB': 0, 'DefREB': 3, 'FG': 3, 'FGA': 4, '3P': 1, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 4, 'PTS_AST': 8, 'PTS_REB': 10, 'PTS_REB_AST': 11, 'FANTASY': 9.1}, {'date': '2023-10-30', 'opponent': 'MIL', 'location': 'away', 'season': '2023-24', 'PTS': 8, 'REB': 2, 'AST': 3, 'BLK': 1, 'STL': 1, 'TOV': 0, 'MP': 22.7, 'OffREB': 1, 'DefREB': 1, 'FG': 3, 'FGA': 9, '3P': 2, '3PA': 5, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 2, 'REB_AST': 5, 'PTS_AST': 11, 'PTS_REB': 10, 'PTS_REB_AST': 13, 'FANTASY': 20.9}, {'date': '2023-11-01', 'opponent': 'BRK', 'location': 'home', 'season': '2023-24', 'PTS': 2, 'REB': 4, 'AST': 1, 'BLK': 1, 'STL': 2, 'TOV': 2, 'MP': 19.13333333, 'OffREB': 2, 'DefREB': 2, 'FG': 1, 'FGA': 9, '3P': 0, '3PA': 6, 'FT': 0, 'FTA': 0, 'PF': 4, 'BLK_STL': 3, 'REB_AST': 5, 'PTS_AST': 3, 'PTS_REB': 6, 'PTS_REB_AST': 7, 'FANTASY': 15.3}, {'date': '2023-11-03', 'opponent': 'WAS', 'location': 'home', 'season': '2023-24', 'PTS': 9, 'REB': 5, 'AST': 3, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 21.6, 'OffREB': 3, 'DefREB': 2, 'FG': 4, 'FGA': 5, '3P': 0, '3PA': 1, 'FT': 1, 'FTA': 1, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 8, 'PTS_AST': 12, 'PTS_REB': 14, 'PTS_REB_AST': 17, 'FANTASY': 22.5}, {'date': '2023-11-06', 'opponent': 'LAL', 'location': 'home', 'season': '2023-24', 'PTS': 9, 'REB': 2, 'AST': 1, 'BLK': 0, 'STL': 1, 'TOV': 1, 'MP': 18.3, 'OffREB': 1, 'DefREB': 1, 'FG': 4, 'FGA': 7, '3P': 1, '3PA': 4, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 3, 'PTS_AST': 10, 'PTS_REB': 11, 'PTS_REB_AST': 12, 'FANTASY': 14.9}, {'date': '2023-11-08', 'opponent': 'MEM', 'location': 'away', 'season': '2023-24', 'PTS': 11, 'REB': 3, 'AST': 2, 'BLK': 0, 'STL': 2, 'TOV': 0, 'MP': 21.13333333, 'OffREB': 0, 'DefREB': 3, 'FG': 4, 'FGA': 5, '3P': 1, '3PA': 1, 'FT': 2, 'FTA': 3, 'PF': 5, 'BLK_STL': 2, 'REB_AST': 5, 'PTS_AST': 13, 'PTS_REB': 14, 'PTS_REB_AST': 16, 'FANTASY': 23.6}, {'date': '2023-11-11', 'opponent': 'ATL', 'location': 'away', 'season': '2023-24', 'PTS': 20, 'REB': 3, 'AST': 4, 'BLK': 0, 'STL': 1, 'TOV': 3, 'MP': 38.46666667, 'OffREB': 1, 'DefREB': 2, 'FG': 8, 'FGA': 17, '3P': 2, '3PA': 7, 'FT': 2, 'FTA': 2, 'PF': 3, 'BLK_STL': 1, 'REB_AST': 7, 'PTS_AST': 24, 'PTS_REB': 23, 'PTS_REB_AST': 27, 'FANTASY': 29.6}, {'date': '2023-11-12', 'opponent': 'SAS', 'location': 'away', 'season': '2023-24', 'PTS': 11, 'REB': 6, 'AST': 3, 'BLK': 1, 'STL': 3, 'TOV': 1, 'MP': 32.26666667, 'OffREB': 1, 'DefREB': 5, 'FG': 4, 'FGA': 10, '3P': 1, '3PA': 2, 'FT': 2, 'FTA': 2, 'PF': 1, 'BLK_STL': 4, 'REB_AST': 9, 'PTS_AST': 14, 'PTS_REB': 17, 'PTS_REB_AST': 20, 'FANTASY': 33.7}, {'date': '2023-11-14', 'opponent': 'CHO', 'location': 'away', 'season': '2023-24', 'PTS': 17, 'REB': 5, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 32.9, 'OffREB': 4, 'DefREB': 1, 'FG': 8, 'FGA': 13, '3P': 1, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 3, 'BLK_STL': 0, 'REB_AST': 6, 'PTS_AST': 18, 'PTS_REB': 22, 'PTS_REB_AST': 23, 'FANTASY': 23.5}, {'date': '2023-11-16', 'opponent': 'BRK', 'location': 'home', 'season': '2023-24', 'PTS': 10, 'REB': 4, 'AST': 5, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 33.31666667, 'OffREB': 0, 'DefREB': 4, 'FG': 4, 'FGA': 9, '3P': 2, '3PA': 5, 'FT': 0, 'FTA': 0, 'PF': 3, 'BLK_STL': 0, 'REB_AST': 9, 'PTS_AST': 15, 'PTS_REB': 14, 'PTS_REB_AST': 19, 'FANTASY': 21.3}, {'date': '2023-11-18', 'opponent': 'CHI', 'location': 'away', 'season': '2023-24', 'PTS': 6, 'REB': 3, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 3, 'MP': 27.01666667, 'OffREB': 1, 'DefREB': 2, 'FG': 2, 'FGA': 4, '3P': 1, '3PA': 1, 'FT': 1, 'FTA': 2, 'PF': 4, 'BLK_STL': 0, 'REB_AST': 3, 'PTS_AST': 6, 'PTS_REB': 9, 'PTS_REB_AST': 9, 'FANTASY': 6.6}, {'date': '2023-11-20', 'opponent': 'CHI', 'location': 'away', 'season': '2023-24', 'PTS': 19, 'REB': 3, 'AST': 4, 'BLK': 0, 'STL': 2, 'TOV': 0, 'MP': 32.7, 'OffREB': 2, 'DefREB': 1, 'FG': 8, 'FGA': 13, '3P': 3, '3PA': 4, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 7, 'PTS_AST': 23, 'PTS_REB': 22, 'PTS_REB_AST': 26, 'FANTASY': 34.6}, {'date': '2023-11-22', 'opponent': 'CLE', 'location': 'away', 'season': '2023-24', 'PTS': 22, 'REB': 8, 'AST': 1, 'BLK': 0, 'STL': 1, 'TOV': 6, 'MP': 28.03333333, 'OffREB': 2, 'DefREB': 6, 'FG': 7, 'FGA': 10, '3P': 4, '3PA': 4, 'FT': 4, 'FTA': 5, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 9, 'PTS_AST': 23, 'PTS_REB': 30, 'PTS_REB_AST': 31, 'FANTASY': 30.1}, {'date': '2023-11-24', 'opponent': 'NYK', 'location': 'away', 'season': '2023-24', 'PTS': 15, 'REB': 5, 'AST': 4, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 34.86666667, 'OffREB': 3, 'DefREB': 2, 'FG': 6, 'FGA': 17, '3P': 1, '3PA': 6, 'FT': 2, 'FTA': 2, 'PF': 3, 'BLK_STL': 1, 'REB_AST': 9, 'PTS_AST': 19, 'PTS_REB': 20, 'PTS_REB_AST': 24, 'FANTASY': 30.0}, {'date': '2023-11-25', 'opponent': 'BRK', 'location': 'away', 'season': '2023-24', 'PTS': 18, 'REB': 5, 'AST': 4, 'BLK': 0, 'STL': 1, 'TOV': 2, 'MP': 31.23333333, 'OffREB': 1, 'DefREB': 4, 'FG': 8, 'FGA': 15, '3P': 2, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 9, 'PTS_AST': 22, 'PTS_REB': 23, 'PTS_REB_AST': 27, 'FANTASY': 31.0}, {'date': '2023-11-28', 'opponent': 'MIL', 'location': 'home', 'season': '2023-24', 'PTS': 14, 'REB': 4, 'AST': 6, 'BLK': 1, 'STL': 1, 'TOV': 1, 'MP': 32.83333333, 'OffREB': 1, 'DefREB': 3, 'FG': 7, 'FGA': 9, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 5, 'BLK_STL': 2, 'REB_AST': 10, 'PTS_AST': 20, 'PTS_REB': 18, 'PTS_REB_AST': 24, 'FANTASY': 32.8}, {'date': '2023-11-30', 'opponent': 'IND', 'location': 'home', 'season': '2023-24', 'PTS': 24, 'REB': 5, 'AST': 1, 'BLK': 0, 'STL': 1, 'TOV': 3, 'MP': 33.06666667, 'OffREB': 0, 'DefREB': 5, 'FG': 8, 'FGA': 13, '3P': 1, '3PA': 3, 'FT': 7, 'FTA': 7, 'PF': 3, 'BLK_STL': 1, 'REB_AST': 6, 'PTS_AST': 25, 'PTS_REB': 29, 'PTS_REB_AST': 30, 'FANTASY': 31.5}, {'date': '2023-12-02', 'opponent': 'IND', 'location': 'home', 'season': '2023-24', 'PTS': 11, 'REB': 3, 'AST': 3, 'BLK': 0, 'STL': 2, 'TOV': 0, 'MP': 28.66666667, 'OffREB': 0, 'DefREB': 3, 'FG': 4, 'FGA': 9, '3P': 1, '3PA': 2, 'FT': 2, 'FTA': 5, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 6, 'PTS_AST': 14, 'PTS_REB': 14, 'PTS_REB_AST': 17, 'FANTASY': 25.1}, {'date': '2023-12-06', 'opponent': 'TOR', 'location': 'away', 'season': '2023-24', 'PTS': 15, 'REB': 0, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 32.11666667, 'OffREB': 0, 'DefREB': 0, 'FG': 6, 'FGA': 13, '3P': 1, '3PA': 4, 'FT': 2, 'FTA': 2, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 2, 'PTS_AST': 17, 'PTS_REB': 15, 'PTS_REB_AST': 17, 'FANTASY': 16.0}, {'date': '2023-12-08', 'opponent': 'CLE', 'location': 'home', 'season': '2023-24', 'PTS': 14, 'REB': 3, 'AST': 3, 'BLK': 1, 'STL': 0, 'TOV': 3, 'MP': 34.86666667, 'OffREB': 1, 'DefREB': 2, 'FG': 7, 'FGA': 13, '3P': 0, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 3, 'BLK_STL': 1, 'REB_AST': 6, 'PTS_AST': 17, 'PTS_REB': 17, 'PTS_REB_AST': 20, 'FANTASY': 22.1}, {'date': '2023-12-11', 'opponent': 'CHO', 'location': 'away', 'season': '2023-24', 'PTS': 18, 'REB': 0, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 24.21666667, 'OffREB': 0, 'DefREB': 0, 'FG': 5, 'FGA': 8, '3P': 2, '3PA': 3, 'FT': 6, 'FTA': 6, 'PF': 6, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 19, 'PTS_REB': 18, 'PTS_REB_AST': 19, 'FANTASY': 17.5}, {'date': '2023-12-13', 'opponent': 'CHO', 'location': 'home', 'season': '2023-24', 'PTS': 17, 'REB': 6, 'AST': 8, 'BLK': 0, 'STL': 1, 'TOV': 2, 'MP': 33.16666667, 'OffREB': 2, 'DefREB': 4, 'FG': 7, 'FGA': 16, '3P': 2, '3PA': 2, 'FT': 1, 'FTA': 1, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 14, 'PTS_AST': 25, 'PTS_REB': 23, 'PTS_REB_AST': 31, 'FANTASY': 37.2}, {'date': '2023-12-14', 'opponent': 'CHI', 'location': 'home', 'season': '2023-24', 'PTS': 22, 'REB': 4, 'AST': 4, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 34.31666667, 'OffREB': 0, 'DefREB': 4, 'FG': 6, 'FGA': 14, '3P': 1, '3PA': 4, 'FT': 9, 'FTA': 10, 'PF': 4, 'BLK_STL': 0, 'REB_AST': 8, 'PTS_AST': 26, 'PTS_REB': 26, 'PTS_REB_AST': 30, 'FANTASY': 30.8}, {'date': '2023-12-16', 'opponent': 'CHI', 'location': 'home', 'season': '2023-24', 'PTS': 18, 'REB': 5, 'AST': 4, 'BLK': 0, 'STL': 2, 'TOV': 2, 'MP': 34.56666667, 'OffREB': 1, 'DefREB': 4, 'FG': 8, 'FGA': 14, '3P': 1, '3PA': 3, 'FT': 1, 'FTA': 1, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 9, 'PTS_AST': 22, 'PTS_REB': 23, 'PTS_REB_AST': 27, 'FANTASY': 34.0}, {'date': '2023-12-18', 'opponent': 'MIN', 'location': 'home', 'season': '2023-24', 'PTS': 8, 'REB': 3, 'AST': 0, 'BLK': 2, 'STL': 2, 'TOV': 3, 'MP': 30.13333333, 'OffREB': 1, 'DefREB': 2, 'FG': 3, 'FGA': 8, '3P': 0, '3PA': 1, 'FT': 2, 'FTA': 2, 'PF': 4, 'BLK_STL': 4, 'REB_AST': 3, 'PTS_AST': 8, 'PTS_REB': 11, 'PTS_REB_AST': 11, 'FANTASY': 20.6}, {'date': '2023-12-20', 'opponent': 'ORL', 'location': 'away', 'season': '2023-24', 'PTS': 10, 'REB': 3, 'AST': 1, 'BLK': 1, 'STL': 1, 'TOV': 1, 'MP': 33.86666667, 'OffREB': 2, 'DefREB': 1, 'FG': 3, 'FGA': 10, '3P': 0, '3PA': 3, 'FT': 4, 'FTA': 6, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 4, 'PTS_AST': 11, 'PTS_REB': 13, 'PTS_REB_AST': 14, 'FANTASY': 20.1}, {'date': '2023-12-22', 'opponent': 'ATL', 'location': 'home', 'season': '2023-24', 'PTS': 19, 'REB': 7, 'AST': 1, 'BLK': 1, 'STL': 1, 'TOV': 2, 'MP': 37.26666667, 'OffREB': 4, 'DefREB': 3, 'FG': 7, 'FGA': 14, '3P': 1, '3PA': 1, 'FT': 4, 'FTA': 5, 'PF': 4, 'BLK_STL': 2, 'REB_AST': 8, 'PTS_AST': 20, 'PTS_REB': 26, 'PTS_REB_AST': 27, 'FANTASY': 32.9}, {'date': '2023-12-25', 'opponent': 'PHI', 'location': 'home', 'season': '2023-24', 'PTS': 31, 'REB': 10, 'AST': 1, 'BLK': 0, 'STL': 2, 'TOV': 0, 'MP': 39.48333333, 'OffREB': 5, 'DefREB': 5, 'FG': 11, 'FGA': 15, '3P': 1, '3PA': 3, 'FT': 8, 'FTA': 8, 'PF': 3, 'BLK_STL': 2, 'REB_AST': 11, 'PTS_AST': 32, 'PTS_REB': 41, 'PTS_REB_AST': 42, 'FANTASY': 50.5}, {'date': '2023-12-28', 'opponent': 'GSW', 'location': 'away', 'season': '2023-24', 'PTS': 17, 'REB': 5, 'AST': 6, 'BLK': 0, 'STL': 1, 'TOV': 2, 'MP': 38.68333333, 'OffREB': 1, 'DefREB': 4, 'FG': 7, 'FGA': 15, '3P': 2, '3PA': 5, 'FT': 1, 'FTA': 2, 'PF': 2, 'BLK_STL': 1, 'REB_AST': 11, 'PTS_AST': 23, 'PTS_REB': 22, 'PTS_REB_AST': 28, 'FANTASY': 33.0}, {'date': '2023-12-30', 'opponent': 'UTA', 'location': 'away', 'season': '2023-24', 'PTS': 9, 'REB': 1, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 35.13333333, 'OffREB': 0, 'DefREB': 1, 'FG': 2, 'FGA': 9, '3P': 0, '3PA': 4, 'FT': 5, 'FTA': 5, 'PF': 4, 'BLK_STL': 0, 'REB_AST': 2, 'PTS_AST': 10, 'PTS_REB': 10, 'PTS_REB_AST': 11, 'FANTASY': 9.7}, {'date': '2024-01-01', 'opponent': 'LAC', 'location': 'away', 'season': '2023-24', 'PTS': 15, 'REB': 4, 'AST': 2, 'BLK': 0, 'STL': 4, 'TOV': 2, 'MP': 38.48333333, 'OffREB': 3, 'DefREB': 1, 'FG': 6, 'FGA': 13, '3P': 0, '3PA': 3, 'FT': 3, 'FTA': 4, 'PF': 2, 'BLK_STL': 4, 'REB_AST': 6, 'PTS_AST': 17, 'PTS_REB': 19, 'PTS_REB_AST': 21, 'FANTASY': 32.8}, {'date': '2024-01-03', 'opponent': 'LAL', 'location': 'away', 'season': '2023-24', 'PTS': 16, 'REB': 0, 'AST': 8, 'BLK': 1, 'STL': 1, 'TOV': 2, 'MP': 39.05, 'OffREB': 0, 'DefREB': 0, 'FG': 7, 'FGA': 14, '3P': 2, '3PA': 6, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 8, 'PTS_AST': 24, 'PTS_REB': 16, 'PTS_REB_AST': 24, 'FANTASY': 32.0}, {'date': '2024-01-05', 'opponent': 'PHO', 'location': 'away', 'season': '2023-24', 'PTS': 10, 'REB': 3, 'AST': 1, 'BLK': 0, 'STL': 2, 'TOV': 3, 'MP': 35.46666667, 'OffREB': 1, 'DefREB': 2, 'FG': 5, 'FGA': 7, '3P': 0, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 4, 'BLK_STL': 2, 'REB_AST': 4, 'PTS_AST': 11, 'PTS_REB': 13, 'PTS_REB_AST': 14, 'FANTASY': 18.1}, {'date': '2024-01-08', 'opponent': 'HOU', 'location': 'home', 'season': '2023-24', 'PTS': 14, 'REB': 4, 'AST': 4, 'BLK': 0, 'STL': 1, 'TOV': 2, 'MP': 38.61666667, 'OffREB': 0, 'DefREB': 4, 'FG': 5, 'FGA': 11, '3P': 1, '3PA': 2, 'FT': 3, 'FTA': 4, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 8, 'PTS_AST': 18, 'PTS_REB': 18, 'PTS_REB_AST': 22, 'FANTASY': 25.8}, {'date': '2024-01-10', 'opponent': 'OKC', 'location': 'home', 'season': '2023-24', 'PTS': 21, 'REB': 5, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 3, 'MP': 33.93333333, 'OffREB': 0, 'DefREB': 5, 'FG': 6, 'FGA': 9, '3P': 3, '3PA': 5, 'FT': 6, 'FTA': 9, 'PF': 4, 'BLK_STL': 0, 'REB_AST': 7, 'PTS_AST': 23, 'PTS_REB': 26, 'PTS_REB_AST': 28, 'FANTASY': 27.0}, {'date': '2024-01-12', 'opponent': 'ORL', 'location': 'home', 'season': '2023-24', 'PTS': 19, 'REB': 7, 'AST': 3, 'BLK': 0, 'STL': 1, 'TOV': 3, 'MP': 36.96666667, 'OffREB': 4, 'DefREB': 3, 'FG': 8, 'FGA': 16, '3P': 0, '3PA': 2, 'FT': 3, 'FTA': 3, 'PF': 3, 'BLK_STL': 1, 'REB_AST': 10, 'PTS_AST': 22, 'PTS_REB': 26, 'PTS_REB_AST': 29, 'FANTASY': 31.9}, {'date': '2024-01-14', 'opponent': 'CHO', 'location': 'home', 'season': '2023-24', 'PTS': 15, 'REB': 5, 'AST': 2, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 14.61666667, 'OffREB': 1, 'DefREB': 4, 'FG': 7, 'FGA': 11, '3P': 0, '3PA': 0, 'FT': 1, 'FTA': 1, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 7, 'PTS_AST': 17, 'PTS_REB': 20, 'PTS_REB_AST': 22, 'FANTASY': 27.0}, {'date': '2024-01-27', 'opponent': 'NYK', 'location': 'away', 'season': '2023-24', 'PTS': 6, 'REB': 1, 'AST': 4, 'BLK': 1, 'STL': 2, 'TOV': 0, 'MP': 23.68333333, 'OffREB': 0, 'DefREB': 1, 'FG': 1, 'FGA': 3, '3P': 1, '3PA': 2, 'FT': 3, 'FTA': 4, 'PF': 4, 'BLK_STL': 3, 'REB_AST': 5, 'PTS_AST': 10, 'PTS_REB': 7, 'PTS_REB_AST': 11, 'FANTASY': 22.2}, {'date': '2024-01-29', 'opponent': 'PHO', 'location': 'home', 'season': '2023-24', 'PTS': 2, 'REB': 3, 'AST': 1, 'BLK': 0, 'STL': 1, 'TOV': 2, 'MP': 25.25, 'OffREB': 0, 'DefREB': 3, 'FG': 0, 'FGA': 6, '3P': 0, '3PA': 4, 'FT': 2, 'FTA': 2, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 4, 'PTS_AST': 3, 'PTS_REB': 5, 'PTS_REB_AST': 6, 'FANTASY': 8.1}, {'date': '2024-01-31', 'opponent': 'SAC', 'location': 'home', 'season': '2023-24', 'PTS': 8, 'REB': 4, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 24.93333333, 'OffREB': 0, 'DefREB': 4, 'FG': 3, 'FGA': 9, '3P': 0, '3PA': 1, 'FT': 2, 'FTA': 2, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 5, 'PTS_AST': 9, 'PTS_REB': 12, 'PTS_REB_AST': 13, 'FANTASY': 12.3}, {'date': '2024-02-02', 'opponent': 'WAS', 'location': 'away', 'season': '2023-24', 'PTS': 8, 'REB': 4, 'AST': 2, 'BLK': 0, 'STL': 2, 'TOV': 0, 'MP': 25.8, 'OffREB': 2, 'DefREB': 2, 'FG': 4, 'FGA': 7, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 2, 'REB_AST': 6, 'PTS_AST': 10, 'PTS_REB': 12, 'PTS_REB_AST': 14, 'FANTASY': 21.8}, {'date': '2024-02-04', 'opponent': 'LAC', 'location': 'home', 'season': '2023-24', 'PTS': 7, 'REB': 4, 'AST': 4, 'BLK': 0, 'STL': 0, 'TOV': 3, 'MP': 25.63333333, 'OffREB': 3, 'DefREB': 1, 'FG': 3, 'FGA': 11, '3P': 1, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 8, 'PTS_AST': 11, 'PTS_REB': 11, 'PTS_REB_AST': 15, 'FANTASY': 14.8}, {'date': '2024-02-06', 'opponent': 'ORL', 'location': 'home', 'season': '2023-24', 'PTS': 12, 'REB': 6, 'AST': 2, 'BLK': 0, 'STL': 3, 'TOV': 2, 'MP': 23.4, 'OffREB': 2, 'DefREB': 4, 'FG': 4, 'FGA': 11, '3P': 1, '3PA': 5, 'FT': 3, 'FTA': 3, 'PF': 3, 'BLK_STL': 3, 'REB_AST': 8, 'PTS_AST': 14, 'PTS_REB': 18, 'PTS_REB_AST': 20, 'FANTASY': 29.2}, {'date': '2024-02-07', 'opponent': 'SAS', 'location': 'home', 'season': '2023-24', 'PTS': 10, 'REB': 3, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 27.95, 'OffREB': 0, 'DefREB': 3, 'FG': 4, 'FGA': 6, '3P': 0, '3PA': 2, 'FT': 2, 'FTA': 5, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 3, 'PTS_AST': 10, 'PTS_REB': 13, 'PTS_REB_AST': 13, 'FANTASY': 11.6}, {'date': '2024-02-11', 'opponent': 'BOS', 'location': 'home', 'season': '2023-24', 'PTS': 6, 'REB': 3, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 28.6, 'OffREB': 1, 'DefREB': 2, 'FG': 2, 'FGA': 6, '3P': 1, '3PA': 2, 'FT': 1, 'FTA': 2, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 4, 'PTS_AST': 7, 'PTS_REB': 9, 'PTS_REB_AST': 10, 'FANTASY': 10.1}, {'date': '2024-02-13', 'opponent': 'MIL', 'location': 'away', 'season': '2023-24', 'PTS': 12, 'REB': 3, 'AST': 4, 'BLK': 0, 'STL': 0, 'TOV': 3, 'MP': 27.86666667, 'OffREB': 1, 'DefREB': 2, 'FG': 5, 'FGA': 12, '3P': 0, '3PA': 2, 'FT': 2, 'FTA': 3, 'PF': 3, 'BLK_STL': 0, 'REB_AST': 7, 'PTS_AST': 16, 'PTS_REB': 15, 'PTS_REB_AST': 19, 'FANTASY': 18.6}, {'date': '2024-02-14', 'opponent': 'PHI', 'location': 'away', 'season': '2023-24', 'PTS': 12, 'REB': 9, 'AST': 3, 'BLK': 0, 'STL': 2, 'TOV': 1, 'MP': 32.03333333, 'OffREB': 3, 'DefREB': 6, 'FG': 6, 'FGA': 12, '3P': 0, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 2, 'REB_AST': 12, 'PTS_AST': 15, 'PTS_REB': 21, 'PTS_REB_AST': 24, 'FANTASY': 32.3}, {'date': '2024-02-23', 'opponent': 'NOP', 'location': 'away', 'season': '2023-24', 'PTS': 8, 'REB': 4, 'AST': 1, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 26.86666667, 'OffREB': 2, 'DefREB': 2, 'FG': 2, 'FGA': 8, '3P': 0, '3PA': 3, 'FT': 4, 'FTA': 4, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 5, 'PTS_AST': 9, 'PTS_REB': 12, 'PTS_REB_AST': 13, 'FANTASY': 17.3}, {'date': '2024-02-26', 'opponent': 'SAC', 'location': 'away', 'season': '2023-24', 'PTS': 26, 'REB': 5, 'AST': 2, 'BLK': 0, 'STL': 4, 'TOV': 2, 'MP': 37.68333333, 'OffREB': 1, 'DefREB': 4, 'FG': 12, 'FGA': 17, '3P': 1, '3PA': 2, 'FT': 1, 'FTA': 2, 'PF': 2, 'BLK_STL': 4, 'REB_AST': 7, 'PTS_AST': 28, 'PTS_REB': 31, 'PTS_REB_AST': 33, 'FANTASY': 45.0}, {'date': '2024-02-27', 'opponent': 'POR', 'location': 'away', 'season': '2023-24', 'PTS': 7, 'REB': 3, 'AST': 4, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 29.35, 'OffREB': 2, 'DefREB': 1, 'FG': 2, 'FGA': 5, '3P': 1, '3PA': 2, 'FT': 2, 'FTA': 2, 'PF': 3, 'BLK_STL': 0, 'REB_AST': 7, 'PTS_AST': 11, 'PTS_REB': 10, 'PTS_REB_AST': 14, 'FANTASY': 15.6}, {'date': '2024-02-29', 'opponent': 'DEN', 'location': 'away', 'season': '2023-24', 'PTS': 3, 'REB': 4, 'AST': 5, 'BLK': 0, 'STL': 2, 'TOV': 3, 'MP': 26.76666667, 'OffREB': 1, 'DefREB': 3, 'FG': 1, 'FGA': 5, '3P': 0, '3PA': 1, 'FT': 1, 'FTA': 2, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 9, 'PTS_AST': 8, 'PTS_REB': 7, 'PTS_REB_AST': 12, 'FANTASY': 18.3}, {'date': '2024-03-02', 'opponent': 'UTA', 'location': 'home', 'season': '2023-24', 'PTS': 12, 'REB': 4, 'AST': 1, 'BLK': 0, 'STL': 1, 'TOV': 1, 'MP': 29.03333333, 'OffREB': 2, 'DefREB': 2, 'FG': 5, 'FGA': 10, '3P': 1, '3PA': 3, 'FT': 1, 'FTA': 2, 'PF': 3, 'BLK_STL': 1, 'REB_AST': 5, 'PTS_AST': 13, 'PTS_REB': 16, 'PTS_REB_AST': 17, 'FANTASY': 20.3}, {'date': '2024-03-05', 'opponent': 'DET', 'location': 'home', 'season': '2023-24', 'PTS': 11, 'REB': 6, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 26.61666667, 'OffREB': 1, 'DefREB': 5, 'FG': 4, 'FGA': 7, '3P': 1, '3PA': 2, 'FT': 2, 'FTA': 2, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 8, 'PTS_AST': 13, 'PTS_REB': 17, 'PTS_REB_AST': 19, 'FANTASY': 21.2}, {'date': '2024-03-07', 'opponent': 'DAL', 'location': 'away', 'season': '2023-24', 'PTS': 13, 'REB': 6, 'AST': 2, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 27.8, 'OffREB': 0, 'DefREB': 6, 'FG': 4, 'FGA': 7, '3P': 3, '3PA': 4, 'FT': 2, 'FTA': 2, 'PF': 2, 'BLK_STL': 1, 'REB_AST': 8, 'PTS_AST': 15, 'PTS_REB': 19, 'PTS_REB_AST': 21, 'FANTASY': 26.2}, {'date': '2024-03-08', 'opponent': 'OKC', 'location': 'away', 'season': '2023-24', 'PTS': 25, 'REB': 3, 'AST': 3, 'BLK': 0, 'STL': 3, 'TOV': 0, 'MP': 31.28333333, 'OffREB': 0, 'DefREB': 3, 'FG': 10, 'FGA': 13, '3P': 1, '3PA': 3, 'FT': 4, 'FTA': 6, 'PF': 2, 'BLK_STL': 3, 'REB_AST': 6, 'PTS_AST': 28, 'PTS_REB': 28, 'PTS_REB_AST': 31, 'FANTASY': 42.1}, {'date': '2024-03-10', 'opponent': 'WAS', 'location': 'home', 'season': '2023-24', 'PTS': 6, 'REB': 7, 'AST': 2, 'BLK': 2, 'STL': 2, 'TOV': 2, 'MP': 24.85, 'OffREB': 2, 'DefREB': 5, 'FG': 3, 'FGA': 6, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 1, 'PF': 2, 'BLK_STL': 4, 'REB_AST': 9, 'PTS_AST': 8, 'PTS_REB': 13, 'PTS_REB_AST': 15, 'FANTASY': 27.4}, {'date': '2024-03-13', 'opponent': 'DEN', 'location': 'home', 'season': '2023-24', 'PTS': 8, 'REB': 2, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 28.16666667, 'OffREB': 0, 'DefREB': 2, 'FG': 2, 'FGA': 6, '3P': 0, '3PA': 1, 'FT': 4, 'FTA': 4, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 2, 'PTS_AST': 8, 'PTS_REB': 10, 'PTS_REB_AST': 10, 'FANTASY': 9.4}, {'date': '2024-03-15', 'opponent': 'DET', 'location': 'away', 'season': '2023-24', 'PTS': 2, 'REB': 5, 'AST': 4, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 25.9, 'OffREB': 0, 'DefREB': 5, 'FG': 1, 'FGA': 5, '3P': 0, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 5, 'BLK_STL': 1, 'REB_AST': 9, 'PTS_AST': 6, 'PTS_REB': 7, 'PTS_REB_AST': 11, 'FANTASY': 17.0}, {'date': '2024-03-17', 'opponent': 'DET', 'location': 'away', 'season': '2023-24', 'PTS': 15, 'REB': 3, 'AST': 4, 'BLK': 1, 'STL': 1, 'TOV': 1, 'MP': 34.65, 'OffREB': 3, 'DefREB': 0, 'FG': 6, 'FGA': 14, '3P': 1, '3PA': 3, 'FT': 2, 'FTA': 4, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 7, 'PTS_AST': 19, 'PTS_REB': 18, 'PTS_REB_AST': 22, 'FANTASY': 29.6}, {'date': '2024-03-18', 'opponent': 'PHI', 'location': 'away', 'season': '2023-24', 'PTS': 9, 'REB': 9, 'AST': 4, 'BLK': 0, 'STL': 1, 'TOV': 1, 'MP': 34.75, 'OffREB': 0, 'DefREB': 9, 'FG': 3, 'FGA': 13, '3P': 1, '3PA': 5, 'FT': 2, 'FTA': 2, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 13, 'PTS_AST': 13, 'PTS_REB': 18, 'PTS_REB_AST': 22, 'FANTASY': 27.8}, {'date': '2024-03-20', 'opponent': 'CLE', 'location': 'away', 'season': '2023-24', 'PTS': 7, 'REB': 1, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 31.21666667, 'OffREB': 0, 'DefREB': 1, 'FG': 3, 'FGA': 5, '3P': 0, '3PA': 1, 'FT': 1, 'FTA': 1, 'PF': 4, 'BLK_STL': 0, 'REB_AST': 3, 'PTS_AST': 9, 'PTS_REB': 8, 'PTS_REB_AST': 10, 'FANTASY': 10.2}, {'date': '2024-03-22', 'opponent': 'NOP', 'location': 'home', 'season': '2023-24', 'PTS': 3, 'REB': 0, 'AST': 3, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 13.96666667, 'OffREB': 0, 'DefREB': 0, 'FG': 1, 'FGA': 7, '3P': 1, '3PA': 5, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 3, 'PTS_AST': 6, 'PTS_REB': 3, 'PTS_REB_AST': 6, 'FANTASY': 7.5}, {'date': '2024-03-26', 'opponent': 'GSW', 'location': 'home', 'season': '2023-24', 'PTS': 12, 'REB': 2, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 25.93333333, 'OffREB': 1, 'DefREB': 1, 'FG': 4, 'FGA': 10, '3P': 1, '3PA': 4, 'FT': 3, 'FTA': 4, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 3, 'PTS_AST': 13, 'PTS_REB': 14, 'PTS_REB_AST': 15, 'FANTASY': 13.9}, {'date': '2024-03-29', 'opponent': 'POR', 'location': 'home', 'season': '2023-24', 'PTS': 12, 'REB': 3, 'AST': 5, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 25.43333333, 'OffREB': 0, 'DefREB': 3, 'FG': 6, 'FGA': 9, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 3, 'BLK_STL': 1, 'REB_AST': 8, 'PTS_AST': 17, 'PTS_REB': 15, 'PTS_REB_AST': 20, 'FANTASY': 26.1}, {'date': '2024-03-31', 'opponent': 'WAS', 'location': 'away', 'season': '2023-24', 'PTS': 9, 'REB': 1, 'AST': 2, 'BLK': 1, 'STL': 0, 'TOV': 4, 'MP': 19.3, 'OffREB': 0, 'DefREB': 1, 'FG': 3, 'FGA': 5, '3P': 1, '3PA': 2, 'FT': 2, 'FTA': 2, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 3, 'PTS_AST': 11, 'PTS_REB': 10, 'PTS_REB_AST': 12, 'FANTASY': 12.2}, {'date': '2024-04-02', 'opponent': 'NYK', 'location': 'home', 'season': '2023-24', 'PTS': 3, 'REB': 2, 'AST': 0, 'BLK': 0, 'STL': 1, 'TOV': 2, 'MP': 12.41666667, 'OffREB': 0, 'DefREB': 2, 'FG': 1, 'FGA': 2, '3P': 0, '3PA': 1, 'FT': 1, 'FTA': 1, 'PF': 2, 'BLK_STL': 1, 'REB_AST': 2, 'PTS_AST': 3, 'PTS_REB': 5, 'PTS_REB_AST': 5, 'FANTASY': 6.4}, {'date': '2024-04-04', 'opponent': 'PHI', 'location': 'home', 'season': '2023-24', 'PTS': 6, 'REB': 4, 'AST': 3, 'BLK': 2, 'STL': 1, 'TOV': 1, 'MP': 20.38333333, 'OffREB': 2, 'DefREB': 2, 'FG': 2, 'FGA': 5, '3P': 0, '3PA': 2, 'FT': 2, 'FTA': 3, 'PF': 1, 'BLK_STL': 3, 'REB_AST': 7, 'PTS_AST': 9, 'PTS_REB': 10, 'PTS_REB_AST': 13, 'FANTASY': 23.3}, {'date': '2024-04-05', 'opponent': 'HOU', 'location': 'away', 'season': '2023-24', 'PTS': 12, 'REB': 2, 'AST': 1, 'BLK': 0, 'STL': 2, 'TOV': 1, 'MP': 19.16666667, 'OffREB': 1, 'DefREB': 1, 'FG': 5, 'FGA': 7, '3P': 2, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 3, 'PTS_AST': 13, 'PTS_REB': 14, 'PTS_REB_AST': 15, 'FANTASY': 20.9}, {'date': '2024-04-07', 'opponent': 'IND', 'location': 'away', 'season': '2023-24', 'PTS': 3, 'REB': 3, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 12.63333333, 'OffREB': 1, 'DefREB': 2, 'FG': 1, 'FGA': 2, '3P': 0, '3PA': 0, 'FT': 1, 'FTA': 1, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 4, 'PTS_AST': 4, 'PTS_REB': 6, 'PTS_REB_AST': 7, 'FANTASY': 8.1}, {'date': '2024-04-09', 'opponent': 'ATL', 'location': 'away', 'season': '2023-24', 'PTS': 3, 'REB': 4, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 21.88333333, 'OffREB': 2, 'DefREB': 2, 'FG': 1, 'FGA': 2, '3P': 1, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 5, 'PTS_AST': 4, 'PTS_REB': 7, 'PTS_REB_AST': 8, 'FANTASY': 7.3}, {'date': '2024-04-10', 'opponent': 'DAL', 'location': 'home', 'season': '2023-24', 'PTS': 6, 'REB': 2, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 18.36666667, 'OffREB': 0, 'DefREB': 2, 'FG': 2, 'FGA': 4, '3P': 2, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 3, 'PTS_AST': 7, 'PTS_REB': 8, 'PTS_REB_AST': 9, 'FANTASY': 8.9}, {'date': '2024-04-12', 'opponent': 'TOR', 'location': 'home', 'season': '2023-24', 'PTS': 20, 'REB': 4, 'AST': 9, 'BLK': 1, 'STL': 2, 'TOV': 0, 'MP': 32.28333333, 'OffREB': 0, 'DefREB': 4, 'FG': 7, 'FGA': 15, '3P': 2, '3PA': 4, 'FT': 4, 'FTA': 4, 'PF': 5, 'BLK_STL': 3, 'REB_AST': 13, 'PTS_AST': 29, 'PTS_REB': 24, 'PTS_REB_AST': 33, 'FANTASY': 47.3}, {'date': '2024-04-14', 'opponent': 'TOR', 'location': 'home', 'season': '2023-24', 'PTS': 18, 'REB': 4, 'AST': 5, 'BLK': 2, 'STL': 1, 'TOV': 1, 'MP': 32.31666667, 'OffREB': 0, 'DefREB': 4, 'FG': 6, 'FGA': 12, '3P': 0, '3PA': 4, 'FT': 6, 'FTA': 7, 'PF': 1, 'BLK_STL': 3, 'REB_AST': 9, 'PTS_AST': 23, 'PTS_REB': 22, 'PTS_REB_AST': 27, 'FANTASY': 38.3}, {'date': '2024-10-23', 'opponent': 'ORL', 'location': 'home', 'season': '2024-25', 'PTS': 13, 'REB': 5, 'AST': 3, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 19.18333333, 'OffREB': 2, 'DefREB': 3, 'FG': 4, 'FGA': 9, '3P': 2, '3PA': 2, 'FT': 3, 'FTA': 5, 'PF': 4, 'BLK_STL': 0, 'REB_AST': 8, 'PTS_AST': 16, 'PTS_REB': 18, 'PTS_REB_AST': 21, 'FANTASY': 21.5}, {'date': '2024-10-26', 'opponent': 'CHO', 'location': 'away', 'season': '2024-25', 'PTS': 6, 'REB': 6, 'AST': 4, 'BLK': 0, 'STL': 1, 'TOV': 4, 'MP': 21.66666667, 'OffREB': 2, 'DefREB': 4, 'FG': 2, 'FGA': 4, '3P': 2, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 1, 'REB_AST': 10, 'PTS_AST': 10, 'PTS_REB': 12, 'PTS_REB_AST': 16, 'FANTASY': 18.2}, {'date': '2024-10-28', 'opponent': 'DET', 'location': 'home', 'season': '2024-25', 'PTS': 12, 'REB': 9, 'AST': 0, 'BLK': 0, 'STL': 3, 'TOV': 1, 'MP': 32.53333333, 'OffREB': 3, 'DefREB': 6, 'FG': 5, 'FGA': 10, '3P': 2, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 3, 'REB_AST': 9, 'PTS_AST': 12, 'PTS_REB': 21, 'PTS_REB_AST': 21, 'FANTASY': 30.8}, {'date': '2024-10-30', 'opponent': 'NYK', 'location': 'home', 'season': '2024-25', 'PTS': 8, 'REB': 8, 'AST': 4, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 27.3, 'OffREB': 2, 'DefREB': 6, 'FG': 2, 'FGA': 10, '3P': 0, '3PA': 2, 'FT': 4, 'FTA': 8, 'PF': 4, 'BLK_STL': 0, 'REB_AST': 12, 'PTS_AST': 12, 'PTS_REB': 16, 'PTS_REB_AST': 20, 'FANTASY': 22.6}, {'date': '2024-11-02', 'opponent': 'WAS', 'location': 'away', 'season': '2024-25', 'PTS': 8, 'REB': 10, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 24.71666667, 'OffREB': 3, 'DefREB': 7, 'FG': 4, 'FGA': 12, '3P': 0, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 11, 'PTS_AST': 9, 'PTS_REB': 18, 'PTS_REB_AST': 19, 'FANTASY': 20.5}, {'date': '2024-11-10', 'opponent': 'MIN', 'location': 'away', 'season': '2024-25', 'PTS': 7, 'REB': 5, 'AST': 1, 'BLK': 1, 'STL': 1, 'TOV': 2, 'MP': 16.41666667, 'OffREB': 1, 'DefREB': 4, 'FG': 3, 'FGA': 7, '3P': 1, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 2, 'REB_AST': 6, 'PTS_AST': 8, 'PTS_REB': 12, 'PTS_REB_AST': 13, 'FANTASY': 18.5}, {'date': '2024-11-12', 'opponent': 'DET', 'location': 'away', 'season': '2024-25', 'PTS': 14, 'REB': 5, 'AST': 3, 'BLK': 0, 'STL': 2, 'TOV': 2, 'MP': 24.8, 'OffREB': 2, 'DefREB': 3, 'FG': 6, 'FGA': 9, '3P': 0, '3PA': 1, 'FT': 2, 'FTA': 2, 'PF': 3, 'BLK_STL': 2, 'REB_AST': 8, 'PTS_AST': 17, 'PTS_REB': 19, 'PTS_REB_AST': 22, 'FANTASY': 28.5}, {'date': '2024-11-15', 'opponent': 'IND', 'location': 'away', 'season': '2024-25', 'PTS': 10, 'REB': 3, 'AST': 5, 'BLK': 0, 'STL': 2, 'TOV': 1, 'MP': 25.38333333, 'OffREB': 0, 'DefREB': 3, 'FG': 4, 'FGA': 6, '3P': 0, '3PA': 1, 'FT': 2, 'FTA': 4, 'PF': 2, 'BLK_STL': 2, 'REB_AST': 8, 'PTS_AST': 15, 'PTS_REB': 13, 'PTS_REB_AST': 18, 'FANTASY': 26.1}, {'date': '2024-11-17', 'opponent': 'IND', 'location': 'away', 'season': '2024-25', 'PTS': 2, 'REB': 3, 'AST': 4, 'BLK': 0, 'STL': 1, 'TOV': 2, 'MP': 15.43333333, 'OffREB': 1, 'DefREB': 2, 'FG': 1, 'FGA': 6, '3P': 0, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 7, 'PTS_AST': 6, 'PTS_REB': 5, 'PTS_REB_AST': 9, 'FANTASY': 12.6}, {'date': '2024-11-24', 'opponent': 'DAL', 'location': 'home', 'season': '2024-25', 'PTS': 7, 'REB': 3, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 19.16666667, 'OffREB': 1, 'DefREB': 2, 'FG': 2, 'FGA': 7, '3P': 0, '3PA': 1, 'FT': 3, 'FTA': 3, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 4, 'PTS_AST': 8, 'PTS_REB': 10, 'PTS_REB_AST': 11, 'FANTASY': 12.1}], 0.5, "PTS");
+</script>
+<div id="table-container">
+<div class="groupedProbAndButtons">
+<div class="button-container">
+<button id="toggle-selection-btn">Show Selected Only</button>
+<button id="clear-filters-btn">Remove Filters</button>
+<button id="clear-all-btn">Clear All</button>
+</div>
+</div>
+<table id="player-table">
+<thead>
+<tr>
+<th>Season</th>
+<th>Date</th>
+<th>Team</th>
+<th></th>
+<th>Opp</th>
+<th>PTS</th>
+<th>REB</th>
+<th>AST</th>
+<th>STL</th>
+<th>BLK</th>
+<th>TOV</th>
+<th>MP</th>
+<th>OffREB</th>
+<th>DefREB</th>
+<th>FG</th>
+<th>FGA</th>
+<th>3P</th>
+<th>3PA</th>
+<th>FT</th>
+<th>FTA</th>
+<th>PF</th>
+</tr>
+<tr id="filter-row"></tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411240MIA.html" target="_blank">11/24/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/DAL.html" target="_blank">DAL</a></td>
+<td>7</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>19.17</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>7</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411170IND.html" target="_blank">11/17/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>15.43</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>6</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411150IND.html" target="_blank">11/15/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
+<td>10</td>
+<td>3</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>25.38</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411120DET.html" target="_blank">11/12/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
+<td>14</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>24.80</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411100MIN.html" target="_blank">11/10/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/MIN.html" target="_blank">MIN</a></td>
+<td>7</td>
+<td>5</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>16.42</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>7</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411020WAS.html" target="_blank">11/2/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/WAS.html" target="_blank">WAS</a></td>
+<td>8</td>
+<td>10</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>24.72</td>
+<td>3</td>
+<td>7</td>
+<td>4</td>
+<td>12</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410300MIA.html" target="_blank">10/30/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
+<td>8</td>
+<td>8</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>27.30</td>
+<td>2</td>
+<td>6</td>
+<td>2</td>
+<td>10</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>8</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410280MIA.html" target="_blank">10/28/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
+<td>12</td>
+<td>9</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>32.53</td>
+<td>3</td>
+<td>6</td>
+<td>5</td>
+<td>10</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410260CHO.html" target="_blank">10/26/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
+<td>6</td>
+<td>6</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>4</td>
+<td>21.67</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410230MIA.html" target="_blank">10/23/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/ORL.html" target="_blank">ORL</a></td>
+<td>13</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>19.18</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>9</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404140MIA.html" target="_blank">4/14/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/TOR.html" target="_blank">TOR</a></td>
+<td>18</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>32.32</td>
+<td>0</td>
+<td>4</td>
+<td>6</td>
+<td>12</td>
+<td>0</td>
+<td>4</td>
+<td>6</td>
+<td>7</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404120MIA.html" target="_blank">4/12/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/TOR.html" target="_blank">TOR</a></td>
+<td>20</td>
+<td>4</td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>32.28</td>
+<td>0</td>
+<td>4</td>
+<td>7</td>
+<td>15</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404100MIA.html" target="_blank">4/10/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/DAL.html" target="_blank">DAL</a></td>
+<td>6</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>18.37</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404090ATL.html" target="_blank">4/9/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/ATL.html" target="_blank">ATL</a></td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>21.88</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404070IND.html" target="_blank">4/7/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12.63</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404050HOU.html" target="_blank">4/5/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
+<td>12</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>19.17</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>7</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404040MIA.html" target="_blank">4/4/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+<td>6</td>
+<td>4</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>20.38</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202404020MIA.html" target="_blank">4/2/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>12.42</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403310WAS.html" target="_blank">3/31/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/WAS.html" target="_blank">WAS</a></td>
+<td>9</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>19.30</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403290MIA.html" target="_blank">3/29/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/POR.html" target="_blank">POR</a></td>
+<td>12</td>
+<td>3</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>25.43</td>
+<td>0</td>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403260MIA.html" target="_blank">3/26/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/GSW.html" target="_blank">GSW</a></td>
+<td>12</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>25.93</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>10</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403220MIA.html" target="_blank">3/22/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/NOP.html" target="_blank">NOP</a></td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>13.97</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>7</td>
+<td>1</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403200CLE.html" target="_blank">3/20/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/CLE.html" target="_blank">CLE</a></td>
+<td>7</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>31.22</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403180PHI.html" target="_blank">3/18/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+<td>9</td>
+<td>9</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>34.75</td>
+<td>0</td>
+<td>9</td>
+<td>3</td>
+<td>13</td>
+<td>1</td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403170DET.html" target="_blank">3/17/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
+<td>15</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>34.65</td>
+<td>3</td>
+<td>0</td>
+<td>6</td>
+<td>14</td>
+<td>1</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403150DET.html" target="_blank">3/15/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>25.90</td>
+<td>0</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403130MIA.html" target="_blank">3/13/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/DEN.html" target="_blank">DEN</a></td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>28.17</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403100MIA.html" target="_blank">3/10/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/WAS.html" target="_blank">WAS</a></td>
+<td>6</td>
+<td>7</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>24.85</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403080OKC.html" target="_blank">3/8/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>25</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>31.28</td>
+<td>0</td>
+<td>3</td>
+<td>10</td>
+<td>13</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+<td>6</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403070DAL.html" target="_blank">3/7/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/DAL.html" target="_blank">DAL</a></td>
+<td>13</td>
+<td>6</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>27.80</td>
+<td>0</td>
+<td>6</td>
+<td>4</td>
+<td>7</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403050MIA.html" target="_blank">3/5/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
+<td>11</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>26.62</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>7</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202403020MIA.html" target="_blank">3/2/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/UTA.html" target="_blank">UTA</a></td>
+<td>12</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>29.03</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>10</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202402290DEN.html" target="_blank">2/29/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/DEN.html" target="_blank">DEN</a></td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>26.77</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202402270POR.html" target="_blank">2/27/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/POR.html" target="_blank">POR</a></td>
+<td>7</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>29.35</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202402260SAC.html" target="_blank">2/26/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+<td>26</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>0</td>
+<td>2</td>
+<td>37.68</td>
+<td>1</td>
+<td>4</td>
+<td>12</td>
+<td>17</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202402230NOP.html" target="_blank">2/23/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/NOP.html" target="_blank">NOP</a></td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>26.87</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>8</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202402140PHI.html" target="_blank">2/14/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+<td>12</td>
+<td>9</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>32.03</td>
+<td>3</td>
+<td>6</td>
+<td>6</td>
+<td>12</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202402130MIL.html" target="_blank">2/13/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/MIL.html" target="_blank">MIL</a></td>
+<td>12</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>27.87</td>
+<td>1</td>
+<td>2</td>
+<td>5</td>
+<td>12</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202402110MIA.html" target="_blank">2/11/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/BOS.html" target="_blank">BOS</a></td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>28.60</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>6</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202402070MIA.html" target="_blank">2/7/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/SAS.html" target="_blank">SAS</a></td>
+<td>10</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>27.95</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>6</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202402060MIA.html" target="_blank">2/6/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/ORL.html" target="_blank">ORL</a></td>
+<td>12</td>
+<td>6</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>23.40</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>11</td>
+<td>1</td>
+<td>5</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202402040MIA.html" target="_blank">2/4/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/LAC.html" target="_blank">LAC</a></td>
+<td>7</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>25.63</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>11</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202402020WAS.html" target="_blank">2/2/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/WAS.html" target="_blank">WAS</a></td>
+<td>8</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>25.80</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>7</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401310MIA.html" target="_blank">1/31/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>24.93</td>
+<td>0</td>
+<td>4</td>
+<td>3</td>
+<td>9</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401290MIA.html" target="_blank">1/29/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>25.25</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401270NYK.html" target="_blank">1/27/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
+<td>6</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>23.68</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401140MIA.html" target="_blank">1/14/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
+<td>15</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>14.62</td>
+<td>1</td>
+<td>4</td>
+<td>7</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401120MIA.html" target="_blank">1/12/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/ORL.html" target="_blank">ORL</a></td>
+<td>19</td>
+<td>7</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>36.97</td>
+<td>4</td>
+<td>3</td>
+<td>8</td>
+<td>16</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401100MIA.html" target="_blank">1/10/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>21</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>33.93</td>
+<td>0</td>
+<td>5</td>
+<td>6</td>
+<td>9</td>
+<td>3</td>
+<td>5</td>
+<td>6</td>
+<td>9</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401080MIA.html" target="_blank">1/8/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
+<td>14</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>38.62</td>
+<td>0</td>
+<td>4</td>
+<td>5</td>
+<td>11</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401050PHO.html" target="_blank">1/5/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
+<td>10</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>35.47</td>
+<td>1</td>
+<td>2</td>
+<td>5</td>
+<td>7</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401030LAL.html" target="_blank">1/3/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/LAL.html" target="_blank">LAL</a></td>
+<td>16</td>
+<td>0</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>39.05</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>14</td>
+<td>2</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401010LAC.html" target="_blank">1/1/2024</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/LAC.html" target="_blank">LAC</a></td>
+<td>15</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>0</td>
+<td>2</td>
+<td>38.48</td>
+<td>3</td>
+<td>1</td>
+<td>6</td>
+<td>13</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312300UTA.html" target="_blank">12/30/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/UTA.html" target="_blank">UTA</a></td>
+<td>9</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>35.13</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>9</td>
+<td>0</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312280GSW.html" target="_blank">12/28/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/GSW.html" target="_blank">GSW</a></td>
+<td>17</td>
+<td>5</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>38.68</td>
+<td>1</td>
+<td>4</td>
+<td>7</td>
+<td>15</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312250MIA.html" target="_blank">12/25/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
+<td>31</td>
+<td>10</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>39.48</td>
+<td>5</td>
+<td>5</td>
+<td>11</td>
+<td>15</td>
+<td>1</td>
+<td>3</td>
+<td>8</td>
+<td>8</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312220MIA.html" target="_blank">12/22/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/ATL.html" target="_blank">ATL</a></td>
+<td>19</td>
+<td>7</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>37.27</td>
+<td>4</td>
+<td>3</td>
+<td>7</td>
+<td>14</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312200ORL.html" target="_blank">12/20/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/ORL.html" target="_blank">ORL</a></td>
+<td>10</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>33.87</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>10</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>6</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312180MIA.html" target="_blank">12/18/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/MIN.html" target="_blank">MIN</a></td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>30.13</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>8</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312160MIA.html" target="_blank">12/16/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/CHI.html" target="_blank">CHI</a></td>
+<td>18</td>
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>34.57</td>
+<td>1</td>
+<td>4</td>
+<td>8</td>
+<td>14</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312140MIA.html" target="_blank">12/14/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/CHI.html" target="_blank">CHI</a></td>
+<td>22</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>34.32</td>
+<td>0</td>
+<td>4</td>
+<td>6</td>
+<td>14</td>
+<td>1</td>
+<td>4</td>
+<td>9</td>
+<td>10</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312130MIA.html" target="_blank">12/13/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
+<td>17</td>
+<td>6</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>33.17</td>
+<td>2</td>
+<td>4</td>
+<td>7</td>
+<td>16</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312110CHO.html" target="_blank">12/11/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
+<td>18</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>24.22</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>8</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312080MIA.html" target="_blank">12/8/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/CLE.html" target="_blank">CLE</a></td>
+<td>14</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>34.87</td>
+<td>1</td>
+<td>2</td>
+<td>7</td>
+<td>13</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312060TOR.html" target="_blank">12/6/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/TOR.html" target="_blank">TOR</a></td>
+<td>15</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>32.12</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>13</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312020MIA.html" target="_blank">12/2/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
+<td>11</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>28.67</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>9</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311300MIA.html" target="_blank">11/30/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
+<td>24</td>
+<td>5</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>33.07</td>
+<td>0</td>
+<td>5</td>
+<td>8</td>
+<td>13</td>
+<td>1</td>
+<td>3</td>
+<td>7</td>
+<td>7</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311280MIA.html" target="_blank">11/28/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/MIL.html" target="_blank">MIL</a></td>
+<td>14</td>
+<td>4</td>
+<td>6</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>32.83</td>
+<td>1</td>
+<td>3</td>
+<td>7</td>
+<td>9</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311250BRK.html" target="_blank">11/25/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
+<td>18</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>31.23</td>
+<td>1</td>
+<td>4</td>
+<td>8</td>
+<td>15</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311240NYK.html" target="_blank">11/24/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
+<td>15</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>34.87</td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+<td>17</td>
+<td>1</td>
+<td>6</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311220CLE.html" target="_blank">11/22/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/CLE.html" target="_blank">CLE</a></td>
+<td>22</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>6</td>
+<td>28.03</td>
+<td>2</td>
+<td>6</td>
+<td>7</td>
+<td>10</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311200CHI.html" target="_blank">11/20/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/CHI.html" target="_blank">CHI</a></td>
+<td>19</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>32.70</td>
+<td>2</td>
+<td>1</td>
+<td>8</td>
+<td>13</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311180CHI.html" target="_blank">11/18/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/CHI.html" target="_blank">CHI</a></td>
+<td>6</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>27.02</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311160MIA.html" target="_blank">11/16/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
+<td>10</td>
+<td>4</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>33.32</td>
+<td>0</td>
+<td>4</td>
+<td>4</td>
+<td>9</td>
+<td>2</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311140CHO.html" target="_blank">11/14/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/CHO.html" target="_blank">CHO</a></td>
+<td>17</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>32.90</td>
+<td>4</td>
+<td>1</td>
+<td>8</td>
+<td>13</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311120SAS.html" target="_blank">11/12/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/SAS.html" target="_blank">SAS</a></td>
+<td>11</td>
+<td>6</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>32.27</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>10</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311110ATL.html" target="_blank">11/11/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/ATL.html" target="_blank">ATL</a></td>
+<td>20</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>38.47</td>
+<td>1</td>
+<td>2</td>
+<td>8</td>
+<td>17</td>
+<td>2</td>
+<td>7</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311080MEM.html" target="_blank">11/8/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>21.13</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311060MIA.html" target="_blank">11/6/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/LAL.html" target="_blank">LAL</a></td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>18.30</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>7</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311030MIA.html" target="_blank">11/3/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/WAS.html" target="_blank">WAS</a></td>
+<td>9</td>
+<td>5</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>21.60</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202311010MIA.html" target="_blank">11/1/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>19.13</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>9</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202310300MIL.html" target="_blank">10/30/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/MIL.html" target="_blank">MIL</a></td>
+<td>8</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>22.70</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>9</td>
+<td>2</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202310280MIN.html" target="_blank">10/28/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/MIN.html" target="_blank">MIN</a></td>
+<td>7</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>18.23</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202310270BOS.html" target="_blank">10/27/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/BOS.html" target="_blank">BOS</a></td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>14.32</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2023-24</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202310250MIA.html" target="_blank">10/25/2023</a></td>
+<td><a href="/basketball/teams/MIA.html" target="_blank">MIA</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
+<td>6</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>13.18</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -269,38 +269,62 @@
         <h1>Boston Celtics Gamelog</h1>
         </div>
     </div>
-        <div class="button-container">
-            <button id="toggle-selection-btn">Show Selected Only</button>
-            <button id="clear-filters-btn">Remove Filters</button>
-            <button id="clear-all-btn">Clear All</button>
-        </div>
-        <button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
-        
-        <div id="team-container">
-            <table id="team-table">
-                <thead>
-                    <tr>                 
-                        <th>Season</th>
-                        <th>Date</th>
-                        <th>Team</th>
-                        <th></th>
-                        <th>Opp</th>
-                        <th>PTS</th>	
-                        <th>REB</th>
-                        <th>AST</th>
-                        <th>STL</th>
-                        <th>BLK</th>
-                        <th>PTSA</th>
-                        <th>REBA</th>
-                        <th>ASTA</th>
-                        <th>STLA</th>
-                        <th>BLKA</th>
-                    </tr>
-                <tr id="filter-row">
+    <button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
+
+<div id="player_info">
+    <div id="playerPictureContainer">
+        <img class="playerPicture" src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/BOS.png" alt="BOS" onerror="this.style.display='none';">
+    </div>
+</div>
+
+<div id="team-container">
+    <div class="button-container">
+        <button id="toggle-selection-btn">Show Selected Only</button>
+        <button id="clear-filters-btn">Remove Filters</button>
+        <button id="clear-all-btn">Clear All</button>
+    </div>
+        <table id="team-table">
+            <thead>
+                <tr>                 
+                    <th>Season</th>
+                    <th>Date</th>
+                    <th>Team</th>
+                    <th></th>
+                    <th>Opp</th>
+                    <th>PTS</th>	
+                    <th>REB</th>
+                    <th>AST</th>
+                    <th>STL</th>
+                    <th>BLK</th>
+                    <th>PTSA</th>
+                    <th>REBA</th>
+                    <th>ASTA</th>
+                    <th>STLA</th>
+                    <th>BLKA</th>
                 </tr>
-                </thead>
-                <tbody>
+            <tr id="filter-row">
+            </tr>
+            </thead>
+            <tbody>
         
+                <tr>
+                    <td style="text-align:left">2024-25</td>
+                    <td style="text-align:left"><a href="/basketball/boxscores/202411240BOS.html" target="_blank">11/24/2024</a></td>
+                    <td><a href="/basketball/teams/BOS.html" target="_blank">BOS</a></td>
+                    <td>vs</td>
+                    <td><a href="/basketball/teams/MIN.html" target="_blank">MIN</a></td>
+                    <td>107</td>
+                    <td>40</td>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>105</td>
+                    <td>49</td>
+                    <td>19</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            
                 <tr>
                     <td style="text-align:left">2024-25</td>
                     <td style="text-align:left"><a href="/basketball/boxscores/202411220WAS.html" target="_blank">11/22/2024</a></td>

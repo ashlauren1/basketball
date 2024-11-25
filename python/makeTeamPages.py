@@ -13,6 +13,17 @@ data = pd.read_csv(team_csv)
 
 # **Part 1: Create Team Directory (index.html)**
 def create_team_directory(data, output_dir):
+    logo_id_map = {
+        "CHO": "cha",
+        "BRK": "bkn",
+        "NOP": "no",
+        "UTA": "utah"
+    }
+    
+    def get_logo_url(team_id):
+        logo_id = logo_id_map.get(team_id, team_id)
+        return f"https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/{logo_id}.png&h=40&w=40"
+    
     unique_teams = data.drop_duplicates(subset=["Team", "TeamID"]).sort_values(by="Team")
     html_content = """
 <!DOCTYPE html>
@@ -143,10 +154,12 @@ def create_team_directory(data, output_dir):
     for _, row in unique_teams.iterrows():
         team_name = row["Team"]
         team_id = row["TeamID"]
+        logo_url = get_logo_url(team_id)
+        team_name_with_logo = f'<div class="team-cell"><div class="logo-container"><a href="/basketball/teams/{team_id}.html" target="_blank"><img src="{logo_url}" alt="{team_id}" class="team-logo"></a></div><div class="team-name-container"><a href="/basketball/teams/{team_id}.html" target="_blank">{team_name}</a></div></div>'
 
         html_content += f"""
             <tr>
-                <td style="text-align:left"><a href="/basketball/teams/{team_id}.html">{team_name}</a></td>
+                <td class="team-name-cell">{team_name_with_logo}</td>
             </tr>
         """
 
@@ -169,9 +182,20 @@ def create_team_directory(data, output_dir):
 # **Part 2: Generate Individual Team Pages**
 def create_team_pages(data, output_dir):
     grouped_data = data.groupby('TeamID')
+    logo_id_map = {
+        "CHO": "cha",
+        "BRK": "bkn",
+        "NOP": "no",
+        "UTA": "utah"
+    }
+    
+    def get_logo_url(team_id):
+        logo_id = logo_id_map.get(team_id, team_id)
+        return f"https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/{logo_id}.png"
 
     for team_id, team_data in grouped_data:
         team_name = team_data.iloc[0]['Team']
+        logo_url = get_logo_url(team_id)
         team_filename = os.path.join(output_dir, f"{team_id}.html")
 
         # Start HTML content for the team's gamelog
@@ -446,37 +470,43 @@ def create_team_pages(data, output_dir):
         <h1>{team_name} Gamelog</h1>
         </div>
     </div>
-        <div class="button-container">
-            <button id="toggle-selection-btn">Show Selected Only</button>
-            <button id="clear-filters-btn">Remove Filters</button>
-            <button id="clear-all-btn">Clear All</button>
-        </div>
-        <button class="arrowUp" onclick="window.scrollTo({{top: 0}})">Top</button>
-        
-        <div id="team-container">
-            <table id="team-table">
-                <thead>
-                    <tr>                 
-                        <th>Season</th>
-                        <th>Date</th>
-                        <th>Team</th>
-                        <th></th>
-                        <th>Opp</th>
-                        <th>PTS</th>	
-                        <th>REB</th>
-                        <th>AST</th>
-                        <th>STL</th>
-                        <th>BLK</th>
-                        <th>PTSA</th>
-                        <th>REBA</th>
-                        <th>ASTA</th>
-                        <th>STLA</th>
-                        <th>BLKA</th>
-                    </tr>
-                <tr id="filter-row">
+    <button class="arrowUp" onclick="window.scrollTo({{top: 0}})">Top</button>
+
+<div id="player_info">
+    <div id="playerPictureContainer">
+        <img class="playerPicture" src="{logo_url}" alt="{team_id}" onerror="this.style.display='none';">
+    </div>
+</div>
+
+<div id="team-container">
+    <div class="button-container">
+        <button id="toggle-selection-btn">Show Selected Only</button>
+        <button id="clear-filters-btn">Remove Filters</button>
+        <button id="clear-all-btn">Clear All</button>
+    </div>
+        <table id="team-table">
+            <thead>
+                <tr>                 
+                    <th>Season</th>
+                    <th>Date</th>
+                    <th>Team</th>
+                    <th></th>
+                    <th>Opp</th>
+                    <th>PTS</th>	
+                    <th>REB</th>
+                    <th>AST</th>
+                    <th>STL</th>
+                    <th>BLK</th>
+                    <th>PTSA</th>
+                    <th>REBA</th>
+                    <th>ASTA</th>
+                    <th>STLA</th>
+                    <th>BLKA</th>
                 </tr>
-                </thead>
-                <tbody>
+            <tr id="filter-row">
+            </tr>
+            </thead>
+            <tbody>
         '''
 
         # Add rows for each game in the team's gamelog

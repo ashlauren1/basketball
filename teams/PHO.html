@@ -269,37 +269,43 @@
         <h1>Phoenix Suns Gamelog</h1>
         </div>
     </div>
-        <div class="button-container">
-            <button id="toggle-selection-btn">Show Selected Only</button>
-            <button id="clear-filters-btn">Remove Filters</button>
-            <button id="clear-all-btn">Clear All</button>
-        </div>
-        <button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
-        
-        <div id="team-container">
-            <table id="team-table">
-                <thead>
-                    <tr>                 
-                        <th>Season</th>
-                        <th>Date</th>
-                        <th>Team</th>
-                        <th></th>
-                        <th>Opp</th>
-                        <th>PTS</th>	
-                        <th>REB</th>
-                        <th>AST</th>
-                        <th>STL</th>
-                        <th>BLK</th>
-                        <th>PTSA</th>
-                        <th>REBA</th>
-                        <th>ASTA</th>
-                        <th>STLA</th>
-                        <th>BLKA</th>
-                    </tr>
-                <tr id="filter-row">
+    <button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
+
+<div id="player_info">
+    <div id="playerPictureContainer">
+        <img class="playerPicture" src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/PHO.png" alt="PHO" onerror="this.style.display='none';">
+    </div>
+</div>
+
+<div id="team-container">
+    <div class="button-container">
+        <button id="toggle-selection-btn">Show Selected Only</button>
+        <button id="clear-filters-btn">Remove Filters</button>
+        <button id="clear-all-btn">Clear All</button>
+    </div>
+        <table id="team-table">
+            <thead>
+                <tr>                 
+                    <th>Season</th>
+                    <th>Date</th>
+                    <th>Team</th>
+                    <th></th>
+                    <th>Opp</th>
+                    <th>PTS</th>	
+                    <th>REB</th>
+                    <th>AST</th>
+                    <th>STL</th>
+                    <th>BLK</th>
+                    <th>PTSA</th>
+                    <th>REBA</th>
+                    <th>ASTA</th>
+                    <th>STLA</th>
+                    <th>BLKA</th>
                 </tr>
-                </thead>
-                <tbody>
+            <tr id="filter-row">
+            </tr>
+            </thead>
+            <tbody>
         
                 <tr>
                     <td style="text-align:left">2024-25</td>

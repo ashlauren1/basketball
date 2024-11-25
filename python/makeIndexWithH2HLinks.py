@@ -484,24 +484,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add checkboxes to the header row
     const checkboxHeader = document.createElement("th");
-    checkboxHeader.style.width = "38px";
+    checkboxHeader.classList.add("checkboxHeader");
     checkboxHeader.textContent = "";
     headerRow.prepend(checkboxHeader);
 
     // Add checkboxes to each row in the table
+    
     rows.forEach(row => {
         const checkboxCell = document.createElement("td");
-        checkboxCell.style.width = "38px";
+		const checkboxDiv = document.createElement("div");
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
-        checkbox.classList.add("event-checkbox");
+		checkboxDiv.classList.add("checkboxDiv");
+        checkbox.classList.add("eventCheckbox");
 
         // Get probability from "Prob." column and store it as a data attribute
         const probText = row.cells[probColumnIndex].textContent.trim();
         const probValue = parseFloat(probText);
         checkbox.dataset.prob = probValue;
 
-        checkboxCell.appendChild(checkbox);
+        checkboxCell.appendChild(checkboxDiv);
+		checkboxDiv.appendChild(checkbox);
         row.prepend(checkboxCell);
 
         // Recalculate combined probability when a checkbox is checked or unchecked
@@ -510,7 +513,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Calculate combined probability for selected rows
     function calculateCombinedProbability() {
-        const checkboxes = document.querySelectorAll(".event-checkbox:checked");
+        const checkboxes = document.querySelectorAll(".eventCheckbox:checked");
         let combinedProbability = 1;
 
         checkboxes.forEach(checkbox => {

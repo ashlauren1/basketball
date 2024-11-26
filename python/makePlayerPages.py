@@ -18,6 +18,8 @@ roster_data.sort_values(by=["Team", "Player"], inplace=True)
 
 # Load gamelogs data
 gamelogs_data = pd.read_csv(gamelogs_csv)
+gamelogs_data["Date"] = pd.to_datetime(gamelogs_data["Date"])
+gamelogs_data.sort_values(by=["Date"], ascending=False, inplace=True)
 
 # **Part 1: Generate Player Directory (index.html)**
 def create_player_directory(roster_data, output_file_path):

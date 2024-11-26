@@ -1020,7 +1020,6 @@
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
     initializeChart("nowelma01", [{'date': '2023-11-15', 'opponent': 'MIL', 'location': 'home', 'season': '2023-24', 'PTS': 2, 'REB': 2, 'AST': 2, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 3.516666667, 'OffREB': 2, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 2, 'FTA': 2, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 4, 'PTS_AST': 4, 'PTS_REB': 4, 'PTS_REB_AST': 6, 'FANTASY': 10.4}], 0.5, "PTS");
 </script>
-
 <div class="player-chart-container">
 <!-- Stat Selection Dropdown -->
 <div class="barChart-filters">
@@ -1103,6 +1102,173 @@
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
     initializeChart("nowelma01", [{'date': '2023-11-15', 'opponent': 'MIL', 'location': 'home', 'season': '2023-24', 'PTS': 2, 'REB': 2, 'AST': 2, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 3.516666667, 'OffREB': 2, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 2, 'FTA': 2, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 4, 'PTS_AST': 4, 'PTS_REB': 4, 'PTS_REB_AST': 6, 'FANTASY': 10.4}], 0.5, "PTS");
+</script>
+<div class="player-chart-container">
+<!-- Stat Selection Dropdown -->
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="statSelector_nowelma01">Stat:</label>
+<select id="statSelector_nowelma01" onchange="updateStat('nowelma01', this.value)">
+<option value="PTS">Points</option>
+<option value="REB">Rebounds</option>
+<option value="AST">Assists</option>
+<option value="BLK">Blocks</option>
+<option value="STL">Steals</option>
+<option value="TOV">Turnovers</option>
+<option value="MP">Minutes Played</option>
+<option value="OffREB">Offensive Rebounds</option>
+<option value="DefREB">Defensive Rebounds</option>
+<option value="FG">Field Goals</option>
+<option value="FGA">Field Goal Attempts</option>
+<option value="3P">3-Pointers</option>
+<option value="3PA">3-Point Attempts</option>
+<option value="FT">Free Throws</option>
+<option value="FTA">Free Throw Attempts</option>
+<option value="PF">Fouls</option>
+<option value="BLK_STL">BLK+STL</option>
+<option value="REB_AST">REB+AST</option>
+<option value="PTS_AST">PTS+AST</option>
+<option value="PTS_REB">PTS+REB</option>
+<option value="PTS_REB_AST">PTS+REB+AST</option>
+<option value="FANTASY">Fantasy Score</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="teamFilter_nowelma01">Opponent:</label>
+<select id="teamFilter_nowelma01" onchange="applyFilters('nowelma01')">
+<option value="all">All</option>
+<option value="MIL">MIL</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="homeAwayFilter_nowelma01">Home/Away:</label>
+<select id="homeAwayFilter_nowelma01" onchange="applyFilters('nowelma01')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="startDate_nowelma01">Start:</label>
+<input id="startDate_nowelma01" onchange="applyFilters('nowelma01')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="endDate_nowelma01">End:</label>
+<input id="endDate_nowelma01" onchange="applyFilters('nowelma01')" type="date"/>
+</div>
+</div>
+<canvas class="player-barChart" id="chart_nowelma01"></canvas>
+<div class="filter-buttons">
+<button id="L5_nowelma01" onclick="showRecentGames('nowelma01', 5)">L5</button>
+<button id="L10_nowelma01" onclick="showRecentGames('nowelma01', 10)">L10</button>
+<button id="L20_nowelma01" onclick="showRecentGames('nowelma01', 20)">L20</button>
+<button id="202324_nowelma01" onclick="filterBySeason('nowelma01', '2023-24')">2023-24</button>
+<button id="202425_nowelma01" onclick="filterBySeason('nowelma01', '2024-25')">2024-25</button>
+<button id="showAll_nowelma01" onclick="showAllGames('nowelma01')">All</button>
+<button id="MP_nowelma01" onclick="toggleMPOverlay('nowelma01')">Toggle MP</button>
+<button class="clear-chart-filters" id="clearFiltersBtn_nowelma01" onclick="clearFilters('nowelma01')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="lineSlider_nowelma01">Change Line:</label>
+<input id="lineSlider_nowelma01" max="100" min="0" oninput="updateLine('nowelma01', this.value)" step="0.5" type="range" value="0.5"/>
+<span id="lineValue_nowelma01">0.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" id="reset-line-btn_nowelma01" onclick="resetLine('nowelma01', 0.5)">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="chartScript.js"></script>
+<script>
+    // Initialize the chart with player-specific data by calling a function from chart_logic.js
+    initializeChart("nowelma01", [{'date': '2023-11-15', 'opponent': 'MIL', 'location': 'home', 'season': '2023-24', 'PTS': 2, 'REB': 2, 'AST': 2, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 3.517, 'OffREB': 2, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 2, 'FTA': 2, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 4, 'PTS_AST': 4, 'PTS_REB': 4, 'PTS_REB_AST': 6, 'FANTASY': 10.4}], 0.5, "PTS");
+</script>
+
+<div class="player-chart-container">
+<!-- Stat Selection Dropdown -->
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="statSelector_nowelma01">Stat:</label>
+<select id="statSelector_nowelma01" onchange="updateStat('nowelma01', this.value)">
+<option value="PTS">Points</option>
+<option value="REB">Rebounds</option>
+<option value="AST">Assists</option>
+<option value="BLK">Blocks</option>
+<option value="STL">Steals</option>
+<option value="TOV">Turnovers</option>
+<option value="MP">Minutes Played</option>
+<option value="OffREB">Offensive Rebounds</option>
+<option value="DefREB">Defensive Rebounds</option>
+<option value="FG">Field Goals</option>
+<option value="FGA">Field Goal Attempts</option>
+<option value="3P">3-Pointers</option>
+<option value="3PA">3-Point Attempts</option>
+<option value="FT">Free Throws</option>
+<option value="FTA">Free Throw Attempts</option>
+<option value="PF">Fouls</option>
+<option value="BLK_STL">BLK+STL</option>
+<option value="REB_AST">REB+AST</option>
+<option value="PTS_AST">PTS+AST</option>
+<option value="PTS_REB">PTS+REB</option>
+<option value="PTS_REB_AST">PTS+REB+AST</option>
+<option value="FANTASY">Fantasy Score</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="teamFilter_nowelma01">Opponent:</label>
+<select id="teamFilter_nowelma01" onchange="applyFilters('nowelma01')">
+<option value="all">All</option>
+<option value="MIL">MIL</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="homeAwayFilter_nowelma01">Home/Away:</label>
+<select id="homeAwayFilter_nowelma01" onchange="applyFilters('nowelma01')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="startDate_nowelma01">Start:</label>
+<input id="startDate_nowelma01" onchange="applyFilters('nowelma01')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="endDate_nowelma01">End:</label>
+<input id="endDate_nowelma01" onchange="applyFilters('nowelma01')" type="date"/>
+</div>
+</div>
+<canvas class="player-barChart" id="chart_nowelma01"></canvas>
+<div class="filter-buttons">
+<button id="L5_nowelma01" onclick="showRecentGames('nowelma01', 5)">L5</button>
+<button id="L10_nowelma01" onclick="showRecentGames('nowelma01', 10)">L10</button>
+<button id="L20_nowelma01" onclick="showRecentGames('nowelma01', 20)">L20</button>
+<button id="202324_nowelma01" onclick="filterBySeason('nowelma01', '2023-24')">2023-24</button>
+<button id="202425_nowelma01" onclick="filterBySeason('nowelma01', '2024-25')">2024-25</button>
+<button id="showAll_nowelma01" onclick="showAllGames('nowelma01')">All</button>
+<button id="MP_nowelma01" onclick="toggleMPOverlay('nowelma01')">Toggle MP</button>
+<button class="clear-chart-filters" id="clearFiltersBtn_nowelma01" onclick="clearFilters('nowelma01')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="lineSlider_nowelma01">Change Line:</label>
+<input id="lineSlider_nowelma01" max="100" min="0" oninput="updateLine('nowelma01', this.value)" step="0.5" type="range" value="0.5"/>
+<span id="lineValue_nowelma01">0.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" id="reset-line-btn_nowelma01" onclick="resetLine('nowelma01', 0.5)">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="chartScript.js"></script>
+<script>
+    // Initialize the chart with player-specific data by calling a function from chart_logic.js
+    initializeChart("nowelma01", [{'date': '2023-11-15', 'opponent': 'MIL', 'location': 'home', 'season': '2023-24', 'PTS': 2, 'REB': 2, 'AST': 2, 'BLK': 0, 'STL': 1, 'TOV': 0, 'MP': 3.517, 'OffREB': 2, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 2, 'FTA': 2, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 4, 'PTS_AST': 4, 'PTS_REB': 4, 'PTS_REB_AST': 6, 'FANTASY': 10.4}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <span class="table-button-container">

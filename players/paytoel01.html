@@ -1029,7 +1029,6 @@
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
     initializeChart("paytoel01", [{'date': '2024-11-20', 'opponent': 'CLE', 'location': 'away', 'season': '2024-25', 'PTS': 11, 'REB': 5, 'AST': 8, 'BLK': 0, 'STL': 0, 'TOV': 4, 'MP': 22.28333333, 'OffREB': 1, 'DefREB': 4, 'FG': 5, 'FGA': 8, '3P': 0, '3PA': 1, 'FT': 1, 'FTA': 2, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 13, 'PTS_AST': 19, 'PTS_REB': 16, 'PTS_REB_AST': 24, 'FANTASY': 25.0}, {'date': '2024-11-22', 'opponent': 'GSW', 'location': 'home', 'season': '2024-25', 'PTS': 4, 'REB': 3, 'AST': 4, 'BLK': 0, 'STL': 3, 'TOV': 2, 'MP': 26.13333333, 'OffREB': 0, 'DefREB': 3, 'FG': 2, 'FGA': 6, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 3, 'BLK_STL': 3, 'REB_AST': 7, 'PTS_AST': 8, 'PTS_REB': 7, 'PTS_REB_AST': 11, 'FANTASY': 20.6}], 0.5, "PTS");
 </script>
-
 <div class="player-chart-container">
 <!-- Stat Selection Dropdown -->
 <div class="barChart-filters">
@@ -1113,6 +1112,177 @@
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
     initializeChart("paytoel01", [{'date': '2024-11-20', 'opponent': 'CLE', 'location': 'away', 'season': '2024-25', 'PTS': 11, 'REB': 5, 'AST': 8, 'BLK': 0, 'STL': 0, 'TOV': 4, 'MP': 22.28333333, 'OffREB': 1, 'DefREB': 4, 'FG': 5, 'FGA': 8, '3P': 0, '3PA': 1, 'FT': 1, 'FTA': 2, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 13, 'PTS_AST': 19, 'PTS_REB': 16, 'PTS_REB_AST': 24, 'FANTASY': 25.0}, {'date': '2024-11-22', 'opponent': 'GSW', 'location': 'home', 'season': '2024-25', 'PTS': 4, 'REB': 3, 'AST': 4, 'BLK': 0, 'STL': 3, 'TOV': 2, 'MP': 26.13333333, 'OffREB': 0, 'DefREB': 3, 'FG': 2, 'FGA': 6, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 3, 'BLK_STL': 3, 'REB_AST': 7, 'PTS_AST': 8, 'PTS_REB': 7, 'PTS_REB_AST': 11, 'FANTASY': 20.6}], 0.5, "PTS");
+</script>
+<div class="player-chart-container">
+<!-- Stat Selection Dropdown -->
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="statSelector_paytoel01">Stat:</label>
+<select id="statSelector_paytoel01" onchange="updateStat('paytoel01', this.value)">
+<option value="PTS">Points</option>
+<option value="REB">Rebounds</option>
+<option value="AST">Assists</option>
+<option value="BLK">Blocks</option>
+<option value="STL">Steals</option>
+<option value="TOV">Turnovers</option>
+<option value="MP">Minutes Played</option>
+<option value="OffREB">Offensive Rebounds</option>
+<option value="DefREB">Defensive Rebounds</option>
+<option value="FG">Field Goals</option>
+<option value="FGA">Field Goal Attempts</option>
+<option value="3P">3-Pointers</option>
+<option value="3PA">3-Point Attempts</option>
+<option value="FT">Free Throws</option>
+<option value="FTA">Free Throw Attempts</option>
+<option value="PF">Fouls</option>
+<option value="BLK_STL">BLK+STL</option>
+<option value="REB_AST">REB+AST</option>
+<option value="PTS_AST">PTS+AST</option>
+<option value="PTS_REB">PTS+REB</option>
+<option value="PTS_REB_AST">PTS+REB+AST</option>
+<option value="FANTASY">Fantasy Score</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="teamFilter_paytoel01">Opponent:</label>
+<select id="teamFilter_paytoel01" onchange="applyFilters('paytoel01')">
+<option value="all">All</option>
+<option value="CLE">CLE</option>
+<option value="GSW">GSW</option>
+<option value="IND">IND</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="homeAwayFilter_paytoel01">Home/Away:</label>
+<select id="homeAwayFilter_paytoel01" onchange="applyFilters('paytoel01')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="startDate_paytoel01">Start:</label>
+<input id="startDate_paytoel01" onchange="applyFilters('paytoel01')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="endDate_paytoel01">End:</label>
+<input id="endDate_paytoel01" onchange="applyFilters('paytoel01')" type="date"/>
+</div>
+</div>
+<canvas class="player-barChart" id="chart_paytoel01"></canvas>
+<div class="filter-buttons">
+<button id="L5_paytoel01" onclick="showRecentGames('paytoel01', 5)">L5</button>
+<button id="L10_paytoel01" onclick="showRecentGames('paytoel01', 10)">L10</button>
+<button id="L20_paytoel01" onclick="showRecentGames('paytoel01', 20)">L20</button>
+<button id="202324_paytoel01" onclick="filterBySeason('paytoel01', '2023-24')">2023-24</button>
+<button id="202425_paytoel01" onclick="filterBySeason('paytoel01', '2024-25')">2024-25</button>
+<button id="showAll_paytoel01" onclick="showAllGames('paytoel01')">All</button>
+<button id="MP_paytoel01" onclick="toggleMPOverlay('paytoel01')">Toggle MP</button>
+<button class="clear-chart-filters" id="clearFiltersBtn_paytoel01" onclick="clearFilters('paytoel01')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="lineSlider_paytoel01">Change Line:</label>
+<input id="lineSlider_paytoel01" max="100" min="0" oninput="updateLine('paytoel01', this.value)" step="0.5" type="range" value="0.5"/>
+<span id="lineValue_paytoel01">0.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" id="reset-line-btn_paytoel01" onclick="resetLine('paytoel01', 0.5)">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="chartScript.js"></script>
+<script>
+    // Initialize the chart with player-specific data by calling a function from chart_logic.js
+    initializeChart("paytoel01", [{'date': '2024-11-20', 'opponent': 'CLE', 'location': 'away', 'season': '2024-25', 'PTS': 11, 'REB': 5, 'AST': 8, 'BLK': 0, 'STL': 0, 'TOV': 4, 'MP': 22.283, 'OffREB': 1, 'DefREB': 4, 'FG': 5, 'FGA': 8, '3P': 0, '3PA': 1, 'FT': 1, 'FTA': 2, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 13, 'PTS_AST': 19, 'PTS_REB': 16, 'PTS_REB_AST': 24, 'FANTASY': 25.0}, {'date': '2024-11-22', 'opponent': 'GSW', 'location': 'home', 'season': '2024-25', 'PTS': 4, 'REB': 3, 'AST': 4, 'BLK': 0, 'STL': 3, 'TOV': 2, 'MP': 26.133, 'OffREB': 0, 'DefREB': 3, 'FG': 2, 'FGA': 6, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 3, 'BLK_STL': 3, 'REB_AST': 7, 'PTS_AST': 8, 'PTS_REB': 7, 'PTS_REB_AST': 11, 'FANTASY': 20.6}, {'date': '2024-11-25', 'opponent': 'IND', 'location': 'away', 'season': '2024-25', 'PTS': 14, 'REB': 7, 'AST': 21, 'BLK': 0, 'STL': 2, 'TOV': 5, 'MP': 30.95, 'OffREB': 1, 'DefREB': 6, 'FG': 7, 'FGA': 11, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 5, 'BLK_STL': 2, 'REB_AST': 28, 'PTS_AST': 35, 'PTS_REB': 21, 'PTS_REB_AST': 42, 'FANTASY': 54.9}], 0.5, "PTS");
+</script>
+
+<div class="player-chart-container">
+<!-- Stat Selection Dropdown -->
+<div class="barChart-filters">
+<div class="barChartFilter">
+<label for="statSelector_paytoel01">Stat:</label>
+<select id="statSelector_paytoel01" onchange="updateStat('paytoel01', this.value)">
+<option value="PTS">Points</option>
+<option value="REB">Rebounds</option>
+<option value="AST">Assists</option>
+<option value="BLK">Blocks</option>
+<option value="STL">Steals</option>
+<option value="TOV">Turnovers</option>
+<option value="MP">Minutes Played</option>
+<option value="OffREB">Offensive Rebounds</option>
+<option value="DefREB">Defensive Rebounds</option>
+<option value="FG">Field Goals</option>
+<option value="FGA">Field Goal Attempts</option>
+<option value="3P">3-Pointers</option>
+<option value="3PA">3-Point Attempts</option>
+<option value="FT">Free Throws</option>
+<option value="FTA">Free Throw Attempts</option>
+<option value="PF">Fouls</option>
+<option value="BLK_STL">BLK+STL</option>
+<option value="REB_AST">REB+AST</option>
+<option value="PTS_AST">PTS+AST</option>
+<option value="PTS_REB">PTS+REB</option>
+<option value="PTS_REB_AST">PTS+REB+AST</option>
+<option value="FANTASY">Fantasy Score</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="teamFilter_paytoel01">Opponent:</label>
+<select id="teamFilter_paytoel01" onchange="applyFilters('paytoel01')">
+<option value="all">All</option>
+<option value="CLE">CLE</option>
+<option value="GSW">GSW</option>
+<option value="IND">IND</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="homeAwayFilter_paytoel01">Home/Away:</label>
+<select id="homeAwayFilter_paytoel01" onchange="applyFilters('paytoel01')">
+<option value="all">All</option>
+<option value="home">Home</option>
+<option value="away">Away</option>
+</select>
+</div>
+<div class="barChartFilter">
+<label for="startDate_paytoel01">Start:</label>
+<input id="startDate_paytoel01" onchange="applyFilters('paytoel01')" type="date"/>
+</div>
+<div class="barChartFilter">
+<label for="endDate_paytoel01">End:</label>
+<input id="endDate_paytoel01" onchange="applyFilters('paytoel01')" type="date"/>
+</div>
+</div>
+<canvas class="player-barChart" id="chart_paytoel01"></canvas>
+<div class="filter-buttons">
+<button id="L5_paytoel01" onclick="showRecentGames('paytoel01', 5)">L5</button>
+<button id="L10_paytoel01" onclick="showRecentGames('paytoel01', 10)">L10</button>
+<button id="L20_paytoel01" onclick="showRecentGames('paytoel01', 20)">L20</button>
+<button id="202324_paytoel01" onclick="filterBySeason('paytoel01', '2023-24')">2023-24</button>
+<button id="202425_paytoel01" onclick="filterBySeason('paytoel01', '2024-25')">2024-25</button>
+<button id="showAll_paytoel01" onclick="showAllGames('paytoel01')">All</button>
+<button id="MP_paytoel01" onclick="toggleMPOverlay('paytoel01')">Toggle MP</button>
+<button class="clear-chart-filters" id="clearFiltersBtn_paytoel01" onclick="clearFilters('paytoel01')">Clear Filters</button>
+</div>
+<div class="slider-container">
+<div id="line-slider">
+<label for="lineSlider_paytoel01">Change Line:</label>
+<input id="lineSlider_paytoel01" max="100" min="0" oninput="updateLine('paytoel01', this.value)" step="0.5" type="range" value="0.5"/>
+<span id="lineValue_paytoel01">0.5</span>
+</div>
+<div class="chartButtons">
+<button class="reset-line-btn" id="reset-line-btn_paytoel01" onclick="resetLine('paytoel01', 0.5)">Reset Line</button>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+<script src="chartScript.js"></script>
+<script>
+    // Initialize the chart with player-specific data by calling a function from chart_logic.js
+    initializeChart("paytoel01", [{'date': '2024-11-20', 'opponent': 'CLE', 'location': 'away', 'season': '2024-25', 'PTS': 11, 'REB': 5, 'AST': 8, 'BLK': 0, 'STL': 0, 'TOV': 4, 'MP': 22.283, 'OffREB': 1, 'DefREB': 4, 'FG': 5, 'FGA': 8, '3P': 0, '3PA': 1, 'FT': 1, 'FTA': 2, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 13, 'PTS_AST': 19, 'PTS_REB': 16, 'PTS_REB_AST': 24, 'FANTASY': 25.0}, {'date': '2024-11-22', 'opponent': 'GSW', 'location': 'home', 'season': '2024-25', 'PTS': 4, 'REB': 3, 'AST': 4, 'BLK': 0, 'STL': 3, 'TOV': 2, 'MP': 26.133, 'OffREB': 0, 'DefREB': 3, 'FG': 2, 'FGA': 6, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 3, 'BLK_STL': 3, 'REB_AST': 7, 'PTS_AST': 8, 'PTS_REB': 7, 'PTS_REB_AST': 11, 'FANTASY': 20.6}, {'date': '2024-11-25', 'opponent': 'IND', 'location': 'away', 'season': '2024-25', 'PTS': 14, 'REB': 7, 'AST': 21, 'BLK': 0, 'STL': 2, 'TOV': 5, 'MP': 30.95, 'OffREB': 1, 'DefREB': 6, 'FG': 7, 'FGA': 11, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 5, 'BLK_STL': 2, 'REB_AST': 28, 'PTS_AST': 35, 'PTS_REB': 21, 'PTS_REB_AST': 42, 'FANTASY': 54.9}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <span class="table-button-container">

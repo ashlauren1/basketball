@@ -341,6 +341,7 @@
 <option value="NOP">NOP</option>
 <option value="ORL">ORL</option>
 <option value="PHI">PHI</option>
+<option value="POR">POR</option>
 <option value="SAC">SAC</option>
 <option value="SAS">SAS</option>
 <option value="TOR">TOR</option>
@@ -391,7 +392,7 @@
 <script src="chartScript.js"></script>
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
-    initializeChart("moranja01", [{'date': '2023-12-19', 'opponent': 'NOP', 'location': 'away', 'season': '2023-24', 'PTS': 34, 'REB': 6, 'AST': 8, 'BLK': 1, 'STL': 2, 'TOV': 5, 'MP': 34.76666667, 'OffREB': 3, 'DefREB': 3, 'FG': 12, 'FGA': 24, '3P': 0, '3PA': 5, 'FT': 10, 'FTA': 12, 'PF': 2, 'BLK_STL': 3, 'REB_AST': 14, 'PTS_AST': 42, 'PTS_REB': 40, 'PTS_REB_AST': 48, 'FANTASY': 57.2}, {'date': '2023-12-21', 'opponent': 'IND', 'location': 'home', 'season': '2023-24', 'PTS': 20, 'REB': 5, 'AST': 8, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 34.43333333, 'OffREB': 0, 'DefREB': 5, 'FG': 7, 'FGA': 16, '3P': 1, '3PA': 3, 'FT': 5, 'FTA': 6, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 13, 'PTS_AST': 28, 'PTS_REB': 25, 'PTS_REB_AST': 33, 'FANTASY': 36.0}, {'date': '2023-12-23', 'opponent': 'ATL', 'location': 'away', 'season': '2023-24', 'PTS': 30, 'REB': 6, 'AST': 11, 'BLK': 1, 'STL': 1, 'TOV': 3, 'MP': 36.11666667, 'OffREB': 0, 'DefREB': 6, 'FG': 14, 'FGA': 25, '3P': 1, '3PA': 3, 'FT': 1, 'FTA': 1, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 17, 'PTS_AST': 41, 'PTS_REB': 36, 'PTS_REB_AST': 47, 'FANTASY': 56.7}, {'date': '2023-12-26', 'opponent': 'NOP', 'location': 'away', 'season': '2023-24', 'PTS': 31, 'REB': 4, 'AST': 7, 'BLK': 2, 'STL': 1, 'TOV': 6, 'MP': 39.65, 'OffREB': 0, 'DefREB': 4, 'FG': 12, 'FGA': 24, '3P': 1, '3PA': 7, 'FT': 6, 'FTA': 8, 'PF': 2, 'BLK_STL': 3, 'REB_AST': 11, 'PTS_AST': 38, 'PTS_REB': 35, 'PTS_REB_AST': 42, 'FANTASY': 49.3}, {'date': '2023-12-29', 'opponent': 'LAC', 'location': 'away', 'season': '2023-24', 'PTS': 19, 'REB': 6, 'AST': 10, 'BLK': 0, 'STL': 0, 'TOV': 3, 'MP': 37.2, 'OffREB': 0, 'DefREB': 6, 'FG': 7, 'FGA': 19, '3P': 0, '3PA': 7, 'FT': 5, 'FTA': 6, 'PF': 4, 'BLK_STL': 0, 'REB_AST': 16, 'PTS_AST': 29, 'PTS_REB': 25, 'PTS_REB_AST': 35, 'FANTASY': 38.2}, {'date': '2023-12-31', 'opponent': 'SAC', 'location': 'home', 'season': '2023-24', 'PTS': 17, 'REB': 3, 'AST': 3, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 30.95, 'OffREB': 0, 'DefREB': 3, 'FG': 4, 'FGA': 12, '3P': 2, '3PA': 4, 'FT': 7, 'FTA': 8, 'PF': 3, 'BLK_STL': 0, 'REB_AST': 6, 'PTS_AST': 20, 'PTS_REB': 20, 'PTS_REB_AST': 23, 'FANTASY': 25.1}, {'date': '2024-01-02', 'opponent': 'SAS', 'location': 'home', 'season': '2023-24', 'PTS': 26, 'REB': 5, 'AST': 10, 'BLK': 0, 'STL': 1, 'TOV': 4, 'MP': 35.31666667, 'OffREB': 0, 'DefREB': 5, 'FG': 7, 'FGA': 15, '3P': 3, '3PA': 9, 'FT': 9, 'FTA': 12, 'PF': 3, 'BLK_STL': 1, 'REB_AST': 15, 'PTS_AST': 36, 'PTS_REB': 31, 'PTS_REB_AST': 41, 'FANTASY': 46.0}, {'date': '2024-01-03', 'opponent': 'TOR', 'location': 'home', 'season': '2023-24', 'PTS': 28, 'REB': 8, 'AST': 9, 'BLK': 0, 'STL': 1, 'TOV': 2, 'MP': 34.88333333, 'OffREB': 1, 'DefREB': 7, 'FG': 10, 'FGA': 18, '3P': 3, '3PA': 6, 'FT': 5, 'FTA': 6, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 17, 'PTS_AST': 37, 'PTS_REB': 36, 'PTS_REB_AST': 45, 'FANTASY': 52.1}, {'date': '2024-01-05', 'opponent': 'LAL', 'location': 'away', 'season': '2023-24', 'PTS': 21, 'REB': 7, 'AST': 7, 'BLK': 1, 'STL': 1, 'TOV': 2, 'MP': 34.61666667, 'OffREB': 2, 'DefREB': 5, 'FG': 7, 'FGA': 17, '3P': 3, '3PA': 7, 'FT': 4, 'FTA': 5, 'PF': 3, 'BLK_STL': 2, 'REB_AST': 14, 'PTS_AST': 28, 'PTS_REB': 28, 'PTS_REB_AST': 35, 'FANTASY': 43.9}, {'date': '2024-10-23', 'opponent': 'UTA', 'location': 'away', 'season': '2024-25', 'PTS': 22, 'REB': 5, 'AST': 10, 'BLK': 0, 'STL': 1, 'TOV': 3, 'MP': 27.93333333, 'OffREB': 0, 'DefREB': 5, 'FG': 7, 'FGA': 12, '3P': 0, '3PA': 2, 'FT': 8, 'FTA': 9, 'PF': 4, 'BLK_STL': 1, 'REB_AST': 15, 'PTS_AST': 32, 'PTS_REB': 27, 'PTS_REB_AST': 37, 'FANTASY': 43.0}, {'date': '2024-10-25', 'opponent': 'HOU', 'location': 'away', 'season': '2024-25', 'PTS': 24, 'REB': 0, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 6, 'MP': 23.8, 'OffREB': 0, 'DefREB': 0, 'FG': 8, 'FGA': 17, '3P': 2, '3PA': 4, 'FT': 6, 'FTA': 9, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 2, 'PTS_AST': 26, 'PTS_REB': 24, 'PTS_REB_AST': 26, 'FANTASY': 21.0}, {'date': '2024-10-26', 'opponent': 'ORL', 'location': 'home', 'season': '2024-25', 'PTS': 16, 'REB': 2, 'AST': 10, 'BLK': 1, 'STL': 0, 'TOV': 3, 'MP': 24.75, 'OffREB': 0, 'DefREB': 2, 'FG': 4, 'FGA': 12, '3P': 0, '3PA': 6, 'FT': 8, 'FTA': 8, 'PF': 3, 'BLK_STL': 1, 'REB_AST': 12, 'PTS_AST': 26, 'PTS_REB': 18, 'PTS_REB_AST': 28, 'FANTASY': 33.4}, {'date': '2024-10-30', 'opponent': 'BRK', 'location': 'home', 'season': '2024-25', 'PTS': 14, 'REB': 8, 'AST': 11, 'BLK': 0, 'STL': 0, 'TOV': 5, 'MP': 29.13333333, 'OffREB': 2, 'DefREB': 6, 'FG': 5, 'FGA': 16, '3P': 1, '3PA': 6, 'FT': 3, 'FTA': 4, 'PF': 3, 'BLK_STL': 0, 'REB_AST': 19, 'PTS_AST': 25, 'PTS_REB': 22, 'PTS_REB_AST': 33, 'FANTASY': 35.1}, {'date': '2024-10-31', 'opponent': 'MIL', 'location': 'home', 'season': '2024-25', 'PTS': 26, 'REB': 10, 'AST': 14, 'BLK': 0, 'STL': 1, 'TOV': 3, 'MP': 28.9, 'OffREB': 1, 'DefREB': 9, 'FG': 9, 'FGA': 16, '3P': 2, '3PA': 5, 'FT': 6, 'FTA': 7, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 24, 'PTS_AST': 40, 'PTS_REB': 36, 'PTS_REB_AST': 50, 'FANTASY': 59.0}, {'date': '2024-11-02', 'opponent': 'PHI', 'location': 'away', 'season': '2024-25', 'PTS': 18, 'REB': 6, 'AST': 12, 'BLK': 0, 'STL': 2, 'TOV': 6, 'MP': 31.4, 'OffREB': 0, 'DefREB': 6, 'FG': 6, 'FGA': 13, '3P': 0, '3PA': 2, 'FT': 6, 'FTA': 8, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 18, 'PTS_AST': 30, 'PTS_REB': 24, 'PTS_REB_AST': 36, 'FANTASY': 43.2}, {'date': '2024-11-04', 'opponent': 'BRK', 'location': 'away', 'season': '2024-25', 'PTS': 25, 'REB': 5, 'AST': 9, 'BLK': 0, 'STL': 0, 'TOV': 3, 'MP': 32.56666667, 'OffREB': 1, 'DefREB': 4, 'FG': 10, 'FGA': 22, '3P': 1, '3PA': 3, 'FT': 4, 'FTA': 4, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 14, 'PTS_AST': 34, 'PTS_REB': 30, 'PTS_REB_AST': 39, 'FANTASY': 41.5}, {'date': '2024-11-06', 'opponent': 'LAL', 'location': 'home', 'season': '2024-25', 'PTS': 20, 'REB': 4, 'AST': 5, 'BLK': 1, 'STL': 1, 'TOV': 5, 'MP': 24.15, 'OffREB': 0, 'DefREB': 4, 'FG': 7, 'FGA': 17, '3P': 2, '3PA': 3, 'FT': 4, 'FTA': 5, 'PF': 2, 'BLK_STL': 2, 'REB_AST': 9, 'PTS_AST': 25, 'PTS_REB': 24, 'PTS_REB_AST': 29, 'FANTASY': 33.3}], 0.5, "PTS");
+    initializeChart("moranja01", [{'date': '2023-12-19', 'opponent': 'NOP', 'location': 'away', 'season': '2023-24', 'PTS': 34, 'REB': 6, 'AST': 8, 'BLK': 1, 'STL': 2, 'TOV': 5, 'MP': 34.767, 'OffREB': 3, 'DefREB': 3, 'FG': 12, 'FGA': 24, '3P': 0, '3PA': 5, 'FT': 10, 'FTA': 12, 'PF': 2, 'BLK_STL': 3, 'REB_AST': 14, 'PTS_AST': 42, 'PTS_REB': 40, 'PTS_REB_AST': 48, 'FANTASY': 57.2}, {'date': '2023-12-21', 'opponent': 'IND', 'location': 'home', 'season': '2023-24', 'PTS': 20, 'REB': 5, 'AST': 8, 'BLK': 0, 'STL': 0, 'TOV': 2, 'MP': 34.433, 'OffREB': 0, 'DefREB': 5, 'FG': 7, 'FGA': 16, '3P': 1, '3PA': 3, 'FT': 5, 'FTA': 6, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 13, 'PTS_AST': 28, 'PTS_REB': 25, 'PTS_REB_AST': 33, 'FANTASY': 36.0}, {'date': '2023-12-23', 'opponent': 'ATL', 'location': 'away', 'season': '2023-24', 'PTS': 30, 'REB': 6, 'AST': 11, 'BLK': 1, 'STL': 1, 'TOV': 3, 'MP': 36.117, 'OffREB': 0, 'DefREB': 6, 'FG': 14, 'FGA': 25, '3P': 1, '3PA': 3, 'FT': 1, 'FTA': 1, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 17, 'PTS_AST': 41, 'PTS_REB': 36, 'PTS_REB_AST': 47, 'FANTASY': 56.7}, {'date': '2023-12-26', 'opponent': 'NOP', 'location': 'away', 'season': '2023-24', 'PTS': 31, 'REB': 4, 'AST': 7, 'BLK': 2, 'STL': 1, 'TOV': 6, 'MP': 39.65, 'OffREB': 0, 'DefREB': 4, 'FG': 12, 'FGA': 24, '3P': 1, '3PA': 7, 'FT': 6, 'FTA': 8, 'PF': 2, 'BLK_STL': 3, 'REB_AST': 11, 'PTS_AST': 38, 'PTS_REB': 35, 'PTS_REB_AST': 42, 'FANTASY': 49.3}, {'date': '2023-12-29', 'opponent': 'LAC', 'location': 'away', 'season': '2023-24', 'PTS': 19, 'REB': 6, 'AST': 10, 'BLK': 0, 'STL': 0, 'TOV': 3, 'MP': 37.2, 'OffREB': 0, 'DefREB': 6, 'FG': 7, 'FGA': 19, '3P': 0, '3PA': 7, 'FT': 5, 'FTA': 6, 'PF': 4, 'BLK_STL': 0, 'REB_AST': 16, 'PTS_AST': 29, 'PTS_REB': 25, 'PTS_REB_AST': 35, 'FANTASY': 38.2}, {'date': '2023-12-31', 'opponent': 'SAC', 'location': 'home', 'season': '2023-24', 'PTS': 17, 'REB': 3, 'AST': 3, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 30.95, 'OffREB': 0, 'DefREB': 3, 'FG': 4, 'FGA': 12, '3P': 2, '3PA': 4, 'FT': 7, 'FTA': 8, 'PF': 3, 'BLK_STL': 0, 'REB_AST': 6, 'PTS_AST': 20, 'PTS_REB': 20, 'PTS_REB_AST': 23, 'FANTASY': 25.1}, {'date': '2024-01-02', 'opponent': 'SAS', 'location': 'home', 'season': '2023-24', 'PTS': 26, 'REB': 5, 'AST': 10, 'BLK': 0, 'STL': 1, 'TOV': 4, 'MP': 35.317, 'OffREB': 0, 'DefREB': 5, 'FG': 7, 'FGA': 15, '3P': 3, '3PA': 9, 'FT': 9, 'FTA': 12, 'PF': 3, 'BLK_STL': 1, 'REB_AST': 15, 'PTS_AST': 36, 'PTS_REB': 31, 'PTS_REB_AST': 41, 'FANTASY': 46.0}, {'date': '2024-01-03', 'opponent': 'TOR', 'location': 'home', 'season': '2023-24', 'PTS': 28, 'REB': 8, 'AST': 9, 'BLK': 0, 'STL': 1, 'TOV': 2, 'MP': 34.883, 'OffREB': 1, 'DefREB': 7, 'FG': 10, 'FGA': 18, '3P': 3, '3PA': 6, 'FT': 5, 'FTA': 6, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 17, 'PTS_AST': 37, 'PTS_REB': 36, 'PTS_REB_AST': 45, 'FANTASY': 52.1}, {'date': '2024-01-05', 'opponent': 'LAL', 'location': 'away', 'season': '2023-24', 'PTS': 21, 'REB': 7, 'AST': 7, 'BLK': 1, 'STL': 1, 'TOV': 2, 'MP': 34.617, 'OffREB': 2, 'DefREB': 5, 'FG': 7, 'FGA': 17, '3P': 3, '3PA': 7, 'FT': 4, 'FTA': 5, 'PF': 3, 'BLK_STL': 2, 'REB_AST': 14, 'PTS_AST': 28, 'PTS_REB': 28, 'PTS_REB_AST': 35, 'FANTASY': 43.9}, {'date': '2024-10-23', 'opponent': 'UTA', 'location': 'away', 'season': '2024-25', 'PTS': 22, 'REB': 5, 'AST': 10, 'BLK': 0, 'STL': 1, 'TOV': 3, 'MP': 27.933, 'OffREB': 0, 'DefREB': 5, 'FG': 7, 'FGA': 12, '3P': 0, '3PA': 2, 'FT': 8, 'FTA': 9, 'PF': 4, 'BLK_STL': 1, 'REB_AST': 15, 'PTS_AST': 32, 'PTS_REB': 27, 'PTS_REB_AST': 37, 'FANTASY': 43.0}, {'date': '2024-10-25', 'opponent': 'HOU', 'location': 'away', 'season': '2024-25', 'PTS': 24, 'REB': 0, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 6, 'MP': 23.8, 'OffREB': 0, 'DefREB': 0, 'FG': 8, 'FGA': 17, '3P': 2, '3PA': 4, 'FT': 6, 'FTA': 9, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 2, 'PTS_AST': 26, 'PTS_REB': 24, 'PTS_REB_AST': 26, 'FANTASY': 21.0}, {'date': '2024-10-26', 'opponent': 'ORL', 'location': 'home', 'season': '2024-25', 'PTS': 16, 'REB': 2, 'AST': 10, 'BLK': 1, 'STL': 0, 'TOV': 3, 'MP': 24.75, 'OffREB': 0, 'DefREB': 2, 'FG': 4, 'FGA': 12, '3P': 0, '3PA': 6, 'FT': 8, 'FTA': 8, 'PF': 3, 'BLK_STL': 1, 'REB_AST': 12, 'PTS_AST': 26, 'PTS_REB': 18, 'PTS_REB_AST': 28, 'FANTASY': 33.4}, {'date': '2024-10-30', 'opponent': 'BRK', 'location': 'home', 'season': '2024-25', 'PTS': 14, 'REB': 8, 'AST': 11, 'BLK': 0, 'STL': 0, 'TOV': 5, 'MP': 29.133, 'OffREB': 2, 'DefREB': 6, 'FG': 5, 'FGA': 16, '3P': 1, '3PA': 6, 'FT': 3, 'FTA': 4, 'PF': 3, 'BLK_STL': 0, 'REB_AST': 19, 'PTS_AST': 25, 'PTS_REB': 22, 'PTS_REB_AST': 33, 'FANTASY': 35.1}, {'date': '2024-10-31', 'opponent': 'MIL', 'location': 'home', 'season': '2024-25', 'PTS': 26, 'REB': 10, 'AST': 14, 'BLK': 0, 'STL': 1, 'TOV': 3, 'MP': 28.9, 'OffREB': 1, 'DefREB': 9, 'FG': 9, 'FGA': 16, '3P': 2, '3PA': 5, 'FT': 6, 'FTA': 7, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 24, 'PTS_AST': 40, 'PTS_REB': 36, 'PTS_REB_AST': 50, 'FANTASY': 59.0}, {'date': '2024-11-02', 'opponent': 'PHI', 'location': 'away', 'season': '2024-25', 'PTS': 18, 'REB': 6, 'AST': 12, 'BLK': 0, 'STL': 2, 'TOV': 6, 'MP': 31.4, 'OffREB': 0, 'DefREB': 6, 'FG': 6, 'FGA': 13, '3P': 0, '3PA': 2, 'FT': 6, 'FTA': 8, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 18, 'PTS_AST': 30, 'PTS_REB': 24, 'PTS_REB_AST': 36, 'FANTASY': 43.2}, {'date': '2024-11-04', 'opponent': 'BRK', 'location': 'away', 'season': '2024-25', 'PTS': 25, 'REB': 5, 'AST': 9, 'BLK': 0, 'STL': 0, 'TOV': 3, 'MP': 32.567, 'OffREB': 1, 'DefREB': 4, 'FG': 10, 'FGA': 22, '3P': 1, '3PA': 3, 'FT': 4, 'FTA': 4, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 14, 'PTS_AST': 34, 'PTS_REB': 30, 'PTS_REB_AST': 39, 'FANTASY': 41.5}, {'date': '2024-11-06', 'opponent': 'LAL', 'location': 'home', 'season': '2024-25', 'PTS': 20, 'REB': 4, 'AST': 5, 'BLK': 1, 'STL': 1, 'TOV': 5, 'MP': 24.15, 'OffREB': 0, 'DefREB': 4, 'FG': 7, 'FGA': 17, '3P': 2, '3PA': 3, 'FT': 4, 'FTA': 5, 'PF': 2, 'BLK_STL': 2, 'REB_AST': 9, 'PTS_AST': 25, 'PTS_REB': 24, 'PTS_REB_AST': 29, 'FANTASY': 33.3}, {'date': '2024-11-25', 'opponent': 'POR', 'location': 'home', 'season': '2024-25', 'PTS': 22, 'REB': 2, 'AST': 11, 'BLK': 1, 'STL': 0, 'TOV': 2, 'MP': 23.05, 'OffREB': 1, 'DefREB': 1, 'FG': 6, 'FGA': 12, '3P': 2, '3PA': 3, 'FT': 8, 'FTA': 10, 'PF': 1, 'BLK_STL': 1, 'REB_AST': 13, 'PTS_AST': 33, 'PTS_REB': 24, 'PTS_REB_AST': 35, 'FANTASY': 41.9}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <div class="groupedProbAndButtons">
@@ -431,7 +432,30 @@
 <tbody>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411060MEM.html" target="_blank">11/6/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411250MEM.html" target="_blank">2024-11-25 00:00:00</a></td>
+<td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/POR.html" target="_blank">POR</a></td>
+<td>22</td>
+<td>2</td>
+<td>11</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>23.05</td>
+<td>1</td>
+<td>1</td>
+<td>6</td>
+<td>12</td>
+<td>2</td>
+<td>3</td>
+<td>8</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411060MEM.html" target="_blank">2024-11-06 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/LAL.html" target="_blank">LAL</a></td>
@@ -454,7 +478,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411040BRK.html" target="_blank">11/4/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411040BRK.html" target="_blank">2024-11-04 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
@@ -477,7 +501,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411020PHI.html" target="_blank">11/2/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411020PHI.html" target="_blank">2024-11-02 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/PHI.html" target="_blank">PHI</a></td>
@@ -500,7 +524,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202410310MEM.html" target="_blank">10/31/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410310MEM.html" target="_blank">2024-10-31 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/MIL.html" target="_blank">MIL</a></td>
@@ -523,7 +547,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202410300MEM.html" target="_blank">10/30/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410300MEM.html" target="_blank">2024-10-30 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
@@ -546,7 +570,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202410260MEM.html" target="_blank">10/26/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410260MEM.html" target="_blank">2024-10-26 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/ORL.html" target="_blank">ORL</a></td>
@@ -569,7 +593,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202410250HOU.html" target="_blank">10/25/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410250HOU.html" target="_blank">2024-10-25 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
@@ -592,7 +616,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202410230UTA.html" target="_blank">10/23/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410230UTA.html" target="_blank">2024-10-23 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/UTA.html" target="_blank">UTA</a></td>
@@ -615,7 +639,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2023-24</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202401050LAL.html" target="_blank">1/5/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401050LAL.html" target="_blank">2024-01-05 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/LAL.html" target="_blank">LAL</a></td>
@@ -638,7 +662,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2023-24</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202401030MEM.html" target="_blank">1/3/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401030MEM.html" target="_blank">2024-01-03 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/TOR.html" target="_blank">TOR</a></td>
@@ -661,7 +685,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2023-24</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202401020MEM.html" target="_blank">1/2/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202401020MEM.html" target="_blank">2024-01-02 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/SAS.html" target="_blank">SAS</a></td>
@@ -684,7 +708,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2023-24</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202312310MEM.html" target="_blank">12/31/2023</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312310MEM.html" target="_blank">2023-12-31 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
@@ -707,7 +731,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2023-24</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202312290LAC.html" target="_blank">12/29/2023</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312290LAC.html" target="_blank">2023-12-29 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/LAC.html" target="_blank">LAC</a></td>
@@ -730,7 +754,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2023-24</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202312260NOP.html" target="_blank">12/26/2023</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312260NOP.html" target="_blank">2023-12-26 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/NOP.html" target="_blank">NOP</a></td>
@@ -753,7 +777,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2023-24</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202312230ATL.html" target="_blank">12/23/2023</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312230ATL.html" target="_blank">2023-12-23 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/ATL.html" target="_blank">ATL</a></td>
@@ -776,7 +800,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2023-24</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202312210MEM.html" target="_blank">12/21/2023</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312210MEM.html" target="_blank">2023-12-21 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/IND.html" target="_blank">IND</a></td>
@@ -799,7 +823,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2023-24</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202312190NOP.html" target="_blank">12/19/2023</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202312190NOP.html" target="_blank">2023-12-19 00:00:00</a></td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/NOP.html" target="_blank">NOP</a></td>

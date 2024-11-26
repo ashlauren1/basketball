@@ -333,6 +333,7 @@
 <option value="all">All</option>
 <option value="BOS">BOS</option>
 <option value="DET">DET</option>
+<option value="GSW">GSW</option>
 <option value="MEM">MEM</option>
 <option value="NYK">NYK</option>
 </select>
@@ -381,7 +382,7 @@
 <script src="chartScript.js"></script>
 <script>
     // Initialize the chart with player-specific data by calling a function from chart_logic.js
-    initializeChart("martity01", [{'date': '2024-10-30', 'opponent': 'MEM', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.116666667, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 0.0}, {'date': '2024-11-03', 'opponent': 'DET', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.6, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 0, 'PTS_REB': 1, 'PTS_REB_AST': 1, 'FANTASY': 1.2}, {'date': '2024-11-13', 'opponent': 'BOS', 'location': 'home', 'season': '2024-25', 'PTS': 6, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 17.11666667, 'OffREB': 0, 'DefREB': 0, 'FG': 2, 'FGA': 6, '3P': 2, '3PA': 5, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 6, 'PTS_REB': 6, 'PTS_REB_AST': 6, 'FANTASY': 5.0}, {'date': '2024-11-17', 'opponent': 'NYK', 'location': 'away', 'season': '2024-25', 'PTS': 3, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.283333333, 'OffREB': 0, 'DefREB': 1, 'FG': 1, 'FGA': 1, '3P': 1, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 3, 'PTS_REB': 4, 'PTS_REB_AST': 4, 'FANTASY': 4.2}], 0.5, "PTS");
+    initializeChart("martity01", [{'date': '2024-10-30', 'opponent': 'MEM', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.117, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 0.0}, {'date': '2024-11-03', 'opponent': 'DET', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.6, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 0, 'PTS_REB': 1, 'PTS_REB_AST': 1, 'FANTASY': 1.2}, {'date': '2024-11-13', 'opponent': 'BOS', 'location': 'home', 'season': '2024-25', 'PTS': 6, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 17.117, 'OffREB': 0, 'DefREB': 0, 'FG': 2, 'FGA': 6, '3P': 2, '3PA': 5, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 6, 'PTS_REB': 6, 'PTS_REB_AST': 6, 'FANTASY': 5.0}, {'date': '2024-11-17', 'opponent': 'NYK', 'location': 'away', 'season': '2024-25', 'PTS': 3, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.283, 'OffREB': 0, 'DefREB': 1, 'FG': 1, 'FGA': 1, '3P': 1, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 3, 'PTS_REB': 4, 'PTS_REB_AST': 4, 'FANTASY': 4.2}, {'date': '2024-11-25', 'opponent': 'GSW', 'location': 'away', 'season': '2024-25', 'PTS': 3, 'REB': 6, 'AST': 3, 'BLK': 1, 'STL': 1, 'TOV': 1, 'MP': 17.833, 'OffREB': 1, 'DefREB': 5, 'FG': 1, 'FGA': 5, '3P': 1, '3PA': 5, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 2, 'REB_AST': 9, 'PTS_AST': 6, 'PTS_REB': 9, 'PTS_REB_AST': 12, 'FANTASY': 19.7}], 0.5, "PTS");
 </script>
 <div id="table-container">
 <div class="groupedProbAndButtons">
@@ -421,7 +422,30 @@
 <tbody>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411170NYK.html" target="_blank">11/17/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411250GSW.html" target="_blank">2024-11-25 00:00:00</a></td>
+<td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/GSW.html" target="_blank">GSW</a></td>
+<td>3</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>17.83</td>
+<td>1</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411170NYK.html" target="_blank">2024-11-17 00:00:00</a></td>
 <td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/NYK.html" target="_blank">NYK</a></td>
@@ -444,7 +468,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411130BRK.html" target="_blank">11/13/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411130BRK.html" target="_blank">2024-11-13 00:00:00</a></td>
 <td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/BOS.html" target="_blank">BOS</a></td>
@@ -467,7 +491,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411030BRK.html" target="_blank">11/3/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411030BRK.html" target="_blank">2024-11-03 00:00:00</a></td>
 <td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/DET.html" target="_blank">DET</a></td>
@@ -490,7 +514,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202410300MEM.html" target="_blank">10/30/2024</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410300MEM.html" target="_blank">2024-10-30 00:00:00</a></td>
 <td><a href="/basketball/teams/BRK.html" target="_blank">BRK</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/MEM.html" target="_blank">MEM</a></td>

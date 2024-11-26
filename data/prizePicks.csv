@@ -1,1497 +1,877 @@
 description,line_score,odds_type,stat_display_name,player_id
-ORL/CHA,59.5,standard,Points (Combo),220253
-ORL/CHA,13.5,standard,Assists (Combo),220253
-ORL/CHA,7,standard,3-PT Made (Combo),220253
-NOP/IND,42,standard,Points (Combo),189627
-LAC/BOS,48.5,standard,Points (Combo),220255
-LAC/BOS,19,standard,Rebounds (Combo),182227
-LAC/BOS,6.5,standard,3-PT Made (Combo),220255
-DAL/ATL,49,standard,Points (Combo),184621
-NYK/DEN,54.5,standard,Points (Combo),195155
-NYK/DEN,23.5,standard,Rebounds (Combo),139719
-NYK/DEN,13,standard,Assists (Combo),220260
-NYK/DEN,5.5,standard,3-PT Made (Combo),220260
-BKN/GSW,48.5,standard,Points (Combo),186922
-BKN/GSW,12,standard,Assists (Combo),220262
-BKN/GSW,7.5,standard,3-PT Made (Combo),186922
-OKC/SAC,55.5,standard,Points (Combo),220263
-OKC/SAC,12,standard,Assists (Combo),176658
-ORL,30.5,standard,Pts+Rebs+Asts,174280
-ORL,11,standard,3-PT Attempted,174280
-ORL,24.5,standard,Pts+Asts,174280
-ORL,20.5,standard,FG Attempted,174280
-ORL,26.5,standard,Pts+Rebs,174280
-ORL,21.5,standard,Points,174280
-ORL,2.5,standard,Free Throws Made,174280
-ORL,8.5,standard,Rebs+Asts,174280
-ORL,35,standard,Fantasy Score,174280
-CHA,35,standard,Pts+Asts,55372
-CHA,6,standard,Assists,55372
-CHA,12.5,standard,Rebs+Asts,55372
-CHA,35.5,standard,Pts+Rebs,55372
-CHA,41.5,standard,Pts+Rebs+Asts,55372
-CHA,28.5,standard,Points,55372
-CHA,7.5,standard,3-PT Attempted,55372
-CHA,2.5,standard,3-PT Made,55372
-CHA,6,standard,Rebounds,55372
-ORL,48,standard,Fantasy Score,56699
-ORL,5,standard,Free Throws Made,56699
-ORL,26,standard,FG Attempted,56699
-ORL,7,standard,Assists,56699
-ORL,36.5,standard,Pts+Rebs,56699
-ORL,37.5,standard,Pts+Asts,56699
-ORL,13,standard,Rebs+Asts,56699
-ORL,5.5,standard,Rebounds,56699
-ORL,43.5,standard,Pts+Rebs+Asts,56699
-ORL,12.5,standard,3-PT Attempted,56699
-CHA,19.5,standard,Pts+Asts,53830
-CHA,30.5,standard,Fantasy Score,53830
-CHA,19.5,standard,Pts+Rebs,53830
-CHA,4,standard,Assists,53830
-CHA,4.5,standard,Rebounds,53830
-CHA,15.5,standard,Points,53830
-CHA,8.5,standard,Rebs+Asts,53830
-CHA,24,standard,Pts+Rebs+Asts,53830
-CHA,8.5,standard,Points,216717
-CHA,11,standard,Pts+Rebs,216717
-CHA,2.5,standard,Rebounds,216717
-CHA,12.5,standard,Pts+Rebs+Asts,216717
-CHA,10,standard,Pts+Asts,216717
-CHA,4.5,standard,Rebs+Asts,216717
-CHA,12.5,standard,Pts+Rebs,218628
-CHA,8.5,standard,Points,218628
-CHA,17.5,standard,Fantasy Score,218628
-CHA,4,standard,Rebounds,218628
-CHA,10.5,standard,Pts+Asts,218628
-ORL,13,standard,Pts+Rebs,216721
-ORL,15.5,standard,Pts+Rebs+Asts,216721
-ORL,1.5,standard,3-PT Made,216721
-ORL,9,standard,Points,216721
-CHA,10,standard,Pts+Asts,37711
-CHA,15,standard,Pts+Rebs,37711
-CHA,6,standard,Rebounds,37711
-CHA,8,standard,Rebs+Asts,37711
-CHA,16.5,standard,Pts+Rebs+Asts,37711
-CHA,1.5,standard,Assists,37711
-CHA,8.5,standard,Points,37711
-IND,29,standard,Pts+Rebs,1287
-IND,29,standard,Pts+Asts,1287
-IND,11.5,standard,Rebs+Asts,1287
-IND,23.5,standard,Points,1287
-DET,11.5,standard,FG Attempted,96540
-DET,38,standard,Fantasy Score,96540
-IND,34.5,standard,Pts+Rebs+Asts,1287
-DET,7,standard,Defensive Rebounds,96540
-DET,4,standard,Offensive Rebounds,96540
-IND,5.5,standard,Rebounds,1287
-NOP,1.5,standard,3-PT Made,185263
-NOP,25.5,standard,Pts+Asts,185263
-NOP,10.5,standard,Rebs+Asts,185263
-NOP,7,standard,Rebounds,185263
-TOR,1.5,standard,Free Throws Made,25434
-NOP,29.5,standard,Pts+Rebs,185263
-TOR,1.5,standard,Offensive Rebounds,25434
-NOP,32.5,standard,Pts+Rebs+Asts,185263
-TOR,23.5,standard,Fantasy Score,25434
-NOP,3,standard,Assists,185263
-NOP,22.5,standard,Points,185263
-IND,20.5,standard,Pts+Asts,54095
-IND,5.5,standard,Rebounds,54095
-IND,1.5,standard,Turnovers,54095
-IND,23.5,standard,Pts+Rebs,54095
-IND,8.5,standard,Rebs+Asts,54095
-IND,1.5,standard,Blks+Stls,54095
-DET,0.5,standard,Free Throws Made,188601
-IND,17.5,standard,Points,54095
-DET,20.5,standard,Fantasy Score,188601
-IND,26.5,standard,Pts+Rebs+Asts,54095
-NOP,1.5,standard,3-PT Made,87499
-TOR,4,standard,Free Throws Made,79907
-NOP,27.5,standard,Pts+Rebs+Asts,87499
-TOR,16.5,standard,FG Attempted,79907
-NOP,25.5,standard,Pts+Rebs,87499
-TOR,35.5,standard,Fantasy Score,79907
-NOP,6,standard,Rebounds,87499
-NOP,19.5,standard,Points,87499
-IND,7.5,standard,Rebounds,217531
-DET,18.5,standard,FG Attempted,183185
-IND,0.5,standard,Steals,217531
-IND,10,standard,Pts+Asts,217531
-IND,9.5,standard,Rebs+Asts,217531
-IND,15.5,standard,Pts+Rebs,217531
-IND,17.5,standard,Pts+Rebs+Asts,217531
-IND,1.5,standard,Blks+Stls,217531
-IND,8,standard,Points,217531
-DET,38,standard,Fantasy Score,183185
-DET,5,standard,Free Throws Made,183185
-NOP,22.5,standard,Pts+Rebs,187997
-NOP,9,standard,Assists,187997
-NOP,3.5,standard,Rebounds,187997
-TOR,31.5,standard,Fantasy Score,87848
-NOP,18.5,standard,Points,187997
-NOP,27.5,standard,Pts+Asts,187997
-NOP,13,standard,Rebs+Asts,187997
-TOR,3,standard,Offensive Rebounds,87848
-NOP,32,standard,Pts+Rebs+Asts,187997
-DET,39.5,standard,Fantasy Score,188002
-DET,16.5,standard,FG Attempted,188002
-DET,3.5,standard,Free Throws Made,188002
-DET,1.5,standard,Offensive Rebounds,188002
-NOP,2.5,standard,Blks+Stls,1604
-NOP,8.5,standard,Rebs+Asts,1604
-NOP,7.5,standard,Rebounds,1604
-TOR,15,standard,FG Attempted,174379
-NOP,16.5,standard,Points,1604
-TOR,25.5,standard,Fantasy Score,174379
-NOP,23.5,standard,Pts+Rebs,1604
-NOP,16.5,standard,Pts+Asts,1604
-TOR,9.5,standard,3-PT Attempted,174379
-NOP,24.5,standard,Pts+Rebs+Asts,1604
-TOR,3.5,standard,3-PT Attempted,187347
-TOR,9.5,standard,FG Attempted,1379
-TOR,5.5,standard,3-PT Attempted,1379
-TOR,32.5,standard,Fantasy Score,216580
-TOR,1.5,standard,Offensive Rebounds,216580
-TOR,13,standard,FG Attempted,216580
-NOP,19.5,demon,Points,1604
-IND,34.5,demon,Pts+Rebs,1287
-IND,6.5,demon,Rebounds,1287
-NOP,19.5,demon,Pts+Asts,1604
-IND,32.5,goblin,Pts+Rebs+Asts,1287
-IND,27.5,demon,Points,1287
-IND,19.5,goblin,Points,1287
-NOP,14.5,demon,Rebs+Asts,187997
-NOP,34.5,demon,Pts+Asts,187997
-IND,3.5,demon,3-PT Made,54095
-NOP,20.5,demon,Points,187997
-NOP,8.5,demon,Rebounds,1604
-NOP,18.5,demon,Points,1604
-NOP,2.5,demon,Blocked Shots,1604
-IND,14.5,demon,Rebs+Asts,1287
-IND,2.5,demon,3-PT Made,1287
-IND,27.5,demon,Points,1287
-NOP,24.5,demon,Points,87499
-NOP,6.5,goblin,Rebounds,1604
-NOP,4.5,goblin,Rebounds,87499
-NOP,19.5,goblin,Pts+Rebs+Asts,1604
-IND,4.5,demon,3-PT Made,54095
-NOP,14.5,goblin,Points,87499
-NOP,1.5,demon,Assists,1604
-NOP,14.5,goblin,Points,187997
-NOP,19.5,goblin,Pts+Rebs,187997
-NOP,7.5,demon,Rebounds,87499
-NOP,16.5,goblin,Points,87499
-IND,9.5,demon,Points,217531
-IND,19.5,demon,Points,54095
-NOP,5.5,goblin,Rebounds,1604
-NOP,7.5,goblin,Assists,187997
-NOP,9.5,demon,Rebounds,1604
-IND,1.5,demon,Turnovers,217531
-IND,9.5,demon,Rebounds,217531
-IND,15.5,goblin,Pts+Rebs+Asts,217531
-IND,19.5,demon,Pts+Rebs+Asts,217531
-IND,4.5,goblin,Points,217531
-IND,11.5,demon,Points,217531
-IND,0.5,goblin,Blocked Shots,217531
-NOP,4.5,demon,3-PT Made,187997
-IND,1.5,goblin,Assists,217531
-IND,2.5,demon,Assists,217531
-NOP,11.5,demon,Assists,187997
-IND,1.5,goblin,Assists,54095
-NOP,25.5,demon,Points,87499
-IND,6.5,demon,Rebounds,54095
-IND,3.5,demon,Assists,54095
-IND,19.5,goblin,Pts+Rebs,54095
-IND,7.5,demon,Rebounds,1287
-IND,23.5,demon,Points,54095
-IND,0.5,goblin,Steals,54095
-IND,0.5,goblin,Steals,1287
-IND,4.5,goblin,Rebounds,54095
-IND,28.5,demon,Pts+Rebs+Asts,54095
-IND,29.5,demon,Pts+Rebs,54095
-IND,14.5,goblin,Points,54095
-IND,9.5,demon,Rebs+Asts,54095
-IND,7.5,demon,Rebounds,54095
-IND,24.5,demon,Pts+Asts,54095
-IND,20.5,demon,Points,54095
-IND,15.5,goblin,Points,54095
-IND,12.5,goblin,Points,54095
-NOP,24.5,demon,Pts+Rebs,187997
-NOP,8.5,goblin,Assists,187997
-IND,8.5,demon,Rebounds,217531
-NOP,27.5,demon,Points,185263
-NOP,2.5,goblin,Rebounds,187997
-NOP,15.5,goblin,Points,187997
-NOP,2.5,demon,3-PT Made,185263
-NOP,0.5,goblin,3-PT Made,185263
-NOP,17.5,goblin,Points,185263
-NOP,2.5,goblin,Assists,185263
-NOP,4.5,demon,Assists,185263
-IND,13.5,goblin,Pts+Rebs+Asts,217531
-NOP,5.5,goblin,Rebounds,185263
-NOP,8.5,demon,Rebounds,185263
-NOP,24.5,demon,Points,185263
-NOP,33.5,demon,Pts+Rebs+Asts,187997
-NOP,2.5,demon,3-PT Made,87499
-NOP,24.5,goblin,Pts+Asts,187997
-NOP,10.5,demon,Assists,187997
-NOP,2.5,demon,Assists,87499
-NOP,21.5,demon,Points,87499
-NOP,14.5,goblin,Pts+Asts,1604
-NOP,29.5,demon,Pts+Rebs,1604
-NOP,2.5,demon,3-PT Made,1604
-NOP,19.5,goblin,Pts+Rebs,1604
-NOP,13.5,goblin,Points,1604
-NOP,17.5,demon,Points,1604
-NOP,21.5,demon,Points,1604
-NOP,0.5,demon,Blocked Shots,196661
-NOP,17.5,goblin,Points,87499
-NOP,4.5,demon,Rebounds,187997
-IND,4.5,goblin,Assists,1287
-IND,34.5,demon,Pts+Asts,1287
-IND,24.5,goblin,Pts+Asts,1287
-IND,31.5,goblin,Pts+Rebs+Asts,1287
-IND,4.5,goblin,Rebounds,1287
-IND,39.5,demon,Pts+Rebs+Asts,1287
-IND,24.5,goblin,Pts+Rebs,1287
-DET,13.5,standard,Rebs+Asts,96540
-DET,11,standard,Rebounds,96540
-DET,15.5,standard,Points,96540
-DET,27.5,standard,Pts+Rebs,96540
-DET,29.5,standard,Pts+Rebs+Asts,96540
-DET,18.5,standard,Pts+Asts,96540
-TOR,8.5,standard,Rebs+Asts,25434
-TOR,14.5,standard,Pts+Rebs,25434
-TOR,16.5,standard,Pts+Rebs+Asts,25434
-DET,10,standard,Points,188601
-DET,14,standard,Pts+Rebs,188601
-DET,11.5,standard,Pts+Asts,188601
-DET,1.5,standard,Blks+Stls,188601
-DET,3.5,standard,Rebounds,188601
-DET,15.5,standard,Pts+Rebs+Asts,188601
-TOR,9.5,standard,Rebs+Asts,79907
-TOR,1.5,standard,3-PT Made,79907
-TOR,20.5,standard,Points,79907
-TOR,25.5,standard,Pts+Asts,79907
-TOR,5,standard,Assists,79907
-TOR,30,standard,Pts+Rebs+Asts,79907
-TOR,25,standard,Pts+Rebs,79907
-DET,6,standard,Rebounds,183185
-DET,29.5,standard,Pts+Rebs,183185
-DET,4.5,standard,Assists,183185
-DET,34.5,standard,Pts+Rebs+Asts,183185
-DET,11,standard,Rebs+Asts,183185
-DET,23.5,standard,Points,183185
-DET,28.5,standard,Pts+Asts,183185
-TOR,1.5,standard,Turnovers,87848
-TOR,13.5,standard,Pts+Asts,87848
-TOR,11.5,standard,Points,87848
-TOR,22.5,standard,Pts+Rebs,87848
-TOR,11,standard,Rebounds,87848
-TOR,13.5,standard,Rebs+Asts,87848
-TOR,25,standard,Pts+Rebs+Asts,87848
-DET,19,standard,Points,188002
-DET,12.5,standard,Rebs+Asts,188002
-DET,32,standard,Pts+Rebs+Asts,188002
-DET,25,standard,Pts+Asts,188002
-DET,5.5,standard,Assists,188002
-DET,26,standard,Pts+Rebs,188002
-TOR,16.5,standard,Points,174379
-TOR,20.5,standard,Pts+Rebs,174379
-TOR,22.5,standard,Pts+Rebs+Asts,174379
-TOR,5.5,standard,Rebs+Asts,174379
-TOR,19.5,standard,Pts+Asts,174379
-TOR,3.5,standard,3-PT Made,174379
-DET,9.5,standard,Points,17181
-DET,14.5,standard,Pts+Rebs+Asts,17181
-TOR,3.5,standard,Rebs+Asts,187347
-TOR,2.5,standard,Rebounds,187347
-TOR,0.5,standard,Turnovers,187347
-TOR,9.5,standard,Pts+Rebs,187347
-TOR,7.5,standard,Pts+Asts,187347
-TOR,10.5,standard,Pts+Rebs+Asts,187347
-TOR,6.5,standard,Points,187347
-DET,9.5,standard,Points,217127
-DET,16.5,standard,Pts+Rebs+Asts,217127
-TOR,15.5,standard,Pts+Rebs+Asts,1379
-TOR,13.5,standard,Pts+Rebs,1379
-TOR,13.5,standard,Pts+Asts,1379
-TOR,10.5,standard,Points,1379
-TOR,10,standard,Rebs+Asts,216580
-TOR,15.5,standard,Points,216580
-TOR,23,standard,Pts+Rebs,216580
-TOR,7,standard,Rebounds,216580
-TOR,26,standard,Pts+Rebs+Asts,216580
-TOR,18.5,standard,Pts+Asts,216580
-TOR,8,standard,Points,25434
-TOR,13.5,standard,Pts+Rebs+Asts,176100
-TOR,8.5,standard,Points,176100
-TOR,7.5,goblin,Points,87848
-TOR,1.5,demon,Turnovers,174379
-DET,11.5,goblin,Points,96540
-TOR,0.5,demon,3-PT Made,25434
-DET,2.5,demon,3-PT Made,188601
-TOR,8.5,goblin,Points,1379
-TOR,24.5,demon,Points,79907
-DET,6.5,demon,Assists,188002
-DET,24.5,demon,Points,188002
-TOR,3.5,demon,3-PT Made,1379
-DET,19.5,goblin,Points,183185
-TOR,2.5,demon,3-PT Made,216580
-DET,0.5,goblin,Turnovers,188601
-TOR,1.5,goblin,Assists,25434
-DET,7.5,demon,Assists,188002
-DET,7.5,goblin,Points,188601
-DET,9.5,goblin,Rebounds,96540
-DET,0.5,goblin,3-PT Made,188601
-DET,14.5,goblin,Points,188002
-DET,0.5,goblin,Blocked Shots,188002
-DET,4.5,goblin,Rebounds,183185
-TOR,4.5,demon,3-PT Made,174379
-DET,1.5,goblin,Assists,96540
-TOR,0.5,goblin,3-PT Made,79907
-TOR,6.5,demon,Assists,79907
-TOR,1.5,goblin,Assists,1379
-TOR,18.5,goblin,Points,79907
-DET,5.5,goblin,Rebounds,188002
-DET,14.5,demon,Points,188601
-TOR,5.5,goblin,Rebounds,25434
-TOR,1.5,goblin,Rebounds,1379
-TOR,2.5,goblin,Rebounds,174379
-DET,29.5,demon,Points,183185
-TOR,14.5,goblin,Points,174379
-DET,3.5,goblin,Assists,183185
-DET,4.5,demon,Rebounds,188601
-DET,2.5,goblin,Rebounds,188601
-TOR,2.5,goblin,3-PT Made,174379
-DET,19.5,demon,Points,96540
-TOR,1.5,demon,Steals,79907
-DET,2.5,demon,3-PT Made,183185
-TOR,3.5,demon,Assists,216580
-TOR,9.5,demon,Points,25434
-DET,0.5,demon,Blocked Shots,183185
-DET,1.5,demon,Steals,188002
-TOR,5.5,demon,Rebounds,79907
-TOR,3.5,demon,Rebounds,1379
-TOR,4.5,demon,Rebounds,174379
-TOR,7.5,demon,Rebounds,25434
-DET,1.5,demon,3-PT Made,188002
-TOR,9.5,goblin,Rebounds,87848
-TOR,3.5,demon,Assists,1379
-TOR,9.5,demon,Points,187347
-TOR,0.5,goblin,3-PT Made,216580
-TOR,19.5,demon,Points,174379
-TOR,2.5,demon,Assists,25434
-TOR,1.5,demon,3-PT Made,187347
-DET,29.5,goblin,Pts+Rebs+Asts,188002
-DET,7.5,demon,Rebounds,188002
-DET,0.5,goblin,3-PT Made,183185
-TOR,9.5,goblin,Points,87848
-DET,20.5,goblin,Points,183185
-DET,3.5,demon,Assists,96540
-DET,5.5,demon,Assists,183185
-DET,13.5,goblin,Pts+Rebs+Asts,188601
-DET,0.5,goblin,Steals,188601
-TOR,3.5,demon,Assists,87848
-TOR,14.5,demon,Points,1379
-TOR,13.5,goblin,Points,216580
-TOR,14.5,demon,Rebounds,87848
-TOR,4.5,goblin,Assists,79907
-TOR,1.5,demon,Blocked Shots,87848
-TOR,17.5,demon,Points,216580
-TOR,13.5,goblin,Pts+Rebs+Asts,1379
-TOR,0.5,demon,Blocked Shots,187347
-TOR,3.5,demon,Assists,174379
-TOR,3.5,demon,Rebounds,187347
-TOR,6.5,goblin,Rebounds,216580
-DET,17.5,goblin,Points,183185
-DET,0.5,goblin,Steals,96540
-DET,13.5,goblin,Points,96540
-TOR,19.5,demon,Points,216580
-TOR,0.5,goblin,Assists,187347
-TOR,9.5,demon,Rebounds,216580
-TOR,14.5,demon,Points,87848
-TOR,11.5,goblin,Points,216580
-TOR,14.5,goblin,Points,79907
-TOR,5.5,demon,3-PT Made,174379
-DET,7.5,demon,Rebounds,183185
-DET,2.5,demon,Assists,188601
-TOR,0.5,goblin,Turnovers,25434
-TOR,17.5,goblin,Points,79907
-TOR,1.5,goblin,Assists,87848
-TOR,1.5,goblin,Rebounds,187347
-DET,4.5,goblin,Assists,188002
-DET,16.5,goblin,Points,188002
-TOR,2.5,demon,3-PT Made,1379
-DET,0.5,goblin,3-PT Made,188002
-TOR,1.5,goblin,Assists,174379
-TOR,1.5,goblin,3-PT Made,1379
-TOR,2.5,demon,3-PT Made,79907
-TOR,0.5,goblin,3-PT Made,187347
-TOR,1.5,demon,Blocked Shots,216580
-DAL,10.5,standard,FG Attempted,25099
-DAL,18.5,standard,Pts+Rebs+Asts,25099
-DAL,6.5,standard,3-PT Attempted,25099
-DAL,21.5,standard,Fantasy Score,25099
-DAL,12.5,standard,Points,25099
-DAL,15.5,standard,Pts+Rebs,25099
-DAL,15.5,standard,Pts+Asts,25099
-DAL,28,standard,Fantasy Score,1596
-DAL,5.5,standard,Defensive Rebounds,1596
-DAL,13,standard,Pts+Asts,1596
-DAL,8.5,standard,FG Attempted,1596
-DAL,10,standard,Rebounds,1596
-DAL,12,standard,Points,1596
-DAL,21.5,standard,Pts+Rebs,1596
-DAL,11,standard,Rebs+Asts,1596
-DAL,1.5,standard,Free Throws Made,1596
-DAL,23.5,standard,Pts+Rebs+Asts,1596
-ATL,5.5,standard,Rebs+Asts,216784
-DAL,14.5,standard,Pts+Asts,216868
-DAL,8,standard,Rebs+Asts,216868
-DAL,3.5,standard,3-PT Attempted,216868
-DAL,20.5,standard,Pts+Rebs+Asts,216868
-DAL,10.5,standard,FG Attempted,216868
-DAL,5,standard,Rebounds,216868
-DAL,17,standard,Pts+Rebs,216868
-DAL,11.5,standard,Points,216868
-DAL,30,standard,Fantasy Score,216868
-ATL,26.5,standard,Points,96236
-ATL,33.5,standard,Pts+Asts,96236
-ATL,10.5,standard,Rebs+Asts,96236
-ATL,20.5,standard,FG Attempted,96236
-ATL,37.5,standard,Pts+Rebs+Asts,96236
-ATL,7.5,standard,3-PT Attempted,96236
-ATL,4,standard,Free Throws Made,96236
-ATL,31,standard,Pts+Rebs,96236
-DAL,4.5,standard,Assists,87857
-DAL,14.5,standard,FG Attempted,87857
-DAL,14,standard,Rebs+Asts,87857
-DAL,23.5,standard,Pts+Asts,87857
-DAL,1.5,standard,3-PT Made,87857
-DAL,32.5,standard,Pts+Rebs+Asts,87857
-DAL,40,standard,Fantasy Score,87857
-DAL,28.5,standard,Pts+Rebs,87857
-DAL,8,standard,Defensive Rebounds,87857
-DAL,4.5,standard,3-PT Attempted,87857
-DAL,18.5,standard,Points,87857
-DAL,2.5,standard,Free Throws Made,87857
-DAL,10.5,standard,Pts+Asts,25424
-DAL,16.5,standard,Pts+Rebs+Asts,25424
-DAL,16,standard,Pts+Rebs,25424
-DAL,7.5,standard,Rebs+Asts,25424
-DAL,9,standard,Points,25424
-DAL,22,standard,Fantasy Score,25424
-DAL,6.5,standard,Rebounds,25424
-DAL,25.5,standard,Pts+Rebs,188008
-DAL,34.5,standard,Pts+Asts,188008
-DAL,2.5,standard,3-PT Made,188008
-DAL,11.5,standard,Assists,188008
-DAL,5,standard,Free Throws Made,188008
-DAL,7.5,standard,3-PT Attempted,188008
-DAL,15,standard,Rebs+Asts,188008
-DAL,22.5,standard,Points,188008
-DAL,37.5,standard,Pts+Rebs+Asts,188008
-DAL,43,standard,Fantasy Score,188008
-DAL,16.5,standard,FG Attempted,188008
-DAL,9.5,standard,Points,217345
-DAL,13.5,standard,Pts+Rebs+Asts,217345
-DAL,12.5,standard,Pts+Rebs,217345
-ATL,29.5,demon,Points,96236
-DAL,0.5,demon,Blocked Shots,217345
-DAL,0.5,demon,Blocked Shots,188008
-DAL,13.5,demon,Assists,188008
-DAL,19.5,demon,Pts+Rebs+Asts,25424
-ATL,0.5,demon,Blocked Shots,96236
-ATL,3.5,demon,3-PT Made,96236
-DAL,5.5,demon,Assists,87857
-DAL,6.5,demon,Rebounds,216868
-DAL,11.5,demon,Rebounds,1596
-DAL,14.5,demon,Points,1596
-DAL,10.5,goblin,Assists,188008
-DAL,1.5,goblin,3-PT Made,188008
-DAL,0.5,goblin,Steals,87857
-DAL,12.5,demon,Rebounds,1596
-DAL,39.5,demon,Pts+Rebs+Asts,188008
-ATL,5.5,demon,Rebounds,96236
-DAL,1.5,demon,Turnovers,25099
-DAL,0.5,goblin,3-PT Made,87857
-DAL,24.5,demon,Points,188008
-DAL,0.5,goblin,Assists,1596
-DAL,0.5,goblin,3-PT Made,216868
-DAL,12.5,demon,Assists,188008
-DAL,0.5,goblin,3-PT Made,217345
-DAL,1.5,goblin,3-PT Made,25099
-DAL,2.5,goblin,Rebounds,217345
-DAL,0.5,demon,3-PT Made,25424
-DAL,2.5,goblin,Assists,216868
-DAL,6.5,demon,Assists,87857
-DAL,2.5,demon,3-PT Made,87857
-DAL,0.5,goblin,Assists,25424
-DAL,5.5,goblin,Rebounds,25424
-ATL,34.5,goblin,Pts+Rebs+Asts,96236
-DAL,3.5,demon,Assists,25099
-DAL,1.5,goblin,Assists,25099
-DAL,14.5,demon,Assists,188008
-DAL,4.5,goblin,Rebounds,25424
-DAL,0.5,demon,Blocked Shots,25099
-DAL,15.5,goblin,Pts+Rebs+Asts,25424
-DAL,7.5,demon,Rebounds,216868
-DAL,20.5,goblin,Points,188008
-DAL,1.5,demon,3-PT Made,216868
-DAL,4.5,demon,Rebounds,217345
-DAL,1.5,demon,3-PT Made,217345
-DAL,4.5,demon,Rebounds,188008
-DAL,9.5,demon,Rebounds,25424
-DAL,13.5,demon,Points,25424
-DAL,10.5,demon,Rebounds,87857
-DAL,4.5,demon,Assists,216868
-DAL,16.5,demon,Points,1596
-DAL,4.5,demon,Rebounds,25099
-DAL,3.5,demon,Rebounds,25099
-DAL,18.5,demon,Points,25099
-DAL,0.5,goblin,Steals,188008
-DAL,2.5,goblin,Rebounds,188008
-DAL,19.5,goblin,Points,188008
-DAL,9.5,goblin,Points,216868
-DAL,7.5,goblin,Points,216868
-DAL,0.5,goblin,Turnovers,1596
-DAL,0.5,goblin,Blocked Shots,1596
-DAL,9.5,goblin,Points,25099
-DAL,14.5,goblin,Points,87857
-DAL,1.5,demon,Assists,217345
-DAL,11.5,demon,Rebounds,87857
-DAL,1.5,demon,Assists,25424
-DAL,14.5,demon,Points,25099
-DAL,14.5,demon,Points,216868
-DAL,1.5,demon,Steals,188008
-DAL,3.5,demon,3-PT Made,188008
-DAL,9.5,goblin,Assists,188008
-DAL,9.5,goblin,Points,1596
-DAL,2.5,demon,Steals,216868
-DAL,3.5,demon,3-PT Made,25099
-DAL,12.5,demon,Rebounds,87857
-DAL,3.5,goblin,Assists,87857
-DAL,0.5,goblin,Turnovers,217345
-DAL,1.5,demon,Assists,1596
-DAL,2.5,demon,Turnovers,87857
-DAL,34.5,goblin,Pts+Rebs+Asts,188008
-ATL,5.5,goblin,Assists,96236
-ATL,7.5,demon,Assists,96236
-ATL,3.5,goblin,Rebounds,96236
-ATL,1.5,demon,Steals,96236
-ATL,41.5,demon,Pts+Rebs+Asts,96236
-ATL,28.5,demon,Points,96236
-ATL,4.5,demon,3-PT Made,96236
-ATL,35.5,goblin,Pts+Rebs+Asts,96236
-LAC,8.5,standard,Rebs+Asts,60021
-LAC,4,standard,Assists,60021
-LAC,7.5,standard,3-PT Attempted,60021
-LAC,11.5,standard,FG Attempted,60021
-LAC,4,standard,Rebounds,60021
-LAC,23.5,standard,Pts+Rebs+Asts,60021
-LAC,19.5,standard,Pts+Asts,60021
-LAC,1.5,standard,Free Throws Made,60021
-LAC,19.5,standard,Pts+Rebs,60021
-LAC,32.5,standard,Fantasy Score,60021
-LAC,15.5,standard,Points,60021
-BOS,9.5,standard,Points,54046
-BOS,14,standard,Pts+Rebs+Asts,54046
-BOS,12.5,standard,Pts+Rebs,54046
-BOS,10.5,standard,Pts+Asts,54046
-LAC,3,standard,Free Throws Made,188003
-LAC,6.5,standard,3-PT Attempted,188003
-LAC,32.5,standard,Pts+Rebs+Asts,188003
-LAC,4,standard,Assists,188003
-LAC,28.5,standard,Pts+Rebs,188003
-LAC,22.5,standard,Points,188003
-LAC,9,standard,Rebs+Asts,188003
-LAC,37,standard,Fantasy Score,188003
-LAC,26.5,standard,Pts+Asts,188003
-LAC,18,standard,FG Attempted,188003
-BOS,17.5,standard,Fantasy Score,216775
-BOS,13.5,standard,Pts+Rebs+Asts,216775
-BOS,10.5,standard,Pts+Asts,216775
-BOS,9.5,standard,Points,216775
-BOS,7.5,standard,FG Attempted,216775
-BOS,12.5,standard,Pts+Rebs,216775
-BOS,3,standard,Rebounds,216775
-LAC,9.5,standard,3-PT Attempted,187999
-LAC,5,standard,Free Throws Made,187999
-LAC,46.5,standard,Fantasy Score,187999
-LAC,7.5,standard,Defensive Rebounds,187999
-LAC,39.5,standard,Pts+Rebs+Asts,187999
-LAC,8,standard,Rebounds,187999
-LAC,31.5,standard,Pts+Asts,187999
-LAC,14,standard,Rebs+Asts,187999
-LAC,33.5,standard,Pts+Rebs,187999
-LAC,25.5,standard,Points,187999
-LAC,3.5,standard,3-PT Made,187999
-LAC,5.5,standard,Assists,187999
-LAC,18,standard,FG Attempted,187999
-BOS,11,standard,Rebounds,3828
-BOS,26,standard,Pts+Rebs,3828
-BOS,32.5,standard,Fantasy Score,3828
-BOS,7.5,standard,Defensive Rebounds,3828
-BOS,3.5,standard,Offensive Rebounds,3828
-BOS,10.5,standard,FG Attempted,3828
-BOS,15,standard,Points,3828
-BOS,16.5,standard,Pts+Asts,3828
-BOS,12.5,standard,Rebs+Asts,3828
-BOS,27.5,standard,Pts+Rebs+Asts,3828
-LAC,19,standard,Pts+Rebs+Asts,173626
-LAC,8.5,standard,FG Attempted,173626
-LAC,4,standard,3-PT Attempted,173626
-LAC,23.5,standard,Fantasy Score,173626
-LAC,14.5,standard,Pts+Asts,173626
-LAC,15,standard,Pts+Rebs,173626
-LAC,10.5,standard,Points,173626
-LAC,3.5,standard,Assists,173626
-BOS,29,standard,Pts+Rebs,175245
-BOS,31,standard,Pts+Asts,175245
-BOS,8,standard,Assists,175245
-BOS,23,standard,Points,175245
-BOS,7.5,standard,3-PT Attempted,175245
-BOS,42,standard,Fantasy Score,175245
-BOS,17,standard,FG Attempted,175245
-BOS,5.5,standard,Free Throws Made,175245
-BOS,37,standard,Pts+Rebs+Asts,175245
-BOS,6,standard,Rebounds,175245
-BOS,14,standard,Rebs+Asts,175245
-BOS,15,standard,Pts+Rebs+Asts,217539
-BOS,3.5,standard,Rebounds,217539
-BOS,11.5,standard,Pts+Asts,217539
-BOS,12,standard,Pts+Rebs,217539
-LAC,20.5,standard,Fantasy Score,25443
-LAC,10.5,standard,Points,25443
-LAC,2.5,standard,Rebounds,25443
-LAC,2.5,standard,3-PT Made,25443
-LAC,16.5,standard,Pts+Rebs+Asts,25443
-LAC,13.5,standard,Pts+Rebs,25443
-LAC,13.5,standard,Pts+Asts,25443
-LAC,6,standard,3-PT Attempted,25443
-BOS,8,standard,Points,217539
-BOS,19.5,standard,Fantasy Score,217539
-BOS,11.5,standard,Points,217118
-BOS,17.5,standard,Pts+Rebs+Asts,217118
-BOS,12.5,standard,Pts+Rebs+Asts,10765
-BOS,7.5,standard,Points,10765
-BOS,3.5,standard,Rebounds,10765
-BOS,2.5,goblin,Rebounds,216775
-BOS,11.5,goblin,Pts+Rebs+Asts,54046
-BOS,7.5,demon,Rebounds,175245
-BOS,4.5,demon,Rebounds,216775
-BOS,2.5,demon,Turnovers,217118
-BOS,12.5,goblin,Pts+Rebs+Asts,217539
-LAC,3.5,demon,3-PT Made,188003
-LAC,7.5,demon,Rebounds,188003
-LAC,0.5,demon,Blocked Shots,188003
-LAC,28.5,demon,Points,187999
-LAC,2.5,goblin,3-PT Made,187999
-LAC,44.5,demon,Pts+Rebs+Asts,187999
-LAC,5.5,demon,Assists,60021
-LAC,6.5,goblin,Rebounds,187999
-LAC,4.5,demon,Rebounds,173626
-LAC,29.5,demon,Points,188003
-BOS,9.5,demon,Points,10765
-BOS,4.5,demon,Assists,217539
-BOS,2.5,demon,Assists,3828
-BOS,1.5,demon,Assists,54046
-BOS,17.5,demon,Pts+Rebs+Asts,216775
-BOS,5.5,goblin,Points,54046
-BOS,11.5,goblin,Pts+Rebs+Asts,216775
-BOS,0.5,goblin,3-PT Made,216775
-BOS,1.5,goblin,3-PT Made,175245
-BOS,26.5,demon,Points,175245
-BOS,9.5,goblin,Points,217118
-BOS,4.5,goblin,Rebounds,175245
-BOS,1.5,demon,3-PT Made,217118
-BOS,6.5,goblin,Assists,175245
-BOS,11.5,demon,Points,54046
-BOS,1.5,demon,3-PT Made,216775
-BOS,17.5,demon,Points,3828
-BOS,7.5,goblin,Points,54046
-BOS,5.5,demon,Rebounds,217539
-BOS,2.5,goblin,Rebounds,217539
-BOS,14.5,demon,Points,54046
-BOS,16.5,demon,Points,217118
-BOS,4.5,demon,Rebounds,54046
-BOS,4.5,demon,Rebounds,217118
-BOS,3.5,demon,3-PT Made,175245
-BOS,11.5,demon,Points,10765
-BOS,1.5,demon,3-PT Made,10765
-BOS,0.5,demon,Blocked Shots,217539
-BOS,9.5,demon,Assists,175245
-BOS,29.5,demon,Points,175245
-BOS,4.5,demon,3-PT Made,175245
-BOS,6.5,demon,Rebounds,175245
-BOS,40.5,demon,Pts+Rebs+Asts,175245
-BOS,12.5,demon,Rebounds,3828
-BOS,19.5,demon,Points,3828
-BOS,16.5,demon,Pts+Rebs+Asts,217539
-BOS,20.5,demon,Points,3828
-BOS,1.5,demon,Assists,10765
-BOS,12.5,goblin,Points,3828
-BOS,1.5,demon,Assists,216775
-LAC,1.5,demon,Turnovers,173626
-LAC,4.5,demon,Assists,173626
-LAC,4.5,goblin,Assists,187999
-LAC,5.5,demon,Assists,173626
-BOS,16.5,demon,Points,3828
-LAC,5.5,demon,Rebounds,60021
-LAC,29.5,demon,Points,187999
-LAC,4.5,demon,3-PT Made,60021
-LAC,2.5,goblin,Rebounds,173626
-LAC,26.5,demon,Points,188003
-LAC,1.5,demon,Steals,188003
-LAC,19.5,goblin,Points,188003
-LAC,7.5,demon,Assists,187999
-LAC,9.5,demon,Rebounds,187999
-LAC,6.5,demon,Rebounds,188003
-LAC,1.5,goblin,3-PT Made,188003
-BOS,3.5,demon,Rebounds,54046
-BOS,15.5,demon,Pts+Rebs+Asts,216775
-BOS,6.5,goblin,Points,217539
-BOS,0.5,demon,Blocked Shots,216775
-BOS,17.5,demon,Pts+Rebs+Asts,54046
-BOS,2.5,demon,3-PT Made,54046
-BOS,13.5,goblin,Pts+Rebs+Asts,217539
-BOS,5.5,goblin,Points,217539
-BOS,0.5,goblin,Steals,175245
-BOS,1.5,goblin,Turnovers,3828
-BOS,7.5,goblin,Points,216775
-LAC,5.5,demon,3-PT Made,187999
-BOS,0.5,demon,Steals,10765
-BOS,1.5,demon,3-PT Made,217539
-LAC,6.5,demon,Assists,187999
-BOS,13.5,demon,Rebounds,3828
-LAC,1.5,demon,Turnovers,60021
-BOS,9.5,goblin,Rebounds,3828
-BOS,0.5,demon,Blocked Shots,217118
-BOS,0.5,goblin,3-PT Made,54046
-LAC,43.5,demon,Pts+Rebs+Asts,187999
-BOS,20.5,goblin,Points,175245
-BOS,2.5,goblin,Rebounds,217118
-BOS,11.5,demon,Points,216775
-BOS,4.5,demon,Rebounds,10765
-BOS,4.5,demon,Assists,217118
-LAC,5.5,demon,Rebounds,173626
-BOS,14.5,demon,Points,217118
-BOS,17.5,goblin,Points,175245
-BOS,19.5,goblin,Points,175245
-BOS,5.5,goblin,Points,216775
-LAC,17.5,goblin,Pts+Rebs+Asts,173626
-BOS,4.5,demon,Rebounds,217539
-LAC,0.5,demon,Blocked Shots,187999
-LAC,2.5,goblin,3-PT Made,60021
-LAC,4.5,demon,3-PT Made,187999
-LAC,14.5,demon,Points,173626
-LAC,0.5,demon,Blocked Shots,173626
-LAC,2.5,goblin,Assists,173626
-LAC,0.5,goblin,Steals,173626
-LAC,21.5,demon,Pts+Rebs+Asts,173626
-LAC,9.5,goblin,Points,173626
-LAC,2.5,demon,3-PT Made,173626
-MEM,27.5,standard,Pts+Rebs+Asts,10818
-MEM,5,standard,Assists,10818
-MEM,19.5,standard,Points,10818
-MEM,24.5,standard,Pts+Asts,10818
-MEM,22.5,standard,Pts+Rebs,10818
-POR,5,standard,Rebounds,58307
-POR,18.5,standard,Points,58307
-POR,23.5,standard,Pts+Rebs,58307
-POR,25.5,standard,Pts+Asts,58307
-POR,31,standard,Pts+Rebs+Asts,58307
-POR,6.5,standard,Assists,58307
-POR,12,standard,Rebs+Asts,58307
-MEM,15.5,standard,Points,79925
-MEM,21.5,standard,Pts+Rebs+Asts,79925
-MEM,17.5,standard,Pts+Asts,79925
-MEM,19.5,standard,Pts+Rebs,79925
-MEM,6.5,standard,Rebs+Asts,79925
-MEM,19.5,standard,Points,88082
-MEM,4.5,standard,Rebounds,88082
-MEM,24.5,standard,Pts+Rebs,88082
-MEM,22.5,standard,Pts+Asts,88082
-MEM,26.5,standard,Pts+Rebs+Asts,88082
-MEM,6.5,standard,Rebs+Asts,175130
-MEM,9.5,standard,Points,175130
-MEM,14.5,standard,Pts+Rebs,175130
-MEM,0.5,goblin,Steals,79925
-MEM,6.5,demon,Assists,10818
-MEM,17.5,demon,Points,79925
-POR,9.5,demon,Assists,58307
-MEM,3.5,demon,Assists,88082
-MEM,1.5,goblin,Assists,88082
-MEM,17.5,goblin,Points,88082
-MEM,2.5,demon,Assists,175130
-MEM,1.5,goblin,3-PT Made,88082
-POR,14.5,goblin,Points,58307
-MEM,0.5,demon,Blocked Shots,88082
-MEM,17.5,goblin,Points,10818
-MEM,2.5,goblin,Rebounds,79925
-MEM,1.5,demon,Steals,88082
-MEM,1.5,demon,3-PT Made,175130
-POR,0.5,demon,Blocked Shots,58307
-MEM,3.5,goblin,Assists,10818
-MEM,0.5,demon,Blocked Shots,175130
-MEM,7.5,goblin,Points,175130
-POR,1.5,demon,3-PT Made,58307
-MEM,3.5,goblin,Rebounds,175130
-MEM,19.5,goblin,Pts+Rebs+Asts,79925
-MEM,4.5,demon,Rebounds,79925
-MEM,3.5,goblin,Rebounds,88082
-POR,0.5,goblin,Steals,58307
-MEM,1.5,goblin,3-PT Made,10818
-MEM,30.5,demon,Pts+Rebs+Asts,88082
-MEM,6.5,demon,Rebounds,88082
-MEM,24.5,demon,Points,10818
-MEM,19.5,demon,Points,79925
-MEM,24.5,goblin,Pts+Rebs+Asts,10818
-MEM,5.5,goblin,Points,175130
-MEM,0.5,demon,Blocked Shots,10818
-MEM,21.5,demon,Points,10818
-MEM,4.5,demon,Rebounds,10818
-POR,24.5,demon,Points,58307
-MEM,21.5,demon,Points,79925
-MEM,3.5,demon,3-PT Made,88082
-MEM,23.5,demon,Points,88082
-MEM,5.5,demon,Rebounds,88082
-MEM,6.5,demon,Rebounds,175130
-MEM,24.5,demon,Pts+Rebs+Asts,79925
-MEM,24.5,goblin,Pts+Rebs+Asts,88082
-MEM,14.5,goblin,Points,10818
-POR,5.5,goblin,Assists,58307
-MEM,0.5,goblin,Blocked Shots,79925
-MEM,14.5,goblin,Points,88082
-MEM,2.5,demon,3-PT Made,79925
-MEM,24.5,demon,Points,88082
-MEM,3.5,demon,3-PT Made,10818
-MEM,11.5,demon,Points,175130
-DEN,30,standard,Pts+Rebs,188004
-DEN,7,standard,Assists,188004
-DEN,20,standard,FG Attempted,188004
-DEN,37,standard,Pts+Rebs+Asts,188004
-DEN,7.5,standard,3-PT Attempted,188004
-DEN,2.5,standard,Turnovers,188004
-DEN,26.5,standard,Points,188004
-DEN,41.5,standard,Fantasy Score,188004
-DEN,34,standard,Pts+Asts,188004
-DEN,3,standard,Rebounds,188004
-DEN,10.5,standard,Rebs+Asts,188004
-NYK,6,standard,Rebs+Asts,79885
-NYK,4,standard,Rebounds,79885
-NYK,14,standard,Points,79885
-NYK,20.5,standard,Pts+Rebs+Asts,79885
-NYK,1.5,standard,Free Throws Made,79885
-NYK,16,standard,Pts+Asts,79885
-NYK,18.5,standard,Pts+Rebs,79885
-NYK,25,standard,Fantasy Score,79885
-NYK,1.5,standard,Blks+Stls,79885
-DEN,1.5,standard,Blks+Stls,123595
-DEN,9,standard,Rebounds,123595
-DEN,19,standard,Pts+Asts,123595
-DEN,15,standard,Rebs+Asts,123595
-DEN,36,standard,Fantasy Score,123595
-DEN,6,standard,Assists,123595
-DEN,22.5,standard,Pts+Rebs,123595
-DEN,13.5,standard,Points,123595
-DEN,29,standard,Pts+Rebs+Asts,123595
-DEN,10.5,standard,FG Attempted,123595
-NYK,35.5,standard,Fantasy Score,1290
-NYK,26.5,standard,Pts+Asts,1290
-NYK,2.5,standard,3-PT Made,1290
-NYK,6,standard,Assists,1290
-NYK,9.5,standard,Rebs+Asts,1290
-NYK,20.5,standard,Points,1290
-NYK,6.5,standard,3-PT Attempted,1290
-NYK,30,standard,Pts+Rebs+Asts,1290
-NYK,15.5,standard,FG Attempted,1290
-NYK,24.5,standard,Pts+Rebs,1290
-NYK,3.5,standard,Rebounds,1290
-DEN,26,standard,Points,216220
-DEN,4.5,standard,Free Throws Made,216220
-DEN,40.5,standard,Pts+Rebs+Asts,216220
-DEN,14,standard,Rebs+Asts,216220
-DEN,11,standard,Rebounds,216220
-DEN,29,standard,Pts+Asts,216220
-DEN,18.5,standard,FG Attempted,216220
-DEN,37.5,standard,Pts+Rebs,216220
-DEN,45.5,standard,Fantasy Score,216220
-DEN,1.5,standard,Blks+Stls,216220
-DEN,6,standard,3-PT Attempted,216220
-NYK,24,standard,Pts+Rebs,2023
-NYK,6.5,standard,3-PT Attempted,2023
-NYK,6,standard,Rebounds,2023
-NYK,20.5,standard,Pts+Asts,2023
-NYK,17.5,standard,Points,2023
-NYK,13.5,standard,FG Attempted,2023
-NYK,8.5,standard,Rebs+Asts,2023
-NYK,26.5,standard,Pts+Rebs+Asts,2023
-NYK,2.5,standard,Assists,2023
-NYK,30.5,standard,Fantasy Score,2023
-NYK,2.5,standard,3-PT Made,2023
-DEN,14.5,standard,FG Attempted,216219
-DEN,31.5,standard,Fantasy Score,216219
-DEN,21.5,standard,Pts+Rebs,216219
-DEN,1.5,standard,Turnovers,216219
-DEN,25.5,standard,Pts+Rebs+Asts,216219
-DEN,6,standard,3-PT Attempted,216219
-DEN,16.5,standard,Points,216219
-DEN,7.5,standard,Rebs+Asts,216219
-DEN,20.5,standard,Pts+Asts,216219
-DEN,4,standard,Rebounds,216219
-NYK,3.5,standard,3-PT Attempted,188013
-NYK,38.5,standard,Pts+Asts,188013
-NYK,4.5,standard,Free Throws Made,188013
-NYK,12.5,standard,Rebounds,188013
-NYK,59.5,standard,Fantasy Score,188013
-NYK,22.5,standard,Rebs+Asts,188013
-NYK,10,standard,Assists,188013
-NYK,51,standard,Pts+Rebs+Asts,188013
-NYK,28,standard,Points,188013
-NYK,40.5,standard,Pts+Rebs,188013
-NYK,18,standard,FG Attempted,188013
-DEN,19.5,standard,Pts+Asts,183158
-DEN,32.5,standard,Fantasy Score,183158
-DEN,7,standard,Rebs+Asts,183158
-DEN,5.5,standard,3-PT Attempted,183158
-DEN,2.5,standard,Blks+Stls,183158
-DEN,5.5,standard,Rebounds,183158
-DEN,18,standard,Points,183158
-DEN,14,standard,FG Attempted,183158
-DEN,25.5,standard,Pts+Rebs+Asts,183158
-NYK,4.5,standard,Rebounds,79886
-NYK,11,standard,Points,79886
-NYK,23.5,standard,Fantasy Score,79886
-NYK,6.5,standard,Rebs+Asts,79886
-NYK,17.5,standard,Pts+Rebs+Asts,79886
-NYK,15.5,standard,Pts+Rebs,79886
-NYK,12.5,standard,Pts+Asts,79886
-NYK,5.5,standard,Assists,217110
-NYK,21.5,standard,Pts+Rebs+Asts,217110
-NYK,15.5,standard,Pts+Rebs,217110
-ORL,29.5,demon,Points,174280
-CHA,3.5,demon,3-PT Made,55372
-CHA,3.5,goblin,Assists,53830
-CHA,11.5,goblin,Pts+Rebs+Asts,218628
-CHA,19.5,demon,Pts+Rebs+Asts,218628
-ORL,7.5,demon,Rebounds,174280
-ORL,9.5,demon,Assists,56699
-ORL,19.5,goblin,Points,174280
-ORL,5.5,demon,3-PT Made,174280
-ORL,30.5,standard,Points,56699
-ORL,7.5,demon,Rebounds,56699
-ORL,5.5,demon,3-PT Made,56699
-CHA,3.5,goblin,Rebounds,218628
-CHA,5.5,demon,Rebounds,218628
-CHA,0.5,demon,Blocked Shots,218628
-CHA,1.5,demon,3-PT Made,218628
-CHA,0.5,goblin,3-PT Made,218628
-CHA,7.5,demon,Rebounds,37711
-CHA,13.5,goblin,Pts+Rebs+Asts,37711
-CHA,19.5,demon,Pts+Rebs+Asts,37711
-CHA,5.5,demon,Assists,53830
-CHA,5.5,demon,Rebounds,53830
-CHA,19.5,goblin,Pts+Rebs+Asts,53830
-CHA,34.5,demon,Points,55372
-CHA,24.5,goblin,Points,55372
-CHA,7.5,demon,Assists,55372
-CHA,5.5,goblin,Assists,55372
-CHA,19.5,demon,Points,53830
-CHA,14.5,goblin,Points,53830
-CHA,1.5,goblin,3-PT Made,53830
-CHA,3.5,demon,Rebounds,216717
-CHA,5.5,goblin,Rebounds,37711
-ORL,0.5,demon,Blocked Shots,56699
-ORL,3.5,goblin,3-PT Made,56699
-ORL,39.5,demon,Points,56699
-CHA,7.5,demon,Rebounds,55372
-CHA,17.5,demon,Pts+Rebs+Asts,216717
-CHA,2.5,demon,3-PT Made,216717
-CHA,3.5,goblin,Rebounds,53830
-CHA,3.5,demon,3-PT Made,53830
-CHA,5.5,goblin,Rebounds,55372
-DEN,33.5,demon,Points,216220
-NYK,1.5,demon,Turnovers,2023
-DEN,4.5,demon,Assists,216219
-NYK,7.5,goblin,Points,217110
-DEN,2.5,goblin,Rebounds,188004
-DEN,26.5,goblin,Pts+Rebs+Asts,123595
-NYK,1.5,demon,3-PT Made,79886
-NYK,1.5,goblin,3-PT Made,1290
-NYK,0.5,goblin,Steals,1290
-NYK,22.5,demon,Points,1290
-NYK,19.5,demon,Points,79885
-NYK,1.5,goblin,Rebounds,182909
-DEN,6.5,demon,Rebounds,183158
-DEN,1.5,goblin,3-PT Made,216219
-DEN,0.5,goblin,Blocked Shots,183158
-DEN,3.5,goblin,Rebounds,216219
-NYK,19.5,goblin,Pts+Rebs+Asts,217110
-NYK,9.5,goblin,Points,79886
-NYK,25.5,goblin,Points,188013
-DEN,15.5,goblin,Points,183158
-NYK,0.5,goblin,Steals,79885
-NYK,4.5,goblin,Rebounds,2023
-NYK,31.5,demon,Points,188013
-NYK,5.5,demon,Rebounds,217110
-DEN,1.5,demon,Steals,123595
-DEN,40.5,demon,Pts+Rebs+Asts,188004
-NYK,4.5,demon,Rebounds,1290
-NYK,5.5,demon,Rebounds,1290
-NYK,11.5,demon,Assists,188013
-NYK,1.5,demon,3-PT Made,79885
-NYK,26.5,demon,Points,1290
-DEN,3.5,demon,3-PT Made,183158
-NYK,2.5,demon,Assists,79885
-NYK,54.5,demon,Pts+Rebs+Asts,188013
-NYK,9.5,demon,Points,182909
-NYK,24.5,demon,Pts+Rebs+Asts,217110
-NYK,1.5,demon,Turnovers,79885
-DEN,1.5,demon,3-PT Made,123595
-DEN,3.5,demon,3-PT Made,216220
-DEN,29.5,demon,Points,188004
-NYK,7.5,goblin,Points,79886
-NYK,3.5,demon,Rebounds,182909
-DEN,4.5,demon,Rebounds,188004
-NYK,3.5,goblin,Rebounds,79885
-NYK,11.5,goblin,Points,79885
-DEN,1.5,goblin,3-PT Made,188004
-NYK,27.5,goblin,Pts+Rebs+Asts,1290
-DEN,7.5,goblin,Rebounds,123595
-DEN,1.5,goblin,3-PT Made,216220
-DEN,23.5,goblin,Points,216220
-NYK,1.5,goblin,3-PT Made,2023
-NYK,14.5,goblin,Points,2023
-DEN,14.5,goblin,Points,216219
-NYK,7.5,goblin,Assists,188013
-DEN,4.5,goblin,Rebounds,183158
-NYK,0.5,demon,Blocked Shots,79885
-DEN,4.5,demon,3-PT Made,188004
-DEN,30.5,demon,Points,188004
-NYK,24.5,demon,Points,1290
-NYK,33.5,demon,Pts+Rebs+Asts,1290
-NYK,2.5,demon,Turnovers,1290
-NYK,0.5,demon,Blocked Shots,182909
-DEN,3.5,demon,Assists,216220
-DEN,44.5,demon,Pts+Rebs+Asts,216220
-DEN,2.5,demon,Turnovers,216220
-NYK,0.5,demon,Blocked Shots,2023
-DEN,1.5,demon,Steals,216219
-NYK,12.5,demon,Assists,188013
-NYK,13.5,demon,Rebounds,188013
-NYK,15.5,demon,Rebounds,188013
-DEN,7.5,demon,Rebounds,183158
-NYK,5.5,demon,Rebounds,79886
-NYK,6.5,demon,Rebounds,79886
-NYK,14.5,demon,Points,217110
-DEN,26.5,demon,Pts+Rebs+Asts,216219
-NYK,13.5,demon,Points,217110
-DEN,21.5,demon,Points,183158
-DEN,24.5,demon,Points,183158
-NYK,12.5,demon,Points,79886
-NYK,0.5,goblin,3-PT Made,188013
-NYK,1.5,demon,3-PT Made,182909
-DEN,11.5,demon,Rebounds,123595
-DEN,8.5,demon,Assists,188004
-DEN,29.5,demon,Points,216220
-DEN,34.5,goblin,Pts+Rebs+Asts,188004
-NYK,3.5,goblin,Assists,217110
-DEN,1.5,goblin,3-PT Made,183158
-DEN,5.5,demon,Rebounds,216219
-DEN,2.5,goblin,Rebounds,216219
-NYK,8.5,goblin,Points,79886
-NYK,4.5,goblin,Assists,217110
-NYK,0.5,goblin,3-PT Made,79886
-DEN,19.5,demon,Points,216219
-DEN,9.5,goblin,Rebounds,216220
-NYK,0.5,goblin,3-PT Made,217110
-NYK,5.5,demon,Rebounds,79885
-DEN,22.5,goblin,Pts+Rebs+Asts,216219
-NYK,14.5,goblin,Pts+Rebs,79886
-DEN,3.5,demon,3-PT Made,216219
-NYK,0.5,goblin,Turnovers,79886
-NYK,14.5,demon,Points,79886
-NYK,0.5,demon,Blocked Shots,217110
-DEN,0.5,demon,Blocked Shots,123595
-NYK,3.5,goblin,Rebounds,79886
-NYK,17.5,goblin,Points,1290
-NYK,9.5,goblin,Points,217110
-NYK,1.5,demon,Steals,188013
-DEN,7.5,demon,Assists,123595
-NYK,6.5,demon,Assists,217110
-NYK,34.5,demon,Points,188013
-NYK,3.5,demon,3-PT Made,1290
-DEN,4.5,goblin,Assists,123595
-DEN,2.5,goblin,Assists,216219
-DEN,4.5,demon,Assists,216220
-NYK,7.5,demon,Assists,217110
-DEN,9.5,goblin,Points,123595
-DEN,14.5,goblin,Points,183158
-DEN,21.5,goblin,Pts+Rebs+Asts,216219
-NYK,2.5,goblin,Rebounds,1290
-DEN,34.5,demon,Points,188004
-DEN,2.5,demon,Assists,183158
-DEN,38.5,goblin,Pts+Rebs+Asts,216220
-DEN,19.5,goblin,Points,216220
-NYK,4.5,goblin,Assists,1290
-DEN,24.5,goblin,Points,188004
-DEN,15.5,demon,Points,123595
-NYK,9.5,goblin,Rebounds,188013
-NYK,14.5,demon,Rebounds,188013
-NYK,24.5,goblin,Pts+Rebs+Asts,2023
-DEN,0.5,goblin,Steals,188004
-NYK,35.5,demon,Points,188013
-DEN,0.5,goblin,3-PT Made,123595
-NYK,0.5,goblin,3-PT Made,182909
-DEN,11.5,goblin,Points,123595
-NYK,1.5,goblin,Assists,2023
-DEN,5.5,goblin,Assists,188004
-NYK,24.5,goblin,Points,188013
-NYK,15.5,goblin,Points,2023
-NYK,48.5,goblin,Pts+Rebs+Asts,188013
-NYK,15.5,goblin,Pts+Rebs+Asts,79886
-DEN,12.5,demon,Rebounds,216220
-NYK,29.5,demon,Pts+Rebs+Asts,2023
-NYK,16.5,demon,Points,79885
-NYK,7.5,demon,Assists,1290
-NYK,0.5,goblin,Steals,217110
-NYK,6.5,demon,Assists,1290
-DEN,3.5,demon,3-PT Made,188004
-NYK,7.5,demon,Rebounds,2023
-DEN,9.5,demon,Assists,188004
-NYK,3.5,demon,3-PT Made,2023
-NYK,3.5,demon,Assists,2023
-NYK,2.5,goblin,Rebounds,217110
-NYK,2.5,demon,Assists,79886
-NYK,0.5,goblin,3-PT Made,79885
-GSW,2.5,standard,3-PT Made,57075
-GSW,18.5,standard,FG Attempted,57075
-GSW,5,standard,Free Throws Made,57075
-GSW,7,standard,3-PT Attempted,57075
-GSW,33.5,standard,Fantasy Score,57075
-GSW,23.5,standard,Points,57075
-GSW,3.5,standard,Rebounds,57075
-GSW,27.5,standard,Pts+Rebs,57075
-GSW,27.5,standard,Pts+Asts,57075
-GSW,7,standard,Rebs+Asts,57075
-GSW,31,standard,Pts+Rebs+Asts,57075
-GSW,3.5,standard,Assists,57075
-BKN,31,standard,Pts+Asts,188015
-BKN,40,standard,Fantasy Score,188015
-BKN,17.5,standard,FG Attempted,188015
-BKN,11,standard,Rebs+Asts,188015
-BKN,24.5,standard,Points,188015
-BKN,36,standard,Pts+Rebs+Asts,188015
-BKN,4.5,standard,3-PT Made,188015
-BKN,29.5,standard,Pts+Rebs,188015
-BKN,10.5,standard,3-PT Attempted,188015
-BKN,6,standard,Assists,188015
-BKN,0.5,standard,Offensive Rebounds,188015
-GSW,25.5,standard,Pts+Rebs+Asts,187809
-GSW,15.5,standard,Points,187809
-GSW,6,standard,3-PT Attempted,187809
-GSW,19,standard,Pts+Rebs,187809
-GSW,6,standard,Assists,187809
-GSW,22.5,standard,Pts+Asts,187809
-GSW,13.5,standard,FG Attempted,187809
-GSW,29.5,standard,Fantasy Score,187809
-BKN,13.5,standard,FG Attempted,54658
-BKN,16.5,standard,Points,54658
-BKN,28,standard,Fantasy Score,54658
-BKN,19.5,standard,Pts+Asts,54658
-BKN,23.5,standard,Pts+Rebs+Asts,54658
-BKN,5,standard,3-PT Attempted,54658
-BKN,6.5,standard,Rebs+Asts,54658
-BKN,1.5,standard,Offensive Rebounds,54658
-BKN,21.5,standard,Pts+Rebs,54658
-GSW,4.5,standard,Rebounds,96514
-GSW,28.5,standard,Pts+Rebs+Asts,96514
-GSW,20.5,standard,Points,96514
-GSW,32,standard,Fantasy Score,96514
-GSW,2.5,standard,Free Throws Made,96514
-GSW,16,standard,FG Attempted,96514
-GSW,9.5,standard,3-PT Attempted,96514
-BKN,28,standard,Fantasy Score,54811
-BKN,15,standard,Pts+Rebs,54811
-BKN,8.5,standard,Points,54811
-BKN,14.5,standard,Pts+Asts,54811
-BKN,12.5,standard,Rebs+Asts,54811
-BKN,21,standard,Pts+Rebs+Asts,54811
-BKN,5.5,standard,Defensive Rebounds,54811
-BKN,6.5,standard,Rebounds,54811
-BKN,0.5,standard,Free Throws Made,54811
-GSW,17.5,standard,Pts+Rebs,10726
-GSW,19.5,standard,Pts+Rebs+Asts,10726
-GSW,8.5,standard,Rebounds,10726
-GSW,8.5,standard,Points,10726
-BKN,5.5,standard,FG Attempted,182459
-BKN,20.5,standard,Fantasy Score,182459
-BKN,10.5,standard,Pts+Asts,182459
-BKN,16.5,standard,Pts+Rebs+Asts,182459
-BKN,8.5,standard,Points,182459
-BKN,7.5,standard,Rebs+Asts,182459
-BKN,5.5,standard,Rebounds,182459
-BKN,14.5,standard,Pts+Rebs,182459
-BKN,6.5,goblin,Points,54811
-GSW,19.5,demon,Points,187809
-BKN,4.5,goblin,Assists,54811
-BKN,2.5,demon,Assists,182459
-GSW,3.5,demon,3-PT Made,57075
-GSW,0.5,demon,Blocked Shots,187809
-GSW,4.5,demon,3-PT Made,96514
-GSW,3.5,demon,3-PT Made,187809
-GSW,1.5,goblin,3-PT Made,187809
-GSW,0.5,goblin,Steals,96514
-BKN,7.5,demon,Rebounds,182459
-BKN,1.5,demon,Turnovers,54658
-BKN,3.5,goblin,3-PT Made,188015
-GSW,19.5,goblin,Points,57075
-GSW,2.5,goblin,3-PT Made,96514
-BKN,0.5,goblin,Steals,54811
-GSW,24.5,demon,Points,96514
-GSW,2.5,goblin,Rebounds,57075
-BKN,6.5,demon,Rebounds,182459
-BKN,0.5,goblin,3-PT Made,54811
-BKN,2.5,demon,3-PT Made,54658
-GSW,4.5,demon,Assists,57075
-BKN,6.5,demon,Rebounds,54658
-BKN,5.5,goblin,Points,182459
-GSW,2.5,goblin,Assists,57075
-BKN,19.5,goblin,Pts+Rebs+Asts,54811
-BKN,22.5,goblin,Points,188015
-BKN,14.5,goblin,Points,54658
-BKN,4.5,goblin,Rebounds,54811
-GSW,15.5,goblin,Points,96514
-GSW,2.5,goblin,Assists,96514
-GSW,3.5,goblin,Rebounds,96514
-GSW,4.5,demon,Assists,96514
-BKN,6.5,demon,3-PT Made,188015
-BKN,1.5,goblin,Turnovers,54811
-BKN,3.5,goblin,Rebounds,188015
-GSW,4.5,demon,Rebounds,187809
-GSW,1.5,goblin,3-PT Made,57075
-GSW,11.5,goblin,Points,187809
-BKN,29.5,demon,Points,188015
-BKN,19.5,demon,Points,54658
-BKN,4.5,goblin,Assists,188015
-BKN,6.5,demon,Rebounds,188015
-BKN,2.5,demon,Assists,54658
-BKN,39.5,demon,Pts+Rebs+Asts,188015
-BKN,1.5,goblin,Assists,54658
-BKN,7.5,demon,Assists,54811
-GSW,5.5,demon,Rebounds,96514
-BKN,28.5,demon,Points,188015
-BKN,4.5,goblin,Rebounds,182459
-GSW,0.5,demon,Blocked Shots,96514
-BKN,1.5,demon,3-PT Made,54811
-BKN,7.5,demon,Assists,188015
-BKN,7.5,demon,Rebounds,54811
-BKN,18.5,demon,Points,54658
-GSW,29.5,demon,Points,57075
-GSW,33.5,demon,Pts+Rebs+Asts,57075
-BKN,5.5,demon,Rebounds,54658
-GSW,26.5,demon,Points,57075
-BKN,0.5,demon,Blocked Shots,188015
-BKN,5.5,goblin,Assists,188015
-GSW,17.5,goblin,Points,57075
-GSW,9.5,demon,Rebs+Asts,96514
-GSW,34.5,demon,Pts+Rebs+Asts,57075
-GSW,30.5,demon,Points,57075
-GSW,4.5,goblin,Assists,187809
-GSW,4.5,demon,Rebounds,57075
-BKN,9.5,demon,Points,54811
-GSW,7.5,demon,Assists,187809
-BKN,10.5,demon,Points,54811
-BKN,12.5,demon,Points,54811
-BKN,5.5,demon,3-PT Made,188015
-BKN,0.5,goblin,Steals,188015
-BKN,19.5,goblin,Points,188015
-BKN,5.5,goblin,Rebounds,54811
-BKN,18.5,goblin,Pts+Rebs+Asts,54811
-BKN,3.5,goblin,Rebounds,54658
-SAC,43,standard,Fantasy Score,79951
-SAC,6,standard,Rebounds,79951
-SAC,28.5,standard,Pts+Asts,79951
-SAC,6.5,standard,3-PT Attempted,79951
-SAC,23.5,standard,Points,79951
-SAC,2.5,standard,Free Throws Made,79951
-SAC,29.5,standard,Pts+Rebs,79951
-SAC,5,standard,Assists,79951
-SAC,2.5,standard,Blks+Stls,79951
-SAC,34.5,standard,Pts+Rebs+Asts,79951
-OKC,40.5,standard,Fantasy Score,1386
-OKC,35.5,standard,Pts+Rebs+Asts,1386
-OKC,19,standard,FG Attempted,1386
-OKC,5.5,standard,3-PT Attempted,1386
-OKC,10,standard,Rebs+Asts,1386
-OKC,24.5,standard,Points,1386
-OKC,30.5,standard,Pts+Asts,1386
-OKC,29.5,standard,Pts+Rebs,1386
-OKC,5.5,standard,Assists,1386
-OKC,4.5,standard,Free Throws Made,1386
-SAC,13.5,standard,Pts+Asts,10798
-SAC,7,standard,3-PT Attempted,10798
-SAC,10,standard,FG Attempted,10798
-SAC,1.5,standard,Free Throws Made,10798
-SAC,1.5,standard,Blks+Stls,10798
-SAC,12.5,standard,Points,10798
-SAC,4.5,standard,Rebounds,10798
-SAC,18.5,standard,Pts+Rebs+Asts,10798
-SAC,17,standard,Pts+Rebs,10798
-SAC,25,standard,Fantasy Score,10798
-OKC,26.5,standard,Pts+Rebs+Asts,54957
-OKC,30.5,standard,Fantasy Score,54957
-OKC,4.5,standard,Free Throws Made,54957
-OKC,23,standard,Pts+Rebs,54957
-OKC,22.5,standard,Pts+Asts,54957
-OKC,7,standard,Rebs+Asts,54957
-SAC,42.5,standard,Pts+Rebs+Asts,188011
-SAC,0.5,standard,Offensive Rebounds,188011
-SAC,5,standard,3-PT Attempted,188011
-SAC,36.5,standard,Pts+Rebs,188011
-SAC,31,standard,Points,188011
-SAC,21.5,standard,FG Attempted,188011
-SAC,2.5,standard,Blks+Stls,188011
-SAC,6,standard,Assists,188011
-SAC,37.5,standard,Pts+Asts,188011
-SAC,11.5,standard,Rebs+Asts,188011
-SAC,7.5,standard,Free Throws Made,188011
-SAC,51.5,standard,Fantasy Score,188011
-OKC,12,standard,FG Attempted,59923
-OKC,6,standard,Assists,59923
-OKC,13,standard,Rebounds,59923
-OKC,23.5,standard,Pts+Asts,59923
-OKC,9.5,standard,Defensive Rebounds,59923
-OKC,41.5,standard,Fantasy Score,59923
-OKC,37,standard,Pts+Rebs+Asts,59923
-OKC,19.5,standard,Rebs+Asts,59923
-OKC,30.5,standard,Pts+Rebs,59923
-OKC,3,standard,Free Throws Made,59923
-OKC,17.5,standard,Points,59923
-OKC,11,standard,FG Attempted,79897
-OKC,26.5,standard,Fantasy Score,79897
-OKC,5.5,standard,3-PT Attempted,79897
-OKC,8.5,standard,Rebs+Asts,79897
-OKC,20.5,standard,Pts+Rebs,79897
-OKC,7,standard,Rebounds,79897
-OKC,14.5,standard,Pts+Asts,79897
-OKC,13.5,standard,Points,79897
-OKC,21.5,standard,Pts+Rebs+Asts,79897
-OKC,5.5,standard,3-PT Attempted,87615
-OKC,8.5,standard,FG Attempted,87615
-OKC,20,standard,Fantasy Score,87615
-OKC,9.5,standard,Points,87615
-OKC,16,standard,Pts+Rebs+Asts,87615
-OKC,13.5,standard,Pts+Rebs,87615
-OKC,6,standard,Rebs+Asts,87615
-OKC,11.5,standard,Pts+Asts,87615
-OKC,0.5,standard,Turnovers,61079
-SAC,24.5,goblin,Points,188011
-OKC,15.5,goblin,Points,59923
-OKC,0.5,goblin,Steals,54957
-SAC,1.5,goblin,3-PT Made,79951
-SAC,34.5,demon,Points,188011
-SAC,7.5,demon,Rebounds,188011
-OKC,7.5,goblin,Points,87615
-OKC,5.5,goblin,Points,87615
-OKC,1.5,goblin,3-PT Made,79897
-SAC,5.5,demon,Rebounds,10798
-OKC,19.5,goblin,Pts+Rebs+Asts,79897
-OKC,11.5,goblin,Points,79897
-OKC,13.5,goblin,Pts+Rebs+Asts,87615
-SAC,17.5,demon,Points,10798
-SAC,0.5,demon,Blocked Shots,10798
-SAC,14.5,demon,Points,10798
-OKC,5.5,demon,Rebounds,54957
-OKC,32.5,demon,Points,1386
-OKC,6.5,demon,Assists,1386
-OKC,1.5,demon,Steals,1386
-OKC,1.5,demon,Turnovers,87615
-OKC,21.5,demon,Points,54957
-OKC,29.5,demon,Points,1386
-OKC,5.5,goblin,Rebounds,79897
-OKC,4.5,demon,Rebounds,54957
-OKC,1.5,demon,3-PT Made,59923
-OKC,25.5,demon,Points,54957
-OKC,24.5,demon,Points,54957
-OKC,4.5,demon,Assists,54957
-OKC,2.5,goblin,Rebounds,87615
-OKC,5.5,demon,Rebounds,87615
-OKC,4.5,demon,Rebounds,87615
-SAC,2.5,demon,Turnovers,79951
-OKC,1.5,demon,3-PT Made,54957
-OKC,6.5,demon,Rebounds,1386
-SAC,29.5,demon,Points,79951
-OKC,5.5,demon,Rebounds,1386
-SAC,6.5,demon,Assists,79951
-OKC,2.5,demon,3-PT Made,79897
-OKC,28.5,demon,Points,1386
-OKC,14.5,demon,Rebounds,59923
-OKC,0.5,demon,Blocked Shots,1386
-OKC,7.5,demon,Assists,1386
-SAC,1.5,goblin,3-PT Made,10798
-SAC,10.5,goblin,Points,10798
-SAC,0.5,goblin,Turnovers,10798
-SAC,4.5,goblin,Assists,188011
-SAC,28.5,goblin,Points,188011
-SAC,40.5,goblin,Pts+Rebs+Asts,188011
-SAC,25.5,demon,Points,79951
-SAC,3.5,demon,3-PT Made,79951
-SAC,3.5,demon,3-PT Made,10798
-SAC,4.5,goblin,Rebounds,79951
-SAC,9.5,goblin,Points,10798
-SAC,39.5,goblin,Pts+Rebs+Asts,188011
-SAC,3.5,goblin,Rebounds,10798
-SAC,4.5,goblin,Rebounds,188011
-OKC,0.5,demon,Steals,61079
-OKC,0.5,demon,Blocked Shots,61079
-OKC,24.5,goblin,Pts+Rebs+Asts,54957
-OKC,1.5,demon,3-PT Made,61079
-OKC,19.5,demon,Points,59923
-OKC,9.5,demon,Points,61079
-OKC,40.5,demon,Pts+Rebs+Asts,59923
-SAC,46.5,demon,Pts+Rebs+Asts,188011
-SAC,38.5,demon,Points,188011
-SAC,6.5,demon,Rebounds,188011
-OKC,2.5,goblin,Rebounds,54957
-OKC,10.5,demon,Points,61079
-OKC,9.5,goblin,Points,79897
-SAC,2.5,demon,3-PT Made,188011
-OKC,15.5,demon,Points,79897
-OKC,11.5,demon,Points,87615
-OKC,19.5,demon,Pts+Rebs+Asts,87615
-OKC,2.5,demon,3-PT Made,87615
-OKC,3.5,demon,3-PT Made,79897
-OKC,9.5,demon,Rebounds,79897
-OKC,15.5,demon,Rebounds,59923
-OKC,11.5,goblin,Rebounds,59923
-OKC,2.5,demon,3-PT Made,1386
-OKC,16.5,demon,Rebounds,59923
-SAC,7.5,demon,Assists,188011
-OKC,23.5,demon,Points,59923
-OKC,0.5,demon,Blocked Shots,59923
-OKC,4.5,goblin,Assists,59923
-OKC,19.5,goblin,Points,1386
-OKC,7.5,demon,Assists,59923
-SAC,1.5,demon,Steals,10798
-OKC,14.5,goblin,Points,59923
-SAC,6.5,demon,Rebounds,10798
-OKC,22.5,goblin,Points,1386
-OKC,3.5,goblin,Assists,1386
-OKC,4.5,goblin,Assists,1386
-OKC,3.5,goblin,Rebounds,1386
-OKC,2.5,goblin,Assists,54957
-OKC,14.5,goblin,Points,54957
-SAC,21.5,goblin,Points,79951
-SAC,17.5,goblin,Points,79951
-OKC,0.5,goblin,Assists,61079
-SAC,3.5,goblin,Assists,79951
-OKC,34.5,goblin,Pts+Rebs+Asts,59923
-SAC,19.5,goblin,Points,79951
-SAC,7.5,demon,Rebounds,79951
-SAC,2.5,demon,Assists,10798
-OKC,6.5,demon,Rebounds,61079
-ORL,1.5,standard,Blks+Stls,56699
-ORL,4.5,standard,Turnovers,56699
+HOU,20.5,standard,Points,216422
+MIA,55,standard,Fantasy Score,187995
+MIL,22.5,standard,Fantasy Score,185772
+MIL,38,standard,Fantasy Score,1646
+MIL,35.5,standard,Fantasy Score,10776
+MIA,15.5,standard,Fantasy Score,217105
+MIA,39,standard,Fantasy Score,187998
+MIA,27.5,standard,Fantasy Score,1683
+MIL,36,standard,Fantasy Score,1654
+CHI/WAS,46,standard,Points (Combo),220338
+MIL/MIA,51,standard,Points (Combo),220340
+MIL/MIA,22,standard,Rebounds (Combo),187716
+MIL/MIA,12,standard,Assists (Combo),187717
+MIL/MIA,6.5,standard,3-PT Made (Combo),187717
+HOU/MIN,46.5,standard,Points (Combo),193149
+HOU/MIN,11,standard,Assists (Combo),183560
+HOU/MIN,6,standard,3-PT Made (Combo),183561
+SAS/UTA,48.5,standard,Points (Combo),182521
+SAS/UTA,20.5,standard,Rebounds (Combo),182522
+SAS/UTA,13.5,standard,Assists (Combo),220341
+SAS/UTA,6,standard,3-PT Made (Combo),182521
+LAL/PHX,48,standard,Points (Combo),178503
+LAL/PHX,44,standard,Points (Combo),220342
+LAL/PHX,20.5,standard,Rebounds (Combo),180121
+LAL/PHX,15,standard,Assists (Combo),178503
+LAL/PHX,4.5,standard,3-PT Made (Combo),178503
+WAS,22.5,standard,Pts+Rebs+Asts,56418
+WAS,18.5,standard,Pts+Asts,56418
+WAS,17.5,standard,Pts+Rebs,56418
+WAS,26.5,standard,Fantasy Score,56418
+WAS,3.5,standard,Rebounds,56418
+WAS,13.5,standard,Points,56418
+WAS,8,standard,Rebs+Asts,56418
+WAS,1.5,standard,Free Throws Made,56418
+WAS,11,standard,FG Attempted,56418
+CHI,29.5,standard,Fantasy Score,217304
+CHI,2.5,standard,Blks+Stls,217304
+CHI,6.5,standard,Rebounds,217304
+CHI,11.5,standard,Points,217304
+CHI,21.5,standard,Pts+Rebs+Asts,217304
+CHI,18.5,standard,Pts+Rebs,217304
+CHI,2.5,standard,Assists,217304
+CHI,11,standard,FG Attempted,217304
+CHI,9.5,standard,Rebs+Asts,217304
+CHI,14.5,standard,Pts+Asts,217304
+WAS,32,standard,Fantasy Score,10731
+WAS,20,standard,Points,10731
+WAS,28,standard,Pts+Rebs+Asts,10731
+WAS,9,standard,3-PT Attempted,10731
+WAS,23.5,standard,Pts+Rebs,10731
+WAS,3.5,standard,3-PT Made,10731
+WAS,24.5,standard,Pts+Asts,10731
+WAS,8,standard,Rebs+Asts,10731
+WAS,15.5,standard,FG Attempted,10731
+CHI,19.5,standard,Pts+Rebs,175142
+CHI,6,standard,Rebounds,175142
+CHI,23,standard,Pts+Rebs+Asts,175142
+CHI,29.5,standard,Fantasy Score,175142
+CHI,13.5,standard,Points,175142
+CHI,9,standard,Rebs+Asts,175142
+CHI,17,standard,Pts+Asts,175142
+WAS,12.5,standard,Points,216747
+WAS,30.5,standard,Fantasy Score,216747
+WAS,3.5,standard,3-PT Attempted,216747
+WAS,26,standard,Pts+Rebs+Asts,216747
+WAS,6.5,standard,Rebounds,216747
+WAS,19.5,standard,Pts+Asts,216747
+WAS,10,standard,FG Attempted,216747
+WAS,6.5,standard,Assists,216747
+WAS,40.5,standard,Fantasy Score,37560
+WAS,34.5,standard,Pts+Rebs+Asts,37560
+WAS,31.5,standard,Pts+Rebs,37560
+WAS,23.5,standard,Pts+Asts,37560
+WAS,14,standard,Rebs+Asts,37560
+WAS,11,standard,Rebounds,37560
+WAS,15.5,standard,FG Attempted,37560
+WAS,4.5,standard,3-PT Attempted,37560
+WAS,20.5,standard,Points,37560
+CHI,29.5,standard,Pts+Rebs,58812
+CHI,22.5,standard,Points,58812
+CHI,18.5,standard,FG Attempted,58812
+CHI,36,standard,Fantasy Score,58812
+CHI,33,standard,Pts+Rebs+Asts,58812
+CHI,26.5,standard,Pts+Asts,58812
+CHI,6,standard,3-PT Attempted,58812
+CHI,6.5,standard,Rebounds,58812
+WAS,4,standard,Free Throws Made,1544
+WAS,27.5,standard,Pts+Asts,1544
+WAS,7,standard,3-PT Attempted,1544
+WAS,28.5,standard,Pts+Rebs,1544
+WAS,16.5,standard,FG Attempted,1544
+WAS,32.5,standard,Pts+Rebs+Asts,1544
+WAS,4,standard,Assists,1544
+WAS,36,standard,Fantasy Score,1544
+WAS,5,standard,Rebounds,1544
+WAS,9,standard,Rebs+Asts,1544
+WAS,23.5,standard,Points,1544
+CHI,3.5,standard,Rebounds,220113
+CHI,21,standard,Pts+Asts,220113
+CHI,12,standard,FG Attempted,220113
+CHI,29.5,standard,Fantasy Score,220113
+CHI,4,standard,3-PT Attempted,220113
+CHI,9,standard,Rebs+Asts,220113
+CHI,24.5,standard,Pts+Rebs+Asts,220113
+CHI,15.5,standard,Points,220113
+CHI,19.5,standard,Pts+Rebs,220113
+CHI,5,standard,Assists,220113
+CHI,14.5,standard,Points,53985
+CHI,18,standard,Pts+Rebs+Asts,218128
+CHI,10,standard,Points,218128
+CHI,15,standard,Pts+Rebs,218128
+CHI,11.5,standard,Points,54160
+CHI,0.5,standard,Blocked Shots,54160
+CHI,21.5,standard,Pts+Rebs+Asts,54160
+CHI,7.5,standard,Rebounds,54160
+WAS,39.5,demon,Pts+Rebs+Asts,1544
+WAS,3.5,goblin,Rebounds,1544
+WAS,0.5,goblin,Steals,1544
+WAS,29.5,goblin,Pts+Rebs+Asts,1544
+WAS,2.5,goblin,Assists,1544
+WAS,1.5,demon,Steals,1544
+WAS,9.5,goblin,Points,56418
+WAS,24.5,goblin,Pts+Rebs+Asts,10731
+WAS,30.5,demon,Pts+Rebs+Asts,10731
+WAS,1.5,goblin,3-PT Made,1544
+WAS,38.5,demon,Pts+Rebs+Asts,37560
+WAS,29.5,demon,Pts+Rebs+Asts,216747
+MIA,5,standard,Rebs+Asts,175148
+MIA,5.5,standard,Pts+Asts,175148
+MIA,8.5,standard,Pts+Rebs+Asts,175148
+MIL,17,standard,Points,1646
+MIL,14,standard,FG Attempted,1646
+MIL,14,standard,Rebs+Asts,1646
+MIL,10.5,standard,Rebounds,1646
+MIL,31.5,standard,Pts+Rebs+Asts,1646
+MIL,1.5,standard,Turnovers,1646
+MIL,3.5,standard,Assists,1646
+MIL,27.5,standard,Pts+Rebs,1646
+MIL,21,standard,Pts+Asts,1646
+MIA,12,standard,Points,1683
+MIA,13.5,standard,Pts+Asts,1683
+MIA,18.5,standard,Pts+Rebs+Asts,1683
+MIA,17.5,standard,Pts+Rebs,1683
+MIA,5,standard,3-PT Attempted,1683
+MIA,5,standard,Rebounds,1683
+MIA,7,standard,Rebs+Asts,1683
+MIL,6,standard,Free Throws Made,1654
+MIL,5,standard,Rebounds,1654
+MIL,26,standard,Pts+Rebs,1654
+MIL,25,standard,Pts+Asts,1654
+MIL,4.5,standard,Assists,1654
+MIL,10,standard,Rebs+Asts,1654
+MIL,1.5,standard,Turnovers,1654
+MIL,30.5,standard,Pts+Rebs+Asts,1654
+MIL,20.5,standard,Points,1654
+MIL,12.5,standard,FG Attempted,1654
+MIA,35,standard,Pts+Rebs+Asts,187998
+MIA,23.5,standard,Points,187998
+MIA,30.5,standard,Pts+Asts,187998
+MIA,11,standard,Rebs+Asts,187998
+MIA,8.5,standard,3-PT Attempted,187998
+MIA,17,standard,FG Attempted,187998
+MIA,27.5,standard,Pts+Rebs,187998
+MIA,5.5,standard,Free Throws Made,187998
+MIA,4,standard,Rebounds,187998
+MIA,7,standard,Assists,187998
+MIL,5,standard,3-PT Attempted,185772
+MIL,7,standard,Rebs+Asts,185772
+MIL,15.5,standard,Pts+Asts,185772
+MIL,19.5,standard,Pts+Rebs+Asts,185772
+MIL,12,standard,Points,185772
+MIL,15.5,standard,Pts+Rebs,185772
+MIL,1.5,standard,3-PT Made,185772
+MIL,1.5,standard,Free Throws Made,185772
+MIA,11.5,standard,Rebounds,187995
+MIA,19.5,standard,FG Attempted,187995
+MIA,30,standard,Points,187995
+MIA,7,standard,Free Throws Made,187995
+MIA,42,standard,Pts+Rebs,187995
+MIA,48,standard,Pts+Rebs+Asts,187995
+MIA,17.5,standard,Rebs+Asts,187995
+MIA,6,standard,Assists,187995
+MIA,36.5,standard,Pts+Asts,187995
+MIA,3.5,standard,Turnovers,187995
+MIL,10,standard,Rebs+Asts,10776
+MIL,27.5,standard,Pts+Asts,10776
+MIL,27,standard,Pts+Rebs,10776
+MIL,32.5,standard,Pts+Rebs+Asts,10776
+MIL,3.5,standard,3-PT Made,10776
+MIL,5,standard,Assists,10776
+MIL,5,standard,Rebounds,10776
+MIL,22,standard,Points,10776
+MIL,9.5,standard,3-PT Attempted,10776
+MIL,17.5,standard,FG Attempted,10776
+MIL,3,standard,Free Throws Made,10776
+MIA,7.5,standard,Points,217105
+MIA,12.5,standard,Pts+Rebs+Asts,217105
+MIA,1.5,standard,3-PT Made,217105
+MIA,3.5,standard,3-PT Attempted,217105
+MIA,11,standard,Pts+Rebs,217105
+MIA,5,standard,Rebs+Asts,217105
+MIA,7,standard,Rebounds,25376
+MIA,19,standard,Pts+Rebs,25376
+MIA,11.5,standard,Points,25376
+MIA,2.5,goblin,3-PT Made,187998
+MIL,4.5,demon,3-PT Made,10776
+MIA,4.5,demon,3-PT Made,187998
+MIA,7.5,demon,Assists,187995
+MIL,0.5,goblin,Steals,185772
+MIA,1.5,goblin,Blocked Shots,1683
+MIL,7.5,demon,Rebounds,1654
+MIL,3.5,goblin,Assists,10776
+MIL,28.5,goblin,Pts+Rebs+Asts,1646
+MIL,0.5,goblin,Steals,1646
+MIA,4.5,goblin,Rebounds,1683
+MIA,5.5,goblin,Assists,187998
+MIA,2.5,goblin,Rebounds,187998
+MIA,5.5,demon,Rebounds,187998
+MIA,9.5,goblin,Rebounds,187995
+MIL,27.5,goblin,Pts+Rebs+Asts,1654
+MIL,4.5,goblin,Rebounds,1654
+MIA,2.5,demon,3-PT Made,217105
+MIA,11.5,demon,Points,217105
+MIA,2.5,goblin,Rebounds,217105
+MIL,2.5,goblin,Assists,185772
+MIL,4.5,demon,Assists,185772
+MIL,2.5,goblin,Rebounds,185772
+MIL,4.5,demon,Rebounds,185772
+MIL,3.5,goblin,Assists,1654
+MIL,34.5,demon,Pts+Rebs+Asts,10776
+MIA,4.5,goblin,Assists,187995
+MIL,3.5,goblin,Rebounds,10776
+MIA,2.5,demon,Blocked Shots,1683
+MIL,15.5,goblin,Pts+Rebs+Asts,185772
+MIL,1.5,demon,Blocked Shots,1646
+MIL,27.5,demon,Points,1654
+MIA,4.5,goblin,Points,217105
+MIL,15.5,goblin,Points,1654
+MIL,12.5,goblin,Points,1646
+MIL,6.5,demon,Assists,1654
+MIL,1.5,demon,3-PT Made,1646
+MIA,34.5,demon,Points,187995
+MIA,14.5,demon,Points,1683
+MIA,9.5,demon,Assists,187998
+MIA,2.5,demon,3-PT Made,1683
+MIL,34.5,demon,Pts+Rebs+Asts,1654
+MIA,39.5,demon,Pts+Rebs+Asts,187998
+MIA,54.5,demon,Pts+Rebs+Asts,187995
+MIA,7.5,demon,Rebounds,1683
+MIL,12.5,demon,Rebounds,1646
+MIL,2.5,demon,3-PT Made,185772
+MIL,6.5,demon,Assists,10776
+MIA,29.5,demon,Points,187998
+MIL,1.5,demon,Steals,185772
+MIL,21.5,demon,Pts+Rebs+Asts,185772
+MIL,0.5,goblin,Blocked Shots,1646
+MIL,17.5,demon,Points,185772
+MIL,1.5,demon,Steals,1646
+MIL,6.5,demon,Rebounds,10776
+MIA,4.5,demon,Rebounds,217105
+MIA,14.5,demon,Rebounds,187995
+MIL,34.5,demon,Pts+Rebs+Asts,1646
+MIL,2.5,goblin,3-PT Made,10776
+MIA,0.5,demon,3-PT Made,187995
+MIL,1.5,demon,3-PT Made,1654
+MIA,24.5,goblin,Points,187995
+MIA,7.5,goblin,Points,1683
+MIA,19.5,goblin,Points,187998
+MIL,19.5,demon,Points,1646
+MIA,43.5,goblin,Pts+Rebs+Asts,187995
+MIL,9.5,goblin,Points,185772
+MIL,9.5,goblin,Rebounds,1646
+MIN,39.5,standard,Fantasy Score,55716
+MIN,9.5,standard,Rebounds,55716
+MIN,4,standard,Assists,55716
+MIN,14,standard,Rebs+Asts,55716
+MIN,14.5,standard,FG Attempted,55716
+MIN,18.5,standard,Points,55716
+MIN,33.5,standard,Pts+Rebs+Asts,55716
+MIN,3,standard,Free Throws Made,55716
+MIN,23.5,standard,Pts+Asts,55716
+MIN,28.5,standard,Pts+Rebs,55716
+HOU,33,standard,Pts+Rebs,188017
+HOU,20.5,standard,FG Attempted,188017
+HOU,32.5,standard,Pts+Asts,188017
+HOU,27.5,standard,Points,188017
+HOU,5.5,standard,Rebounds,188017
+HOU,5,standard,Free Throws Made,188017
+HOU,43,standard,Fantasy Score,188017
+HOU,38,standard,Pts+Rebs+Asts,188017
+HOU,4.5,standard,Assists,188017
+HOU,10,standard,3-PT Attempted,188017
+HOU,10,standard,Rebs+Asts,188017
+MIN,14.5,standard,Pts+Rebs,173587
+MIN,4.5,standard,3-PT Attempted,173587
+MIN,4,standard,Rebs+Asts,173587
+MIN,18.5,standard,Fantasy Score,173587
+MIN,10.5,standard,FG Attempted,173587
+MIN,11.5,standard,Points,173587
+MIN,15.5,standard,Pts+Rebs+Asts,173587
+MIN,1.5,standard,3-PT Made,173587
+MIN,12.5,standard,Pts+Asts,173587
+HOU,16.5,standard,Pts+Rebs+Asts,25445
+HOU,4,standard,Rebounds,25445
+HOU,23,standard,Fantasy Score,25445
+HOU,10.5,standard,Points,25445
+HOU,5.5,standard,Rebs+Asts,25445
+HOU,12.5,standard,Pts+Asts,25445
+HOU,15,standard,Pts+Rebs,25445
+MIN,3.5,standard,Rebounds,173586
+MIN,15.5,standard,Points,173586
+MIN,9.5,standard,Rebs+Asts,173586
+MIN,18.5,standard,Pts+Rebs,173586
+MIN,21.5,standard,Pts+Asts,173586
+MIN,25,standard,Pts+Rebs+Asts,173586
+MIN,2.5,standard,Free Throws Made,173586
+MIN,6,standard,Assists,173586
+MIN,33,standard,Fantasy Score,173586
+MIN,6.5,standard,3-PT Attempted,173586
+MIN,13.5,standard,FG Attempted,173586
+HOU,20.5,standard,Points,216422
+HOU,32.5,standard,Pts+Rebs+Asts,216422
+HOU,7,standard,Rebounds,216422
+HOU,28,standard,Pts+Rebs,216422
+HOU,5.5,standard,3-PT Attempted,216422
+HOU,15.5,standard,FG Attempted,216422
+HOU,11.5,standard,Rebs+Asts,216422
+HOU,4,standard,Assists,216422
+HOU,25.5,standard,Pts+Asts,216422
+HOU,5,standard,Free Throws Made,216422
+HOU,35.5,standard,Fantasy Score,216422
+MIN,11.5,standard,Points,79867
+MIN,12.5,standard,Pts+Asts,79867
+MIN,18,standard,Pts+Rebs,79867
+MIN,19.5,standard,Pts+Rebs+Asts,79867
+MIN,4.5,standard,3-PT Attempted,79867
+MIN,7.5,standard,Rebs+Asts,79867
+MIN,6.5,standard,Rebounds,79867
+MIN,23,standard,Fantasy Score,79867
+HOU,16.5,standard,Pts+Rebs+Asts,96481
+HOU,11.5,standard,Pts+Rebs,96481
+HOU,1.5,standard,3-PT Made,96481
+HOU,22,standard,Fantasy Score,96481
+HOU,4.5,standard,Assists,96481
+HOU,13.5,standard,Pts+Asts,96481
+HOU,8.5,standard,Points,96481
+HOU,7.5,standard,Rebs+Asts,96481
+MIN,23.5,standard,Pts+Rebs,54064
+MIN,29,standard,Fantasy Score,54064
+MIN,7,standard,Rebs+Asts,54064
+MIN,3,standard,Free Throws Made,54064
+MIN,8,standard,3-PT Attempted,54064
+MIN,2.5,standard,Assists,54064
+MIN,21.5,standard,Pts+Asts,54064
+MIN,26,standard,Pts+Rebs+Asts,54064
+MIN,16.5,standard,FG Attempted,54064
+MIN,18.5,standard,Points,54064
+MIN,4.5,standard,Rebounds,54064
+HOU,34,standard,Fantasy Score,87384
+HOU,13,standard,Pts+Asts,87384
+HOU,23,standard,Pts+Rebs,87384
+HOU,24.5,standard,Pts+Rebs+Asts,87384
+HOU,11,standard,Points,87384
+HOU,1.5,standard,Assists,87384
+HOU,2.5,standard,Free Throws Made,87384
+HOU,11.5,standard,Rebounds,87384
+MIN,6.5,standard,Rebounds,174285
+MIN,10.5,standard,Points,174285
+HOU,11.5,standard,Points,10787
+HOU,16.5,standard,Pts+Rebs,10787
+HOU,5,standard,Rebounds,10787
+MIN,10.5,standard,Points,92908
+HOU,13.5,standard,Pts+Rebs,216658
+HOU,10.5,standard,Points,216658
+MIN,4.5,goblin,Assists,173586
+MIN,14.5,demon,Points,173587
+MIN,14.5,demon,Points,79867
+MIN,0.5,demon,3-PT Made,55716
+MIN,12.5,demon,Rebounds,55716
+MIN,24.5,demon,Points,55716
+MIN,7.5,demon,Rebounds,79867
+MIN,1.5,demon,Assists,79867
+MIN,2.5,goblin,Assists,55716
+MIN,1.5,goblin,3-PT Made,173586
+MIN,5.5,demon,Assists,55716
+MIN,3.5,goblin,Rebounds,54064
+MIN,2.5,demon,3-PT Made,173586
+MIN,3.5,demon,Assists,54064
+MIN,23.5,goblin,Pts+Rebs+Asts,54064
+MIN,0.5,goblin,Assists,79867
+MIN,14.5,goblin,Points,54064
+MIN,1.5,goblin,Assists,54064
+MIN,1.5,demon,3-PT Made,79867
+MIN,7.5,goblin,Points,173587
+MIN,4.5,demon,Rebounds,173586
+MIN,7.5,demon,Assists,173586
+HOU,13.5,demon,Points,96481
+MIN,19.5,demon,Points,173586
+HOU,9.5,demon,Rebounds,216422
+HOU,5.5,demon,Rebounds,25445
+HOU,4.5,demon,3-PT Made,188017
+HOU,2.5,demon,3-PT Made,216422
+HOU,34.5,demon,Points,188017
+HOU,34.5,goblin,Pts+Rebs+Asts,188017
+MIN,26.5,demon,Pts+Rebs+Asts,173586
+MIN,29.5,goblin,Pts+Rebs+Asts,55716
+MIN,19.5,goblin,Pts+Rebs+Asts,173586
+MIN,1.5,demon,Steals,54064
+MIN,6.5,demon,Rebounds,54064
+MIN,11.5,goblin,Points,173586
+MIN,24.5,demon,Points,54064
+MIN,14.5,goblin,Points,55716
+MIN,0.5,goblin,Assists,173587
+MIN,0.5,goblin,Steals,54064
+HOU,0.5,goblin,Blocked Shots,25445
+MIN,0.5,goblin,3-PT Made,79867
+MIN,1.5,goblin,3-PT Made,54064
+MIN,7.5,goblin,Rebounds,55716
+MIN,11.5,goblin,Pts+Rebs+Asts,173587
+MIN,0.5,goblin,Blocked Shots,55716
+MIN,39.5,demon,Pts+Rebs+Asts,55716
+HOU,5.5,goblin,Points,96481
+HOU,29.5,demon,Pts+Rebs+Asts,87384
+HOU,14.5,demon,Points,25445
+HOU,14.5,demon,Points,87384
+HOU,1.5,demon,Steals,25445
+HOU,24.5,demon,Points,216422
+HOU,15.5,goblin,Points,216422
+HOU,2.5,demon,3-PT Made,25445
+HOU,7.5,goblin,Points,25445
+HOU,44.5,demon,Pts+Rebs+Asts,188017
+HOU,19.5,goblin,Pts+Rebs+Asts,87384
+HOU,9.5,goblin,Rebounds,87384
+HOU,21.5,goblin,Points,188017
+HOU,1.5,goblin,Blocked Shots,87384
+HOU,2.5,goblin,Rebounds,25445
+HOU,6.5,demon,Assists,96481
+HOU,6.5,goblin,Rebounds,216422
+HOU,13.5,goblin,Pts+Rebs+Asts,25445
+HOU,4.5,goblin,Rebounds,188017
+HOU,2.5,demon,3-PT Made,96481
+HOU,1.5,demon,Blocked Shots,25445
+HOU,3.5,goblin,Assists,216422
+MIN,1.5,demon,Blocked Shots,55716
+HOU,2.5,goblin,3-PT Made,188017
+HOU,7.5,demon,Rebounds,188017
+MIN,2.5,goblin,Rebounds,173586
+MIN,7.5,goblin,Points,79867
+MIN,5.5,goblin,Rebounds,79867
+HOU,2.5,demon,Assists,25445
+HOU,0.5,goblin,Steals,25445
+MIN,3.5,demon,3-PT Made,54064
+MIN,34.5,demon,Pts+Rebs+Asts,54064
+HOU,5.5,demon,Assists,216422
+HOU,2.5,demon,Assists,87384
+HOU,2.5,demon,Blocked Shots,87384
+HOU,13.5,demon,Rebounds,87384
+MIN,19.5,demon,Pts+Rebs+Asts,173587
+MIN,2.5,demon,3-PT Made,173587
+UTA,19,standard,Pts+Asts,216783
+UTA,12.5,standard,Rebs+Asts,216783
+UTA,10,standard,Points,216783
+UTA,4.5,standard,3-PT Attempted,216783
+UTA,31,standard,Fantasy Score,216783
+UTA,13.5,standard,Pts+Rebs,216783
+UTA,9,standard,Assists,216783
+UTA,22.5,standard,Pts+Rebs+Asts,216783
+SAS,29,standard,Fantasy Score,87500
+SAS,26,standard,Pts+Rebs+Asts,87500
+SAS,14,standard,FG Attempted,87500
+SAS,19,standard,Points,87500
+SAS,2.5,standard,Rebounds,87500
+SAS,21.5,standard,Pts+Rebs,87500
+SAS,4.5,standard,3-PT Attempted,87500
+SAS,23.5,standard,Pts+Asts,87500
+SAS,4,standard,Free Throws Made,87500
+SAS,4,standard,Assists,87500
+SAS,7,standard,Rebs+Asts,87500
+UTA,12,standard,Points,216785
+UTA,22,standard,Fantasy Score,216785
+UTA,13.5,standard,Pts+Asts,216785
+UTA,18.5,standard,Pts+Rebs+Asts,216785
+UTA,6,standard,Rebs+Asts,216785
+UTA,16.5,standard,Pts+Rebs,216785
+UTA,1.5,standard,Assists,216785
+SAS,18.5,standard,Points,173123
+SAS,30.5,standard,Pts+Rebs+Asts,173123
+SAS,28,standard,Pts+Rebs,173123
+SAS,36.5,standard,Fantasy Score,173123
+SAS,9,standard,Rebounds,173123
+SAS,13.5,standard,FG Attempted,173123
+SAS,3,standard,Free Throws Made,173123
+SAS,21,standard,Pts+Asts,173123
+SAS,11.5,standard,Rebs+Asts,173123
+UTA,6.5,standard,Rebs+Asts,125266
+UTA,16,standard,Pts+Rebs,125266
+UTA,4.5,standard,Rebounds,125266
+UTA,2.5,standard,3-PT Made,125266
+UTA,22.5,standard,Fantasy Score,125266
+UTA,11.5,standard,Points,125266
+UTA,13.5,standard,Pts+Asts,125266
+UTA,17.5,standard,Pts+Rebs+Asts,125266
+UTA,7,standard,3-PT Attempted,125266
+SAS,8,standard,3-PT Attempted,175137
+SAS,9,standard,Rebs+Asts,175137
+SAS,18,standard,Pts+Rebs,175137
+SAS,24.5,standard,Pts+Rebs+Asts,175137
+SAS,15.5,standard,Points,175137
+SAS,6,standard,Assists,175137
+SAS,14,standard,FG Attempted,175137
+SAS,21.5,standard,Pts+Asts,175137
+SAS,28,standard,Fantasy Score,175137
+UTA,14.5,standard,Pts+Asts,55140
+UTA,19.5,standard,Pts+Rebs+Asts,55140
+UTA,13.5,standard,Points,55140
+UTA,18,standard,Pts+Rebs,55140
+UTA,10.5,standard,FG Attempted,55140
+UTA,5,standard,Rebounds,55140
+UTA,6.5,standard,Rebs+Asts,55140
+UTA,23.5,standard,Fantasy Score,55140
+SAS,28.5,standard,Pts+Rebs,79926
+SAS,9.5,standard,Rebs+Asts,79926
+SAS,32,standard,Pts+Rebs+Asts,79926
+SAS,24.5,standard,Pts+Asts,79926
+SAS,22,standard,Points,79926
+SAS,4.5,standard,Free Throws Made,79926
+SAS,7.5,standard,3-PT Attempted,79926
+SAS,15.5,standard,FG Attempted,79926
+SAS,35.5,standard,Fantasy Score,79926
+UTA,26,standard,Fantasy Score,217804
+UTA,12.5,standard,FG Attempted,217804
+UTA,18.5,standard,Pts+Asts,217804
+UTA,1.5,standard,Blks+Stls,217804
+UTA,21.5,standard,Pts+Rebs+Asts,217804
+UTA,7,standard,Rebs+Asts,217804
+UTA,17.5,standard,Pts+Rebs,217804
+UTA,14,standard,Points,217804
+UTA,4.5,standard,3-PT Attempted,217804
+SAS,32.5,standard,Fantasy Score,79861
+SAS,12,standard,Rebs+Asts,79861
+SAS,20,standard,Pts+Rebs,79861
+SAS,10,standard,Rebounds,79861
+SAS,22,standard,Pts+Rebs+Asts,79861
+SAS,1.5,standard,Assists,79861
+SAS,9.5,standard,Points,79861
+UTA,14,standard,Rebs+Asts,173819
+UTA,37,standard,Pts+Rebs,173819
+UTA,26.5,standard,Points,173819
+UTA,10.5,standard,Rebounds,173819
+UTA,40.5,standard,Pts+Rebs+Asts,173819
+UTA,21,standard,FG Attempted,173819
+UTA,3.5,standard,Assists,173819
+UTA,4,standard,Free Throws Made,173819
+UTA,56,standard,Fantasy Score,173819
+UTA,30.5,standard,Pts+Asts,173819
+UTA,10,standard,3-PT Attempted,173819
+SAS,2.5,goblin,3-PT Made,79926
+SAS,1.5,goblin,Blocked Shots,79861
+UTA,20.5,goblin,Points,173819
+UTA,4.5,demon,Blocked Shots,173819
+UTA,2.5,goblin,Blocked Shots,173819
+SAS,7.5,goblin,Rebounds,173123
+UTA,25.5,demon,Pts+Rebs+Asts,216783
+UTA,14.5,demon,Points,125266
+SAS,1.5,demon,Steals,87500
+SAS,19.5,goblin,Pts+Rebs+Asts,175137
+UTA,3.5,goblin,Rebounds,125266
+UTA,3.5,demon,3-PT Made,125266
+SAS,24.5,demon,Points,173123
+UTA,21.5,demon,Pts+Rebs+Asts,125266
+UTA,3.5,goblin,Rebounds,55140
+SAS,19.5,demon,Points,175137
+UTA,6.5,demon,Rebounds,55140
+SAS,1.5,goblin,3-PT Made,175137
+SAS,4.5,demon,3-PT Made,79926
+SAS,3.5,demon,3-PT Made,175137
+SAS,10.5,goblin,Points,175137
+SAS,11.5,demon,Points,79861
+UTA,13.5,goblin,Pts+Rebs+Asts,125266
+SAS,5.5,demon,Assists,87500
+UTA,24.5,demon,Pts+Rebs+Asts,217804
+UTA,1.5,demon,Steals,173819
+SAS,0.5,goblin,Steals,87500
+SAS,6.5,goblin,Points,79861
+UTA,9.5,goblin,Points,217804
+SAS,9.5,demon,Rebounds,79926
+UTA,0.5,goblin,Steals,173819
+UTA,10.5,demon,Assists,216783
+UTA,7.5,goblin,Points,216785
+UTA,17.5,goblin,Pts+Rebs+Asts,216783
+UTA,1.5,demon,3-PT Made,55140
+SAS,2.5,goblin,Assists,87500
+SAS,14.5,goblin,Points,87500
+SAS,19.5,goblin,Points,79926
+UTA,29.5,demon,Points,173819
+UTA,1.5,goblin,3-PT Made,125266
+SAS,0.5,goblin,3-PT Made,173123
+UTA,2.5,demon,3-PT Made,216783
+UTA,1.5,demon,3-PT Made,216785
+UTA,14.5,demon,Points,216785
+UTA,4.5,demon,3-PT Made,173819
+UTA,17.5,goblin,Pts+Rebs+Asts,217804
+UTA,4.5,demon,Assists,173819
+SAS,1.5,demon,3-PT Made,173123
+SAS,3.5,demon,Blocked Shots,79861
+UTA,2.5,goblin,Rebounds,216783
+UTA,3.5,goblin,Rebounds,216785
+SAS,1.5,goblin,3-PT Made,87500
+UTA,0.5,goblin,3-PT Made,217804
+UTA,14.5,demon,Points,216783
+UTA,2.5,goblin,Assists,173819
+SAS,2.5,demon,3-PT Made,87500
+UTA,2.5,demon,Assists,125266
+UTA,0.5,goblin,3-PT Made,216785
+UTA,0.5,goblin,3-PT Made,55140
+UTA,4.5,demon,Assists,217804
+UTA,7.5,goblin,Assists,216783
+UTA,5.5,goblin,Points,216783
+UTA,4.5,demon,Rebounds,216783
+SAS,24.5,demon,Points,87500
+UTA,5.5,demon,Rebounds,216785
+SAS,14.5,goblin,Points,173123
+SAS,11.5,demon,Rebounds,173123
+UTA,7.5,goblin,Points,125266
+UTA,6.5,demon,Rebounds,125266
+UTA,9.5,goblin,Points,55140
+SAS,29.5,demon,Pts+Rebs+Asts,175137
+SAS,29.5,demon,Points,79926
+SAS,6.5,standard,Rebounds,79926
+UTA,2.5,demon,3-PT Made,217804
+UTA,2.5,goblin,Assists,217804
+UTA,19.5,demon,Points,217804
+UTA,49.5,demon,Pts+Rebs+Asts,173819
+PHX,6,standard,Free Throws Made,188016
+PHX,43.5,standard,Pts+Rebs+Asts,188016
+PHX,0.5,standard,3-PT Made,188016
+PHX,18.5,standard,FG Attempted,188016
+PHX,31.5,standard,Pts+Asts,188016
+PHX,40.5,standard,Pts+Rebs,188016
+PHX,29,standard,Points,188016
+PHX,12,standard,Rebounds,188016
+PHX,14.5,standard,Rebs+Asts,188016
+PHX,53.5,standard,Fantasy Score,188016
+LAL,27.5,standard,Fantasy Score,172380
+LAL,7,standard,Rebs+Asts,172380
+LAL,5,standard,3-PT Attempted,172380
+LAL,22.5,standard,Pts+Rebs+Asts,172380
+LAL,18.5,standard,Pts+Asts,172380
+LAL,1.5,standard,Turnovers,172380
+LAL,15,standard,Points,172380
+LAL,3.5,standard,Assists,172380
+LAL,11.5,standard,FG Attempted,172380
+LAL,1.5,standard,Blks+Stls,172380
+PHX,2.5,standard,3-PT Made,55934
+PHX,30.5,standard,Fantasy Score,55934
+PHX,7.5,standard,3-PT Attempted,55934
+PHX,9,standard,Rebs+Asts,55934
+PHX,17.5,standard,Points,55934
+PHX,5,standard,Assists,55934
+PHX,21.5,standard,Pts+Rebs,55934
+PHX,22.5,standard,Pts+Asts,55934
+PHX,12.5,standard,FG Attempted,55934
+PHX,26.5,standard,Pts+Rebs+Asts,55934
+LAL,2.5,standard,3-PT Made,188014
+LAL,5.5,standard,Free Throws Made,188014
+LAL,31.5,standard,Pts+Asts,188014
+LAL,25.5,standard,Points,188014
+LAL,7,standard,3-PT Attempted,188014
+LAL,1.5,standard,Blks+Stls,188014
+LAL,18,standard,FG Attempted,188014
+LAL,35,standard,Pts+Rebs+Asts,188014
+LAL,41.5,standard,Fantasy Score,188014
+LAL,9.5,standard,Rebs+Asts,188014
+LAL,29,standard,Pts+Rebs,188014
+LAL,6,standard,Assists,188014
+PHX,4.5,standard,Pts+Asts,174603
+LAL,23.5,standard,Fantasy Score,172381
+LAL,9.5,standard,Pts+Asts,172381
+LAL,0.5,standard,3-PT Made,172381
+LAL,8.5,standard,Rebounds,172381
+LAL,8,standard,Points,172381
+LAL,16.5,standard,Pts+Rebs,172381
+LAL,0.5,standard,Blocked Shots,172381
+LAL,18,standard,Pts+Rebs+Asts,172381
+LAL,10,standard,Rebs+Asts,172381
+PHX,8.5,standard,Assists,188012
+PHX,15.5,standard,FG Attempted,188012
+PHX,22.5,standard,Points,188012
+PHX,31.5,standard,Pts+Asts,188012
+PHX,4,standard,Free Throws Made,188012
+PHX,45.5,standard,Fantasy Score,188012
+PHX,16,standard,Rebs+Asts,188012
+PHX,39,standard,Pts+Rebs+Asts,188012
+PHX,7,standard,Rebounds,188012
+PHX,30,standard,Pts+Rebs,188012
+PHX,5.5,standard,3-PT Attempted,188012
+LAL,23,standard,Points,188010
+LAL,37,standard,Fantasy Score,188010
+LAL,2.5,standard,Turnovers,188010
+LAL,5,standard,3-PT Attempted,188010
+LAL,26.5,standard,Pts+Asts,188010
+LAL,3.5,standard,Free Throws Made,188010
+LAL,32,standard,Pts+Rebs+Asts,188010
+LAL,15.5,standard,FG Attempted,188010
+LAL,29,standard,Pts+Rebs,188010
+LAL,5.5,standard,Rebounds,188010
+LAL,8.5,standard,Rebs+Asts,188010
+PHX,11,standard,Points,95575
+PHX,4.5,standard,Rebounds,95575
+PHX,1.5,standard,3-PT Made,95575
+PHX,12.5,standard,Pts+Asts,95575
+PHX,5.5,standard,Rebs+Asts,95575
+PHX,15.5,standard,Pts+Rebs,95575
+PHX,21.5,standard,Fantasy Score,95575
+PHX,0.5,standard,Turnovers,95575
+PHX,17,standard,Pts+Rebs+Asts,95575
+LAL,6.5,standard,Assists,216776
+LAL,10.5,standard,Points,216776
+LAL,20.5,standard,Pts+Rebs+Asts,216776
+LAL,17.5,standard,Pts+Asts,216776
+LAL,9,standard,Rebs+Asts,216776
+LAL,2.5,standard,Rebounds,216776
+LAL,13.5,standard,Pts+Rebs,216776
+LAL,25.5,standard,Fantasy Score,216776
+LAL,4.5,standard,3-PT Attempted,216776
+LAL,24.5,demon,Pts+Rebs+Asts,216776
+PHX,12.5,goblin,Points,55934
+LAL,11.5,demon,Points,172381
+LAL,29.5,demon,Pts+Rebs+Asts,172380
+PHX,19.5,goblin,Pts+Rebs+Asts,55934
+LAL,1.5,goblin,Assists,188010
+PHX,44.5,demon,Pts+Rebs+Asts,188012
+PHX,1.5,goblin,Assists,188016
+PHX,9.5,demon,Rebounds,188012
+LAL,0.5,goblin,Steals,188014
+PHX,17.5,goblin,Points,188012
+PHX,2.5,demon,3-PT Made,188012
+LAL,2.5,demon,3-PT Made,172380
+LAL,6.5,goblin,Points,216776
+LAL,1.5,demon,Steals,188014
+LAL,19.5,demon,Points,172380
+PHX,34.5,goblin,Pts+Rebs+Asts,188012
+LAL,14.5,demon,Points,216776
+PHX,11.5,demon,Assists,188012
+LAL,7.5,demon,Rebounds,188010
+LAL,4.5,goblin,Rebounds,188010
+LAL,2.5,demon,3-PT Made,188010
+LAL,4.5,goblin,Points,172381
+LAL,32.5,goblin,Pts+Rebs+Asts,188014
+LAL,5.5,demon,Rebounds,172380
+LAL,2.5,goblin,Rebounds,172380
+PHX,34.5,demon,Points,188016
+PHX,3.5,demon,Assists,188016
+PHX,2.5,goblin,Rebounds,95575
+PHX,6.5,goblin,Rebounds,188012
+PHX,2.5,goblin,Rebounds,55934
+PHX,24.5,goblin,Points,188016
+LAL,17.5,goblin,Pts+Rebs+Asts,172380
+PHX,0.5,demon,3-PT Made,174603
+LAL,19.5,goblin,Points,188010
+PHX,1.5,goblin,3-PT Made,217098
+LAL,1.5,goblin,3-PT Made,188010
+LAL,6.5,goblin,Rebounds,172381
+PHX,1.5,demon,Assists,95575
+PHX,2.5,demon,3-PT Made,217098
+LAL,34.5,demon,Pts+Rebs+Asts,188010
+PHX,2.5,demon,3-PT Made,95575
+LAL,7.5,demon,Assists,188014
+LAL,2.5,goblin,Rebounds,188014
+PHX,29.5,demon,Pts+Rebs+Asts,55934
+LAL,5.5,demon,Rebounds,188014
+PHX,5.5,demon,Rebounds,55934
+PHX,14.5,demon,Rebounds,188016
+LAL,11.5,demon,Rebounds,172381
+LAL,2.5,goblin,Assists,172380
+LAL,1.5,demon,3-PT Made,172381
+LAL,5.5,goblin,Assists,216776
+LAL,4.5,goblin,Assists,188014
+PHX,47.5,demon,Pts+Rebs+Asts,188016
+LAL,5.5,demon,Assists,172380
+LAL,32.5,demon,Points,188014
+PHX,7.5,goblin,Points,95575
+LAL,39.5,demon,Pts+Rebs+Asts,188014
+LAL,3.5,demon,3-PT Made,188014
+PHX,3.5,demon,3-PT Made,55934
+PHX,19.5,demon,Points,55934
+PHX,14.5,demon,Points,95575
+LAL,1.5,goblin,3-PT Made,188014
+PHX,7.5,goblin,Assists,188012
+LAL,1.5,goblin,3-PT Made,172380
+PHX,5.5,demon,Rebounds,95575
+LAL,29.5,demon,Points,188010
+PHX,39.5,goblin,Pts+Rebs+Asts,188016
+LAL,12.5,goblin,Points,172380
+PHX,25.5,demon,Points,188012
+LAL,17.5,goblin,Pts+Rebs+Asts,216776
+PHX,1.5,goblin,3-PT Made,55934
+LAL,9.5,demon,Assists,216776
+PHX,9.5,goblin,Rebounds,188016
+LAL,22.5,goblin,Points,188014
+PHX,0.5,demon,Blocked Shots,188012
+WAS,2.5,standard,Offensive Rebounds,37560
+WAS,8.5,standard,Defensive Rebounds,37560
+MIA,9.5,standard,Defensive Rebounds,187995
+MIL,3,standard,Offensive Rebounds,1646
+MIL,7.5,standard,Defensive Rebounds,1646
+MIN,3,standard,Offensive Rebounds,55716
+MIN,6.5,standard,Defensive Rebounds,55716
+HOU,3.5,standard,Offensive Rebounds,87384
+HOU,8.5,standard,Defensive Rebounds,87384
+HOU,5,standard,Defensive Rebounds,216422
+UTA,8,standard,Defensive Rebounds,173819
+SAS,7,standard,Defensive Rebounds,79861
+SAS,3.5,standard,Offensive Rebounds,79861
+PHX,3,standard,Offensive Rebounds,188016
+PHX,9,standard,Defensive Rebounds,188016
+LAL,6.5,standard,Defensive Rebounds,172381
+WAS,19.5,standard,Pts+Rebs,216747
+WAS,2.5,demon,3-PT Made,37560
+WAS,17.5,goblin,Points,1544
+CHI,2.5,goblin,Rebounds,220113
+WAS,0.5,demon,Blocked Shots,216747
+WAS,26.5,demon,Points,10731
+WAS,3.5,goblin,Assists,10731
+WAS,4.5,demon,3-PT Made,10731
+CHI,17.5,goblin,Pts+Rebs+Asts,175142
+WAS,19.5,demon,Points,56418
+WAS,19.5,goblin,Pts+Rebs+Asts,56418
+CHI,5.5,goblin,Rebounds,58812
+WAS,5.5,demon,Assists,10731
+WAS,1.5,demon,3-PT Made,216747
+CHI,4.5,demon,Assists,58812
+CHI,9.5,demon,Rebounds,58812
+CHI,2.5,demon,3-PT Made,58812
+WAS,2.5,goblin,Rebounds,10731
+WAS,7.5,demon,Assists,216747
+CHI,1.5,demon,3-PT Made,175142
+WAS,9.5,goblin,Rebounds,37560
+WAS,2.5,goblin,Rebounds,56418
+CHI,4.5,goblin,Rebounds,175142
+CHI,7.5,demon,Rebounds,175142
+CHI,3.5,demon,Assists,175142
+CHI,0.5,goblin,3-PT Made,175142
+WAS,4.5,goblin,Rebounds,216747
+WAS,0.5,goblin,Blocked Shots,37560
+WAS,4.5,demon,Rebounds,10731
+WAS,14.5,goblin,Points,10731
+WAS,5.5,demon,Assists,1544
+CHI,19.5,demon,Points,220113
+WAS,29.5,demon,Points,1544
+WAS,0.5,demon,Blocked Shots,10731
+WAS,7.5,goblin,Points,216747
+WAS,14.5,demon,Points,216747
+WAS,4.5,demon,Assists,37560
+WAS,3.5,goblin,Assists,56418
+WAS,5.5,demon,Assists,56418
+CHI,0.5,goblin,3-PT Made,220113
+CHI,1.5,demon,Turnovers,220113
+WAS,0.5,goblin,3-PT Made,216747
+WAS,5.5,demon,Rebounds,56418
+WAS,7.5,demon,Rebounds,216747
+CHI,5.5,demon,Rebounds,220113
+CHI,7.5,demon,Assists,220113
+CHI,2.5,demon,3-PT Made,220113
+WAS,24.5,demon,Points,37560
+CHI,3.5,goblin,Assists,220113
+WAS,3.5,demon,3-PT Made,1544
+WAS,4.5,goblin,Assists,216747
+WAS,2.5,goblin,3-PT Made,10731
+CHI,19.5,goblin,Pts+Rebs+Asts,220113
+WAS,19.5,goblin,Pts+Rebs+Asts,216747
+WAS,2.5,goblin,Assists,37560
+WAS,6.5,demon,Rebounds,1544
+WAS,0.5,demon,Blocked Shots,1544
+WAS,13.5,demon,Rebounds,37560
+LAL,18.5,standard,Pts+Rebs,172380

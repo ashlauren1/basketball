@@ -15,60 +15,59 @@ gamelogs_df = gamelogs_df.sort_values(by='Date')
 all_stats = ['PTS', 'REB', 'AST', 'BLK', 'STL', 'TOV', 'MP', 'OffREB', 'DefREB', 'FG', 'FGA', '3P', '3PA', 'FT', 'FTA', 'PF', 'BLK_STL', 'REB_AST', 'PTS_AST', 'PTS_REB', 'PTS_REB_AST', 'FANTASY']
 
 # Default betting line and stat
-default_betting_line = 0.5
+default_betting_line = 10.5
 default_stat = "PTS"
 
 # Updated HTML template with an external JS file
 chart_html_template = """
-<div class="player-chart-container">
-    <!-- Stat Selection Dropdown -->
+<div class="chartContainer">
     <div class="barChart-filters">
         <div class="barChartFilter">
-            <label for="statSelector_{player_id}">Stat:</label>
-            <select id="statSelector_{player_id}" onchange="updateStat('{player_id}', this.value)">
+            <label for="statSelector_{player_id}" class="barChartFilterLabel">Stat:</label>
+            <select id="statSelector_{player_id}" onchange="updateStat('{player_id}', this.value)" class="barChartOptionFilter">
                 {stat_options}
             </select>
         </div>  
         <div class="barChartFilter">
-            <label for="teamFilter_{player_id}">Opponent:</label>
-            <select id="teamFilter_{player_id}" onchange="applyFilters('{player_id}')">
+            <label for="teamFilter_{player_id}" class="barChartFilterLabel">Opp:</label>
+            <select id="teamFilter_{player_id}" onchange="applyFilters('{player_id}')" class="barChartOptionFilter">
                 <option value="all">All</option>
                 {team_options}
             </select>
         </div>
         <div class="barChartFilter">
-            <label for="homeAwayFilter_{player_id}">Home/Away:</label>
-            <select id="homeAwayFilter_{player_id}" onchange="applyFilters('{player_id}')">
+            <label for="homeAwayFilter_{player_id}" class="barChartFilterLabel">Home/Away:</label>
+            <select id="homeAwayFilter_{player_id}" onchange="applyFilters('{player_id}')" class="barChartOptionFilter">
                 <option value="all">All</option>
                 <option value="home">Home</option>
                 <option value="away">Away</option>
             </select>
         </div>
         <div class="barChartFilter">
-            <label for="startDate_{player_id}">Start:</label>
-            <input type="date" id="startDate_{player_id}" onchange="applyFilters('{player_id}')">
+            <label for="startDate_{player_id}" class="barChartFilterLabel">Start:</label>
+            <input type="date" id="startDate_{player_id}" onchange="applyFilters('{player_id}')" class="barChartDateFilter">
         </div>
         <div class="barChartFilter">
-            <label for="endDate_{player_id}">End:</label>
-            <input type="date" id="endDate_{player_id}" onchange="applyFilters('{player_id}')">
+            <label for="endDate_{player_id}" class="barChartFilterLabel">End:</label>
+            <input type="date" id="endDate_{player_id}" onchange="applyFilters('{player_id}')" class="barChartDateFilter">
         </div>
-    </div>
-    <canvas id="chart_{player_id}" class="player-barChart"></canvas>
-    <div class="filter-buttons">
-        <button id="L5_{player_id}" onclick="showRecentGames('{player_id}', 5)">L5</button>
-        <button id="L10_{player_id}" onclick="showRecentGames('{player_id}', 10)">L10</button>
-        <button id="L20_{player_id}" onclick="showRecentGames('{player_id}', 20)">L20</button>
-        <button id="202324_{player_id}" onclick="filterBySeason('{player_id}', '2023-24')">2023-24</button>
-        <button id="202425_{player_id}" onclick="filterBySeason('{player_id}', '2024-25')">2024-25</button>
-        <button id="showAll_{player_id}" onclick="showAllGames('{player_id}')">All</button>
-        <button id="MP_{player_id}" onclick="toggleMPOverlay('{player_id}')">Toggle MP</button>
         <button id="clearFiltersBtn_{player_id}" onclick="clearFilters('{player_id}')" class="clear-chart-filters">Clear Filters</button>
+    </div>
+    <canvas id="chart_{player_id}" class="barChart"></canvas>
+    <div class="filter-buttons">
+        <button id="L5_{player_id}" onclick="showRecentGames('{player_id}', 5)" class="last_n_games_btn">L5</button>
+        <button id="L10_{player_id}" onclick="showRecentGames('{player_id}', 10)" class="last_n_games_btn">L10</button>
+        <button id="L20_{player_id}" onclick="showRecentGames('{player_id}', 20)" class="last_n_games_btn">L20</button>
+        <button id="202324_{player_id}" onclick="filterBySeason('{player_id}', '2023-24')" class="last_n_games_btn">2023-24</button>
+        <button id="202425_{player_id}" onclick="filterBySeason('{player_id}', '2024-25')" class="last_n_games_btn">2024-25</button>
+        <button id="showAll_{player_id}" onclick="showAllGames('{player_id}')" class="last_n_games_btn">All</button>
+        <button id="MP_{player_id}" onclick="toggleMPOverlay('{player_id}')" class="toggleTOIButton">Toggle MP</button>
     </div>
     <div class="slider-container">
         <div id="line-slider">
-            <label for="lineSlider_{player_id}">Change Line:</label>
-            <input type="range" id="lineSlider_{player_id}" min="0" max="100" step="0.5" value="{betting_line}" oninput="updateLine('{player_id}', this.value)">
-            <span id="lineValue_{player_id}">{betting_line}</span>
+            <label for="lineSlider_{player_id}" class="lineSliderLabel">Change Line:</label>
+            <input type="range" id="lineSlider_{player_id}" min="0" max="100" step="0.5" value="{betting_line}" oninput="updateLine('{player_id}', this.value)" class="lineSliderInput">
+            <span id="lineValue_{player_id}" class="lineSliderSpan">{betting_line}</span>
         </div>
         <div class="chartButtons">
             <button id="reset-line-btn_{player_id}" onclick="resetLine('{player_id}', {default_betting_line})" class="reset-line-btn">Reset Line</button>
@@ -79,7 +78,6 @@ chart_html_template = """
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
 <script src="chartScript.js"></script>
 <script>
-    // Initialize the chart with player-specific data by calling a function from chart_logic.js
     initializeChart("{player_id}", {chart_data}, {betting_line}, "{default_stat}");
 </script>
 """
@@ -97,7 +95,7 @@ for filename in os.listdir(html_dir):
                 soup = BeautifulSoup(file, "html.parser")
 
         # Select where to insert the chart based on table id
-        player_table = soup.select_one("#table-container")
+        player_table = soup.select_one("#chartPlaceholder")
         if not player_table:
             print(f"No player table found in {filename}. Skipping.")
             continue
@@ -159,7 +157,7 @@ for filename in os.listdir(html_dir):
             default_betting_line=default_betting_line
         )
         chart_soup = BeautifulSoup(chart_html, "html.parser")
-        player_table.insert_before(chart_soup)
+        player_table.insert_after(chart_soup)
 
         with open(file_path, "w", encoding="utf-8") as file:
             file.write(str(soup))

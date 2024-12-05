@@ -1,455 +1,486 @@
-﻿PlayerID,Player,Team,TeamID,Position
-barlodo01,Dominick Barlow,Atlanta Hawks,ATL,SF
-bogdabo01,Bogdan Bogdanovic,Atlanta Hawks,ATL,SG
-capelca01,Clint Capela,Atlanta Hawks,ATL,C
-daniedy01,Dyson Daniels,Atlanta Hawks,ATL,PG
-gueyemo02,Mouhamed Gueye,Atlanta Hawks,ATL,PF
-huntede01,De'Andre Hunter,Atlanta Hawks,ATL,SF
-johnsja05,Jalen Johnson,Atlanta Hawks,ATL,SF
-krejcvi01,Vit Krejci,Atlanta Hawks,ATL,PG
-mathega01,Garrison Mathews,Atlanta Hawks,ATL,SG
-nancela02,Larry Nance Jr.,Atlanta Hawks,ATL,PF
-okongon01,Onyeka Okongwu,Atlanta Hawks,ATL,C
-risacza01,Zaccharie Risacher,Atlanta Hawks,ATL,SF
-roddyda01,David Roddy,Atlanta Hawks,ATL,PF
-wallake01,Keaton Wallace,Atlanta Hawks,ATL,PG
-youngtr01,Trae Young,Atlanta Hawks,ATL,PG
-bufkiko01,Kobe Bufkin,Atlanta Hawks,ATL,SG
-brownja02,Jaylen Brown,Boston Celtics,BOS,SF
-davisjd01,JD Davison,Boston Celtics,BOS,PG
-hausesa01,Sam Hauser,Boston Celtics,BOS,PF
-holidjr01,Jrue Holiday,Boston Celtics,BOS,PG
-horfoal01,Al Horford,Boston Celtics,BOS,C
-kornelu01,Luke Kornet,Boston Celtics,BOS,C
-peterdr01,Drew Peterson,Boston Celtics,BOS,PF
-pritcpa01,Payton Pritchard,Boston Celtics,BOS,SG
-quetane01,Neemias Queta,Boston Celtics,BOS,C
-scheiba01,Baylor Scheierman,Boston Celtics,BOS,SG
-sprinja01,Jaden Springer,Boston Celtics,BOS,PG
-tatumja01,Jayson Tatum,Boston Celtics,BOS,SF
-tillmxa01,Xavier Tillman Sr.,Boston Celtics,BOS,PF
-walshjo01,Jordan Walsh,Boston Celtics,BOS,SF
-whitede01,Derrick White,Boston Celtics,BOS,SG
-claxtni01,Nic Claxton,Brooklyn Nets,BRK,C
-clownno01,Noah Clowney,Brooklyn Nets,BRK,PF
-cuiyo01,Yongxi Cui,Brooklyn Nets,BRK,SG
-finnedo01,Dorian Finney-Smith,Brooklyn Nets,BRK,PF
-johnsca02,Cameron Johnson,Brooklyn Nets,BRK,PF
-johnske07,Keon Johnson,Brooklyn Nets,BRK,SG
-martija02,Jaylen Martin,Brooklyn Nets,BRK,SF
-martity01,Tyrese Martin,Brooklyn Nets,BRK,SG
-miltosh01,Shake Milton,Brooklyn Nets,BRK,SG
-schrode01,Dennis Schroder,Brooklyn Nets,BRK,PG
-simmobe01,Ben Simmons,Brooklyn Nets,BRK,PG
-thomaca02,Cam Thomas,Brooklyn Nets,BRK,SG
-whiteda01,Dariq Whitehead,Brooklyn Nets,BRK,SF
-willizi02,Ziaire Williams,Brooklyn Nets,BRK,SF
-wilsoja03,Jalen Wilson,Brooklyn Nets,BRK,PF
-balllo01,Lonzo Ball,Chicago Bulls,CHI,PG
-buzelma01,Matas Buzelis,Chicago Bulls,CHI,SF
-carteje01,Jevon Carter,Chicago Bulls,CHI,PG
-craigto01,Torrey Craig,Chicago Bulls,CHI,SF
-dosunay01,Ayo Dosunmu,Chicago Bulls,CHI,SG
-duartch01,Chris Duarte,Chicago Bulls,CHI,SG
-giddejo01,Josh Giddey,Chicago Bulls,CHI,SG
-hortota01,Talen Horton-Tucker,Chicago Bulls,CHI,SG
-lavinza01,Zach LaVine,Chicago Bulls,CHI,SG
-phillju01,Julian Phillips,Chicago Bulls,CHI,SF
-sanogad01,Adama Sanogo,Chicago Bulls,CHI,C
-smithja04,Jalen Smith,Chicago Bulls,CHI,PF
-terryda01,Dalen Terry,Chicago Bulls,CHI,SG
-vucevni01,Nikola Vucevic,Chicago Bulls,CHI,C
-whiteco01,Coby White,Chicago Bulls,CHI,PG
-willipa01,Patrick Williams,Chicago Bulls,CHI,PF
-ballla01,LaMelo Ball,Charlotte Hornets,CHO,PG
-bridgmi02,Miles Bridges,Charlotte Hornets,CHO,SF
-curryse01,Seth Curry,Charlotte Hornets,CHO,SG
-diabamo01,Moussa Diabate,Charlotte Hornets,CHO,PF
-gibsota01,Taj Gibson,Charlotte Hornets,CHO,PF
-greenjo02,Josh Green,Charlotte Hornets,CHO,SG
-manntr01,Tre Mann,Charlotte Hornets,CHO,PG
-martico01,Cody Martin,Charlotte Hornets,CHO,SF
-micicva01,Vasilije Micic,Charlotte Hornets,CHO,PG
-millebr02,Brandon Miller,Charlotte Hornets,CHO,SF
-rhodeja01,Jared Rhoden,Charlotte Hornets,CHO,SG
-richani01,Nick Richards,Charlotte Hornets,CHO,C
-salauti01,Tidjane Salaun,Charlotte Hornets,CHO,PF
-simpskj01,KJ Simpson,Charlotte Hornets,CHO,PG
-smithni01,Nick Smith Jr.,Charlotte Hornets,CHO,SG
-willigr01,Grant Williams,Charlotte Hornets,CHO,PF
-allenja01,Jarrett Allen,Cleveland Cavaliers,CLE,C
-garlada01,Darius Garland,Cleveland Cavaliers,CLE,PG
-jeromty01,Ty Jerome,Cleveland Cavaliers,CLE,SG
-leverca01,Caris LeVert,Cleveland Cavaliers,CLE,SG
-merrisa01,Sam Merrill,Cleveland Cavaliers,CLE,SG
-mitchdo01,Donovan Mitchell,Cleveland Cavaliers,CLE,SG
-mobleev01,Evan Mobley,Cleveland Cavaliers,CLE,C
-niangge01,Georges Niang,Cleveland Cavaliers,CLE,PF
-okorois01,Isaac Okoro,Cleveland Cavaliers,CLE,SG
-portecr01,Craig Porter Jr.,Cleveland Cavaliers,CLE,PG
-thomptr01,Tristan Thompson,Cleveland Cavaliers,CLE,PF
-travelu01,Luke Travers,Cleveland Cavaliers,CLE,SG
-tysonja01,Jaylon Tyson,Cleveland Cavaliers,CLE,SG
-wadede01,Dean Wade,Cleveland Cavaliers,CLE,PF
-dinwisp01,Spencer Dinwiddie,Dallas Mavericks,DAL,PG
-doncilu01,Luka Doncic,Dallas Mavericks,DAL,PG
-edwarke02,Kessler Edwards,Dallas Mavericks,DAL,SF
-gaffoda01,Daniel Gafford,Dallas Mavericks,DAL,PF
-gortmja01,Jazian Gortman,Dallas Mavericks,DAL,PG
-grimequ01,Quentin Grimes,Dallas Mavericks,DAL,SG
-hardyja02,Jaden Hardy,Dallas Mavericks,DAL,SG
-irvinky01,Kyrie Irving,Dallas Mavericks,DAL,PG
-klebima01,Maxi Kleber,Dallas Mavericks,DAL,PF
-livelde01,Dereck Lively II,Dallas Mavericks,DAL,C
-marshna01,Naji Marshall,Dallas Mavericks,DAL,SF
-morrima02,Markieff Morris,Dallas Mavericks,DAL,PF
-poweldw01,Dwight Powell,Dallas Mavericks,DAL,C
-prospol01,Olivier-Maxence Prosper,Dallas Mavericks,DAL,PF
-thompkl01,Klay Thompson,Dallas Mavericks,DAL,SG
-washipj01,P.J. Washington,Dallas Mavericks,DAL,PF
-willibr03,Brandon Williams,Dallas Mavericks,DAL,PG
-alexatr01,Trey Alexander,Denver Nuggets,DEN,SG
-braunch01,Christian Braun,Denver Nuggets,DEN,SG
-cancavl01,Vlatko Cancar,Denver Nuggets,DEN,PF
-gordoaa01,Aaron Gordon,Denver Nuggets,DEN,PF
-jokicni01,Nikola Jokic,Denver Nuggets,DEN,C
-jonessp01,Spencer Jones,Denver Nuggets,DEN,SF
-jordade01,DeAndre Jordan,Denver Nuggets,DEN,C
-murraja01,Jamal Murray,Denver Nuggets,DEN,PG
-nnajize01,Zeke Nnaji,Denver Nuggets,DEN,PF
-pickeja02,Jalen Pickett,Denver Nuggets,DEN,SG
-portemi01,Michael Porter Jr.,Denver Nuggets,DEN,SF
-saricda01,Dario Saric,Denver Nuggets,DEN,PF
-strawju01,Julian Strawther,Denver Nuggets,DEN,SG
-tysonhu01,Hunter Tyson,Denver Nuggets,DEN,PF
-watsope01,Peyton Watson,Denver Nuggets,DEN,SG
-westbru01,Russell Westbrook,Denver Nuggets,DEN,PG
-beaslma01,Malik Beasley,Detroit Pistons,DET,SG
-cunnica01,Cade Cunningham,Detroit Pistons,DET,PG
-durenja01,Jalen Duren,Detroit Pistons,DET,C
-fontesi01,Simone Fontecchio,Detroit Pistons,DET,SF
-hardati02,Tim Hardaway Jr.,Detroit Pistons,DET,SG
-harrito02,Tobias Harris,Detroit Pistons,DET,PF
-hollaro01,Ron Holland,Detroit Pistons,DET,SF
-iveyja01,Jaden Ivey,Detroit Pistons,DET,SG
-jenkida01,Daniss Jenkins,Detroit Pistons,DET,PG
-moorewe01,Wendell Moore Jr.,Detroit Pistons,DET,SG
-reedpa01,Paul Reed,Detroit Pistons,DET,PF
-sassema01,Marcus Sasser,Detroit Pistons,DET,PG
-stewais01,Isaiah Stewart,Detroit Pistons,DET,C
-swideco01,Cole Swider,Detroit Pistons,DET,SF
-anderky01,Kyle Anderson,Golden State Warriors,GSW,SF
-beekmre01,Reece Beekman,Golden State Warriors,GSW,PG
-curryst01,Stephen Curry,Golden State Warriors,GSW,PG
-greendr01,Draymond Green,Golden State Warriors,GSW,PF
-hieldbu01,Buddy Hield,Golden State Warriors,GSW,SG
-jackstr02,Trayce Jackson-Davis,Golden State Warriors,GSW,PF
-kuminjo01,Jonathan Kuminga,Golden State Warriors,GSW,PF
-looneke01,Kevon Looney,Golden State Warriors,GSW,PF
-meltode01,De'Anthony Melton,Golden State Warriors,GSW,PG
-moodymo01,Moses Moody,Golden State Warriors,GSW,SG
-paytoga02,Gary Payton II,Golden State Warriors,GSW,PG
-podzibr01,Brandin Podziemski,Golden State Warriors,GSW,SG
-santogu01,Gui Santos,Golden State Warriors,GSW,PF
-spencpa01,Pat Spencer,Golden State Warriors,GSW,PG
-waterli01,Lindy Waters III,Golden State Warriors,GSW,SG
-wiggian01,Andrew Wiggins,Golden State Warriors,GSW,SF
-adamsst01,Steven Adams,Houston Rockets,HOU,C
-brookdi01,Dillon Brooks,Houston Rockets,HOU,SG
-easonta01,Tari Eason,Houston Rockets,HOU,SF
-greenja05,Jalen Green,Houston Rockets,HOU,SG
-greenje02,Jeff Green,Houston Rockets,HOU,PF
-holidaa01,Aaron Holiday,Houston Rockets,HOU,PG
-landajo01,Jock Landale,Houston Rockets,HOU,C
-mcveija01,Jack McVeigh,Houston Rockets,HOU,PF
-sengual01,Alperen Sengun,Houston Rockets,HOU,C
-sheppre01,Reed Sheppard,Houston Rockets,HOU,SG
-smithja05,Jabari Smith Jr.,Houston Rockets,HOU,PF
-tateja01,Jae'Sean Tate,Houston Rockets,HOU,SF
-thompam01,Amen Thompson,Houston Rockets,HOU,SF
-vanvlfr01,Fred VanVleet,Houston Rockets,HOU,PG
-whitmca01,Cam Whitmore,Houston Rockets,HOU,SF
-willije02,Jeenathan Williams,Houston Rockets,HOU,SG
-freemen01,Enrique Freeman,Indiana Pacers,IND,PF
-furphjo01,Johnny Furphy,Indiana Pacers,IND,SG
-halibty01,Tyrese Haliburton,Indiana Pacers,IND,PG
-jacksis01,Isaiah Jackson,Indiana Pacers,IND,PF
-jacksqu01,Quenton Jackson,Indiana Pacers,IND,PG
-johnsja01,James Johnson,Indiana Pacers,IND,PF
-mathube01,Bennedict Mathurin,Indiana Pacers,IND,SG
-mccontj01,T.J. McConnell,Indiana Pacers,IND,PG
-nembhan01,Andrew Nembhard,Indiana Pacers,IND,SG
-nesmiaa01,Aaron Nesmith,Indiana Pacers,IND,SF
-sheppbe01,Ben Sheppard,Indiana Pacers,IND,SG
-siakapa01,Pascal Siakam,Indiana Pacers,IND,PF
-toppiob01,Obi Toppin,Indiana Pacers,IND,PF
-turnemy01,Myles Turner,Indiana Pacers,IND,C
-walkeja02,Jarace Walker,Indiana Pacers,IND,PF
-wisemja01,James Wiseman,Indiana Pacers,IND,C
-batumni01,Nicolas Batum,Los Angeles Clippers,LAC,SF
-brownko01,Kobe Brown,Los Angeles Clippers,LAC,PF
-coffeam01,Amir Coffey,Los Angeles Clippers,LAC,SG
-dunnkr01,Kris Dunn,Los Angeles Clippers,LAC,PG
-hardeja01,James Harden,Los Angeles Clippers,LAC,SG
-hylanbo01,Bones Hyland,Los Angeles Clippers,LAC,PG
-jonesde02,Derrick Jones Jr.,Los Angeles Clippers,LAC,SF
-joneska01,Kai Jones,Los Angeles Clippers,LAC,C
-mannte01,Terance Mann,Los Angeles Clippers,LAC,SG
-millejo02,Jordan Miller,Los Angeles Clippers,LAC,SF
-porteke02,Kevin Porter Jr.,Los Angeles Clippers,LAC,SG
-powelno01,Norman Powell,Los Angeles Clippers,LAC,SG
-zubaciv01,Ivica Zubac,Los Angeles Clippers,LAC,C
-chrisma02,Max Christie,Los Angeles Lakers,LAL,SG
-davisan02,Anthony Davis,Los Angeles Lakers,LAL,PF
-hachiru01,Rui Hachimura,Los Angeles Lakers,LAL,PF
-hayesja02,Jaxson Hayes,Los Angeles Lakers,LAL,C
-jamesbr02,Bronny James,Los Angeles Lakers,LAL,SG
-jamesle01,LeBron James,Los Angeles Lakers,LAL,SF
-knechda01,Dalton Knecht,Los Angeles Lakers,LAL,SF
-kolokch01,Christian Koloko,Los Angeles Lakers,LAL,C
-reaveau01,Austin Reaves,Los Angeles Lakers,LAL,SG
-reddica01,Cam Reddish,Los Angeles Lakers,LAL,SF
-russeda01,D'Angelo Russell,Los Angeles Lakers,LAL,PG
-vincega01,Gabe Vincent,Los Angeles Lakers,LAL,PG
-hoodsja01,Jalen Hood-Schifino,Los Angeles Lakers,LAL,SG
-lewisma05,Maxwell Lewis,Los Angeles Lakers,LAL,SF
-aldamsa01,Santi Aldama,Memphis Grizzlies,MEM,PF
-banede01,Desmond Bane,Memphis Grizzlies,MEM,SG
-castlco01,Colin Castleton,Memphis Grizzlies,MEM,C
-clarkbr01,Brandon Clarke,Memphis Grizzlies,MEM,PF
-edeyza01,Zach Edey,Memphis Grizzlies,MEM,C
-huffja01,Jay Huff,Memphis Grizzlies,MEM,C
-jacksja02,Jaren Jackson Jr.,Memphis Grizzlies,MEM,C
-kawamyu01,Yuki Kawamura,Memphis Grizzlies,MEM,PG
-kennalu01,Luke Kennard,Memphis Grizzlies,MEM,SG
-konchjo01,John Konchar,Memphis Grizzlies,MEM,SG
-laravja01,Jake LaRavia,Memphis Grizzlies,MEM,PF
-moranja01,Ja Morant,Memphis Grizzlies,MEM,PG
-pippesc02,Scotty Pippen Jr.,Memphis Grizzlies,MEM,PG
-smartma01,Marcus Smart,Memphis Grizzlies,MEM,PG
-wellsja01,Jaylen Wells,Memphis Grizzlies,MEM,SF
-adebaba01,Bam Adebayo,Miami Heat,MIA,C
-bryanth01,Thomas Bryant,Miami Heat,MIA,C
-burksal01,Alec Burks,Miami Heat,MIA,SG
-butleji01,Jimmy Butler,Miami Heat,MIA,SF
-herroty01,Tyler Herro,Miami Heat,MIA,SG
-highsha01,Haywood Highsmith,Miami Heat,MIA,SF
-jaqueja01,Jaime Jaquez Jr.,Miami Heat,MIA,SF
-jovicni01,Nikola Jovic,Miami Heat,MIA,PF
-larsspe01,Pelle Larsson,Miami Heat,MIA,SG
-richajo01,Josh Richardson,Miami Heat,MIA,SG
-robindu01,Duncan Robinson,Miami Heat,MIA,SF
-roziete01,Terry Rozier,Miami Heat,MIA,PG
-smithdr01,Dru Smith,Miami Heat,MIA,SG
-wareke01,Kel'el Ware,Miami Heat,MIA,C
-antetgi01,Giannis Antetokounmpo,Milwaukee Bucks,MIL,PF
-beaucma01,MarJon Beauchamp,Milwaukee Bucks,MIL,SF
-connapa01,Pat Connaughton,Milwaukee Bucks,MIL,SG
-greenaj01,A.J. Green,Milwaukee Bucks,MIL,SG
-jacksan01,Andre Jackson Jr.,Milwaukee Bucks,MIL,SG
-johnsaj01,AJ Johnson,Milwaukee Bucks,MIL,SG
-lillada01,Damian Lillard,Milwaukee Bucks,MIL,PG
-lopezbr01,Brook Lopez,Milwaukee Bucks,MIL,C
-portibo01,Bobby Portis,Milwaukee Bucks,MIL,PF
-princta02,Taurean Prince,Milwaukee Bucks,MIL,PF
-robbili01,Liam Robbins,Milwaukee Bucks,MIL,C
-rolliry01,Ryan Rollins,Milwaukee Bucks,MIL,PG
-smithty02,Tyler Smith,Milwaukee Bucks,MIL,PF
-trentga02,Gary Trent Jr.,Milwaukee Bucks,MIL,SG
-wrighde01,Delon Wright,Milwaukee Bucks,MIL,PG
-umudest01,Stanley Umude,Milwaukee Bucks,MIL,SG
-alexani01,Nickeil Alexander-Walker,Minnesota Timberwolves,MIN,SG
-conlemi01,Mike Conley,Minnesota Timberwolves,MIN,PG
-dilliro01,Rob Dillingham,Minnesota Timberwolves,MIN,PG
-divindo01,Donte DiVincenzo,Minnesota Timberwolves,MIN,SG
-doziepj01,PJ Dozier,Minnesota Timberwolves,MIN,SG
-edwaran01,Anthony Edwards,Minnesota Timberwolves,MIN,SG
-garzalu01,Luka Garza,Minnesota Timberwolves,MIN,PF
-goberru01,Rudy Gobert,Minnesota Timberwolves,MIN,C
-inglejo01,Joe Ingles,Minnesota Timberwolves,MIN,SF
-mcdanja02,Jaden McDaniels,Minnesota Timberwolves,MIN,PF
-minotjo01,Josh Minott,Minnesota Timberwolves,MIN,SF
-randlju01,Julius Randle,Minnesota Timberwolves,MIN,PF
-reidna01,Naz Reid,Minnesota Timberwolves,MIN,C
-shannte01,Terrence Shannon Jr.,Minnesota Timberwolves,MIN,SG
-alvarjo01,Jose Alvarado,New Orleans Pelicans,NOP,PG
-bostobr01,Brandon Boston Jr.,New Orleans Pelicans,NOP,SG
-cainja01,Jamal Cain,New Orleans Pelicans,NOP,SF
-greenja02,Javonte Green,New Orleans Pelicans,NOP,SG
-hawkijo01,Jordan Hawkins,New Orleans Pelicans,NOP,SG
-ingrabr01,Brandon Ingram,New Orleans Pelicans,NOP,SF
-jemistr01,Trey Jemison,New Orleans Pelicans,NOP,C
-joneshe01,Herbert Jones,New Orleans Pelicans,NOP,SF
-matkoka01,Karlo Matkovic,New Orleans Pelicans,NOP,PF
-mccolcj01,CJ McCollum,New Orleans Pelicans,NOP,SG
-missiyv01,Yves Missi,New Orleans Pelicans,NOP,C
-murrade01,Dejounte Murray,New Orleans Pelicans,NOP,PG
-nowelja01,Jaylen Nowell,New Orleans Pelicans,NOP,SG
-reevean01,Antonio Reeves,New Orleans Pelicans,NOP,SG
-robinje02,Jeremiah Robinson-Earl,New Orleans Pelicans,NOP,PF
-theisda01,Daniel Theis,New Orleans Pelicans,NOP,C
-willizi01,Zion Williamson,New Orleans Pelicans,NOP,PF
-anunoog01,OG Anunoby,New York Knicks,NYK,SF
-bridgmi01,Mikal Bridges,New York Knicks,NYK,SF
-brunsja01,Jalen Brunson,New York Knicks,NYK,PG
-dadiepa01,Pacome Dadiet,New York Knicks,NYK,SG
-hartjo01,Josh Hart,New York Knicks,NYK,SG
-hukpoar01,Ariel Hukporti,New York Knicks,NYK,C
-kolekty01,Tyler Kolek,New York Knicks,NYK,PG
-mcbrimi01,Miles McBride,New York Knicks,NYK,PG
-payneca01,Cameron Payne,New York Knicks,NYK,PG
-simsje01,Jericho Sims,New York Knicks,NYK,C
-toppija01,Jacob Toppin,New York Knicks,NYK,SF
-townska01,Karl-Anthony Towns,New York Knicks,NYK,C
-ryanma01,Matt Ryan,New York Knicks,NYK,SF
-carusal01,Alex Caruso,Oklahoma City Thunder,OKC,PG
-diengou01,Ousmane Dieng,Oklahoma City Thunder,OKC,SF
-dortlu01,Luguentz Dort,Oklahoma City Thunder,OKC,SG
-ducasal01,Alex Ducas,Oklahoma City Thunder,OKC,SG
-flaglad01,Adam Flagler,Oklahoma City Thunder,OKC,SG
-gilgesh01,Shai Gilgeous-Alexander,Oklahoma City Thunder,OKC,SG
-holmgch01,Chet Holmgren,Oklahoma City Thunder,OKC,PF
-joeis01,Isaiah Joe,Oklahoma City Thunder,OKC,SG
-jonesdi01,Dillon Jones,Oklahoma City Thunder,OKC,SF
-leonsma01,Malevy Leons,Oklahoma City Thunder,OKC,SF
-mitchaj01,Ajay Mitchell,Oklahoma City Thunder,OKC,SG
-reeseal01,Alex Reese,Oklahoma City Thunder,OKC,PF
-wallaca01,Cason Wallace,Oklahoma City Thunder,OKC,SG
-wiggiaa01,Aaron Wiggins,Oklahoma City Thunder,OKC,SG
-willija06,Jalen Williams,Oklahoma City Thunder,OKC,SG
-anthoco01,Cole Anthony,Orlando Magic,ORL,PG
-banchpa01,Paolo Banchero,Orlando Magic,ORL,SF
-bitadgo01,Goga Bitadze,Orlando Magic,ORL,C
-blackan01,Anthony Black,Orlando Magic,ORL,PG
-caldwke01,Kentavious Caldwell-Pope,Orlando Magic,ORL,SG
-cartewe01,Wendell Carter Jr.,Orlando Magic,ORL,C
-dasiltr01,Tristan Da Silva,Orlando Magic,ORL,SF
-harriga01,Gary Harris,Orlando Magic,ORL,SG
-houstca01,Caleb Houstan,Orlando Magic,ORL,SF
-howarje01,Jett Howard,Orlando Magic,ORL,SF
-isaacjo01,Jonathan Isaac,Orlando Magic,ORL,PF
-josepco01,Cory Joseph,Orlando Magic,ORL,PG
-mccluma01,Mac McClung,Orlando Magic,ORL,SG
-queentr01,Trevelin Queen,Orlando Magic,ORL,SG
-suggsja01,Jalen Suggs,Orlando Magic,ORL,SG
-wagnefr01,Franz Wagner,Orlando Magic,ORL,SF
-wagnemo01,Moritz Wagner,Orlando Magic,ORL,C
-bonaad01,Adem Bona,Philadelphia 76ers,PHI,PF
-councri01,Ricky Council IV,Philadelphia 76ers,PHI,SG
-dowtije01,Jeff Dowtin,Philadelphia 76ers,PHI,PG
-drumman01,Andre Drummond,Philadelphia 76ers,PHI,C
-georgpa01,Paul George,Philadelphia 76ers,PHI,SF
-gordoer01,Eric Gordon,Philadelphia 76ers,PHI,SG
-jacksre01,Reggie Jackson,Philadelphia 76ers,PHI,PG
-lowryky01,Kyle Lowry,Philadelphia 76ers,PHI,PG
-martica02,Caleb Martin,Philadelphia 76ers,PHI,SF
-martike04,KJ Martin,Philadelphia 76ers,PHI,SF
-maxeyty01,Tyrese Maxey,Philadelphia 76ers,PHI,PG
-mccaija01,Jared McCain,Philadelphia 76ers,PHI,PG
-oubreke01,Kelly Oubre Jr.,Philadelphia 76ers,PHI,SF
-quinole01,Lester Quinones,Philadelphia 76ers,PHI,SG
-yabusgu01,Guerschon Yabusele,Philadelphia 76ers,PHI,PF
-allengr01,Grayson Allen,Phoenix Suns,PHO,SG
-bealbr01,Bradley Beal,Phoenix Suns,PHO,SG
-bookede01,Devin Booker,Phoenix Suns,PHO,SG
-dunnry01,Ryan Dunn,Phoenix Suns,PHO,SF
-duranke01,Kevin Durant,Phoenix Suns,PHO,SF
-gilleco01,Collin Gillespie,Phoenix Suns,PHO,PG
-ighodos01,Oso Ighodaro,Phoenix Suns,PHO,PF
-jonesty01,Tyus Jones,Phoenix Suns,PHO,PG
-leeda03,Damion Lee,Phoenix Suns,PHO,SG
-morrimo01,Monte Morris,Phoenix Suns,PHO,PG
-nurkiju01,Jusuf Nurkic,Phoenix Suns,PHO,C
-onealro01,Royce O'Neale,Phoenix Suns,PHO,SF
-plumlma01,Mason Plumlee,Phoenix Suns,PHO,C
-okogijo01,Josh Okogie,Phoenix Suns,PHO,SG
-avdijde01,Deni Avdija,Portland Trail Blazers,POR,SF
-aytonde01,Deandre Ayton,Portland Trail Blazers,POR,C
-bantoda01,Dalano Banton,Portland Trail Blazers,POR,SF
-camarto01,Toumani Camara,Portland Trail Blazers,POR,PF
-clingdo01,Donovan Clingan,Portland Trail Blazers,POR,C
-grantje01,Jerami Grant,Portland Trail Blazers,POR,PF
-hendesc01,Scoot Henderson,Portland Trail Blazers,POR,PG
-murrakr01,Kris Murray,Portland Trail Blazers,POR,SF
-reathdu01,Duop Reath,Portland Trail Blazers,POR,C
-ruperra01,Rayan Rupert,Portland Trail Blazers,POR,SG
-simonan01,Anfernee Simons,Portland Trail Blazers,POR,SG
-walkeja01,Jabari Walker,Portland Trail Blazers,POR,SF
-sharpsh01,Shaedon Sharpe,Portland Trail Blazers,POR,SG
-williro04,Robert Williams,Portland Trail Blazers,POR,C
-derozde01,DeMar DeRozan,Sacramento Kings,SAC,SG
-elliske01,Keon Ellis,Sacramento Kings,SAC,SG
-foxde01,De'Aaron Fox,Sacramento Kings,SAC,PG
-huertke01,Kevin Huerter,Sacramento Kings,SAC,SG
-jonesco02,Colby Jones,Sacramento Kings,SAC,SG
-jonesis01,Isaac Jones,Sacramento Kings,SAC,PF
-lenal01,Alex Len,Sacramento Kings,SAC,C
-lylestr01,Trey Lyles,Sacramento Kings,SAC,PF
-mcderdo01,Doug McDermott,Sacramento Kings,SAC,SF
-mclaujo01,Jordan McLaughlin,Sacramento Kings,SAC,PG
-monkma01,Malik Monk,Sacramento Kings,SAC,SG
-murrake02,Keegan Murray,Sacramento Kings,SAC,SF
-sabondo01,Domantas Sabonis,Sacramento Kings,SAC,C
-barneha02,Harrison Barnes,San Antonio Spurs,SAS,SF
-bassech01,Charles Bassey,San Antonio Spurs,SAS,C
-branhma01,Malaki Branham,San Antonio Spurs,SAS,SG
-castlst01,Stephon Castle,San Antonio Spurs,SAS,PG
-champju02,Julian Champagnie,San Antonio Spurs,SAS,SF
-cissosi01,Sidy Cissoko,San Antonio Spurs,SAS,SF
-colliza01,Zach Collins,San Antonio Spurs,SAS,PF
-dukeda01,David Duke Jr.,San Antonio Spurs,SAS,SG
-ingraha01,Harrison Ingram,San Antonio Spurs,SAS,SF
-johnske04,Keldon Johnson,San Antonio Spurs,SAS,SF
-jonestr01,Tre Jones,San Antonio Spurs,SAS,PG
-mamuksa01,Sandro Mamukelashvili,San Antonio Spurs,SAS,PF
-minixri01,Riley Minix,San Antonio Spurs,SAS,SF
-paulch01,Chris Paul,San Antonio Spurs,SAS,PG
-sochaje01,Jeremy Sochan,San Antonio Spurs,SAS,PF
-wembavi01,Victor Wembanyama,San Antonio Spurs,SAS,PF
-weslebl01,Blake Wesley,San Antonio Spurs,SAS,SG
-agbajoc01,Ochai Agbaji,Toronto Raptors,TOR,SG
-barnesc01,Scottie Barnes,Toronto Raptors,TOR,SF
-barrerj01,RJ Barrett,Toronto Raptors,TOR,SG
-battlja01,Jamison Battle,Toronto Raptors,TOR,SF
-bouchch01,Chris Boucher,Toronto Raptors,TOR,PF
-cartodj01,D.J. Carton,Toronto Raptors,TOR,SG
-chomcul01,Ulrich Chomche,Toronto Raptors,TOR,PF
-dickgr01,Gradey Dick,Toronto Raptors,TOR,SG
-fernabr01,Bruno Fernando,Toronto Raptors,TOR,C
-mitchda01,Davion Mitchell,Toronto Raptors,TOR,PG
-mogbojo01,Jonathan Mogbo,Toronto Raptors,TOR,PF
-poeltja01,Jakob Poeltl,Toronto Raptors,TOR,C
-quickim01,Immanuel Quickley,Toronto Raptors,TOR,PG
-sheadja01,Jamal Shead,Toronto Raptors,TOR,PG
-templga01,Garrett Temple,Toronto Raptors,TOR,SG
-walteja01,Ja'Kobe Walter,Toronto Raptors,TOR,SG
-clarkjo01,Jordan Clarkson,Utah Jazz,UTA,SG
-collijo01,John Collins,Utah Jazz,UTA,PF
-eubandr01,Drew Eubanks,Utah Jazz,UTA,C
-filipky01,Kyle Filipowski,Utah Jazz,UTA,C
-georgke01,Keyonte George,Utah Jazz,UTA,SG
-hendrita0,Taylor Hendricks,Utah Jazz,UTA,PF
-juzanjo01,Johnny Juzang,Utah Jazz,UTA,SG
-kesslwa01,Walker Kessler,Utah Jazz,UTA,C
-markkla01,Lauri Markkanen,Utah Jazz,UTA,PF
-millspa02,Patty Mills,Utah Jazz,UTA,PG
-mykhasv01,Svi Mykhailiuk,Utah Jazz,UTA,SF
-sensabr01,Brice Sensabaugh,Utah Jazz,UTA,SF
-sextoco01,Collin Sexton,Utah Jazz,UTA,SG
-willico04,Cody Williams,Utah Jazz,UTA,SG
-colliis01,Isaiah Collier,Utah Jazz,UTA,PG
-baglema01,Marvin Bagley III,Washington Wizards,WAS,PF
-baldwpa01,Patrick Baldwin Jr.,Washington Wizards,WAS,SF
-butleja02,Jared Butler,Washington Wizards,WAS,SG
-carrica01,Carlton Carrington,Washington Wizards,WAS,PG
-champju01,Justin Champagnie,Washington Wizards,WAS,SF
-coulibi01,Bilal Coulibaly,Washington Wizards,WAS,SF
-davisjo06,Johnny Davis,Washington Wizards,WAS,SG
-georgky01,Kyshawn George,Washington Wizards,WAS,SG
-gillan01,Anthony Gill,Washington Wizards,WAS,PF
-holmeri01,Richaun Holmes,Washington Wizards,WAS,PF
-kispeco01,Corey Kispert,Washington Wizards,WAS,SF
-kuzmaky01,Kyle Kuzma,Washington Wizards,WAS,PF
-poolejo01,Jordan Poole,Washington Wizards,WAS,SG
-sarral01,Alex Sarr,Washington Wizards,WAS,PF
-valanjo01,Jonas Valanciunas,Washington Wizards,WAS,C
+﻿PlayerID,Player,Team,TeamID
+adamsst01,Steven Adams,Houston Rockets,HOU
+adebaba01,Bam Adebayo,Miami Heat,MIA
+agbajoc01,Ochai Agbaji,Toronto Raptors,TOR
+aldamsa01,Santi Aldama,Memphis Grizzlies,MEM
+alexani01,Nickeil Alexander-Walker,Minnesota Timberwolves,MIN
+alexatr01,Trey Alexander,Denver Nuggets,DEN
+allengr01,Grayson Allen,Phoenix Suns,PHO
+allenja01,Jarrett Allen,Cleveland Cavaliers,CLE
+alvarjo01,Jose Alvarado,New Orleans Pelicans,NOP
+anderky01,Kyle Anderson,Golden State Warriors,GSW
+antetgi01,Giannis Antetokounmpo,Milwaukee Bucks,MIL
+anthoco01,Cole Anthony,Orlando Magic,ORL
+anunoog01,OG Anunoby,New York Knicks,NYK
+armeltr01,Armel Traore,Los Angeles Lakers,LAL
+avdijde01,Deni Avdija,Portland Trail Blazers,POR
+aytonde01,Deandre Ayton,Portland Trail Blazers,POR
+baglema01,Marvin Bagley III,Washington Wizards,WAS
+baldwpa01,Patrick Baldwin Jr.,Washington Wizards,WAS
+ballla01,LaMelo Ball,Charlotte Hornets,CHO
+balllo01,Lonzo Ball,Chicago Bulls,CHI
+bambamo01,Mo Bamba,Los Angeles Clippers,LAC
+banchpa01,Paolo Banchero,Orlando Magic,ORL
+banede01,Desmond Bane,Memphis Grizzlies,MEM
+bantoda01,Dalano Banton,Portland Trail Blazers,POR
+barlodo01,Dominick Barlow,Atlanta Hawks,ATL
+barneha02,Harrison Barnes,San Antonio Spurs,SAS
+barnesc01,Scottie Barnes,Toronto Raptors,TOR
+barrerj01,RJ Barrett,Toronto Raptors,TOR
+bassech01,Charles Bassey,San Antonio Spurs,SAS
+battlja01,Jamison Battle,Toronto Raptors,TOR
+batumni01,Nicolas Batum,Los Angeles Clippers,LAC
+bealbr01,Bradley Beal,Phoenix Suns,PHO
+beaslma01,Malik Beasley,Detroit Pistons,DET
+beaucma01,MarJon Beauchamp,Milwaukee Bucks,MIL
+beekmre01,Reece Beekman,Golden State Warriors,GSW
+bitadgo01,Goga Bitadze,Orlando Magic,ORL
+blackan01,Anthony Black,Orlando Magic,ORL
+bogdabo01,Bogdan Bogdanovic,Atlanta Hawks,ATL
+bolbo01,Bol Bol,Phoenix Suns,PHO
+bonaad01,Adem Bona,Philadelphia 76ers,PHI
+bookede01,Devin Booker,Phoenix Suns,PHO
+bostobr01,Brandon Boston,New Orleans Pelicans,NOP
+bouchch01,Chris Boucher,Toronto Raptors,TOR
+branhma01,Malaki Branham,San Antonio Spurs,SAS
+braunch01,Christian Braun,Denver Nuggets,DEN
+bridgja01,Jalen Bridges,Phoenix Suns,PHO
+bridgmi01,Mikal Bridges,New York Knicks,NYK
+bridgmi02,Miles Bridges,Charlotte Hornets,CHO
+brogdma01,Malcolm Brogdon,Washington Wizards,WAS
+brookdi01,Dillon Brooks,Houston Rockets,HOU
+brownja02,Jaylen Brown,Boston Celtics,BOS
+brownko01,Kobe Brown,Los Angeles Clippers,LAC
+brownmo01,Moses Brown,Indiana Pacers,IND
+brunsja01,Jalen Brunson,New York Knicks,NYK
+bryanth01,Thomas Bryant,Miami Heat,MIA
+bufkiko01,Kobe Bufkin,Atlanta Hawks,ATL
+burksal01,Alec Burks,Miami Heat,MIA
+butleja02,Jared Butler,Washington Wizards,WAS
+butleji01,Jimmy Butler,Miami Heat,MIA
+buzelma01,Matas Buzelis,Chicago Bulls,CHI
+cainja01,Jamal Cain,New Orleans Pelicans,NOP
+caldwke01,Kentavious Caldwell-Pope,Orlando Magic,ORL
+camarto01,Toumani Camara,Portland Trail Blazers,POR
+cancavl01,Vlatko Cancar,Denver Nuggets,DEN
+capelca01,Clint Capela,Atlanta Hawks,ATL
+carlsbr01,Branden Carlson,Oklahoma City Thunder,OKC
+carrica01,Carlton Carrington,Washington Wizards,WAS
+carteje01,Jevon Carter,Chicago Bulls,CHI
+cartewe01,Wendell Carter Jr.,Orlando Magic,ORL
+cartodj01,D.J. Carton,Toronto Raptors,TOR
+carusal01,Alex Caruso,Oklahoma City Thunder,OKC
+castlco01,Colin Castleton,Memphis Grizzlies,MEM
+castlst01,Stephon Castle,San Antonio Spurs,SAS
+champju01,Justin Champagnie,Washington Wizards,WAS
+champju02,Julian Champagnie,San Antonio Spurs,SAS
+chomcul01,Ulrich Chomche,Toronto Raptors,TOR
+chrisma02,Max Christie,Los Angeles Lakers,LAL
+cissosi01,Sidy Cissoko,San Antonio Spurs,SAS
+clarkbr01,Brandon Clarke,Memphis Grizzlies,MEM
+clarkjo01,Jordan Clarkson,Utah Jazz,UTA
+claxtni01,Nicolas Claxton,Brooklyn Nets,BRK
+clingdo01,Donovan Clingan,Portland Trail Blazers,POR
+clownno01,Noah Clowney,Brooklyn Nets,BRK
+coffeam01,Amir Coffey,Los Angeles Clippers,LAC
+colliis01,Isaiah Collier,Utah Jazz,UTA
+collijo01,John Collins,Utah Jazz,UTA
+colliza01,Zach Collins,San Antonio Spurs,SAS
+conlemi01,Mike Conley,Minnesota Timberwolves,MIN
+connapa01,Pat Connaughton,Milwaukee Bucks,MIL
+coulibi01,Bilal Coulibaly,Washington Wizards,WAS
+councri01,Ricky Council IV,Philadelphia 76ers,PHI
+craigto01,Torrey Craig,Chicago Bulls,CHI
+cuiyo01,Yongxi Cui,Brooklyn Nets,BRK
+cunnica01,Cade Cunningham,Detroit Pistons,DET
+curryse01,Seth Curry,Charlotte Hornets,CHO
+curryst01,Stephen Curry,Golden State Warriors,GSW
+dadiepa01,Pacome Dadiet,New York Knicks,NYK
+daniedy01,Dyson Daniels,Atlanta Hawks,ATL
+dasiltr01,Tristan Da Silva,Orlando Magic,ORL
+davisan02,Anthony Davis,Los Angeles Lakers,LAL
+davisjd01,JD Davison,Boston Celtics,BOS
+davisjo06,Johnny Davis,Washington Wizards,WAS
+derozde01,DeMar DeRozan,Sacramento Kings,SAC
+diabamo01,Moussa Diabate,Charlotte Hornets,CHO
+dickgr01,Gradey Dick,Toronto Raptors,TOR
+diengou01,Ousmane Dieng,Oklahoma City Thunder,OKC
+dilliro01,Rob Dillingham,Minnesota Timberwolves,MIN
+dinwisp01,Spencer Dinwiddie,Dallas Mavericks,DAL
+divindo01,Donte DiVincenzo,Minnesota Timberwolves,MIN
+doncilu01,Luka Doncic,Dallas Mavericks,DAL
+dortlu01,Luguentz Dort,Oklahoma City Thunder,OKC
+dosunay01,Ayo Dosunmu,Chicago Bulls,CHI
+dowtije01,Jeff Dowtin,Philadelphia 76ers,PHI
+doziepj01,PJ Dozier,Minnesota Timberwolves,MIN
+drumman01,Andre Drummond,Philadelphia 76ers,PHI
+duartch01,Chris Duarte,Chicago Bulls,CHI
+ducasal01,Alex Ducas,Oklahoma City Thunder,OKC
+dukeda01,David Duke Jr.,San Antonio Spurs,SAS
+dunnkr01,Kris Dunn,Los Angeles Clippers,LAC
+dunnry01,Ryan Dunn,Phoenix Suns,PHO
+duranke01,Kevin Durant,Phoenix Suns,PHO
+durenja01,Jalen Duren,Detroit Pistons,DET
+easonta01,Tari Eason,Houston Rockets,HOU
+edeyza01,Zach Edey,Memphis Grizzlies,MEM
+edwaran01,Anthony Edwards,Minnesota Timberwolves,MIN
+edwarju01,Justin Edwards,Philadelphia 76ers,PHI
+edwarke02,Kessler Edwards,Dallas Mavericks,DAL
+elliske01,Keon Ellis,Sacramento Kings,SAC
+embiijo01,Joel Embiid,Philadelphia 76ers,PHI
+eubandr01,Drew Eubanks,Utah Jazz,UTA
+fernabr01,Bruno Fernando,Toronto Raptors,TOR
+filipky01,Kyle Filipowski,Utah Jazz,UTA
+finnedo01,Dorian Finney-Smith,Brooklyn Nets,BRK
+flaglad01,Adam Flagler,Oklahoma City Thunder,OKC
+fontesi01,Simone Fontecchio,Detroit Pistons,DET
+foxde01,De'Aaron Fox,Sacramento Kings,SAC
+freemen01,Enrique Freeman,Indiana Pacers,IND
+furphjo01,Johnny Furphy,Indiana Pacers,IND
+gaffoda01,Daniel Gafford,Dallas Mavericks,DAL
+garlada01,Darius Garland,Cleveland Cavaliers,CLE
+garzalu01,Luka Garza,Minnesota Timberwolves,MIN
+georgke01,Keyonte George,Utah Jazz,UTA
+georgky01,Kyshawn George,Washington Wizards,WAS
+georgpa01,Paul George,Philadelphia 76ers,PHI
+gibsota01,Taj Gibson,Charlotte Hornets,CHO
+giddejo01,Josh Giddey,Chicago Bulls,CHI
+gilgesh01,Shai Gilgeous-Alexander,Oklahoma City Thunder,OKC
+gillan01,Anthony Gill,Washington Wizards,WAS
+gilleco01,Collin Gillespie,Phoenix Suns,PHO
+goberru01,Rudy Gobert,Minnesota Timberwolves,MIN
+gordoaa01,Aaron Gordon,Denver Nuggets,DEN
+gordoer01,Eric Gordon,Philadelphia 76ers,PHI
+gortmja01,Jazian Gortman,Dallas Mavericks,DAL
+grantje01,Jerami Grant,Portland Trail Blazers,POR
+greenaj01,A.J. Green,Milwaukee Bucks,MIL
+greendr01,Draymond Green,Golden State Warriors,GSW
+greenja02,Javonte Green,New Orleans Pelicans,NOP
+greenja05,Jalen Green,Houston Rockets,HOU
+greenje02,Jeff Green,Houston Rockets,HOU
+greenjo02,Josh Green,Charlotte Hornets,CHO
+grimequ01,Quentin Grimes,Dallas Mavericks,DAL
+gueyemo02,Mouhamed Gueye,Atlanta Hawks,ATL
+hachiru01,Rui Hachimura,Los Angeles Lakers,LAL
+halibty01,Tyrese Haliburton,Indiana Pacers,IND
+hallpj01,PJ Hall,Denver Nuggets,DEN
+hardati02,Tim Hardaway Jr.,Detroit Pistons,DET
+hardeja01,James Harden,Los Angeles Clippers,LAC
+hardyja02,Jaden Hardy,Dallas Mavericks,DAL
+harriga01,Gary Harris,Orlando Magic,ORL
+harrito02,Tobias Harris,Detroit Pistons,DET
+harteis01,Isaiah Hartenstein,Oklahoma City Thunder,OKC
+hartjo01,Josh Hart,New York Knicks,NYK
+hausesa01,Sam Hauser,Boston Celtics,BOS
+hawkijo01,Jordan Hawkins,New Orleans Pelicans,NOP
+hayesja02,Jaxson Hayes,Los Angeles Lakers,LAL
+hendesc01,Scoot Henderson,Portland Trail Blazers,POR
+hendrita0,Taylor Hendricks,Utah Jazz,UTA
+herroty01,Tyler Herro,Miami Heat,MIA
+hieldbu01,Buddy Hield,Golden State Warriors,GSW
+highsha01,Haywood Highsmith,Miami Heat,MIA
+holidaa01,Aaron Holiday,Houston Rockets,HOU
+holidjr01,Jrue Holiday,Boston Celtics,BOS
+hollaro01,Ron Holland,Detroit Pistons,DET
+holmeri01,Richaun Holmes,Washington Wizards,WAS
+holmgch01,Chet Holmgren,Oklahoma City Thunder,OKC
+hoodsja01,Jalen Hood-Schifino,Los Angeles Lakers,LAL
+horfoal01,Al Horford,Boston Celtics,BOS
+hortota01,Talen Horton-Tucker,Chicago Bulls,CHI
+houstca01,Caleb Houstan,Orlando Magic,ORL
+howarje01,Jett Howard,Orlando Magic,ORL
+huertke01,Kevin Huerter,Sacramento Kings,SAC
+huffja01,Jay Huff,Memphis Grizzlies,MEM
+hukpoar01,Ariel Hukporti,New York Knicks,NYK
+huntede01,De'Andre Hunter,Atlanta Hawks,ATL
+hylanbo01,Bones Hyland,Los Angeles Clippers,LAC
+ighodos01,Oso Ighodaro,Phoenix Suns,PHO
+inglejo01,Joe Ingles,Minnesota Timberwolves,MIN
+ingrabr01,Brandon Ingram,New Orleans Pelicans,NOP
+ingraha01,Harrison Ingram,San Antonio Spurs,SAS
+irvinky01,Kyrie Irving,Dallas Mavericks,DAL
+isaacjo01,Jonathan Isaac,Orlando Magic,ORL
+iveyja01,Jaden Ivey,Detroit Pistons,DET
+jacksan01,Andre Jackson Jr.,Milwaukee Bucks,MIL
+jacksis01,Isaiah Jackson,Indiana Pacers,IND
+jacksja02,Jaren Jackson Jr.,Memphis Grizzlies,MEM
+jacksqu01,Quenton Jackson,Indiana Pacers,IND
+jacksre01,Reggie Jackson,Philadelphia 76ers,PHI
+jackstr02,Trayce Jackson-Davis,Golden State Warriors,GSW
+jamesbr02,Bronny James,Los Angeles Lakers,LAL
+jamesle01,LeBron James,Los Angeles Lakers,LAL
+jaqueja01,Jaime Jaquez Jr.,Miami Heat,MIA
+jemistr01,Trey Jemison,New Orleans Pelicans,NOP
+jenkida01,Daniss Jenkins,Detroit Pistons,DET
+jeromty01,Ty Jerome,Cleveland Cavaliers,CLE
+joeis01,Isaiah Joe,Oklahoma City Thunder,OKC
+johnsaj01,AJ Johnson,Milwaukee Bucks,MIL
+johnsca02,Cameron Johnson,Brooklyn Nets,BRK
+johnsja01,James Johnson,Indiana Pacers,IND
+johnsja05,Jalen Johnson,Atlanta Hawks,ATL
+johnske04,Keldon Johnson,San Antonio Spurs,SAS
+johnske07,Keon Johnson,Brooklyn Nets,BRK
+jokicni01,Nikola Jokic,Denver Nuggets,DEN
+jonesco02,Colby Jones,Sacramento Kings,SAC
+jonesde02,Derrick Jones Jr.,Los Angeles Clippers,LAC
+jonesdi01,Dillon Jones,Oklahoma City Thunder,OKC
+joneshe01,Herbert Jones,New Orleans Pelicans,NOP
+jonesis01,Isaac Jones,Sacramento Kings,SAC
+joneska01,Kai Jones,Los Angeles Clippers,LAC
+jonesma05,Mason Jones,Sacramento Kings,SAC
+jonessp01,Spencer Jones,Denver Nuggets,DEN
+jonestr01,Tre Jones,San Antonio Spurs,SAS
+jonesty01,Tyus Jones,Phoenix Suns,PHO
+jordade01,DeAndre Jordan,Denver Nuggets,DEN
+josepco01,Cory Joseph,Orlando Magic,ORL
+jovicni01,Nikola Jovic,Miami Heat,MIA
+juzanjo01,Johnny Juzang,Utah Jazz,UTA
+kawamyu01,Yuki Kawamura,Memphis Grizzlies,MEM
+kennalu01,Luke Kennard,Memphis Grizzlies,MEM
+kesslwa01,Walker Kessler,Utah Jazz,UTA
+kispeco01,Corey Kispert,Washington Wizards,WAS
+klebima01,Maxi Kleber,Dallas Mavericks,DAL
+knechda01,Dalton Knecht,Los Angeles Lakers,LAL
+kolekty01,Tyler Kolek,New York Knicks,NYK
+kolokch01,Christian Koloko,Los Angeles Lakers,LAL
+konchjo01,John Konchar,Memphis Grizzlies,MEM
+kornelu01,Luke Kornet,Boston Celtics,BOS
+krejcvi01,Vit Krejci,Atlanta Hawks,ATL
+kuminjo01,Jonathan Kuminga,Golden State Warriors,GSW
+kuzmaky01,Kyle Kuzma,Washington Wizards,WAS
+landajo01,Jock Landale,Houston Rockets,HOU
+laravja01,Jake LaRavia,Memphis Grizzlies,MEM
+larsspe01,Pelle Larsson,Miami Heat,MIA
+lavinza01,Zach LaVine,Chicago Bulls,CHI
+leeda03,Damion Lee,Phoenix Suns,PHO
+lenal01,Alex Len,Sacramento Kings,SAC
+leonsma01,Malevy Leons,Oklahoma City Thunder,OKC
+leverca01,Caris LeVert,Cleveland Cavaliers,CLE
+lewisma05,Maxwell Lewis,Los Angeles Lakers,LAL
+liddeej01,E.J. Liddell,Chicago Bulls,CHI
+lillada01,Damian Lillard,Milwaukee Bucks,MIL
+livelde01,Dereck Lively II,Dallas Mavericks,DAL
+livinch01,Chris Livingston,Milwaukee Bucks,MIL
+looneke01,Kevon Looney,Golden State Warriors,GSW
+lopezbr01,Brook Lopez,Milwaukee Bucks,MIL
+loveke01,Kevin Love,Miami Heat,MIA
+lowryky01,Kyle Lowry,Philadelphia 76ers,PHI
+lylestr01,Trey Lyles,Sacramento Kings,SAC
+mamuksa01,Sandro Mamukelashvili,San Antonio Spurs,SAS
+mannte01,Terance Mann,Los Angeles Clippers,LAC
+manntr01,Tre Mann,Charlotte Hornets,CHO
+markkla01,Lauri Markkanen,Utah Jazz,UTA
+marshna01,Naji Marshall,Dallas Mavericks,DAL
+martica02,Caleb Martin,Philadelphia 76ers,PHI
+martico01,Cody Martin,Charlotte Hornets,CHO
+martija02,Jaylen Martin,Brooklyn Nets,BRK
+martike04,KJ Martin,Philadelphia 76ers,PHI
+martity01,Tyrese Martin,Brooklyn Nets,BRK
+mathega01,Garrison Mathews,Atlanta Hawks,ATL
+mathube01,Bennedict Mathurin,Indiana Pacers,IND
+matkoka01,Karlo Matkovic,New Orleans Pelicans,NOP
+maxeyty01,Tyrese Maxey,Philadelphia 76ers,PHI
+mcbrimi01,Miles McBride,New York Knicks,NYK
+mccaija01,Jared McCain,Philadelphia 76ers,PHI
+mccluma01,Mac McClung,Orlando Magic,ORL
+mccolcj01,CJ McCollum,New Orleans Pelicans,NOP
+mccontj01,T.J. McConnell,Indiana Pacers,IND
+mcdanja02,Jaden McDaniels,Minnesota Timberwolves,MIN
+mcderdo01,Doug McDermott,Sacramento Kings,SAC
+mclaujo01,Jordan McLaughlin,Sacramento Kings,SAC
+mcveija01,Jack McVeigh,Houston Rockets,HOU
+meltode01,De'Anthony Melton,Golden State Warriors,GSW
+merrisa01,Sam Merrill,Cleveland Cavaliers,CLE
+micicva01,Vasilije Micic,Charlotte Hornets,CHO
+millebr02,Brandon Miller,Charlotte Hornets,CHO
+millejo02,Jordan Miller,Los Angeles Clippers,LAC
+millspa02,Patty Mills,Utah Jazz,UTA
+miltosh01,Shake Milton,Brooklyn Nets,BRK
+minayju01,Justin Minaya,Portland Trail Blazers,POR
+minixri01,Riley Minix,San Antonio Spurs,SAS
+minotjo01,Josh Minott,Minnesota Timberwolves,MIN
+missiyv01,Yves Missi,New Orleans Pelicans,NOP
+mitchaj01,Ajay Mitchell,Oklahoma City Thunder,OKC
+mitchda01,Davion Mitchell,Toronto Raptors,TOR
+mitchdo01,Donovan Mitchell,Cleveland Cavaliers,CLE
+mobleev01,Evan Mobley,Cleveland Cavaliers,CLE
+mogbojo01,Jonathan Mogbo,Toronto Raptors,TOR
+monkma01,Malik Monk,Sacramento Kings,SAC
+moodymo01,Moses Moody,Golden State Warriors,GSW
+mooreta02,Taze Moore,Portland Trail Blazers,POR
+moorewe01,Wendell Moore Jr.,Detroit Pistons,DET
+moranja01,Ja Morant,Memphis Grizzlies,MEM
+morrima02,Markieff Morris,Dallas Mavericks,DAL
+morrimo01,Monte Morris,Phoenix Suns,PHO
+murphtr02,Trey Murphy III,New Orleans Pelicans,NOP
+murrade01,Dejounte Murray,New Orleans Pelicans,NOP
+murraja01,Jamal Murray,Denver Nuggets,DEN
+murrake02,Keegan Murray,Sacramento Kings,SAC
+murrakr01,Kris Murray,Portland Trail Blazers,POR
+mykhasv01,Svi Mykhailiuk,Utah Jazz,UTA
+nancela02,Larry Nance Jr.,Atlanta Hawks,ATL
+nembhan01,Andrew Nembhard,Indiana Pacers,IND
+nesmiaa01,Aaron Nesmith,Indiana Pacers,IND
+newtotr01,Tristen Newton,Indiana Pacers,IND
+niangge01,Georges Niang,Cleveland Cavaliers,CLE
+nnajize01,Zeke Nnaji,Denver Nuggets,DEN
+nowelja01,Jaylen Nowell,New Orleans Pelicans,NOP
+nurkiju01,Jusuf Nurkic,Phoenix Suns,PHO
+okogijo01,Josh Okogie,Phoenix Suns,PHO
+okongon01,Onyeka Okongwu,Atlanta Hawks,ATL
+okorois01,Isaac Okoro,Cleveland Cavaliers,CLE
+onealro01,Royce O'Neale,Phoenix Suns,PHO
+oubreke01,Kelly Oubre Jr.,Philadelphia 76ers,PHI
+paulch01,Chris Paul,San Antonio Spurs,SAS
+payneca01,Cameron Payne,New York Knicks,NYK
+paytoel01,Elfrid Payton,New Orleans Pelicans,NOP
+paytoga02,Gary Payton II,Golden State Warriors,GSW
+peterdr01,Drew Peterson,Boston Celtics,BOS
+phillju01,Julian Phillips,Chicago Bulls,CHI
+pickeja02,Jalen Pickett,Denver Nuggets,DEN
+pippesc02,Scotty Pippen Jr.,Memphis Grizzlies,MEM
+plumlma01,Mason Plumlee,Phoenix Suns,PHO
+podzibr01,Brandin Podziemski,Golden State Warriors,GSW
+poeltja01,Jakob Poeltl,Toronto Raptors,TOR
+poolejo01,Jordan Poole,Washington Wizards,WAS
+portecr01,Craig Porter Jr.,Cleveland Cavaliers,CLE
+porteke02,Kevin Porter Jr.,Los Angeles Clippers,LAC
+portemi01,Michael Porter Jr.,Denver Nuggets,DEN
+portibo01,Bobby Portis,Milwaukee Bucks,MIL
+porzikr01,Kristaps Porzingis,Boston Celtics,BOS
+poweldw01,Dwight Powell,Dallas Mavericks,DAL
+powelno01,Norman Powell,Los Angeles Clippers,LAC
+princta02,Taurean Prince,Milwaukee Bucks,MIL
+pritcpa01,Payton Pritchard,Boston Celtics,BOS
+prospol01,Olivier-Maxence Prosper,Dallas Mavericks,DAL
+queentr01,Trevelin Queen,Orlando Magic,ORL
+quetane01,Neemias Queta,Boston Celtics,BOS
+quickim01,Immanuel Quickley,Toronto Raptors,TOR
+quinole01,Lester Quinones,Philadelphia 76ers,PHI
+randlju01,Julius Randle,Minnesota Timberwolves,MIN
+reathdu01,Duop Reath,Portland Trail Blazers,POR
+reaveau01,Austin Reaves,Los Angeles Lakers,LAL
+reddica01,Cam Reddish,Los Angeles Lakers,LAL
+reedpa01,Paul Reed,Detroit Pistons,DET
+reeseal01,Alex Reese,Oklahoma City Thunder,OKC
+reevean01,Antonio Reeves,New Orleans Pelicans,NOP
+reidna01,Naz Reid,Minnesota Timberwolves,MIN
+rhodeja01,Jared Rhoden,Charlotte Hornets,CHO
+richajo01,Josh Richardson,Miami Heat,MIA
+richani01,Nick Richards,Charlotte Hornets,CHO
+risacza01,Zaccharie Risacher,Atlanta Hawks,ATL
+robbili01,Liam Robbins,Milwaukee Bucks,MIL
+robindu01,Duncan Robinson,Miami Heat,MIA
+robinje02,Jeremiah Robinson-Earl,New Orleans Pelicans,NOP
+robinor01,Orlando Robinson,Sacramento Kings,SAC
+roddyda01,David Roddy,Atlanta Hawks,ATL
+rolliry01,Ryan Rollins,Milwaukee Bucks,MIL
+roziete01,Terry Rozier,Miami Heat,MIA
+ruperra01,Rayan Rupert,Portland Trail Blazers,POR
+russeda01,D'Angelo Russell,Los Angeles Lakers,LAL
+ryanma01,Matt Ryan,New York Knicks,NYK
+sabondo01,Domantas Sabonis,Sacramento Kings,SAC
+salauti01,Tidjane Salaun,Charlotte Hornets,CHO
+sanogad01,Adama Sanogo,Chicago Bulls,CHI
+santogu01,Gui Santos,Golden State Warriors,GSW
+saricda01,Dario Saric,Denver Nuggets,DEN
+sarral01,Alex Sarr,Washington Wizards,WAS
+sassema01,Marcus Sasser,Detroit Pistons,DET
+scheiba01,Baylor Scheierman,Boston Celtics,BOS
+schrode01,Dennis Schroder,Brooklyn Nets,BRK
+sengual01,Alperen Sengun,Houston Rockets,HOU
+sensabr01,Brice Sensabaugh,Utah Jazz,UTA
+sextoco01,Collin Sexton,Utah Jazz,UTA
+shannte01,Terrence Shannon Jr.,Minnesota Timberwolves,MIN
+sharpsh01,Shaedon Sharpe,Portland Trail Blazers,POR
+sheadja01,Jamal Shead,Toronto Raptors,TOR
+sheppbe01,Ben Sheppard,Indiana Pacers,IND
+sheppre01,Reed Sheppard,Houston Rockets,HOU
+siakapa01,Pascal Siakam,Indiana Pacers,IND
+simmobe01,Ben Simmons,Brooklyn Nets,BRK
+simonan01,Anfernee Simons,Portland Trail Blazers,POR
+simpskj01,KJ Simpson,Charlotte Hornets,CHO
+simsje01,Jericho Sims,New York Knicks,NYK
+smartma01,Marcus Smart,Memphis Grizzlies,MEM
+smithdr01,Dru Smith,Miami Heat,MIA
+smithja04,Jalen Smith,Chicago Bulls,CHI
+smithja05,Jabari Smith Jr.,Houston Rockets,HOU
+smithni01,Nick Smith Jr.,Charlotte Hornets,CHO
+smithty02,Tyler Smith,Milwaukee Bucks,MIL
+sochaje01,Jeremy Sochan,San Antonio Spurs,SAS
+spencca01,Cam Spencer,Memphis Grizzlies,MEM
+spencpa01,Pat Spencer,Golden State Warriors,GSW
+sprinja01,Jaden Springer,Boston Celtics,BOS
+stewais01,Isaiah Stewart,Detroit Pistons,DET
+strawju01,Julian Strawther,Denver Nuggets,DEN
+suggsja01,Jalen Suggs,Orlando Magic,ORL
+swideco01,Cole Swider,Detroit Pistons,DET
+tateja01,Jae'Sean Tate,Houston Rockets,HOU
+tatumja01,Jayson Tatum,Boston Celtics,BOS
+templga01,Garrett Temple,Toronto Raptors,TOR
+terryda01,Dalen Terry,Chicago Bulls,CHI
+theisda01,Daniel Theis,New Orleans Pelicans,NOP
+thomaca02,Cam Thomas,Brooklyn Nets,BRK
+thompam01,Amen Thompson,Houston Rockets,HOU
+thompau01,Ausar Thompson,Detroit Pistons,DET
+thompkl01,Klay Thompson,Dallas Mavericks,DAL
+thomptr01,Tristan Thompson,Cleveland Cavaliers,CLE
+thorjt01,JT Thor,Cleveland Cavaliers,CLE
+tillmxa01,Xavier Tillman Sr.,Boston Celtics,BOS
+toppija01,Jacob Toppin,New York Knicks,NYK
+toppiob01,Obi Toppin,Indiana Pacers,IND
+townska01,Karl-Anthony Towns,New York Knicks,NYK
+travelu01,Luke Travers,Cleveland Cavaliers,CLE
+trentga02,Gary Trent Jr.,Milwaukee Bucks,MIL
+turnemy01,Myles Turner,Indiana Pacers,IND
+tysonhu01,Hunter Tyson,Denver Nuggets,DEN
+tysonja01,Jaylon Tyson,Cleveland Cavaliers,CLE
+umudest01,Stanley Umude,Milwaukee Bucks,MIL
+valanjo01,Jonas Valanciunas,Washington Wizards,WAS
+vanvlfr01,Fred VanVleet,Houston Rockets,HOU
+vassede01,Devin Vassell,San Antonio Spurs,SAS
+vincega01,Gabe Vincent,Los Angeles Lakers,LAL
+vucevni01,Nikola Vucevic,Chicago Bulls,CHI
+wadede01,Dean Wade,Cleveland Cavaliers,CLE
+wagnefr01,Franz Wagner,Orlando Magic,ORL
+wagnemo01,Moritz Wagner,Orlando Magic,ORL
+walkeja01,Jabari Walker,Portland Trail Blazers,POR
+walkeja02,Jarace Walker,Indiana Pacers,IND
+wallaca01,Cason Wallace,Oklahoma City Thunder,OKC
+wallake01,Keaton Wallace,Atlanta Hawks,ATL
+walshjo01,Jordan Walsh,Boston Celtics,BOS
+walteja01,Ja'Kobe Walter,Toronto Raptors,TOR
+wareke01,Kel'el Ware,Miami Heat,MIA
+washipj01,P.J. Washington,Dallas Mavericks,DAL
+washity02,TyTy Washington Jr.,Phoenix Suns,PHO
+waterli01,Lindy Waters III,Golden State Warriors,GSW
+watfotr01,Trendon Watford,Brooklyn Nets,BRK
+watsope01,Peyton Watson,Denver Nuggets,DEN
+wellsja01,Jaylen Wells,Memphis Grizzlies,MEM
+wembavi01,Victor Wembanyama,San Antonio Spurs,SAS
+weslebl01,Blake Wesley,San Antonio Spurs,SAS
+westbru01,Russell Westbrook,Denver Nuggets,DEN
+whiteco01,Coby White,Chicago Bulls,CHI
+whiteda01,Dariq Whitehead,Brooklyn Nets,BRK
+whitede01,Derrick White,Boston Celtics,BOS
+whitmca01,Cam Whitmore,Houston Rockets,HOU
+wiggiaa01,Aaron Wiggins,Oklahoma City Thunder,OKC
+wiggian01,Andrew Wiggins,Golden State Warriors,GSW
+willial06,Alondes Williams,Detroit Pistons,DET
+willibr03,Brandon Williams,Dallas Mavericks,DAL
+willico04,Cody Williams,Utah Jazz,UTA
+willigr01,Grant Williams,Charlotte Hornets,CHO
+willija06,Jalen Williams,Oklahoma City Thunder,OKC
+willije02,Jeenathan Williams,Houston Rockets,HOU
+willike04,Kenrich Williams,Oklahoma City Thunder,OKC
+willipa01,Patrick Williams,Chicago Bulls,CHI
+williro04,Robert Williams,Portland Trail Blazers,POR
+willivi01,Vince Williams Jr.,Memphis Grizzlies,MEM
+willizi01,Zion Williamson,New Orleans Pelicans,NOP
+willizi02,Ziaire Williams,Brooklyn Nets,BRK
+wilsoja03,Jalen Wilson,Brooklyn Nets,BRK
+wisemja01,James Wiseman,Indiana Pacers,IND
+wrighde01,Delon Wright,Milwaukee Bucks,MIL
+yabusgu01,Guerschon Yabusele,Philadelphia 76ers,PHI
+youngtr01,Trae Young,Atlanta Hawks,ATL
+zubaciv01,Ivica Zubac,Los Angeles Clippers,LAC

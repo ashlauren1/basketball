@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/hockey/images/favicon.ico">
+    <script src="modalsMobileNavAndSearch.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="commonStylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <title>Leaders Directory</title>
+</head>
+
+<body>
+<div id="mobileTopnav">
+    <div class="menuBarContainer mobile active">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>Menu</a>
+    </div>
+    <div id="myLinks">
+        <ul class="navLinks">
+            <li class="nav-link"><a href="/basketball/" target="_blank">Projections</a></li>
+            <li class="nav-link"><a href="/basketball/players/" target="_blank">Players</a></li>
+            <li class="nav-link"><a href="/basketball/teams/" target="_blank">Teams</a></li>
+            <li class="nav-link"><a href="/basketball/leaders/" target="_blank">Leaders</a></li>
+            <li class="nav-link"><a href="/basketball/leaders/standings.html" target="_blank">Standings</a></li>
+            <li class="nav-link"><a href="/basketball/boxscores/" target="_blank">Scores</a></li>
+            <li class="nav-link"><a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a></li>
+            <li class="nav-link"><a href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="pageHeading">
+	<div class="topnav">
+        <a class="topnav-item" href="/basketball/" target="_blank">Projections</a>
+        <a class="topnav-item" href="/basketball/players/" target="_blank">Players</a>
+        <a class="topnav-item" href="/basketball/teams/" target="_blank">Teams</a>
+        <a class="topnav-item" href="/basketball/leaders/" target="_blank">Leaders</a>
+        <a class="topnav-item" href="/basketball/leaders/standings.html" target="_blank">Standings</a>
+        <a class="topnav-item" href="/basketball/boxscores/" target="_blank">Scores</a>
+        <a class="topnav-item" href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
+        <a class="topnav-item" href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a>
+    </div>
+    <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search for a player or team...">
+        <button id="search-button">Search</button>
+        <div id="search-results"></div>
+    </div>
+    <div class="header">
+        <h1>NBA 2024-25 Leaders</h1>
+    </div>
+</div>
+
+    <button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
+
+<main>
+<div id="pageContainer">
+    <div id="seasons_list_container">
+        <p class="title-caption">Leaders by Season:</p>
+		<ul class="seasons_list">
+            <li><a href="/basketball/leaders/2024-25.html">2024-25</a></li>
+		</ul>
+	</div>
+    <p class="title-caption">Current Leaders:</p>
+    <div class="tabular">
+    <div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Games Played (Tie)</strong></div>
+            <div><a href="/basketball/players/wagnefr01.html">Franz Wagner</a> (24)</div>
+        </div>
+                    
+        <div class="tabular_row">
+            <div></div>
+            <div><a href="/basketball/players/hardeja01.html">James Harden</a> (24)</div>
+        </div>
+                    
+        <div class="tabular_row">
+            <div></div>
+            <div><a href="/basketball/players/beaslma01.html">Malik Beasley</a> (24)</div>
+        </div>
+                    
+        <div class="tabular_row">
+            <div></div>
+            <div><a href="/basketball/players/zubaciv01.html">Ivica Zubac</a> (24)</div>
+        </div>
+                    
+        <div class="tabular_row">
+            <div></div>
+            <div><a href="/basketball/players/wagnemo01.html">Moritz Wagner</a> (24)</div>
+        </div>
+                    
+        <div class="tabular_row">
+            <div></div>
+            <div><a href="/basketball/players/jonesde02.html">Derrick Jones Jr.</a> (24)</div>
+        </div>
+                    
+        <div class="tabular_row">
+            <div></div>
+            <div><a href="/basketball/players/coffeam01.html">Amir Coffey</a> (24)</div>
+        </div>
+                    
+        <div class="tabular_row">
+            <div></div>
+            <div><a href="/basketball/players/blackan01.html">Anthony Black</a> (24)</div>
+        </div>
+                    
+        <div class="tabular_row">
+            <div></div>
+            <div><a href="/basketball/players/dunnkr01.html">Kris Dunn</a> (24)</div>
+        </div>
+                    
+        <div class="tabular_row">
+            <div></div>
+            <div><a href="/basketball/players/stewais01.html">Isaiah Stewart</a> (24)</div>
+        </div>
+                    
+        <div class="tabular_row">
+            <div></div>
+            <div><a href="/basketball/players/hollaro01.html">Ron Holland</a> (24)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Points</strong></div>
+            <div><a href="/basketball/players/gilgesh01.html">Shai Gilgeous-Alexander</a> (625)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Rebounds</strong></div>
+            <div><a href="/basketball/players/zubaciv01.html">Ivica Zubac</a> (292)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Assists</strong></div>
+            <div><a href="/basketball/players/youngtr01.html">Trae Young</a> (263)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Steals</strong></div>
+            <div><a href="/basketball/players/daniedy01.html">Dyson Daniels</a> (64)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Blocks</strong></div>
+            <div><a href="/basketball/players/wembavi01.html">Victor Wembanyama</a> (61)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Turnovers</strong></div>
+            <div><a href="/basketball/players/hardeja01.html">James Harden</a> (105)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Fouls</strong></div>
+            <div><a href="/basketball/players/poeltja01.html">Jakob Poeltl</a> (83)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Offensive Rebounds</strong></div>
+            <div><a href="/basketball/players/zubaciv01.html">Ivica Zubac</a> (96)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Defensive Rebounds</strong></div>
+            <div><a href="/basketball/players/townska01.html">Karl-Anthony Towns</a> (204)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Minutes Played</strong></div>
+            <div><a href="/basketball/players/foxde01.html">De'Aaron Fox</a> (829)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Field Goals</strong></div>
+            <div><a href="/basketball/players/antetgi01.html">Giannis Antetokounmpo</a> (242)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Field Goals Attempted</strong></div>
+            <div><a href="/basketball/players/wagnefr01.html">Franz Wagner</a> (450)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Field Goal %</strong></div>
+            <div><a href="/basketball/players/kesslwa01.html">Walker Kessler</a> (73.7)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>3-Pointers</strong></div>
+            <div><a href="/basketball/players/edwaran01.html">Anthony Edwards</a> (94)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>3-Point Attempts</strong></div>
+            <div><a href="/basketball/players/ballla01.html">LaMelo Ball</a> (236)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>3-Point %</strong></div>
+            <div><a href="/basketball/players/edeyza01.html">Zach Edey</a> (60.0)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Free Throws</strong></div>
+            <div><a href="/basketball/players/hardeja01.html">James Harden</a> (155)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>Free Throw Attempts</strong></div>
+            <div><a href="/basketball/players/antetgi01.html">Giannis Antetokounmpo</a> (216)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>2-Pointers</strong></div>
+            <div><a href="/basketball/players/antetgi01.html">Giannis Antetokounmpo</a> (239)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>2-Point Attempts</strong></div>
+            <div><a href="/basketball/players/antetgi01.html">Giannis Antetokounmpo</a> (379)</div>
+        </div>
+                    </div><div class="groupedTabular">
+        <div class="tabular_row">
+            <div><strong>2-Point %</strong></div>
+            <div><a href="/basketball/players/hausesa01.html">Sam Hauser</a> (77.3)</div>
+        </div>
+                    </div>
+    </div>
+</div>
+</main>
+<div class="footer"></div>
+</body>
+</html>
+    

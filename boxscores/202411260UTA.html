@@ -1,0 +1,565 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="modalsMobileNavAndSearch.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="commonStylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script src="boxscoreScript.js"></script>
+    <title>UTA vs SAS</title>
+</head>
+<body>
+<div id="mobileTopnav">
+    <div class="menuBarContainer mobile active">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>Menu</a>
+    </div>
+    <div id="myLinks">
+        <ul class="navLinks">
+            <li class="nav-link"><a href="/basketball/" target="_blank">Projections</a></li>
+            <li class="nav-link"><a href="/basketball/players/" target="_blank">Players</a></li>
+            <li class="nav-link"><a href="/basketball/teams/" target="_blank">Teams</a></li>
+            <li class="nav-link"><a href="/basketball/leaders/" target="_blank">Leaders</a></li>
+            <li class="nav-link"><a href="/basketball/leaders/standings.html" target="_blank">Standings</a></li>
+            <li class="nav-link"><a href="/basketball/boxscores/" target="_blank">Scores</a></li>
+            <li class="nav-link"><a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a></li>
+            <li class="nav-link"><a href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="pageHeading">
+	<div class="topnav">
+        <a class="topnav-item" href="/basketball/" target="_blank">Projections</a>
+        <a class="topnav-item" href="/basketball/players/" target="_blank">Players</a>
+        <a class="topnav-item" href="/basketball/teams/" target="_blank">Teams</a>
+        <a class="topnav-item" href="/basketball/leaders/" target="_blank">Leaders</a>
+        <a class="topnav-item" href="/basketball/leaders/standings.html" target="_blank">Standings</a>
+        <a class="topnav-item" href="/basketball/boxscores/" target="_blank">Scores</a>
+        <a class="topnav-item" href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
+        <a class="topnav-item" href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a>
+    </div>
+    <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search for a player or team...">
+        <button id="search-button">Search</button>
+        <div id="search-results"></div>
+    </div>
+	<div class="header">
+        <h1>UTA vs SAS - 11/26/2024</h1>
+    </div>
+</div>
+    <button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
+    
+<div id="pageContainer">
+    <div id="tableContainer">
+        
+        <p class="title-caption"><a href="/basketball/teams/SAS.html" target="_blank">Utah Jazz - Home</a></p>
+        <table id="home-boxscore">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>PTS</th>
+                    <th>REB</th>
+                    <th>AST</th>
+                    <th>STL</th>
+                    <th>BLK</th>
+                    <th>TOV</th>
+                    <th>MP</th>
+                    <th>OREB</th>
+                    <th>DREB</th>
+                    <th>FG</th>
+                    <th>FGA</th>
+                    <th>3P</th>
+                    <th>3PA</th>
+                    <th>FT</th>
+                    <th>FTA</th>
+                    <th>PF</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/colliis01.html" target="_blank">Isaiah Collier</a></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>16.70</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/collijo01.html" target="_blank">John Collins</a></td>
+                    <td>20</td>
+                    <td>13</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>32.80</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/eubandr01.html" target="_blank">Drew Eubanks</a></td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>13.92</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/georgke01.html" target="_blank">Keyonte George</a></td>
+                    <td>26</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>34.05</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>16</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/juzanjo01.html" target="_blank">Johnny Juzang</a></td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>22.90</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/kesslwa01.html" target="_blank">Walker Kessler</a></td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>28.33</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>5</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/markkla01.html" target="_blank">Lauri Markkanen</a></td>
+                    <td>14</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>33.47</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>14</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/sensabr01.html" target="_blank">Brice Sensabaugh</a></td>
+                    <td>16</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>26.53</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>11</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/sextoco01.html" target="_blank">Collin Sexton</a></td>
+                    <td>20</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>31.30</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>8</td>
+                    <td>16</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td>115</td>
+                    <td>41</td>
+                    <td>24</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>21</td>
+                    <td></td>
+                    <td>10</td>
+                    <td>31</td>
+                    <td>43</td>
+                    <td>84</td>
+                    <td>13</td>
+                    <td>35</td>
+                    <td>16</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+            </tfoot>
+        </table>
+            
+        <p class="title-caption"><a href="/basketball/teams/SAS.html" target="_blank">San Antonio Spurs - Away</a></p>
+        <table id="away-boxscore">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>PTS</th>
+                    <th>REB</th>
+                    <th>AST</th>
+                    <th>STL</th>
+                    <th>BLK</th>
+                    <th>TOV</th>
+                    <th>MP</th>
+                    <th>OREB</th>
+                    <th>DREB</th>
+                    <th>FG</th>
+                    <th>FGA</th>
+                    <th>3P</th>
+                    <th>3PA</th>
+                    <th>FT</th>
+                    <th>FTA</th>
+                    <th>PF</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/barneha02.html" target="_blank">Harrison Barnes</a></td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>27.17</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/bassech01.html" target="_blank">Charles Bassey</a></td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>5.40</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/castlst01.html" target="_blank">Stephon Castle</a></td>
+                    <td>23</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>28.95</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>20</td>
+                    <td>3</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>4</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/champju02.html" target="_blank">Julian Champagnie</a></td>
+                    <td>15</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>35.72</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/colliza01.html" target="_blank">Zach Collins</a></td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>6.07</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/johnske04.html" target="_blank">Keldon Johnson</a></td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>19.18</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/jonestr01.html" target="_blank">Tre Jones</a></td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>19.48</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/mamuksa01.html" target="_blank">Sandro Mamukelashvili</a></td>
+                    <td>9</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>12.13</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/paulch01.html" target="_blank">Chris Paul</a></td>
+                    <td>14</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>27.62</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/wembavi01.html" target="_blank">Victor Wembanyama</a></td>
+                    <td>34</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>36.53</td>
+                    <td>0</td>
+                    <td>7</td>
+                    <td>13</td>
+                    <td>23</td>
+                    <td>6</td>
+                    <td>14</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align:left"><a href="/basketball/players/weslebl01.html" target="_blank">Blake Wesley</a></td>
+                    <td>11</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>21.75</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>0</td>
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td>128</td>
+                    <td>39</td>
+                    <td>30</td>
+                    <td>12</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td></td>
+                    <td>13</td>
+                    <td>26</td>
+                    <td>45</td>
+                    <td>93</td>
+                    <td>18</td>
+                    <td>48</td>
+                    <td>20</td>
+                    <td>26</td>
+                    <td>17</td>
+                </tr>
+            </tfoot>
+        </table>
+            
+            </div>
+            </div>
+        <div class="footer"></div>
+        </body>
+        </html>
+        

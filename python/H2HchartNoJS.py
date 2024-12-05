@@ -15,54 +15,51 @@ gamelogs_df = gamelogs_df.sort_values(by='Date')
 
 # Chart.js template for bar chart with betting line overlay and filter controls
 chart_script_template = """
-<div class="chart-container">
+<div class="chartContainer">
     <div class="barChart-filters">
         <div class="barChartFilter">
-            <label for="{stat}_{game_id}_{betting_line_id}_teamFilter">Opponent:</label>
-            <select id="{stat}_{game_id}_{betting_line_id}_teamFilter" onchange="applyFilters('{stat}', '{game_id}', '{betting_line_id}')">
+            <label for="{stat}_{game_id}_{betting_line_id}_teamFilter" class="barChartFilterLabel">Opponent:</label>
+            <select id="{stat}_{game_id}_{betting_line_id}_teamFilter" onchange="applyFilters('{stat}', '{game_id}', '{betting_line_id}')" class="barChartOptionFilter">
                 <option value="all">All</option>
                 {team_options}
             </select>
         </div>
-        
         <div class="barChartFilter">
-            <label for="{stat}_{game_id}_{betting_line_id}_homeAwayFilter">Home/Away:</label>
-            <select id="{stat}_{game_id}_{betting_line_id}_homeAwayFilter" onchange="applyFilters('{stat}', '{game_id}', '{betting_line_id}')">
+            <label for="{stat}_{game_id}_{betting_line_id}_homeAwayFilter" class="barChartFilterLabel">Home/Away:</label>
+            <select id="{stat}_{game_id}_{betting_line_id}_homeAwayFilter" onchange="applyFilters('{stat}', '{game_id}', '{betting_line_id}')" class="barChartOptionFilter">
                 <option value="all">All</option>
                 <option value="home">Home</option>
                 <option value="away">Away</option>
             </select>
         </div>
-        
         <div class="barChartFilter">
-            <label for="{stat}_{game_id}_{betting_line_id}_startDate">Start Date:</label>
-            <input type="date" id="{stat}_{game_id}_{betting_line_id}_startDate" onchange="applyFilters('{stat}', '{game_id}', '{betting_line_id}')">
+            <label for="{stat}_{game_id}_{betting_line_id}_startDate" class="barChartFilterLabel">Start Date:</label>
+            <input type="date" id="{stat}_{game_id}_{betting_line_id}_startDate" onchange="applyFilters('{stat}', '{game_id}', '{betting_line_id}')" class="barChartDateFilter">
         </div>
-        
         <div class="barChartFilter">
-            <label for="{stat}_{game_id}_{betting_line_id}_endDate">End Date:</label>
-            <input type="date" id="{stat}_{game_id}_{betting_line_id}_endDate" onchange="applyFilters('{stat}', '{game_id}', '{betting_line_id}')">
+            <label for="{stat}_{game_id}_{betting_line_id}_endDate" class="barChartFilterLabel">End Date:</label>
+            <input type="date" id="{stat}_{game_id}_{betting_line_id}_endDate" onchange="applyFilters('{stat}', '{game_id}', '{betting_line_id}')" class="barChartDateFilter">
         </div>
+        <button onclick="clearFilters('{stat}', '{game_id}', '{betting_line_id}')" class="clear-chart-filters">Clear Filters</button>
     </div>
     
     <canvas id="{stat}_{game_id}_{betting_line_id}_chart" class="barChart"></canvas>
     
-<div class="filter-buttons">
-    <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 5)">L5</button>
-    <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 10)">L10 Games</button>
-    <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 20)">L20 Games</button>
-    <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2023-24')">2023-24</button>
-    <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2024-25')">2024-25</button>
-    <button onclick="filterAll('{stat}', '{game_id}', '{betting_line_id}')">All</button>
-    <button onclick="clearFilters('{stat}', '{game_id}', '{betting_line_id}')" class="clear-chart-filters">Clear Filters</button>
-</div>
+    <div class="filter-buttons">
+        <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 5)" class="last_n_games_btn">L5</button>
+        <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 10)" class="last_n_games_btn">L10 Games</button>
+        <button onclick="filterGames('{stat}', '{game_id}', '{betting_line_id}', 20)" class="last_n_games_btn">L20 Games</button>
+        <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2023-24')" class="last_n_games_btn">2023-24</button>
+        <button onclick="filterBySeason('{stat}', '{game_id}', '{betting_line_id}', '2024-25')" class="last_n_games_btn">2024-25</button>
+        <button onclick="filterAll('{stat}', '{game_id}', '{betting_line_id}')" class="last_n_games_btn">All</button>
+    </div>
 
     
     <div class="slider-container">
         <div id="line-slider">
-            <label for="{stat}_{game_id}_{betting_line_id}_lineSlider">Change Line:</label>
-            <input type="range" id="{stat}_{game_id}_{betting_line_id}_lineSlider" min="0" max="30" step="0.25" value="{betting_line}" oninput="updateLine('{stat}', '{game_id}', '{betting_line_id}', this.value)">
-            <span id="{stat}_{game_id}_{betting_line_id}_lineValue">{betting_line}</span>
+            <label for="{stat}_{game_id}_{betting_line_id}_lineSlider" class="lineSliderLabel">Change Line:</label>
+            <input type="range" id="{stat}_{game_id}_{betting_line_id}_lineSlider" min="0" max="100" step="0.5" value="{betting_line}" oninput="updateLine('{stat}', '{game_id}', '{betting_line_id}', this.value)" class="lineSliderInput">
+            <span id="{stat}_{game_id}_{betting_line_id}_lineValue" class="lineSliderSpan">{betting_line}</span>
         </div>
         <div class="chartButtons">
             <button onclick="resetLine('{stat}', '{game_id}', '{betting_line_id}')" class="reset-line-btn">Reset Line</button>
@@ -142,7 +139,7 @@ for filename in os.listdir(html_dir):
                 team_options=team_options
             )
             
-            player_table = soup.select_one("#table-container")
+            player_table = soup.select_one("#chartPlaceholder")
             chart_soup = BeautifulSoup(chart_script, "html.parser")
             player_table.insert_after(chart_soup) 
 

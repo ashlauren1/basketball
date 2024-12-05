@@ -3,275 +3,266 @@
 
 <html>
 <head>
-<title>Dillon Jones</title>
+<meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="stylesheet.css" rel="stylesheet"/>
 <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<script src="modalsMobileNavAndSearch.js"></script>
+<link href="stylesheet.css" rel="stylesheet"/>
+<link href="commonStylesheet.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto+Slab:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script src="playerScript.js"></script>
+<title>Dillon Jones</title>
 <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const table = document.getElementById("player-table");
-            const headerRow = table.querySelector("thead tr:first-child");
-            const filterRow = document.querySelector("#filter-row");
-            const rows = Array.from(table.querySelectorAll("tbody tr"));
-            const toggleSelectionBtn = document.getElementById("toggle-selection-btn");
-            const clearAllButton = document.getElementById("clear-all-btn");
-            const clearButton = document.getElementById("clear-filters-btn");
-            let showSelectedOnly = false;
-            let isDragging = false;
+document.addEventListener("DOMContentLoaded", function () {
+    const table = document.getElementById("player-table");
+    const headerRow = table.querySelector("thead tr:first-child");
+    const filterRow = document.querySelector("#filter-row");
+    const rows = Array.from(table.querySelectorAll("tbody tr"));
+    const toggleSelectionBtn = document.getElementById("toggle-selection-btn");
+    const clearAllButton = document.getElementById("clear-all-btn");
+    const clearButton = document.getElementById("clear-filters-btn");
+    let showSelectedOnly = false;
+    let isDragging = false;
 
-            // Add filters and sorting
-            addFilters(table);
-            addSortToHeaders(table);
+    addFilters(table);
+    addSortToHeaders(table);
 
-            // "Clear Filters" button functionality
-            clearButton.addEventListener("click", () => {
-                document.querySelectorAll(".filter-select").forEach(select => select.value = "");
-                filterTable();
-            });
+    clearButton.addEventListener("click", () => {
+        document.querySelectorAll(".filter-select").forEach(select => select.value = "");
+        filterTable();
+    });
 
-            // "Clear All" functionality
-            clearAllButton.addEventListener("click", () => {
-                rows.forEach(row => {
-                    row.classList.remove("selected-row");
-                    row.style.display = "";
-                });
-                document.querySelectorAll(".filter-select").forEach(select => select.value = "");
-                toggleSelectionBtn.textContent = "Show Selected Only";
-                showSelectedOnly = false;
-                filterTable();
-            });
-
-            rows.forEach(row => {
-                row.addEventListener("mousedown", function () {
-                    isDragging = true;
-                    toggleRowSelection(row);
-                });
-                row.addEventListener("mouseenter", function () {
-                    if (isDragging) toggleRowSelection(row);
-                });
-                row.addEventListener("mouseup", () => isDragging = false);
-            });
-
-            document.addEventListener("mouseup", () => isDragging = false);
-
-            function toggleRowSelection(row) {
-                row.classList.toggle("selected-row");
-            }
-
-            toggleSelectionBtn.addEventListener("click", () => {
-                showSelectedOnly = !showSelectedOnly;
-                if (showSelectedOnly) {
-                    rows.forEach(row => {
-                        row.style.display = row.classList.contains("selected-row") ? "" : "none";
-                    });
-                    toggleSelectionBtn.textContent = "Show All";
-                } else {
-                    rows.forEach(row => (row.style.display = ""));
-                    toggleSelectionBtn.textContent = "Show Selected Only";
-                }
-            });
-
-            function addFilters(table) {
-                const headerRow = table.querySelector("thead tr:first-child");
-                const filterRow = document.querySelector("#filter-row");
-
-                Array.from(headerRow.cells).forEach((header, index) => {
-                    const filterCell = document.createElement("td");
-                    const filterSelect = document.createElement("select");
-                    filterSelect.classList.add("filter-select");
-
-                    filterSelect.innerHTML = '<option value="">All</option>';
-                    const values = Array.from(new Set(
-                        Array.from(table.querySelectorAll("tbody tr td:nth-child(" + (index + 1) + ")"))
-                        .map(cell => cell.textContent.trim())
-                    )).sort();
-
-                    values.forEach(value => {
-                        const option = document.createElement("option");
-                        option.value = value;
-                        option.textContent = value;
-                        filterSelect.appendChild(option);
-                    });
-
-                    filterSelect.addEventListener("change", filterTable);
-                    filterCell.appendChild(filterSelect);
-                    filterRow.appendChild(filterCell);
-                });
-            }
-
-            function filterTable() {
-                const filters = Array.from(document.querySelectorAll(".filter-select")).map(select => select.value);
-                rows.forEach(row => {
-                    const cells = Array.from(row.cells);
-                    const matchesFilter = filters.every((filter, i) => !filter || cells[i].textContent.trim() === filter);
-                    row.style.display = matchesFilter ? "" : "none";
-                });
-            }
-
-            function addSortToHeaders(table) {
-                const headers = table.querySelectorAll("thead th");
-                headers.forEach((header, index) => {
-                    header.style.cursor = "pointer";
-                    header.addEventListener("click", function () {
-                        sortTable(table, index);
-                    });
-                });
-            }
-
-            function sortTable(table, columnIndex) {
-                const rows = Array.from(table.querySelectorAll("tbody tr"));
-                const direction = table.dataset.sortDirection === "asc" ? "desc" : "asc";
-                table.dataset.sortDirection = direction;
-                
-                // Detect data type
-                let isNumeric = true;
-                let isDate = true;
-                for (let row of rows) {
-                    const cellText = row.cells[columnIndex].textContent.trim();
-                    if (cellText === '') continue; // Skip empty cells
-                    if (isNumeric && isNaN(cellText)) {
-                        isNumeric = false;
-                    }
-                    if (isDate && isNaN(Date.parse(cellText))) {
-                        isDate = false;
-                    }
-                    if (!isNumeric && !isDate) break;
-                }
-
-                rows.sort((a, b) => {
-                    const cellA = a.cells[columnIndex].textContent.trim();
-                    const cellB = b.cells[columnIndex].textContent.trim();
-
-                    let valA, valB;
-
-                    if (isNumeric) {
-                        valA = parseFloat(cellA);
-                        valB = parseFloat(cellB);
-                    } else if (isDate) {
-                        valA = new Date(cellA);
-                        valB = new Date(cellB);
-                    } else {
-                        valA = cellA.toLowerCase();
-                        valB = cellB.toLowerCase();
-                    }
-
-                    if (valA < valB) {
-                        return direction === "asc" ? -1 : 1;
-                    } else if (valA > valB) {
-                        return direction === "asc" ? 1 : -1;
-                    } else {
-                        return 0;
-                    }
-                });
-
-                // Append sorted rows to tbody
-                const tbody = table.querySelector("tbody");
-                rows.forEach(row => tbody.appendChild(row));
-            }
+    clearAllButton.addEventListener("click", () => {
+        rows.forEach(row => {
+            row.classList.remove("selected-row");
+            row.style.display = "";
         });
-        
-    document.addEventListener("DOMContentLoaded", async function () {
-        const searchBar = document.getElementById("search-bar");
-        const searchResults = document.getElementById("search-results");
-        const searchButton = document.getElementById("search-button");
+        document.querySelectorAll(".filter-select").forEach(select => select.value = "");
+        toggleSelectionBtn.textContent = "Show Selected Only";
+        showSelectedOnly = false;
+        filterTable();
+    });
 
-        let playerLinks = {};
-        let teamLinks = {};
-
-        // Load players and teams data from JSON files
-        async function loadLinks() {
-            playerLinks = await fetch('players.json').then(response => response.json());
-            teamLinks = await fetch('teams.json').then(response => response.json());
-        }
-
-        await loadLinks();  // Ensure links are loaded before searching
-
-        // Filter data and show suggestions based on input
-        function updateSuggestions() {
-            const query = searchBar.value.trim().toLowerCase();
-            searchResults.innerHTML = ""; // Clear previous results
-
-            if (query === "") return;
-
-            // Combine players and teams for search
-            const combinedLinks = { ...playerLinks, ...teamLinks };
-            const matchingEntries = Object.entries(combinedLinks)
-                .filter(([name]) => name.toLowerCase().includes(query))  // Matches on both name and ID
-                .slice(0, 10); // Limit to top 10
-
-            matchingEntries.forEach(([name, url]) => {
-                const resultItem = document.createElement("div");
-                resultItem.classList.add("suggestion");
-
-                // Proper case for names
-                resultItem.textContent = name;
-
-                resultItem.addEventListener("click", () => {
-                    window.open(url, "_self");
-                });
-                searchResults.appendChild(resultItem);
-            });
-
-            if (matchingEntries.length > 0) {
-                searchResults.style.display = "block"; // Show results if matches are found
-            } else {
-                const noResultItem = document.createElement("div");
-                noResultItem.classList.add("no-result");
-                noResultItem.textContent = "No results found.";
-                searchResults.appendChild(noResultItem);
-                searchResults.style.display = "block";
-            }
-        }
-        
-        document.addEventListener("click", function(event) {
-            if (!searchResults.contains(event.target) && event.target !== searchBar) {
-                searchResults.style.display = "none";
-            }
+    rows.forEach(row => {
+        row.addEventListener("mousedown", function () {
+            isDragging = true;
+            toggleRowSelection(row);
         });
+        row.addEventListener("mouseenter", function () {
+            if (isDragging) toggleRowSelection(row);
+        });
+        row.addEventListener("mouseup", () => isDragging = false);
+    });
 
-        // Add event listener to search bar
-        searchBar.addEventListener("input", updateSuggestions);
-        
-        function redirectToSearchResults() {
-        const query = searchBar.value.trim().toLowerCase();;
-        if (query) {
-            window.location.href = `/basketball/search_results.html?query=${encodeURIComponent(query)}`;
-        }
+    document.addEventListener("mouseup", () => isDragging = false);
+
+    function toggleRowSelection(row) {
+        row.classList.toggle("selected-row");
     }
 
-    // Add event listeners for search
-    searchBar.addEventListener("keypress", function (e) {
-        if (e.key === "Enter") {
-            redirectToSearchResults();
+    toggleSelectionBtn.addEventListener("click", () => {
+        showSelectedOnly = !showSelectedOnly;
+        if (showSelectedOnly) {
+            rows.forEach(row => {
+                row.style.display = row.classList.contains("selected-row") ? "" : "none";
+            });
+            toggleSelectionBtn.textContent = "Show All";
+        } else {
+            rows.forEach(row => (row.style.display = ""));
+            toggleSelectionBtn.textContent = "Show Selected Only";
         }
     });
 
-    searchButton.addEventListener("click", redirectToSearchResults);
+    function addFilters(table) {
+        const headerRow = table.querySelector("thead tr:first-child");
+        const filterRow = document.querySelector("#filter-row");
+
+        Array.from(headerRow.cells).forEach((header, index) => {
+            const filterCell = document.createElement("td");
+            const filterSelect = document.createElement("select");
+            filterSelect.classList.add("filter-select");
+
+            filterSelect.innerHTML = '<option value="">All</option>';
+            const values = Array.from(new Set(
+                Array.from(table.querySelectorAll("tbody tr td:nth-child(" + (index + 1) + ")"))
+                .map(cell => cell.textContent.trim())
+            )).sort();
+
+            values.forEach(value => {
+                const option = document.createElement("option");
+                option.value = value;
+                option.textContent = value;
+                filterSelect.appendChild(option);
+            });
+
+            filterSelect.addEventListener("change", filterTable);
+            filterCell.appendChild(filterSelect);
+            filterRow.appendChild(filterCell);
+        });
+    }
+
+    function filterTable() {
+        const filters = Array.from(document.querySelectorAll(".filter-select")).map(select => select.value);
+        rows.forEach(row => {
+            const cells = Array.from(row.cells);
+            const matchesFilter = filters.every((filter, i) => !filter || cells[i].textContent.trim() === filter);
+            row.style.display = matchesFilter ? "" : "none";
+        });
+    }
+
+    function addSortToHeaders(table) {
+        const headers = table.querySelectorAll("thead th");
+        headers.forEach((header, index) => {
+            header.style.cursor = "pointer";
+            header.addEventListener("click", function () {
+                sortTable(table, index);
+            });
+        });
+    }
+
+    function sortTable(table, columnIndex) {
+        const rows = Array.from(table.querySelectorAll("tbody tr"));
+        const direction = table.dataset.sortDirection === "desc" ? "asc" : "desc";
+        table.dataset.sortDirection = direction;
+        
+        // Detect data type
+        let isNumeric = true;
+        let isDate = true;
+        for (let row of rows) {
+            const cellText = row.cells[columnIndex].textContent.trim();
+            if (cellText === '') continue; // Skip empty cells
+            if (isNumeric && isNaN(cellText)) {
+                isNumeric = false;
+            }
+            if (isDate && isNaN(Date.parse(cellText))) {
+                isDate = false;
+            }
+            if (!isNumeric && !isDate) break;
+        }
+
+        rows.sort((a, b) => {
+            const cellA = a.cells[columnIndex].textContent.trim();
+            const cellB = b.cells[columnIndex].textContent.trim();
+
+            let valA, valB;
+
+            if (isNumeric) {
+                valA = parseFloat(cellA);
+                valB = parseFloat(cellB);
+            } else if (isDate) {
+                valA = new Date(cellA);
+                valB = new Date(cellB);
+            } else {
+                valA = cellA.toLowerCase();
+                valB = cellB.toLowerCase();
+            }
+
+            if (valA < valB) {
+                return direction === "asc" ? -1 : 1;
+            } else if (valA > valB) {
+                return direction === "asc" ? 1 : -1;
+            } else {
+                return 0;
+            }
+        });
+
+        // Append sorted rows to tbody
+        const tbody = table.querySelector("tbody");
+        rows.forEach(row => tbody.appendChild(row));
+    }
 });
-    </script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    initializeCharts(() => {
+        const images = document.querySelectorAll(".playerPicture");
+        let validImageFound = false;
+
+        images.forEach((img) => {
+            img.onload = function () {
+                if (!validImageFound) {
+                    validImageFound = true; // Mark the first valid image found
+                } else {
+                    img.style.display = "none"; // Hide any additional valid images
+                }
+            };
+
+            img.onerror = function () {
+                img.style.display = "none"; // Hide the image if it fails to load
+            };
+        });
+    });
+});
+
+function initializeCharts(callback) {
+    initializeChart("player_id", chartData, bettingLine, "G");
+    if (callback) callback();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".playerPicture");
+    let validImageFound = false;
+
+    images.forEach((img) => {
+        img.onload = function () {
+            console.log("Image loaded:", img.src);
+            if (!validImageFound) {
+                validImageFound = true;
+            } else {
+                img.style.display = "none"; 
+            }
+        };
+
+        img.onerror = function () {
+            console.log("Image failed to load:", img.src);
+            img.style.display = "none";
+        };
+    });
+});
+</script>
 </head>
 <body>
-<div id="page-heading">
+<div id="mobileTopnav">
+<div class="menuBarContainer mobile active">
+<a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i>Menu</a>
+</div>
+<div id="myLinks">
+<ul class="navLinks">
+<li class="nav-link"><a href="/basketball/" target="_blank">Projections</a></li>
+<li class="nav-link"><a href="/basketball/players/" target="_blank">Players</a></li>
+<li class="nav-link"><a href="/basketball/teams/" target="_blank">Teams</a></li>
+<li class="nav-link"><a href="/basketball/leaders/" target="_blank">Leaders</a></li>
+<li class="nav-link"><a href="/basketball/leaders/standings.html" target="_blank">Standings</a></li>
+<li class="nav-link"><a href="/basketball/boxscores/" target="_blank">Scores</a></li>
+<li class="nav-link"><a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a></li>
+<li class="nav-link"><a href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a></li>
+</ul>
+</div>
+</div>
+<div id="pageHeading">
 <div class="topnav">
-<a href="/basketball/" target="_blank">Projections</a>
-<a href="/basketball/players/" target="_blank">Players</a>
-<a href="/basketball/boxscores/" target="_blank">Box Scores</a>
-<a href="/basketball/teams/" target="_blank">Teams</a>
-<a href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
-<a href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a>
+<a class="topnav-item" href="/basketball/" target="_blank">Projections</a>
+<a class="topnav-item" href="/basketball/players/" target="_blank">Players</a>
+<a class="topnav-item" href="/basketball/teams/" target="_blank">Teams</a>
+<a class="topnav-item" href="/basketball/leaders/" target="_blank">Leaders</a>
+<a class="topnav-item" href="/basketball/leaders/standings.html" target="_blank">Standings</a>
+<a class="topnav-item" href="/basketball/boxscores/" target="_blank">Scores</a>
+<a class="topnav-item" href="https://ashlauren1.github.io/hockey/" target="_blank">Hockey</a>
+<a class="topnav-item" href="https://ashlauren1.github.io/ufc/" target="_blank">UFC</a>
 </div>
 <div id="search-container">
 <input id="search-bar" placeholder="Search for a player or team..." type="text"/>
 <button id="search-button">Search</button>
 <div id="search-results"></div>
+</div>
 <div class="header">
-<h1>Dillon Jones</h1>
 </div>
 </div>
 <button class="arrowUp" onclick="window.scrollTo({top: 0})">Top</button>
+<main>
+<div id="pageContainer">
 <div id="player_info">
 <div id="playerPictureContainer">
 <img alt="Dillon Jones" class="playerPicture" onerror="this.style.display='none';" src="https://www.basketball-reference.com/req/202106291/images/headshots/jonesdi01.jpg"/>
@@ -283,26 +274,36 @@
 <div id="seasonStats">
 <table class="seasonSummary">
 <thead>
-<tr></tr>
+<tr>
+<th>GP</th>
+<th>PTS/GP</th>
+<th>REB/GP</th>
+<th>AST/GP</th>
+<th>STL/GP</th>
+<th>BLK/GP</th>
+<th>FG%</th>
+</tr>
 </thead>
 <tbody>
 <tr>
+<td>20</td>
+<td>2.50</td>
+<td>2.10</td>
+<td>0.75</td>
+<td>0.20</td>
+<td>0.05</td>
+<td>35.2%</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<div style="margin:12px 0; display:block"></div>
-<div id="player-container">
-<p class="title-caption">Gamelog</p>
-<div class="modal" id="glossaryModal"></div>
-
-<div class="player-chart-container">
-<!-- Stat Selection Dropdown -->
+<div id="chartPlaceholder"></div>
+<div class="chartContainer">
 <div class="barChart-filters">
 <div class="barChartFilter">
-<label for="statSelector_jonesdi01">Stat:</label>
-<select id="statSelector_jonesdi01" onchange="updateStat('jonesdi01', this.value)">
+<label class="barChartFilterLabel" for="statSelector_jonesdi01">Stat:</label>
+<select class="barChartOptionFilter" id="statSelector_jonesdi01" onchange="updateStat('jonesdi01', this.value)">
 <option value="PTS">Points</option>
 <option value="REB">Rebounds</option>
 <option value="AST">Assists</option>
@@ -328,8 +329,8 @@
 </select>
 </div>
 <div class="barChartFilter">
-<label for="teamFilter_jonesdi01">Opponent:</label>
-<select id="teamFilter_jonesdi01" onchange="applyFilters('jonesdi01')">
+<label class="barChartFilterLabel" for="teamFilter_jonesdi01">Opp:</label>
+<select class="barChartOptionFilter" id="teamFilter_jonesdi01" onchange="applyFilters('jonesdi01')">
 <option value="all">All</option>
 <option value="ATL">ATL</option>
 <option value="CHI">CHI</option>
@@ -338,50 +339,52 @@
 <option value="GSW">GSW</option>
 <option value="HOU">HOU</option>
 <option value="LAC">LAC</option>
+<option value="LAL">LAL</option>
 <option value="NOP">NOP</option>
 <option value="ORL">ORL</option>
 <option value="PHO">PHO</option>
 <option value="POR">POR</option>
 <option value="SAC">SAC</option>
 <option value="SAS">SAS</option>
+<option value="UTA">UTA</option>
 </select>
 </div>
 <div class="barChartFilter">
-<label for="homeAwayFilter_jonesdi01">Home/Away:</label>
-<select id="homeAwayFilter_jonesdi01" onchange="applyFilters('jonesdi01')">
+<label class="barChartFilterLabel" for="homeAwayFilter_jonesdi01">Home/Away:</label>
+<select class="barChartOptionFilter" id="homeAwayFilter_jonesdi01" onchange="applyFilters('jonesdi01')">
 <option value="all">All</option>
 <option value="home">Home</option>
 <option value="away">Away</option>
 </select>
 </div>
 <div class="barChartFilter">
-<label for="startDate_jonesdi01">Start:</label>
-<input id="startDate_jonesdi01" onchange="applyFilters('jonesdi01')" type="date"/>
+<label class="barChartFilterLabel" for="startDate_jonesdi01">Start:</label>
+<input class="barChartDateFilter" id="startDate_jonesdi01" onchange="applyFilters('jonesdi01')" type="date"/>
 </div>
 <div class="barChartFilter">
-<label for="endDate_jonesdi01">End:</label>
-<input id="endDate_jonesdi01" onchange="applyFilters('jonesdi01')" type="date"/>
+<label class="barChartFilterLabel" for="endDate_jonesdi01">End:</label>
+<input class="barChartDateFilter" id="endDate_jonesdi01" onchange="applyFilters('jonesdi01')" type="date"/>
 </div>
-</div>
-<canvas class="player-barChart" id="chart_jonesdi01"></canvas>
-<div class="filter-buttons">
-<button id="L5_jonesdi01" onclick="showRecentGames('jonesdi01', 5)">L5</button>
-<button id="L10_jonesdi01" onclick="showRecentGames('jonesdi01', 10)">L10</button>
-<button id="L20_jonesdi01" onclick="showRecentGames('jonesdi01', 20)">L20</button>
-<button id="202324_jonesdi01" onclick="filterBySeason('jonesdi01', '2023-24')">2023-24</button>
-<button id="202425_jonesdi01" onclick="filterBySeason('jonesdi01', '2024-25')">2024-25</button>
-<button id="showAll_jonesdi01" onclick="showAllGames('jonesdi01')">All</button>
-<button id="MP_jonesdi01" onclick="toggleMPOverlay('jonesdi01')">Toggle MP</button>
 <button class="clear-chart-filters" id="clearFiltersBtn_jonesdi01" onclick="clearFilters('jonesdi01')">Clear Filters</button>
+</div>
+<canvas class="barChart" id="chart_jonesdi01"></canvas>
+<div class="filter-buttons">
+<button class="last_n_games_btn" id="L5_jonesdi01" onclick="showRecentGames('jonesdi01', 5)">L5</button>
+<button class="last_n_games_btn" id="L10_jonesdi01" onclick="showRecentGames('jonesdi01', 10)">L10</button>
+<button class="last_n_games_btn" id="L20_jonesdi01" onclick="showRecentGames('jonesdi01', 20)">L20</button>
+<button class="last_n_games_btn" id="202324_jonesdi01" onclick="filterBySeason('jonesdi01', '2023-24')">2023-24</button>
+<button class="last_n_games_btn" id="202425_jonesdi01" onclick="filterBySeason('jonesdi01', '2024-25')">2024-25</button>
+<button class="last_n_games_btn" id="showAll_jonesdi01" onclick="showAllGames('jonesdi01')">All</button>
+<button class="toggleTOIButton" id="MP_jonesdi01" onclick="toggleMPOverlay('jonesdi01')">Toggle MP</button>
 </div>
 <div class="slider-container">
 <div id="line-slider">
-<label for="lineSlider_jonesdi01">Change Line:</label>
-<input id="lineSlider_jonesdi01" max="100" min="0" oninput="updateLine('jonesdi01', this.value)" step="0.5" type="range" value="0.5"/>
-<span id="lineValue_jonesdi01">0.5</span>
+<label class="lineSliderLabel" for="lineSlider_jonesdi01">Change Line:</label>
+<input class="lineSliderInput" id="lineSlider_jonesdi01" max="100" min="0" oninput="updateLine('jonesdi01', this.value)" step="0.5" type="range" value="10.5"/>
+<span class="lineSliderSpan" id="lineValue_jonesdi01">10.5</span>
 </div>
 <div class="chartButtons">
-<button class="reset-line-btn" id="reset-line-btn_jonesdi01" onclick="resetLine('jonesdi01', 0.5)">Reset Line</button>
+<button class="reset-line-btn" id="reset-line-btn_jonesdi01" onclick="resetLine('jonesdi01', 10.5)">Reset Line</button>
 </div>
 </div>
 </div>
@@ -389,17 +392,15 @@
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
 <script src="chartScript.js"></script>
 <script>
-    // Initialize the chart with player-specific data by calling a function from chart_logic.js
-    initializeChart("jonesdi01", [{'date': '2024-10-24', 'opponent': 'DEN', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.183, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 0, 'PTS_REB': 1, 'PTS_REB_AST': 1, 'FANTASY': 1.2}, {'date': '2024-10-26', 'opponent': 'CHI', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 1, 'TOV': 1, 'MP': 3.9, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 2.0}, {'date': '2024-10-27', 'opponent': 'ATL', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.883, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 0.0}, {'date': '2024-10-30', 'opponent': 'SAS', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 2.767, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 0, 'PTS_REB': 1, 'PTS_REB_AST': 1, 'FANTASY': 1.2}, {'date': '2024-11-01', 'opponent': 'POR', 'location': 'away', 'season': '2024-25', 'PTS': 7, 'REB': 4, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 11.817, 'OffREB': 2, 'DefREB': 2, 'FG': 3, 'FGA': 5, '3P': 1, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 4, 'BLK_STL': 0, 'REB_AST': 6, 'PTS_AST': 9, 'PTS_REB': 11, 'PTS_REB_AST': 13, 'FANTASY': 14.8}, {'date': '2024-11-02', 'opponent': 'LAC', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 3.4, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 1, 'PTS_REB': 0, 'PTS_REB_AST': 1, 'FANTASY': 1.5}, {'date': '2024-11-04', 'opponent': 'ORL', 'location': 'home', 'season': '2024-25', 'PTS': 3, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 9.783, 'OffREB': 0, 'DefREB': 1, 'FG': 1, 'FGA': 3, '3P': 0, '3PA': 1, 'FT': 1, 'FTA': 2, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 3, 'PTS_REB': 4, 'PTS_REB_AST': 4, 'FANTASY': 3.2}, {'date': '2024-11-08', 'opponent': 'HOU', 'location': 'home', 'season': '2024-25', 'PTS': 2, 'REB': 2, 'AST': 0, 'BLK': 1, 'STL': 1, 'TOV': 1, 'MP': 11.85, 'OffREB': 0, 'DefREB': 2, 'FG': 1, 'FGA': 6, '3P': 0, '3PA': 5, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 2, 'PTS_AST': 2, 'PTS_REB': 4, 'PTS_REB_AST': 4, 'FANTASY': 9.4}, {'date': '2024-11-10', 'opponent': 'GSW', 'location': 'home', 'season': '2024-25', 'PTS': 4, 'REB': 6, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 14.967, 'OffREB': 4, 'DefREB': 2, 'FG': 2, 'FGA': 4, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 2, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 8, 'PTS_AST': 6, 'PTS_REB': 10, 'PTS_REB_AST': 12, 'FANTASY': 13.2}, {'date': '2024-11-11', 'opponent': 'LAC', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 3, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 5.683, 'OffREB': 1, 'DefREB': 2, 'FG': 0, 'FGA': 2, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 4, 'PTS_AST': 1, 'PTS_REB': 3, 'PTS_REB_AST': 4, 'FANTASY': 5.1}, {'date': '2024-11-13', 'opponent': 'NOP', 'location': 'home', 'season': '2024-25', 'PTS': 2, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 8.05, 'OffREB': 0, 'DefREB': 1, 'FG': 1, 'FGA': 4, '3P': 0, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 2, 'PTS_REB': 3, 'PTS_REB_AST': 3, 'FANTASY': 3.2}, {'date': '2024-11-15', 'opponent': 'PHO', 'location': 'home', 'season': '2024-25', 'PTS': 2, 'REB': 3, 'AST': 0, 'BLK': 0, 'STL': 1, 'TOV': 2, 'MP': 8.283, 'OffREB': 2, 'DefREB': 1, 'FG': 0, 'FGA': 2, '3P': 0, '3PA': 1, 'FT': 2, 'FTA': 2, 'PF': 2, 'BLK_STL': 1, 'REB_AST': 3, 'PTS_AST': 2, 'PTS_REB': 5, 'PTS_REB_AST': 5, 'FANTASY': 6.6}, {'date': '2024-11-17', 'opponent': 'DAL', 'location': 'home', 'season': '2024-25', 'PTS': 12, 'REB': 2, 'AST': 3, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 15.95, 'OffREB': 1, 'DefREB': 1, 'FG': 5, 'FGA': 6, '3P': 2, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 5, 'PTS_AST': 15, 'PTS_REB': 14, 'PTS_REB_AST': 17, 'FANTASY': 18.9}, {'date': '2024-11-19', 'opponent': 'SAS', 'location': 'away', 'season': '2024-25', 'PTS': 3, 'REB': 6, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 15.417, 'OffREB': 2, 'DefREB': 4, 'FG': 1, 'FGA': 3, '3P': 1, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 6, 'PTS_AST': 3, 'PTS_REB': 9, 'PTS_REB_AST': 9, 'FANTASY': 9.2}, {'date': '2024-11-20', 'opponent': 'POR', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 2, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 10.867, 'OffREB': 1, 'DefREB': 1, 'FG': 0, 'FGA': 3, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 4, 'PTS_AST': 2, 'PTS_REB': 2, 'PTS_REB_AST': 4, 'FANTASY': 5.4}, {'date': '2024-11-25', 'opponent': 'SAC', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 6.467, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 0.0}], 0.5, "PTS");
+    initializeChart("jonesdi01", [{'date': '2024-10-24', 'opponent': 'DEN', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.183, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 0, 'PTS_REB': 1, 'PTS_REB_AST': 1, 'FANTASY': 1.2}, {'date': '2024-10-26', 'opponent': 'CHI', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 1, 'TOV': 1, 'MP': 3.9, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 1, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 2.0}, {'date': '2024-10-27', 'opponent': 'ATL', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 1.883, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 0, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 0.0}, {'date': '2024-10-30', 'opponent': 'SAS', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 2.767, 'OffREB': 0, 'DefREB': 1, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 0, 'PTS_REB': 1, 'PTS_REB_AST': 1, 'FANTASY': 1.2}, {'date': '2024-11-01', 'opponent': 'POR', 'location': 'away', 'season': '2024-25', 'PTS': 7, 'REB': 4, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 11.817, 'OffREB': 2, 'DefREB': 2, 'FG': 3, 'FGA': 5, '3P': 1, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 4, 'BLK_STL': 0, 'REB_AST': 6, 'PTS_AST': 9, 'PTS_REB': 11, 'PTS_REB_AST': 13, 'FANTASY': 14.8}, {'date': '2024-11-02', 'opponent': 'LAC', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 3.4, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 1, 'PTS_REB': 0, 'PTS_REB_AST': 1, 'FANTASY': 1.5}, {'date': '2024-11-04', 'opponent': 'ORL', 'location': 'home', 'season': '2024-25', 'PTS': 3, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 9.783, 'OffREB': 0, 'DefREB': 1, 'FG': 1, 'FGA': 3, '3P': 0, '3PA': 1, 'FT': 1, 'FTA': 2, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 3, 'PTS_REB': 4, 'PTS_REB_AST': 4, 'FANTASY': 3.2}, {'date': '2024-11-08', 'opponent': 'HOU', 'location': 'home', 'season': '2024-25', 'PTS': 2, 'REB': 2, 'AST': 0, 'BLK': 1, 'STL': 1, 'TOV': 1, 'MP': 11.85, 'OffREB': 0, 'DefREB': 2, 'FG': 1, 'FGA': 6, '3P': 0, '3PA': 5, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 2, 'REB_AST': 2, 'PTS_AST': 2, 'PTS_REB': 4, 'PTS_REB_AST': 4, 'FANTASY': 9.4}, {'date': '2024-11-10', 'opponent': 'GSW', 'location': 'home', 'season': '2024-25', 'PTS': 4, 'REB': 6, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 14.967, 'OffREB': 4, 'DefREB': 2, 'FG': 2, 'FGA': 4, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 2, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 8, 'PTS_AST': 6, 'PTS_REB': 10, 'PTS_REB_AST': 12, 'FANTASY': 13.2}, {'date': '2024-11-11', 'opponent': 'LAC', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 3, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 5.683, 'OffREB': 1, 'DefREB': 2, 'FG': 0, 'FGA': 2, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 4, 'PTS_AST': 1, 'PTS_REB': 3, 'PTS_REB_AST': 4, 'FANTASY': 5.1}, {'date': '2024-11-13', 'opponent': 'NOP', 'location': 'home', 'season': '2024-25', 'PTS': 2, 'REB': 1, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 8.05, 'OffREB': 0, 'DefREB': 1, 'FG': 1, 'FGA': 4, '3P': 0, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 1, 'PTS_AST': 2, 'PTS_REB': 3, 'PTS_REB_AST': 3, 'FANTASY': 3.2}, {'date': '2024-11-15', 'opponent': 'PHO', 'location': 'home', 'season': '2024-25', 'PTS': 2, 'REB': 3, 'AST': 0, 'BLK': 0, 'STL': 1, 'TOV': 2, 'MP': 8.283, 'OffREB': 2, 'DefREB': 1, 'FG': 0, 'FGA': 2, '3P': 0, '3PA': 1, 'FT': 2, 'FTA': 2, 'PF': 2, 'BLK_STL': 1, 'REB_AST': 3, 'PTS_AST': 2, 'PTS_REB': 5, 'PTS_REB_AST': 5, 'FANTASY': 6.6}, {'date': '2024-11-17', 'opponent': 'DAL', 'location': 'home', 'season': '2024-25', 'PTS': 12, 'REB': 2, 'AST': 3, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 15.95, 'OffREB': 1, 'DefREB': 1, 'FG': 5, 'FGA': 6, '3P': 2, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 5, 'PTS_AST': 15, 'PTS_REB': 14, 'PTS_REB_AST': 17, 'FANTASY': 18.9}, {'date': '2024-11-19', 'opponent': 'SAS', 'location': 'away', 'season': '2024-25', 'PTS': 3, 'REB': 6, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 1, 'MP': 15.417, 'OffREB': 2, 'DefREB': 4, 'FG': 1, 'FGA': 3, '3P': 1, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 0, 'REB_AST': 6, 'PTS_AST': 3, 'PTS_REB': 9, 'PTS_REB_AST': 9, 'FANTASY': 9.2}, {'date': '2024-11-20', 'opponent': 'POR', 'location': 'home', 'season': '2024-25', 'PTS': 0, 'REB': 2, 'AST': 2, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 10.867, 'OffREB': 1, 'DefREB': 1, 'FG': 0, 'FGA': 3, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 4, 'PTS_AST': 2, 'PTS_REB': 2, 'PTS_REB_AST': 4, 'FANTASY': 5.4}, {'date': '2024-11-25', 'opponent': 'SAC', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 6.467, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 1, 'FT': 0, 'FTA': 0, 'PF': 1, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 0.0}, {'date': '2024-11-27', 'opponent': 'GSW', 'location': 'away', 'season': '2024-25', 'PTS': 2, 'REB': 4, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 12.81666667, 'OffREB': 0, 'DefREB': 4, 'FG': 1, 'FGA': 3, '3P': 0, '3PA': 2, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 5, 'PTS_AST': 3, 'PTS_REB': 6, 'PTS_REB_AST': 7, 'FANTASY': 8.3}, {'date': '2024-11-29', 'opponent': 'LAL', 'location': 'away', 'season': '2024-25', 'PTS': 0, 'REB': 0, 'AST': 0, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 4.25, 'OffREB': 0, 'DefREB': 0, 'FG': 0, 'FGA': 1, '3P': 0, '3PA': 0, 'FT': 0, 'FTA': 0, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 0, 'PTS_AST': 0, 'PTS_REB': 0, 'PTS_REB_AST': 0, 'FANTASY': 0.0}, {'date': '2024-12-01', 'opponent': 'HOU', 'location': 'away', 'season': '2024-25', 'PTS': 5, 'REB': 2, 'AST': 1, 'BLK': 0, 'STL': 0, 'TOV': 0, 'MP': 10.76666667, 'OffREB': 0, 'DefREB': 2, 'FG': 1, 'FGA': 3, '3P': 1, '3PA': 3, 'FT': 2, 'FTA': 2, 'PF': 0, 'BLK_STL': 0, 'REB_AST': 3, 'PTS_AST': 6, 'PTS_REB': 7, 'PTS_REB_AST': 8, 'FANTASY': 8.9}, {'date': '2024-12-03', 'opponent': 'UTA', 'location': 'home', 'season': '2024-25', 'PTS': 8, 'REB': 4, 'AST': 2, 'BLK': 0, 'STL': 1, 'TOV': 1, 'MP': 15.68333333, 'OffREB': 3, 'DefREB': 1, 'FG': 3, 'FGA': 5, '3P': 2, '3PA': 3, 'FT': 0, 'FTA': 0, 'PF': 2, 'BLK_STL': 1, 'REB_AST': 6, 'PTS_AST': 10, 'PTS_REB': 12, 'PTS_REB_AST': 14, 'FANTASY': 17.8}], 10.5, "PTS");
 </script>
-<div id="table-container">
-<div class="groupedProbAndButtons">
-<div class="button-container">
+
+<div class="button-container" id="filter-container-div">
 <button id="toggle-selection-btn">Show Selected Only</button>
 <button id="clear-filters-btn">Remove Filters</button>
 <button id="clear-all-btn">Clear All</button>
 </div>
-</div>
+<div id="tableContainer">
 <table id="player-table">
 <thead>
 <tr>
@@ -430,191 +431,53 @@
 <tbody>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411250SAC.html" target="_blank">2024-11-25 00:00:00</a></td>
-<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
-<td>@</td>
-<td><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>6.47</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411200OKC.html" target="_blank">2024-11-20 00:00:00</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202412030OKC.html" target="_blank">12/3/2024</a></td>
 <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
 <td>vs</td>
-<td><a href="/basketball/teams/POR.html" target="_blank">POR</a></td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>10.87</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411190SAS.html" target="_blank">2024-11-19 00:00:00</a></td>
-<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
-<td>@</td>
-<td><a href="/basketball/teams/SAS.html" target="_blank">SAS</a></td>
-<td>3</td>
-<td>6</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>15.42</td>
-<td>2</td>
+<td><a href="/basketball/teams/UTA.html" target="_blank">UTA</a></td>
+<td>8</td>
 <td>4</td>
-<td>1</td>
-<td>3</td>
-<td>1</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
 <td>2</td>
-</tr>
-<tr>
-<td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411170OKC.html" target="_blank">2024-11-17 00:00:00</a></td>
-<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
-<td>vs</td>
-<td><a href="/basketball/teams/DAL.html" target="_blank">DAL</a></td>
-<td>12</td>
-<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>15.68</td>
 <td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>15.95</td>
 <td>1</td>
-<td>1</td>
+<td>3</td>
 <td>5</td>
-<td>6</td>
 <td>2</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411150OKC.html" target="_blank">2024-11-15 00:00:00</a></td>
-<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
-<td>vs</td>
-<td><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
-<td>2</td>
-<td>3</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>2</td>
-<td>8.28</td>
-<td>2</td>
-<td>1</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-<td>2</td>
 <td>2</td>
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411130OKC.html" target="_blank">2024-11-13 00:00:00</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202412010HOU.html" target="_blank">12/1/2024</a></td>
 <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
-<td>vs</td>
-<td><a href="/basketball/teams/NOP.html" target="_blank">NOP</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
+<td>5</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>8.05</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>4</td>
+<td>10.77</td>
 <td>0</td>
 <td>2</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411110OKC.html" target="_blank">2024-11-11 00:00:00</a></td>
-<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
-<td>vs</td>
-<td><a href="/basketball/teams/LAC.html" target="_blank">LAC</a></td>
-<td>0</td>
 <td>3</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>5.68</td>
-<td>1</td>
+<td>3</td>
+<td>2</td>
 <td>2</td>
 <td>0</td>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411100OKC.html" target="_blank">2024-11-10 00:00:00</a></td>
-<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
-<td>vs</td>
-<td><a href="/basketball/teams/GSW.html" target="_blank">GSW</a></td>
-<td>4</td>
-<td>6</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>14.97</td>
-<td>4</td>
-<td>2</td>
-<td>2</td>
-<td>4</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>2</td>
-<td>1</td>
-</tr>
-<tr>
-<td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411080OKC.html" target="_blank">2024-11-08 00:00:00</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411080OKC.html" target="_blank">11/8/2024</a></td>
 <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/HOU.html" target="_blank">HOU</a></td>
@@ -637,7 +500,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411040OKC.html" target="_blank">2024-11-04 00:00:00</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411040OKC.html" target="_blank">11/4/2024</a></td>
 <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/ORL.html" target="_blank">ORL</a></td>
@@ -660,7 +523,99 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411020LAC.html" target="_blank">2024-11-02 00:00:00</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411290LAL.html" target="_blank">11/29/2024</a></td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/LAL.html" target="_blank">LAL</a></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4.25</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411270GSW.html" target="_blank">11/27/2024</a></td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/GSW.html" target="_blank">GSW</a></td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12.82</td>
+<td>0</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411250SAC.html" target="_blank">11/25/2024</a></td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/SAC.html" target="_blank">SAC</a></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6.47</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411200OKC.html" target="_blank">11/20/2024</a></td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/POR.html" target="_blank">POR</a></td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>10.87</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411020LAC.html" target="_blank">11/2/2024</a></td>
 <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/LAC.html" target="_blank">LAC</a></td>
@@ -683,7 +638,145 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202411010POR.html" target="_blank">2024-11-01 00:00:00</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411190SAS.html" target="_blank">11/19/2024</a></td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>@</td>
+<td><a href="/basketball/teams/SAS.html" target="_blank">SAS</a></td>
+<td>3</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>15.42</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411170OKC.html" target="_blank">11/17/2024</a></td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/DAL.html" target="_blank">DAL</a></td>
+<td>12</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>15.95</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>6</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411150OKC.html" target="_blank">11/15/2024</a></td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/PHO.html" target="_blank">PHO</a></td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>8.28</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411130OKC.html" target="_blank">11/13/2024</a></td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/NOP.html" target="_blank">NOP</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>8.05</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411110OKC.html" target="_blank">11/11/2024</a></td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/LAC.html" target="_blank">LAC</a></td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5.68</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411100OKC.html" target="_blank">11/10/2024</a></td>
+<td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
+<td>vs</td>
+<td><a href="/basketball/teams/GSW.html" target="_blank">GSW</a></td>
+<td>4</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>14.97</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-25</td>
+<td style="text-align:left"><a href="/basketball/boxscores/202411010POR.html" target="_blank">11/1/2024</a></td>
 <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/POR.html" target="_blank">POR</a></td>
@@ -706,7 +799,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202410300OKC.html" target="_blank">2024-10-30 00:00:00</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410300OKC.html" target="_blank">10/30/2024</a></td>
 <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/SAS.html" target="_blank">SAS</a></td>
@@ -729,7 +822,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202410270OKC.html" target="_blank">2024-10-27 00:00:00</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410270OKC.html" target="_blank">10/27/2024</a></td>
 <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
 <td>vs</td>
 <td><a href="/basketball/teams/ATL.html" target="_blank">ATL</a></td>
@@ -752,7 +845,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202410260CHI.html" target="_blank">2024-10-26 00:00:00</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410260CHI.html" target="_blank">10/26/2024</a></td>
 <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/CHI.html" target="_blank">CHI</a></td>
@@ -775,7 +868,7 @@
 </tr>
 <tr>
 <td style="text-align:left">2024-25</td>
-<td style="text-align:left"><a href="/basketball/boxscores/202410240DEN.html" target="_blank">2024-10-24 00:00:00</a></td>
+<td style="text-align:left"><a href="/basketball/boxscores/202410240DEN.html" target="_blank">10/24/2024</a></td>
 <td><a href="/basketball/teams/OKC.html" target="_blank">OKC</a></td>
 <td>@</td>
 <td><a href="/basketball/teams/DEN.html" target="_blank">DEN</a></td>
@@ -800,6 +893,7 @@
 </table>
 </div>
 </div>
+</main>
 <div class="footer"></div>
-</div></body>
+</body>
 </html>

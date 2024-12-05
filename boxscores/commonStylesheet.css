@@ -377,7 +377,7 @@ table thead th:hover {
 
 	.standings-button-container button {
 		background: transparent;
-		width: 33%;
+		width: 50%;
 		border: 0;
 		color: #000;
 		text-align: center;
@@ -398,7 +398,7 @@ table thead th:hover {
 	}
 
 	.standings-button-container button.active-button {
-		width: 33.333333%;
+		width: 50%;
 		background: #fff;
 		border-radius: 4px;
 		box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
@@ -832,7 +832,7 @@ table thead th:hover {
 		padding: 8px 10px;
 		font-family: "Roboto Slab";
 		cursor: pointer;
-		width: 33%;
+		width: 50%;
 	}	
 
 	.standings-button-container button:hover {

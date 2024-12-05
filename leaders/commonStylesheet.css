@@ -832,7 +832,7 @@ table thead th:hover {
 		padding: 8px 10px;
 		font-family: "Roboto Slab";
 		cursor: pointer;
-		width: 33%;
+		width: 50%;
 	}	
 
 	.standings-button-container button:hover {

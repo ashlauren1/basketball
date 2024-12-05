@@ -142,6 +142,24 @@ document.addEventListener("DOMContentLoaded", function () {
         rows.forEach(row => tbody.appendChild(row));
     }
 });
+document.addEventListener("DOMContentLoaded", function () {{
+    const table = document.getElementById("boxscore-index");
+    const tbody = table.querySelector("tbody");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+
+    // Get the index of the "Date" column (assumes it's the first column)
+    const dateColumnIndex = 1;
+
+    // Sort rows by date (newest to oldest)
+    rows.sort((a, b) => {{
+        const dateA = new Date(a.cells[dateColumnIndex].textContent.trim());
+        const dateB = new Date(b.cells[dateColumnIndex].textContent.trim());
+        return dateB - dateA; // Descending order
+    }});
+
+    // Append sorted rows back to the table body
+    rows.forEach(row => tbody.appendChild(row));
+}});
 </script>
 </head>
 
@@ -220,7 +238,7 @@ document.addEventListener("DOMContentLoaded", function () {
         html_content += f"""
             <tr>
                 <td style="text-align:center">{season}</td>
-                <td style="text-align:left">{game_date}</td>
+                <td style="text-align:left"><a href="/basketball/boxscores/{game_id}.html">{game_date}</a></td>
                 <td style="text-align:left"><a href="/basketball/boxscores/{game_id}.html">{game_name}</a></td>
                 <td style="text-align:left"><a href="/basketball/teams/{home_id}.html">{home_name}</a></td>
                 <td style="text-align:center;width:24px"><a href="/basketball/boxscores/{game_id}.html">{home_pts}</a></td>

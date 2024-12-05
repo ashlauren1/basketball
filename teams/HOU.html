@@ -16,6 +16,28 @@
     <title>Houston Rockets</title>
 </head>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const table = document.getElementById("team-table");
+    const tbody = table.querySelector("tbody");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+
+    // Get the index of the "Date" column (assumes it's the first column)
+    const dateColumnIndex = 1;
+
+    // Sort rows by date (newest to oldest)
+    rows.sort((a, b) => {
+        const dateA = new Date(a.cells[dateColumnIndex].textContent.trim());
+        const dateB = new Date(b.cells[dateColumnIndex].textContent.trim());
+        return dateB - dateA; // Descending order
+    });
+
+    // Append sorted rows back to the table body
+    rows.forEach(row => tbody.appendChild(row));
+});
+</script>
+
+
 <body>
 <div id="mobileTopnav">
     <div class="menuBarContainer mobile active">

@@ -844,6 +844,7 @@ table thead th:hover {
 		border-radius: 4px;
 		box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
 		color: #c40303;
+		width: 50%;
 	}	
 	
 	#tiebreakerInfoButton, #glossaryButton {

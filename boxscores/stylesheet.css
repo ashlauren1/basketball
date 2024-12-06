@@ -932,11 +932,11 @@
 		min-width: 36px;
 		padding: 2px;
 		margin: 4px 0px;
-		font: 600 12px "Montserrat";
+		font: 600 12px "Inter";
 	}
 
 	.seasonSummary td {
-		font: 500 12px "Montserrat";
+		font: 500 12px "Inter";
 		padding: 2px;
 		margin: 4px 0px;
 	}
@@ -990,8 +990,8 @@
 @media screen and (max-width: 501px) {
 	#player_info {
 		width: 100%;
-		margin: 24px auto 12px auto;
-		min-height: 140px;
+		margin: 18px auto 12px auto;
+		min-height: 100px;
 		height: auto;
 		display: inline-block;
 		box-sizing: border-box;
@@ -1003,7 +1003,7 @@
 	}
 
 	.playerPicture {
-		width: 82px;
+		width: 72px;
 		height: auto;
 		display: inline-block;
 		float: left;
@@ -1013,18 +1013,18 @@
 
 	.info h1 {
 		text-align: left;
-		font: 700 20px "Roboto Slab";
+		font: 700 16px "Roboto Slab";
 	}
 	
 	.info h2 {
 		text-align: left;
-		font: 500 16px "Roboto Slab";
+		font: 500 12px "Roboto Slab";
 		letter-spacing: 1px;
 	}
 	
 	.info p {
 		text-align: left;
-		font: 500 16px "Roboto Slab";
+		font: 500 12px "Roboto Slab";
 		margin: 4px 0;
 	}
 
@@ -1041,14 +1041,14 @@
 	}
 
 	.seasonSummary th {
-		padding: 2px 6px;
+		padding: 2px;
 		margin: 4px 0px;
-		font: 600 12px "Montserrat";
+		font: 600 10px "Inter";
 	}
 
 	.seasonSummary td {
-		font: 500 12px "Montserrat";
-		padding: 2px 6px;
+		font: 500 10px "Inter";
+		padding: 2px;
 		margin: 4px 0px;
 	}
 	

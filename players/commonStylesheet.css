@@ -833,6 +833,9 @@ table thead th:hover {
 		font-family: "Roboto Slab";
 		cursor: pointer;
 		width: 50%;
+		outline: none;
+		color: #000;
+		text-decoration: none;
 	}	
 
 	.standings-button-container button:hover {
